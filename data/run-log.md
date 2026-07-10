@@ -18,3 +18,5 @@ Notes 2026-07-09:
 2026-07-10 editorial edit (no new collection): daily-brief OCC reference now names the agency in full with no regulator characterization ("The Office of the Comptroller of the Currency (OCC)"); EDITORIAL.md acronym and sector-voice examples updated to match. Record 65cf7e6 → 54d2c7d.
 
 2026-07-10 policy change (no new collection): the pending/awaiting-verification state is retired — all allowlisted sources are trusted, so a single report admits an item in the same format as every other. The 13 formerly pending items were assigned ledger ids L-0030..L-0042 and added to the diff pool; EDITORIAL.md, UPDATE_RUNBOOK.md, sources.json, and the scheduled task prompt updated to match. Record 54d2c7d → 83e7f71.
+
+2026-07-10 infrastructure change (no content change): the record moved from data/record.js (ES module import) to data/record.json fetched with a cache-busting timestamp — Cloudflare was edge-caching the record for 4 hours (Cache-Control: max-age=14400), which would have delayed each 6 AM edition by up to 4 hours for readers. Data is now always fetched fresh. Record 83e7f71 → b072688 (format conversion only).

@@ -1,0 +1,1653 @@
+{
+ "meta": {
+  "edition": "Live edition — record opened July 9, 2026",
+  "startedOn": "2026-07-09",
+  "generatedAt": "2026-07-09T23:30:00-04:00",
+  "issueNo": 1,
+  "recordHash": "b072688",
+  "windowLabel": "June 9 – July 9, 2026",
+  "nextWeekly": "Fri, Jul 10",
+  "nextMonthly": "Mon, Aug 3",
+  "feedNote": "15 of 17 allowlisted feeds returned (Nacha: malformed XML; NIST: empty feed). FinCEN and Anthropic are page-checked sources."
+ },
+ "lead": {
+  "head": "Three stories lead today: a patched flaw in Windows Defender, clearer cover for banks sharing fraud intelligence, and OpenAI’s next frontier model",
+  "dek": "Three unrelated stories share the front page, drawn from the thirteen changes recorded in today’s edition. Every item links to its source.",
+  "items": [
+   {
+    "n": "1",
+    "p": "cyber",
+    "tri": "priority",
+    "st": "confirmed",
+    "id": "L-0026",
+    "conf": "",
+    "text": "Microsoft has patched a flaw in Windows Defender — the security software built into Windows — known as “RoguePlanet.” Exploit code for the flaw was published by a researcher in early June, roughly a month before the fix.",
+    "why": "A flaw in security software weakens the layer that protects everything behind it. The immediate question for technology teams is whether the patch is applied.",
+    "srcText": "BleepingComputer, Jul 9 · corroborated by Dark Reading, Jul 9",
+    "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-patches-rogueplanet-defender-zero-day-vulnerability/"
+   },
+   {
+    "n": "2",
+    "p": "fraud",
+    "tri": "priority",
+    "st": "confirmed",
+    "id": "L-0022",
+    "conf": "",
+    "text": "The Office of the Comptroller of the Currency (OCC) is highlighting FinCEN’s updated fact sheet clarifying how financial institutions can share information with each other about suspected fraud under Section 314(b) of the USA PATRIOT Act.",
+    "why": "Fraud intelligence shared between institutions gets stronger the more banks use it, and the updated guidance clarifies the legal cover for doing so.",
+    "srcText": "OCC Bulletin 2026-30 — Jul 9, 2026",
+    "srcUrl": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-30.html"
+   },
+   {
+    "n": "3",
+    "p": "ai",
+    "tri": "priority",
+    "st": "confirmed",
+    "id": "L-0027",
+    "conf": "",
+    "text": "OpenAI released GPT-5.6, describing it as “more intelligence from every token, stronger performance per dollar.” It lands in a window where OpenAI also reports major banks — Japan’s MUFG this week, Spain’s BBVA in June — building AI into core operations.",
+    "why": "Peer institutions are wiring frontier AI into daily banking work; model inventories and controls need to keep pace with what teams actually deploy.",
+    "srcText": "OpenAI — GPT-5.6 release, Jul 9, 2026",
+    "srcUrl": "https://openai.com/index/gpt-5-6"
+   }
+  ]
+ },
+ "wire": [
+  {
+   "ts": "2026-07-09T23:15:00Z",
+   "p": "resilience",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T1",
+   "id": "L-0028",
+   "title": "Hurricane center outlook: no tropical cyclone formation expected in the Atlantic over the next 7 days",
+   "src": "NOAA National Hurricane Center",
+   "srcUrl": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-09T20:10:00Z",
+   "p": "tp",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0039",
+   "title": "Software kit published by crypto firm Injective Labs reportedly compromised on the npm code registry to steal cryptocurrency wallet keys",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/injective-sdk-on-npm-infected-with-cryptocurrency-wallet-stealer/",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-09T20:00:00Z",
+   "p": "fraud",
+   "tri": "priority",
+   "st": "confirmed",
+   "tier": "T1",
+   "id": "L-0022",
+   "title": "OCC highlights FinCEN’s updated fact sheet on how banks can legally share suspected-fraud information with each other (Section 314(b))",
+   "src": "OCC Bulletin 2026-30",
+   "srcUrl": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-30.html",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-09T17:08:00Z",
+   "p": "cyber",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0038",
+   "title": "A new data-extortion group called “Helix” reportedly uses voice phishing and MFA abuse to steal data from SharePoint environments",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/new-helix-vishing-group-emerges-in-sharepoint-data-theft-attacks/",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-09T17:00:00Z",
+   "p": "ai",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0042",
+   "title": "Microsoft says to expect more Windows security updates as it increasingly uses AI to discover flaws in its own code",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-expects-more-windows-security-updates-from-ai-discovered-flaws/",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-09T16:00:00Z",
+   "p": "insider",
+   "tri": "priority",
+   "st": "confirmed",
+   "tier": "T1",
+   "id": "L-0023",
+   "title": "A former ransomware negotiator is sentenced to 70 months for conspiring with the BlackCat ransomware gang to extort the victims he was hired to help",
+   "src": "DOJ press release, Jul 9",
+   "srcUrl": "https://www.justice.gov/opa/pr/florida-ransomware-negotiator-who-extorted-and-attacked-multiple-us-victims-sentenced-prison",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-09T16:00:00Z",
+   "p": "resilience",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T1",
+   "id": "L-0029",
+   "title": "CISA advisory: flaws in Schneider Electric PowerChute Serial Shutdown — software that manages emergency shutdown of data-center power supplies",
+   "src": "CISA ICS advisory ICSA-26-190-02",
+   "srcUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-190-02",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-09T15:19:00Z",
+   "p": "data",
+   "tri": "priority",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0025",
+   "title": "Insurance company AssuranceAmerica discloses a data breach affecting records of 6.9 million drivers",
+   "src": "BleepingComputer + Cybersecurity Dive",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/assuranceamerica-data-breach-exposes-records-of-69-million-drivers/",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-09T14:39:00Z",
+   "p": "cyber",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0040",
+   "title": "A new phishing-for-hire service called “Forg365” reportedly combines AI-generated lures with techniques that defeat multi-factor login on Microsoft 365 accounts",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/new-forg365-phishing-platform-uses-ai-to-target-microsoft-365-accounts/",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-09T14:00:00Z",
+   "p": "ai",
+   "tri": "priority",
+   "st": "confirmed",
+   "tier": "T1",
+   "id": "L-0027",
+   "title": "OpenAI releases GPT-5.6 — “more intelligence from every token, stronger performance per dollar”",
+   "src": "OpenAI news",
+   "srcUrl": "https://openai.com/index/gpt-5-6",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-09T12:00:00Z",
+   "p": "data",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T1",
+   "id": "L-0024",
+   "title": "Tenant-screening company RentGrow will pay $2.25 million to settle FTC charges of reporting duplicate records and hiding its data sources",
+   "src": "FTC press release, Jul 9",
+   "srcUrl": "https://www.ftc.gov/news-events/news/press-releases/2026/07/rentgrow-pay-225-million-settle-ftc-allegations-company-violated-fair-credit-reporting-act-ftc-act",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-09T09:47:00Z",
+   "p": "fraud",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0041",
+   "title": "Police reportedly arrested 5,811 suspects and seized $293 million in a global anti-fraud operation spanning 97 countries",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/police-arrests-5-800-suspects-in-global-anti-fraud-crackdown/",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-09T05:42:00Z",
+   "p": "cyber",
+   "tri": "priority",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0026",
+   "title": "Microsoft patches “RoguePlanet,” a Windows Defender zero-day flaw whose exploit code had been public since early June",
+   "src": "BleepingComputer + Dark Reading",
+   "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-patches-rogueplanet-defender-zero-day-vulnerability/",
+   "linked": true
+  }
+ ],
+ "riskAreas": {
+  "ai": {
+   "name": "Artificial intelligence",
+   "scope": "artificial intelligence · capability & governance",
+   "watch": "Frontier capability, bank-scale adoption, and the governance that is (or is not) keeping pace — from allowlisted lab, regulator, and press feeds.",
+   "opened": "July 2026",
+   "ver": "v1",
+   "verRange": "v1",
+   "asOf": "July 9, 2026",
+   "p1": "Frontier capability advanced again this window: OpenAI released GPT-5.6 on July 9, and in June introduced “Daybreak” security tools — including Codex Security and GPT-5.5-Cyber — for finding, validating, and patching software flaws at scale. The labs are also the sharpest threat reporters: OpenAI’s June report details China-linked influence operations using AI to target US technology debates.",
+   "p1Sup": "1, 2, 3",
+   "p2": "Banks are adopting at scale. OpenAI reports MUFG building an “AI-native” organization on ChatGPT Enterprise, and BBVA scaling ChatGPT to 100,000 employees. The regulatory line is earlier-stage: the FTC opened public comment on a policy statement addressing AI accuracy on July 1. AI is confirmed on the attack side too — an exploited flaw in Langflow, an AI-workflow tool, is on CISA’s known-exploited list.",
+   "p2Sup": "4, 5, 6, 7",
+   "assess": "We assess as likely that AI adoption inside banks continues to outpace tailored supervisory guidance: frontier releases and bank-scale deployments are confirmed this window, while regulatory activity remains at the comment stage.",
+   "assessSup": "1, 4, 6",
+   "conf": "moderate confidence",
+   "events": [
+    {
+     "date": "Jul 9, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0027",
+     "src": "OpenAI news",
+     "srcUrl": "https://openai.com/index/gpt-5-6",
+     "line": "OpenAI releases GPT-5.6 — “more intelligence from every token, stronger performance per dollar.”"
+    },
+    {
+     "date": "Jul 7, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0021",
+     "src": "OpenAI news",
+     "srcUrl": "https://openai.com/index/mufg",
+     "line": "OpenAI reports MUFG using ChatGPT Enterprise to build an “AI-native” organization and deliver AI-powered financial services at scale."
+    },
+    {
+     "date": "Jul 2, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0031",
+     "src": "Dark Reading",
+     "srcUrl": "https://www.darkreading.com/vulnerabilities-threats/anthropic-s-ai-finds-bugs-ibm-bets-5b-it-can-fix-them-",
+     "line": "IBM and Red Hat reportedly assign 20,000 engineers to a $5B “Project Lightwell” service as Anthropic’s AI-found bug reports ignite debate over securing open source."
+    },
+    {
+     "date": "Jul 1, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0015",
+     "src": "FTC press release",
+     "srcUrl": "https://www.ftc.gov/news-events/news/press-releases/2026/07/ftc-seeks-public-comment-policy-statement-addressing-ai-accuracy",
+     "line": "FTC seeks public comment on a proposed policy statement addressing AI accuracy."
+    },
+    {
+     "date": "Jun 22, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0009",
+     "src": "OpenAI news",
+     "srcUrl": "https://openai.com/index/daybreak-securing-the-world",
+     "line": "OpenAI introduces Daybreak security tools — Codex Security and GPT-5.5-Cyber — to help organizations find, validate, and patch vulnerabilities at scale."
+    },
+    {
+     "date": "Jun 11, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0004",
+     "src": "OpenAI news",
+     "srcUrl": "https://openai.com/index/bbva",
+     "line": "OpenAI reports BBVA scaled ChatGPT Enterprise to 100,000 employees in an AI-powered banking transformation."
+    },
+    {
+     "date": "Jun 10, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0001",
+     "src": "OpenAI threat report",
+     "srcUrl": "https://openai.com/index/prc-linked-influence-operations-ai-debates",
+     "line": "OpenAI details China-linked influence operations using AI to target US debates on technology, data centers, and tariffs."
+    },
+    {
+     "date": "Jul 9, 26",
+     "st": "confirmed",
+     "ver": "v1",
+     "id": "",
+     "src": "Tech Risk Tracker record",
+     "srcUrl": "EDITORIAL.md",
+     "line": "Watch opened; baseline compiled from allowlisted feeds, June 9 – July 9, 2026."
+    }
+   ],
+   "sources": [
+    {
+     "n": "1",
+     "text": "OpenAI — GPT-5.6 release, Jul 9, 2026",
+     "url": "https://openai.com/index/gpt-5-6"
+    },
+    {
+     "n": "2",
+     "text": "OpenAI — Daybreak security tools, Jun 22, 2026",
+     "url": "https://openai.com/index/daybreak-securing-the-world"
+    },
+    {
+     "n": "3",
+     "text": "OpenAI — PRC-linked influence operations report, Jun 10, 2026",
+     "url": "https://openai.com/index/prc-linked-influence-operations-ai-debates"
+    },
+    {
+     "n": "4",
+     "text": "OpenAI — MUFG case study, Jul 7, 2026",
+     "url": "https://openai.com/index/mufg"
+    },
+    {
+     "n": "5",
+     "text": "OpenAI — BBVA case study, Jun 11, 2026",
+     "url": "https://openai.com/index/bbva"
+    },
+    {
+     "n": "6",
+     "text": "FTC — AI accuracy policy statement, comment request, Jul 1, 2026",
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2026/07/ftc-seeks-public-comment-policy-statement-addressing-ai-accuracy"
+    },
+    {
+     "n": "7",
+     "text": "CISA — Known Exploited Vulnerabilities catalog (Langflow, added Jul 7, 2026)",
+     "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    }
+   ],
+   "related": [
+    "cyber",
+    "fraud",
+    "data"
+   ],
+   "feeds": [
+    {
+     "name": "OpenAI",
+     "desc": "frontier lab — releases & threat intelligence",
+     "url": "https://openai.com/news/"
+    },
+    {
+     "name": "Anthropic",
+     "desc": "frontier lab — page-checked (no feed)",
+     "url": "https://www.anthropic.com/news"
+    },
+    {
+     "name": "FTC",
+     "desc": "government — AI & consumer protection",
+     "url": "https://www.ftc.gov/news-events"
+    },
+    {
+     "name": "NIST",
+     "desc": "government — AI & cyber standards",
+     "url": "https://www.nist.gov/news-events"
+    },
+    {
+     "name": "Dark Reading",
+     "desc": "press — AI security",
+     "url": "https://www.darkreading.com/"
+    },
+    {
+     "name": "Cybersecurity Dive",
+     "desc": "press — enterprise AI risk",
+     "url": "https://www.cybersecuritydive.com/"
+    }
+   ]
+  },
+  "cyber": {
+   "name": "Cybersecurity",
+   "scope": "cybersecurity · exploitation & exposure",
+   "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
+   "opened": "July 2026",
+   "ver": "v1",
+   "verRange": "v1",
+   "asOf": "July 9, 2026",
+   "p1": "Actively exploited flaws this window cluster in web-facing enterprise software. CISA’s known-exploited list added Microsoft SharePoint Server (code execution via deserialization) on July 1, then Adobe ColdFusion (path traversal), Langflow (authorization bypass), and two website page-builder tools on July 7. Microsoft also patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
+   "p1Sup": "1, 2, 3",
+   "p2": "Two joint federal advisories anchor the state-actor picture: the FBI and CISA warn that Russian intelligence services continue to target commercial messaging applications. On the criminal side, researchers traced the “FortiBleed” exploitation campaign to the INC and Lynx ransomware operations, and report a ransomware attack run end-to-end by an AI agent that broke in through the exploited Langflow flaw.",
+   "p2Sup": "4, 5, 6",
+   "assess": "We assess as likely that web-facing enterprise software remains the sector’s most exploited edge in the near term: every confirmed addition to the known-exploited list this window is an internet-reachable platform.",
+   "assessSup": "1, 2",
+   "conf": "moderate confidence",
+   "events": [
+    {
+     "date": "Jul 9, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0026",
+     "src": "BleepingComputer + Dark Reading",
+     "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-patches-rogueplanet-defender-zero-day-vulnerability/",
+     "line": "Microsoft patches “RoguePlanet,” a Windows Defender zero-day; exploit code had been public since early June."
+    },
+    {
+     "date": "Jul 7, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0019",
+     "src": "CISA KEV catalog",
+     "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+     "line": "CISA adds four exploited flaws: Adobe ColdFusion (path traversal, ransomware use noted), Langflow AI-workflow tool (authorization bypass), and two Joomla page builders (CVE-2026-48282, -55255, -48908, -56290)."
+    },
+    {
+     "date": "Jul 6, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0018",
+     "src": "Dark Reading · Langflow flaw on CISA KEV",
+     "srcUrl": "https://www.darkreading.com/cyberattacks-data-breaches/jadepuffer-first-complete-llm-driven-ransomware-attack",
+     "line": "Researchers report “JadePuffer,” described as the first ransomware attack run end-to-end by an AI agent, which exploited a Langflow flaw — the same flaw CISA lists as actively exploited."
+    },
+    {
+     "date": "Jul 6, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0032",
+     "src": "Dark Reading",
+     "srcUrl": "https://www.darkreading.com/vulnerabilities-threats/citrixbleed-ing-again-netscaler-vulnerability-under-attack",
+     "line": "Attackers reportedly moved on a new Citrix NetScaler memory-disclosure flaw after proof-of-concept code was published."
+    },
+    {
+     "date": "Jul 2, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0017",
+     "src": "Cybersecurity Dive + Dark Reading",
+     "srcUrl": "https://www.cybersecuritydive.com/news/fortibleed-campaign-traced-to-inc-and-lynx-ransomware-operations/824348/",
+     "line": "The “FortiBleed” exploitation campaign is traced to the INC and Lynx ransomware operations; researchers are investigating a suspected zero-day."
+    },
+    {
+     "date": "Jul 1, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0014",
+     "src": "CISA KEV catalog",
+     "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+     "line": "Microsoft SharePoint Server flaw (CVE-2026-45659) added to CISA’s known-exploited list: code execution over a network by an authorized attacker."
+    },
+    {
+     "date": "Jun 26, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0011",
+     "src": "FBI IC3 + CISA joint advisory",
+     "srcUrl": "https://www.ic3.gov/PSA/2026/PSA260626",
+     "line": "FBI and CISA: Russian intelligence services continue to target commercial messaging applications."
+    },
+    {
+     "date": "Jun 9, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0030",
+     "src": "Krebs on Security",
+     "srcUrl": "https://krebsonsecurity.com/2026/06/a-record-breaking-patch-tuesday-for-june-2026/",
+     "line": "June Patch Tuesday reportedly a record: nearly 200 fixes, almost three dozen rated critical."
+    },
+    {
+     "date": "Jul 9, 26",
+     "st": "confirmed",
+     "ver": "v1",
+     "id": "",
+     "src": "Tech Risk Tracker record",
+     "srcUrl": "EDITORIAL.md",
+     "line": "Watch opened; baseline compiled from allowlisted feeds, June 9 – July 9, 2026."
+    }
+   ],
+   "sources": [
+    {
+     "n": "1",
+     "text": "CISA — Known Exploited Vulnerabilities catalog, additions Jul 1 & Jul 7, 2026",
+     "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+     "n": "2",
+     "text": "CISA — KEV entry: Microsoft SharePoint CVE-2026-45659, Jul 1, 2026",
+     "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+     "n": "3",
+     "text": "BleepingComputer + Dark Reading — RoguePlanet Defender zero-day patched, Jul 9, 2026",
+     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-patches-rogueplanet-defender-zero-day-vulnerability/"
+    },
+    {
+     "n": "4",
+     "text": "FBI IC3 / CISA — Russian intelligence services target commercial messaging applications, Jun 26, 2026",
+     "url": "https://www.ic3.gov/PSA/2026/PSA260626"
+    },
+    {
+     "n": "5",
+     "text": "Cybersecurity Dive + Dark Reading — FortiBleed traced to INC and Lynx, Jul 2, 2026",
+     "url": "https://www.cybersecuritydive.com/news/fortibleed-campaign-traced-to-inc-and-lynx-ransomware-operations/824348/"
+    },
+    {
+     "n": "6",
+     "text": "Dark Reading — JadePuffer LLM-driven ransomware via Langflow flaw, Jul 6, 2026",
+     "url": "https://www.darkreading.com/cyberattacks-data-breaches/jadepuffer-first-complete-llm-driven-ransomware-attack"
+    }
+   ],
+   "related": [
+    "ai",
+    "tp",
+    "insider"
+   ],
+   "feeds": [
+    {
+     "name": "CISA",
+     "desc": "government — advisories & exploited list",
+     "url": "https://www.cisa.gov/news-events/cybersecurity-advisories"
+    },
+    {
+     "name": "FBI IC3",
+     "desc": "government — public service announcements",
+     "url": "https://www.ic3.gov/PSA"
+    },
+    {
+     "name": "Krebs on Security",
+     "desc": "press — cybercrime & breaches",
+     "url": "https://krebsonsecurity.com/"
+    },
+    {
+     "name": "The Record",
+     "desc": "press — threat intel & policy",
+     "url": "https://therecord.media/"
+    },
+    {
+     "name": "BleepingComputer",
+     "desc": "press — vulnerabilities & incidents",
+     "url": "https://www.bleepingcomputer.com/"
+    },
+    {
+     "name": "Dark Reading",
+     "desc": "press — enterprise security",
+     "url": "https://www.darkreading.com/"
+    },
+    {
+     "name": "Cybersecurity Dive",
+     "desc": "press — sector coverage",
+     "url": "https://www.cybersecuritydive.com/"
+    }
+   ]
+  },
+  "fraud": {
+   "name": "Fraud",
+   "scope": "fraud · AML rulemaking & scam patterns",
+   "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
+   "opened": "July 2026",
+   "ver": "v1",
+   "verRange": "v1",
+   "asOf": "July 9, 2026",
+   "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, following June proposals aimed at stablecoins: a customer identification program requirement for payment stablecoin issuers (Fed, June 18) and Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22).",
+   "p1Sup": "1, 2, 3",
+   "p2": "Operationally, the OCC is highlighting FinCEN’s updated Section 314(b) fact sheet clarifying how institutions can share suspected-fraud information with each other. The FBI’s recent consumer-facing warnings describe criminals redirecting users to fraudulent websites through malicious traffic-distribution systems, and couriers collecting cash in person for cryptocurrency investment scams.",
+   "p2Sup": "4, 5, 6",
+   "assess": "We assess as likely that AML expectations formalize around new payment types first: three of the confirmed rule actions this window concern stablecoins or AML-program modernization, and all are open for comment.",
+   "assessSup": "1, 2, 3",
+   "conf": "moderate confidence",
+   "events": [
+    {
+     "date": "Jul 9, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0022",
+     "src": "OCC Bulletin 2026-30",
+     "srcUrl": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-30.html",
+     "line": "OCC highlights FinCEN’s updated Section 314(b) fact sheet on sharing suspected-fraud information between institutions."
+    },
+    {
+     "date": "Jul 9, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0041",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/police-arrests-5-800-suspects-in-global-anti-fraud-crackdown/",
+     "line": "Global anti-fraud operation reportedly arrests 5,811 suspects and seizes $293 million across 97 countries."
+    },
+    {
+     "date": "Jul 7, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0020",
+     "src": "Federal Reserve press",
+     "srcUrl": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260707a.htm",
+     "line": "Federal Reserve requests comment on a proposal to amend its requirements for banks’ anti-money-laundering programs."
+    },
+    {
+     "date": "Jun 22, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0008",
+     "src": "OCC Bulletin 2026-28",
+     "srcUrl": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-28.html",
+     "line": "OCC proposes BSA and sanctions compliance standards for OCC-supervised payment stablecoin issuers under the GENIUS Act."
+    },
+    {
+     "date": "Jun 18, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0007",
+     "src": "Federal Reserve press",
+     "srcUrl": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260618a.htm",
+     "line": "Federal Reserve proposes requiring certain payment stablecoin issuers to maintain an effective customer identification program."
+    },
+    {
+     "date": "Jun 18, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0006",
+     "src": "FBI IC3 PSA",
+     "srcUrl": "https://www.ic3.gov/PSA/2026/PSA260618",
+     "line": "FBI: criminals are redirecting users to fraudulent websites using malicious traffic-distribution systems."
+    },
+    {
+     "date": "Jun 15, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0005",
+     "src": "FBI IC3 PSA",
+     "srcUrl": "https://www.ic3.gov/PSA/2026/PSA260615",
+     "line": "FBI: scammers use in-person couriers to collect cash in cryptocurrency investment scams."
+    },
+    {
+     "date": "Jul 9, 26",
+     "st": "confirmed",
+     "ver": "v1",
+     "id": "",
+     "src": "Tech Risk Tracker record",
+     "srcUrl": "EDITORIAL.md",
+     "line": "Watch opened; baseline compiled from allowlisted feeds, June 9 – July 9, 2026."
+    }
+   ],
+   "sources": [
+    {
+     "n": "1",
+     "text": "Federal Reserve — AML program requirements proposal, Jul 7, 2026",
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260707a.htm"
+    },
+    {
+     "n": "2",
+     "text": "Federal Reserve — stablecoin customer identification program proposal, Jun 18, 2026",
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260618a.htm"
+    },
+    {
+     "n": "3",
+     "text": "OCC — GENIUS Act AML/CFT & sanctions NPRM (Bulletin 2026-28), Jun 22, 2026",
+     "url": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-28.html"
+    },
+    {
+     "n": "4",
+     "text": "OCC — FinCEN 314(b) fact sheet notification (Bulletin 2026-30), Jul 9, 2026",
+     "url": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-30.html"
+    },
+    {
+     "n": "5",
+     "text": "FBI IC3 — malicious traffic distribution systems PSA, Jun 18, 2026",
+     "url": "https://www.ic3.gov/PSA/2026/PSA260618"
+    },
+    {
+     "n": "6",
+     "text": "FBI IC3 — cryptocurrency scam couriers PSA, Jun 15, 2026",
+     "url": "https://www.ic3.gov/PSA/2026/PSA260615"
+    }
+   ],
+   "related": [
+    "insider",
+    "ai",
+    "data"
+   ],
+   "feeds": [
+    {
+     "name": "FinCEN",
+     "desc": "government — page-checked (no feed)",
+     "url": "https://www.fincen.gov/news-room/news"
+    },
+    {
+     "name": "FBI IC3",
+     "desc": "government — scam & fraud PSAs",
+     "url": "https://www.ic3.gov/PSA"
+    },
+    {
+     "name": "OCC",
+     "desc": "government — bulletins",
+     "url": "https://www.occ.gov/news-issuances/bulletins/"
+    },
+    {
+     "name": "Federal Reserve",
+     "desc": "government — rulemaking",
+     "url": "https://www.federalreserve.gov/newsevents.htm"
+    },
+    {
+     "name": "FTC",
+     "desc": "government — consumer fraud actions",
+     "url": "https://www.ftc.gov/news-events"
+    },
+    {
+     "name": "CFPB",
+     "desc": "government — consumer finance",
+     "url": "https://www.consumerfinance.gov/about-us/newsroom/"
+    },
+    {
+     "name": "Krebs on Security",
+     "desc": "press — fraud ecosystems",
+     "url": "https://krebsonsecurity.com/"
+    }
+   ]
+  },
+  "tp": {
+   "name": "Third-party risk",
+   "scope": "third-party risk · vendor software & supply chain",
+   "watch": "Vendor tools under active attack, software-supply-chain compromises aimed at financial applications, and vendor incident disclosures.",
+   "opened": "July 2026",
+   "ver": "v1",
+   "verRange": "v1",
+   "asOf": "July 9, 2026",
+   "p1": "One vendor-channel exploit is confirmed this window: SimpleHelp, a remote-support tool, carries an authentication-bypass flaw on CISA’s known-exploited list — in a vulnerable configuration, a remote, unauthenticated attacker can log in with a forged token.",
+   "p1Sup": "1",
+   "p2": "The rest of the vendor picture clusters around the software supply chain: a claimed breach at consulting firm Accenture said to involve source code and encryption keys; malicious look-alike software kits for the Paysafe, Skrill, and Neteller payment applications on public code registries; a compromised Injective Labs kit stealing cryptocurrency wallet keys; and a months-long exploitation wave against Cisco SD-WAN network systems.",
+   "p2Sup": "2, 3, 4, 5",
+   "assess": "We assess with moderate confidence that malicious software packages aimed at payment applications on public code registries are the growth edge in third-party exposure — four separate reports this window point the same way.",
+   "assessSup": "1",
+   "conf": "moderate confidence",
+   "events": [
+    {
+     "date": "Jul 9, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0039",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/injective-sdk-on-npm-infected-with-cryptocurrency-wallet-stealer/",
+     "line": "Injective Labs software kit reportedly compromised on npm to steal cryptocurrency wallet keys."
+    },
+    {
+     "date": "Jul 8, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0035",
+     "src": "Cybersecurity Dive",
+     "srcUrl": "https://www.cybersecuritydive.com/news/accenture-data-breach-access-keys-source-code/824694/",
+     "line": "A claimed Accenture breach involving source code and encryption keys could put clients at risk."
+    },
+    {
+     "date": "Jul 8, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0037",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/fake-paysafe-skrill-sdks-on-npm-and-pypi-steal-credentials/",
+     "line": "Malicious look-alike software kits for Paysafe, Skrill, and Neteller payment apps reportedly delivered credential-stealing malware via npm and PyPI."
+    },
+    {
+     "date": "Jul 7, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0034",
+     "src": "Cybersecurity Dive",
+     "srcUrl": "https://www.cybersecuritydive.com/news/sophisticated-threat-campaign-pushes-cisco-to-the-very-edge/824569/",
+     "line": "A months-long exploitation wave against Cisco SD-WAN systems reportedly raises questions about network-infrastructure trust."
+    },
+    {
+     "date": "Jun 29, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0012",
+     "src": "CISA KEV catalog",
+     "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+     "line": "SimpleHelp remote-support tool added to CISA’s known-exploited list: authentication bypass lets a remote attacker log in with a forged token (CVE-2026-48558)."
+    },
+    {
+     "date": "Jul 9, 26",
+     "st": "confirmed",
+     "ver": "v1",
+     "id": "",
+     "src": "Tech Risk Tracker record",
+     "srcUrl": "EDITORIAL.md",
+     "line": "Watch opened; baseline compiled from allowlisted feeds, June 9 – July 9, 2026."
+    }
+   ],
+   "sources": [
+    {
+     "n": "1",
+     "text": "CISA — KEV entry: SimpleHelp CVE-2026-48558, Jun 29, 2026",
+     "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+     "n": "2",
+     "text": "Cybersecurity Dive — Accenture breach claim, Jul 8, 2026",
+     "url": "https://www.cybersecuritydive.com/news/accenture-data-breach-access-keys-source-code/824694/"
+    },
+    {
+     "n": "3",
+     "text": "BleepingComputer — fake Paysafe/Skrill/Neteller SDKs, Jul 8, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/fake-paysafe-skrill-sdks-on-npm-and-pypi-steal-credentials/"
+    },
+    {
+     "n": "4",
+     "text": "BleepingComputer — Injective SDK compromise, Jul 9, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/injective-sdk-on-npm-infected-with-cryptocurrency-wallet-stealer/"
+    },
+    {
+     "n": "5",
+     "text": "Cybersecurity Dive — Cisco SD-WAN campaign, Jul 7, 2026",
+     "url": "https://www.cybersecuritydive.com/news/sophisticated-threat-campaign-pushes-cisco-to-the-very-edge/824569/"
+    }
+   ],
+   "related": [
+    "cyber",
+    "resilience",
+    "data"
+   ],
+   "feeds": [
+    {
+     "name": "CISA",
+     "desc": "government — exploited vendor software",
+     "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+     "name": "BleepingComputer",
+     "desc": "press — supply-chain incidents",
+     "url": "https://www.bleepingcomputer.com/"
+    },
+    {
+     "name": "Cybersecurity Dive",
+     "desc": "press — vendor breaches",
+     "url": "https://www.cybersecuritydive.com/"
+    },
+    {
+     "name": "Dark Reading",
+     "desc": "press — vendor risk",
+     "url": "https://www.darkreading.com/"
+    }
+   ]
+  },
+  "resilience": {
+   "name": "Resilience",
+   "scope": "resilience · sector capacity & season risk",
+   "watch": "Stress-test results, payments-system findings, severe-weather outlooks, and infrastructure-software advisories relevant to operations.",
+   "opened": "July 2026",
+   "ver": "v1",
+   "verRange": "v1",
+   "asOf": "July 9, 2026",
+   "p1": "The Federal Reserve’s annual stress test, released June 24, concludes that large banks are well positioned to weather a severe recession and continue lending to households and businesses. Initial findings from the Fed’s 2025 triennial payments study followed on July 1.",
+   "p1Sup": "1, 2",
+   "p2": "Season risk is quiet: the National Hurricane Center’s July 9 outlook expects no tropical cyclone formation in the Atlantic over the next seven days. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
+   "p2Sup": "3, 4",
+   "assess": "On the current outlook we judge near-term weather-driven disruption unlikely, and note that no confirmed systemic-infrastructure stress entered the record this window.",
+   "assessSup": "3",
+   "conf": "moderate confidence",
+   "events": [
+    {
+     "date": "Jul 9, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0028",
+     "src": "NOAA NHC outlook",
+     "srcUrl": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc",
+     "line": "Atlantic outlook: tropical cyclone formation is not expected during the next 7 days."
+    },
+    {
+     "date": "Jul 9, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0029",
+     "src": "CISA ICS advisory",
+     "srcUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-190-02",
+     "line": "CISA advisory on Schneider Electric PowerChute Serial Shutdown: exploitation could trigger denial-of-service, credential resets, or unauthorized account access."
+    },
+    {
+     "date": "Jul 1, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0016",
+     "src": "Federal Reserve press",
+     "srcUrl": "https://www.federalreserve.gov/newsevents/pressreleases/other20260701a.htm",
+     "line": "Federal Reserve issues initial findings from its 2025 triennial payments study."
+    },
+    {
+     "date": "Jun 24, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0010",
+     "src": "Federal Reserve press",
+     "srcUrl": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260624a.htm",
+     "line": "Annual bank stress test: large banks are well positioned to weather a severe recession and continue to lend."
+    },
+    {
+     "date": "Jul 9, 26",
+     "st": "confirmed",
+     "ver": "v1",
+     "id": "",
+     "src": "Tech Risk Tracker record",
+     "srcUrl": "EDITORIAL.md",
+     "line": "Watch opened; baseline compiled from allowlisted feeds, June 9 – July 9, 2026."
+    }
+   ],
+   "sources": [
+    {
+     "n": "1",
+     "text": "Federal Reserve — annual bank stress test results, Jun 24, 2026",
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260624a.htm"
+    },
+    {
+     "n": "2",
+     "text": "Federal Reserve — 2025 triennial payments study, initial findings, Jul 1, 2026",
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260701a.htm"
+    },
+    {
+     "n": "3",
+     "text": "NOAA NHC — Atlantic tropical weather outlook, Jul 9, 2026",
+     "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+     "n": "4",
+     "text": "CISA — ICS advisory ICSA-26-190-02 (Schneider PowerChute), Jul 9, 2026",
+     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-190-02"
+    }
+   ],
+   "related": [
+    "tp",
+    "physical",
+    "cyber"
+   ],
+   "feeds": [
+    {
+     "name": "Federal Reserve",
+     "desc": "government — stress tests & payments",
+     "url": "https://www.federalreserve.gov/newsevents.htm"
+    },
+    {
+     "name": "NOAA NHC",
+     "desc": "government — severe-weather outlooks",
+     "url": "https://www.nhc.noaa.gov/"
+    },
+    {
+     "name": "CISA",
+     "desc": "government — infrastructure advisories",
+     "url": "https://www.cisa.gov/news-events/cybersecurity-advisories"
+    },
+    {
+     "name": "The Record",
+     "desc": "press — infrastructure incidents",
+     "url": "https://therecord.media/"
+    }
+   ]
+  },
+  "data": {
+   "name": "Data risk",
+   "scope": "data risk · reporting standards & data accuracy",
+   "watch": "Data-standards rulemaking, consumer-data enforcement, and breach disclosures at financial firms.",
+   "opened": "July 2026",
+   "ver": "v1",
+   "verRange": "v1",
+   "asOf": "July 9, 2026",
+   "p1": "Uniform data-reporting standards are now final: the OCC, Federal Reserve, FDIC, and five other agencies issued the joint Financial Data Transparency Act rule on June 11, establishing data standards for certain regulatory collections. The OCC separately proposed weekly and quarterly reporting forms for payment stablecoin issuers under the GENIUS Act.",
+   "p1Sup": "1, 2",
+   "p2": "Enforcement pressure sits on consumer-data accuracy. The FTC required Amazon to pay $2.25 million over Fair Credit Reporting Act violations involving identity-theft victims’ records (June 30), and tenant-screening provider RentGrow to pay $2.25 million over duplicate records and undisclosed data sources (July 9). Separately, insurance company AssuranceAmerica disclosed a breach affecting records of 6.9 million drivers.",
+   "p2Sup": "3, 4, 5",
+   "assess": "We assess as likely that data-accuracy obligations — not only data-security ones — drive the next round of consumer-data enforcement: both confirmed FTC actions this window are accuracy cases under the Fair Credit Reporting Act.",
+   "assessSup": "3, 4",
+   "conf": "moderate confidence",
+   "events": [
+    {
+     "date": "Jul 9, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0024",
+     "src": "FTC press release",
+     "srcUrl": "https://www.ftc.gov/news-events/news/press-releases/2026/07/rentgrow-pay-225-million-settle-ftc-allegations-company-violated-fair-credit-reporting-act-ftc-act",
+     "line": "RentGrow to pay $2.25 million over FCRA violations: duplicate records and undisclosed data sources in tenant screening."
+    },
+    {
+     "date": "Jul 9, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0025",
+     "src": "BleepingComputer + Cybersecurity Dive",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/assuranceamerica-data-breach-exposes-records-of-69-million-drivers/",
+     "line": "AssuranceAmerica discloses a data breach affecting records of 6.9 million drivers."
+    },
+    {
+     "date": "Jul 8, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0036",
+     "src": "The Record",
+     "srcUrl": "https://therecord.media/cash-app-owner-to-pay-45-million-security-allegations",
+     "line": "Block, owner of Cash App, reportedly agrees to pay $45 million to state attorneys general over security promises."
+    },
+    {
+     "date": "Jun 30, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0013",
+     "src": "FTC press release",
+     "srcUrl": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-requires-amazon-pay-225-million-resolve-charges-it-knowingly-violated-fair-credit-reporting-act",
+     "line": "FTC requires Amazon to pay $2.25 million over FCRA violations involving identity-theft victims’ transaction records."
+    },
+    {
+     "date": "Jun 11, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0002",
+     "src": "OCC Bulletin 2026-25",
+     "srcUrl": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-25.html",
+     "line": "Nine agencies issue the joint Financial Data Transparency Act final rule establishing uniform data standards for certain regulatory collections."
+    },
+    {
+     "date": "Jun 11, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0003",
+     "src": "OCC Bulletin 2026-24",
+     "srcUrl": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-24.html",
+     "line": "OCC proposes weekly and quarterly reporting forms for permitted payment stablecoin issuers under the GENIUS Act."
+    },
+    {
+     "date": "Jul 9, 26",
+     "st": "confirmed",
+     "ver": "v1",
+     "id": "",
+     "src": "Tech Risk Tracker record",
+     "srcUrl": "EDITORIAL.md",
+     "line": "Watch opened; baseline compiled from allowlisted feeds, June 9 – July 9, 2026."
+    }
+   ],
+   "sources": [
+    {
+     "n": "1",
+     "text": "OCC — Financial Data Transparency Act joint final rule (Bulletin 2026-25), Jun 11, 2026",
+     "url": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-25.html"
+    },
+    {
+     "n": "2",
+     "text": "OCC — GENIUS Act stablecoin reporting forms proposal (Bulletin 2026-24), Jun 11, 2026",
+     "url": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-24.html"
+    },
+    {
+     "n": "3",
+     "text": "FTC — Amazon FCRA settlement, Jun 30, 2026",
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-requires-amazon-pay-225-million-resolve-charges-it-knowingly-violated-fair-credit-reporting-act"
+    },
+    {
+     "n": "4",
+     "text": "FTC — RentGrow FCRA settlement, Jul 9, 2026",
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2026/07/rentgrow-pay-225-million-settle-ftc-allegations-company-violated-fair-credit-reporting-act-ftc-act"
+    },
+    {
+     "n": "5",
+     "text": "BleepingComputer + Cybersecurity Dive — AssuranceAmerica breach, Jul 9, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/assuranceamerica-data-breach-exposes-records-of-69-million-drivers/"
+    }
+   ],
+   "related": [
+    "fraud",
+    "ai",
+    "tp"
+   ],
+   "feeds": [
+    {
+     "name": "FTC",
+     "desc": "government — data enforcement",
+     "url": "https://www.ftc.gov/news-events"
+    },
+    {
+     "name": "CFPB",
+     "desc": "government — consumer data",
+     "url": "https://www.consumerfinance.gov/about-us/newsroom/"
+    },
+    {
+     "name": "OCC",
+     "desc": "government — reporting standards",
+     "url": "https://www.occ.gov/news-issuances/bulletins/"
+    },
+    {
+     "name": "The Record",
+     "desc": "press — breach & privacy",
+     "url": "https://therecord.media/"
+    },
+    {
+     "name": "BleepingComputer",
+     "desc": "press — breach disclosures",
+     "url": "https://www.bleepingcomputer.com/"
+    }
+   ]
+  },
+  "insider": {
+   "name": "Insider threat",
+   "scope": "insider threat · co-opted trust",
+   "watch": "Prosecutions and advisories where trusted roles — employees, contractors, hired specialists — are the attack path.",
+   "opened": "July 2026",
+   "ver": "v1",
+   "verRange": "v1",
+   "asOf": "July 9, 2026",
+   "p1": "One confirmed event this window sits squarely on trusted-role co-option: a former ransomware negotiator was sentenced to 70 months for conspiring with BlackCat ransomware actors to extort the victims he was engaged to help — and with other former cybersecurity professionals to attack additional victims.",
+   "p1Sup": "1",
+   "p2": "Adjacent signals point the same direction: the AssuranceAmerica breach began with attackers targeting a company employee, and a man alleged to be a member of Scattered Spider — a group associated with social-engineering staff — was extradited to the US.",
+   "p2Sup": "2, 3",
+   "assess": "Too few confirmed events to establish a trend. We note with low confidence that the co-opted professional — rather than the disgruntled employee — is the pattern in what has entered the record so far.",
+   "assessSup": "1",
+   "conf": "low confidence",
+   "events": [
+    {
+     "date": "Jul 9, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0023",
+     "src": "DOJ press release",
+     "srcUrl": "https://www.justice.gov/opa/pr/florida-ransomware-negotiator-who-extorted-and-attacked-multiple-us-victims-sentenced-prison",
+     "line": "Former ransomware negotiator sentenced to 70 months for conspiring with BlackCat actors to extort victims, and with other former cybersecurity professionals to attack more."
+    },
+    {
+     "date": "Jul 6, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0033",
+     "src": "Cybersecurity Dive",
+     "srcUrl": "https://www.cybersecuritydive.com/news/member-scattered-spider-extradited-us-retailer/824476/",
+     "line": "Alleged Scattered Spider member with dual US-Estonian citizenship reportedly extradited to the US."
+    },
+    {
+     "date": "Jul 9, 26",
+     "st": "confirmed",
+     "ver": "v1",
+     "id": "",
+     "src": "Tech Risk Tracker record",
+     "srcUrl": "EDITORIAL.md",
+     "line": "Watch opened; baseline compiled from allowlisted feeds, June 9 – July 9, 2026."
+    }
+   ],
+   "sources": [
+    {
+     "n": "1",
+     "text": "DOJ — ransomware negotiator sentencing, Jul 9, 2026",
+     "url": "https://www.justice.gov/opa/pr/florida-ransomware-negotiator-who-extorted-and-attacked-multiple-us-victims-sentenced-prison"
+    },
+    {
+     "n": "2",
+     "text": "Cybersecurity Dive — AssuranceAmerica breach via targeted employee, Jul 9, 2026",
+     "url": "https://www.cybersecuritydive.com/news/data-breach-car-insurance-provider/824835/"
+    },
+    {
+     "n": "3",
+     "text": "Cybersecurity Dive — Scattered Spider extradition, Jul 6, 2026",
+     "url": "https://www.cybersecuritydive.com/news/member-scattered-spider-extradited-us-retailer/824476/"
+    }
+   ],
+   "related": [
+    "fraud",
+    "cyber",
+    "tp"
+   ],
+   "feeds": [
+    {
+     "name": "DOJ",
+     "desc": "government — prosecutions",
+     "url": "https://www.justice.gov/news"
+    },
+    {
+     "name": "FBI IC3",
+     "desc": "government — advisories",
+     "url": "https://www.ic3.gov/PSA"
+    },
+    {
+     "name": "Krebs on Security",
+     "desc": "press — insider & fraud cases",
+     "url": "https://krebsonsecurity.com/"
+    },
+    {
+     "name": "Cybersecurity Dive",
+     "desc": "press — workforce & insider",
+     "url": "https://www.cybersecuritydive.com/"
+    }
+   ]
+  },
+  "physical": {
+   "name": "Physical security",
+   "scope": "physical security · facilities & infrastructure adjacency",
+   "watch": "Grid bulletins, law-enforcement advisories, and severe-weather threats to facilities — via the allowlisted feeds.",
+   "opened": "July 2026",
+   "ver": "v1",
+   "verRange": "v1",
+   "asOf": "July 9, 2026",
+   "p1": "No confirmed physical-security events have entered the record since collection began on July 9, 2026. The watch monitors CISA advisories, law-enforcement releases, and severe-weather outlooks through the allowlisted feeds.",
+   "p1Sup": "",
+   "p2": "The nearest adjacent signal is seasonal and quiet: the National Hurricane Center’s current Atlantic outlook expects no tropical cyclone formation over the next seven days (tracked under Resilience).",
+   "p2Sup": "1",
+   "assess": "No assessment — the record holds no confirmed physical-security events yet. One will be made when there is something to assess.",
+   "assessSup": "",
+   "conf": "not rated",
+   "events": [
+    {
+     "date": "Jul 9, 26",
+     "st": "confirmed",
+     "ver": "v1",
+     "id": "",
+     "src": "Tech Risk Tracker record",
+     "srcUrl": "EDITORIAL.md",
+     "line": "Watch opened; baseline compiled from allowlisted feeds, June 9 – July 9, 2026. No qualifying physical-security events in the window."
+    }
+   ],
+   "sources": [
+    {
+     "n": "1",
+     "text": "NOAA NHC — Atlantic tropical weather outlook, Jul 9, 2026",
+     "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    }
+   ],
+   "related": [
+    "resilience",
+    "insider",
+    "cyber"
+   ],
+   "feeds": [
+    {
+     "name": "CISA",
+     "desc": "government — infrastructure advisories",
+     "url": "https://www.cisa.gov/news-events/cybersecurity-advisories"
+    },
+    {
+     "name": "NOAA NHC",
+     "desc": "government — severe weather",
+     "url": "https://www.nhc.noaa.gov/"
+    },
+    {
+     "name": "DOJ",
+     "desc": "government — enforcement",
+     "url": "https://www.justice.gov/news"
+    },
+    {
+     "name": "AP-class press",
+     "desc": "not yet allowlisted — under review",
+     "url": "EDITORIAL.md"
+    }
+   ]
+  }
+ },
+ "diffPool": [
+  {
+   "d": "2026-07-09",
+   "p": "cyber",
+   "id": "L-0026",
+   "line": "Microsoft patches “RoguePlanet” Windows Defender zero-day; exploit code had been public since early June",
+   "src": "BleepingComputer + Dark Reading",
+   "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-patches-rogueplanet-defender-zero-day-vulnerability/"
+  },
+  {
+   "d": "2026-07-09",
+   "p": "fraud",
+   "id": "L-0022",
+   "line": "OCC highlights FinCEN’s updated Section 314(b) fact sheet on bank-to-bank sharing of suspected-fraud information",
+   "src": "OCC Bulletin 2026-30",
+   "srcUrl": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-30.html"
+  },
+  {
+   "d": "2026-07-09",
+   "p": "insider",
+   "id": "L-0023",
+   "line": "Former ransomware negotiator sentenced to 70 months for conspiring with BlackCat actors to extort victims",
+   "src": "DOJ press release",
+   "srcUrl": "https://www.justice.gov/opa/pr/florida-ransomware-negotiator-who-extorted-and-attacked-multiple-us-victims-sentenced-prison"
+  },
+  {
+   "d": "2026-07-09",
+   "p": "data",
+   "id": "L-0024",
+   "line": "RentGrow to pay $2.25 million over FCRA violations: duplicate records and undisclosed data sources",
+   "src": "FTC press release",
+   "srcUrl": "https://www.ftc.gov/news-events/news/press-releases/2026/07/rentgrow-pay-225-million-settle-ftc-allegations-company-violated-fair-credit-reporting-act-ftc-act"
+  },
+  {
+   "d": "2026-07-09",
+   "p": "data",
+   "id": "L-0025",
+   "line": "AssuranceAmerica discloses data breach affecting records of 6.9 million drivers",
+   "src": "BleepingComputer + Cybersecurity Dive",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/assuranceamerica-data-breach-exposes-records-of-69-million-drivers/"
+  },
+  {
+   "d": "2026-07-09",
+   "p": "ai",
+   "id": "L-0027",
+   "line": "OpenAI releases GPT-5.6 — “more intelligence from every token, stronger performance per dollar”",
+   "src": "OpenAI news",
+   "srcUrl": "https://openai.com/index/gpt-5-6"
+  },
+  {
+   "d": "2026-07-09",
+   "p": "resilience",
+   "id": "L-0028",
+   "line": "NOAA outlook: no Atlantic tropical cyclone formation expected in the next 7 days",
+   "src": "NOAA NHC",
+   "srcUrl": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+  },
+  {
+   "d": "2026-07-09",
+   "p": "resilience",
+   "id": "L-0029",
+   "line": "CISA advisory: flaws in Schneider PowerChute data-center power-shutdown software",
+   "src": "CISA ICS advisory",
+   "srcUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-190-02"
+  },
+  {
+   "d": "2026-07-07",
+   "p": "cyber",
+   "id": "L-0019",
+   "line": "CISA adds four exploited flaws: Adobe ColdFusion, Langflow AI tool, and two Joomla page builders",
+   "src": "CISA KEV catalog",
+   "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+  },
+  {
+   "d": "2026-07-07",
+   "p": "fraud",
+   "id": "L-0020",
+   "line": "Federal Reserve requests comment on amendments to banks’ anti-money-laundering program requirements",
+   "src": "Federal Reserve press",
+   "srcUrl": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260707a.htm"
+  },
+  {
+   "d": "2026-07-07",
+   "p": "ai",
+   "id": "L-0021",
+   "line": "OpenAI reports MUFG building an “AI-native” organization on ChatGPT Enterprise",
+   "src": "OpenAI news",
+   "srcUrl": "https://openai.com/index/mufg"
+  },
+  {
+   "d": "2026-07-06",
+   "p": "cyber",
+   "id": "L-0018",
+   "line": "Researchers report “JadePuffer” ransomware attack run end-to-end by an AI agent via an exploited Langflow flaw",
+   "src": "Dark Reading · Langflow on CISA KEV",
+   "srcUrl": "https://www.darkreading.com/cyberattacks-data-breaches/jadepuffer-first-complete-llm-driven-ransomware-attack"
+  },
+  {
+   "d": "2026-07-02",
+   "p": "cyber",
+   "id": "L-0017",
+   "line": "“FortiBleed” exploitation campaign traced to INC and Lynx ransomware operations",
+   "src": "Cybersecurity Dive + Dark Reading",
+   "srcUrl": "https://www.cybersecuritydive.com/news/fortibleed-campaign-traced-to-inc-and-lynx-ransomware-operations/824348/"
+  },
+  {
+   "d": "2026-07-01",
+   "p": "cyber",
+   "id": "L-0014",
+   "line": "Microsoft SharePoint Server deserialization flaw (CVE-2026-45659) added to CISA’s known-exploited list",
+   "src": "CISA KEV catalog",
+   "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+  },
+  {
+   "d": "2026-07-01",
+   "p": "ai",
+   "id": "L-0015",
+   "line": "FTC seeks public comment on a policy statement addressing AI accuracy",
+   "src": "FTC press release",
+   "srcUrl": "https://www.ftc.gov/news-events/news/press-releases/2026/07/ftc-seeks-public-comment-policy-statement-addressing-ai-accuracy"
+  },
+  {
+   "d": "2026-07-01",
+   "p": "resilience",
+   "id": "L-0016",
+   "line": "Federal Reserve issues initial findings from its 2025 triennial payments study",
+   "src": "Federal Reserve press",
+   "srcUrl": "https://www.federalreserve.gov/newsevents/pressreleases/other20260701a.htm"
+  },
+  {
+   "d": "2026-06-30",
+   "p": "data",
+   "id": "L-0013",
+   "line": "FTC requires Amazon to pay $2.25 million over FCRA violations involving identity-theft victims’ records",
+   "src": "FTC press release",
+   "srcUrl": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-requires-amazon-pay-225-million-resolve-charges-it-knowingly-violated-fair-credit-reporting-act"
+  },
+  {
+   "d": "2026-06-29",
+   "p": "tp",
+   "id": "L-0012",
+   "line": "SimpleHelp remote-support tool authentication bypass added to CISA’s known-exploited list",
+   "src": "CISA KEV catalog",
+   "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+  },
+  {
+   "d": "2026-06-26",
+   "p": "cyber",
+   "id": "L-0011",
+   "line": "FBI and CISA: Russian intelligence services continue to target commercial messaging applications",
+   "src": "FBI IC3 + CISA",
+   "srcUrl": "https://www.ic3.gov/PSA/2026/PSA260626"
+  },
+  {
+   "d": "2026-06-24",
+   "p": "resilience",
+   "id": "L-0010",
+   "line": "Fed stress test: large banks well positioned to weather a severe recession and continue lending",
+   "src": "Federal Reserve press",
+   "srcUrl": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260624a.htm"
+  },
+  {
+   "d": "2026-06-22",
+   "p": "fraud",
+   "id": "L-0008",
+   "line": "OCC proposes BSA and sanctions compliance standards for stablecoin issuers under the GENIUS Act",
+   "src": "OCC Bulletin 2026-28",
+   "srcUrl": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-28.html"
+  },
+  {
+   "d": "2026-06-22",
+   "p": "ai",
+   "id": "L-0009",
+   "line": "OpenAI introduces Daybreak security tools (Codex Security, GPT-5.5-Cyber) for finding and patching flaws at scale",
+   "src": "OpenAI news",
+   "srcUrl": "https://openai.com/index/daybreak-securing-the-world"
+  },
+  {
+   "d": "2026-06-18",
+   "p": "fraud",
+   "id": "L-0007",
+   "line": "Federal Reserve proposes customer identification program requirement for payment stablecoin issuers",
+   "src": "Federal Reserve press",
+   "srcUrl": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260618a.htm"
+  },
+  {
+   "d": "2026-06-18",
+   "p": "fraud",
+   "id": "L-0006",
+   "line": "FBI: criminals redirect users to fraudulent websites using malicious traffic-distribution systems",
+   "src": "FBI IC3 PSA",
+   "srcUrl": "https://www.ic3.gov/PSA/2026/PSA260618"
+  },
+  {
+   "d": "2026-06-15",
+   "p": "fraud",
+   "id": "L-0005",
+   "line": "FBI: scammers use in-person couriers to collect cash in cryptocurrency investment scams",
+   "src": "FBI IC3 PSA",
+   "srcUrl": "https://www.ic3.gov/PSA/2026/PSA260615"
+  },
+  {
+   "d": "2026-06-11",
+   "p": "data",
+   "id": "L-0002",
+   "line": "Nine agencies issue the joint Financial Data Transparency Act final rule on uniform data standards",
+   "src": "OCC Bulletin 2026-25",
+   "srcUrl": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-25.html"
+  },
+  {
+   "d": "2026-06-11",
+   "p": "data",
+   "id": "L-0003",
+   "line": "OCC proposes weekly and quarterly reporting forms for payment stablecoin issuers",
+   "src": "OCC Bulletin 2026-24",
+   "srcUrl": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-24.html"
+  },
+  {
+   "d": "2026-06-11",
+   "p": "ai",
+   "id": "L-0004",
+   "line": "OpenAI reports BBVA scaled ChatGPT Enterprise to 100,000 employees",
+   "src": "OpenAI news",
+   "srcUrl": "https://openai.com/index/bbva"
+  },
+  {
+   "d": "2026-06-10",
+   "p": "ai",
+   "id": "L-0001",
+   "line": "OpenAI details China-linked influence operations using AI to target US technology debates",
+   "src": "OpenAI threat report",
+   "srcUrl": "https://openai.com/index/prc-linked-influence-operations-ai-debates"
+  },
+  {
+   "d": "2026-07-09",
+   "p": "cyber",
+   "id": "L-0038",
+   "line": "New data-extortion group “Helix” uses voice phishing and MFA abuse to steal data from SharePoint environments",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/new-helix-vishing-group-emerges-in-sharepoint-data-theft-attacks/"
+  },
+  {
+   "d": "2026-07-09",
+   "p": "tp",
+   "id": "L-0039",
+   "line": "Injective Labs software kit compromised on the npm code registry to steal cryptocurrency wallet keys",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/injective-sdk-on-npm-infected-with-cryptocurrency-wallet-stealer/"
+  },
+  {
+   "d": "2026-07-09",
+   "p": "cyber",
+   "id": "L-0040",
+   "line": "New “Forg365” phishing-for-hire service combines AI-generated lures with techniques that defeat multi-factor login on Microsoft 365",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/new-forg365-phishing-platform-uses-ai-to-target-microsoft-365-accounts/"
+  },
+  {
+   "d": "2026-07-09",
+   "p": "fraud",
+   "id": "L-0041",
+   "line": "Global anti-fraud operation arrests 5,811 suspects and seizes $293 million across 97 countries",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/police-arrests-5-800-suspects-in-global-anti-fraud-crackdown/"
+  },
+  {
+   "d": "2026-07-09",
+   "p": "ai",
+   "id": "L-0042",
+   "line": "Microsoft: expect more Windows security updates as AI increasingly discovers flaws in its own code",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-expects-more-windows-security-updates-from-ai-discovered-flaws/"
+  },
+  {
+   "d": "2026-07-08",
+   "p": "tp",
+   "id": "L-0035",
+   "line": "Claimed Accenture breach involving source code and encryption keys could put clients at risk",
+   "src": "Cybersecurity Dive",
+   "srcUrl": "https://www.cybersecuritydive.com/news/accenture-data-breach-access-keys-source-code/824694/"
+  },
+  {
+   "d": "2026-07-08",
+   "p": "data",
+   "id": "L-0036",
+   "line": "Block, owner of Cash App, to pay $45 million to state attorneys general over security promises",
+   "src": "The Record",
+   "srcUrl": "https://therecord.media/cash-app-owner-to-pay-45-million-security-allegations"
+  },
+  {
+   "d": "2026-07-08",
+   "p": "tp",
+   "id": "L-0037",
+   "line": "Malicious look-alike kits for Paysafe, Skrill, and Neteller payment apps deliver credential-stealing malware via npm and PyPI",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/fake-paysafe-skrill-sdks-on-npm-and-pypi-steal-credentials/"
+  },
+  {
+   "d": "2026-07-07",
+   "p": "tp",
+   "id": "L-0034",
+   "line": "Months-long exploitation wave against Cisco SD-WAN systems raises network-infrastructure trust questions",
+   "src": "Cybersecurity Dive",
+   "srcUrl": "https://www.cybersecuritydive.com/news/sophisticated-threat-campaign-pushes-cisco-to-the-very-edge/824569/"
+  },
+  {
+   "d": "2026-07-06",
+   "p": "cyber",
+   "id": "L-0032",
+   "line": "Attackers move on a new Citrix NetScaler memory-disclosure flaw after proof-of-concept code publishes",
+   "src": "Dark Reading",
+   "srcUrl": "https://www.darkreading.com/vulnerabilities-threats/citrixbleed-ing-again-netscaler-vulnerability-under-attack"
+  },
+  {
+   "d": "2026-07-06",
+   "p": "insider",
+   "id": "L-0033",
+   "line": "Alleged Scattered Spider member with dual US-Estonian citizenship extradited to the US",
+   "src": "Cybersecurity Dive",
+   "srcUrl": "https://www.cybersecuritydive.com/news/member-scattered-spider-extradited-us-retailer/824476/"
+  },
+  {
+   "d": "2026-07-02",
+   "p": "ai",
+   "id": "L-0031",
+   "line": "IBM and Red Hat assign 20,000 engineers to the $5B “Project Lightwell” service as Anthropic’s AI-found bug reports ignite open-source security debate",
+   "src": "Dark Reading",
+   "srcUrl": "https://www.darkreading.com/vulnerabilities-threats/anthropic-s-ai-finds-bugs-ibm-bets-5b-it-can-fix-them-"
+  },
+  {
+   "d": "2026-06-09",
+   "p": "cyber",
+   "id": "L-0030",
+   "line": "June Patch Tuesday sets a record: nearly 200 fixes, almost three dozen rated critical",
+   "src": "Krebs on Security",
+   "srcUrl": "https://krebsonsecurity.com/2026/06/a-record-breaking-patch-tuesday-for-june-2026/"
+  }
+ ],
+ "takeaways": [
+  {
+   "anchors": [
+    "L-0008",
+    "L-0007",
+    "L-0003"
+   ],
+   "pillars": "Fraud · data risk",
+   "conf": "high confidence",
+   "head": "The stablecoin rulebook is arriving now, in pieces.",
+   "body": "Three separate proposals are open at once: BSA/sanctions compliance standards (OCC, June 22), a customer identification program requirement (Fed, June 18), and weekly/quarterly reporting forms (OCC, June 11) — all for payment stablecoin issuers under the GENIUS Act. For banks planning any stablecoin exposure, compliance scoping and comment-window review start now."
+  },
+  {
+   "anchors": [
+    "L-0014",
+    "L-0019",
+    "L-0026"
+   ],
+   "pillars": "Cybersecurity",
+   "conf": "high confidence",
+   "head": "Exploited flaws cluster in web-facing enterprise software — hold the patch deadline.",
+   "body": "This window’s confirmed exploited-flaw listings are all internet-reachable platforms: SharePoint, ColdFusion, Langflow, and website page builders — plus a patched zero-day in Windows Defender itself whose exploit code was public for roughly a month. A fast fix-and-confirm deadline for internet-facing and security software is the control this record supports."
+  },
+  {
+   "anchors": [
+    "L-0002"
+   ],
+   "pillars": "Data risk",
+   "conf": "moderate confidence",
+   "head": "Uniform data-reporting standards are final — regulatory reporting pipelines need a gap check.",
+   "body": "The joint Financial Data Transparency Act rule (nine agencies, June 11) establishes data standards for certain regulatory collections. Assign a gap assessment between current reporting formats and the finalized standards."
+  },
+  {
+   "anchors": [
+    "L-0027",
+    "L-0009",
+    "L-0018"
+   ],
+   "pillars": "Artificial intelligence",
+   "conf": "moderate confidence",
+   "head": "AI is now confirmed on both sides of the ledger.",
+   "body": "In one month: a new frontier model (GPT-5.6), lab-built security tools for finding and patching flaws (Daybreak), and a reported ransomware attack run end-to-end by an AI agent through an exploited AI-workflow tool. Treat AI as both a control and an attack surface in the next controls review."
+  },
+  {
+   "anchors": [
+    "L-0022",
+    "L-0020"
+   ],
+   "pillars": "Fraud",
+   "conf": "moderate confidence",
+   "head": "Fraud-intelligence sharing just got clearer legal footing.",
+   "body": "FinCEN’s updated Section 314(b) fact sheet — highlighted to banks by the OCC — clarifies how institutions can share suspected-fraud information with each other, while the Fed’s AML-program modernization proposal is open for comment. Worth a joint look from fraud and BSA officers."
+  }
+ ],
+ "publications": {
+  "dailies": [
+   {
+    "no": "1",
+    "date": "Thu, Jul 9, 2026",
+    "confirmed": "13",
+    "pending": "0",
+    "flash": "—",
+    "linked": true
+   }
+  ],
+  "weeklies": [],
+  "monthlies": [],
+  "dTotal": 1,
+  "wkTotal": 0,
+  "mTotal": 0
+ }
+}

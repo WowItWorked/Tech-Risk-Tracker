@@ -16,7 +16,7 @@ process in [EDITORIAL.md](EDITORIAL.md), refreshed weekdays at 6:00 AM ET per
 | `#dossier` | Risk-area dossier — current state, assessment, versioned changelog, monitored feeds |
 | `#publications` | Archive — monthlies, weeklies, dailies, saved catch-up briefs |
 | `#monthly` | Monthly report No. 6 (June 2026) |
-| `#diff` | Meeting Prep — render every confirmed change since a chosen date |
+| `#diff` | Meeting Prep — render every recorded change since a chosen date |
 | `#components` | Component sheet & design tokens |
 
 Keyboard: `/` focuses global search · `Ctrl/⌘K` quick switcher (`↑↓`, `↵`, `1–4`, `esc`).
@@ -29,7 +29,7 @@ Serve the folder from any static host (GitHub Pages works as-is).
 
 - `index.html` — shell, base CSS (reset, keyframes, hover/focus states)
 - `ui.js` — Preact/htm exports + display settings
-- `data/record.js` — **the generated record** (rewritten by each daily update run)
+- `data/record.json` — **the generated record** (rewritten by each daily update run)
 - `data/run-log.md` — one line per update run: feeds, counts, verification outcome
 - `data.js` — thin adapter shaping the record for the views
 - `views-shell.js` — masthead, nav + menus + global search, footer, ⌘K switcher

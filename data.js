@@ -1,8 +1,12 @@
-// Adapter over the generated record (data/record.js). The daily update process
+// Adapter over the generated record (data/record.json). The daily update process
 // regenerates the record; this module shapes it for the views and holds the few
 // constants that are part of the design rather than the record.
+//
+// The record is fetched (not imported) with a cache-busting timestamp: CDN and
+// browser caches hold .js/.json assets for hours, and the record must be fresh
+// on every page load — the app shell may cache, the data may not.
 
-import record from './data/record.js';
+const record = await (await fetch(new URL('./data/record.json', import.meta.url).href + '?t=' + Date.now())).json();
 
 export const P = { cyber: 'Cybersecurity', physical: 'Physical security', fraud: 'Fraud', resilience: 'Resilience', data: 'Data risk', ai: 'Artificial intelligence', tp: 'Third-party risk', insider: 'Insider threat' };
 export const PS = { cyber: 'Cyber', physical: 'Physical', fraud: 'Fraud', resilience: 'Resilience', data: 'Data', ai: 'AI', tp: 'Third-party', insider: 'Insider' };
