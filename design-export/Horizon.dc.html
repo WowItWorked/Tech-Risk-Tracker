@@ -1,0 +1,2020 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..700&amp;family=Public+Sans:ital,wght@0,300..800;1,400..600&amp;family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&amp;family=JetBrains+Mono:wght@400;500&amp;family=Spline+Sans+Mono:wght@400;500&amp;family=Fragment+Mono&amp;display=swap">
+  <style>
+    html, body { margin: 0; padding: 0; background: #FFFFFF; }
+    body { color: #14171A; font-family: 'Public Sans', system-ui, sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+    * { box-sizing: border-box; }
+    a { color: #0069AA; text-decoration-color: #C5E2F0; text-underline-offset: 3px; }
+    a:hover { color: #005A93; text-decoration-color: #005A93; }
+    button, input, select, textarea { font: inherit; color: inherit; background: none; border: none; padding: 0; }
+    button { cursor: pointer; text-align: inherit; }
+    input::placeholder, textarea::placeholder { color: #97A0A8; opacity: 1; }
+    :focus-visible { outline: 3px solid rgba(0, 105, 170, 0.35); outline-offset: 2px; }
+    ::selection { background: #10314F; color: #FFFFFF; }
+    @keyframes hzPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.2; } }
+    @keyframes hzHl { 0% { background-color: #FDEAD7; } 100% { background-color: transparent; } }
+    @keyframes hzIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+  </style>
+</helmet>
+
+<div style="min-height: 100vh; display: flex; flex-direction: column; background: #FFFFFF; color: #14171A; font-family: 'Public Sans', system-ui, sans-serif;">
+
+  <!-- ============================== HEADER ============================== -->
+  <header style="width: 100%;">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 32px);">
+
+      <!-- Full masthead — every page -->
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px 16px; padding: 14px 0 0 0; font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: #4D555C;">
+          <span style="color: #6B747C; margin-left: auto;">Demonstration edition</span>
+        </div>
+        <h1 style="margin: 0; padding: 8px 0 14px 0; text-align: center; font-family: 'Source Serif 4', Georgia, serif; font-optical-sizing: auto; font-size: clamp(34px, 5.4vw, 56px); font-weight: 600; letter-spacing: -0.02em; line-height: 1; color: #14171A;"><button onClick="{{ goToday }}" style="font: inherit; color: inherit; letter-spacing: inherit;">Tech Risk Tracker</button></h1>
+        <div style="border-top: 1px solid #D7DBDF; border-bottom: 3px double #BCC2C8; padding: 6px 0; display: flex; flex-wrap: wrap; justify-content: center; column-gap: 22px; row-gap: 2px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; letter-spacing: 0.04em; color: #4D555C;">
+          <span style="font-weight: 600; color: #14171A;">{{ dateLong }}</span>
+          <span>Daily Edition — Issued 6:00 AM ET</span>
+        </div>
+      </div>
+
+      <!-- Persistent nav -->
+      <nav onMouseLeave="{{ navLeave }}" style="position: relative; border-bottom: 2px solid #14171A; display: flex; justify-content: space-between; align-items: center; gap: clamp(16px, 4vw, 56px);">
+        <div style="flex: 1 1 600px; min-width: 0; display: flex; flex-wrap: wrap; gap: 0 clamp(14px, 3vw, 30px);">
+          <sc-for list="{{ navItems }}" as="n" hint-placeholder-count="4">
+            <span onMouseEnter="{{ n.enter }}" style="display: inline-block;">
+              <button onClick="{{ n.click }}" aria-haspopup="{{ n.hasMenu }}" aria-expanded="{{ n.menuOpen }}" aria-label="{{ n.ariaLabel }}" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.03em; padding: 10px 0 8px 0; white-space: nowrap; color: {{ n.color }}; border-bottom: 2px solid {{ n.border }}; margin-bottom: -2px;" style-hover="color: #14171A;"><sc-if value="{{ n.isBurger }}" hint-placeholder-val="{{ false }}"><span aria-hidden="true" style="display: inline-flex; flex-direction: column; gap: 4px; padding: 4px 2px 3px 2px;"><span style="display: block; width: 20px; height: 2px; background: #14171A;"></span><span style="display: block; width: 20px; height: 2px; background: #14171A;"></span><span style="display: block; width: 20px; height: 2px; background: #14171A;"></span></span></sc-if><sc-if value="{{ n.notBurger }}" hint-placeholder-val="{{ true }}"><span>{{ n.label }}</span><sc-if value="{{ n.hasMenu }}" hint-placeholder-val="{{ false }}"><span style="display: inline-block; font-size: 8.5px; color: #97A0A8; padding-left: 5px; vertical-align: 2px; transform: {{ n.caretT }}; transition: transform 140ms cubic-bezier(0.2, 0, 0, 1);">▼</span></sc-if></sc-if></button>
+            </span>
+          </sc-for>
+        </div>
+        <div style="display: flex; align-items: center; gap: 12px; min-width: 0; flex: 1 1 280px; max-width: 460px; justify-content: flex-end;">
+          <span style="position: relative; display: inline-flex; min-width: 0; flex: 1;">
+            <button onClick="{{ gsBtn }}" title="Search — press / anywhere" aria-label="Search" style="display: inline-flex; align-items: center; color: #6B747C; border-bottom: 1px solid #BCC2C8; padding: 3px 6px 4px 0;" style-hover="color: #14171A;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.5" y2="16.5"></line></svg></button>
+            <input ref="{{ gsRef }}" value="{{ gq }}" onChange="{{ onGq }}" onFocus="{{ onGsFocus }}" onBlur="{{ onGsBlur }}" onKeyDown="{{ onGsKey }}" placeholder="Search" aria-label="Search the confirmed record" title="Search everything confirmed — press /" style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11.5px; color: #14171A; background: transparent; border-bottom: 1px solid #BCC2C8; padding: 3px 2px; width: 100%; min-width: 110px;" style-focus="border-bottom-color: #10314F;">
+            <sc-if value="{{ gsOpen }}" hint-placeholder-val="{{ false }}">
+              <div style="position: absolute; top: calc(100% + 8px); right: 0; z-index: 60; width: min(520px, 88vw); background: #FFFFFF; border: 1px solid #BCC2C8; border-radius: 6px; box-shadow: 0 12px 28px rgba(16, 49, 79, 0.16), 0 4px 8px rgba(16, 49, 79, 0.08); overflow: hidden; animation: hzIn 140ms cubic-bezier(0.2, 0, 0, 1);">
+                <sc-for list="{{ gsResults }}" as="r" hint-placeholder-count="3">
+                  <button onMouseDown="{{ r.go }}" style="display: grid; grid-template-columns: 58px 1fr auto; align-items: baseline; gap: 10px; width: 100%; padding: 9px 14px; border-bottom: 1px solid #E9EBED; text-align: left;" style-hover="background: #E9EBED;">
+                    <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 9px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #6B747C;">{{ r.kind }}</span>
+                    <span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 14.5px; line-height: 1.35; color: #14171A; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">{{ r.title }}</span>
+                    <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10px; color: #97A0A8; white-space: nowrap;">{{ r.meta }}</span>
+                  </button>
+                </sc-for>
+                <sc-if value="{{ gsEmpty }}" hint-placeholder-val="{{ false }}">
+                  <div style="padding: 14px 16px; font-size: 14.5px; font-style: italic; color: #6B747C;">No matches in the confirmed record for “{{ gq }}”.</div>
+                </sc-if>
+                <div style="padding: 7px 14px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 9.5px; letter-spacing: 0.08em; text-transform: uppercase; color: #97A0A8; background: #F4F5F6;">{{ gsCountLabel }} · ↵ opens first · esc closes</div>
+              </div>
+            </sc-if>
+          </span>
+        <sc-if value="{{ menuPanelOpen }}" hint-placeholder-val="{{ false }}">
+          <button onClick="{{ menuPanelClose }}" aria-label="Close menu" style="position: fixed; inset: 0; z-index: 69; background: transparent; cursor: default;"></button>
+          <div style="position: absolute; top: 100%; left: 0; width: min(340px, calc(100vw - 32px)); z-index: 70; background: #FFFFFF; border: 1px solid #BCC2C8; border-top: 2px solid #14171A; border-radius: 0 0 6px 6px; box-shadow: 0 12px 28px rgba(16, 49, 79, 0.14), 0 4px 8px rgba(16, 49, 79, 0.07); padding: 8px; animation: hzIn 140ms cubic-bezier(0.2, 0, 0, 1);">
+            <div style="display: grid; grid-template-columns: 1fr; gap: 1px;">
+              <sc-for list="{{ menuPanelItems }}" as="mi" hint-placeholder-count="4">
+                <button onClick="{{ mi.go }}" style="display: block; width: 100%; text-align: left; padding: 8px 10px; border-radius: 4px;" style-hover="background: #E9EBED;">
+                  <span style="display: block; font-family: 'Source Serif 4', Georgia, serif; font-size: 15px; font-weight: 500; line-height: 1.3; color: #14171A;">{{ mi.label }}</span>
+                  <span style="display: block; margin-top: 1px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; color: #6B747C;">{{ mi.meta }}</span>
+                </button>
+              </sc-for>
+            </div>
+            <sc-if value="{{ menuPanelHasFooter }}" hint-placeholder-val="{{ true }}">
+            <button onClick="{{ menuPanelFooterGo }}" style="display: block; width: 100%; text-align: left; margin-top: 6px; padding: 8px 10px 5px 10px; border-top: 1px solid #E9EBED; font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #0069AA;" style-hover="text-decoration: underline;">{{ menuPanelFooter }} →</button>
+            </sc-if>
+          </div>
+        </sc-if>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================== MAIN ============================== -->
+  <main style="flex: 1; width: 100%; max-width: 1320px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 32px) 56px clamp(16px, 4vw, 32px);">
+
+    <!-- ============ TODAY ============ -->
+    <sc-if value="{{ isToday }}" hint-placeholder-val="{{ true }}">
+      <div data-screen-label="Today — front page" style="display: flex; flex-wrap: wrap; gap: 56px; padding-top: 26px; animation: hzIn 200ms cubic-bezier(0.2, 0, 0, 1);">
+
+        <!-- Lead column -->
+        <div style="flex: 1 1 600px; min-width: 0;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px 16px;">
+            <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;">The daily brief</span>
+          </div>
+          <h2 style="margin: 12px 0 10px 0; font-family: 'Source Serif 4', Georgia, serif; font-optical-sizing: auto; font-size: clamp(30px, 4.6vw, 43px); line-height: 1.12; font-weight: 600; letter-spacing: -0.015em; color: #14171A; text-wrap: pretty;">File-transfer attacks breach the sector’s edge as the OCC folds AI into rules it already had</h2>
+          <p style="margin: 0 0 16px 0; font-size: 19px; line-height: 1.5; color: #4D555C; max-width: 62ch; text-wrap: pretty;">Three changes confirmed overnight: a software flaw under active attack at two critical vendors, a Treasury warning on instant-payment fraud, and a move on AI this record has anticipated since March.</p>
+
+          <sc-for list="{{ leadItems }}" as="li" hint-placeholder-count="3">
+            <div style="display: flex; gap: 14px; padding: 13px 0; border-top: 1px solid #E9EBED;">
+              <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 12px; color: #10314F; min-width: 16px; padding-top: 3px;">{{ li.n }}</span>
+              <div style="min-width: 0;">
+                <p style="margin: 0; font-size: 16.5px; line-height: 1.58; color: #14171A; text-wrap: pretty;">{{ li.text }}&nbsp;&nbsp;<span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #4D555C; background: #E9EBED; border-radius: 4px; padding: 2px 7px; white-space: nowrap; vertical-align: 2px;">{{ li.pillarLabel }}</span></p>
+                <p style="margin: 6px 0 0 0; font-family: 'Public Sans', system-ui, sans-serif; font-size: 12.5px; line-height: 1.55; color: #4D555C; max-width: 78ch; text-wrap: pretty;"><span style="font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #10314F;">Why it matters</span> — {{ li.why }}</p>
+                <div style="margin-top: 5px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 11.5px; color: #6B747C;">Source: <a href="{{ li.srcUrl }}" target="_blank" rel="noopener" title="{{ li.srcTitle }}" style="color: #0069AA; text-decoration: underline; text-decoration-color: #C5E2F0; text-underline-offset: 2px;">{{ li.srcText }} ↗</a></div>
+              </div>
+            </div>
+          </sc-for>
+
+          <!-- The wire -->
+          <div style="margin-top: 36px; border-top: 2px solid #14171A; padding-top: 10px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px 16px;">
+              <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;">The wire — every update today</span>
+              <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #6B747C;">updated {{ lastRunStr }} et · {{ wireCount }} items</span>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px 18px; padding: 10px 0; border-bottom: 1px solid #D7DBDF;">
+              <div style="display: flex; flex-wrap: wrap; gap: 2px 14px;">
+                <sc-for list="{{ pillarChips }}" as="pc" hint-placeholder-count="8">
+                  <button onClick="{{ pc.select }}" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 3px 0 2px 0; color: {{ pc.color }}; border-bottom: 2px solid {{ pc.border }};" style-hover="color: #14171A;">{{ pc.label }}</button>
+                </sc-for>
+              </div>
+              <div style="display: flex; align-items: center; gap: 16px;">
+                <button onClick="{{ toggleSort }}" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #6B747C;" style-hover="color: #14171A;">sort: {{ sortLabel }} ▾</button>
+                <input value="{{ wireQ }}" onChange="{{ onWireQ }}" placeholder="search the wire" aria-label="Search the wire" style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11.5px; color: #14171A; background: transparent; border-bottom: 1px solid #BCC2C8; padding: 3px 2px; width: 150px;" style-focus="border-bottom-color: #10314F;">
+              </div>
+            </div>
+            <sc-for list="{{ wire }}" as="w" hint-placeholder-count="8">
+              <div style="display: grid; grid-template-columns: 56px 1fr; gap: 14px; padding: {{ rowPad }}; padding-left: 10px; border-left: 3px solid {{ w.leftRule }}; border-bottom: 1px solid #E9EBED; animation: {{ w.anim }};" style-hover="background: #F4F5F6;">
+                <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11.5px; color: #6B747C; padding-top: 3px;">{{ w.time }}</span>
+                <div style="min-width: 0;">
+                  <div style="font-size: 17px; line-height: 1.45; font-weight: {{ w.titleWeight }}; font-style: {{ w.titleStyle }}; color: {{ w.titleColor }}; text-wrap: pretty;">{{ w.title }}</div>
+                  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; margin-top: 5px;">
+                    <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #4D555C;">{{ w.pillarLabel }}</span>
+                    <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: {{ w.triFg }}; background: {{ w.triBg }}; border: 1px solid {{ w.triBd }}; border-radius: 4px; padding: 2px 6px; line-height: 1.3;">{{ w.triage }}</span>
+                    <sc-if value="{{ w.isPending }}" hint-placeholder-val="{{ false }}"><span title="Reported by one source; the system is verifying before it enters the record" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-style: italic; color: #6B747C;">awaiting verification</span></sc-if>
+                    <a href="{{ w.srcUrl }}" target="_blank" rel="noopener" title="{{ w.srcTitle }}" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; color: #0069AA; text-decoration: underline; text-decoration-color: #BCC2C8; text-underline-offset: 2px;">— {{ w.source }} ↗</a>
+                    <sc-if value="{{ w.linked }}" hint-placeholder-val="{{ false }}">
+                      <button onClick="{{ w.open }}" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 0.08em; color: #0069AA;" style-hover="text-decoration: underline;">risk area →</button>
+                    </sc-if>
+                  </div>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+
+        <!-- Right rail -->
+        <aside style="flex: 1 1 280px; max-width: 460px; min-width: 0;">
+          <div style="border-top: 2px solid #14171A; padding-top: 10px; margin-bottom: 28px;">
+            <div style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;">Updates in past 30 days by category</div>
+            <div style="margin-top: 8px;">
+              <sc-for list="{{ velocity }}" as="v" hint-placeholder-count="7">
+                <button onClick="{{ v.open }}" title="Read this pillar’s confirmed items and sources" style="display: grid; grid-template-columns: 1fr 84px 28px; align-items: center; gap: 10px; padding: 6.5px 0; border-bottom: 1px solid #E9EBED; width: 100%;" style-hover="background: #F4F5F6;">
+                  <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #10314F;">{{ v.label }}</span>
+                  <span style="display: block; height: 6px; background: #E9EBED;"><span style="display: block; height: 6px; width: {{ v.pct }}%; background: #F58025;"></span></span>
+                  <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 12px; color: #14171A; text-align: right;">{{ v.n }}</span>
+                </button>
+              </sc-for>
+              <div style="display: flex; justify-content: space-between; padding: 7px 0; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #6B747C;">
+                <span>Total</span><span>{{ vtotal }}</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="border-top: 2px solid #14171A; padding-top: 10px; margin-bottom: 28px;">
+            <div style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;">Next update</div>
+            <p style="margin: 8px 0 0 0; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 13px; line-height: 1.6; color: #14171A;">{{ nextRunStr }} et — in {{ countdown }}</p>
+            <p style="margin: 6px 0 0 0; font-family: 'Public Sans', system-ui, sans-serif; font-size: 12px; line-height: 1.5; color: #6B747C; text-wrap: pretty;">Sources are checked every 30 minutes. The next daily brief publishes weekdays at 6:00 am et.</p>
+          </div>
+
+          <div style="border-top: 2px solid #14171A; padding-top: 10px;">
+            <div style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;">Upcoming publications</div>
+            <div style="margin-top: 8px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 12.5px; line-height: 1.5; color: #4D555C;">
+              <button onClick="{{ pubGoWeekly }}" title="Open the weekly digest archive" style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; width: 100%; padding: 6px 0; border-bottom: 1px solid #E9EBED;" style-hover="background: #F4F5F6;"><span style="color: #0069AA; white-space: nowrap;">Weekly digest →</span><span style="color: #6B747C; font-size: 11.5px; text-align: right;">Fri, Jul 10</span></button>
+              <button onClick="{{ pubGoMonthly }}" title="Open the latest monthly report" style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; width: 100%; padding: 6px 0; border-bottom: 1px solid #E9EBED;" style-hover="background: #F4F5F6;"><span style="color: #0069AA; white-space: nowrap;">Monthly report →</span><span style="color: #6B747C; font-size: 11.5px; text-align: right;">Sat, Aug 1</span></button>
+              <button onClick="{{ pubGoDaily }}" title="Open today’s brief" style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; width: 100%; padding: 6px 0;" style-hover="background: #F4F5F6;"><span style="color: #0069AA; white-space: nowrap;">Daily brief →</span><span style="color: #6B747C; font-size: 11.5px; text-align: right;">weekdays 6:00 am et</span></button>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </sc-if>
+
+    <!-- ============ RISK AREAS INDEX ============ -->
+    <sc-if value="{{ isRiskIndex }}" hint-placeholder-val="{{ false }}">
+      <div data-screen-label="Risk areas — index" style="padding-top: 26px; animation: hzIn 200ms cubic-bezier(0.2, 0, 0, 1);">
+        <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;">Risk areas — standing watches</span>
+        <h2 style="margin: 10px 0 6px 0; font-family: 'Source Serif 4', Georgia, serif; font-size: clamp(28px, 4vw, 38px); line-height: 1.15; font-weight: 600; letter-spacing: -0.015em; color: #14171A;">Eight risks, monitored continuously</h2>
+        <p style="margin: 0; font-size: 15.5px; line-height: 1.6; color: #4D555C; column-width: 420px; column-gap: 56px; text-wrap: pretty;">Each risk area is a living page: current state, a standing assessment, a confirmed changelog, and its sources. The weight sits on the evolving edge — frontier labs like Anthropic and OpenAI, the processors that run the sector’s core (Fiserv, FIS, Jack Henry), the agencies in between, banking trade groups (ABA, BPI, Nacha, FS-ISAC), policy research (Columbia SIPA), and vetted trusted press. Emphasis falls on changes with systemic reach — shared infrastructure, common providers, sector-wide patterns — over single-institution noise.</p>
+        <div style="border-top: 2px solid #14171A; margin-top: 24px;"></div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(460px, 100%), 1fr)); column-gap: 56px; align-items: start;">
+        <sc-for list="{{ riskIndex }}" as="ri" hint-placeholder-count="8">
+          <button onClick="{{ ri.open }}" style="display: grid; grid-template-columns: 1fr auto; gap: 6px 18px; align-items: baseline; width: 100%; padding: 15px 0; border-bottom: 1px solid #E9EBED; text-align: left;" style-hover="background: #F4F5F6;">
+            <span style="min-width: 0;">
+              <span style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px;">
+                <span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 20px; font-weight: 600; letter-spacing: -0.01em; color: #14171A;">{{ ri.name }}</span>
+                <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10.5px; color: #97A0A8;">{{ ri.meta }}</span>
+              </span>
+              <span style="display: block; margin-top: 4px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 13px; line-height: 1.5; color: #4D555C; max-width: 82ch; text-wrap: pretty;">{{ ri.watch }}</span>
+            </span>
+            <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #10314F; white-space: nowrap;">Open →</span>
+          </button>
+        </sc-for>
+        </div>
+      </div>
+    </sc-if>
+
+    <!-- ============ DOSSIER ============ -->
+    <sc-if value="{{ isDossier }}" hint-placeholder-val="{{ false }}">
+      <div data-screen-label="Risk area — entity page" style="padding-top: 26px; animation: hzIn 200ms cubic-bezier(0.2, 0, 0, 1);">
+        <div style="display: flex; flex-wrap: wrap; gap: 56px;">
+          <div style="flex: 1 1 560px; min-width: 0;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px 16px;">
+          <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;">Risk — {{ raScope }}</span>
+        </div>
+        <h2 style="margin: 10px 0 8px 0; font-family: 'Source Serif 4', Georgia, serif; font-optical-sizing: auto; font-size: clamp(28px, 4vw, 40px); line-height: 1.15; font-weight: 600; letter-spacing: -0.015em; color: #14171A; max-width: 26ch; text-wrap: pretty;">{{ raName }}</h2>
+        <p style="margin: 0 0 10px 0; font-size: 17px; line-height: 1.5; color: #4D555C; max-width: 62ch; text-wrap: pretty;">{{ raWatch }}</p>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 26px;">
+          <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11.5px; color: #14171A;">as of July 9, 2026</span>
+          <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10.5px; font-weight: 600; color: #10314F; border: 1px solid #10314F; border-radius: 4px; padding: 1px 6px;">{{ raVer }}</span>
+        </div>
+
+            <div style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #6B747C; border-bottom: 1px solid #D7DBDF; padding-bottom: 6px;">Current state</div>
+            <p style="margin: 14px 0 0 0; font-size: 16.5px; line-height: 1.62; color: #14171A; max-width: 76ch; text-wrap: pretty;">{{ raP1 }}</p>
+            <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 3px 14px; margin-top: 7px;"><span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #6B747C;">Sources</span><sc-for list="{{ raP1Sources }}" as="sx" hint-placeholder-count="2"><a href="{{ sx.url }}" target="_blank" rel="noopener" title="{{ sx.title }}" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11.5px; color: #0069AA; text-decoration: underline; text-decoration-color: #C5E2F0; text-underline-offset: 2px;">{{ sx.text }} ↗</a></sc-for></div>
+            <p style="margin: 12px 0 0 0; font-size: 16.5px; line-height: 1.62; color: #14171A; max-width: 76ch; text-wrap: pretty;">{{ raP2 }}</p>
+            <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 3px 14px; margin-top: 7px;"><span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #6B747C;">Sources</span><sc-for list="{{ raP2Sources }}" as="sy" hint-placeholder-count="2"><a href="{{ sy.url }}" target="_blank" rel="noopener" title="{{ sy.title }}" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11.5px; color: #0069AA; text-decoration: underline; text-decoration-color: #C5E2F0; text-underline-offset: 2px;">{{ sy.text }} ↗</a></sc-for></div>
+            <div style="border-top: 2px solid #14171A; background: #F4F5F6; margin: 18px 0; padding: 14px 18px 16px 18px;">
+              <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #10314F;">Current assessment</span>
+              <p style="margin: 8px 0 0 0; font-size: 17px; line-height: 1.55; font-weight: 500; color: #14171A; max-width: 72ch; text-wrap: pretty;">{{ raAssess }}&nbsp;&nbsp;<span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #4D555C; border: 1px solid #D7DBDF; border-radius: 4px; padding: 1px 5px; white-space: nowrap; vertical-align: 2px;">{{ raConf }}</span></p>
+              <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 3px 14px; margin-top: 7px;"><span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #6B747C;">Sources</span><sc-for list="{{ raAssessSources }}" as="sz" hint-placeholder-count="2"><a href="{{ sz.url }}" target="_blank" rel="noopener" title="{{ sz.title }}" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11.5px; color: #0069AA; text-decoration: underline; text-decoration-color: #C5E2F0; text-underline-offset: 2px;">{{ sz.text }} ↗</a></sc-for></div>
+            </div>
+
+            <div style="margin-top: 30px; border-top: 2px solid #14171A; padding-top: 10px;">
+              <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px 16px; margin-bottom: 14px;">
+                <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;">Key change update</span>
+                <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #6B747C;">newest first · {{ raVerRange }}</span>
+              </div>
+              <sc-for list="{{ timeline }}" as="e" hint-placeholder-count="6">
+                <div style="display: grid; grid-template-columns: 76px 18px 1fr; column-gap: 12px; padding: 2px 0 0 0; animation: {{ e.anim }};">
+                  <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; line-height: 1.5; color: #6B747C; text-align: right; padding-top: 2px;">{{ e.date }}</span>
+                  <span style="position: relative; display: block;">
+                    <span style="position: absolute; left: 8px; top: 6px; bottom: -6px; width: 1px; background: {{ e.tail }};"></span>
+                    <span style="position: absolute; left: 4.5px; top: 5px; width: 8px; height: 8px; background: {{ e.nodeBg }}; border: 1px solid {{ e.nodeBd }};"></span>
+                  </span>
+                  <div style="padding-bottom: 22px; min-width: 0;">
+                    <div style="font-size: 16px; line-height: 1.5; font-style: {{ e.lineStyle }}; color: {{ e.lineColor }}; text-wrap: pretty;">{{ e.line }}</div>
+                    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; margin-top: 4px;">
+                      <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10.5px; font-weight: 600; color: #10314F;">{{ e.ver }}</span>
+                      <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: {{ e.stW }}; letter-spacing: {{ e.stLs }}; text-transform: {{ e.stTr }}; font-style: {{ e.stStyle }}; color: {{ e.stFg }};">{{ e.status }}</span>
+                      <a href="{{ e.srcUrl }}" target="_blank" rel="noopener" title="{{ e.srcTitle }}" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; color: #0069AA; text-decoration: underline; text-decoration-color: #BCC2C8; text-underline-offset: 2px;">— {{ e.source }} ↗</a>
+                    </div>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+
+          <aside style="flex: 1 1 280px; max-width: 460px; min-width: 0;">
+            <div style="border-top: 2px solid #14171A; padding-top: 10px; margin-bottom: 28px;">
+              <div style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;">Monitored feeds — government, trade &amp; press</div>
+              <sc-for list="{{ raFeeds }}" as="f" hint-placeholder-count="4">
+                <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 7px 0; border-bottom: 1px solid #E9EBED;">
+                  <a href="{{ f.url }}" target="_blank" rel="noopener" title="Open this publication" style="font-family: 'Source Serif 4', Georgia, serif; font-size: 14.5px; color: #0069AA; text-decoration: underline; text-decoration-color: #BCC2C8; text-underline-offset: 2px; white-space: nowrap;">{{ f.name }} ↗</a>
+                  <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; color: #6B747C; text-align: right;">{{ f.desc }}</span>
+                </div>
+              </sc-for>
+              <p style="margin: 8px 0 0 0; font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; line-height: 1.5; color: #6B747C; text-wrap: pretty;">Press and trade-group reporting enters the record on a single credible source, polled on the same half-hour cycle as official sources.</p>
+            </div>
+            <div style="border-top: 2px solid #14171A; padding-top: 10px; margin-bottom: 28px;">
+              <div style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;">Coverage</div>
+              <div style="margin-top: 8px; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 12px; line-height: 1.5; color: #4D555C;">
+                <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid #E9EBED;"><span>confirmed events</span><span style="color: #14171A;">{{ raConfirmed }}</span></div>
+                <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid #E9EBED;"><span>pending</span><span style="font-style: italic; color: #6B747C;">{{ raPending }}</span></div>
+                <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid #E9EBED;"><span>primary sources</span><span style="color: #14171A;">{{ raSrcCount }}</span></div>
+                <div style="display: flex; justify-content: space-between; padding: 4px 0;"><span>category</span><span style="color: #14171A;">{{ raPillar }}</span></div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </sc-if>
+
+    <!-- ============ PUBLICATIONS ============ -->
+    <sc-if value="{{ isPublications }}" hint-placeholder-val="{{ false }}">
+      <div data-screen-label="Publications archive" style="padding-top: 26px; animation: hzIn 200ms cubic-bezier(0.2, 0, 0, 1);">
+        <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;">Publications — the archive</span>
+        <h2 style="margin: 10px 0 6px 0; font-family: 'Source Serif 4', Georgia, serif; font-size: clamp(28px, 4vw, 38px); line-height: 1.15; font-weight: 600; letter-spacing: -0.015em; color: #14171A;">Back issues</h2>
+        <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4D555C; max-width: 90ch; text-wrap: pretty;">Every issue the system has published, in one place. Daily briefs cover what changed overnight, weekly digests pull the week together, and monthly reports read the longer arc — all drawn from the same confirmed record.</p>
+
+        <section data-pub-sec="monthly" style="border-top: 2px solid #14171A; margin-top: 28px; padding-top: 10px;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px 16px;">
+            <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;">Monthly reports</span>
+            <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #6B747C;">depth · twelve a year · 6 issues</span>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(460px, 100%), 1fr)); column-gap: 56px; align-items: start;">
+          <sc-for list="{{ monthlies }}" as="m" hint-placeholder-count="4">
+            <div style="display: grid; grid-template-columns: 92px 1fr auto; gap: 8px 18px; align-items: baseline; padding: 16px 0; border-bottom: 1px solid #E9EBED;">
+              <span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 30px; font-weight: 600; letter-spacing: -0.01em; color: {{ m.numColor }};">No. {{ m.no }}</span>
+              <div style="min-width: 0;">
+                <sc-if value="{{ m.linked }}" hint-placeholder-val="{{ false }}">
+                  <button onClick="{{ m.open }}" style="font-family: 'Source Serif 4', Georgia, serif; font-size: 20px; line-height: 1.3; font-weight: 600; color: #14171A; text-wrap: pretty;" style-hover="text-decoration: underline; text-decoration-color: #97A0A8;">{{ m.title }}</button>
+                </sc-if>
+                <sc-if value="{{ m.unlinked }}" hint-placeholder-val="{{ false }}">
+                  <span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 20px; line-height: 1.3; font-weight: 600; color: #14171A; text-wrap: pretty;">{{ m.title }}</span>
+                </sc-if>
+                <div style="margin-top: 4px; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #6B747C;">{{ m.month }} · issued {{ m.issued }} · {{ m.changes }} confirmed changes · record {{ m.commit }}</div>
+              </div>
+              <sc-if value="{{ m.linked }}" hint-placeholder-val="{{ false }}">
+                <button onClick="{{ m.open }}" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #0069AA; white-space: nowrap;" style-hover="text-decoration: underline;">Read →</button>
+              </sc-if>
+              <sc-if value="{{ m.unlinked }}" hint-placeholder-val="{{ false }}">
+                <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-style: italic; color: #97A0A8; white-space: nowrap;">archived</span>
+              </sc-if>
+            </div>
+          </sc-for>
+          </div>
+        </section>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(430px, 100%), 1fr)); gap: 0 56px; align-items: start;">
+        <section data-pub-sec="weekly" style="border-top: 2px solid #14171A; margin-top: 34px; padding-top: 10px;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px 16px;">
+            <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;">Weekly digests</span>
+            <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #6B747C;">synthesis · fridays · showing {{ wkShowingLabel }} of 31</span>
+          </div>
+          <sc-for list="{{ weeklies }}" as="wk" hint-placeholder-count="6">
+            <div style="display: grid; grid-template-columns: 92px 1fr auto; gap: 8px 18px; align-items: baseline; padding: 10px 0; border-bottom: 1px solid #E9EBED;">
+              <span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 17px; font-weight: 600; color: #14171A;">No. {{ wk.no }}</span>
+              <span style="min-width: 0;"><span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 13.5px; color: #4D555C;">{{ wk.range }}</span> <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #6B747C;">· {{ wk.meta }}</span></span>
+              <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-style: italic; color: #97A0A8; white-space: nowrap;">archived</span>
+            </div>
+          </sc-for>
+          <sc-if value="{{ wkHasMore }}" hint-placeholder-val="{{ false }}">
+            <button onClick="{{ wkToggle }}" style="margin-top: 10px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #0069AA;" style-hover="text-decoration: underline;">{{ wkMoreLabel }}</button>
+          </sc-if>
+        </section>
+
+        <section data-pub-sec="daily" style="border-top: 2px solid #14171A; margin-top: 34px; padding-top: 10px;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px 16px;">
+            <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;">Daily briefs</span>
+            <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #6B747C;">speed · weekdays 6:00 am et · showing {{ dShowingLabel }} of 128</span>
+          </div>
+          <sc-for list="{{ dailies }}" as="d" hint-placeholder-count="10">
+            <div style="display: grid; grid-template-columns: 92px 1fr auto; gap: 8px 18px; align-items: baseline; padding: 10px 0; border-bottom: 1px solid #E9EBED;">
+              <span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 17px; font-weight: 600; color: #14171A;">No. {{ d.no }}</span>
+              <span style="min-width: 0;"><span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 13.5px; color: #4D555C;">{{ d.date }}</span> <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #6B747C;">· {{ d.confirmed }} confirmed · <span style="font-style: italic; color: #6B747C;">{{ d.pending }} pending</span><sc-if value="{{ d.hasFlash }}" hint-placeholder-val="{{ false }}"><span style="color: #8E1B12;"> · {{ d.flash }} flash</span></sc-if></span></span>
+              <sc-if value="{{ d.linked }}" hint-placeholder-val="{{ false }}">
+                <button onClick="{{ d.open }}" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #0069AA; white-space: nowrap;" style-hover="text-decoration: underline;">Open →</button>
+              </sc-if>
+              <sc-if value="{{ d.unlinked }}" hint-placeholder-val="{{ false }}">
+                <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-style: italic; color: #97A0A8; white-space: nowrap;">archived</span>
+              </sc-if>
+            </div>
+          </sc-for>
+          <sc-if value="{{ dHasMore }}" hint-placeholder-val="{{ false }}">
+            <button onClick="{{ dToggle }}" style="margin-top: 10px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #0069AA;" style-hover="text-decoration: underline;">{{ dMoreLabel }}</button>
+          </sc-if>
+        </section>
+        </div>
+
+        <section data-pub-sec="catchup" style="border-top: 2px solid #14171A; margin-top: 34px; padding-top: 10px;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px 16px;">
+            <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;">Catch-up briefs</span>
+            <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #6B747C;">saved renders from meeting prep · retrievable any time</span>
+          </div>
+          <sc-for list="{{ savedBriefs }}" as="cb" hint-placeholder-count="3">
+            <div style="display: grid; grid-template-columns: 92px 1fr auto; gap: 8px 18px; align-items: baseline; padding: 10px 0; border-bottom: 1px solid #E9EBED;">
+              <span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 17px; font-weight: 600; color: #14171A;">No. {{ cb.no }}</span>
+              <span style="min-width: 0;"><span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 13.5px; color: #4D555C;">since {{ cb.sinceStr }} — {{ cb.count }} confirmed changes</span> <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #6B747C;">· {{ cb.id }} · saved {{ cb.ts }}</span></span>
+              <button onClick="{{ cb.open }}" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #0069AA; white-space: nowrap;" style-hover="text-decoration: underline;">Open →</button>
+            </div>
+          </sc-for>
+        </section>
+      </div>
+    </sc-if>
+
+    <!-- ============ MONTHLY REPORT ============ -->
+    <sc-if value="{{ isMonthly }}" hint-placeholder-val="{{ false }}">
+      <div data-screen-label="Monthly report — No. 6" style="padding-top: 30px; animation: hzIn 200ms cubic-bezier(0.2, 0, 0, 1);">
+        <div style="text-align: center; max-width: 760px; margin: 0 auto;">
+          <div style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #10314F;">Horizon monthly</div>
+          <div style="margin: 8px auto 0 auto; width: 56px; border-top: 1px solid #14171A;"></div>
+          <div style="margin-top: 10px; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11.5px; color: #6B747C;">No. 6 — June 2026</div>
+          <h2 style="margin: 12px auto 10px auto; font-family: 'Source Serif 4', Georgia, serif; font-optical-sizing: auto; font-size: clamp(30px, 4.5vw, 42px); line-height: 1.14; font-weight: 600; letter-spacing: -0.015em; color: #14171A; max-width: 22ch; text-wrap: pretty;">Model inventories move from expectation to instruction</h2>
+          <p style="margin: 0 auto; font-size: 17.5px; line-height: 1.5; color: #4D555C; max-width: 54ch; text-wrap: pretty;">Where the environment moved in June, category by category — and what it implies for controls posture.</p>
+          <div style="margin-top: 16px; padding: 8px 0; border-top: 1px solid #D7DBDF; border-bottom: 1px solid #D7DBDF; display: flex; flex-wrap: wrap; justify-content: center; column-gap: 18px; row-gap: 3px; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #6B747C;">
+            <span>issued July 1, 2026</span><span style="color: #BCC2C8;">·</span><span>covers June 1–30</span><span style="color: #BCC2C8;">·</span><span><span style="color: #14171A; font-weight: 600;">61</span> confirmed changes</span><span style="color: #BCC2C8;">·</span><span>record 9d31bb0</span>
+          </div>
+        </div>
+
+        <div style="max-width: 1040px; margin: 0 auto;">
+          <sc-for list="{{ monthlySections }}" as="ms" hint-placeholder-count="7">
+            <section style="margin-top: 34px;">
+              <div style="border-top: 2px solid #14171A; padding-top: 8px; display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px 16px;">
+                <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;">{{ ms.pillar }}</span>
+                <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #6B747C;">{{ ms.count }} confirmed items</span>
+              </div>
+              <h3 style="margin: 10px 0 0 0; font-family: 'Source Serif 4', Georgia, serif; font-size: 22px; line-height: 1.3; font-weight: 600; letter-spacing: -0.01em; color: #14171A; text-wrap: pretty;">{{ ms.head }}</h3>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr)); gap: 8px 56px; align-items: start;">
+                <div>
+              <sc-for list="{{ ms.grafs }}" as="g" hint-placeholder-count="2">
+                <p style="margin: 10px 0 0 0; font-size: 16.5px; line-height: 1.62; color: #14171A; max-width: 70ch; text-wrap: pretty;">{{ g.t }}</p>
+              </sc-for>
+                </div>
+                <div style="border-left: 1px solid #E9EBED; padding-left: 24px;">
+              <div style="margin-top: 12px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #6B747C;">Implications for controls posture</div>
+              <sc-for list="{{ ms.imps }}" as="im" hint-placeholder-count="2">
+                <div style="display: flex; gap: 10px; padding: 7px 0 0 0; align-items: baseline;">
+                  <span style="width: 5px; height: 5px; background: #14171A; flex-shrink: 0; position: relative; top: -2px;"></span>
+                  <p style="margin: 0; font-size: 15.5px; line-height: 1.55; color: #14171A; max-width: 66ch; text-wrap: pretty;">{{ im.t }}&nbsp;&nbsp;<span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #4D555C; border: 1px solid #D7DBDF; border-radius: 4px; padding: 1px 5px; white-space: nowrap; vertical-align: 2px;">{{ im.conf }}</span></p>
+                </div>
+              </sc-for>
+                </div>
+              </div>
+              <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 3px 14px; margin-top: 7px;"><span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #6B747C;">Sources</span><sc-for list="{{ ms.srcs }}" as="mx" hint-placeholder-count="2"><a href="{{ mx.url }}" target="_blank" rel="noopener" title="{{ mx.title }}" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11.5px; color: #0069AA; text-decoration: underline; text-decoration-color: #C5E2F0; text-underline-offset: 2px;">{{ mx.text }} ↗</a></sc-for></div>
+            </section>
+          </sc-for>
+
+          <div style="border-top: 1px solid #D7DBDF; margin-top: 34px; padding-top: 10px;">
+            
+            <p style="margin: 12px 0 0 0; font-family: 'Public Sans', system-ui, sans-serif; font-size: 12px; font-style: italic; color: #6B747C;">All 61 items passed the confirmation gate; 4 pending items at month-end were excluded and carry into July.</p>
+            <div style="margin-top: 12px; padding-top: 9px; border-top: 1px solid #E9EBED; font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #6B747C;">Drafted by the system · issued by Technology Risk</div>
+          </div>
+        </div>
+      </div>
+    </sc-if>
+
+    <!-- ============ DIFF ============ -->
+    <sc-if value="{{ isDiff }}" hint-placeholder-val="{{ false }}">
+      <div data-screen-label="Meeting prep — since your last meeting" style="padding-top: 26px; animation: hzIn 200ms cubic-bezier(0.2, 0, 0, 1);">
+        <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px 44px; margin-bottom: 16px;">
+          <div style="flex: 1 1 480px; min-width: 0;">
+            <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;">Meeting prep — the catch-up brief</span>
+            <h2 style="margin: 10px 0 6px 0; font-family: 'Source Serif 4', Georgia, serif; font-size: clamp(28px, 4vw, 38px); line-height: 1.15; font-weight: 600; letter-spacing: -0.015em; color: #14171A;">Since your last meeting</h2><p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4D555C; max-width: 72ch; text-wrap: pretty;">Pick the date of the last committee meeting and the tracker will render every confirmed change since in the respective risk area(s).&nbsp;</p>
+            
+          </div>
+          <div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 16px 28px; padding-bottom: 4px;">
+            <div>
+              <div style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #6B747C; margin-bottom: 5px;">Changes since</div>
+              <input type="date" value="{{ diffDate }}" onChange="{{ onDiffDate }}" aria-label="Changes since date" style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 13.5px; color: #14171A; background: transparent; border-bottom: 1px solid #BCC2C8; padding: 4px 2px; color-scheme: light;" style-focus="border-bottom-color: #10314F;">
+            </div>
+            <button onClick="{{ renderDiff }}" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #FFFFFF; background: #10314F; border: 1px solid #10314F; border-radius: 4px; padding: 9px 16px;" style-hover="background: #0B2438;" style-active="transform: translateY(1px);">Render brief</button>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 14px; margin-bottom: 10px; border-top: 1px solid #E9EBED; padding-top: 8px;">
+          <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #6B747C;">Filter</span>
+          <sc-for list="{{ diffChips }}" as="dc" hint-placeholder-count="9">
+            <button onClick="{{ dc.toggle }}" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 3px 0 2px 0; color: {{ dc.color }}; border-bottom: 2px solid {{ dc.border }};" style-hover="color: #14171A;">{{ dc.label }}</button>
+          </sc-for>
+        </div>
+        <div style="background: #F4F5F6; border: 1px solid #D7DBDF; border-radius: 4px; padding: 10px 16px; display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 20px; row-gap: 4px; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 12px; color: #4D555C;">
+          <sc-if value="{{ diffBusy }}" hint-placeholder-val="{{ false }}">
+            <span style="font-style: italic;">rendering against the confirmed ledger…</span>
+          </sc-if>
+          <sc-if value="{{ diffReady }}" hint-placeholder-val="{{ true }}">
+            <span><span style="color: #14171A; font-weight: 600;">{{ diffCount }} changes of note</span> since {{ diffSinceStr }}</span>
+            <sc-if value="{{ diffScoped }}" hint-placeholder-val="{{ false }}">
+              <span>category: <span style="color: #14171A; font-weight: 600;">{{ diffPillarLabel }}</span> · <button onClick="{{ showAllPillars }}" style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 12px; color: #0069AA;" style-hover="text-decoration: underline;">show all</button></span>
+            </sc-if>
+          </sc-if>
+        </div>
+
+        <sc-if value="{{ diffReady }}" hint-placeholder-val="{{ true }}">
+          <div>
+            <sc-if value="{{ diffUnscoped }}" hint-placeholder-val="{{ true }}">
+            <section style="border-top: 2px solid #14171A; margin-top: 26px; padding-top: 10px;">
+              <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px 16px;">
+                <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;">Executive summary — what should change your week</span>
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); column-gap: 56px; align-items: start;">
+              <sc-for list="{{ diffTakeaways }}" as="tw" hint-placeholder-count="3">
+                <div style="display: flex; gap: 12px; padding: 14px 0; border-bottom: 1px solid #E9EBED; align-items: baseline;">
+                  <span style="width: 6px; height: 6px; background: #10314F; flex-shrink: 0; position: relative; top: -1px;"></span>
+                  <div style="min-width: 0;">
+                    <div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 17.5px; line-height: 1.4; font-weight: 600; color: #14171A; text-wrap: pretty;">{{ tw.head }}&nbsp;&nbsp;<span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #4D555C; border: 1px solid #D7DBDF; border-radius: 4px; padding: 1px 5px; white-space: nowrap; vertical-align: 2px;">{{ tw.conf }}</span></div>
+                    <p style="margin: 5px 0 0 0; font-size: 15.5px; line-height: 1.55; color: #14171A; max-width: 70ch; text-wrap: pretty;">{{ tw.body }}</p>
+                    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; margin-top: 5px;">
+                      <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #4D555C;">{{ tw.pillars }}</span>
+                    </div>
+                  </div>
+                </div>
+              </sc-for>
+              </div>
+            </section>
+            </sc-if>
+            <div style="margin-top: 30px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #6B747C;">{{ diffListLabel }}</div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(460px, 100%), 1fr)); column-gap: 56px; align-items: start;">
+            <sc-for list="{{ diffGroups }}" as="g" hint-placeholder-count="4">
+              <section style="margin-top: 28px;">
+                <div style="display: flex; align-items: baseline; gap: 12px; border-bottom: 1px solid #14171A; padding-bottom: 6px;">
+                  <span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 19px; font-weight: 600; letter-spacing: -0.01em; color: #14171A;">{{ g.label }}</span>
+                  <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #6B747C;">{{ g.count }} confirmed</span>
+                </div>
+                <sc-for list="{{ g.items }}" as="di" hint-placeholder-count="4">
+                  <div style="display: grid; grid-template-columns: 76px 1fr; gap: 14px; padding: {{ rowPadTight }}; border-bottom: 1px solid #E9EBED; animation: {{ di.anim }};">
+                    <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #6B747C; padding-top: 2px;">{{ di.dateStr }}</span>
+                    <div style="min-width: 0;">
+                      <span style="font-size: 15.5px; line-height: 1.5; color: #14171A; text-wrap: pretty;">{{ di.line }}</span>
+                      <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; color: #6B747C; white-space: nowrap;"> — </span><a href="{{ di.srcUrl }}" target="_blank" rel="noopener" title="{{ di.srcTitle }}" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; color: #0069AA; text-decoration: underline; text-decoration-color: #BCC2C8; text-underline-offset: 2px; white-space: nowrap;">{{ di.src }} ↗</a>
+                    </div>
+                  </div>
+                </sc-for>
+                <sc-if value="{{ g.showToggle }}" hint-placeholder-val="{{ false }}">
+                  <button onClick="{{ g.toggle }}" style="margin-top: 9px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #0069AA;" style-hover="text-decoration: underline;">{{ g.toggleLabel }}</button>
+                </sc-if>
+              </section>
+            </sc-for>
+            </div>
+            <div style="margin-top: 20px; padding-top: 10px; border-top: 1px solid #D7DBDF; font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #6B747C;">Drafted by the system · issued by Technology Risk</div>
+          </div>
+        </sc-if>
+      </div>
+    </sc-if>
+
+    <!-- ============ COMPONENT SHEET ============ -->
+    <sc-if value="{{ isComponents }}" hint-placeholder-val="{{ false }}">
+      <div data-screen-label="Component sheet" style="padding-top: 26px; animation: hzIn 200ms cubic-bezier(0.2, 0, 0, 1);">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px 16px;">
+          <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;">Component sheet &amp; tokens</span>
+          <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #6B747C;">horizon v0.4-demo · for implementation</span>
+        </div>
+        <h2 style="margin: 10px 0 6px 0; font-family: 'Source Serif 4', Georgia, serif; font-size: clamp(28px, 4vw, 38px); line-height: 1.15; font-weight: 600; letter-spacing: -0.015em; color: #14171A;">Editorial dress, visible machinery</h2>
+        <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4D555C; max-width: 68ch; text-wrap: pretty;">Every surface is built from these parts. Serif carries the reading; sans carries the agate; mono carries the machinery. One accent, and red belongs to flash alone.</p>
+
+        <!-- Palette -->
+        <section style="border-top: 2px solid #14171A; margin-top: 30px; padding-top: 10px;">
+          <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;">Palette</span>
+          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 16px; margin-top: 14px;">
+            <sc-for list="{{ palette }}" as="p" hint-placeholder-count="14">
+              <div>
+                <div style="height: 52px; background: {{ p.hex }}; border: 1px solid rgba(20, 23, 26, 0.14);"></div>
+                <div style="margin-top: 6px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; color: #14171A;">{{ p.name }}</div>
+                <div style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #4D555C;">{{ p.hex }}</div>
+                <div style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; line-height: 1.45; color: #6B747C; text-wrap: pretty;">{{ p.use }}</div>
+              </div>
+            </sc-for>
+          </div>
+        </section>
+
+        <!-- Type scale -->
+        <section style="border-top: 2px solid #14171A; margin-top: 34px; padding-top: 10px;">
+          <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;">Type scale</span>
+          <div style="margin-top: 6px;">
+            <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 24px; padding: 14px 0; border-bottom: 1px solid #E9EBED;">
+              <span style="flex: 0 0 210px; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10.5px; line-height: 1.6; color: #6B747C;">nameplate<br>Source Serif 4 · 600 · 34–56/1.0 · -0.02em</span>
+              <span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 38px; font-weight: 600; letter-spacing: -0.02em; line-height: 1; color: #14171A;">Tech Risk Horizon</span>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 24px; padding: 14px 0; border-bottom: 1px solid #E9EBED;">
+              <span style="flex: 0 0 210px; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10.5px; line-height: 1.6; color: #6B747C;">headline-xl<br>Source Serif 4 · 600 · 30–43/1.12 · -0.015em</span>
+              <span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 34px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.12; color: #14171A;">File-transfer attacks breach the sector’s edge</span>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 24px; padding: 14px 0; border-bottom: 1px solid #E9EBED;">
+              <span style="flex: 0 0 210px; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10.5px; line-height: 1.6; color: #6B747C;">headline-md<br>Source Serif 4 · 600 · 20–22/1.3 · -0.01em</span>
+              <span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 21px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.3; color: #14171A;">Inventories move from expectation to instruction</span>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 24px; padding: 14px 0; border-bottom: 1px solid #E9EBED;">
+              <span style="flex: 0 0 210px; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10.5px; line-height: 1.6; color: #6B747C;">dek<br>Public Sans · 400 · 19/1.5 · gray-600</span>
+              <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 19px; line-height: 1.5; color: #4D555C;">Three items cleared the delta gate this morning.</span>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 24px; padding: 14px 0; border-bottom: 1px solid #E9EBED;">
+              <span style="flex: 0 0 210px; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10.5px; line-height: 1.6; color: #6B747C;">body<br>Public Sans · 400 · 16.5/1.62 · max 76ch</span>
+              <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 16.5px; line-height: 1.62; color: #14171A;">We assess with moderate confidence that examiners request remediation evidence at the next cycle.</span>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 24px; padding: 14px 0; border-bottom: 1px solid #E9EBED;">
+              <span style="flex: 0 0 210px; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10.5px; line-height: 1.6; color: #6B747C;">agate-label<br>Public Sans · 700 · 11/1.3 · +0.18em · caps</span>
+              <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;">The daily brief</span>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 24px; padding: 14px 0; border-bottom: 1px solid #E9EBED;">
+              <span style="flex: 0 0 210px; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10.5px; line-height: 1.6; color: #6B747C;">agate-text<br>Public Sans · 400 · 12/1.45 · ink-600</span>
+              <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 12px; line-height: 1.45; color: #4D555C;">1. CISA, Known Exploited Vulnerabilities catalog — Jul 9, 2026</span>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 24px; padding: 14px 0;">
+              <span style="flex: 0 0 210px; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10.5px; line-height: 1.6; color: #6B747C;">data<br>IBM Plex Mono · 400–600 · 11–12/1.5 · tnum</span>
+              <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 12px; color: #4D555C;">checked 14:30 et · record version a41f2c9 · CVE-2026-31207</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Machinery font tryouts -->
+        <section style="border-top: 2px solid #14171A; margin-top: 34px; padding-top: 10px;">
+          <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;">Machinery font — tryouts</span>
+          <p style="margin: 8px 0 0 0; font-family: 'Public Sans', system-ui, sans-serif; font-size: 12px; line-height: 1.5; color: #6B747C; max-width: 72ch; text-wrap: pretty;">The machinery face carries timestamps, version hashes, record ids, and CVEs. Four alternatives to the current face, same specimen — say the word and one becomes system-wide.</p>
+          <div style="margin-top: 6px;">
+            <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 24px; padding: 12px 0; border-bottom: 1px solid #E9EBED;">
+              <span style="flex: 0 0 210px; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10.5px; line-height: 1.6; color: #6B747C;">ibm plex mono — current<br>typewriter DNA · most technical</span>
+              <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 12.5px; color: #14171A;">checked 16:30 et · record a41f2c9 · CVE-2026-31207</span>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 24px; padding: 12px 0; border-bottom: 1px solid #E9EBED;">
+              <span style="flex: 0 0 210px; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10.5px; line-height: 1.6; color: #6B747C;">jetbrains mono<br>taller x-height · softer on paper</span>
+              <span style="font-family: 'JetBrains Mono', Menlo, monospace; font-size: 12.5px; color: #14171A;">checked 16:30 et · record a41f2c9 · CVE-2026-31207</span>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 24px; padding: 12px 0; border-bottom: 1px solid #E9EBED;">
+              <span style="flex: 0 0 210px; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10.5px; line-height: 1.6; color: #6B747C;">spline sans mono<br>humanist · least terminal</span>
+              <span style="font-family: 'Spline Sans Mono', Menlo, monospace; font-size: 12.5px; color: #14171A;">checked 16:30 et · record a41f2c9 · CVE-2026-31207</span>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 24px; padding: 12px 0; border-bottom: 1px solid #E9EBED;">
+              <span style="flex: 0 0 210px; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10.5px; line-height: 1.6; color: #6B747C;">fragment mono<br>grotesk · closest to newsprint agate</span>
+              <span style="font-family: 'Fragment Mono', Menlo, monospace; font-size: 12.5px; color: #14171A;">checked 16:30 et · record a41f2c9 · CVE-2026-31207</span>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 24px; padding: 12px 0;">
+              <span style="flex: 0 0 210px; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10.5px; line-height: 1.6; color: #6B747C;">public sans · tabular figures<br>no mono at all · pure newspaper agate</span>
+              <span style="font-family: 'Public Sans', system-ui, sans-serif; font-feature-settings: 'tnum' 1; font-size: 12.5px; color: #14171A;">checked 16:30 et · record a41f2c9 · CVE-2026-31207</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Badges -->
+        <section style="border-top: 2px solid #14171A; margin-top: 34px; padding-top: 10px;">
+          <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;">Badges — agate furniture</span>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 20px 32px; margin-top: 14px;">
+            <div>
+              <div style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #6B747C; border-bottom: 1px solid #E9EBED; padding-bottom: 5px;">Status</div>
+              <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px; padding: 12px 0;">
+                <span style="display: inline-flex; align-items: center; gap: 5px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #14171A;"><span style="width: 5px; height: 5px; background: #14171A;"></span>Confirmed</span>
+                <span style="display: inline-flex; align-items: center; gap: 5px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-style: italic; color: #6B747C;"><span style="width: 5px; height: 5px; border: 1px solid #97A0A8;"></span>pending</span>
+              </div>
+              <p style="margin: 0; font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; line-height: 1.5; color: #6B747C; text-wrap: pretty;">Confirmed is upright small caps with a filled tick; pending is muted italic with a hollow tick — distinct at a glance, no color spent.</p>
+            </div>
+            <div>
+              <div style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #6B747C; border-bottom: 1px solid #E9EBED; padding-bottom: 5px;">Triage</div>
+              <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 12px 0;">
+                <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #FFFFFF; background: #8E1B12; border: 1px solid #8E1B12; border-radius: 4px; padding: 2px 6px;">Flash</span>
+                <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #10314F; border: 1px solid #10314F; border-radius: 4px; padding: 2px 6px;">Priority</span>
+                <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #6B747C; border: 1px solid transparent; padding: 2px 0;">Routine</span>
+              </div>
+              <p style="margin: 0; font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; line-height: 1.5; color: #6B747C; text-wrap: pretty;">Flash carries the only red on any page. Priority takes the accent outline. Routine is unboxed text.</p>
+            </div>
+            <div>
+              <div style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #6B747C; border-bottom: 1px solid #E9EBED; padding-bottom: 5px;">Category tags</div>
+              <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; padding: 12px 0;">
+                <sc-for list="{{ pillarTags }}" as="pt" hint-placeholder-count="7">
+                  <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #4D555C;">{{ pt.label }}</span>
+                </sc-for>
+              </div>
+              <p style="margin: 0; font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; line-height: 1.5; color: #6B747C; text-wrap: pretty;">Eight categories, plain small caps — tags identify, they don’t decorate.</p>
+            </div>
+            <div>
+              <div style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #6B747C; border-bottom: 1px solid #E9EBED; padding-bottom: 5px;">Confidence</div>
+              <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 12px 0;">
+                <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #4D555C; border: 1px solid #D7DBDF; border-radius: 4px; padding: 1px 5px;">high confidence</span>
+                <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #4D555C; border: 1px solid #D7DBDF; border-radius: 4px; padding: 1px 5px;">moderate confidence</span>
+                <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #4D555C; border: 1px solid #D7DBDF; border-radius: 4px; padding: 1px 5px;">low confidence</span>
+              </div>
+              <p style="margin: 0; font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; line-height: 1.5; color: #6B747C; text-wrap: pretty;">Every assessment wears one, inline at the end of the sentence it qualifies.</p>
+            </div>
+            <div>
+              <div style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #6B747C; border-bottom: 1px solid #E9EBED; padding-bottom: 5px;">Version marker</div>
+              <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 12px 0;">
+                <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10.5px; font-weight: 600; color: #10314F; border: 1px solid #10314F; border-radius: 4px; padding: 1px 6px;">v14</span>
+                <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10.5px; font-weight: 600; color: #10314F;">v13 → v14</span>
+                
+              </div>
+              <p style="margin: 0; font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; line-height: 1.5; color: #6B747C; text-wrap: pretty;">Risk-area dossiers version like documents; every confirmed change advances the version.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Masthead & status line -->
+        <section style="border-top: 2px solid #14171A; margin-top: 34px; padding-top: 10px;">
+          <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;">Machinery line — collection status</span>
+          <p style="margin: 8px 0 0 0; font-family: 'Public Sans', system-ui, sans-serif; font-size: 12px; line-height: 1.5; color: #6B747C; max-width: 72ch; text-wrap: pretty;">Lives in the Next update rail on the front page. IBM Plex Mono 11/1.5, values in ink at 500, labels in agate gray, separators in rule-1. The live countdown is the tell that this is a running system, not a newsletter. Version hashes live on the documents themselves — dossiers, briefs, and issues.</p>
+          <div style="margin-top: 12px; border-top: 1px solid #D7DBDF; border-bottom: 1px solid #D7DBDF; padding: 7px 0; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; column-gap: 14px; row-gap: 3px; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #6B747C;">
+            <span style="display: inline-block; width: 6px; height: 6px; background: #F58025; animation: hzPulse 2.8s ease-in-out infinite;"></span>
+            <span>sources last checked <span style="color: #14171A; font-weight: 500;">14:30 et</span></span>
+            <span style="color: #BCC2C8;">·</span>
+            <span>next check <span style="color: #14171A; font-weight: 500;">15:00 et</span> — in 14:12</span>
+
+            <span style="color: #BCC2C8;">·</span>
+            <span>today: <span style="color: #14171A; font-weight: 600;">3 changes confirmed</span>, <span style="font-style: italic; color: #6B747C;">1 awaiting verification</span></span>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; justify-content: center; column-gap: 14px; row-gap: 2px; margin-top: 6px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 9.5px; letter-spacing: 0.06em; text-transform: uppercase; color: #97A0A8;">
+            <span>heartbeat</span><span>· collection cadence ·</span><span>today’s gate</span>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 24px 32px; margin-top: 24px;">
+            <div>
+              <div style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #6B747C;">Masthead — shared across all pages (footer meta shown compact)</div>
+              <div style="margin-top: 10px; border: 1px solid #E9EBED; padding: 0 16px;">
+                <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 6px 18px; padding: 12px 0 9px 0;">
+                  <span style="display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;"><span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 19px; font-weight: 600; letter-spacing: -0.02em; color: #14171A;">Tech Risk Horizon</span></span>
+                  <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10px; color: #6B747C;">Thursday, July 9, 2026</span>
+                </div>
+                <div style="border-top: 1px solid #D7DBDF; padding: 6px 0 8px 0; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10px; color: #6B747C;">checked <span style="color: #14171A;">14:30 et</span> · 3 confirmed / <span style="font-style: italic; color: #6B747C;">1 pending</span></div>
+              </div>
+            </div>
+            <div>
+              <div style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #6B747C;">Masthead — publication head</div>
+              <div style="margin-top: 10px; border: 1px solid #E9EBED; padding: 18px 16px; text-align: center;">
+                <div style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #10314F;">Tech Risk Horizon — monthly</div>
+                <div style="margin: 7px auto 0 auto; width: 44px; border-top: 1px solid #14171A;"></div>
+                <div style="margin-top: 8px; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10px; color: #6B747C;">No. 6 — June 2026</div>
+                <div style="margin-top: 8px; font-family: 'Source Serif 4', Georgia, serif; font-size: 19px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.25; color: #14171A;">Model inventories move from expectation to instruction</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Timeline + citation -->
+        <section style="border-top: 2px solid #14171A; margin-top: 34px; padding-top: 10px;">
+          <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;">Timeline entry · inline source</span>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 24px 32px; margin-top: 14px;">
+            <div>
+              <div style="display: grid; grid-template-columns: 76px 18px 1fr; column-gap: 12px;">
+                <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #6B747C; text-align: right; padding-top: 2px;">Jul 8, 26</span>
+                <span style="position: relative; display: block;"><span style="position: absolute; left: 8px; top: 6px; bottom: -6px; width: 1px; background: #D7DBDF;"></span><span style="position: absolute; left: 4.5px; top: 5px; width: 8px; height: 8px; background: #10314F; border: 1px solid #10314F;"></span></span>
+                <div style="padding-bottom: 20px;">
+                  <div style="font-size: 16px; line-height: 1.5; color: #14171A;">OCC model-risk FAQ supplement published; generative AI scoped in.</div>
+                  <div style="display: flex; flex-wrap: wrap; gap: 4px 10px; margin-top: 4px; align-items: center;"><span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10.5px; font-weight: 600; color: #10314F;">v13 → v14</span><span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #14171A;">confirmed</span><a href="https://www.occ.gov/news-issuances/bulletins/" target="_blank" rel="noopener" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; color: #0069AA; text-decoration: underline; text-decoration-color: #C5E2F0; text-underline-offset: 2px;">— OCC FAQ supplement ↗</a></div>
+                </div>
+              </div>
+              <div style="display: grid; grid-template-columns: 76px 18px 1fr; column-gap: 12px;">
+                <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #6B747C; text-align: right; padding-top: 2px;">Jul 9, 26</span>
+                <span style="position: relative; display: block;"><span style="position: absolute; left: 4.5px; top: 5px; width: 8px; height: 8px; background: #FFFFFF; border: 1px solid #97A0A8;"></span></span>
+                <div>
+                  <div style="font-size: 16px; line-height: 1.5; font-style: italic; color: #6B747C;">Trade-press report of an examination pilot — awaiting verification.</div>
+                  <div style="display: flex; flex-wrap: wrap; gap: 4px 10px; margin-top: 4px; align-items: center;"><span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-style: italic; color: #6B747C;">pending</span></div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #14171A; max-width: 60ch;">We assess as likely that exploitation extends to financial-sector targets within two weeks.</p>
+              <div style="margin-top: 12px; border-top: 1px solid #D7DBDF; padding-top: 8px;">
+                <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #6B747C;">Sources</span>
+                <div style="padding-top: 5px;"><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 12px; color: #0069AA; text-decoration: underline; text-decoration-color: #C5E2F0; text-underline-offset: 2px;">CISA, Known Exploited Vulnerabilities catalog — Jul 9, 2026 ↗</a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Utility furniture -->
+        <section style="border-top: 2px solid #14171A; margin-top: 34px; padding-top: 10px;">
+          <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;">Utility furniture — nav · filters · switcher</span>
+          <div style="margin-top: 14px;">
+            <div style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #6B747C;">Persistent nav — active underline · global search rides inline, press / anywhere</div>
+            <div style="margin-top: 8px; border-bottom: 2px solid #14171A; display: flex; justify-content: space-between; align-items: center; gap: 16px; max-width: 640px;">
+              <div style="display: flex; gap: 26px; overflow-x: auto; overflow-y: hidden;">
+                <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.03em; padding: 10px 0 8px 0; color: #14171A; border-bottom: 2px solid #F58025; margin-bottom: -2px;">Today</span>
+                <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.03em; padding: 10px 0 8px 0; color: #6B747C;">Risk Areas</span>
+                <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.03em; padding: 10px 0 8px 0; color: #6B747C;">Publications</span>
+                <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.03em; padding: 10px 0 8px 0; color: #6B747C;">Meeting Prep</span>
+              </div>
+              <span style="display: inline-flex; align-items: center; gap: 6px; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #97A0A8; border-bottom: 1px solid #BCC2C8; padding: 3px 2px;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#6B747C" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.5" y2="16.5"></line></svg>Search</span>
+            </div>
+            <div style="margin-top: 22px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #6B747C;">Filter bar — quiet small caps, hairline search</div>
+            <div style="margin-top: 8px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px 18px; padding: 8px 0; border-top: 1px solid #E9EBED; border-bottom: 1px solid #D7DBDF; max-width: 640px;">
+              <div style="display: flex; flex-wrap: wrap; gap: 2px 14px;">
+                <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #14171A; border-bottom: 2px solid #F58025; padding: 3px 0 2px 0;">All</span>
+                <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #6B747C; padding: 3px 0;">Cyber</span>
+                <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #6B747C; padding: 3px 0;">Fraud</span>
+                <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #6B747C; padding: 3px 0;">AI</span>
+              </div>
+              <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11.5px; color: #97A0A8; border-bottom: 1px solid #BCC2C8; padding: 3px 2px; width: 140px;">search the wire</span>
+            </div>
+            <div style="margin-top: 22px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #6B747C;">Quick switcher — press ⌘K (keyboard only, no chrome); ↑↓ · ↵ · 1–4 · esc</div>
+            <div style="margin-top: 8px; max-width: 520px; background: #FFFFFF; border: 1px solid #BCC2C8; border-radius: 6px; box-shadow: 0 12px 28px rgba(16, 49, 79, 0.12), 0 4px 8px rgba(16, 49, 79, 0.06); overflow: hidden;">
+              <div style="border-bottom: 1px solid #D7DBDF; padding: 11px 16px; display: flex; justify-content: space-between; align-items: center; gap: 12px;">
+                <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 13px; color: #97A0A8;">Go to…</span>
+                <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 9.5px; color: #6B747C; border: 1px solid #BCC2C8; border-radius: 4px; padding: 1px 6px;">esc</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 11px 16px; background: #E9EBED;">
+                <span style="display: flex; gap: 12px; align-items: baseline;"><span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #97A0A8;">1</span><span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 16px; font-weight: 600; color: #14171A;">Today</span></span>
+                <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; color: #6B747C;">front page · daily delta · the wire</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 11px 16px;">
+                <span style="display: flex; gap: 12px; align-items: baseline;"><span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #97A0A8;">2</span><span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 16px; color: #14171A;">Dossiers</span></span>
+                <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; color: #6B747C;">entity pages · changelogs</span>
+              </div>
+              <div style="border-top: 1px solid #E9EBED; padding: 8px 16px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: #97A0A8;">↑↓ navigate · ↵ open · esc close</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Token summary -->
+        <section style="border-top: 2px solid #14171A; margin-top: 34px; padding-top: 10px;">
+          <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;">Token summary — for implementation</span>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 20px 32px; margin-top: 14px; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11.5px; line-height: 2; color: #4D555C;">
+            <div>
+              <div style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #6B747C; border-bottom: 1px solid #E9EBED; padding-bottom: 5px; margin-bottom: 6px;">Faces — Google Fonts</div>
+              <div>--serif: 'Source Serif 4' (opsz)</div>
+              <div>--sans: &nbsp;'Public Sans'</div>
+              <div>--mono: &nbsp;'IBM Plex Mono'</div>
+              <div style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; line-height: 1.5; color: #6B747C; margin-top: 6px;">Public Sans carries all reading and utility text — sturdy, neutral, legible at small sizes. Source Serif 4’s optical axis keeps true display cuts for headlines and the nameplate. Plex Mono keeps timestamps, versions, and CVEs unmistakably machine.</div>
+            </div>
+            <div>
+              <div style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #6B747C; border-bottom: 1px solid #E9EBED; padding-bottom: 5px; margin-bottom: 6px;">Spacing · radii · rules</div>
+              <div>space: 4 8 12 16 24 32 48 64 96</div>
+              <div>radius: 2 (badges) · 3 (buttons) · 6 (overlay)</div>
+              <div>rule-heavy: 2px #14171A</div>
+              <div>rule-hair: &nbsp;1px #D7DBDF</div>
+              <div>rule-row: &nbsp;&nbsp;1px #E9EBED</div>
+              <div>measure: 66–70ch body · 1140px page</div>
+            </div>
+            <div>
+              <div style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #6B747C; border-bottom: 1px solid #E9EBED; padding-bottom: 5px; margin-bottom: 6px;">Motion · focus</div>
+              <div>durations: 120–260ms</div>
+              <div>ease: cubic-bezier(.2, 0, 0, 1)</div>
+              <div>focus: 2px rgba(0,105,170,.6)</div>
+              <div style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; line-height: 1.5; color: #6B747C; margin-top: 6px;">No bounce, no parallax. Motion confirms — the status-line pulse, the ledger-reference highlight. That’s all.</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </sc-if>
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer style="background: #10314F; margin-top: 8px;">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 22px clamp(16px, 4vw, 32px) 26px clamp(16px, 4vw, 32px);">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px 24px;">
+        <button onClick="{{ goToday }}" style="font-family: 'Source Serif 4', Georgia, serif; font-size: 19px; font-weight: 600; letter-spacing: -0.02em; color: #FFFFFF; line-height: 1;">Tech Risk Tracker</button>
+        <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10.5px; color: #8FA3B5;">record a41f2c9 · sources checked every 30 minutes</span>
+      </div>
+      <p style="margin: 12px 0 0 0; padding-top: 12px; border-top: 1px solid rgba(255, 255, 255, 0.18); font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-style: italic; line-height: 1.5; color: #B9C7D6; max-width: 110ch; text-wrap: pretty;">Demonstration system. All entities and assessments are illustrative; content derives from public sources. Challenged items are re-verified against their primary sources; corrections publish as new record versions.</p>
+    </div>
+  </footer>
+
+  <!-- ============================== ⌘K SWITCHER ============================== -->
+  <sc-if value="{{ cmdkOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="position: fixed; inset: 0; z-index: 90;">
+      <div onClick="{{ closeCmdk }}" style="position: absolute; inset: 0; background: rgba(13, 22, 32, 0.42);"></div>
+      <div role="dialog" aria-label="Quick switcher" style="position: relative; margin: 16vh auto 0 auto; width: min(540px, 92vw); background: #FFFFFF; border: 1px solid #BCC2C8; border-radius: 6px; box-shadow: 0 12px 28px rgba(16, 49, 79, 0.2), 0 4px 8px rgba(16, 49, 79, 0.08); overflow: hidden; animation: hzIn 160ms cubic-bezier(0.2, 0, 0, 1);">
+        <div style="border-bottom: 1px solid #D7DBDF; padding: 11px 16px; display: flex; align-items: center; gap: 12px;">
+          <input ref="{{ cmdkRef }}" value="{{ cmdkQ }}" onChange="{{ onCmdkQ }}" placeholder="Go to…" aria-label="Filter destinations" style="flex: 1; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 13px; color: #14171A; background: transparent; min-width: 0;">
+          <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 9.5px; color: #6B747C; border: 1px solid #BCC2C8; border-radius: 4px; padding: 1px 6px;">esc</span>
+        </div>
+        <sc-for list="{{ cmdkItems }}" as="ck" hint-placeholder-count="5">
+          <button onClick="{{ ck.go }}" style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; width: 100%; padding: 11px 16px; background: {{ ck.bg }};" style-hover="background: #E9EBED;">
+            <span style="display: flex; gap: 12px; align-items: baseline;"><span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #97A0A8;">{{ ck.num }}</span><span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 16px; font-weight: {{ ck.w }}; color: #14171A;">{{ ck.name }}</span></span>
+            <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; color: #6B747C; text-align: right;">{{ ck.desc }}</span>
+          </button>
+        </sc-for>
+        <div style="border-top: 1px solid #E9EBED; padding: 8px 16px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: #97A0A8;">↑↓ navigate · ↵ open · 1–4 jump · esc close</div>
+      </div>
+    </div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;$preview&quot;: { &quot;width&quot;: 1280, &quot;height&quot;: 900 },
+  &quot;density&quot;: { &quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;comfortable&quot;, &quot;compact&quot;], &quot;default&quot;: &quot;comfortable&quot;, &quot;tsType&quot;: &quot;'comfortable' | 'compact'&quot;, &quot;section&quot;: &quot;Reading&quot; },
+  &quot;showPending&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Reading&quot; },
+  &quot;liveClock&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Machinery&quot; }
+}">
+class Component extends DCLogic {
+  state = {
+    screen: 'today',
+    riskArea: 'ai',
+    navMenu: null,
+    vw: 1200,
+    now: Date.now(),
+    pillar: 'all',
+    wireQ: '',
+    wireSort: 'time',
+    diffDate: '2026-04-14',
+    diffApplied: '2026-04-14',
+    diffSel: [],
+    diffExpanded: {},
+    pubMoreW: false,
+    pubMoreD: false,
+    diffBusy: false,
+    diffMs: '0.38s',
+    gq: '',
+    gFocus: false,
+    cmdk: false,
+    cmdkQ: '',
+    cmdkI: 0,
+    hl: null,
+  };
+
+  // ---------- lifecycle ----------
+  componentDidMount() {
+    this._clock = setInterval(() => this.setState({ now: Date.now() }), 1000);
+    this._onResize = () => this.setState({ vw: window.innerWidth });
+    window.addEventListener('resize', this._onResize);
+    this.setState({ vw: window.innerWidth });
+    this._onKey = (e) => this.handleKey(e);
+    window.addEventListener('keydown', this._onKey);
+    this._onHash = () => {
+      const h = (location.hash || '').replace('#', '');
+      if (this.screens().includes(h) && h !== this.state.screen) this.setState({ screen: h });
+    };
+    window.addEventListener('hashchange', this._onHash);
+    const h = (location.hash || '').replace('#', '');
+    if (this.screens().includes(h)) this.setState({ screen: h });
+  }
+  componentWillUnmount() {
+    clearInterval(this._clock);
+    clearTimeout(this._gsT);
+    clearTimeout(this._hlT);
+    clearTimeout(this._diffT);
+    clearTimeout(this._pubT);
+    window.removeEventListener('keydown', this._onKey);
+    window.removeEventListener('resize', this._onResize);
+    window.removeEventListener('hashchange', this._onHash);
+  }
+
+  screens() { return ['today', 'riskindex', 'dossier', 'publications', 'monthly', 'diff', 'components']; }
+
+  goPub(sec) {
+    this.go('publications');
+    if (!sec) return;
+    clearTimeout(this._pubT);
+    this._pubT = setTimeout(() => {
+      const el = document.querySelector('[data-pub-sec="' + sec + '"]');
+      if (el) { const y = el.getBoundingClientRect().top + window.pageYOffset - 10; window.scrollTo(0, Math.max(0, y)); }
+    }, 220);
+  }
+
+  goArea(p) {
+    const d = this.ensureData();
+    if (!d.riskAreas[p]) { this.go('riskindex'); return; }
+    this.setState({ riskArea: p });
+    this.go('dossier');
+  }
+
+  srcUrl(t) {
+    const s = (t || '').toLowerCase();
+    const M = [
+      ['aba banking journal', 'https://bankingjournal.aba.com/'],
+      ['bank policy institute', 'https://bpi.com/insights/'],
+      ['sifma', 'https://www.sifma.org/resources/news/'],
+      ['the clearing house', 'https://www.theclearinghouse.org/payment-systems'],
+      ['icba', 'https://www.icba.org/newsroom'],
+      ['columbia sipa', 'https://www.sipa.columbia.edu/'],
+      ['krebs', 'https://krebsonsecurity.com/'],
+      ['american banker', 'https://www.americanbanker.com/'],
+      ['the record', 'https://therecord.media/'],
+      ['bleepingcomputer', 'https://www.bleepingcomputer.com/'],
+      ['dark reading', 'https://www.darkreading.com/'],
+      ['bloomberg law', 'https://news.bloomberglaw.com/'],
+      ['bloomberg', 'https://www.bloomberg.com/technology'],
+      ['reuters', 'https://www.reuters.com/business/finance/'],
+      ['financial times', 'https://www.ft.com/'],
+      ['mit technology review', 'https://www.technologyreview.com/'],
+      ['cybersecurity dive', 'https://www.cybersecuritydive.com/'],
+      ['iapp', 'https://iapp.org/news/'],
+      ['ap news', 'https://apnews.com/'],
+      ['data center dynamics', 'https://www.datacenterdynamics.com/'],
+      ['us ai safety', 'https://www.nist.gov/aisi'],
+      ['uk ai security', 'https://www.aisi.gov.uk/'],
+      ['metr', 'https://metr.org/'],
+      ['mitre atlas', 'https://atlas.mitre.org/'],
+      ['pqc', 'https://csrc.nist.gov/projects/post-quantum-cryptography'],
+      ['cnsa', 'https://www.nsa.gov/Cybersecurity/'],
+      ['quantum readiness', 'https://www.cisa.gov/quantum'],
+      ['nccoe', 'https://www.nccoe.nist.gov/'],
+      ['white house', 'https://www.whitehouse.gov/briefing-room/'],
+      ['federal reserve', 'https://www.federalreserve.gov/newsevents.htm'],
+      ['deepmind', 'https://deepmind.google/discover/blog/'],
+      ['anthropic', 'https://www.anthropic.com/news'],
+      ['openai', 'https://openai.com/news/'],
+      ['fiserv', 'https://newsroom.fiserv.com/'],
+      ['fis ', 'https://www.fisglobal.com/about-us/media-room'],
+      ['jack henry', 'https://www.jackhenry.com/newsroom'],
+      ['cert insider', 'https://insights.sei.cmu.edu/'],
+      ['finra', 'https://www.finra.org/rules-guidance/enforcement'],
+      ['ffiec', 'https://www.ffiec.gov/'],
+      ['fs-isac', 'https://www.fsisac.com/newsroom'],
+      ['verizon', 'https://www.verizon.com/business/resources/reports/dbir/'],
+      ['nerc', 'https://www.nerc.com/'],
+      ['nacha', 'https://www.nacha.org/news'],
+      ['known exploited', 'https://www.cisa.gov/known-exploited-vulnerabilities-catalog'],
+      ['kev', 'https://www.cisa.gov/known-exploited-vulnerabilities-catalog'],
+      ['cisa', 'https://www.cisa.gov/news-events/cybersecurity-advisories'],
+      ['sr 11-7', 'https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm'],
+      ['fincen', 'https://www.fincen.gov/news-room/alerts-advisories'],
+      ['fin-20', 'https://www.fincen.gov/news-room/alerts-advisories'],
+      ['occ', 'https://www.occ.gov/news-issuances/bulletins/'],
+      ['interagency', 'https://www.occ.gov/news-issuances/news-releases/'],
+      ['nist', 'https://www.nist.gov/itl/ai-risk-management-framework'],
+      ['nvd', 'https://nvd.nist.gov/vuln'],
+      ['ftc', 'https://www.ftc.gov/news-events/data-visualizations/consumer-sentinel-network'],
+      ['doj', 'https://www.justice.gov/news'],
+      ['cfpb', 'https://www.consumerfinance.gov/rules-policy/'],
+      ['noaa', 'https://www.nhc.noaa.gov/'],
+      ['frb services', 'https://www.frbservices.org/resources/central-bank'],
+      ['fed speech', 'https://www.federalreserve.gov/newsevents/speech.htm'],
+      ['fed governor', 'https://www.federalreserve.gov/newsevents/speech.htm'],
+      ['gao', 'https://www.gao.gov/reports-testimonies'],
+      ['edpb', 'https://www.edpb.europa.eu/news/news_en'],
+      ['sec filing', 'https://www.sec.gov/edgar/search/'],
+      ['fbi', 'https://www.ic3.gov/CSA'],
+      ['ofr', 'https://www.financialresearch.gov/reports/'],
+      ['ec guidance', 'https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai'],
+      ['cppa', 'https://cppa.ca.gov/announcements/'],
+      ['tx legislature', 'https://capitol.texas.gov/'],
+      ['co ag', 'https://coag.gov/press-releases/'],
+      ['cert note', 'https://www.kb.cert.org/vuls/'],
+      ['testimony', 'https://www.banking.senate.gov/hearings'],
+    ];
+    for (let i = 0; i < M.length; i++) { if (s.includes(M[i][0])) return M[i][1]; }
+    return null;
+  }
+
+  seedBriefs() {
+    return [
+      { id: 'CB-0038', since: '2026-03-31', ts: 'Jun 30' },
+      { id: 'CB-0039', since: '2026-05-15', ts: 'Jul 1' },
+      { id: 'CB-0040', since: '2026-04-14', ts: 'Jul 8' },
+    ];
+  }
+  loadBriefs() {
+    let extra = [];
+    try { extra = JSON.parse(localStorage.getItem('hz-briefs-v1') || '[]'); } catch (err) { extra = []; }
+    return this.seedBriefs().concat(Array.isArray(extra) ? extra : []);
+  }
+  saveBrief(since) {
+    try {
+      const stored = JSON.parse(localStorage.getItem('hz-briefs-v1') || '[]');
+      if (this.seedBriefs().concat(stored).some((b) => b.since === since)) return;
+      const ts = new Date(this.state.now).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
+      stored.push({ id: 'CB-' + String(41 + stored.length).padStart(4, '0'), since, ts });
+      localStorage.setItem('hz-briefs-v1', JSON.stringify(stored));
+    } catch (err) {}
+  }
+
+  go(id) {
+    this.setState({ screen: id, cmdk: false, cmdkQ: '', cmdkI: 0, navMenu: null });
+    try { history.replaceState(null, '', '#' + id); } catch (err) {}
+    window.scrollTo(0, 0);
+  }
+
+  handleKey(e) {
+    const k = e.key;
+    if ((e.metaKey || e.ctrlKey) && (k === 'k' || k === 'K')) {
+      e.preventDefault();
+      this.setState((s) => ({ cmdk: !s.cmdk, cmdkQ: '', cmdkI: 0 }));
+      return;
+    }
+    if (k === '/' && !this.state.cmdk) {
+      const tag = ((e.target && e.target.tagName) || '').toLowerCase();
+      if (tag !== 'input' && tag !== 'textarea') { e.preventDefault(); if (this._gsEl) this._gsEl.focus(); }
+      return;
+    }
+    if (k === 'Escape' && this.state.navMenu) { this.setState({ navMenu: null }); return; }
+    if (!this.state.cmdk) return;
+    if (k === 'Escape') { this.setState({ cmdk: false }); return; }
+    const list = this.cmdkFiltered();
+    if (k === 'ArrowDown') { e.preventDefault(); this.setState((s) => ({ cmdkI: Math.min(list.length - 1, s.cmdkI + 1) })); }
+    else if (k === 'ArrowUp') { e.preventDefault(); this.setState((s) => ({ cmdkI: Math.max(0, s.cmdkI - 1) })); }
+    else if (k === 'Enter') { e.preventDefault(); const d = list[this.state.cmdkI]; if (d) this.go(d.id); }
+    else if (/^[1-4]$/.test(k) && !this.state.cmdkQ) { const d = list[parseInt(k, 10) - 1]; if (d) { e.preventDefault(); this.go(d.id); } }
+  }
+
+  // ---------- clock ----------
+  clock() {
+    const live = this.props.liveClock ?? true;
+    if (!live) {
+      return { last: '14:30', next: '15:00', cd: '14:12', base: Date.UTC(2026, 6, 9, 14, 32), dateLong: 'Thursday, July 9, 2026', dateShort: 'Thu, Jul 9' };
+    }
+    const now = this.state.now;
+    const q = 30 * 60 * 1000;
+    const last = Math.floor(now / q) * q;
+    const next = last + q;
+    const hm = (t) => new Date(t).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'America/New_York' });
+    const rem = Math.max(0, next - now);
+    const cd = String(Math.floor(rem / 60000)).padStart(2, '0') + ':' + String(Math.floor((rem % 60000) / 1000)).padStart(2, '0');
+    const d = new Date(now);
+    const dateLong = d.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric', timeZone: 'America/New_York' });
+    const dateShort = d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', timeZone: 'America/New_York' });
+    return { last: hm(last), next: hm(next), cd, base: now, dateLong, dateShort };
+  }
+
+  // ---------- data ----------
+  ensureData() {
+    if (this._d) return this._d;
+    const P = { cyber: 'Cybersecurity', physical: 'Physical security', fraud: 'Fraud', resilience: 'Resilience', data: 'Data risk', ai: 'Artificial intelligence', tp: 'Third-party risk', insider: 'Insider threat' };
+    const PS = { cyber: 'Cyber', physical: 'Physical', fraud: 'Fraud', resilience: 'Resilience', data: 'Data', ai: 'AI', tp: 'Third-party', insider: 'Insider' };
+
+    const wire = [
+      { m: 2, p: 'cyber', title: 'Attackers are actively exploiting a flaw in MOVEit-class file-transfer software used across banking; CISA confirms (CVE-2026-31207)', tier: 'T1', st: 'confirmed', tri: 'flash', src: 'CISA KEV catalog', id: 'L-1480' },
+      { m: 9, p: 'cyber', title: 'Krebs on Security traces file-transfer exploitation to a single affiliate crew; financial-sector victims named', tier: 'T2', st: 'confirmed', tri: 'routine', src: 'Krebs on Security', id: 'L-1495' },
+      { m: 17, p: 'tp', title: 'Cloud communications vendor behind many banks’ text alerts discloses an incident; bank impact unverified', tier: 'T2', st: 'pending', tri: 'routine', src: 'vendor status page', id: 'L-1483' },
+      { m: 34, p: 'ai', title: 'OCC confirms its existing model rules cover generative AI — no separate framework coming', tier: 'T1', st: 'confirmed', tri: 'priority', src: 'OCC issuance, Jul 8', id: 'L-1478', linked: true },
+      { m: 44, p: 'fraud', title: 'ABA Banking Journal: mid-size banks report a spike in check-washing losses through business accounts', tier: 'T2', st: 'confirmed', tri: 'routine', src: 'ABA Banking Journal', id: 'L-1497' },
+      { m: 52, p: 'fraud', title: 'FinCEN warns: fraud rings using invented identities are moving money through instant payments', tier: 'T1', st: 'confirmed', tri: 'priority', src: 'FIN-2026-A003, Jul 7', id: 'L-1477' },
+      { m: 63, p: 'tp', title: 'American Banker: regional banks push Fiserv, FIS, and Jack Henry to reopen core-contract notification terms after June disclosures', tier: 'T2', st: 'confirmed', tri: 'routine', src: 'American Banker', id: 'L-1496' },
+      { m: 69, p: 'cyber', title: 'Automated login attacks using stolen passwords shift toward regional banks; detection patterns shared', tier: 'T2', st: 'confirmed', tri: 'priority', src: 'sector information-sharing advisory', id: 'L-1458' },
+      { m: 87, p: 'resilience', title: 'NOAA mid-season update raises Gulf landfall probabilities; branch and data-center exposure under review', tier: 'T2', st: 'confirmed', tri: 'routine', src: 'NOAA outlook, Jul 8', id: 'L-1484' },
+      { m: 108, p: 'data', title: 'Texas privacy law advances; banks get less time to fix violations and a narrower federal exemption', tier: 'T2', st: 'confirmed', tri: 'routine', src: 'TX legislature', id: 'L-1485' },
+      { m: 121, p: 'insider', title: 'Sector advisory: fraud crews recruiting branch employees over Telegram and similar apps', tier: 'T2', st: 'confirmed', tri: 'priority', src: 'sector information-sharing advisory', id: 'L-1476' },
+      { m: 130, p: 'physical', title: 'Substation vandalism adjacent to Charlotte operations corridor; backup-power plans reviewed, no service impact', tier: 'T2', st: 'confirmed', tri: 'routine', src: 'grid operator bulletin', id: 'L-1482' },
+      { m: 153, p: 'tp', title: 'Fiserv’s quarterly controls report flags two gaps in how it manages system changes', tier: 'T1', st: 'confirmed', tri: 'routine', src: 'vendor trust portal', id: 'L-1471' },
+      { m: 178, p: 'ai', title: 'NIST opens comments on draft standards for AI used in fraud detection', tier: 'T1', st: 'confirmed', tri: 'routine', src: 'NIST docket', id: 'L-1481' },
+      { m: 202, p: 'fraud', title: 'DOJ indicts multistate check-fraud ring as sector mail-theft losses double year over year', tier: 'T2', st: 'confirmed', tri: 'routine', src: 'DOJ press release, Jul 8', id: 'L-1486' },
+      { m: 227, p: 'resilience', title: 'Sign-up opens for the autumn industry test of backup payment routes', tier: 'T1', st: 'confirmed', tri: 'routine', src: 'exercise bulletin', id: 'L-1487' },
+    ];
+
+    const lead = {
+      items: [
+        { n: '1', text: 'A flaw in widely used file-transfer software is under active attack, and two of the bank’s critical vendors — its statement processor and its loan-document exchange — run that software, the same class as Progress MOVEit. We assess as likely that attackers reach financial-sector targets within two weeks.', conf: 'moderate confidence', sup: '1', p: 'cyber', tri: 'flash', tier: 'T1', st: 'confirmed', id: 'L-1480', why: 'Two critical vendors run the affected platform at the bank’s edge — a successful exploit exposes customer files in transit and starts the 36-hour regulatory notification clock.' },
+        { n: '2', text: 'FinCEN — the Treasury’s financial-crimes unit — warns that fraud rings built on invented identities are moving stolen money through instant payments. We assess as likely that examiners focus on how banks verify new customers in the second half.', conf: 'moderate confidence', sup: '2', p: 'fraud', tri: 'priority', tier: 'T1', st: 'confirmed', id: 'L-1477', why: 'Mule networks clear through the same instant rails the bank offers consumers and small businesses — and onboarding verification is the control examiners will test first.' },
+        { n: '3', text: 'The OCC — the bank’s primary regulator — confirmed that its existing model rules cover generative AI; no new rulebook is coming. We assess as almost certain that examiners ask for a complete list of the bank’s AI models within twelve months.', conf: 'high confidence', sup: '3', p: 'ai', tri: 'priority', tier: 'T1', st: 'confirmed', id: 'L-1478', why: 'The bank’s model register and its generative-AI use-case log are still separate artifacts — an inventory request landing today would find the gap.' },
+      ],
+      notes: [
+        { n: '1', text: 'CISA, Known Exploited Vulnerabilities catalog — Jul 9, 2026', id: 'L-1480' },
+        { n: '2', text: 'FinCEN Advisory FIN-2026-A003 — Jul 7, 2026', id: 'L-1477' },
+        { n: '3', text: 'OCC, model-risk FAQ supplement — Jul 8, 2026', id: 'L-1478' },
+      ],
+    };
+
+    const velocity = [
+      { label: 'Cyber', n: 14 }, { label: 'AI', n: 9 }, { label: 'Third-party', n: 7 }, { label: 'Fraud', n: 6 },
+      { label: 'Resilience', n: 4 }, { label: 'Data', n: 3 }, { label: 'Physical', n: 2 },
+    ].map((v) => ({ ...v, pct: Math.round((v.n / 14) * 100) }));
+
+    const timeline = [
+      { date: 'Jul 9, 26', line: 'Trade-press report of an examination pilot scoring AI inventories at three large banks — source not yet verified.', ver: '—', tier: 'T2', st: 'pending', src: 'trade press', id: '', sup: '' },
+      { date: 'Jul 8, 26', line: 'OCC answers open questions on AI models; generative AI folded into the existing model rules.', ver: 'v13 → v14', tier: 'T1', st: 'confirmed', src: 'OCC FAQ supplement', id: 'L-1478', sup: '3' },
+      { date: 'Jun 30, 26', line: 'NIST opens comments on draft standards for AI used in fraud detection.', ver: 'v12 → v13', tier: 'T1', st: 'confirmed', src: 'NIST docket', id: 'L-1470', sup: '5' },
+      { date: 'Jun 24, 26', line: 'OpenAI reports criminals used its AI tools to build bank-themed scams; the operations were shut down.', ver: 'v11 → v12', tier: 'T1', st: 'confirmed', src: 'OpenAI threat intelligence', id: 'L-1489', sup: '2' },
+      { date: 'May 28, 26', line: 'Anthropic’s latest model documentation adds safety tests for AI acting autonomously in financial workflows.', ver: 'v10 → v11', tier: 'T1', st: 'confirmed', src: 'Anthropic system card', id: 'L-1465', sup: '1' },
+      { date: 'May 16, 26', line: 'Fed governor: supervisory expectations for AI inventories “will formalize.”', ver: 'v9 → v10', tier: 'T2', st: 'confirmed', src: 'Fed speech', id: 'L-1450', sup: '' },
+      { date: 'Mar 3, 26', line: 'Examination manual update adds an AI model inventory worksheet to MRM procedures.', ver: 'v8 → v9', tier: 'T1', st: 'confirmed', src: 'OCC exam manual', id: 'L-1431', sup: '4' },
+      { date: 'Mar 12, 24', line: 'Watch opened; baseline compiled from 2011–2023 guidance.', ver: 'v1', tier: 'T1', st: 'confirmed', src: 'OCC 2011-12 / SR 11-7', id: 'L-1001', sup: '' },
+    ];
+
+    const riskAreas = {
+      ai: {
+        name: 'Artificial intelligence', scope: 'artificial intelligence · capability & governance',
+        watch: 'Frontier capability is moving faster than the control set; regulation extends existing frameworks rather than writing new ones.',
+        opened: 'March 2024', ver: 'v14', verRange: 'v1 → v14',
+        p1: 'The sharpest intelligence now comes from the frontier labs themselves. Anthropic’s system cards and usage-policy updates, and OpenAI’s threat-intelligence reports — documenting disrupted fraud, influence, and intrusion operations built on hosted models — describe capability and abuse patterns quarters before they reach supervisory material.', p1Sup: '1, 2',
+        p2: 'The regulatory line is comparatively settled: the OCC folds generative AI into existing model-risk expectations, and the examination manual has carried an AI inventory worksheet since March. The moving edge is agentic use — models executing multi-step tasks against bank systems — and AI-assisted social engineering of staff.', p2Sup: '3, 4',
+        assess: 'We assess as almost certain that a complete AI model inventory becomes a standing examination request within twelve months, and likely that at least one agentic use case reaches production in a core banking workflow ahead of any tailored supervisory framework.', assessSup: '3', conf: 'high confidence',
+        events: timeline,
+        sources: [
+          { n: '1', text: 'Anthropic — model system cards & usage policies, 2026' },
+          { n: '2', text: 'OpenAI — threat intelligence: disrupting malicious uses of AI, Jun 2026' },
+          { n: '3', text: 'OCC — model-risk FAQ supplement: AI and generative models, Jul 2026' },
+          { n: '4', text: 'OCC examination manual — MRM procedures incl. AI inventory worksheet, Mar 2026' },
+          { n: '5', text: 'NIST — AI RMF 1.0 & draft fraud-model profile, Jun 2026' },
+        ],
+        related: ['fraud', 'insider', 'tp'],
+        feeds: [
+          { name: 'Anthropic', desc: 'frontier lab — system cards & usage policy' },
+          { name: 'OpenAI', desc: 'frontier lab — threat intelligence' },
+          { name: 'Google DeepMind', desc: 'frontier lab — releases & safety' },
+          { name: 'NIST', desc: 'government — AI standards & RMF' },
+          { name: 'White House', desc: 'government — AI executive actions' },
+          { name: 'US AI Safety Institute', desc: 'government — frontier evaluations' },
+          { name: 'UK AI Security Institute', desc: 'government — frontier threat research' },
+          { name: 'METR', desc: 'lab — frontier capability evals' },
+          { name: 'MITRE ATLAS', desc: 'framework — AI attack techniques' },
+          { name: 'Bloomberg', desc: 'AI & big tech' },
+          { name: 'Reuters', desc: 'AI policy & enforcement' },
+          { name: 'Financial Times', desc: 'AI in finance' },
+          { name: 'MIT Technology Review', desc: 'capability & safety' },
+          { name: 'Bank Policy Institute', desc: 'trade group — AI policy' },
+          { name: 'Columbia SIPA', desc: 'research — tech & cyber policy' },
+        ],
+      },
+      cyber: {
+        name: 'Cybersecurity', scope: 'cybersecurity · exploitation & exposure',
+        watch: 'Exploitation keeps choosing the internet-facing edge; extortion-only campaigns and real-time MFA relay are the growth patterns.',
+        opened: 'January 2024', ver: 'v31', verRange: 'v1 → v31',
+        p1: 'The exploited edge keeps moving outward. New entries on CISA’s exploited-vulnerabilities list run two-to-one toward internet-facing systems — file transfer, remote access, backup and print software — and the median gap between a flaw’s disclosure and confirmed attacks has fallen to nine days.', p1Sup: '1',
+        p2: 'The emerging pattern is speed plus restraint: extortion-only campaigns that skip encryption entirely, and phishing kits that defeat login verification codes in real time, making staff-account takeover routine. Sector sharing has kept signatures ahead of losses so far.', p2Sup: '2, 4',
+        assess: 'We assess as likely that file-transfer software remains the sector’s soft edge through the third quarter, and that exploitation of CVE-2026-31207 extends to financial-sector targets within two weeks.', assessSup: '1', conf: 'moderate confidence',
+        events: [
+          { date: 'Jul 9, 26', line: 'Flaw in MOVEit-class file-transfer software (CVE-2026-31207) under active attack; on CISA’s exploited list.', ver: 'v30 → v31', tier: 'T1', st: 'confirmed', src: 'CISA KEV catalog', id: 'L-1480', sup: '1' },
+          { date: 'Jul 2, 26', line: 'Automated login attacks using stolen passwords shift toward regional banks; detection patterns shared.', ver: 'v29 → v30', tier: 'T2', st: 'confirmed', src: 'sector advisory', id: 'L-1458', sup: '2' },
+          { date: 'Jun 18, 26', line: 'FBI alert: ransomware crew now skips encryption and simply threatens data leaks at mid-size banks.', ver: 'v28 → v29', tier: 'T1', st: 'confirmed', src: 'FBI FLASH', id: 'L-1457', sup: '3' },
+          { date: 'Jun 5, 26', line: 'US agencies detail how attackers hide inside banks’ own admin tools to avoid detection.', ver: 'v27 → v28', tier: 'T1', st: 'confirmed', src: 'CISA/NSA AA26-156', id: 'L-1452', sup: '' },
+          { date: 'May 8, 26', line: 'Phishing kits now defeat login verification codes in real time at two identity providers used across the sector.', ver: 'v26 → v27', tier: 'T2', st: 'confirmed', src: 'CERT note', id: 'L-1440', sup: '4' },
+          { date: 'Apr 30, 26', line: 'Annual breach report: intrusions are caught faster, but pay-or-we-leak extortion is rising; financial services stay a top-three target.', ver: 'v25 → v26', tier: 'T1', st: 'confirmed', src: 'Verizon DBIR 2026', id: 'L-1436', sup: '5' },
+        ],
+        sources: [
+          { n: '1', text: 'CISA — Known Exploited Vulnerabilities catalog, 2026' },
+          { n: '2', text: 'FS-ISAC — sector advisories & shared signatures, 2026' },
+          { n: '3', text: 'FBI — IC3 / FLASH reports, 2026' },
+          { n: '4', text: 'CERT/CC — vulnerability notes, 2026' },
+          { n: '5', text: 'Verizon — Data Breach Investigations Report, 2026' },
+        ],
+        related: ['tp', 'insider', 'resilience'],
+        feeds: [
+          { name: 'Krebs on Security', desc: 'cybercrime & breaches' },
+          { name: 'The Record', desc: 'threat intel & policy' },
+          { name: 'BleepingComputer', desc: 'vulnerabilities & incidents' },
+          { name: 'Dark Reading', desc: 'enterprise security' },
+          { name: 'FS-ISAC', desc: 'trade group — sector intel' },
+          { name: 'Columbia SIPA', desc: 'research — cyber policy' },
+          { name: 'CISA', desc: 'government — advisories & exploited list' },
+          { name: 'NIST NCCoE', desc: 'lab — applied cyber guidance' },
+          { name: 'NIST PQC program', desc: 'government — post-quantum standards' },
+          { name: 'NSA CNSA 2.0', desc: 'government — quantum-ready algorithms' },
+          { name: 'CISA quantum readiness', desc: 'government — migration guidance' },
+        ],
+      },
+      tp: {
+        name: 'Third-party risk', scope: 'third-party risk · concentration & disclosure',
+        watch: 'Core-processing concentration makes vendor disclosure the sector’s early-warning channel; notification lag is the binding constraint.',
+        opened: 'February 2024', ver: 'v22', verRange: 'v1 → v22',
+        p1: 'A handful of providers — Fiserv, FIS, Jack Henry — run the core for most US regional and community banks, so their trust-center notices, independent controls reports, and SEC risk disclosures function as sector risk intelligence in their own right.', p1Sup: '1, 2, 3',
+        p2: 'The emerging problem is disclosure lag, not control quality: June’s two material vendor incidents — at a core-processing subsidiary and a card-personalization vendor — were disclosed at nine and twenty-six days — inside contract terms, outside usefulness — and nth-party visibility, the vendor’s vendors, remains the open gap.', p2Sup: '4',
+        assess: 'We assess with moderate confidence that incident-notification terms, not control quality, are the binding constraint on third-party posture, and as likely that examiners test how well banks can see their vendors’ own suppliers at the next cycle.', assessSup: '4', conf: 'moderate confidence',
+        events: [
+          { date: 'Jul 8, 26', line: 'Fiserv’s quarterly controls report flags two gaps in how it manages system changes — its core platforms serve thousands of US banks.', ver: 'v21 → v22', tier: 'T1', st: 'confirmed', src: 'vendor trust portal', id: 'L-1471', sup: '1' },
+          { date: 'Jun 26, 26', line: 'AWS’s own outage review confirms a single management system whose failure can take down thousands of customers at once.', ver: 'v20 → v21', tier: 'T1', st: 'confirmed', src: 'provider postmortem', id: 'L-1459', sup: '' },
+          { date: 'Jun 20, 26', line: 'FIS tells investors it is still fixing how it separates its internal networks.', ver: 'v19 → v20', tier: 'T1', st: 'confirmed', src: 'FIS SEC filing', id: 'L-1456', sup: '2' },
+          { date: 'Jun 15, 26', line: 'Regulators clarify: banks must see risks beyond their vendors, down to their vendors’ vendors.', ver: 'v18 → v19', tier: 'T1', st: 'confirmed', src: 'OCC / Fed / FDIC', id: 'L-1454', sup: '4' },
+          { date: 'May 22, 26', line: 'Jack Henry publishes lessons-learned from its core-banking outage; recovery met its targets.', ver: 'v17 → v18', tier: 'T1', st: 'confirmed', src: 'Jack Henry post-incident review', id: 'L-1443', sup: '3' },
+          { date: 'Apr 22, 26', line: 'Fraud-monitoring vendor tells investors about a serious weakness in its own controls.', ver: 'v16 → v17', tier: 'T1', st: 'confirmed', src: 'SEC filing', id: 'L-1433', sup: '' },
+        ],
+        sources: [
+          { n: '1', text: 'Fiserv — trust center, client notices & SOC reporting, 2026' },
+          { n: '2', text: 'FIS — SEC filings & disclosures, 2026' },
+          { n: '3', text: 'Jack Henry — newsroom & post-incident reviews, 2026' },
+          { n: '4', text: 'OCC / Fed / FDIC — interagency TPRM guidance & FAQ, Jun 2026' },
+          { n: '5', text: 'FS-ISAC — supplier-risk working group, 2026' },
+        ],
+        related: ['resilience', 'cyber', 'insider'],
+        feeds: [
+          { name: 'American Banker', desc: 'core & fintech vendors' },
+          { name: 'Bloomberg', desc: 'vendor M&A & markets' },
+          { name: 'Reuters', desc: 'vendor incidents' },
+          { name: 'Cybersecurity Dive', desc: 'vendor breaches' },
+          { name: 'The Clearing House', desc: 'trade group — payments' },
+          { name: 'OCC / Fed / FDIC', desc: 'government — interagency guidance' },
+        ],
+      },
+      fraud: {
+        name: 'Fraud', scope: 'fraud · synthetic identity & instant rails',
+        watch: 'Money moves at rail speed and the mules already do; synthetic identity and deepfake authorization are the growth edges.',
+        opened: 'January 2024', ver: 'v19', verRange: 'v1 → v19',
+        p1: 'Synthetic identities aggregating into mule networks that clear through instant rails is now the confirmed pattern — formalized by FinCEN in July and visible in second-quarter sector loss data.', p1Sup: '1',
+        p2: 'The emerging edge is authorization itself: deepfake voice in wire approval, first-party fraud dressed as scam claims, and card testing that follows each new payment surface. Reimbursement rulemaking will decide where the loss lands.', p2Sup: '2, 4',
+        assess: 'We assess as likely that examination attention lands on onboarding verification before transaction monitoring, and that checking payee names against account numbers on instant transfers becomes mandatory within eighteen months.', assessSup: '1, 3', conf: 'moderate confidence',
+        events: [
+          { date: 'Jul 7, 26', line: 'FinCEN warns: fraud rings using invented identities are moving money through instant payments.', ver: 'v18 → v19', tier: 'T1', st: 'confirmed', src: 'FIN-2026-A003', id: 'L-1477', sup: '1' },
+          { date: 'Jun 27, 26', line: 'FTC data: losses to imposter scams up 31%; criminals posing as banks lead all categories.', ver: 'v17 → v18', tier: 'T1', st: 'confirmed', src: 'FTC data', id: 'L-1461', sup: '2' },
+          { date: 'Jun 20, 26', line: 'DOJ indicts multistate check-fraud ring; sector mail-theft losses double year over year.', ver: 'v16 → v17', tier: 'T2', st: 'confirmed', src: 'DOJ release', id: 'L-1455', sup: '' },
+          { date: 'Jun 9, 26', line: 'Comment period closes on who repays customers scammed over instant payments.', ver: 'v15 → v16', tier: 'T1', st: 'confirmed', src: 'CFPB docket', id: 'L-1451', sup: '3' },
+          { date: 'May 22, 26', line: 'AI-cloned voice used to approve a fraudulent wire at a $40B-asset regional bank.', ver: 'v14 → v15', tier: 'T2', st: 'confirmed', src: 'court filing', id: 'L-1444', sup: '4' },
+        ],
+        sources: [
+          { n: '1', text: 'FinCEN — advisories & alerts, 2026' },
+          { n: '2', text: 'FTC — Consumer Sentinel data book, Q1 2026' },
+          { n: '3', text: 'Nacha — operating-rule changes & RFI, 2026' },
+          { n: '4', text: 'DOJ — enforcement actions & court filings, 2026' },
+          { n: '5', text: 'FS-ISAC — fraud intelligence exchange, 2026' },
+        ],
+        related: ['insider', 'ai', 'data'],
+        feeds: [
+          { name: 'American Banker', desc: 'payments & fraud' },
+          { name: 'Krebs on Security', desc: 'fraud ecosystems' },
+          { name: 'Reuters', desc: 'enforcement' },
+          { name: 'Financial Times', desc: 'financial crime' },
+          { name: 'ABA Banking Journal', desc: 'trade group — fraud' },
+          { name: 'Nacha', desc: 'trade group — ACH rules' },
+          { name: 'FS-ISAC', desc: 'trade group — fraud intel' },
+          { name: 'FinCEN', desc: 'government — advisories & alerts' },
+          { name: 'FTC', desc: 'government — consumer fraud data' },
+        ],
+      },
+      insider: {
+        name: 'Insider threat', scope: 'insider threat · co-opted access',
+        watch: 'The profile shifts from disgruntled to co-opted: fraudulent remote hires, recruited staff, and AI-assisted social engineering of privileged users.',
+        opened: 'July 2025', ver: 'v7', verRange: 'v1 → v7',
+        p1: 'The insider profile is shifting from the disgruntled employee to the co-opted one. DOJ prosecutions document facilitator networks placing fraudulent remote IT workers — including DPRK-linked operators — inside US firms, and fraud crews recruit branch and call-center staff through encrypted social channels.', p1Sup: '1, 2',
+        p2: 'CERT’s 2026 data still puts departing-employee data movement first among confirmed insider events, but AI-assisted social engineering of privileged users is the fastest-growing scenario in sector reporting — the line between insider and external is the thing eroding.', p2Sup: '3, 4',
+        assess: 'We assess as likely that identity re-verification for remote technology hires becomes a standard control expectation within eighteen months, and with moderate confidence that recruitment-based insider fraud reaches a US regional bank this year.', assessSup: '1, 2', conf: 'moderate confidence',
+        events: [
+          { date: 'Jul 6, 26', line: 'DOJ charges facilitator network placing fraudulent remote IT workers at US financial firms.', ver: 'v6 → v7', tier: 'T1', st: 'confirmed', src: 'DOJ press release', id: 'L-1490', sup: '1' },
+          { date: 'Jun 28, 26', line: 'Carnegie Mellon’s 2026 data: employees taking data on the way out remains the top confirmed insider event.', ver: 'v5 → v6', tier: 'T1', st: 'confirmed', src: 'CERT Insider Threat Center', id: 'L-1491', sup: '3' },
+          { date: 'Jun 12, 26', line: 'FINRA bars former branch employee for selling account data to a fraud ring.', ver: 'v4 → v5', tier: 'T1', st: 'confirmed', src: 'FINRA enforcement', id: 'L-1492', sup: '' },
+          { date: 'May 19, 26', line: 'CISA’s insider-threat guide adds scenarios where AI is used to manipulate employees.', ver: 'v3 → v4', tier: 'T1', st: 'confirmed', src: 'CISA guide', id: 'L-1493', sup: '4' },
+          { date: 'Apr 20, 26', line: 'Industry warning: fraud crews are recruiting bank staff through Telegram and similar apps, seeking teller-level access.', ver: 'v2 → v3', tier: 'T2', st: 'confirmed', src: 'sector advisory', id: 'L-1494', sup: '2' },
+        ],
+        sources: [
+          { n: '1', text: 'DOJ — remote IT-worker fraud prosecutions, 2026' },
+          { n: '2', text: 'FS-ISAC — insider recruitment advisories, 2026' },
+          { n: '3', text: 'CERT Insider Threat Center (CMU SEI) — insider-risk data, 2026' },
+          { n: '4', text: 'CISA — insider threat mitigation guide, 2026' },
+          { n: '5', text: 'FFIEC — information security handbook, insider provisions' },
+        ],
+        related: ['fraud', 'cyber', 'tp'],
+        feeds: [
+          { name: 'The Record', desc: 'DPRK IT-worker reporting' },
+          { name: 'Cybersecurity Dive', desc: 'workforce & insider' },
+          { name: 'Bloomberg', desc: 'cases & enforcement' },
+          { name: 'American Banker', desc: 'branch & employee cases' },
+          { name: 'ABA Banking Journal', desc: 'trade group — workforce' },
+          { name: 'FS-ISAC', desc: 'trade group — insider advisories' },
+          { name: 'CISA', desc: 'government — insider-threat guidance' },
+        ],
+      },
+      resilience: {
+        name: 'Resilience', scope: 'resilience · shared infrastructure & season risk',
+        watch: 'The single points of failure sit above the perimeter — cloud control planes, carrier fiber, clearing concentration.',
+        opened: 'March 2024', ver: 'v15', verRange: 'v1 → v15',
+        p1: 'June’s exercises and the cloud postmortem point the same way: concentration risk lives in shared infrastructure — control planes, carrier routes, clearing plumbing — not inside the bank’s own perimeter.', p1Sup: '1, 3',
+        p2: 'Season risk compounds it. NOAA’s mid-season update raises Gulf landfall probabilities while the vendor-notification path remains untested under load; the failover gaps found in May’s exercise sat at exactly that seam.', p2Sup: '2, 5',
+        assess: 'We judge it unlikely that a regional weather event exceeds recovery objectives this season, but assess as likely that a shared-infrastructure disruption produces the year’s longest customer-facing outage.', assessSup: '3', conf: 'moderate confidence',
+        events: [
+          { date: 'Jul 3, 26', line: 'FedWire maintenance window rescheduled onto quarter-end weekend.', ver: 'v14 → v15', tier: 'T1', st: 'confirmed', src: 'FRB services notice', id: 'L-1468', sup: '1' },
+          { date: 'Jun 23, 26', line: 'NOAA mid-season update raises named-storm count for the Atlantic.', ver: 'v13 → v14', tier: 'T1', st: 'confirmed', src: 'NOAA outlook', id: 'L-1460', sup: '2' },
+          { date: 'Jun 11, 26', line: 'National carrier’s review: Southeast outage that cut branch and ATM links traced to a cut cable and a backup that failed to take over.', ver: 'v12 → v13', tier: 'T1', st: 'confirmed', src: 'carrier PIR', id: 'L-1453', sup: '3' },
+          { date: 'May 30, 26', line: 'Treasury researchers warn that market plumbing depends on a handful of clearing firms — FICC chief among them.', ver: 'v11 → v12', tier: 'T1', st: 'confirmed', src: 'OFR report', id: 'L-1446', sup: '4' },
+          { date: 'May 6, 26', line: 'Industry drill: three firms could not switch smoothly to backup payment routes.', ver: 'v10 → v11', tier: 'T1', st: 'confirmed', src: 'exercise summary', id: 'L-1439', sup: '5' },
+        ],
+        sources: [
+          { n: '1', text: 'Federal Reserve — FRB services notices, 2026' },
+          { n: '2', text: 'NOAA — National Hurricane Center outlooks, 2026' },
+          { n: '3', text: 'Cloud & carrier providers — public postmortems, 2026' },
+          { n: '4', text: 'OFR — financial stability reports, 2026' },
+          { n: '5', text: 'Sector exercises — after-action summaries, 2026' },
+        ],
+        related: ['tp', 'cyber', 'physical'],
+        feeds: [
+          { name: 'Reuters', desc: 'outages & infrastructure' },
+          { name: 'Bloomberg', desc: 'market infrastructure' },
+          { name: 'Data Center Dynamics', desc: 'cloud & facilities' },
+          { name: 'AP News', desc: 'weather & disasters' },
+          { name: 'SIFMA', desc: 'trade group — sector exercises' },
+          { name: 'FS-ISAC', desc: 'trade group — resilience intel' },
+          { name: 'Federal Reserve', desc: 'government — service notices' },
+        ],
+      },
+      data: {
+        name: 'Data risk', scope: 'data risk · privacy patchwork & movement',
+        watch: 'The compliance surface redraws itself state by state; biometric rules and cross-border adequacy are the moving pieces.',
+        opened: 'April 2024', ver: 'v12', verRange: 'v1 → v12',
+        p1: 'No single change is material; the sum is a moving surface. Texas cut the time allowed to fix violations, Colorado finalized rules on voice and fingerprint data, and a legal challenge reopened the approval that lets customer data cross the Atlantic — three changes in five weeks.', p1Sup: '1, 2',
+        p2: 'The emerging exposure is AI-adjacent: training-data provenance and model inputs are becoming privacy questions before they become model-risk questions, and enforcement is finding data brokers first.', p2Sup: '4',
+        assess: 'We assess with moderate confidence that the scheduled data-inventory refresh absorbs the June changes without new tooling, and as likely that biometric-consent language needs counsel review this quarter.', assessSup: '2', conf: 'moderate confidence',
+        events: [
+          { date: 'Jul 2, 26', line: 'Texas privacy law passes committee; banks get less time to fix violations and a narrower federal exemption.', ver: 'v11 → v12', tier: 'T2', st: 'confirmed', src: 'TX legislature', id: 'L-1467', sup: '1' },
+          { date: 'Jun 19, 26', line: 'Colorado AG finalizes biometric rules covering call-center voice authentication.', ver: 'v10 → v11', tier: 'T1', st: 'confirmed', src: 'CO AG', id: 'L-1463', sup: '2' },
+          { date: 'Jun 4, 26', line: 'Legal challenge reopens the EU–US data-transfer approval; overseas banking data flows are in scope.', ver: 'v9 → v10', tier: 'T1', st: 'confirmed', src: 'EDPB press', id: 'L-1448', sup: '3' },
+          { date: 'May 12, 26', line: 'Regulators clarify the 36-hour deadline for banks to report serious incidents.', ver: 'v8 → v9', tier: 'T1', st: 'confirmed', src: 'OCC / FDIC FAQ', id: 'L-1441', sup: '' },
+          { date: 'Apr 10, 26', line: 'California privacy agency enforcement action against brokers selling bank-customer financial profiles.', ver: 'v7 → v8', tier: 'T1', st: 'confirmed', src: 'CPPA', id: 'L-1429', sup: '4' },
+        ],
+        sources: [
+          { n: '1', text: 'State legislatures — TX, CO privacy dockets, 2026' },
+          { n: '2', text: 'Colorado AG — biometric rulemaking, Jun 2026' },
+          { n: '3', text: 'EDPB — adequacy review statements, Jun 2026' },
+          { n: '4', text: 'CPPA — enforcement actions, 2026' },
+          { n: '5', text: 'OCC / FDIC — incident-notification FAQ, May 2026' },
+        ],
+        related: ['ai', 'fraud', 'tp'],
+        feeds: [
+          { name: 'IAPP', desc: 'privacy-law tracking' },
+          { name: 'Bloomberg Law', desc: 'rulemaking & litigation' },
+          { name: 'Reuters', desc: 'enforcement' },
+          { name: 'Financial Times', desc: 'cross-border data' },
+          { name: 'Bank Policy Institute', desc: 'trade group — data policy' },
+          { name: 'ABA Banking Journal', desc: 'trade group — privacy' },
+          { name: 'FTC', desc: 'government — privacy enforcement' },
+          { name: 'White House', desc: 'government — data policy' },
+        ],
+      },
+      physical: {
+        name: 'Physical security', scope: 'physical security · infrastructure adjacency',
+        watch: 'Grid adjacency, not direct targeting, is the practical exposure; incident cadence is seasonal and opportunistic.',
+        opened: 'May 2024', ver: 'v9', verRange: 'v1 → v9',
+        p1: 'Substation incidents continue near two operations corridors with no service impact; the confirmed pattern reads opportunistic vandalism, not targeting.', p1Sup: '1',
+        p2: 'The transferable risks are physical-digital: screening-technology gaps documented at federal facilities apply to branch and operations screening, and an armored-carrier robbery pattern is tracking across the Southeast.', p2Sup: '2, 3',
+        assess: 'We judge direct targeting of bank facilities unlikely; grid adjacency remains the exposure worth spending against ahead of storm-season peak.', assessSup: '1', conf: 'high confidence',
+        events: [
+          { date: 'Jun 25, 26', line: 'Substation vandalism near Charlotte operations corridor; grid bulletin issued.', ver: 'v8 → v9', tier: 'T2', st: 'confirmed', src: 'grid operator bulletin', id: 'L-1482', sup: '1' },
+          { date: 'May 27, 26', line: 'GAO: screening-technology gaps at federal facilities; findings transfer to branch and cash-vault screening.', ver: 'v7 → v8', tier: 'T1', st: 'confirmed', src: 'GAO report', id: 'L-1445', sup: '2' },
+          { date: 'Apr 21, 26', line: 'Law-enforcement advisory: armored-carrier robbery pattern across the Southeast.', ver: 'v6 → v7', tier: 'T2', st: 'confirmed', src: 'LE bulletin', id: 'L-1432', sup: '3' },
+          { date: 'Apr 9, 26', line: 'Grid drill flags risk of planned power cuts at payment-processing sites in the Southeast.', ver: 'v5 → v6', tier: 'T1', st: 'confirmed', src: 'exercise report', id: 'L-1428', sup: '' },
+        ],
+        sources: [
+          { n: '1', text: 'NERC & grid operators — bulletins, 2026' },
+          { n: '2', text: 'GAO — facility-security reports, May 2026' },
+          { n: '3', text: 'Law enforcement — sector advisories, 2026' },
+          { n: '4', text: 'NOAA / FEMA — seasonal outlooks, 2026' },
+        ],
+        related: ['resilience', 'insider', 'cyber'],
+        feeds: [
+          { name: 'AP News', desc: 'incidents & infrastructure' },
+          { name: 'Reuters', desc: 'grid & utilities' },
+          { name: 'The Record', desc: 'critical infrastructure' },
+          { name: 'ABA Banking Journal', desc: 'trade group — branch security' },
+        ],
+      },
+    };
+
+    const monthlies = [
+      { no: '6', title: 'Model inventories move from expectation to instruction', month: 'June 2026', issued: 'Jul 1, 2026', changes: '61', commit: '9d31bb0', linked: true },
+      { no: '5', title: 'Concentration is the quiet theme', month: 'May 2026', issued: 'Jun 1, 2026', changes: '54', commit: '7c02ae4' },
+      { no: '4', title: 'Fraud migrates to the fastest rail', month: 'April 2026', issued: 'May 1, 2026', changes: '58', commit: '5e91d02' },
+      { no: '3', title: 'The edge keeps getting picked first', month: 'March 2026', issued: 'Apr 1, 2026', changes: '49', commit: '3b47f18' },
+      { no: '2', title: 'Rules arrive faster than frameworks', month: 'February 2026', issued: 'Mar 1, 2026', changes: '45', commit: '2a19c77' },
+      { no: '1', title: 'Baseline — seven pillars, one ledger', month: 'January 2026', issued: 'Feb 1, 2026', changes: '38', commit: '1f00b3a' },
+    ];
+    const weeklies = [
+      { no: '27', range: 'June 29 – July 5, 2026', meta: '23 confirmed · issued Jul 6' },
+      { no: '26', range: 'June 22 – 28, 2026', meta: '19 confirmed · issued Jun 29' },
+      { no: '25', range: 'June 15 – 21, 2026', meta: '21 confirmed · issued Jun 22' },
+      { no: '24', range: 'June 8 – 14, 2026', meta: '17 confirmed · issued Jun 15' },
+      { no: '23', range: 'June 1 – 7, 2026', meta: '20 confirmed · issued Jun 8' },
+      { no: '22', range: 'May 25 – 31, 2026', meta: '16 confirmed · issued Jun 1' },
+      { no: '21', range: 'May 18 – 24, 2026', meta: '18 confirmed · issued May 25' },
+      { no: '20', range: 'May 11 – 17, 2026', meta: '22 confirmed · issued May 18' },
+      { no: '19', range: 'May 4 – 10, 2026', meta: '15 confirmed · issued May 11' },
+      { no: '18', range: 'Apr 27 – May 3, 2026', meta: '19 confirmed · issued May 4' },
+    ];
+    const dailies = [
+      { no: '128', date: 'Thu, Jul 9, 2026', confirmed: '3', pending: '1', flash: '● 1', flashColor: '#8E1B12', linked: true },
+      { no: '127', date: 'Wed, Jul 8, 2026', confirmed: '5', pending: '0', flash: '—', flashColor: '#97A0A8' },
+      { no: '126', date: 'Tue, Jul 7, 2026', confirmed: '4', pending: '1', flash: '—', flashColor: '#97A0A8' },
+      { no: '125', date: 'Mon, Jul 6, 2026', confirmed: '2', pending: '0', flash: '—', flashColor: '#97A0A8' },
+      { no: '124', date: 'Fri, Jul 3, 2026', confirmed: '6', pending: '2', flash: '—', flashColor: '#97A0A8' },
+      { no: '123', date: 'Thu, Jul 2, 2026', confirmed: '3', pending: '0', flash: '—', flashColor: '#97A0A8' },
+      { no: '122', date: 'Wed, Jul 1, 2026', confirmed: '4', pending: '1', flash: '—', flashColor: '#97A0A8' },
+      { no: '121', date: 'Tue, Jun 30, 2026', confirmed: '5', pending: '0', flash: '—', flashColor: '#97A0A8' },
+      { no: '120', date: 'Mon, Jun 29, 2026', confirmed: '3', pending: '1', flash: '—', flashColor: '#97A0A8' },
+      { no: '119', date: 'Fri, Jun 26, 2026', confirmed: '7', pending: '0', flash: '● 1', flashColor: '#8E1B12' },
+    ];
+
+    const monthlySections = [
+      { pillar: 'Artificial intelligence', count: '11', head: 'Inventories move from expectation to instruction.',
+        grafs: [
+          { t: 'June closed the distance between supervisory speech and supervisory instruction. The examination manual’s March worksheet began appearing in first-day letters, and the Comptroller’s May remarks committed to model-risk FAQs “this summer.”', sup: '1', hasSup: true },
+          { t: 'We assess as almost certain that a complete AI model inventory becomes a standing examination request within twelve months, and likely that generative-AI use cases are scoped into the first pass.', sup: '2', hasSup: true },
+        ],
+        imps: [
+          { t: 'Close the inventory gap before it is requested: reconcile the model register against the generative-AI use-case log this quarter.', conf: 'high confidence' },
+          { t: 'Treat vendor-embedded models as in scope; nothing in the confirmed record exempts them.', conf: 'moderate confidence' },
+        ] },
+      { pillar: 'Cybersecurity', count: '16', head: 'Exploitation keeps choosing the edge.',
+        grafs: [
+          { t: 'New exploited-vulnerability listings in June ran two-to-one toward internet-facing systems — file transfer, remote access, print management — over desktop software. Median time from a flaw’s disclosure to confirmed attack fell to nine days.', sup: '3', hasSup: true },
+          { t: 'We assess as likely that file-transfer software remains the sector’s soft edge through the third quarter; the pace of late-June attacks is consistent with this line.', sup: '', hasSup: false },
+        ],
+        imps: [
+          { t: 'Hold the 72-hour fix-and-confirm deadline for internet-facing systems; it was met twice in June.', conf: 'high confidence' },
+          { t: 'Extend outside-in scanning to vendor-hosted file-transfer services.', conf: 'moderate confidence' },
+        ] },
+      { pillar: 'Third-party risk', count: '9', head: 'Disclosure gets slower as dependence gets deeper.',
+        grafs: [
+          { t: 'Two material vendor incidents in June were disclosed at nine and twenty-six days — both inside contract terms, neither inside usefulness. The June cloud postmortem separately confirmed a control-plane single point of failure.', sup: '4', hasSup: true },
+          { t: 'We assess with moderate confidence that notification terms, not control quality, are the binding constraint on third-party posture.', sup: '', hasSup: false },
+        ],
+        imps: [
+          { t: 'Renegotiate incident-reporting terms at the two renewals due this quarter: 24 hours, triggered by material events.', conf: 'moderate confidence' },
+          { t: 'Map the suppliers behind the bank’s top ten critical vendors.', conf: 'moderate confidence' },
+        ] },
+      { pillar: 'Fraud', count: '8', head: 'The money moves at rail speed; the mules already do.',
+        grafs: [
+          { t: 'Sector loss data for the second quarter shows synthetic identities aggregating into mule networks that clear through instant rails — the pattern FinCEN would formalize in an advisory the first week of July.', sup: '5', hasSup: true },
+          { t: 'We assess as likely that examination attention lands on onboarding verification before it lands on transaction monitoring.', sup: '', hasSup: false },
+        ],
+        imps: [
+          { t: 'Pilot checking payee names against account numbers on instant transfers, ahead of any mandate.', conf: 'moderate confidence' },
+          { t: 'Tune new-customer screening for invented-identity markers; the current model predates the pattern.', conf: 'high confidence' },
+        ] },
+      { pillar: 'Resilience', count: '7', head: 'Concentration is the quiet finding.',
+        grafs: [
+          { t: 'June’s exercises and the cloud postmortem point the same direction: the single points of failure sit above us, in shared infrastructure, not inside the perimeter.', sup: '6', hasSup: true },
+          { t: 'We judge it unlikely that a regional event exceeds recovery objectives this season — but the vendor-notification path remains untested under load.', sup: '', hasSup: false },
+        ],
+        imps: [
+          { t: 'Walk through the vendor-notification path end-to-end in a third-quarter exercise.', conf: 'high confidence' },
+          { t: 'Add the shared cloud-management dependency to the concentration register.', conf: 'moderate confidence' },
+        ] },
+      { pillar: 'Data risk', count: '6', head: 'The map keeps redrawing itself, state by state.',
+        grafs: [
+          { t: 'Texas amendments advanced with a shortened cure period; Colorado finalized biometric provisions; the cross-border adequacy review reopened with correspondent-banking data flows in scope. None is individually material — the sum is a moving compliance surface.', sup: '7', hasSup: true },
+          { t: 'We assess with moderate confidence that the scheduled data-inventory refresh absorbs the June changes without new tooling.', sup: '', hasSup: false },
+        ],
+        imps: [
+          { t: 'Scope the Texas and Colorado deltas into the Q3 inventory refresh.', conf: 'high confidence' },
+          { t: 'Hold cross-border transfers to the stricter current standard pending the adequacy outcome.', conf: 'moderate confidence' },
+        ] },
+      { pillar: 'Physical security', count: '4', head: 'Infrastructure adjacency is the exposure.',
+        grafs: [
+          { t: 'Substation incidents continued near two operations corridors; none affected service. The pattern is consistent with opportunistic vandalism rather than targeting.', sup: '8', hasSup: true },
+          { t: 'We judge direct targeting of bank facilities unlikely; grid adjacency remains the practical exposure.', sup: '', hasSup: false },
+        ],
+        imps: [
+          { t: 'Confirm generator runtime contracts for the Charlotte corridor before storm season peaks.', conf: 'high confidence' },
+        ] },
+      { pillar: 'Insider threat', count: '3', head: 'The insider profile shifts from disgruntled to co-opted.',
+        grafs: [
+          { t: 'FINRA barred a branch employee for selling account data; CERT’s June data release kept departing-employee exfiltration first among confirmed events. Recruitment now runs through encrypted channels rather than grievance.', sup: '9', hasSup: true },
+          { t: 'We assess as likely that remote-hire identity fraud — documented in DOJ charges through June — reaches the sector’s vendor workforce before its direct workforce.', sup: '', hasSup: false },
+        ],
+        imps: [
+          { t: 'Add identity re-verification to the remote technology-hire pipeline this quarter.', conf: 'high confidence' },
+          { t: 'Review alerts on departing employees’ data activity against Carnegie Mellon’s event patterns.', conf: 'moderate confidence' },
+        ] },
+    ];
+    const monthlyNotes = [
+      { n: '1', text: 'OCC examination manual update, Mar 2026; Acting Comptroller remarks, May 22, 2026' },
+      { n: '2', text: 'Horizon risk area D-0147, v13 — confirmed events through Jun 30, 2026' },
+      { n: '3', text: 'CISA, Known Exploited Vulnerabilities catalog — June 2026 additions' },
+      { n: '4', text: 'Vendor disclosures, Jun 2026; provider postmortem — Jun 26, 2026' },
+      { n: '5', text: 'Sector fraud-loss reporting, Q2 2026' },
+      { n: '6', text: 'Sector exercise after-action summary — Jun 2026' },
+      { n: '7', text: 'TX legislature; Colorado AG rulemaking; EDPB press — Jun 2026' },
+      { n: '8', text: 'Grid operator bulletins — Jun 2026' },
+      { n: '9', text: 'DOJ prosecutions; CERT Insider Threat Center data; FINRA enforcement — Jun 2026' },
+    ];
+
+    const diffPool = [
+      { d: '2026-07-09', p: 'cyber', line: 'Flaw in MOVEit-class file-transfer software (CVE-2026-31207) under active attack; on CISA’s exploited list', src: 'CISA KEV', id: 'L-1480' },
+      { d: '2026-07-02', p: 'cyber', line: 'Automated login attacks using stolen passwords shift to regional banks; detection patterns shared', src: 'sector advisory', id: 'L-1458' },
+      { d: '2026-06-24', p: 'cyber', line: 'Workaround defeats May’s fix for remote-access hardware; systems exposed again', src: 'vendor PSIRT' },
+      { d: '2026-06-18', p: 'cyber', line: 'FBI alert: ransomware crew now skips encryption and simply threatens data leaks at mid-size banks', src: 'FBI FLASH', id: 'L-1457' },
+      { d: '2026-06-16', p: 'cyber', line: 'NIST PQC program sets migration milestones for quantum-safe encryption; steal-now-decrypt-later risk cited for long-lived bank records', src: 'NIST PQC program', id: 'L-1498' },
+      { d: '2026-06-12', p: 'cyber', line: 'Two browser flaws exploited through booby-trapped financial-news sites join CISA’s exploited list', src: 'CISA KEV' },
+      { d: '2026-06-05', p: 'cyber', line: 'US agencies detail how attackers hide inside banks’ own admin tools to avoid detection', src: 'CISA/NSA AA26-156', id: 'L-1452' },
+      { d: '2026-05-28', p: 'cyber', line: 'Email-authentication gap in a widely used gateway lets criminals send convincing fake wire instructions', src: 'vendor advisory' },
+      { d: '2026-05-20', p: 'cyber', line: 'Researchers publish an attack blueprint for network equipment common in bank data centers; no attacks yet', src: 'NVD / vendor' },
+      { d: '2026-05-08', p: 'cyber', line: 'Phishing kits now defeat login verification codes in real time at two identity providers used across the sector', src: 'CERT note', id: 'L-1440' },
+      { d: '2026-04-30', p: 'cyber', line: 'Annual breach report: intrusions are caught faster, but pay-or-we-leak extortion is rising; financial services stay a top-three target', src: 'Verizon DBIR 2026', id: 'L-1436' },
+      { d: '2026-04-17', p: 'cyber', line: 'Print-software flaw exploited at a US insurer joins CISA’s exploited list', src: 'CISA KEV' },
+      { d: '2026-07-08', p: 'tp', line: 'Fiserv’s quarterly controls report flags two gaps in how it manages system changes', src: 'vendor trust portal', id: 'L-1471' },
+      { d: '2026-07-01', p: 'tp', line: 'Visa drops support for outdated encryption; issuing banks must upgrade their connections by October 1', src: 'network bulletin', id: 'L-1466' },
+      { d: '2026-06-26', p: 'tp', line: 'AWS’s own outage review confirms a single management system whose failure can take down thousands of customers at once', src: 'provider postmortem', id: 'L-1459' },
+      { d: '2026-06-20', p: 'tp', line: 'FIS tells investors it is still fixing how it separates its internal networks', src: 'FIS SEC filing', id: 'L-1456' },
+      { d: '2026-06-15', p: 'tp', line: 'Regulators clarify: banks must see risks beyond their vendors, down to their vendors’ vendors', src: 'OCC / Fed / FDIC', id: 'L-1454' },
+      { d: '2026-05-22', p: 'tp', line: 'Jack Henry publishes lessons-learned from its core-banking outage', src: 'Jack Henry post-incident review', id: 'L-1443' },
+      { d: '2026-06-03', p: 'tp', line: 'Servicer behind 60,000+ US ATMs is sold; ownership-change clauses in bank contracts now up for review', src: 'acquirer press release' },
+      { d: '2026-05-14', p: 'tp', line: 'A top-five payments processor’s new standard contract gives it 72 hours before it must tell bank clients about incidents', src: 'vendor notice' },
+      { d: '2026-04-22', p: 'tp', line: 'Fraud-monitoring vendor tells investors about a serious weakness in its own controls', src: 'SEC filing', id: 'L-1433' },
+      { d: '2026-07-07', p: 'fraud', line: 'FinCEN warns of invented-identity fraud rings moving money through instant payments', src: 'FIN-2026-A003', id: 'L-1477' },
+      { d: '2026-06-27', p: 'fraud', line: 'FTC data: losses to imposter scams up 31%; criminals posing as banks lead all categories', src: 'FTC data', id: 'L-1461' },
+      { d: '2026-06-20', p: 'fraud', line: 'DOJ indicts multistate check-fraud ring; sector mail-theft losses double year over year', src: 'DOJ release', id: 'L-1455' },
+      { d: '2026-06-09', p: 'fraud', line: 'Comment period closes on who repays customers scammed over instant payments', src: 'CFPB docket', id: 'L-1451' },
+      { d: '2026-05-22', p: 'fraud', line: 'AI-cloned voice used to approve a fraudulent wire at a $40B-asset regional bank', src: 'court filing', id: 'L-1444' },
+      { d: '2026-04-28', p: 'fraud', line: 'Criminals testing stolen card numbers on donation sites; bank-issued cards affected', src: 'network fraud bulletin' },
+      { d: '2026-07-08', p: 'ai', line: 'OCC confirms existing model rules cover generative AI', src: 'OCC issuance', id: 'L-1478' },
+      { d: '2026-06-30', p: 'ai', line: 'NIST drafts standards for AI used in fraud detection', src: 'NIST', id: 'L-1470' },
+      { d: '2026-06-24', p: 'ai', line: 'OpenAI reports criminals used its AI tools to build bank-themed scams; operations shut down', src: 'OpenAI threat intelligence', id: 'L-1489' },
+      { d: '2026-05-28', p: 'ai', line: 'Anthropic’s latest model documentation adds safety tests for AI acting autonomously in financial workflows', src: 'Anthropic system card', id: 'L-1465' },
+      { d: '2026-06-17', p: 'ai', line: 'State AG coalition letter targets AI chatbot disclosures in consumer finance', src: 'AG coalition letter' },
+      { d: '2026-06-06', p: 'ai', line: 'EU issues guidance on which AI systems count as high-risk under its AI law', src: 'EC guidance' },
+      { d: '2026-05-16', p: 'ai', line: 'Fed governor: supervisory expectations for AI inventories “will formalize”', src: 'Fed speech', id: 'L-1450' },
+      { d: '2026-04-24', p: 'ai', line: 'Researchers show bank AI assistants can be tricked into leaking confidential data', src: 'academic preprint' },
+      { d: '2026-07-03', p: 'resilience', line: 'FedWire maintenance window rescheduled onto quarter-end weekend', src: 'FRB services notice', id: 'L-1468' },
+      { d: '2026-06-23', p: 'resilience', line: 'NOAA mid-season update raises named-storm count for the Atlantic', src: 'NOAA', id: 'L-1460' },
+      { d: '2026-06-11', p: 'resilience', line: 'National carrier’s review: Southeast outage that cut branch and ATM links traced to a cut cable and a backup that failed to take over', src: 'carrier PIR', id: 'L-1453' },
+      { d: '2026-05-30', p: 'resilience', line: 'Treasury researchers warn that market plumbing depends on a handful of clearing firms — FICC chief among them', src: 'OFR report', id: 'L-1446' },
+      { d: '2026-05-06', p: 'resilience', line: 'Industry drill: three firms could not switch smoothly to backup payment routes', src: 'exercise summary', id: 'L-1439' },
+      { d: '2026-07-02', p: 'data', line: 'Texas privacy law passes committee; banks get less time to fix violations and a narrower federal exemption', src: 'TX legislature', id: 'L-1467' },
+      { d: '2026-06-19', p: 'data', line: 'Colorado AG finalizes biometric rules covering call-center voice authentication', src: 'CO AG', id: 'L-1463' },
+      { d: '2026-06-04', p: 'data', line: 'Legal challenge reopens the EU–US data-transfer approval; overseas banking data flows are in scope', src: 'EDPB press', id: 'L-1448' },
+      { d: '2026-05-12', p: 'data', line: 'Regulators clarify the 36-hour deadline for banks to report serious incidents', src: 'OCC / FDIC FAQ', id: 'L-1441' },
+      { d: '2026-06-25', p: 'physical', line: 'Substation vandalism near Charlotte operations corridor; grid bulletin issued', src: 'grid operator', id: 'L-1482' },
+      { d: '2026-05-27', p: 'physical', line: 'GAO: screening-technology gaps at federal facilities; findings transfer to branch and cash-vault screening', src: 'GAO report', id: 'L-1445' },
+      { d: '2026-04-21', p: 'physical', line: 'Law-enforcement advisory: armored-carrier robbery pattern across the Southeast', src: 'LE bulletin', id: 'L-1432' },
+      { d: '2026-04-10', p: 'data', line: 'California privacy agency enforcement action against brokers selling bank-customer financial profiles', src: 'CPPA', id: 'L-1429' },
+      { d: '2026-04-09', p: 'physical', line: 'Grid drill flags risk of planned power cuts at payment-processing sites in the Southeast', src: 'exercise report', id: 'L-1428' },
+      { d: '2026-07-06', p: 'insider', line: 'DOJ charges facilitator network placing fraudulent remote IT workers at US financial firms', src: 'DOJ release', id: 'L-1490' },
+      { d: '2026-06-28', p: 'insider', line: 'Carnegie Mellon data: employees taking data on the way out remains the top confirmed insider event', src: 'CERT Insider Threat Center', id: 'L-1491' },
+      { d: '2026-06-12', p: 'insider', line: 'FINRA bars former branch employee for selling account data to a fraud ring', src: 'FINRA enforcement', id: 'L-1492' },
+      { d: '2026-05-19', p: 'insider', line: 'CISA’s insider-threat guide adds scenarios where AI is used to manipulate employees', src: 'CISA guide', id: 'L-1493' },
+      { d: '2026-04-20', p: 'insider', line: 'Industry warning: fraud crews recruiting bank staff through Telegram and similar apps for teller-level access', src: 'sector advisory', id: 'L-1494' },
+      { d: '2026-04-02', p: 'tp', line: 'HR-platform breach exposes employee data at multiple regional banks; sector-wide password resets triggered', src: 'vendor notice' },
+      { d: '2026-03-26', p: 'fraud', line: 'FinCEN alert: criminals reroute business payrolls by tricking staff into changing direct-deposit instructions', src: 'FinCEN alert' },
+      { d: '2026-03-18', p: 'ai', line: 'State AI statute enacted with consumer-finance scope', src: 'state legislature' },
+      { d: '2026-03-05', p: 'cyber', line: 'Backup-software flaw used to extort financial institutions joins CISA’s exploited list', src: 'CISA KEV' },
+    ];
+    // assign ledger ids to uncited items, ascending by date
+    const used = new Set(diffPool.filter((x) => x.id).map((x) => x.id));
+    wire.forEach((w) => { if (w.id) used.add(w.id); });
+    Object.keys(riskAreas).forEach((k) => riskAreas[k].events.forEach((e) => { if (e.id) used.add(e.id); }));
+    let seq = 1406;
+    diffPool.slice().sort((a, b) => a.d.localeCompare(b.d)).forEach((x) => {
+      if (!x.id) { while (used.has('L-' + seq)) seq++; x.id = 'L-' + seq; used.add(x.id); seq++; }
+    });
+
+    const takeaways = [
+      { anchors: ['L-1480'], citeIds: ['L-1480'], pillars: 'Cybersecurity', conf: 'high confidence', head: 'Patch governance needs a decision, not more telemetry.', body: 'Attackers now reach internet-facing systems faster than monthly patch cycles close. Assign: make the 72-hour fix-and-confirm deadline standing policy for internet-facing systems, and extend outside-in scanning to vendor-hosted file-transfer services.' },
+      { anchors: ['L-1478'], citeIds: ['L-1478'], pillars: 'Artificial intelligence', conf: 'high confidence', head: 'AI inventory is about to become an examination request.', body: 'Treat the bank’s list of models and its list of AI uses as one document. Assign a completeness review this quarter, including AI built into vendor products.' },
+      { anchors: ['L-1471', 'L-1466', 'L-1459'], citeIds: ['L-1471', 'L-1466', 'L-1459'], pillars: 'Third-party · resilience', conf: 'moderate confidence', head: 'Third-party terms, not control quality, are the binding constraint.', body: 'Act: renegotiate how fast vendors must report incidents at the two contract renewals in flight, and log the shared cloud dependency before the autumn backup-systems drill.' },
+      { anchors: ['L-1477'], citeIds: ['L-1477'], pillars: 'Fraud', conf: 'moderate confidence', head: 'Instant-rail fraud will pull examiners to onboarding first.', body: 'Assign: tune new-customer screening to catch invented identities, and pilot checking payee names against account numbers before regulators require it.' },
+      { anchors: ['L-1490'], citeIds: ['L-1490', 'L-1491'], pillars: 'Insider threat', conf: 'moderate confidence', head: 'Remote-hire fraud makes identity a control, not an HR step.', body: 'DOJ charges confirm facilitator networks placing fraudulent remote workers inside financial firms. Assign: re-verify the identity of remote technology hires and re-check which contractors hold high-level system access.' },
+    ];
+
+    this._d = { P, PS, wire, lead, velocity, riskAreas, monthlies, weeklies, dailies, monthlySections, monthlyNotes, diffPool, takeaways };
+    return this._d;
+  }
+
+  // ---------- ledger cross-refs ----------
+  openLedger(id) {
+    const d = this.ensureData();
+    let target = 'diff';
+    let areaKey = null;
+    Object.keys(d.riskAreas).forEach((k) => { if (d.riskAreas[k].events.some((e) => e.id === id)) areaKey = k; });
+    if (areaKey) { target = 'dossier'; this.setState({ riskArea: areaKey }); }
+    else if (d.wire.some((w) => w.id === id)) target = 'today';
+    if (target === 'diff') {
+      const item = d.diffPool.find((x) => x.id === id);
+      if (item) this.setState((st) => ({ diffExpanded: { ...st.diffExpanded, [item.p]: true } }));
+      if (item && item.d <= this.state.diffApplied) {
+        const dt = new Date(item.d + 'T00:00:00Z');
+        dt.setUTCDate(dt.getUTCDate() - 1);
+        const iso = dt.toISOString().slice(0, 10);
+        this.setState({ diffDate: iso, diffApplied: iso });
+      }
+    }
+    clearTimeout(this._hlT);
+    this.setState({ hl: id, screen: target, cmdk: false });
+    try { history.replaceState(null, '', '#' + target); } catch (err) {}
+    window.scrollTo(0, 0);
+    this._hlT = setTimeout(() => this.setState({ hl: null }), 2600);
+  }
+
+  cmdkFiltered() {
+    const dests = [
+      { id: 'today', name: 'Today', desc: 'front page · daily brief · the wire' },
+      { id: 'riskindex', name: 'Risk Areas', desc: 'eight standing watches · changelogs' },
+      { id: 'publications', name: 'Publications', desc: 'dailies · weeklies · monthlies' },
+      { id: 'diff', name: 'Meeting Prep', desc: 'since your last meeting' },
+    ];
+    const q = this.state.cmdkQ.trim().toLowerCase();
+    return q ? dests.filter((x) => (x.name + ' ' + x.desc).toLowerCase().includes(q)) : dests;
+  }
+
+  // ---------- render ----------
+  renderVals() {
+    const d = this.ensureData();
+    const s = this.state;
+    const c = this.clock();
+    const density = this.props.density ?? 'comfortable';
+    const showPending = this.props.showPending ?? true;
+
+    const scr = s.screen;
+    const hlAnim = (id) => (s.hl && s.hl === id ? 'hzHl 2.4s cubic-bezier(0, 0, 0.2, 1) both' : 'none');
+
+    // nav
+    const navDefs = [
+      { id: 'today', label: 'Today' }, { id: 'riskindex', label: 'Risk Areas' }, { id: 'publications', label: 'Publications' },
+      { id: 'diff', label: 'Meeting Prep' },
+    ];
+    const navActive = { monthly: 'publications', components: '', dossier: 'riskindex' }[scr] || scr;
+    const raMenu = Object.keys(d.riskAreas).map((k) => ({ label: d.riskAreas[k].name, meta: 'updated ' + d.riskAreas[k].events[0].date, go: () => this.goArea(k) }));
+    const pubMenu = [
+      { label: 'Monthly reports', meta: 'latest: No. 6 — June 2026', go: () => this.goPub('monthly') },
+      { label: 'Weekly digests', meta: '31 issues · Fridays', go: () => this.goPub('weekly') },
+      { label: 'Daily briefs', meta: '128 issues · weekdays', go: () => this.goPub('daily') },
+      { label: 'Catch-up briefs', meta: 'saved from Meeting Prep', go: () => this.goPub('catchup') },
+    ];
+    const deskItems = navDefs.map((n) => {
+      const menu = n.id === 'riskindex' ? raMenu : n.id === 'publications' ? pubMenu : null;
+      const isOpen = !!menu && s.navMenu === n.id;
+      return {
+        ...n,
+        isBurger: false, notBurger: true, ariaLabel: n.label,
+        color: n.id === navActive ? '#14171A' : '#6B747C',
+        border: n.id === navActive ? '#F58025' : 'transparent',
+        go: () => this.go(n.id),
+        click: menu ? () => this.setState((st) => ({ navMenu: st.navMenu === n.id ? null : n.id })) : () => this.go(n.id),
+        hasMenu: !!menu,
+        menuOpen: isOpen,
+        caretT: isOpen ? 'rotate(180deg)' : 'none',
+        enter: menu ? () => this.setState({ navMenu: n.id }) : () => this.setState((st) => (st.navMenu ? { navMenu: null } : null)),
+      };
+    });
+    const isMobile = (s.vw || 1200) < 640;
+    const activeDef = navDefs.find((x) => x.id === navActive);
+    const mobileMenu = navDefs.map((x) => ({
+      label: x.label,
+      meta: x.id === navActive ? 'you are here' : { today: 'front page · the wire', riskindex: 'eight standing watches', publications: 'monthlies · weeklies · dailies', diff: 'since your last meeting' }[x.id] || '',
+      go: () => this.go(x.id),
+    }));
+    const navItems = isMobile ? [{
+      id: 'menu',
+      label: '', ariaLabel: 'Menu', isBurger: true, notBurger: false,
+      color: '#14171A',
+      border: s.navMenu === 'mobile' ? '#F58025' : 'transparent',
+      hasMenu: true,
+      menuOpen: s.navMenu === 'mobile',
+      caretT: s.navMenu === 'mobile' ? 'rotate(180deg)' : 'none',
+      click: () => this.setState((st) => ({ navMenu: st.navMenu === 'mobile' ? null : 'mobile' })),
+      enter: () => {},
+      go: () => {},
+    }] : deskItems;
+    const panelMenu = s.navMenu === 'mobile' ? mobileMenu : s.navMenu === 'riskindex' ? raMenu : s.navMenu === 'publications' ? pubMenu : null;
+
+    // wire
+    const deco = (it) => {
+      const pending = it.st === 'pending';
+      const flash = it.tri === 'flash';
+      const prio = it.tri === 'priority';
+      return {
+        ...it,
+        source: it.src,
+        pillarLabel: d.PS[it.p],
+        status: pending ? 'pending' : 'confirmed',
+        triage: it.tri,
+        tierFg: it.tier === 'T1' ? '#14171A' : '#6B747C',
+        tierBd: it.tier === 'T1' ? '#97A0A8' : '#BCC2C8',
+        stFg: pending ? '#6B747C' : '#14171A',
+        stW: pending ? 400 : 700,
+        stStyle: pending ? 'italic' : 'normal',
+        stTr: pending ? 'none' : 'uppercase',
+        stLs: pending ? '0.02em' : '0.1em',
+        stDot: pending ? 'transparent' : '#14171A',
+        stDotBd: pending ? '#97A0A8' : '#14171A',
+        triFg: flash ? '#FFFFFF' : prio ? '#10314F' : '#6B747C',
+        triBg: flash ? '#8E1B12' : 'transparent',
+        triBd: flash ? '#8E1B12' : prio ? '#10314F' : 'transparent',
+        leftRule: flash ? '#8E1B12' : 'transparent',
+        isPending: pending,
+        titleColor: pending ? '#6B747C' : '#14171A',
+        titleStyle: pending ? 'italic' : 'normal',
+        titleWeight: pending ? 400 : 500,
+        anim: hlAnim(it.id),
+      };
+    };
+    const triRank = { flash: 0, priority: 1, routine: 2 };
+    let wire = d.wire
+      .filter((w) => (s.pillar === 'all' || w.p === s.pillar))
+      .filter((w) => (showPending ? true : w.st !== 'pending'))
+      .filter((w) => {
+        const q = s.wireQ.trim().toLowerCase();
+        return !q || (w.title + ' ' + w.src + ' ' + d.PS[w.p] + ' ' + w.id).toLowerCase().includes(q);
+      });
+    if (s.wireSort === 'triage') wire = wire.slice().sort((a, b) => (triRank[a.tri] - triRank[b.tri]) || (a.m - b.m));
+    const hm = (t) => new Date(t).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'America/New_York' });
+    wire = wire.map((w) => ({ ...deco(w), time: hm(c.base - w.m * 60000), linked: true, open: () => this.goArea(w.p), srcUrl: this.srcUrl(w.src) || ('https://evidence.example.com/' + w.id), srcTitle: this.srcUrl(w.src) ? 'Open the primary source' : 'Archived copy — evidence store (demonstration link)' }));
+
+    const pillarChips = [{ id: 'all', label: 'All' }].concat(Object.keys(d.PS).map((k) => ({ id: k, label: d.PS[k] }))).map((pc) => ({
+      ...pc,
+      color: s.pillar === pc.id ? '#14171A' : '#6B747C',
+      border: s.pillar === pc.id ? '#F58025' : 'transparent',
+      select: () => this.setState({ pillar: pc.id }),
+    }));
+
+    // risk area detail
+    const area = d.riskAreas[s.riskArea] || d.riskAreas.ai;
+    const srcsFor = (sups) => String(sups || '').split(',').map((t) => t.trim()).filter(Boolean).map((nn) => area.sources.find((x) => x.n === nn)).filter(Boolean).map((x) => ({ text: x.text, url: this.srcUrl(x.text) || ('https://evidence.example.com/' + s.riskArea + '-src-' + x.n), title: this.srcUrl(x.text) ? 'Open the primary source' : 'Archived copy — evidence store (demonstration link)' }));
+    const timeline = area.events.map((e, i) => {
+      const pending = e.st === 'pending';
+      return {
+        ...e,
+        source: e.src,
+        status: pending ? 'pending' : 'confirmed',
+        nodeBg: pending ? '#FFFFFF' : '#10314F',
+        nodeBd: pending ? '#97A0A8' : '#10314F',
+        tail: i === area.events.length - 1 ? 'transparent' : '#D7DBDF',
+        lineStyle: pending ? 'italic' : 'normal',
+        lineColor: pending ? '#6B747C' : '#14171A',
+        tierFg: e.tier === 'T1' ? '#14171A' : '#6B747C',
+        tierBd: e.tier === 'T1' ? '#97A0A8' : '#BCC2C8',
+        stFg: pending ? '#6B747C' : '#14171A',
+        stW: pending ? 400 : 700,
+        stStyle: pending ? 'italic' : 'normal',
+        stTr: pending ? 'none' : 'uppercase',
+        stLs: pending ? '0.02em' : '0.1em',
+        anim: hlAnim(e.id),
+        srcUrl: this.srcUrl(e.src) || ('https://evidence.example.com/' + (e.id || 'pending')), srcTitle: this.srcUrl(e.src) ? 'Open the primary source' : 'Archived copy — evidence store (demonstration link)',
+      };
+    });
+
+    // publications
+    const monthlies = d.monthlies.map((m) => ({
+      ...m, linked: !!m.linked, unlinked: !m.linked,
+      numColor: m.linked ? '#10314F' : '#14171A',
+      open: m.linked ? () => this.go('monthly') : undefined,
+    }));
+    const dailies = d.dailies.map((x) => ({ ...x, linked: !!x.linked, unlinked: !x.linked, hasFlash: x.flash !== '—', open: x.linked ? () => this.go('today') : undefined }));
+
+    // diff
+    const since = s.diffApplied;
+    const inWindowAll = d.diffPool.filter((x) => x.d > since);
+    const inWindow = s.diffSel.length ? inWindowAll.filter((x) => s.diffSel.indexOf(x.p) >= 0) : inWindowAll;
+    const order = ['cyber', 'tp', 'fraud', 'ai', 'insider', 'resilience', 'data', 'physical'];
+    const fmtMD = (iso) => { const [y, m, dd] = iso.split('-').map(Number); return new Date(Date.UTC(y, m - 1, dd)).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' }); };
+    const diffGroups = order
+      .map((p) => ({ p, label: d.P[p], items: inWindow.filter((x) => x.p === p).sort((a, b) => b.d.localeCompare(a.d)) }))
+      .filter((g) => g.items.length)
+      .sort((a, b) => b.items.length - a.items.length)
+      .map((g) => {
+        const expanded = !!s.diffExpanded[g.p];
+        const all = g.items.map((x) => ({ ...x, dateStr: fmtMD(x.d), anim: hlAnim(x.id), srcUrl: this.srcUrl(x.src) || ('https://evidence.example.com/' + x.id), srcTitle: this.srcUrl(x.src) ? 'Open the primary source' : 'Archived copy — evidence store (demonstration link)' }));
+        return {
+          ...g, count: g.items.length,
+          items: expanded ? all : all.slice(0, 5),
+          showToggle: all.length > 5,
+          toggleLabel: expanded ? 'Show fewer' : 'See all ' + all.length + ' →',
+          toggle: () => this.setState((st) => ({ diffExpanded: { ...st.diffExpanded, [g.p]: !st.diffExpanded[g.p] } })),
+        };
+      });
+    const fmtLong = (iso) => { const [y, m, dd] = iso.split('-').map(Number); return new Date(Date.UTC(y, m - 1, dd)).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' }); };
+
+    // executive summary + saved briefs
+    const windowIds = new Set(inWindowAll.map((x) => x.id));
+    const diffTakeaways = d.takeaways
+      .filter((t) => t.anchors.some((a) => windowIds.has(a)))
+      .map((t) => ({ ...t, cites: t.citeIds.map((id) => ({ id, go: () => this.openLedger(id) })) }));
+    const newestOf = (p) => inWindowAll.filter((x) => x.p === p).sort((a, b) => b.d.localeCompare(a.d))[0];
+    const diffBelowCites = [newestOf('data'), newestOf('physical')].filter(Boolean).map((x) => ({ id: x.id, go: () => this.openLedger(x.id) }));
+    const briefsAll = this.loadBriefs();
+    const savedBriefs = briefsAll.map((b) => ({
+      ...b,
+      no: String(parseInt(b.id.slice(3), 10)),
+      count: d.diffPool.filter((x) => x.d > b.since).length,
+      sinceStr: fmtLong(b.since),
+      open: () => { this.go('diff'); this.applyDiff(b.since); },
+    })).reverse();
+    const curBrief = briefsAll.find((b) => b.since === s.diffApplied);
+    const briefId = curBrief ? curBrief.id : 'CB-draft';
+
+    // global search — whole confirmed record, client-side
+    const gq = s.gq.trim().toLowerCase();
+    let gsResults = [];
+    let gsTotal = 0;
+    if (gq) {
+      const rows = [];
+      const nav = (fn) => () => { this.setState({ gq: '', gFocus: false }); fn(); };
+      const seen = new Set();
+      d.wire.forEach((w) => { seen.add(w.id); rows.push({ kind: 'wire', title: w.title, meta: d.PS[w.p].toLowerCase(), go: nav(() => this.openLedger(w.id)) }); });
+      Object.keys(d.riskAreas).forEach((k) => {
+        const a = d.riskAreas[k];
+        rows.push({ kind: 'risk area', title: a.name + ' — ' + a.watch, meta: a.ver, go: nav(() => this.goArea(k)) });
+        a.events.forEach((e) => { if (e.id && !seen.has(e.id)) { seen.add(e.id); rows.push({ kind: 'risk area', title: e.line, meta: e.date, go: nav(() => this.openLedger(e.id)) }); } });
+      });
+      d.diffPool.forEach((x) => { if (!seen.has(x.id)) rows.push({ kind: 'record', title: x.line, meta: fmtMD(x.d), go: nav(() => this.openLedger(x.id)) }); });
+      d.monthlies.forEach((m) => rows.push({ kind: 'issue', title: 'Monthly report No. ' + m.no + ' — ' + m.title, meta: m.month, go: nav(m.linked ? () => this.go('monthly') : () => this.go('publications')) }));
+      d.weeklies.forEach((w) => rows.push({ kind: 'issue', title: 'Weekly digest No. ' + w.no + ' — ' + w.range, meta: 'archive', go: nav(() => this.go('publications')) }));
+      d.dailies.forEach((x) => rows.push({ kind: 'issue', title: 'Daily brief No. ' + x.no, meta: x.date, go: nav(x.linked ? () => this.go('today') : () => this.go('publications')) }));
+      const hit = rows.filter((r) => (r.kind + ' ' + r.title + ' ' + r.meta).toLowerCase().includes(gq));
+      gsTotal = hit.length;
+      gsResults = hit.slice(0, 9);
+    }
+
+    // cmdk
+    const ckList = this.cmdkFiltered();
+    const cmdkItems = ckList.map((x, i) => ({
+      ...x, num: String(i + 1),
+      bg: i === s.cmdkI ? '#E9EBED' : 'transparent',
+      w: i === s.cmdkI ? 600 : 400,
+      go: () => this.go(x.id),
+    }));
+
+    const palette = [
+      { hex: '#FFFFFF', name: 'bg-1', use: 'page & surfaces — flat white' },
+      { hex: '#F4F5F6', name: 'bg-2 · gray-050', use: 'recessed panels · strips · notices' },
+      { hex: '#E9EBED', name: 'bg-3 · gray-100', use: 'row separators · hover & keycap fill' },
+      { hex: '#D7DBDF', name: 'line-1 · gray-200', use: 'borders · dividers' },
+      { hex: '#BCC2C8', name: 'line-2 · gray-300', use: 'stronger borders · double rules' },
+      { hex: '#14171A', name: 'gray-900', use: 'display & body ink' },
+      { hex: '#4D555C', name: 'gray-600', use: 'secondary text · deks' },
+      { hex: '#6B747C', name: 'gray-500', use: 'agate · captions · pending (italic)' },
+      { hex: '#10314F', name: 'pnc-navy', use: 'chrome · labels · trust surfaces' },
+      { hex: '#0069AA', name: 'pnc-blue', use: 'links · source references' },
+      { hex: '#F58025', name: 'pnc-orange', use: 'active states · category bars — one accent per view' },
+      { hex: '#8E1B12', name: 'risk-critical', use: 'flash triage only — nothing else, ever' },
+      { hex: '#FDEAD7', name: 'orange-100', use: 'reference-highlight wash (animation only)' },
+    ];
+    const pillarTags = Object.keys(d.PS).map((k) => ({ label: d.PS[k] }));
+
+    return {
+      // routing
+      isToday: scr === 'today', isDossier: scr === 'dossier', isPublications: scr === 'publications',
+      isMonthly: scr === 'monthly', isDiff: scr === 'diff', isComponents: scr === 'components',
+      isRiskIndex: scr === 'riskindex',
+      isInterior: scr !== 'today',
+      navItems,
+      pubGoWeekly: () => this.goPub('weekly'),
+      pubGoMonthly: () => this.go('monthly'),
+      pubGoDaily: () => this.go('today'),
+      menuPanelOpen: !!panelMenu,
+      menuPanelItems: panelMenu || [],
+      menuPanelClose: () => this.setState({ navMenu: null }),
+      menuPanelHasFooter: s.navMenu !== 'mobile',
+      menuPanelFooter: s.navMenu === 'riskindex' ? 'All risk areas' : 'Full archive',
+      menuPanelFooterGo: s.navMenu === 'riskindex' ? () => this.go('riskindex') : () => this.go('publications'),
+      navLeave: () => this.setState((st) => (st.navMenu ? { navMenu: null } : null)),
+      goToday: () => this.go('today'),
+      goDiff: () => this.go('diff'),
+      goComponents: () => this.go('components'),
+      // clock / status line
+      lastRunStr: c.last, nextRunStr: c.next, countdown: c.cd, dateLong: c.dateLong, dateShort: c.dateShort,
+      // today
+      leadItems: d.lead.items.map((x, i) => {
+        const fn = d.lead.notes[i] || {};
+        return { ...deco(x), srcText: fn.text || '', srcUrl: this.srcUrl(fn.text) || ('https://evidence.example.com/' + (fn.id || x.id)), srcTitle: this.srcUrl(fn.text) ? 'Open the primary source' : 'Archived copy — evidence store (demonstration link)' };
+      }),
+      wire, wireCount: wire.length,
+      pillarChips,
+      sortLabel: s.wireSort === 'time' ? 'newest' : 'triage',
+      toggleSort: () => this.setState((st) => ({ wireSort: st.wireSort === 'time' ? 'triage' : 'time' })),
+      wireQ: s.wireQ,
+      onWireQ: (e) => this.setState({ wireQ: e.target.value }),
+      velocity: (() => {
+        const since30 = new Date(this.state.now - 30 * 86400000).toISOString().slice(0, 10);
+        const vc = {};
+        d.diffPool.forEach((x) => { if (x.d > since30) vc[x.p] = (vc[x.p] || 0) + 1; });
+        const vmax = Math.max(1, ...Object.keys(vc).map((k) => vc[k]));
+        return Object.keys(d.PS).map((p) => ({
+          label: d.PS[p], n: vc[p] || 0, pct: Math.round(((vc[p] || 0) / vmax) * 100),
+          open: () => { this.setState({ diffDate: since30, diffApplied: since30, diffSel: [p], diffBusy: false }); this.go('diff'); },
+        })).sort((a, b) => b.n - a.n);
+      })(),
+      vtotal: d.diffPool.filter((x) => x.d > new Date(this.state.now - 30 * 86400000).toISOString().slice(0, 10)).length,
+      // risk areas
+      riskIndex: (() => {
+        const since30 = new Date(this.state.now - 30 * 86400000).toISOString().slice(0, 10);
+        const vc = {};
+        d.diffPool.forEach((x) => { if (x.d > since30) vc[x.p] = (vc[x.p] || 0) + 1; });
+        return Object.keys(d.riskAreas).map((k) => {
+          const a = d.riskAreas[k];
+          return { name: a.name, watch: a.watch, n: vc[k] || 0, meta: (vc[k] || 0) + ' confirmed · 30 days · updated ' + String(a.events[0].date).split(',')[0], open: () => this.goArea(k) };
+        }).sort((a, b) => b.n - a.n);
+      })(),
+      raScope: area.scope, raName: area.name, raWatch: area.watch,
+      raVer: area.ver, raVerRange: area.verRange,
+      raEventsMeta: area.events.filter((e) => e.st === 'confirmed').length + ' confirmed events · first opened ' + area.opened,
+      raP1: area.p1, raP1Sup: area.p1Sup, raP2: area.p2, raP2Sup: area.p2Sup,
+      raAssess: area.assess, raAssessSup: area.assessSup, raConf: area.conf,
+      raConfirmed: String(area.events.filter((e) => e.st === 'confirmed').length),
+      raPending: String(area.events.filter((e) => e.st === 'pending').length),
+      raSrcCount: String(area.sources.length),
+      raPillar: d.PS[s.riskArea] ? d.PS[s.riskArea].toLowerCase() : s.riskArea,
+      raRelated: area.related.map((k) => ({ label: d.riskAreas[k].name, go: () => this.goArea(k) })),
+      raP1Sources: srcsFor(area.p1Sup), raP2Sources: srcsFor(area.p2Sup), raAssessSources: srcsFor(area.assessSup),
+      raFeeds: (area.feeds || []).map((f) => ({ ...f, url: this.srcUrl(f.name) || 'https://evidence.example.com/feeds' })),
+      rowPad: density === 'compact' ? '8px 0' : '13px 0',
+      rowPadTight: density === 'compact' ? '6px 0' : '9px 0',
+      // dossier
+      timeline,
+      // publications
+      monthlies,
+      weeklies: s.pubMoreW ? d.weeklies : d.weeklies.slice(0, 6),
+      wkHasMore: d.weeklies.length > 6,
+      wkMoreLabel: s.pubMoreW ? 'Show fewer' : 'More — ' + (d.weeklies.length - 6) + ' older digests →',
+      wkToggle: () => this.setState((st) => ({ pubMoreW: !st.pubMoreW })),
+      wkShowingLabel: String(s.pubMoreW ? d.weeklies.length : Math.min(6, d.weeklies.length)),
+      dailies: s.pubMoreD ? dailies : dailies.slice(0, 6),
+      dHasMore: dailies.length > 6,
+      dMoreLabel: s.pubMoreD ? 'Show fewer' : 'More — ' + (dailies.length - 6) + ' older briefs →',
+      dToggle: () => this.setState((st) => ({ pubMoreD: !st.pubMoreD })),
+      dShowingLabel: String(s.pubMoreD ? dailies.length : Math.min(6, dailies.length)),
+      // monthly
+      monthlySections: d.monthlySections.map((ms) => {
+        const nums = [];
+        ms.grafs.forEach((g) => String(g.sup || '').split(',').forEach((t) => { const v = t.trim(); if (v && nums.indexOf(v) < 0) nums.push(v); }));
+        const srcs = nums.map((nn) => d.monthlyNotes.find((x) => x.n === nn)).filter(Boolean).map((x) => ({ text: x.text, url: this.srcUrl(x.text) || ('https://evidence.example.com/monthly-06-note-' + x.n), title: this.srcUrl(x.text) ? 'Open the primary source' : 'Archived copy — evidence store (demonstration link)' }));
+        return { ...ms, srcs };
+      }),
+      // diff
+      diffDate: s.diffDate,
+      onDiffDate: (e) => this.setState({ diffDate: e.target.value }),
+      renderDiff: () => this.applyDiff(s.diffDate),
+      presetBoard: () => this.applyDiff('2026-04-14'),
+      presetQuarter: () => this.applyDiff('2026-04-01'),
+      preset30: () => this.applyDiff('2026-06-09'),
+      diffBusy: s.diffBusy, diffReady: !s.diffBusy,
+      diffCount: inWindow.length, diffGroups,
+      diffSinceStr: fmtLong(since), diffMs: s.diffMs,
+      diffTakeaways, diffBelowCites, briefId, savedBriefs,
+      diffScoped: s.diffSel.length > 0,
+      diffUnscoped: s.diffSel.length === 0,
+      diffPillarLabel: s.diffSel.map((k) => d.P[k]).join(' + '),
+      showAllPillars: () => this.setState({ diffSel: [] }),
+      diffChips: [{ id: 'all', label: 'All' }].concat(Object.keys(d.PS).map((k) => ({ id: k, label: d.PS[k] }))).map((c) => {
+        const active = c.id === 'all' ? !s.diffSel.length : s.diffSel.indexOf(c.id) >= 0;
+        return { ...c, color: active ? '#14171A' : '#6B747C', border: active ? '#F58025' : 'transparent',
+          toggle: () => this.setState((st) => {
+            if (c.id === 'all') return { diffSel: [] };
+            const has = st.diffSel.indexOf(c.id) >= 0;
+            return { diffSel: has ? st.diffSel.filter((x) => x !== c.id) : st.diffSel.concat(c.id) };
+          }) };
+      }),
+      diffListLabel: s.diffSel.length === 0 ? 'Appendix — every confirmed change in the window, by category' : 'Reading list — confirmed items and sources, newest first',
+      // global search
+      gq: s.gq,
+      onGq: (e) => this.setState({ gq: e.target.value, gFocus: true }),
+      onGsFocus: () => this.setState({ gFocus: true }),
+      onGsBlur: () => { clearTimeout(this._gsT); this._gsT = setTimeout(() => this.setState({ gFocus: false }), 200); },
+      onGsKey: (e) => {
+        if (e.key === 'Escape') { this.setState({ gq: '', gFocus: false }); if (e.target && e.target.blur) e.target.blur(); }
+        else if (e.key === 'Enter' && gsResults.length) gsResults[0].go();
+      },
+      gsRef: (el) => { this._gsEl = el; },
+      gsBtn: () => { if (this._gsEl) this._gsEl.focus(); },
+      gsOpen: !!gq && !!s.gFocus,
+      gsResults, gsEmpty: gsTotal === 0,
+      gsCountLabel: gsTotal === 0 ? 'nothing confirmed matches' : gsTotal > 9 ? 'showing 9 of ' + gsTotal + ' matches' : gsTotal + (gsTotal === 1 ? ' match' : ' matches'),
+      // cmdk
+      cmdkOpen: s.cmdk, cmdkItems, cmdkQ: s.cmdkQ,
+      onCmdkQ: (e) => this.setState({ cmdkQ: e.target.value, cmdkI: 0 }),
+      toggleCmdk: () => this.setState((st) => ({ cmdk: !st.cmdk, cmdkQ: '', cmdkI: 0 })),
+      closeCmdk: () => this.setState({ cmdk: false }),
+      cmdkRef: (el) => { if (el) el.focus(); },
+      // component sheet
+      palette, pillarTags,
+    };
+  }
+
+  applyDiff(date) {
+    clearTimeout(this._diffT);
+    this.setState({ diffDate: date, diffBusy: true, diffSel: [] });
+    const count = this.ensureData().diffPool.filter((x) => x.d > date).length;
+    this._diffT = setTimeout(() => {
+      this.saveBrief(date);
+      this.setState({ diffApplied: date, diffBusy: false, diffMs: (0.28 + count * 0.003 + Math.random() * 0.1).toFixed(2) + 's' });
+    }, 380);
+  }
+}
+</script>
+</body>
+</html>

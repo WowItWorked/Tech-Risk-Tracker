@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tech Risk Tracker</title>
+<meta name="description" content="A daily-edition tracker of technology risk for the financial sector — cyber, fraud, AI, third-party, resilience, data, physical, and insider risk.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%2310314F'/%3E%3Ctext x='50' y='72' font-size='62' font-family='Georgia,serif' font-weight='600' fill='%23FFFFFF' text-anchor='middle'%3ET%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..700&family=Public+Sans:ital,wght@0,300..800;1,400..600&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&family=Spline+Sans+Mono:wght@400;500&family=Fragment+Mono&display=swap">
+<style>
+  html, body { margin: 0; padding: 0; background: #FFFFFF; }
+  body { color: #14171A; font-family: 'Public Sans', system-ui, sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+  * { box-sizing: border-box; }
+  a { color: #0069AA; text-decoration-color: #C5E2F0; text-underline-offset: 3px; }
+  a:hover { color: #005A93; text-decoration-color: #005A93; }
+  button, input, select, textarea { font: inherit; color: inherit; background: none; border: none; padding: 0; }
+  button { cursor: pointer; text-align: inherit; }
+  input::placeholder, textarea::placeholder { color: #97A0A8; opacity: 1; }
+  :focus-visible { outline: 3px solid rgba(0, 105, 170, 0.35); outline-offset: 2px; }
+  ::selection { background: #10314F; color: #FFFFFF; }
+  @keyframes hzPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.2; } }
+  @keyframes hzHl { 0% { background-color: #FDEAD7; } 100% { background-color: transparent; } }
+  @keyframes hzIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+
+  /* hover / focus / active states (ported from the design's style-hover / style-focus / style-active) */
+  .hv-ink:hover { color: #14171A !important; }
+  .hv-row:hover { background: #E9EBED !important; }
+  .hv-soft:hover { background: #F4F5F6 !important; }
+  .hv-ul:hover { text-decoration: underline; }
+  .hv-ul-gray:hover { text-decoration: underline; text-decoration-color: #97A0A8; }
+  .fc-navy:focus { border-bottom-color: #10314F !important; }
+  .btn-navy:hover { background: #0B2438 !important; }
+  .btn-navy:active { transform: translateY(1px); }
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script type="module" src="./app.js"></script>
+</body>
+</html>

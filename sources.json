@@ -1,0 +1,24 @@
+{
+  "comment": "Allowlisted sources for the Tech Risk Tracker. Only items traceable to one of these feeds may enter the record. T1 = official/primary (confirmed on a single source). T2 = vetted press/trade (needs corroboration or enters as pending).",
+  "sources": [
+    { "id": "cisa-kev",   "name": "CISA Known Exploited Vulnerabilities", "tier": "T1", "type": "json", "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json", "pillars": ["cyber"] },
+    { "id": "cisa-adv",   "name": "CISA Cybersecurity Advisories", "tier": "T1", "type": "rss", "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml", "pillars": ["cyber", "insider", "physical"] },
+    { "id": "fbi-ic3",    "name": "FBI IC3 Public Service Announcements", "tier": "T1", "type": "rss", "url": "https://www.ic3.gov/PSA/RSS", "pillars": ["cyber", "fraud", "insider"] },
+    { "id": "occ",        "name": "OCC Bulletins", "tier": "T1", "type": "rss", "url": "https://www.occ.gov/rss/occ_bulletins.xml", "pillars": ["ai", "tp", "data", "cyber", "resilience"] },
+    { "id": "fed",        "name": "Federal Reserve press releases", "tier": "T1", "type": "rss", "url": "https://www.federalreserve.gov/feeds/press_all.xml", "pillars": ["ai", "resilience", "tp", "data"] },
+    { "id": "ftc",        "name": "FTC press releases", "tier": "T1", "type": "rss", "url": "https://www.ftc.gov/feeds/press-release.xml", "pillars": ["fraud", "data", "ai"] },
+    { "id": "cfpb",       "name": "CFPB newsroom", "tier": "T1", "type": "rss", "url": "https://www.consumerfinance.gov/about-us/newsroom/feed/", "pillars": ["fraud", "data", "ai"] },
+    { "id": "doj",        "name": "DOJ press releases", "tier": "T1", "type": "rss", "url": "https://www.justice.gov/news/rss?type=press_release", "pillars": ["fraud", "insider", "cyber"] },
+    { "id": "nist",       "name": "NIST cybersecurity news", "tier": "T1", "type": "rss", "url": "https://www.nist.gov/news-events/cybersecurity/rss.xml", "pillars": ["cyber", "ai", "data"] },
+    { "id": "noaa-nhc",   "name": "NOAA National Hurricane Center (Atlantic)", "tier": "T1", "type": "rss", "url": "https://www.nhc.noaa.gov/index-at.xml", "pillars": ["resilience", "physical"] },
+    { "id": "nacha",      "name": "Nacha news", "tier": "T1", "type": "rss", "url": "https://www.nacha.org/rss.xml", "pillars": ["fraud", "resilience"] },
+    { "id": "openai",     "name": "OpenAI news", "tier": "T1", "type": "rss", "url": "https://openai.com/news/rss.xml", "pillars": ["ai"] },
+    { "id": "anthropic",  "name": "Anthropic news", "tier": "T1", "type": "page", "url": "https://www.anthropic.com/news", "pillars": ["ai"] },
+    { "id": "fincen",     "name": "FinCEN newsroom", "tier": "T1", "type": "page", "url": "https://www.fincen.gov/news-room/news", "pillars": ["fraud", "data"] },
+    { "id": "krebs",      "name": "Krebs on Security", "tier": "T2", "type": "rss", "url": "https://krebsonsecurity.com/feed/", "pillars": ["cyber", "fraud", "insider"] },
+    { "id": "therecord",  "name": "The Record (Recorded Future News)", "tier": "T2", "type": "rss", "url": "https://therecord.media/feed", "pillars": ["cyber", "ai", "tp", "physical"] },
+    { "id": "bleeping",   "name": "BleepingComputer", "tier": "T2", "type": "rss", "url": "https://www.bleepingcomputer.com/feed/", "pillars": ["cyber", "tp"] },
+    { "id": "darkreading","name": "Dark Reading", "tier": "T2", "type": "rss", "url": "https://www.darkreading.com/rss.xml", "pillars": ["cyber", "insider", "tp"] },
+    { "id": "cyberdive",  "name": "Cybersecurity Dive", "tier": "T2", "type": "rss", "url": "https://www.cybersecuritydive.com/feeds/news/", "pillars": ["cyber", "tp", "ai"] }
+  ]
+}

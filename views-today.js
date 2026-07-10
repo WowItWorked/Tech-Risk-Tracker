@@ -1,0 +1,198 @@
+// Screens: Today (front page + the wire), Risk Areas index, and the risk-area dossier.
+import { html } from './ui.js';
+
+const KICKER = "font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;";
+const NBSP2 = '  ';
+
+export function Today(v) {
+  return html`
+  <div style="display: flex; flex-wrap: wrap; gap: 56px; padding-top: 26px; animation: hzIn 200ms cubic-bezier(0.2, 0, 0, 1);">
+
+    <div style="flex: 1 1 600px; min-width: 0;">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px 16px;">
+        <span style=${KICKER}>The daily brief</span>
+      </div>
+      <h2 style="margin: 12px 0 10px 0; font-family: 'Source Serif 4', Georgia, serif; font-optical-sizing: auto; font-size: clamp(30px, 4.6vw, 43px); line-height: 1.12; font-weight: 600; letter-spacing: -0.015em; color: #14171A; text-wrap: pretty;">${v.leadHead}</h2>
+      <p style="margin: 0 0 16px 0; font-size: 19px; line-height: 1.5; color: #4D555C; max-width: 62ch; text-wrap: pretty;">${v.leadDek}</p>
+
+      ${v.leadItems.map((li) => html`
+        <div style="display: flex; gap: 14px; padding: 13px 0; border-top: 1px solid #E9EBED;">
+          <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 12px; color: #10314F; min-width: 16px; padding-top: 3px;">${li.n}</span>
+          <div style="min-width: 0;">
+            <p style="margin: 0; font-size: 16.5px; line-height: 1.58; color: #14171A; text-wrap: pretty;">${li.text}${NBSP2}<span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #4D555C; background: #E9EBED; border-radius: 4px; padding: 2px 7px; white-space: nowrap; vertical-align: 2px;">${li.pillarLabel}</span></p>
+            <p style="margin: 6px 0 0 0; font-family: 'Public Sans', system-ui, sans-serif; font-size: 12.5px; line-height: 1.55; color: #4D555C; max-width: 78ch; text-wrap: pretty;"><span style="font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #10314F;">Why it matters</span> — ${li.why}</p>
+            <div style="margin-top: 5px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 11.5px; color: #6B747C;">Source: <a href=${li.srcUrl} target="_blank" rel="noopener" title=${li.srcTitle} style="color: #0069AA; text-decoration: underline; text-decoration-color: #C5E2F0; text-underline-offset: 2px;">${li.srcText} ↗</a></div>
+          </div>
+        </div>
+      `)}
+
+      <div style="margin-top: 36px; border-top: 2px solid #14171A; padding-top: 10px;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px 16px;">
+          <span style=${KICKER}>The wire — every update today</span>
+          <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #6B747C;">updated ${v.lastRunStr} et · ${v.wireCount} items</span>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px 18px; padding: 10px 0; border-bottom: 1px solid #D7DBDF;">
+          <div style="display: flex; flex-wrap: wrap; gap: 2px 14px;">
+            ${v.pillarChips.map((pc) => html`
+              <button onClick=${pc.select} class="hv-ink" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 3px 0 2px 0; color: ${pc.color}; border-bottom: 2px solid ${pc.border};">${pc.label}</button>
+            `)}
+          </div>
+          <div style="display: flex; align-items: center; gap: 16px;">
+            <button onClick=${v.toggleSort} class="hv-ink" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #6B747C;">sort: ${v.sortLabel} ▾</button>
+            <input value=${v.wireQ} onInput=${v.onWireQ} placeholder="search the wire" aria-label="Search the wire" class="fc-navy" style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11.5px; color: #14171A; background: transparent; border-bottom: 1px solid #BCC2C8; padding: 3px 2px; width: 150px;" />
+          </div>
+        </div>
+        ${v.wire.map((w) => html`
+          <div class="hv-soft" style="display: grid; grid-template-columns: 56px 1fr; gap: 14px; padding: ${v.rowPad}; padding-left: 10px; border-left: 3px solid ${w.leftRule}; border-bottom: 1px solid #E9EBED; animation: ${w.anim};">
+            <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11.5px; color: #6B747C; padding-top: 3px;">${w.time}</span>
+            <div style="min-width: 0;">
+              <div style="font-size: 17px; line-height: 1.45; font-weight: ${w.titleWeight}; font-style: ${w.titleStyle}; color: ${w.titleColor}; text-wrap: pretty;">${w.title}</div>
+              <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; margin-top: 5px;">
+                <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #4D555C;">${w.pillarLabel}</span>
+                <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: ${w.triFg}; background: ${w.triBg}; border: 1px solid ${w.triBd}; border-radius: 4px; padding: 2px 6px; line-height: 1.3;">${w.triage}</span>
+                ${w.isPending ? html`<span title="Reported by one source; the system is verifying before it enters the record" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-style: italic; color: #6B747C;">awaiting verification</span>` : null}
+                <a href=${w.srcUrl} target="_blank" rel="noopener" title=${w.srcTitle} style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; color: #0069AA; text-decoration: underline; text-decoration-color: #BCC2C8; text-underline-offset: 2px;">— ${w.source} ↗</a>
+                ${w.linked ? html`<button onClick=${w.open} class="hv-ul" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 0.08em; color: #0069AA;">risk area →</button>` : null}
+              </div>
+            </div>
+          </div>
+        `)}
+      </div>
+    </div>
+
+    <aside style="flex: 1 1 280px; max-width: 460px; min-width: 0;">
+      <div style="border-top: 2px solid #14171A; padding-top: 10px; margin-bottom: 28px;">
+        <div style=${KICKER}>Updates in past 30 days by category</div>
+        <div style="margin-top: 8px;">
+          ${v.velocity.map((vel) => html`
+            <button onClick=${vel.open} title="Read this pillar’s confirmed items and sources" class="hv-soft" style="display: grid; grid-template-columns: 1fr 84px 28px; align-items: center; gap: 10px; padding: 6.5px 0; border-bottom: 1px solid #E9EBED; width: 100%;">
+              <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #10314F;">${vel.label}</span>
+              <span style="display: block; height: 6px; background: #E9EBED;"><span style="display: block; height: 6px; width: ${vel.pct}%; background: #F58025;"></span></span>
+              <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 12px; color: #14171A; text-align: right;">${vel.n}</span>
+            </button>
+          `)}
+          <div style="display: flex; justify-content: space-between; padding: 7px 0; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #6B747C;">
+            <span>Total</span><span>${v.vtotal}</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="border-top: 2px solid #14171A; padding-top: 10px; margin-bottom: 28px;">
+        <div style=${KICKER}>Next update</div>
+        <p style="margin: 8px 0 0 0; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 13px; line-height: 1.6; color: #14171A;">${v.nextRunStr} et — in ${v.countdown}</p>
+        <p style="margin: 6px 0 0 0; font-family: 'Public Sans', system-ui, sans-serif; font-size: 12px; line-height: 1.5; color: #6B747C; text-wrap: pretty;">Sources are collected and verified once daily; the brief publishes weekdays at 6:00 am et. This issue was generated at ${v.lastRunStr} et.</p>
+      </div>
+
+      <div style="border-top: 2px solid #14171A; padding-top: 10px;">
+        <div style=${KICKER}>Upcoming publications</div>
+        <div style="margin-top: 8px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 12.5px; line-height: 1.5; color: #4D555C;">
+          <button onClick=${v.pubGoWeekly} title="Open the weekly digest archive" class="hv-soft" style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; width: 100%; padding: 6px 0; border-bottom: 1px solid #E9EBED;"><span style="color: #0069AA; white-space: nowrap;">Weekly digest →</span><span style="color: #6B747C; font-size: 11.5px; text-align: right;">${v.nextWeekly}</span></button>
+          <button onClick=${v.pubGoMonthly} title="Open the monthly report archive" class="hv-soft" style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; width: 100%; padding: 6px 0; border-bottom: 1px solid #E9EBED;"><span style="color: #0069AA; white-space: nowrap;">Monthly report →</span><span style="color: #6B747C; font-size: 11.5px; text-align: right;">${v.nextMonthly}</span></button>
+          <button onClick=${v.pubGoDaily} title="Open today’s brief" class="hv-soft" style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; width: 100%; padding: 6px 0;"><span style="color: #0069AA; white-space: nowrap;">Daily brief →</span><span style="color: #6B747C; font-size: 11.5px; text-align: right;">weekdays 6:00 am et</span></button>
+        </div>
+      </div>
+    </aside>
+  </div>`;
+}
+
+export function RiskIndex(v) {
+  return html`
+  <div style="padding-top: 26px; animation: hzIn 200ms cubic-bezier(0.2, 0, 0, 1);">
+    <span style=${KICKER}>Risk areas — standing watches</span>
+    <h2 style="margin: 10px 0 6px 0; font-family: 'Source Serif 4', Georgia, serif; font-size: clamp(28px, 4vw, 38px); line-height: 1.15; font-weight: 600; letter-spacing: -0.015em; color: #14171A;">Eight risks, monitored continuously</h2>
+    <p style="margin: 0; font-size: 15.5px; line-height: 1.6; color: #4D555C; column-width: 420px; column-gap: 56px; text-wrap: pretty;">Each risk area is a living page: current state, a standing assessment, a changelog, and its sources. Everything on these pages traces to an allowlisted set of official sources — regulators, federal agencies, standards bodies, frontier labs — and vetted trade press. Official sources confirm on a single report; press reports need corroboration or are held as “pending.” Emphasis falls on changes with systemic reach — shared infrastructure, common providers, sector-wide patterns — over single-institution noise.</p>
+    <div style="border-top: 2px solid #14171A; margin-top: 24px;"></div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(460px, 100%), 1fr)); column-gap: 56px; align-items: start;">
+    ${v.riskIndex.map((ri) => html`
+      <button onClick=${ri.open} class="hv-soft" style="display: grid; grid-template-columns: 1fr auto; gap: 6px 18px; align-items: baseline; width: 100%; padding: 15px 0; border-bottom: 1px solid #E9EBED; text-align: left;">
+        <span style="min-width: 0;">
+          <span style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px;">
+            <span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 20px; font-weight: 600; letter-spacing: -0.01em; color: #14171A;">${ri.name}</span>
+            <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10.5px; color: #97A0A8;">${ri.meta}</span>
+          </span>
+          <span style="display: block; margin-top: 4px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 13px; line-height: 1.5; color: #4D555C; max-width: 82ch; text-wrap: pretty;">${ri.watch}</span>
+        </span>
+        <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #10314F; white-space: nowrap;">Open →</span>
+      </button>
+    `)}
+    </div>
+  </div>`;
+}
+
+const srcRow = (list) => html`<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 3px 14px; margin-top: 7px;"><span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #6B747C;">Sources</span>${list.map((sx) => html`<a href=${sx.url} target="_blank" rel="noopener" title=${sx.title} style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11.5px; color: #0069AA; text-decoration: underline; text-decoration-color: #C5E2F0; text-underline-offset: 2px;">${sx.text} ↗</a>`)}</div>`;
+
+export function Dossier(v) {
+  return html`
+  <div style="padding-top: 26px; animation: hzIn 200ms cubic-bezier(0.2, 0, 0, 1);">
+    <div style="display: flex; flex-wrap: wrap; gap: 56px;">
+      <div style="flex: 1 1 560px; min-width: 0;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px 16px;">
+          <span style=${KICKER}>Risk — ${v.raScope}</span>
+        </div>
+        <h2 style="margin: 10px 0 8px 0; font-family: 'Source Serif 4', Georgia, serif; font-optical-sizing: auto; font-size: clamp(28px, 4vw, 40px); line-height: 1.15; font-weight: 600; letter-spacing: -0.015em; color: #14171A; max-width: 26ch; text-wrap: pretty;">${v.raName}</h2>
+        <p style="margin: 0 0 10px 0; font-size: 17px; line-height: 1.5; color: #4D555C; max-width: 62ch; text-wrap: pretty;">${v.raWatch}</p>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 26px;">
+          <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11.5px; color: #14171A;">as of ${v.raAsOf}</span>
+          <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10.5px; font-weight: 600; color: #10314F; border: 1px solid #10314F; border-radius: 4px; padding: 1px 6px;">${v.raVer}</span>
+        </div>
+
+        <div style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #6B747C; border-bottom: 1px solid #D7DBDF; padding-bottom: 6px;">Current state</div>
+        <p style="margin: 14px 0 0 0; font-size: 16.5px; line-height: 1.62; color: #14171A; max-width: 76ch; text-wrap: pretty;">${v.raP1}</p>
+        ${srcRow(v.raP1Sources)}
+        <p style="margin: 12px 0 0 0; font-size: 16.5px; line-height: 1.62; color: #14171A; max-width: 76ch; text-wrap: pretty;">${v.raP2}</p>
+        ${srcRow(v.raP2Sources)}
+        <div style="border-top: 2px solid #14171A; background: #F4F5F6; margin: 18px 0; padding: 14px 18px 16px 18px;">
+          <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #10314F;">Current assessment</span>
+          <p style="margin: 8px 0 0 0; font-size: 17px; line-height: 1.55; font-weight: 500; color: #14171A; max-width: 72ch; text-wrap: pretty;">${v.raAssess}${NBSP2}<span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #4D555C; border: 1px solid #D7DBDF; border-radius: 4px; padding: 1px 5px; white-space: nowrap; vertical-align: 2px;">${v.raConf}</span></p>
+          ${srcRow(v.raAssessSources)}
+        </div>
+
+        <div style="margin-top: 30px; border-top: 2px solid #14171A; padding-top: 10px;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px 16px; margin-bottom: 14px;">
+            <span style=${KICKER}>Key change update</span>
+            <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #6B747C;">newest first · ${v.raVerRange}</span>
+          </div>
+          ${v.timeline.map((e) => html`
+            <div style="display: grid; grid-template-columns: 76px 18px 1fr; column-gap: 12px; padding: 2px 0 0 0; animation: ${e.anim};">
+              <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; line-height: 1.5; color: #6B747C; text-align: right; padding-top: 2px;">${e.date}</span>
+              <span style="position: relative; display: block;">
+                <span style="position: absolute; left: 8px; top: 6px; bottom: -6px; width: 1px; background: ${e.tail};"></span>
+                <span style="position: absolute; left: 4.5px; top: 5px; width: 8px; height: 8px; background: ${e.nodeBg}; border: 1px solid ${e.nodeBd};"></span>
+              </span>
+              <div style="padding-bottom: 22px; min-width: 0;">
+                <div style="font-size: 16px; line-height: 1.5; font-style: ${e.lineStyle}; color: ${e.lineColor}; text-wrap: pretty;">${e.line}</div>
+                <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; margin-top: 4px;">
+                  <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10.5px; font-weight: 600; color: #10314F;">${e.ver}</span>
+                  <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: ${e.stW}; letter-spacing: ${e.stLs}; text-transform: ${e.stTr}; font-style: ${e.stStyle}; color: ${e.stFg};">${e.status}</span>
+                  <a href=${e.srcUrl} target="_blank" rel="noopener" title=${e.srcTitle} style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; color: #0069AA; text-decoration: underline; text-decoration-color: #BCC2C8; text-underline-offset: 2px;">— ${e.source} ↗</a>
+                </div>
+              </div>
+            </div>
+          `)}
+        </div>
+      </div>
+
+      <aside style="flex: 1 1 280px; max-width: 460px; min-width: 0;">
+        <div style="border-top: 2px solid #14171A; padding-top: 10px; margin-bottom: 28px;">
+          <div style=${KICKER}>Monitored feeds — government, trade & press</div>
+          ${v.raFeeds.map((f) => html`
+            <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 7px 0; border-bottom: 1px solid #E9EBED;">
+              <a href=${f.url} target="_blank" rel="noopener" title="Open this publication" style="font-family: 'Source Serif 4', Georgia, serif; font-size: 14.5px; color: #0069AA; text-decoration: underline; text-decoration-color: #BCC2C8; text-underline-offset: 2px; white-space: nowrap;">${f.name} ↗</a>
+              <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; color: #6B747C; text-align: right;">${f.desc}</span>
+            </div>
+          `)}
+          <p style="margin: 8px 0 0 0; font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; line-height: 1.5; color: #6B747C; text-wrap: pretty;">Official sources confirm on a single report. Press reporting needs corroboration by an official source or a second independent outlet — until then it is held as “pending,” shown in italics.</p>
+        </div>
+        <div style="border-top: 2px solid #14171A; padding-top: 10px; margin-bottom: 28px;">
+          <div style=${KICKER}>Coverage</div>
+          <div style="margin-top: 8px; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 12px; line-height: 1.5; color: #4D555C;">
+            <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid #E9EBED;"><span>confirmed events</span><span style="color: #14171A;">${v.raConfirmed}</span></div>
+            <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid #E9EBED;"><span>pending</span><span style="font-style: italic; color: #6B747C;">${v.raPending}</span></div>
+            <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid #E9EBED;"><span>primary sources</span><span style="color: #14171A;">${v.raSrcCount}</span></div>
+            <div style="display: flex; justify-content: space-between; padding: 4px 0;"><span>category</span><span style="color: #14171A;">${v.raPillar}</span></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>`;
+}
