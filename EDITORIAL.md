@@ -36,7 +36,8 @@ physical security, insider threat. Classification must be justified by the excer
 
 Rewritten headlines and "why it matters" lines are for a non-technical executive:
 - Say what happened and why a bank should care, in one breath each.
-- Expand every acronym at first use ("the OCC — the bank's primary regulator —").
+- Expand every acronym at first use by naming it in full ("the Office of the Comptroller
+  of the Currency (OCC)").
 - Substitute jargon: "flaw" not "CVE/vulnerability" (keep the CVE id as machinery text),
   "criminals" not "threat actors", "backup payment routes" not "contingency rails".
 - **Entailment constraint:** the rewrite may not introduce any entity, number, date,
@@ -44,9 +45,11 @@ Rewritten headlines and "why it matters" lines are for a non-technical executive
   in banking") requires a second cited source that says so.
 - **Sector voice, not one institution's:** the record is written for the financial
   sector generally, never from the seat of a specific bank. No "the bank's regulator,"
-  "the bank's vendors," or "the bank plans" — describe regulators by their actual scope
-  (e.g., "the OCC, the federal regulator of national banks") and address recommendations
-  to "banks" or to roles (fraud officers, technology teams), not to "the bank."
+  "the bank's vendors," or "the bank plans" — and never characterize an agency as any
+  institution's regulator ("the bank's primary regulator"). Name agencies in full and
+  let the acronym stand ("the Office of the Comptroller of the Currency (OCC)"), and
+  address recommendations to "banks" or to roles (fraud officers, technology teams),
+  not to "the bank."
 
 ## 5. Numbers and dates
 

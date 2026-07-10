@@ -14,3 +14,5 @@ Notes 2026-07-09:
 2026-07-10 editorial edit (no new collection): lead headline rewritten to present the three lead items as an explicit list ("Three stories lead today: …") after reader feedback that the blended sentence read as one story; dek adjusted to carry the confirmed/pending counts. No item content changed. Headline rule added to UPDATE_RUNBOOK.md step 5. Record 8da0644 → 68f9b91.
 
 2026-07-10 editorial edit (no new collection): removed institution-specific voice — "the OCC — the bank's primary federal regulator" rewritten to "the federal regulator of national banks"; stablecoin takeaway now addresses "banks" generally. Standing rule added to EDITORIAL.md §4 (sector voice, never one institution's). Record 68f9b91 → 65cf7e6.
+
+2026-07-10 editorial edit (no new collection): daily-brief OCC reference now names the agency in full with no regulator characterization ("The Office of the Comptroller of the Currency (OCC)"); EDITORIAL.md acronym and sector-voice examples updated to match. Record 65cf7e6 → 54d2c7d.
