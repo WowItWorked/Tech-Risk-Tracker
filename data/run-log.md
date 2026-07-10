@@ -16,3 +16,5 @@ Notes 2026-07-09:
 2026-07-10 editorial edit (no new collection): removed institution-specific voice — "the OCC — the bank's primary federal regulator" rewritten to "the federal regulator of national banks"; stablecoin takeaway now addresses "banks" generally. Standing rule added to EDITORIAL.md §4 (sector voice, never one institution's). Record 68f9b91 → 65cf7e6.
 
 2026-07-10 editorial edit (no new collection): daily-brief OCC reference now names the agency in full with no regulator characterization ("The Office of the Comptroller of the Currency (OCC)"); EDITORIAL.md acronym and sector-voice examples updated to match. Record 65cf7e6 → 54d2c7d.
+
+2026-07-10 policy change (no new collection): the pending/awaiting-verification state is retired — all allowlisted sources are trusted, so a single report admits an item in the same format as every other. The 13 formerly pending items were assigned ledger ids L-0030..L-0042 and added to the diff pool; EDITORIAL.md, UPDATE_RUNBOOK.md, sources.json, and the scheduled task prompt updated to match. Record 54d2c7d → 83e7f71.

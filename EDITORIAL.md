@@ -6,13 +6,10 @@ allowlisted source, and nothing is summarized beyond what those sources actually
 
 ## 1. Source allowlist
 
-Only the feeds in [sources.json](sources.json) may feed the record.
-- **T1 — official/primary** (regulators, agencies, standards bodies, frontier labs' own
-  publications): an item is **confirmed** on a single T1 source.
-- **T2 — vetted press/trade**: an item is confirmed only when corroborated by a T1 source
-  or a second independent T2 source; otherwise it enters as *pending — awaiting verification*
-  (rendered italic with a hollow tick). Pending items are re-checked on every run and either
-  promoted or dropped after 7 days.
+Only the feeds in [sources.json](sources.json) may feed the record. Every listed source —
+official (regulators, agencies, standards bodies, frontier labs' own publications) and
+vetted press/trade — is trusted: an item from any allowlisted feed enters the record on a
+single report, in the same format as every other item. The allowlist itself is the gate.
 
 Adding a source requires a human edit to sources.json — the update agent may never add one.
 
@@ -64,8 +61,7 @@ allowed, and they must:
 - carry a confidence badge — high / moderate / low,
 - use the probability ladder: *almost certain > likely > roughly even odds > unlikely*,
 - be marked as drafted by the system (the site footer says so on every page).
-No cited basis → no assessment. Confidence may never exceed what a single-source basis
-supports (single T2 basis caps at low confidence; single T1 at moderate).
+No cited basis → no assessment. Confidence may never exceed what the cited basis supports.
 
 ## 7. Verification pass (runs after drafting, every time)
 

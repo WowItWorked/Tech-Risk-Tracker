@@ -192,7 +192,6 @@ class App extends Component {
     const s = this.state;
     const c = this.clock();
     const density = SETTINGS.density;
-    const showPending = SETTINGS.showPending;
 
     const scr = s.screen;
     const hlAnim = (id) => (s.hl && s.hl === id ? 'hzHl 2.4s cubic-bezier(0, 0, 0.2, 1) both' : 'none');
@@ -248,30 +247,27 @@ class App extends Component {
 
     // wire decoration
     const deco = (it) => {
-      const pending = it.st === 'pending';
       const flash = it.tri === 'flash';
       const prio = it.tri === 'priority';
       return {
         ...it,
         source: it.src,
         pillarLabel: d.PS[it.p],
-        status: pending ? 'pending' : 'confirmed',
+        status: 'confirmed',
         triage: it.tri,
         triFg: flash ? '#FFFFFF' : prio ? '#10314F' : '#6B747C',
         triBg: flash ? '#8E1B12' : 'transparent',
         triBd: flash ? '#8E1B12' : prio ? '#10314F' : 'transparent',
         leftRule: flash ? '#8E1B12' : 'transparent',
-        isPending: pending,
-        titleColor: pending ? '#6B747C' : '#14171A',
-        titleStyle: pending ? 'italic' : 'normal',
-        titleWeight: pending ? 400 : 500,
+        titleColor: '#14171A',
+        titleStyle: 'normal',
+        titleWeight: 500,
         anim: hlAnim(it.id),
       };
     };
     const triRank = { flash: 0, priority: 1, routine: 2 };
     let wire = d.wire
       .filter((w) => (s.pillar === 'all' || w.p === s.pillar))
-      .filter((w) => (showPending ? true : w.st !== 'pending'))
       .filter((w) => {
         const q = s.wireQ.trim().toLowerCase();
         return !q || (w.title + ' ' + w.src + ' ' + d.PS[w.p] + ' ' + w.id).toLowerCase().includes(q);
@@ -289,26 +285,23 @@ class App extends Component {
     // risk area detail
     const area = d.riskAreas[s.riskArea] || d.riskAreas.ai;
     const srcsFor = (sups) => String(sups || '').split(',').map((t) => t.trim()).filter(Boolean).map((nn) => area.sources.find((x) => x.n === nn)).filter(Boolean).map((x) => ({ text: x.text, url: x.url, title: 'Open the primary source' }));
-    const timeline = area.events.map((e, i) => {
-      const pending = e.st === 'pending';
-      return {
-        ...e,
-        source: e.src,
-        status: pending ? 'pending' : 'confirmed',
-        nodeBg: pending ? '#FFFFFF' : '#10314F',
-        nodeBd: pending ? '#97A0A8' : '#10314F',
-        tail: i === area.events.length - 1 ? 'transparent' : '#D7DBDF',
-        lineStyle: pending ? 'italic' : 'normal',
-        lineColor: pending ? '#6B747C' : '#14171A',
-        stFg: pending ? '#6B747C' : '#14171A',
-        stW: pending ? 400 : 700,
-        stStyle: pending ? 'italic' : 'normal',
-        stTr: pending ? 'none' : 'uppercase',
-        stLs: pending ? '0.02em' : '0.1em',
-        anim: hlAnim(e.id),
-        srcUrl: e.srcUrl, srcTitle: 'Open the source for this item',
-      };
-    });
+    const timeline = area.events.map((e, i) => ({
+      ...e,
+      source: e.src,
+      status: 'confirmed',
+      nodeBg: '#10314F',
+      nodeBd: '#10314F',
+      tail: i === area.events.length - 1 ? 'transparent' : '#D7DBDF',
+      lineStyle: 'normal',
+      lineColor: '#14171A',
+      stFg: '#14171A',
+      stW: 700,
+      stStyle: 'normal',
+      stTr: 'uppercase',
+      stLs: '0.1em',
+      anim: hlAnim(e.id),
+      srcUrl: e.srcUrl, srcTitle: 'Open the source for this item',
+    }));
 
     // publications
     const monthlies = (d.publications.monthlies || []).map((m) => ({
@@ -364,7 +357,7 @@ class App extends Component {
       const rows = [];
       const nav = (fn) => () => { this.setState({ gq: '', gFocus: false }); fn(); };
       const seen = new Set();
-      d.wire.forEach((w) => { if (!seen.has(w.id)) { seen.add(w.id); rows.push({ kind: w.st === 'pending' ? 'pending' : 'wire', title: w.title, meta: d.PS[w.p].toLowerCase(), go: nav(() => this.openLedger(w.id)) }); } });
+      d.wire.forEach((w) => { if (!seen.has(w.id)) { seen.add(w.id); rows.push({ kind: 'wire', title: w.title, meta: d.PS[w.p].toLowerCase(), go: nav(() => this.openLedger(w.id)) }); } });
       Object.keys(d.riskAreas).forEach((k) => {
         const a = d.riskAreas[k];
         rows.push({ kind: 'risk area', title: a.name + ' — ' + a.watch, meta: a.ver, go: nav(() => this.goArea(k)) });
@@ -445,15 +438,14 @@ class App extends Component {
         d.diffPool.forEach((x) => { if (x.d > since30) vc[x.p] = (vc[x.p] || 0) + 1; });
         return Object.keys(d.riskAreas).map((k) => {
           const a = d.riskAreas[k];
-          return { name: a.name, watch: a.watch, n: vc[k] || 0, meta: (vc[k] || 0) + ' confirmed · 30 days · updated ' + String(a.events[0].date).split(',')[0], open: () => this.goArea(k) };
+          return { name: a.name, watch: a.watch, n: vc[k] || 0, meta: (vc[k] || 0) + ' recorded · 30 days · updated ' + String(a.events[0].date).split(',')[0], open: () => this.goArea(k) };
         }).sort((a, b) => b.n - a.n);
       })(),
       raScope: area.scope, raName: area.name, raWatch: area.watch,
       raVer: area.ver, raVerRange: area.verRange, raAsOf: area.asOf,
       raP1: area.p1, raP2: area.p2,
       raAssess: area.assess, raConf: area.conf,
-      raConfirmed: String(area.events.filter((e) => e.st === 'confirmed').length),
-      raPending: String(area.events.filter((e) => e.st === 'pending').length),
+      raConfirmed: String(area.events.length),
       raSrcCount: String(area.sources.length),
       raPillar: d.PS[s.riskArea] ? d.PS[s.riskArea].toLowerCase() : s.riskArea,
       raP1Sources: srcsFor(area.p1Sup), raP2Sources: srcsFor(area.p2Sup), raAssessSources: srcsFor(area.assessSup),
@@ -502,7 +494,7 @@ class App extends Component {
             return { diffSel: has ? st.diffSel.filter((x) => x !== ch.id) : st.diffSel.concat(ch.id) };
           }) };
       }),
-      diffListLabel: s.diffSel.length === 0 ? 'Appendix — every confirmed change in the window, by category' : 'Reading list — confirmed items and sources, newest first',
+      diffListLabel: s.diffSel.length === 0 ? 'Appendix — every recorded change in the window, by category' : 'Reading list — recorded items and sources, newest first',
       // global search
       gq: s.gq,
       onGq: (e) => this.setState({ gq: e.target.value, gFocus: true }),

@@ -50,7 +50,6 @@ export function Today(v) {
               <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; margin-top: 5px;">
                 <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #4D555C;">${w.pillarLabel}</span>
                 <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: ${w.triFg}; background: ${w.triBg}; border: 1px solid ${w.triBd}; border-radius: 4px; padding: 2px 6px; line-height: 1.3;">${w.triage}</span>
-                ${w.isPending ? html`<span title="Reported by one source; the system is verifying before it enters the record" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-style: italic; color: #6B747C;">awaiting verification</span>` : null}
                 <a href=${w.srcUrl} target="_blank" rel="noopener" title=${w.srcTitle} style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; color: #0069AA; text-decoration: underline; text-decoration-color: #BCC2C8; text-underline-offset: 2px;">— ${w.source} ↗</a>
                 ${w.linked ? html`<button onClick=${w.open} class="hv-ul" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 0.08em; color: #0069AA;">risk area →</button>` : null}
               </div>
@@ -100,7 +99,7 @@ export function RiskIndex(v) {
   <div style="padding-top: 26px; animation: hzIn 200ms cubic-bezier(0.2, 0, 0, 1);">
     <span style=${KICKER}>Risk areas — standing watches</span>
     <h2 style="margin: 10px 0 6px 0; font-family: 'Source Serif 4', Georgia, serif; font-size: clamp(28px, 4vw, 38px); line-height: 1.15; font-weight: 600; letter-spacing: -0.015em; color: #14171A;">Eight risks, monitored continuously</h2>
-    <p style="margin: 0; font-size: 15.5px; line-height: 1.6; color: #4D555C; column-width: 420px; column-gap: 56px; text-wrap: pretty;">Each risk area is a living page: current state, a standing assessment, a changelog, and its sources. Everything on these pages traces to an allowlisted set of official sources — regulators, federal agencies, standards bodies, frontier labs — and vetted trade press. Official sources confirm on a single report; press reports need corroboration or are held as “pending.” Emphasis falls on changes with systemic reach — shared infrastructure, common providers, sector-wide patterns — over single-institution noise.</p>
+    <p style="margin: 0; font-size: 15.5px; line-height: 1.6; color: #4D555C; column-width: 420px; column-gap: 56px; text-wrap: pretty;">Each risk area is a living page: current state, a standing assessment, a changelog, and its sources. Everything on these pages traces to an allowlisted set of trusted sources — regulators, federal agencies, standards bodies, frontier labs, and vetted trade press — and every item links to its source. Emphasis falls on changes with systemic reach — shared infrastructure, common providers, sector-wide patterns — over single-institution noise.</p>
     <div style="border-top: 2px solid #14171A; margin-top: 24px;"></div>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(460px, 100%), 1fr)); column-gap: 56px; align-items: start;">
     ${v.riskIndex.map((ri) => html`
@@ -181,13 +180,12 @@ export function Dossier(v) {
               <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; color: #6B747C; text-align: right;">${f.desc}</span>
             </div>
           `)}
-          <p style="margin: 8px 0 0 0; font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; line-height: 1.5; color: #6B747C; text-wrap: pretty;">Official sources confirm on a single report. Press reporting needs corroboration by an official source or a second independent outlet — until then it is held as “pending,” shown in italics.</p>
+          <p style="margin: 8px 0 0 0; font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; line-height: 1.5; color: #6B747C; text-wrap: pretty;">Every item on this page enters the record from these allowlisted, trusted feeds and links to its source.</p>
         </div>
         <div style="border-top: 2px solid #14171A; padding-top: 10px; margin-bottom: 28px;">
           <div style=${KICKER}>Coverage</div>
           <div style="margin-top: 8px; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 12px; line-height: 1.5; color: #4D555C;">
-            <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid #E9EBED;"><span>confirmed events</span><span style="color: #14171A;">${v.raConfirmed}</span></div>
-            <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid #E9EBED;"><span>pending</span><span style="font-style: italic; color: #6B747C;">${v.raPending}</span></div>
+            <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid #E9EBED;"><span>recorded events</span><span style="color: #14171A;">${v.raConfirmed}</span></div>
             <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid #E9EBED;"><span>primary sources</span><span style="color: #14171A;">${v.raSrcCount}</span></div>
             <div style="display: flex; justify-content: space-between; padding: 4px 0;"><span>category</span><span style="color: #14171A;">${v.raPillar}</span></div>
           </div>

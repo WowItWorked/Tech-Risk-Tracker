@@ -60,7 +60,7 @@ export function Publications(v) {
       ${v.dailies.map((d) => html`
         <div style="display: grid; grid-template-columns: 92px 1fr auto; gap: 8px 18px; align-items: baseline; padding: 10px 0; border-bottom: 1px solid #E9EBED;">
           <span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 17px; font-weight: 600; color: #14171A;">No. ${d.no}</span>
-          <span style="min-width: 0;"><span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 13.5px; color: #4D555C;">${d.date}</span> <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #6B747C;">· ${d.confirmed} confirmed · <span style="font-style: italic; color: #6B747C;">${d.pending} pending</span>${d.hasFlash ? html`<span style="color: #8E1B12;"> · ${d.flash} flash</span>` : null}</span></span>
+          <span style="min-width: 0;"><span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 13.5px; color: #4D555C;">${d.date}</span> <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #6B747C;">· ${d.confirmed} items${d.hasFlash ? html`<span style="color: #8E1B12;"> · ${d.flash} flash</span>` : null}</span></span>
           ${d.linked
             ? html`<button onClick=${d.open} class="hv-ul" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #0069AA; white-space: nowrap;">Open →</button>`
             : html`<span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-style: italic; color: #97A0A8; white-space: nowrap;">archived</span>`}
@@ -209,7 +209,7 @@ export function Diff(v) {
           <section style="margin-top: 28px;">
             <div style="display: flex; align-items: baseline; gap: 12px; border-bottom: 1px solid #14171A; padding-bottom: 6px;">
               <span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 19px; font-weight: 600; letter-spacing: -0.01em; color: #14171A;">${g.label}</span>
-              <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #6B747C;">${g.count} confirmed</span>
+              <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11px; color: #6B747C;">${g.count} recorded</span>
             </div>
             ${g.items.map((di) => html`
               <div style="display: grid; grid-template-columns: 76px 1fr; gap: 14px; padding: ${v.rowPadTight}; border-bottom: 1px solid #E9EBED; animation: ${di.anim};">

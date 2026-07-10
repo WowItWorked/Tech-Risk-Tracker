@@ -1,5 +1,5 @@
 {
-  "comment": "Allowlisted sources for the Tech Risk Tracker. Only items traceable to one of these feeds may enter the record. T1 = official/primary (confirmed on a single source). T2 = vetted press/trade (needs corroboration or enters as pending).",
+  "comment": "Allowlisted sources for the Tech Risk Tracker. Only items traceable to one of these feeds may enter the record; every listed source is trusted and a single report admits an item. Tier labels are descriptive only (T1 official/primary, T2 vetted press/trade).",
   "sources": [
     { "id": "cisa-kev",   "name": "CISA Known Exploited Vulnerabilities", "tier": "T1", "type": "json", "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json", "pillars": ["cyber"] },
     { "id": "cisa-adv",   "name": "CISA Cybersecurity Advisories", "tier": "T1", "type": "rss", "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml", "pillars": ["cyber", "insider", "physical"] },

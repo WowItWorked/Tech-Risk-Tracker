@@ -8,6 +8,4 @@ export { h, Component, render };
 // App-wide display settings (were Claude Design canvas props).
 export const SETTINGS = {
   density: 'comfortable',   // 'comfortable' | 'compact'
-  showPending: true,        // show items awaiting verification on the wire
-  liveClock: true,          // live 30-minute collection countdown vs frozen demo time
 };
