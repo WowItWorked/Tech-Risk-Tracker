@@ -42,6 +42,11 @@ Rewritten headlines and "why it matters" lines are for a non-technical executive
 - **Entailment constraint:** the rewrite may not introduce any entity, number, date,
   or causal claim absent from `origTitle`/`origExcerpt`. Adding context ("widely used
   in banking") requires a second cited source that says so.
+- **Sector voice, not one institution's:** the record is written for the financial
+  sector generally, never from the seat of a specific bank. No "the bank's regulator,"
+  "the bank's vendors," or "the bank plans" — describe regulators by their actual scope
+  (e.g., "the OCC, the federal regulator of national banks") and address recommendations
+  to "banks" or to roles (fraud officers, technology teams), not to "the bank."
 
 ## 5. Numbers and dates
 
