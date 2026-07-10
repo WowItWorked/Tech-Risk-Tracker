@@ -10,7 +10,7 @@ export default {
     startedOn: '2026-07-09',
     generatedAt: '2026-07-09T23:30:00-04:00',
     issueNo: 1,
-    recordHash: '8da0644',
+    recordHash: '68f9b91',
     windowLabel: 'June 9 – July 9, 2026',
     nextWeekly: 'Fri, Jul 10',
     nextMonthly: 'Mon, Aug 3',
@@ -19,8 +19,8 @@ export default {
 
   // ---------- today's daily brief ----------
   lead: {
-    head: 'A patched flaw in the security software itself, clearer cover for sharing fraud intelligence, and a new frontier model',
-    dek: 'Eight changes confirmed for today’s edition: a fix for a publicly known flaw in Windows Defender, updated Treasury guidance on bank-to-bank fraud information sharing, and OpenAI’s next frontier release — plus five reports still awaiting verification.',
+    head: 'Three stories lead today: a patched flaw in Windows Defender, clearer cover for banks sharing fraud intelligence, and OpenAI’s next frontier model',
+    dek: 'Three unrelated stories share the front page, drawn from the eight changes confirmed for today’s edition; five further press reports are held pending verification. Every item links to its source.',
     items: [
       { n: '1', p: 'cyber', tri: 'priority', st: 'confirmed', id: 'L-0026', conf: '',
         text: 'Microsoft has patched a flaw in Windows Defender — the security software built into Windows — known as “RoguePlanet.” Exploit code for the flaw was published by a researcher in early June, roughly a month before the fix.',

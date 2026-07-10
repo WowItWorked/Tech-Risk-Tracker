@@ -30,7 +30,11 @@ the repo root.
      (vN → vN+1 per event). Update `p1`/`p2`/`assess` prose ONLY from cited items
      (EDITORIAL §4–6).
    - `lead`: top 3 confirmed by triage, each with a "why it matters" line obeying the
-     entailment constraint.
+     entailment constraint. **Headline rule:** if the lead items are one connected story,
+     the headline may narrate it; if they are unrelated stories (the usual case), the
+     headline must present them as an explicit list the reader can count — e.g.
+     "Three stories lead today: X, Y, and Z" — never a blended sentence that reads as
+     a single event. The dek says how many items were confirmed and how many are pending.
    - `takeaways`: only where a confirmed item changes what an executive should do.
    - `publications.dailies`: prepend today's issue (next `issueNo`).
    - Fridays: prepend a weekly digest entry (count from the week's confirmed items).
