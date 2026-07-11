@@ -434,14 +434,18 @@ class App extends Component {
       goDiffFromSide: () => this.go('diff'),
       assessBoard: Object.keys(d.riskAreas).map((k) => {
         const a = d.riskAreas[k];
-        const c = String(a.conf || '').toLowerCase();
-        const hasAssess = Boolean(a.assess) && !/^no assessment/i.test(String(a.assess)) && c !== 'not rated' && c !== '';
+        const todays = d.wire.filter((w) => w.p === k).slice().sort((x, y) => (triRank[x.tri] - triRank[y.tri]) || (Date.parse(y.ts) - Date.parse(x.ts)));
+        const top = todays[0];
+        const ev = (a.events || []).find((e) => e.line);
+        const upd = top ? { text: top.title, when: 'Today', id: top.id }
+          : ev ? { text: ev.line, when: String(ev.date || '').replace(/,\s*\d+\s*$/, ''), id: ev.id }
+          : null;
         return {
           label: d.PS[k],
-          text: hasAssess ? a.assess : 'No assessment yet — the record holds no confirmed events in this area.',
-          hasAssess,
-          conf: hasAssess ? a.conf : null,
-          confColor: c.startsWith('high') ? '#10314F' : c.startsWith('moderate') ? '#B25C00' : '#6B747C',
+          updText: upd ? upd.text : 'No recorded events in this area yet.',
+          updWhen: upd ? upd.when : null,
+          hasUpd: Boolean(upd),
+          goUpdate: upd && upd.id ? () => this.openLedger(upd.id) : () => this.goArea(k),
           open: () => this.goArea(k),
         };
       }),

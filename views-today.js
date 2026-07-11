@@ -76,15 +76,17 @@ export function Today(v) {
 
       <div style="border-top: 2px solid #14171A; padding-top: 10px; margin-bottom: 28px;">
         <div style=${KICKER}>Where the risks stand</div>
-        <p style="margin: 6px 0 2px 0; font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; line-height: 1.5; color: #6B747C; text-wrap: pretty;">The system’s current judgment for each risk area. Open a row for the full dossier and sources.</p>
+        <p style="margin: 6px 0 2px 0; font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; line-height: 1.5; color: #6B747C; text-wrap: pretty;">The key update in each risk area today; the button opens its dossier and standing assessment.</p>
         ${v.assessBoard.map((ab) => html`
-          <button onClick=${ab.open} title="Open the ${ab.label} dossier" class="hv-soft" style="display: block; width: 100%; text-align: left; padding: 9px 0 10px 0; border-bottom: 1px solid #E9EBED;">
-            <span style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px;">
+          <div style="padding: 9px 0 10px 0; border-bottom: 1px solid #E9EBED;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px;">
               <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #10314F;">${ab.label}</span>
-              ${ab.conf ? html`<span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 9.5px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: ${ab.confColor}; white-space: nowrap;">${ab.conf}</span>` : null}
-            </span>
-            <span style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-top: 3px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 12px; line-height: 1.5; color: ${ab.hasAssess ? '#4D555C' : '#97A0A8'}; font-style: ${ab.hasAssess ? 'normal' : 'italic'}; text-wrap: pretty;">${ab.text}</span>
-          </button>
+              <button onClick=${ab.open} title="Open the ${ab.label} dossier and its standing assessment" class="hv-ul" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #0069AA; white-space: nowrap;">Assessment →</button>
+            </div>
+            <button onClick=${ab.goUpdate} title="Open this update in its dossier" class="hv-soft" style="display: block; width: 100%; text-align: left; margin-top: 3px;">
+              <span style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font-family: 'Public Sans', system-ui, sans-serif; font-size: 12px; line-height: 1.5; color: ${ab.hasUpd ? '#14171A' : '#97A0A8'}; font-style: ${ab.hasUpd ? 'normal' : 'italic'}; text-wrap: pretty;">${ab.updWhen ? html`<span style="color: #6B747C;">${ab.updWhen} — </span>` : null}${ab.updText}</span>
+            </button>
+          </div>
         `)}
       </div>
 
