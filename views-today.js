@@ -128,7 +128,6 @@ export function Dossier(v) {
         <p style="margin: 0 0 10px 0; font-size: 17px; line-height: 1.5; color: #4D555C; max-width: 62ch; text-wrap: pretty;">${v.raWatch}</p>
         <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 26px;">
           <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11.5px; color: #14171A;">as of ${v.raAsOf}</span>
-          <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 10.5px; font-weight: 600; color: #10314F; border: 1px solid #10314F; border-radius: 4px; padding: 1px 6px;">${v.raVer}</span>
         </div>
 
         <div style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #6B747C; border-bottom: 1px solid #D7DBDF; padding-bottom: 6px;">Current state</div>

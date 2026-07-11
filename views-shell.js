@@ -12,8 +12,9 @@ export function Header(v) {
         </div>
         <h1 style="margin: 0; padding: 8px 0 14px 0; text-align: center; font-family: 'Source Serif 4', Georgia, serif; font-optical-sizing: auto; font-size: clamp(34px, 5.4vw, 56px); font-weight: 600; letter-spacing: -0.02em; line-height: 1; color: #14171A;"><button onClick=${v.goToday} style="font: inherit; color: inherit; letter-spacing: inherit;">Tech Risk Tracker</button></h1>
         <div style="border-top: 1px solid #D7DBDF; border-bottom: 3px double #BCC2C8; padding: 6px 0; display: flex; flex-wrap: wrap; justify-content: center; column-gap: 22px; row-gap: 2px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; letter-spacing: 0.04em; color: #4D555C;">
+          <span>Daily Edition</span>
+          <span aria-hidden="true" style="color: #BCC2C8;">|</span>
           <span style="font-weight: 600; color: #14171A;">${v.dateLong}</span>
-          <span>Daily Edition — Issued 6:00 AM ET</span>
         </div>
       </div>
 
