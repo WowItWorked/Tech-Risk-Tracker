@@ -399,7 +399,7 @@ class App extends Component {
       goDiff: () => this.go('diff'),
       goComponents: () => this.go('components'),
       // edition / meta
-      editionLabel: META.edition,
+      editionLabel: String(META.edition).split('—')[0].trim().replace(/\b[a-z]/g, (ch) => ch.toUpperCase()),
       recordHash: META.recordHash,
       issueNo: META.issueNo,
       nextWeekly: META.nextWeekly,
