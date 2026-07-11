@@ -22,7 +22,7 @@ export function Header(v) {
         <div style="flex: 1 1 600px; min-width: 0; display: flex; flex-wrap: wrap; gap: 0 clamp(14px, 3vw, 30px);">
           ${v.navItems.map((n) => html`
             <span onMouseEnter=${n.enter} style="display: inline-block;">
-              <button onClick=${n.click} aria-haspopup=${n.hasMenu} aria-expanded=${n.menuOpen} aria-label=${n.ariaLabel} class="hv-ink" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.03em; padding: 10px 0 8px 0; white-space: nowrap; color: ${n.color}; border-bottom: 2px solid ${n.border}; margin-bottom: -2px;">${
+              <button onClick=${n.click} aria-haspopup=${n.hasMenu} aria-expanded=${n.menuOpen} aria-label=${n.ariaLabel} class="hv-ink" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 15px; font-weight: 700; letter-spacing: 0.04em; padding: 13px 0 11px 0; white-space: nowrap; color: ${n.color}; border-bottom: 3px solid ${n.border}; margin-bottom: -2px;">${
                 n.isBurger
                   ? html`<span aria-hidden="true" style="display: inline-flex; flex-direction: column; gap: 4px; padding: 4px 2px 3px 2px;"><span style="display: block; width: 20px; height: 2px; background: #14171A;"></span><span style="display: block; width: 20px; height: 2px; background: #14171A;"></span><span style="display: block; width: 20px; height: 2px; background: #14171A;"></span></span>`
                   : html`<span>${n.label}</span>${n.hasMenu ? html`<span style="display: inline-block; font-size: 8.5px; color: #97A0A8; padding-left: 5px; vertical-align: 2px; transform: ${n.caretT}; transition: transform 140ms cubic-bezier(0.2, 0, 0, 1);">▼</span>` : null}`
