@@ -31,7 +31,8 @@ the repo root.
    - `diffPool`: append all new items (id `L-####`, sequential).
    - `riskAreas[pillar].events`: append new items, bump the dossier version
      (vN → vN+1 per event). Update `p1`/`p2`/`assess` prose ONLY from cited items
-     (EDITORIAL §4–6).
+     (EDITORIAL §4–6). Citation lists obey EDITORIAL §2 citation limits: at most
+     three sources per unit, no source cited twice in the same unit.
    - `lead`: top 3 by triage, each with a "why it matters" line obeying the
      entailment constraint. **Headline rule:** if the lead items are one connected story,
      the headline may narrate it; if they are unrelated stories (the usual case), the
