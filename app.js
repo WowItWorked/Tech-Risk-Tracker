@@ -437,15 +437,12 @@ class App extends Component {
         const a = d.riskAreas[k];
         const c = String(a.conf || '').toLowerCase();
         const hasAssess = Boolean(a.assess) && !/^no assessment/i.test(String(a.assess)) && c !== 'not rated' && c !== '';
-        const ladder = (String(a.assess || '').match(/almost certain|roughly even odds|unlikely|likely/i) || [null])[0];
-        const phrase = hasAssess ? (ladder || String(a.conf)) : 'no assessment yet';
-        const dot = !hasAssess ? { bg: 'transparent', bd: '#BCC2C8' }
-          : c.startsWith('high') ? { bg: '#10314F', bd: '#10314F' }
-          : c.startsWith('moderate') ? { bg: '#F58025', bd: '#F58025' }
-          : { bg: '#97A0A8', bd: '#97A0A8' };
         return {
-          label: d.PS[k], phrase: phrase.toLowerCase(),
-          dotBg: dot.bg, dotBd: dot.bd, confTitle: (hasAssess ? a.conf : 'No assessment yet') + ' — ' + a.name,
+          label: d.PS[k],
+          text: hasAssess ? a.assess : 'No assessment yet — the record holds no confirmed events in this area.',
+          hasAssess,
+          conf: hasAssess ? a.conf : null,
+          confColor: c.startsWith('high') ? '#10314F' : c.startsWith('moderate') ? '#B25C00' : '#6B747C',
           open: () => this.goArea(k),
         };
       }),

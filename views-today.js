@@ -74,17 +74,17 @@ export function Today(v) {
       </div>
 
       <div style="border-top: 2px solid #14171A; padding-top: 10px; margin-bottom: 28px;">
-        <div style=${KICKER}>Standing assessments</div>
-        <div style="margin-top: 8px;">
-          ${v.assessBoard.map((ab) => html`
-            <button onClick=${ab.open} title=${ab.confTitle} class="hv-soft" style="display: grid; grid-template-columns: 1fr auto 12px; align-items: center; gap: 10px; padding: 7px 0; border-bottom: 1px solid #E9EBED; width: 100%;">
-              <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #10314F; text-align: left;">${ab.label}</span>
-              <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11.5px; font-style: italic; color: #4D555C; text-align: right;">${ab.phrase}</span>
-              <span style="width: 8px; height: 8px; border-radius: 50%; background: ${ab.dotBg}; border: 1px solid ${ab.dotBd}; justify-self: end;"></span>
-            </button>
-          `)}
-          <p style="margin: 8px 0 0 0; font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; line-height: 1.5; color: #97A0A8; text-wrap: pretty;">Each row is a standing assessment on the probability ladder; the dot is its confidence — navy high, orange moderate, gray low.</p>
-        </div>
+        <div style=${KICKER}>Where the risks stand</div>
+        <p style="margin: 6px 0 2px 0; font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; line-height: 1.5; color: #6B747C; text-wrap: pretty;">The system’s current judgment for each risk area. Open a row for the full dossier and sources.</p>
+        ${v.assessBoard.map((ab) => html`
+          <button onClick=${ab.open} title="Open the ${ab.label} dossier" class="hv-soft" style="display: block; width: 100%; text-align: left; padding: 9px 0 10px 0; border-bottom: 1px solid #E9EBED;">
+            <span style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px;">
+              <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #10314F;">${ab.label}</span>
+              ${ab.conf ? html`<span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 9.5px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: ${ab.confColor}; white-space: nowrap;">${ab.conf}</span>` : null}
+            </span>
+            <span style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-top: 3px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 12px; line-height: 1.5; color: ${ab.hasAssess ? '#4D555C' : '#97A0A8'}; font-style: ${ab.hasAssess ? 'normal' : 'italic'}; text-wrap: pretty;">${ab.text}</span>
+          </button>
+        `)}
       </div>
 
       <div style="border-top: 2px solid #14171A; padding-top: 10px;">
