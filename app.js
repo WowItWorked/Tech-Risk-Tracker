@@ -441,7 +441,7 @@ class App extends Component {
       raAssess: area.assess, raConf: area.conf,
       raConfirmed: String(area.events.length),
       raSrcCount: String(area.sources.length),
-      raPillar: d.PS[s.riskArea] ? d.PS[s.riskArea].toLowerCase() : s.riskArea,
+      raPillar: d.PS[s.riskArea] || s.riskArea,
       raP1Sources: srcsFor(area.p1Sup), raP2Sources: srcsFor(area.p2Sup), raAssessSources: srcsFor(area.assessSup),
       raFeeds: area.feeds || [],
       rowPad: density === 'compact' ? '8px 0' : '13px 0',
