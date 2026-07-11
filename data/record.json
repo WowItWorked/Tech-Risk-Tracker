@@ -4,7 +4,7 @@
   "startedOn": "2026-07-09",
   "generatedAt": "2026-07-11T12:26:50-04:00",
   "issueNo": 2,
-  "recordHash": "0be3174",
+  "recordHash": "9a78191",
   "windowLabel": "June 9 – July 11, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
@@ -207,12 +207,12 @@
    "ver": "v2",
    "verRange": "v1–v2",
    "asOf": "July 11, 2026",
-   "p1": "Frontier capability advanced again this window: OpenAI released GPT-5.6 on July 9, and in June introduced “Daybreak” security tools — including Codex Security and GPT-5.5-Cyber — for finding, validating, and patching software flaws at scale. The labs are also the sharpest threat reporters: OpenAI’s June report details China-linked influence operations using AI to target US technology debates.",
-   "p1Sup": "1, 2, 3",
+   "p1": "Frontier capability advanced again this window: OpenAI released GPT-5.6 on July 9, describing it as delivering “more intelligence from every token, stronger performance per dollar.”",
+   "p1Sup": "1",
    "p2": "Banks are adopting at scale: OpenAI reports BBVA scaled ChatGPT Enterprise to 100,000 employees in an AI-powered banking transformation. The regulatory line is earlier-stage: the FTC opened public comment on a policy statement addressing AI accuracy on July 1. AI is confirmed on the attack side too: an exploited flaw in Langflow, an AI-workflow tool, is on CISA’s known-exploited list.",
    "p2Sup": "5, 6, 7",
-   "assess": "We assess as likely that AI adoption inside banks continues to outpace tailored supervisory guidance: frontier releases and bank-scale deployments are confirmed this window, while regulatory activity remains at the comment stage.",
-   "assessSup": "1, 4, 6",
+   "assess": "We assess as likely that AI adoption inside banks continues to outpace tailored supervisory guidance: bank-scale deployments are confirmed this window, while regulatory activity remains at the comment stage.",
+   "assessSup": "5, 6",
    "conf": "moderate confidence",
    "events": [
     {
@@ -670,12 +670,12 @@
    "ver": "v2",
    "verRange": "v1–v2",
    "asOf": "July 11, 2026",
-   "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, following June proposals aimed at stablecoins: a customer identification program requirement for payment stablecoin issuers (Fed, June 18) and Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22).",
-   "p1Sup": "1, 2, 3",
+   "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22).",
+   "p1Sup": "1, 3",
    "p2": "Operationally, the OCC is highlighting FinCEN’s updated Section 314(b) fact sheet clarifying how institutions can share suspected-fraud information with each other. The FBI’s recent consumer-facing warnings describe criminals redirecting users to fraudulent websites through malicious traffic-distribution systems. On the criminal side, a Bulgarian national already imprisoned for helping launder millions in fraud proceeds is charged with stealing $290,000 in government-seized cryptocurrency while incarcerated.",
    "p2Sup": "4, 5, 7",
-   "assess": "We assess as likely that AML expectations formalize around new payment types first: three of the confirmed rule actions this window concern stablecoins or AML-program modernization, and all are open for comment.",
-   "assessSup": "1, 2, 3",
+   "assess": "We assess as likely that AML expectations formalize around new payment types first: this window's confirmed stablecoin-specific rule actions — a Federal Reserve customer identification program requirement and OCC Bank Secrecy Act and sanctions compliance standards for stablecoin issuers under the GENIUS Act — are open for comment.",
+   "assessSup": "2, 3",
    "conf": "moderate confidence",
    "events": [
     {
@@ -974,8 +974,8 @@
    "ver": "v1",
    "verRange": "v1",
    "asOf": "July 9, 2026",
-   "p1": "The Federal Reserve’s annual stress test, released June 24, concludes that large banks are well positioned to weather a severe recession and continue lending to households and businesses. Initial findings from the Fed’s 2025 triennial payments study followed on July 1.",
-   "p1Sup": "1, 2",
+   "p1": "The Federal Reserve’s annual stress test, released June 24, concludes that large banks are well positioned to weather a severe recession and continue lending to households and businesses.",
+   "p1Sup": "1",
    "p2": "Season risk is quiet: the National Hurricane Center’s July 9 outlook expects no tropical cyclone formation in the Atlantic over the next seven days. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
    "p2Sup": "3, 4",
    "assess": "On the current outlook we judge near-term weather-driven disruption unlikely, and note that no confirmed systemic-infrastructure stress entered the record this window.",
@@ -1086,12 +1086,12 @@
    "ver": "v1",
    "verRange": "v1",
    "asOf": "July 9, 2026",
-   "p1": "Uniform data-reporting standards are now final: the OCC, Federal Reserve, FDIC, and five other agencies issued the joint Financial Data Transparency Act rule on June 11, establishing data standards for certain regulatory collections. The OCC separately proposed weekly and quarterly reporting forms for payment stablecoin issuers under the GENIUS Act.",
-   "p1Sup": "1, 2",
-   "p2": "Enforcement pressure sits on consumer-data accuracy. The FTC required Amazon to pay $2.25 million over Fair Credit Reporting Act violations involving identity-theft victims’ records (June 30), and tenant-screening provider RentGrow to pay $2.25 million over duplicate records and undisclosed data sources (July 9). Separately, insurance company AssuranceAmerica disclosed a breach affecting records of 6.9 million drivers.",
-   "p2Sup": "3, 4, 5",
-   "assess": "We assess as likely that data-accuracy obligations — not only data-security ones — drive the next round of consumer-data enforcement: both confirmed FTC actions this window are accuracy cases under the Fair Credit Reporting Act.",
-   "assessSup": "3, 4",
+   "p1": "Uniform data-reporting standards are now final: the OCC, Federal Reserve, FDIC, and five other agencies issued the joint Financial Data Transparency Act rule on June 11, establishing data standards for certain regulatory collections.",
+   "p1Sup": "1",
+   "p2": "Enforcement pressure sits on consumer-data accuracy. The FTC required tenant-screening provider RentGrow to pay $2.25 million over duplicate records and undisclosed data sources (July 9). Separately, insurance company AssuranceAmerica disclosed a breach affecting records of 6.9 million drivers.",
+   "p2Sup": "4, 5",
+   "assess": "We assess as likely that data-accuracy obligations — not only data-security ones — drive the next round of consumer-data enforcement: this window’s confirmed FTC action against RentGrow is an accuracy case under the Fair Credit Reporting Act.",
+   "assessSup": "4",
    "conf": "moderate confidence",
    "events": [
     {
@@ -1226,12 +1226,12 @@
    "ver": "v3",
    "verRange": "v1–v3",
    "asOf": "July 11, 2026",
-   "p1": "Two confirmed events this window sit squarely on trusted-role co-option: a former ransomware negotiator was sentenced to 70 months for conspiring with BlackCat ransomware actors to extort the victims he was engaged to help — and with other former cybersecurity professionals to attack additional victims; and a Woodinville, Washington man was indicted on 30 federal felonies for stealing $440,000 from the financial institutions where he worked and laundering the money through other banks.",
-   "p1Sup": "1, 4",
-   "p2": "Adjacent signals point the same direction: the AssuranceAmerica breach began with attackers targeting a company employee, a man alleged to be a member of Scattered Spider — a group associated with social-engineering staff — was extradited to the US, and a man accused of deploying Ryuk ransomware pleaded guilty to conspiracy and computer fraud in an Oregon federal court.",
-   "p2Sup": "2, 3, 5",
-   "assess": "We assess with moderate confidence that co-opted trusted roles — employees and hired specialists, not only outside attackers — are a recurring feature of confirmed cases this window: a ransomware negotiator, a financial-institution employee, and a ransomware operator each abused a position of trust or access for financial gain.",
-   "assessSup": "1, 4, 5",
+   "p1": "One confirmed event this window sits squarely on trusted-role co-option: a former ransomware negotiator was sentenced to 70 months for conspiring with BlackCat ransomware actors to extort the victims he was engaged to help — and with other former cybersecurity professionals to attack additional victims.",
+   "p1Sup": "1",
+   "p2": "Adjacent signals point the same direction: the AssuranceAmerica breach began with attackers targeting a company employee, and a man accused of deploying Ryuk ransomware pleaded guilty to conspiracy and computer fraud in an Oregon federal court.",
+   "p2Sup": "2, 5",
+   "assess": "We assess with moderate confidence that co-opted trusted roles — employees and hired specialists, not only outside attackers — are a recurring feature of confirmed cases this window: a financial-institution employee and a ransomware operator each abused a position of trust or access for financial gain.",
+   "assessSup": "4, 5",
    "conf": "moderate confidence",
    "events": [
     {
@@ -1835,24 +1835,22 @@
   {
    "anchors": [
     "L-0008",
-    "L-0007",
-    "L-0003"
+    "L-0007"
    ],
    "pillars": "Fraud · data risk",
    "conf": "high confidence",
    "head": "The stablecoin rulebook is arriving now, in pieces.",
-   "body": "Three separate proposals are open at once: BSA/sanctions compliance standards (OCC, June 22), a customer identification program requirement (Fed, June 18), and weekly/quarterly reporting forms (OCC, June 11) — all for payment stablecoin issuers under the GENIUS Act. For banks planning any stablecoin exposure, compliance scoping and comment-window review start now."
+   "body": "Two proposals are open at once: BSA/sanctions compliance standards (OCC, June 22) and a customer identification program requirement (Fed, June 18) — both for payment stablecoin issuers under the GENIUS Act. For banks planning any stablecoin exposure, compliance scoping and comment-window review start now."
   },
   {
    "anchors": [
-    "L-0014",
     "L-0019",
     "L-0026"
    ],
    "pillars": "Cybersecurity",
    "conf": "high confidence",
    "head": "Exploited flaws cluster in web-facing enterprise software — hold the patch deadline.",
-   "body": "This window’s confirmed exploited-flaw listings are all internet-reachable platforms: SharePoint, ColdFusion, Langflow, and website page builders — plus a patched zero-day in Windows Defender itself whose exploit code was public for roughly a month. A fast fix-and-confirm deadline for internet-facing and security software is the control this record supports."
+   "body": "This window’s confirmed exploited-flaw listings are all internet-reachable platforms: ColdFusion, Langflow, and website page builders — plus a patched zero-day in Windows Defender itself whose exploit code was public for roughly a month. A fast fix-and-confirm deadline for internet-facing and security software is the control this record supports."
   },
   {
    "anchors": [
@@ -1865,14 +1863,13 @@
   },
   {
    "anchors": [
-    "L-0027",
     "L-0009",
     "L-0018"
    ],
    "pillars": "Artificial intelligence",
    "conf": "moderate confidence",
    "head": "AI is now confirmed on both sides of the ledger.",
-   "body": "In one month: a new frontier model (GPT-5.6), lab-built security tools for finding and patching flaws (Daybreak), and a reported ransomware attack run end-to-end by an AI agent through an exploited AI-workflow tool. Treat AI as both a control and an attack surface in the next controls review."
+   "body": "In one month: lab-built security tools for finding and patching flaws (Daybreak), and a reported ransomware attack run end-to-end by an AI agent through an exploited AI-workflow tool. Treat AI as both a control and an attack surface in the next controls review."
   },
   {
    "anchors": [
