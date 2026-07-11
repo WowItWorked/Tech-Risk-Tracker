@@ -60,34 +60,41 @@ export function Today(v) {
 
     <aside style="flex: 1 1 280px; max-width: 460px; min-width: 0;">
       <div style="border-top: 2px solid #14171A; padding-top: 10px; margin-bottom: 28px;">
-        <div style=${KICKER}>Updates in past 30 days by category</div>
-        <div style="margin-top: 8px;">
-          ${v.velocity.map((vel) => html`
-            <button onClick=${vel.open} title="Read this pillar’s confirmed items and sources" class="hv-soft" style="display: grid; grid-template-columns: 1fr 84px 28px; align-items: center; gap: 10px; padding: 6.5px 0; border-bottom: 1px solid #E9EBED; width: 100%;">
-              <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #10314F;">${vel.label}</span>
-              <span style="display: block; height: 6px; background: #E9EBED;"><span style="display: block; height: 6px; width: ${vel.pct}%; background: #F58025;"></span></span>
-              <span style="font-family: 'Public Sans', system-ui, sans-serif; font-variant-numeric: tabular-nums; font-size: 12px; color: #14171A; text-align: right;">${vel.n}</span>
-            </button>
-          `)}
-          <div style="display: flex; justify-content: space-between; padding: 7px 0; font-family: 'Public Sans', system-ui, sans-serif; font-variant-numeric: tabular-nums; font-size: 11px; color: #6B747C;">
-            <span>Total</span><span>${v.vtotal}</span>
-          </div>
-        </div>
+        <div style=${KICKER}>What to do about it</div>
+        ${v.sideTakeaways.map((t) => html`
+          <button onClick=${t.go} title="Open Meeting Prep for the full takeaway and its citations" class="hv-soft" style="display: block; width: 100%; text-align: left; padding: 11px 0 12px 12px; border-left: 3px solid #F58025; border-bottom: 1px solid #E9EBED;">
+            <span style="display: block; font-family: 'Source Serif 4', Georgia, serif; font-size: 15.5px; line-height: 1.4; font-weight: 600; color: #14171A; text-wrap: pretty;">${t.head}</span>
+            <span style="display: flex; flex-wrap: wrap; align-items: center; gap: 5px 10px; margin-top: 7px;">
+              <span style=${AREA_CHIP}>${t.pillars}</span>
+              <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: ${t.confColor};">${t.conf}</span>
+            </span>
+          </button>
+        `)}
+        <button onClick=${v.goDiffFromSide} class="hv-ul" style="margin-top: 10px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #0069AA;">All ${v.takeawaysTotal} takeaways →</button>
       </div>
 
       <div style="border-top: 2px solid #14171A; padding-top: 10px; margin-bottom: 28px;">
-        <div style=${KICKER}>Next update</div>
-        <p style="margin: 8px 0 0 0; font-family: 'Public Sans', system-ui, sans-serif; font-variant-numeric: tabular-nums; font-size: 13px; line-height: 1.6; color: #14171A;">${v.nextRunStr} ET — in ${v.countdown}</p>
-        <p style="margin: 6px 0 0 0; font-family: 'Public Sans', system-ui, sans-serif; font-size: 12px; line-height: 1.5; color: #6B747C; text-wrap: pretty;">Sources are collected and verified once daily; the brief publishes weekdays at 6:00 AM ET. This issue was generated at ${v.lastRunStr} ET.</p>
+        <div style=${KICKER}>Standing assessments</div>
+        <div style="margin-top: 8px;">
+          ${v.assessBoard.map((ab) => html`
+            <button onClick=${ab.open} title=${ab.confTitle} class="hv-soft" style="display: grid; grid-template-columns: 1fr auto 12px; align-items: center; gap: 10px; padding: 7px 0; border-bottom: 1px solid #E9EBED; width: 100%;">
+              <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #10314F; text-align: left;">${ab.label}</span>
+              <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11.5px; font-style: italic; color: #4D555C; text-align: right;">${ab.phrase}</span>
+              <span style="width: 8px; height: 8px; border-radius: 50%; background: ${ab.dotBg}; border: 1px solid ${ab.dotBd}; justify-self: end;"></span>
+            </button>
+          `)}
+          <p style="margin: 8px 0 0 0; font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; line-height: 1.5; color: #97A0A8; text-wrap: pretty;">Each row is a standing assessment on the probability ladder; the dot is its confidence — navy high, orange moderate, gray low.</p>
+        </div>
       </div>
 
       <div style="border-top: 2px solid #14171A; padding-top: 10px;">
-        <div style=${KICKER}>Upcoming publications</div>
+        <div style=${KICKER}>Upcoming</div>
         <div style="margin-top: 8px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 12.5px; line-height: 1.5; color: #4D555C;">
+          <button onClick=${v.pubGoDaily} title="Open today’s brief" class="hv-soft" style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; width: 100%; padding: 6px 0; border-bottom: 1px solid #E9EBED;"><span style="color: #0069AA; white-space: nowrap;">Next edition →</span><span style="font-variant-numeric: tabular-nums; color: #6B747C; font-size: 11.5px; text-align: right;">Weekdays 6:00 AM ET</span></button>
           <button onClick=${v.pubGoWeekly} title="Open the weekly digest archive" class="hv-soft" style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; width: 100%; padding: 6px 0; border-bottom: 1px solid #E9EBED;"><span style="color: #0069AA; white-space: nowrap;">Weekly digest →</span><span style="color: #6B747C; font-size: 11.5px; text-align: right;">${v.nextWeekly}</span></button>
-          <button onClick=${v.pubGoMonthly} title="Open the monthly report archive" class="hv-soft" style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; width: 100%; padding: 6px 0; border-bottom: 1px solid #E9EBED;"><span style="color: #0069AA; white-space: nowrap;">Monthly report →</span><span style="color: #6B747C; font-size: 11.5px; text-align: right;">${v.nextMonthly}</span></button>
-          <button onClick=${v.pubGoDaily} title="Open today’s brief" class="hv-soft" style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; width: 100%; padding: 6px 0;"><span style="color: #0069AA; white-space: nowrap;">Daily brief →</span><span style="color: #6B747C; font-size: 11.5px; text-align: right;">Weekdays 6:00 AM ET</span></button>
+          <button onClick=${v.pubGoMonthly} title="Open the monthly report archive" class="hv-soft" style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; width: 100%; padding: 6px 0;"><span style="color: #0069AA; white-space: nowrap;">Monthly report →</span><span style="color: #6B747C; font-size: 11.5px; text-align: right;">${v.nextMonthly}</span></button>
         </div>
+        <p style="margin: 8px 0 0 0; font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; line-height: 1.5; color: #97A0A8; text-wrap: pretty;">This issue was generated at ${v.lastRunStr} ET.</p>
       </div>
     </aside>
   </div>`;
@@ -99,6 +106,21 @@ export function RiskIndex(v) {
     <span style=${KICKER}>Risk areas — standing watches</span>
     <h2 style="margin: 10px 0 6px 0; font-family: 'Source Serif 4', Georgia, serif; font-size: clamp(28px, 4vw, 38px); line-height: 1.15; font-weight: 600; letter-spacing: -0.015em; color: #14171A;">Eight risks, monitored continuously</h2>
     <p style="margin: 0; font-size: 15.5px; line-height: 1.6; color: #4D555C; column-width: 420px; column-gap: 56px; text-wrap: pretty;">Each risk area is a living page: current state, a standing assessment, a changelog, and its sources. Everything on these pages traces to an allowlisted set of trusted sources — regulators, federal agencies, standards bodies, frontier labs, and vetted trade press — and every item links to its source. Emphasis falls on changes with systemic reach — shared infrastructure, common providers, sector-wide patterns — over single-institution noise.</p>
+    <div style="margin-top: 24px; border-top: 2px solid #14171A; padding-top: 10px; max-width: 560px;">
+      <div style=${KICKER}>Updates in past 30 days by category</div>
+      <div style="margin-top: 8px;">
+        ${v.velocity.map((vel) => html`
+          <button onClick=${vel.open} title="Read this pillar’s confirmed items and sources" class="hv-soft" style="display: grid; grid-template-columns: 1fr 120px 28px; align-items: center; gap: 10px; padding: 6.5px 0; border-bottom: 1px solid #E9EBED; width: 100%;">
+            <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #10314F; text-align: left;">${vel.label}</span>
+            <span style="display: block; height: 6px; background: #E9EBED;"><span style="display: block; height: 6px; width: ${vel.pct}%; background: #F58025;"></span></span>
+            <span style="font-family: 'Public Sans', system-ui, sans-serif; font-variant-numeric: tabular-nums; font-size: 12px; color: #14171A; text-align: right;">${vel.n}</span>
+          </button>
+        `)}
+        <div style="display: flex; justify-content: space-between; padding: 7px 0; font-family: 'Public Sans', system-ui, sans-serif; font-variant-numeric: tabular-nums; font-size: 11px; color: #6B747C;">
+          <span>Total</span><span>${v.vtotal}</span>
+        </div>
+      </div>
+    </div>
     <div style="border-top: 2px solid #14171A; margin-top: 24px;"></div>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(460px, 100%), 1fr)); column-gap: 56px; align-items: start;">
     ${v.riskIndex.map((ri) => html`

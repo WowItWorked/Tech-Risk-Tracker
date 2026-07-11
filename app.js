@@ -425,6 +425,30 @@ class App extends Component {
         })).sort((a, b) => b.n - a.n);
       })(),
       vtotal: d.diffPool.filter((x) => x.d > new Date(this.state.now - 30 * 86400000).toISOString().slice(0, 10)).length,
+      // front-page rail: executive takeaways + standing assessments
+      sideTakeaways: d.takeaways.slice(0, 3).map((t) => ({
+        head: t.head, pillars: t.pillars, conf: t.conf,
+        confColor: String(t.conf || '').startsWith('high') ? '#10314F' : String(t.conf || '').startsWith('moderate') ? '#B25C00' : '#6B747C',
+        go: () => this.go('diff'),
+      })),
+      takeawaysTotal: d.takeaways.length,
+      goDiffFromSide: () => this.go('diff'),
+      assessBoard: Object.keys(d.riskAreas).map((k) => {
+        const a = d.riskAreas[k];
+        const c = String(a.conf || '').toLowerCase();
+        const hasAssess = Boolean(a.assess) && !/^no assessment/i.test(String(a.assess)) && c !== 'not rated' && c !== '';
+        const ladder = (String(a.assess || '').match(/almost certain|roughly even odds|unlikely|likely/i) || [null])[0];
+        const phrase = hasAssess ? (ladder || String(a.conf)) : 'no assessment yet';
+        const dot = !hasAssess ? { bg: 'transparent', bd: '#BCC2C8' }
+          : c.startsWith('high') ? { bg: '#10314F', bd: '#10314F' }
+          : c.startsWith('moderate') ? { bg: '#F58025', bd: '#F58025' }
+          : { bg: '#97A0A8', bd: '#97A0A8' };
+        return {
+          label: d.PS[k], phrase: phrase.toLowerCase(),
+          dotBg: dot.bg, dotBd: dot.bd, confTitle: (hasAssess ? a.conf : 'No assessment yet') + ' — ' + a.name,
+          open: () => this.goArea(k),
+        };
+      }),
       // risk areas
       riskIndex: (() => {
         const since30 = new Date(this.state.now - 30 * 86400000).toISOString().slice(0, 10);
