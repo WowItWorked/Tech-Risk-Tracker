@@ -116,7 +116,7 @@ export function Monthly(v) {
       <div style="margin-top: 16px; padding: 8px 0; border-top: 1px solid #D7DBDF; border-bottom: 1px solid #D7DBDF; display: flex; flex-wrap: wrap; justify-content: center; column-gap: 18px; row-gap: 3px; font-family: 'Public Sans', system-ui, sans-serif; font-variant-numeric: tabular-nums; font-size: 11px; color: #6B747C;">
         <span>issued ${r.issued}</span><span style="color: #BCC2C8;">·</span><span>covers ${r.covers}</span><span style="color: #BCC2C8;">·</span><span><span style="color: #14171A; font-weight: 600;">${r.changes}</span> confirmed changes</span><span style="color: #BCC2C8;">·</span><span>record ${r.hash}</span>
       </div>
-      <button onClick=${v.printMonthly} title="Open this report as a printable page" class="hv-ul" style="margin-top: 12px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #0069AA;">Print / save PDF</button>
+      <button onClick=${v.printMonthly} title="Open this report as a printable page" style="margin-top: 12px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #10314F; background: transparent; border: 1px solid #10314F; border-radius: 4px; padding: 6px 14px;">Print</button>
     </div>
 
     <div style="max-width: 1040px; margin: 0 auto;">
@@ -205,7 +205,7 @@ export function Diff(v) {
           <input type="date" value=${v.diffDate} onChange=${v.onDiffDate} aria-label="Changes since date" class="fc-navy" style="font-family: 'Public Sans', system-ui, sans-serif; font-variant-numeric: tabular-nums; font-size: 13.5px; color: #14171A; background: transparent; border-bottom: 1px solid #BCC2C8; padding: 4px 2px; color-scheme: light;" />
         </div>
         <button onClick=${v.renderDiff} class="btn-navy" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #FFFFFF; background: #10314F; border: 1px solid #10314F; border-radius: 4px; padding: 9px 16px;">Render brief</button>
-        ${v.diffReady ? html`<button onClick=${v.printDiffBrief} title="Open this brief as a printable page" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #10314F; background: transparent; border: 1px solid #10314F; border-radius: 4px; padding: 9px 16px;">Print / save PDF</button>` : null}
+        ${v.diffReady ? html`<button onClick=${v.printDiffBrief} title="Open this brief as a printable page" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #10314F; background: transparent; border: 1px solid #10314F; border-radius: 4px; padding: 9px 16px;">Print</button>` : null}
       </div>
     </div>
 

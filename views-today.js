@@ -14,7 +14,7 @@ export function Today(v) {
     <div style="flex: 1 1 600px; min-width: 0;">
       <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px 16px;">
         <span style=${KICKER}>The daily brief</span>
-        <button onClick=${v.printDaily} title="Open today’s edition as a printable page" class="hv-ul" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #0069AA;">Print / save PDF</button>
+        <button onClick=${v.printDaily} title="Open today’s edition as a printable page" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #10314F; background: transparent; border: 1px solid #10314F; border-radius: 4px; padding: 6px 14px;">Print</button>
       </div>
       <h2 style="margin: 12px 0 10px 0; font-family: 'Source Serif 4', Georgia, serif; font-optical-sizing: auto; font-size: clamp(30px, 4.6vw, 43px); line-height: 1.12; font-weight: 600; letter-spacing: -0.015em; color: #14171A; text-wrap: pretty;">${v.leadHead}</h2>
       <p style="margin: 0 0 16px 0; font-size: 19px; line-height: 1.5; color: #4D555C; max-width: 62ch; text-wrap: pretty;">${v.leadDek}</p>
