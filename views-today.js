@@ -41,7 +41,10 @@ export function Today(v) {
               <button onClick=${pc.select} class="hv-ink" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 3px 0 2px 0; color: ${pc.color}; border-bottom: 2px solid ${pc.border};">${pc.label}</button>
             `)}
           </div>
-          <button onClick=${v.toggleSort} class="hv-ink" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #6B747C;">sort: ${v.sortLabel} ▾</button>
+          <div style="display: flex; align-items: center; gap: 16px;">
+            <button onClick=${v.toggleSort} class="hv-ink" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #6B747C;">sort: ${v.sortLabel} ▾</button>
+            <button onClick=${v.goWireArchive} title="Every recorded item, searchable — older items live here" class="hv-ul" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #0069AA;">Older items →</button>
+          </div>
         </div>
         ${v.wire.map((w) => html`
           <div class="hv-soft" style="display: grid; grid-template-columns: 56px 1fr; gap: 14px; padding: ${v.rowPad}; padding-left: 10px; border-left: 3px solid ${w.leftRule}; border-bottom: 1px solid #E9EBED; animation: ${w.anim};">
@@ -173,7 +176,10 @@ export function Dossier(v) {
         <div style="margin-top: 30px; border-top: 2px solid #14171A; padding-top: 10px;">
           <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px 16px; margin-bottom: 14px;">
             <span style=${KICKER}>Key change update</span>
-            <span style="font-family: 'Public Sans', system-ui, sans-serif; font-variant-numeric: tabular-nums; font-size: 11px; color: #6B747C;">Newest First · ${v.raVerRange}</span>
+            <span style="display: inline-flex; align-items: baseline; gap: 16px;">
+              <span style="font-family: 'Public Sans', system-ui, sans-serif; font-variant-numeric: tabular-nums; font-size: 11px; color: #6B747C;">Newest First · ${v.raVerRange}</span>
+              <button onClick=${v.goDossierArchive} title="Every recorded item in this risk area, searchable" class="hv-ul" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #0069AA;">Older items →</button>
+            </span>
           </div>
           ${v.timeline.map((e) => html`
             <div style="display: grid; grid-template-columns: 76px 18px 1fr; column-gap: 12px; padding: 2px 0 0 0; animation: ${e.anim};">

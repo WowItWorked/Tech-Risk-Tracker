@@ -28,7 +28,9 @@ the repo root.
    - `wire`: today's items, newest first, triaged
      flash (active exploitation / sector-wide impact) · priority (regulatory action,
      major vendor incident) · routine.
-   - `diffPool`: append all new items (id `L-####`, sequential).
+   - `diffPool`: append all new items (id `L-####`, sequential). The diff pool is the
+     record's running memory — it feeds the site's Archive page — so existing entries
+     are never removed, renumbered, or rewritten (corrections follow EDITORIAL §9).
    - `riskAreas[pillar].events`: append new items, bump the dossier version
      (vN → vN+1 per event). Update `p1`/`p2`/`assess` prose ONLY from cited items
      (EDITORIAL §4–6). Citation lists obey EDITORIAL §2 citation limits: at most

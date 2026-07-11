@@ -3,7 +3,7 @@ import { h, Component, render, html, SETTINGS } from './ui.js';
 import { P, PS, META, lead, wire as WIRE, riskAreas, publications as PUBS, monthlyReport, diffPool, takeaways, palette } from './data.js';
 import { Header, Footer, CmdK } from './views-shell.js';
 import { Today, RiskIndex, Dossier } from './views-today.js';
-import { Publications, Monthly, Diff } from './views-pubs.js';
+import { Publications, Monthly, Diff, Archive } from './views-pubs.js';
 import { Components } from './views-components.js';
 
 const D = { P, PS, wire: WIRE, lead, riskAreas, diffPool, takeaways, publications: PUBS, monthlyReport };
@@ -21,6 +21,9 @@ class App extends Component {
     now: Date.now(),
     pillar: 'all',
     wireSort: 'time',
+    archiveQ: '',
+    archiveSort: 'new',
+    archivePillar: 'all',
     diffDate: '2026-06-09',
     diffApplied: '2026-06-09',
     diffSel: [],
@@ -63,7 +66,12 @@ class App extends Component {
     window.removeEventListener('hashchange', this._onHash);
   }
 
-  screens() { return ['today', 'riskindex', 'dossier', 'publications', 'monthly', 'diff', 'components']; }
+  screens() { return ['today', 'riskindex', 'dossier', 'publications', 'monthly', 'diff', 'archive', 'components']; }
+
+  goArchive(pillar) {
+    this.setState({ archivePillar: pillar || 'all', archiveQ: '' });
+    this.go('archive');
+  }
 
   goPub(sec) {
     this.go('publications');
@@ -275,6 +283,7 @@ class App extends Component {
       { id: 'riskindex', name: 'Risk Areas', desc: 'eight standing watches · changelogs' },
       { id: 'publications', name: 'Publications', desc: 'dailies · weeklies · monthlies' },
       { id: 'diff', name: 'Meeting Prep', desc: 'since your last meeting' },
+      { id: 'archive', name: 'Archive', desc: 'every recorded item · running record' },
     ];
     const q = this.state.cmdkQ.trim().toLowerCase();
     return q ? dests.filter((x) => (x.name + ' ' + x.desc).toLowerCase().includes(q)) : dests;
@@ -486,7 +495,7 @@ class App extends Component {
       // routing
       isToday: scr === 'today', isDossier: scr === 'dossier', isPublications: scr === 'publications',
       isMonthly: scr === 'monthly', isDiff: scr === 'diff', isComponents: scr === 'components',
-      isRiskIndex: scr === 'riskindex',
+      isRiskIndex: scr === 'riskindex', isArchive: scr === 'archive',
       navItems,
       pubGoWeekly: () => this.goPub('weekly'),
       pubGoMonthly: () => this.goPub('monthly'),
@@ -616,6 +625,39 @@ class App extends Component {
           }) };
       }),
       diffListLabel: s.diffSel.length === 0 ? 'Appendix — every recorded change in the window, by category' : 'Reading list — recorded items and sources, newest first',
+      // the archive — running record of every admitted item
+      ...((() => {
+        const archAll = d.diffPool.slice();
+        const fmtArch = (iso) => { const [y, m, dd] = String(iso).split('-').map(Number); return new Date(Date.UTC(y, m - 1, dd)).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' }); };
+        const q = s.archiveQ.trim().toLowerCase();
+        const rows = archAll
+          .filter((x) => s.archivePillar === 'all' || x.p === s.archivePillar)
+          .filter((x) => !q || (x.line + ' ' + x.src + ' ' + d.PS[x.p] + ' ' + x.id).toLowerCase().includes(q))
+          .sort((a, b) => s.archiveSort === 'new'
+            ? (b.d.localeCompare(a.d) || String(b.id).localeCompare(String(a.id)))
+            : (a.d.localeCompare(b.d) || String(a.id).localeCompare(String(b.id))))
+          .map((x) => ({ ...x, dateStr: fmtArch(x.d), pillarLabel: d.PS[x.p], openItem: () => this.openLedger(x.id), goPillar: () => this.goArea(x.p), srcTitle: 'Open the source for this item', areaTitle: 'Open the ' + d.PS[x.p] + ' dossier' }));
+        const firstD = archAll.length ? archAll.map((x) => x.d).sort()[0] : null;
+        return {
+          archTotal: archAll.length,
+          archCount: rows.length,
+          archRows: rows,
+          archOpened: firstD ? fmtArch(firstD) : '—',
+          archQ: s.archiveQ,
+          onArchQ: (e) => this.setState({ archiveQ: e.target.value }),
+          archSortLabel: s.archiveSort === 'new' ? 'newest' : 'oldest',
+          toggleArchSort: () => this.setState((st) => ({ archiveSort: st.archiveSort === 'new' ? 'old' : 'new' })),
+          archChips: [{ id: 'all', label: 'All' }].concat(Object.keys(d.PS).map((k) => ({ id: k, label: d.PS[k] }))).map((pc) => ({
+            ...pc,
+            color: s.archivePillar === pc.id ? '#14171A' : '#6B747C',
+            border: s.archivePillar === pc.id ? '#F58025' : 'transparent',
+            select: () => this.setState({ archivePillar: pc.id }),
+          })),
+          goWireArchive: () => this.goArchive(s.pillar === 'all' ? null : s.pillar),
+          goDossierArchive: () => this.goArchive(s.riskArea),
+          goPubArchive: () => this.goArchive(null),
+        };
+      })()),
       // printable reports
       printDaily: () => this.printDaily(),
       printMonthly: () => this.printMonthly(),
@@ -665,6 +707,7 @@ class App extends Component {
         ${v.isPublications ? Publications(v) : null}
         ${v.isMonthly ? Monthly(v) : null}
         ${v.isDiff ? Diff(v) : null}
+        ${v.isArchive ? Archive(v) : null}
         ${v.isComponents ? Components(v) : null}
       </main>
       ${Footer(v)}

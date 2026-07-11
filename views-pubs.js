@@ -8,7 +8,10 @@ const NBSP2 = '  ';
 export function Publications(v) {
   return html`
   <div style="padding-top: 26px; animation: hzIn 200ms cubic-bezier(0.2, 0, 0, 1);">
-    <span style=${KICKER}>Publications — the archive</span>
+    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px 16px;">
+      <span style=${KICKER}>Publications — the archive</span>
+      <button onClick=${v.goPubArchive} title="Every recorded item across all editions, searchable" class="hv-ul" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #0069AA;">Item archive →</button>
+    </div>
     <h2 style="margin: 10px 0 6px 0; font-family: 'Source Serif 4', Georgia, serif; font-size: clamp(28px, 4vw, 38px); line-height: 1.15; font-weight: 600; letter-spacing: -0.015em; color: #14171A;">Back issues</h2>
     <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4D555C; max-width: 90ch; text-wrap: pretty;">Every issue the system has published, in one place. Daily briefs cover what changed overnight, weekly digests pull the week together, and monthly reports read the longer arc — all drawn from the same confirmed record.</p>
 
@@ -146,6 +149,43 @@ export function Monthly(v) {
         <p style="margin: 12px 0 0 0; font-family: 'Public Sans', system-ui, sans-serif; font-size: 12px; font-style: italic; color: #6B747C;">${r.footnote}</p>
         <div style="margin-top: 12px; padding-top: 9px; border-top: 1px solid #E9EBED; font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #6B747C;">Drafted by the system · issued by Technology Risk</div>
       </div>
+    </div>
+  </div>`;
+}
+
+export function Archive(v) {
+  return html`
+  <div style="padding-top: 26px; animation: hzIn 200ms cubic-bezier(0.2, 0, 0, 1);">
+    <span style=${KICKER}>The archive — running record</span>
+    <h2 style="margin: 10px 0 6px 0; font-family: 'Source Serif 4', Georgia, serif; font-size: clamp(28px, 4vw, 38px); line-height: 1.15; font-weight: 600; letter-spacing: -0.015em; color: #14171A;">Every item, since the record opened</h2>
+    <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4D555C; max-width: 78ch; text-wrap: pretty;">The daily board rolls over with each edition; nothing rolls out of here. Every item ever admitted to the record — ${v.archTotal} since ${v.archOpened} — stays searchable below, each linking to its source and its risk area.</p>
+
+    <div style="margin-top: 22px; border-top: 2px solid #14171A; padding-top: 10px;">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px 18px; padding: 4px 0 10px 0; border-bottom: 1px solid #D7DBDF;">
+        <div style="display: flex; flex-wrap: wrap; gap: 2px 14px;">
+          ${v.archChips.map((pc) => html`
+            <button onClick=${pc.select} class="hv-ink" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 3px 0 2px 0; color: ${pc.color}; border-bottom: 2px solid ${pc.border};">${pc.label}</button>
+          `)}
+        </div>
+        <div style="display: flex; align-items: center; gap: 16px;">
+          <button onClick=${v.toggleArchSort} class="hv-ink" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #6B747C;">sort: ${v.archSortLabel} ▾</button>
+          <input value=${v.archQ} onInput=${v.onArchQ} placeholder="Search the archive" aria-label="Search the archive" class="fc-navy" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11.5px; color: #14171A; background: transparent; border-bottom: 1px solid #BCC2C8; padding: 3px 2px; width: 170px;" />
+        </div>
+      </div>
+      <div style="padding: 8px 0; font-family: 'Public Sans', system-ui, sans-serif; font-variant-numeric: tabular-nums; font-size: 11px; color: #6B747C;">Showing ${v.archCount} of ${v.archTotal} recorded items</div>
+      ${v.archRows.length === 0 ? html`<p style="margin: 0; padding: 14px 0; font-size: 14.5px; font-style: italic; color: #6B747C;">Nothing matches — clear the search or pick another category.</p>` : null}
+      ${v.archRows.map((x) => html`
+        <div style="display: grid; grid-template-columns: 92px 1fr; gap: 14px; padding: 10px 0; border-bottom: 1px solid #E9EBED;">
+          <span style="font-family: 'Public Sans', system-ui, sans-serif; font-variant-numeric: tabular-nums; font-size: 11px; color: #6B747C; padding-top: 3px;">${x.dateStr}</span>
+          <div style="min-width: 0;">
+            <button onClick=${x.openItem} title="Open this item where it lives in the record" class="hv-soft" style="display: block; width: 100%; text-align: left; font-size: 15.5px; line-height: 1.5; color: #14171A; text-wrap: pretty;">${x.line}</button>
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 5px 8px; margin-top: 5px;">
+              <a href=${x.srcUrl} target="_blank" rel="noopener" title=${x.srcTitle} class="hv-soft" style=${SRC_CHIP}>${x.src}</a>
+              <button onClick=${x.goPillar} title=${x.areaTitle} class="hv-soft" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; color: #10314F; background: #F1F3F4; border: 1px solid #D7DBDF; border-radius: 999px; padding: 2px 9px; line-height: 1.4; white-space: nowrap;">${x.pillarLabel}</button>
+            </div>
+          </div>
+        </div>
+      `)}
     </div>
   </div>`;
 }
