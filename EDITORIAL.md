@@ -22,13 +22,14 @@ URL does not exist for the purposes of this record. The update agent must never 
 item from its own background knowledge — if it wasn't fetched this run (or an earlier
 logged run), it doesn't go in.
 
-**Citation limits.** A published unit — a lead item, wire item, dossier event, or prose
-passage (current state / development / assessment) — cites at most **three** sources, and
-never cites the same source (outlet/feed) more than once. Corroboration beyond three is
-omitted, not stacked: keep the strongest citations (prefer T1 official over press, then
-the most direct report). Every claim in the unit must still be entailed by the excerpts
-of the citations that remain — if three citations cannot carry the text, cut the text,
-not the limit.
+**Citation limits.** Any published unit that carries sources — a lead item, wire item,
+dossier event, takeaway, or prose passage (current state / development / assessment) —
+cites at most **three** sources: the three most *relevant* to the claims in its text.
+The same source (outlet/feed) is never cited more than once in one unit. Corroboration
+beyond three is omitted, not stacked; on relevance ties, prefer T1 official over press,
+then the most direct report. Every claim in the unit must still be entailed by the
+excerpts of the citations that remain — if three citations cannot carry the text, cut
+the text, not the limit.
 
 ## 3. Relevance gate
 
