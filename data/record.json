@@ -4,7 +4,7 @@
   "startedOn": "2026-07-09",
   "generatedAt": "2026-07-11T12:26:50-04:00",
   "issueNo": 2,
-  "recordHash": "9a78191",
+  "recordHash": "2afd18a",
   "windowLabel": "June 9 – July 11, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
@@ -12,7 +12,7 @@
  },
  "lead": {
   "head": "Three stories lead today: Progress Software’s emergency shutdown order for ShareFile servers, an indicted insider theft from financial institutions, and a technique that tricks AI coding assistants into leaking secrets",
-  "dek": "Three unrelated stories share the front page, drawn from the twelve items recorded in today’s edition. Every item links to its source.",
+  "dek": "Three stories share the front page, drawn from the twelve items recorded in today’s edition. Every item links to its source.",
   "items": [
    {
     "n": "1",
