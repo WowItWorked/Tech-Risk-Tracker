@@ -2,211 +2,199 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-09T23:30:00-04:00",
-  "issueNo": 1,
-  "recordHash": "b072688",
-  "windowLabel": "June 9 – July 9, 2026",
-  "nextWeekly": "Fri, Jul 10",
+  "generatedAt": "2026-07-11T12:26:50-04:00",
+  "issueNo": 2,
+  "recordHash": "2d131a1",
+  "windowLabel": "June 9 – July 11, 2026",
+  "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "15 of 17 allowlisted feeds returned (Nacha: malformed XML; NIST: empty feed). FinCEN and Anthropic are page-checked sources."
+  "feedNote": "17 of 19 allowlisted feeds returned (CISA Cybersecurity Advisories: edge WAF returned 403 for every user agent tried; FinCEN newsroom page: 404, page restructured). Nacha's feed required stripping a non-XML theme-debug preamble before it would parse. FinCEN and Anthropic are page-checked sources; Anthropic's page returned content but nothing published in this window's cutoff was sector-relevant."
  },
  "lead": {
-  "head": "Three stories lead today: a patched flaw in Windows Defender, clearer cover for banks sharing fraud intelligence, and OpenAI’s next frontier model",
-  "dek": "Three unrelated stories share the front page, drawn from the thirteen changes recorded in today’s edition. Every item links to its source.",
+  "head": "Three stories lead today: Progress Software’s emergency shutdown order for ShareFile servers, an indicted insider theft from financial institutions, and a technique that tricks AI coding assistants into leaking secrets",
+  "dek": "Three unrelated stories share the front page, drawn from the twelve items recorded in today’s edition. Every item links to its source.",
   "items": [
    {
     "n": "1",
     "p": "cyber",
     "tri": "priority",
     "st": "confirmed",
-    "id": "L-0026",
+    "id": "L-0043",
     "conf": "",
-    "text": "Microsoft has patched a flaw in Windows Defender — the security software built into Windows — known as “RoguePlanet.” Exploit code for the flaw was published by a researcher in early June, roughly a month before the fix.",
-    "why": "A flaw in security software weakens the layer that protects everything behind it. The immediate question for technology teams is whether the patch is applied.",
-    "srcText": "BleepingComputer, Jul 9 · corroborated by Dark Reading, Jul 9",
-    "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-patches-rogueplanet-defender-zero-day-vulnerability/"
+    "text": "Progress Software is emailing ShareFile customers who use Storage Zone Controllers to immediately shut down their servers after identifying what it describes as a “credible external security threat” targeting the on-premises file-sharing software.",
+    "why": "Progress is telling customers to shut servers down immediately — a signal of how serious it judges the threat, and a prompt for technology teams to check whether they run the affected Storage Zone Controllers.",
+    "srcText": "BleepingComputer, Jul 10",
+    "srcUrl": "https://www.bleepingcomputer.com/news/security/progress-urges-sharefile-customers-to-shut-down-servers-over-credible-threat/"
    },
    {
     "n": "2",
-    "p": "fraud",
+    "p": "insider",
     "tri": "priority",
     "st": "confirmed",
-    "id": "L-0022",
+    "id": "L-0053",
     "conf": "",
-    "text": "The Office of the Comptroller of the Currency (OCC) is highlighting FinCEN’s updated fact sheet clarifying how financial institutions can share information with each other about suspected fraud under Section 314(b) of the USA PATRIOT Act.",
-    "why": "Fraud intelligence shared between institutions gets stronger the more banks use it, and the updated guidance clarifies the legal cover for doing so.",
-    "srcText": "OCC Bulletin 2026-30 — Jul 9, 2026",
-    "srcUrl": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-30.html"
+    "text": "A Woodinville, Washington man has been indicted on 30 federal felonies for a scheme to steal from the financial institutions where he worked and then launder the money through other banks, the Department of Justice announced.",
+    "why": "The case shows how a trusted employee can become a direct path to loss, with stolen funds moving through other banks in the process — relevant to both insider-threat and anti-money-laundering controls.",
+    "srcText": "DOJ press release, Jul 10",
+    "srcUrl": "https://www.justice.gov/usao-wdwa/pr/woodinville-washington-man-indicted-stealing-440000-financial-institutions-where-he"
    },
    {
     "n": "3",
     "p": "ai",
     "tri": "priority",
     "st": "confirmed",
-    "id": "L-0027",
+    "id": "L-0051",
     "conf": "",
-    "text": "OpenAI released GPT-5.6, describing it as “more intelligence from every token, stronger performance per dollar.” It lands in a window where OpenAI also reports major banks — Japan’s MUFG this week, Spain’s BBVA in June — building AI into core operations.",
-    "why": "Peer institutions are wiring frontier AI into daily banking work; model inventories and controls need to keep pace with what teams actually deploy.",
-    "srcText": "OpenAI — GPT-5.6 release, Jul 9, 2026",
-    "srcUrl": "https://openai.com/index/gpt-5-6"
+    "text": "Researchers demonstrated “Ghostcommit,” a technique that hides a prompt injection inside an image file, slipping past AI code reviewers CodeRabbit and Bugbot — which never open image files — and convincing a coding agent to read a repository’s .env file and write its secrets into the code.",
+    "why": "This shows a concrete way to turn an AI coding assistant against its own repository — worth a look at what AI tools in the software pipeline can access, and what file types they never check.",
+    "srcText": "BleepingComputer, Jul 11",
+    "srcUrl": "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/"
    }
   ]
  },
  "wire": [
   {
-   "ts": "2026-07-09T23:15:00Z",
-   "p": "resilience",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T1",
-   "id": "L-0028",
-   "title": "Hurricane center outlook: no tropical cyclone formation expected in the Atlantic over the next 7 days",
-   "src": "NOAA National Hurricane Center",
-   "srcUrl": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-09T20:10:00Z",
-   "p": "tp",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0039",
-   "title": "Software kit published by crypto firm Injective Labs reportedly compromised on the npm code registry to steal cryptocurrency wallet keys",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/injective-sdk-on-npm-infected-with-cryptocurrency-wallet-stealer/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-09T20:00:00Z",
-   "p": "fraud",
-   "tri": "priority",
-   "st": "confirmed",
-   "tier": "T1",
-   "id": "L-0022",
-   "title": "OCC highlights FinCEN’s updated fact sheet on how banks can legally share suspected-fraud information with each other (Section 314(b))",
-   "src": "OCC Bulletin 2026-30",
-   "srcUrl": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-30.html",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-09T17:08:00Z",
+   "ts": "2026-07-11T14:18:23Z",
    "p": "cyber",
    "tri": "routine",
    "st": "confirmed",
    "tier": "T2",
-   "id": "L-0038",
-   "title": "A new data-extortion group called “Helix” reportedly uses voice phishing and MFA abuse to steal data from SharePoint environments",
+   "id": "L-0045",
+   "title": "Australia’s Cyber Security Centre warns of a global exploitation campaign targeting vulnerable content-management-system platforms and plugins",
    "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/new-helix-vishing-group-emerges-in-sharepoint-data-theft-attacks/",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/australia-warns-of-global-campaign-targeting-vulnerable-cms-platforms/",
    "linked": true
   },
   {
-   "ts": "2026-07-09T17:00:00Z",
+   "ts": "2026-07-11T09:03:57Z",
    "p": "ai",
+   "tri": "priority",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0051",
+   "title": "Researchers demonstrate “Ghostcommit,” a technique that hides a prompt injection inside an image file to fool AI code-review tools and steal a repository’s secrets",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-10T17:01:00Z",
+   "p": "insider",
    "tri": "routine",
    "st": "confirmed",
    "tier": "T2",
-   "id": "L-0042",
-   "title": "Microsoft says to expect more Windows security updates as it increasingly uses AI to discover flaws in its own code",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-expects-more-windows-security-updates-from-ai-discovered-flaws/",
+   "id": "L-0054",
+   "title": "A man accused of deploying Ryuk ransomware pleads guilty to conspiracy and computer fraud in an Oregon federal court",
+   "src": "The Record",
+   "srcUrl": "https://therecord.media/ryuk-operator-pleads-guilty-alphv-conspirator-sentenced",
    "linked": true
   },
   {
-   "ts": "2026-07-09T16:00:00Z",
+   "ts": "2026-07-10T16:26:10Z",
+   "p": "cyber",
+   "tri": "priority",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0043",
+   "title": "Progress Software urges ShareFile customers running Storage Zone Controllers to immediately shut down their servers over a “credible external security threat”",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/progress-urges-sharefile-customers-to-shut-down-servers-over-credible-threat/",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-10T15:48:38Z",
+   "p": "cyber",
+   "tri": "priority",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0044",
+   "title": "Hackers actively exploit a critical authentication-bypass flaw in the official Docker image for the Gitea self-hosted Git service, letting attackers impersonate any user including administrators",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-auth-bypass-in-gitea-docker-image/",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-10T15:30:19Z",
+   "p": "fraud",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0052",
+   "title": "A Bulgarian national already imprisoned for laundering fraud proceeds is charged with stealing $290,000 in government-seized cryptocurrency while incarcerated",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/money-launderer-accused-of-stealing-seized-crypto-while-in-prison/",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-10T15:24:29Z",
+   "p": "cyber",
+   "tri": "priority",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0047",
+   "title": "An initial access broker is linked to weaponization of the CitrixBleed2 flaw",
+   "src": "Cybersecurity Dive",
+   "srcUrl": "https://www.cybersecuritydive.com/news/initial-access-broker-citrixbleed2-flaw-DragonForce/824961/",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-10T14:49:17Z",
+   "p": "cyber",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0048",
+   "title": "CISA details the security lapses that led to a GitHub leak of passwords and cloud access keys",
+   "src": "Cybersecurity Dive",
+   "srcUrl": "https://www.cybersecuritydive.com/news/cisa-github-passwords-leak-contractor-report/824953/",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-10T14:00:00Z",
+   "p": "cyber",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0049",
+   "title": "Research reports holes in a Microsoft BitLocker security wrapper that could put ATMs at risk of compromise",
+   "src": "Dark Reading",
+   "srcUrl": "https://www.darkreading.com/vulnerabilities-threats/atm-crypto-software-bugs-jackpot-bust",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-10T12:00:00Z",
+   "p": "cyber",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T1",
+   "id": "L-0050",
+   "title": "CISA adds two more exploited flaws to its known-exploited list: Balbooa Forms and iCagenda (unrestricted file upload)",
+   "src": "CISA KEV catalog",
+   "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-10T12:00:00Z",
    "p": "insider",
    "tri": "priority",
    "st": "confirmed",
    "tier": "T1",
-   "id": "L-0023",
-   "title": "A former ransomware negotiator is sentenced to 70 months for conspiring with the BlackCat ransomware gang to extort the victims he was hired to help",
-   "src": "DOJ press release, Jul 9",
-   "srcUrl": "https://www.justice.gov/opa/pr/florida-ransomware-negotiator-who-extorted-and-attacked-multiple-us-victims-sentenced-prison",
+   "id": "L-0053",
+   "title": "A Woodinville, Washington man is indicted on 30 federal felonies for stealing $440,000 from the financial institutions where he worked and laundering the money through other banks",
+   "src": "DOJ press release",
+   "srcUrl": "https://www.justice.gov/usao-wdwa/pr/woodinville-washington-man-indicted-stealing-440000-financial-institutions-where-he",
    "linked": true
   },
   {
-   "ts": "2026-07-09T16:00:00Z",
-   "p": "resilience",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T1",
-   "id": "L-0029",
-   "title": "CISA advisory: flaws in Schneider Electric PowerChute Serial Shutdown — software that manages emergency shutdown of data-center power supplies",
-   "src": "CISA ICS advisory ICSA-26-190-02",
-   "srcUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-190-02",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-09T15:19:00Z",
-   "p": "data",
-   "tri": "priority",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0025",
-   "title": "Insurance company AssuranceAmerica discloses a data breach affecting records of 6.9 million drivers",
-   "src": "BleepingComputer + Cybersecurity Dive",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/assuranceamerica-data-breach-exposes-records-of-69-million-drivers/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-09T14:39:00Z",
+   "ts": "2026-07-10T11:47:38Z",
    "p": "cyber",
    "tri": "routine",
    "st": "confirmed",
    "tier": "T2",
-   "id": "L-0040",
-   "title": "A new phishing-for-hire service called “Forg365” reportedly combines AI-generated lures with techniques that defeat multi-factor login on Microsoft 365 accounts",
+   "id": "L-0046",
+   "title": "Zimbra urges customers to patch a critical cross-site-scripting flaw in the Classic Web Client used to access the Zimbra Collaboration suite",
    "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/new-forg365-phishing-platform-uses-ai-to-target-microsoft-365-accounts/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-09T14:00:00Z",
-   "p": "ai",
-   "tri": "priority",
-   "st": "confirmed",
-   "tier": "T1",
-   "id": "L-0027",
-   "title": "OpenAI releases GPT-5.6 — “more intelligence from every token, stronger performance per dollar”",
-   "src": "OpenAI news",
-   "srcUrl": "https://openai.com/index/gpt-5-6",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-09T12:00:00Z",
-   "p": "data",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T1",
-   "id": "L-0024",
-   "title": "Tenant-screening company RentGrow will pay $2.25 million to settle FTC charges of reporting duplicate records and hiding its data sources",
-   "src": "FTC press release, Jul 9",
-   "srcUrl": "https://www.ftc.gov/news-events/news/press-releases/2026/07/rentgrow-pay-225-million-settle-ftc-allegations-company-violated-fair-credit-reporting-act-ftc-act",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-09T09:47:00Z",
-   "p": "fraud",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0041",
-   "title": "Police reportedly arrested 5,811 suspects and seized $293 million in a global anti-fraud operation spanning 97 countries",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/police-arrests-5-800-suspects-in-global-anti-fraud-crackdown/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-09T05:42:00Z",
-   "p": "cyber",
-   "tri": "priority",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0026",
-   "title": "Microsoft patches “RoguePlanet,” a Windows Defender zero-day flaw whose exploit code had been public since early June",
-   "src": "BleepingComputer + Dark Reading",
-   "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-patches-rogueplanet-defender-zero-day-vulnerability/",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/zimbra-urges-customers-to-patch-critical-web-client-xss-flaw/",
    "linked": true
   }
  ],
@@ -216,17 +204,26 @@
    "scope": "artificial intelligence · capability & governance",
    "watch": "Frontier capability, bank-scale adoption, and the governance that is (or is not) keeping pace — from allowlisted lab, regulator, and press feeds.",
    "opened": "July 2026",
-   "ver": "v1",
-   "verRange": "v1",
-   "asOf": "July 9, 2026",
+   "ver": "v2",
+   "verRange": "v1–v2",
+   "asOf": "July 11, 2026",
    "p1": "Frontier capability advanced again this window: OpenAI released GPT-5.6 on July 9, and in June introduced “Daybreak” security tools — including Codex Security and GPT-5.5-Cyber — for finding, validating, and patching software flaws at scale. The labs are also the sharpest threat reporters: OpenAI’s June report details China-linked influence operations using AI to target US technology debates.",
    "p1Sup": "1, 2, 3",
-   "p2": "Banks are adopting at scale. OpenAI reports MUFG building an “AI-native” organization on ChatGPT Enterprise, and BBVA scaling ChatGPT to 100,000 employees. The regulatory line is earlier-stage: the FTC opened public comment on a policy statement addressing AI accuracy on July 1. AI is confirmed on the attack side too — an exploited flaw in Langflow, an AI-workflow tool, is on CISA’s known-exploited list.",
-   "p2Sup": "4, 5, 6, 7",
+   "p2": "Banks are adopting at scale. OpenAI reports MUFG building an “AI-native” organization on ChatGPT Enterprise, and BBVA scaling ChatGPT to 100,000 employees. The regulatory line is earlier-stage: the FTC opened public comment on a policy statement addressing AI accuracy on July 1. AI is confirmed on the attack side too: an exploited flaw in Langflow, an AI-workflow tool, is on CISA’s known-exploited list, and researchers demonstrated “Ghostcommit,” a technique that hides a prompt injection inside an image file to slip past AI code-review tools and convince a coding agent to leak a repository’s secrets.",
+   "p2Sup": "4, 5, 6, 7, 8",
    "assess": "We assess as likely that AI adoption inside banks continues to outpace tailored supervisory guidance: frontier releases and bank-scale deployments are confirmed this window, while regulatory activity remains at the comment stage.",
    "assessSup": "1, 4, 6",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 11, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0051",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/",
+     "line": "Researchers demonstrate “Ghostcommit,” a technique that hides a prompt injection inside an image file, slipping past AI code reviewers CodeRabbit and Bugbot — which never open image files — and convincing a coding agent to read a repository’s .env file and write its secrets into the code."
+    },
     {
      "date": "Jul 9, 26",
      "st": "confirmed",
@@ -335,6 +332,11 @@
      "n": "7",
      "text": "CISA — Known Exploited Vulnerabilities catalog (Langflow, added Jul 7, 2026)",
      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+     "n": "8",
+     "text": "BleepingComputer — “Ghostcommit” prompt-injection technique, Jul 11, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/"
     }
    ],
    "related": [
@@ -380,17 +382,89 @@
    "scope": "cybersecurity · exploitation & exposure",
    "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
    "opened": "July 2026",
-   "ver": "v1",
-   "verRange": "v1",
-   "asOf": "July 9, 2026",
-   "p1": "Actively exploited flaws this window cluster in web-facing enterprise software. CISA’s known-exploited list added Microsoft SharePoint Server (code execution via deserialization) on July 1, then Adobe ColdFusion (path traversal), Langflow (authorization bypass), and two website page-builder tools on July 7. Microsoft also patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
-   "p1Sup": "1, 2, 3",
-   "p2": "Two joint federal advisories anchor the state-actor picture: the FBI and CISA warn that Russian intelligence services continue to target commercial messaging applications. On the criminal side, researchers traced the “FortiBleed” exploitation campaign to the INC and Lynx ransomware operations, and report a ransomware attack run end-to-end by an AI agent that broke in through the exploited Langflow flaw.",
-   "p2Sup": "4, 5, 6",
-   "assess": "We assess as likely that web-facing enterprise software remains the sector’s most exploited edge in the near term: every confirmed addition to the known-exploited list this window is an internet-reachable platform.",
-   "assessSup": "1, 2",
+   "ver": "v9",
+   "verRange": "v1–v9",
+   "asOf": "July 11, 2026",
+   "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7), then Balbooa Forms and iCagenda — both unrestricted file-upload vulnerabilities — on July 10. Hackers are also actively exploiting a critical authentication-bypass flaw in the official Docker image for the Gitea self-hosted Git service, and Australia’s Cyber Security Centre has warned of a global campaign targeting vulnerable content-management-system platforms and plugins. Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
+   "p1Sup": "1, 2, 3, 7, 8, 9, 10",
+   "p2": "Two joint federal advisories anchor the state-actor picture: the FBI and CISA warn that Russian intelligence services continue to target commercial messaging applications. On the criminal side, researchers traced the “FortiBleed” exploitation campaign to the INC and Lynx ransomware operations, and report a ransomware attack run end-to-end by an AI agent that broke in through the exploited Langflow flaw. Vendor and platform risk widened this window too: Progress Software urged ShareFile customers running Storage Zone Controllers to shut down their servers immediately over a “credible external security threat”; Zimbra urged customers to patch a critical Classic Web Client cross-site-scripting flaw; and CISA itself disclosed the security lapses that led to a GitHub leak of its passwords and cloud access keys. Separately, research reported holes in a Microsoft BitLocker security wrapper that could put organizations, and possibly ATMs, at risk of compromise.",
+   "p2Sup": "4, 5, 6, 11, 12, 13, 14",
+   "assess": "We assess as likely that web-facing enterprise software and vendor platforms remain the sector’s most exploited edge in the near term: every confirmed addition to the known-exploited list this window is an internet-reachable platform, an actively exploited flaw was found in a self-hosted Git-hosting tool, and a major vendor issued an emergency shutdown notice to its own customers.",
+   "assessSup": "1, 2, 8, 11",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 11, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0045",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/australia-warns-of-global-campaign-targeting-vulnerable-cms-platforms/",
+     "line": "Australia’s Cyber Security Centre (ACSC) warns of a global exploitation campaign targeting vulnerable content-management-system platforms and plugins."
+    },
+    {
+     "date": "Jul 10, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0050",
+     "src": "CISA KEV catalog",
+     "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+     "line": "CISA adds two more exploited flaws to its known-exploited list: Balbooa Forms and iCagenda, both unrestricted file-upload vulnerabilities."
+    },
+    {
+     "date": "Jul 10, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0043",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/progress-urges-sharefile-customers-to-shut-down-servers-over-credible-threat/",
+     "line": "Progress Software urges ShareFile customers running Storage Zone Controllers to immediately shut down their servers over a “credible external security threat.”"
+    },
+    {
+     "date": "Jul 10, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0044",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-auth-bypass-in-gitea-docker-image/",
+     "line": "Hackers actively exploit a critical authentication-bypass flaw in the official Docker image for the Gitea self-hosted Git service, letting attackers impersonate any user, including administrators."
+    },
+    {
+     "date": "Jul 10, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0047",
+     "src": "Cybersecurity Dive",
+     "srcUrl": "https://www.cybersecuritydive.com/news/initial-access-broker-citrixbleed2-flaw-DragonForce/824961/",
+     "line": "An initial access broker is linked to weaponization of the CitrixBleed2 flaw."
+    },
+    {
+     "date": "Jul 10, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0048",
+     "src": "Cybersecurity Dive",
+     "srcUrl": "https://www.cybersecuritydive.com/news/cisa-github-passwords-leak-contractor-report/824953/",
+     "line": "CISA details the security lapses that led to a GitHub leak of passwords and cloud access keys."
+    },
+    {
+     "date": "Jul 10, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0049",
+     "src": "Dark Reading",
+     "srcUrl": "https://www.darkreading.com/vulnerabilities-threats/atm-crypto-software-bugs-jackpot-bust",
+     "line": "Research reports holes in a Microsoft BitLocker security wrapper that could put organizations, and possibly ATMs, at risk of compromise."
+    },
+    {
+     "date": "Jul 10, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0046",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/zimbra-urges-customers-to-patch-critical-web-client-xss-flaw/",
+     "line": "Zimbra urges customers to patch a critical cross-site-scripting flaw in the Classic Web Client used to access the Zimbra Collaboration suite."
+    },
     {
      "date": "Jul 9, 26",
      "st": "confirmed",
@@ -503,6 +577,46 @@
      "n": "6",
      "text": "Dark Reading — JadePuffer LLM-driven ransomware via Langflow flaw, Jul 6, 2026",
      "url": "https://www.darkreading.com/cyberattacks-data-breaches/jadepuffer-first-complete-llm-driven-ransomware-attack"
+    },
+    {
+     "n": "7",
+     "text": "CISA — KEV entries: Balbooa Forms CVE-2026-56291, iCagenda CVE-2026-48939, Jul 10, 2026",
+     "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+     "n": "8",
+     "text": "BleepingComputer — Gitea Docker image auth bypass exploited, Jul 10, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-auth-bypass-in-gitea-docker-image/"
+    },
+    {
+     "n": "9",
+     "text": "BleepingComputer — ACSC warns of CMS exploitation campaign, Jul 11, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/australia-warns-of-global-campaign-targeting-vulnerable-cms-platforms/"
+    },
+    {
+     "n": "10",
+     "text": "Cybersecurity Dive — initial access broker weaponizes CitrixBleed2, Jul 10, 2026",
+     "url": "https://www.cybersecuritydive.com/news/initial-access-broker-citrixbleed2-flaw-DragonForce/824961/"
+    },
+    {
+     "n": "11",
+     "text": "BleepingComputer — Progress urges ShareFile shutdown, Jul 10, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/progress-urges-sharefile-customers-to-shut-down-servers-over-credible-threat/"
+    },
+    {
+     "n": "12",
+     "text": "BleepingComputer — Zimbra Classic Web Client XSS patch urged, Jul 10, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/zimbra-urges-customers-to-patch-critical-web-client-xss-flaw/"
+    },
+    {
+     "n": "13",
+     "text": "Cybersecurity Dive — CISA GitHub credential leak lapses, Jul 10, 2026",
+     "url": "https://www.cybersecuritydive.com/news/cisa-github-passwords-leak-contractor-report/824953/"
+    },
+    {
+     "n": "14",
+     "text": "Dark Reading — ATM BitLocker wrapper bugs, Jul 10, 2026",
+     "url": "https://www.darkreading.com/vulnerabilities-threats/atm-crypto-software-bugs-jackpot-bust"
     }
    ],
    "related": [
@@ -553,17 +667,26 @@
    "scope": "fraud · AML rulemaking & scam patterns",
    "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
    "opened": "July 2026",
-   "ver": "v1",
-   "verRange": "v1",
-   "asOf": "July 9, 2026",
+   "ver": "v2",
+   "verRange": "v1–v2",
+   "asOf": "July 11, 2026",
    "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, following June proposals aimed at stablecoins: a customer identification program requirement for payment stablecoin issuers (Fed, June 18) and Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22).",
    "p1Sup": "1, 2, 3",
-   "p2": "Operationally, the OCC is highlighting FinCEN’s updated Section 314(b) fact sheet clarifying how institutions can share suspected-fraud information with each other. The FBI’s recent consumer-facing warnings describe criminals redirecting users to fraudulent websites through malicious traffic-distribution systems, and couriers collecting cash in person for cryptocurrency investment scams.",
-   "p2Sup": "4, 5, 6",
+   "p2": "Operationally, the OCC is highlighting FinCEN’s updated Section 314(b) fact sheet clarifying how institutions can share suspected-fraud information with each other. The FBI’s recent consumer-facing warnings describe criminals redirecting users to fraudulent websites through malicious traffic-distribution systems, and couriers collecting cash in person for cryptocurrency investment scams. On the criminal side, a Bulgarian national already imprisoned for helping launder millions in fraud proceeds is charged with stealing $290,000 in government-seized cryptocurrency while incarcerated.",
+   "p2Sup": "4, 5, 6, 7",
    "assess": "We assess as likely that AML expectations formalize around new payment types first: three of the confirmed rule actions this window concern stablecoins or AML-program modernization, and all are open for comment.",
    "assessSup": "1, 2, 3",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 10, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0052",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/money-launderer-accused-of-stealing-seized-crypto-while-in-prison/",
+     "line": "A Bulgarian national already serving 121 months in prison for helping launder millions stolen from American fraud victims is charged with stealing $290,000 in government-seized cryptocurrency while incarcerated."
+    },
     {
      "date": "Jul 9, 26",
      "st": "confirmed",
@@ -667,6 +790,11 @@
      "n": "6",
      "text": "FBI IC3 — cryptocurrency scam couriers PSA, Jun 15, 2026",
      "url": "https://www.ic3.gov/PSA/2026/PSA260615"
+    },
+    {
+     "n": "7",
+     "text": "BleepingComputer — money launderer charged with seized-crypto theft, Jul 10, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/money-launderer-accused-of-stealing-seized-crypto-while-in-prison/"
     }
    ],
    "related": [
@@ -1095,17 +1223,35 @@
    "scope": "insider threat · co-opted trust",
    "watch": "Prosecutions and advisories where trusted roles — employees, contractors, hired specialists — are the attack path.",
    "opened": "July 2026",
-   "ver": "v1",
-   "verRange": "v1",
-   "asOf": "July 9, 2026",
-   "p1": "One confirmed event this window sits squarely on trusted-role co-option: a former ransomware negotiator was sentenced to 70 months for conspiring with BlackCat ransomware actors to extort the victims he was engaged to help — and with other former cybersecurity professionals to attack additional victims.",
-   "p1Sup": "1",
-   "p2": "Adjacent signals point the same direction: the AssuranceAmerica breach began with attackers targeting a company employee, and a man alleged to be a member of Scattered Spider — a group associated with social-engineering staff — was extradited to the US.",
-   "p2Sup": "2, 3",
-   "assess": "Too few confirmed events to establish a trend. We note with low confidence that the co-opted professional — rather than the disgruntled employee — is the pattern in what has entered the record so far.",
-   "assessSup": "1",
-   "conf": "low confidence",
+   "ver": "v3",
+   "verRange": "v1–v3",
+   "asOf": "July 11, 2026",
+   "p1": "Two confirmed events this window sit squarely on trusted-role co-option: a former ransomware negotiator was sentenced to 70 months for conspiring with BlackCat ransomware actors to extort the victims he was engaged to help — and with other former cybersecurity professionals to attack additional victims; and a Woodinville, Washington man was indicted on 30 federal felonies for stealing $440,000 from the financial institutions where he worked and laundering the money through other banks.",
+   "p1Sup": "1, 4",
+   "p2": "Adjacent signals point the same direction: the AssuranceAmerica breach began with attackers targeting a company employee, a man alleged to be a member of Scattered Spider — a group associated with social-engineering staff — was extradited to the US, and a man accused of deploying Ryuk ransomware pleaded guilty to conspiracy and computer fraud in an Oregon federal court.",
+   "p2Sup": "2, 3, 5",
+   "assess": "We assess with moderate confidence that co-opted trusted roles — employees and hired specialists, not only outside attackers — are a recurring feature of confirmed cases this window: a ransomware negotiator, a financial-institution employee, and a ransomware operator each abused a position of trust or access for financial gain.",
+   "assessSup": "1, 4, 5",
+   "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 10, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0054",
+     "src": "The Record",
+     "srcUrl": "https://therecord.media/ryuk-operator-pleads-guilty-alphv-conspirator-sentenced",
+     "line": "A man accused of deploying Ryuk ransomware pleads guilty to conspiracy and computer fraud in an Oregon federal court."
+    },
+    {
+     "date": "Jul 10, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0053",
+     "src": "DOJ press release",
+     "srcUrl": "https://www.justice.gov/usao-wdwa/pr/woodinville-washington-man-indicted-stealing-440000-financial-institutions-where-he",
+     "line": "A Woodinville, Washington man is indicted on 30 federal felonies for a scheme to steal from the financial institutions where he worked and launder the money through other banks."
+    },
     {
      "date": "Jul 9, 26",
      "st": "confirmed",
@@ -1149,6 +1295,16 @@
      "n": "3",
      "text": "Cybersecurity Dive — Scattered Spider extradition, Jul 6, 2026",
      "url": "https://www.cybersecuritydive.com/news/member-scattered-spider-extradited-us-retailer/824476/"
+    },
+    {
+     "n": "4",
+     "text": "DOJ — Woodinville financial-institution theft indictment, Jul 10, 2026",
+     "url": "https://www.justice.gov/usao-wdwa/pr/woodinville-washington-man-indicted-stealing-440000-financial-institutions-where-he"
+    },
+    {
+     "n": "5",
+     "text": "The Record — Ryuk operator guilty plea, Jul 10, 2026",
+     "url": "https://therecord.media/ryuk-operator-pleads-guilty-alphv-conspirator-sentenced"
     }
    ],
    "related": [
@@ -1577,6 +1733,102 @@
    "line": "June Patch Tuesday sets a record: nearly 200 fixes, almost three dozen rated critical",
    "src": "Krebs on Security",
    "srcUrl": "https://krebsonsecurity.com/2026/06/a-record-breaking-patch-tuesday-for-june-2026/"
+  },
+  {
+   "d": "2026-07-11",
+   "p": "cyber",
+   "id": "L-0045",
+   "line": "Australia’s Cyber Security Centre (ACSC) warns of a global exploitation campaign targeting vulnerable content-management-system platforms and plugins.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/australia-warns-of-global-campaign-targeting-vulnerable-cms-platforms/"
+  },
+  {
+   "d": "2026-07-11",
+   "p": "ai",
+   "id": "L-0051",
+   "line": "Researchers demonstrate “Ghostcommit,” a technique that hides a prompt injection inside an image file, slipping past AI code reviewers CodeRabbit and Bugbot — which never open image files — and convincing a coding agent to read a repository’s .env file and write its secrets into the code.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/"
+  },
+  {
+   "d": "2026-07-10",
+   "p": "insider",
+   "id": "L-0054",
+   "line": "A man accused of deploying Ryuk ransomware pleads guilty to conspiracy and computer fraud in an Oregon federal court.",
+   "src": "The Record",
+   "srcUrl": "https://therecord.media/ryuk-operator-pleads-guilty-alphv-conspirator-sentenced"
+  },
+  {
+   "d": "2026-07-10",
+   "p": "cyber",
+   "id": "L-0050",
+   "line": "CISA adds two more exploited flaws to its known-exploited list: Balbooa Forms and iCagenda, both unrestricted file-upload vulnerabilities.",
+   "src": "CISA KEV catalog",
+   "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+  },
+  {
+   "d": "2026-07-10",
+   "p": "cyber",
+   "id": "L-0043",
+   "line": "Progress Software urges ShareFile customers running Storage Zone Controllers to immediately shut down their servers over a “credible external security threat” targeting the on-premises file-sharing software.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/progress-urges-sharefile-customers-to-shut-down-servers-over-credible-threat/"
+  },
+  {
+   "d": "2026-07-10",
+   "p": "cyber",
+   "id": "L-0044",
+   "line": "Hackers actively exploit a critical authentication-bypass flaw in the official Docker image for the Gitea self-hosted Git service, letting attackers impersonate any user, including administrators.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-auth-bypass-in-gitea-docker-image/"
+  },
+  {
+   "d": "2026-07-10",
+   "p": "fraud",
+   "id": "L-0052",
+   "line": "A Bulgarian national already serving 121 months in prison for helping launder millions stolen from American fraud victims is charged with stealing $290,000 in government-seized cryptocurrency while incarcerated.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/money-launderer-accused-of-stealing-seized-crypto-while-in-prison/"
+  },
+  {
+   "d": "2026-07-10",
+   "p": "cyber",
+   "id": "L-0047",
+   "line": "An initial access broker is linked to weaponization of the CitrixBleed2 flaw; similar exploitation was seen in attacks involving an open-source machine emulator.",
+   "src": "Cybersecurity Dive",
+   "srcUrl": "https://www.cybersecuritydive.com/news/initial-access-broker-citrixbleed2-flaw-DragonForce/824961/"
+  },
+  {
+   "d": "2026-07-10",
+   "p": "cyber",
+   "id": "L-0048",
+   "line": "CISA details the security lapses that led to a GitHub leak of passwords and cloud access keys; the agency’s blog post came as lawmakers pressed it for answers.",
+   "src": "Cybersecurity Dive",
+   "srcUrl": "https://www.cybersecuritydive.com/news/cisa-github-passwords-leak-contractor-report/824953/"
+  },
+  {
+   "d": "2026-07-10",
+   "p": "cyber",
+   "id": "L-0049",
+   "line": "Research reports holes in a Microsoft BitLocker security wrapper that could put organizations, and possibly ATMs, at risk of compromise.",
+   "src": "Dark Reading",
+   "srcUrl": "https://www.darkreading.com/vulnerabilities-threats/atm-crypto-software-bugs-jackpot-bust"
+  },
+  {
+   "d": "2026-07-10",
+   "p": "insider",
+   "id": "L-0053",
+   "line": "A Woodinville, Washington man is indicted on 30 federal felonies for a scheme to steal from the financial institutions where he worked and launder the money through other banks.",
+   "src": "DOJ press release",
+   "srcUrl": "https://www.justice.gov/usao-wdwa/pr/woodinville-washington-man-indicted-stealing-440000-financial-institutions-where-he"
+  },
+  {
+   "d": "2026-07-10",
+   "p": "cyber",
+   "id": "L-0046",
+   "line": "Zimbra urges customers to patch a critical cross-site-scripting flaw in the Classic Web Client used to access the Zimbra Collaboration suite.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/zimbra-urges-customers-to-patch-critical-web-client-xss-flaw/"
   }
  ],
  "takeaways": [
@@ -1631,10 +1883,36 @@
    "conf": "moderate confidence",
    "head": "Fraud-intelligence sharing just got clearer legal footing.",
    "body": "FinCEN’s updated Section 314(b) fact sheet — highlighted to banks by the OCC — clarifies how institutions can share suspected-fraud information with each other, while the Fed’s AML-program modernization proposal is open for comment. Worth a joint look from fraud and BSA officers."
+  },
+  {
+   "anchors": [
+    "L-0043"
+   ],
+   "pillars": "Cybersecurity",
+   "conf": "high confidence",
+   "head": "A vendor just told customers to shut servers down now — check if you're one of them.",
+   "body": "Progress Software is emailing ShareFile customers running Storage Zone Controllers to shut their servers down immediately over a “credible external security threat.” Technology teams should confirm today whether they run the affected configuration."
+  },
+  {
+   "anchors": [
+    "L-0051"
+   ],
+   "pillars": "Artificial intelligence",
+   "conf": "moderate confidence",
+   "head": "AI code reviewers that never open image files have a blind spot — now demonstrated, not theoretical.",
+   "body": "Researchers showed that a prompt injection hidden in an image file slips past AI code reviewers CodeRabbit and Bugbot, which never open image files, and can convince a coding agent to leak a repository's secrets. Teams using AI code-review tools should confirm what file types those tools actually scan."
   }
  ],
  "publications": {
   "dailies": [
+   {
+    "no": "2",
+    "date": "Sat, Jul 11, 2026",
+    "confirmed": "12",
+    "pending": "0",
+    "flash": "—",
+    "linked": true
+   },
    {
     "no": "1",
     "date": "Thu, Jul 9, 2026",
@@ -1646,7 +1924,7 @@
   ],
   "weeklies": [],
   "monthlies": [],
-  "dTotal": 1,
+  "dTotal": 2,
   "wkTotal": 0,
   "mTotal": 0
  }
