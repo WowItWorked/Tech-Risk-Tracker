@@ -10,7 +10,7 @@ export function Publications(v) {
   <div style="padding-top: 26px; animation: hzIn 200ms cubic-bezier(0.2, 0, 0, 1);">
     <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px 16px;">
       <span style=${KICKER}>Publications — the archive</span>
-      <button onClick=${v.goPubArchive} title="Every recorded item across all editions, searchable" class="hv-ul" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #0069AA;">Item archive →</button>
+      <button onClick=${v.goPubArchive} title="Every recorded item across all editions, searchable" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #10314F; background: transparent; border: 1px solid #10314F; border-radius: 4px; padding: 6px 14px; white-space: nowrap;">Archives</button>
     </div>
     <h2 style="margin: 10px 0 6px 0; font-family: 'Source Serif 4', Georgia, serif; font-size: clamp(28px, 4vw, 38px); line-height: 1.15; font-weight: 600; letter-spacing: -0.015em; color: #14171A;">Back issues</h2>
     <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4D555C; max-width: 90ch; text-wrap: pretty;">Every issue the system has published, in one place. Daily briefs cover what changed overnight, weekly digests pull the week together, and monthly reports read the longer arc — all drawn from the same confirmed record.</p>
