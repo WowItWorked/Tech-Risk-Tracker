@@ -60,13 +60,14 @@ export function Today(v) {
 
     <aside style="flex: 1 1 280px; max-width: 460px; min-width: 0;">
       <div style="border-top: 2px solid #14171A; padding-top: 10px; margin-bottom: 28px;">
-        <div style=${KICKER}>What to do about it</div>
+        <div style=${KICKER}>What should change your week</div>
         ${v.sideTakeaways.map((t) => html`
-          <button onClick=${t.go} title="Open Meeting Prep for the full takeaway and its citations" class="hv-soft" style="display: block; width: 100%; text-align: left; padding: 11px 0 12px 12px; border-left: 3px solid #F58025; border-bottom: 1px solid #E9EBED;">
-            <span style="display: block; font-family: 'Source Serif 4', Georgia, serif; font-size: 15.5px; line-height: 1.4; font-weight: 600; color: #14171A; text-wrap: pretty;">${t.head}</span>
-            <span style="display: flex; flex-wrap: wrap; align-items: center; gap: 5px 10px; margin-top: 7px;">
-              <span style=${AREA_CHIP}>${t.pillars}</span>
-              <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: ${t.confColor};">${t.conf}</span>
+          <button onClick=${t.go} title="Open Meeting Prep for the full executive summary and its citations" class="hv-soft" style="display: flex; gap: 10px; width: 100%; text-align: left; padding: 12px 0; border-bottom: 1px solid #E9EBED; align-items: baseline;">
+            <span style="width: 6px; height: 6px; background: #10314F; flex-shrink: 0; position: relative; top: -1px;"></span>
+            <span style="min-width: 0; display: block;">
+              <span style="font-family: 'Source Serif 4', Georgia, serif; font-size: 15px; line-height: 1.4; font-weight: 600; color: #14171A; text-wrap: pretty;">${t.head}${NBSP2}<span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 8.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #4D555C; border: 1px solid #D7DBDF; border-radius: 4px; padding: 1px 5px; white-space: nowrap; vertical-align: 2px;">${t.conf}</span></span>
+              <span style="display: block; margin: 4px 0 0 0; font-family: 'Public Sans', system-ui, sans-serif; font-size: 12px; line-height: 1.55; color: #4D555C; text-wrap: pretty;">${t.body}</span>
+              <span style="display: block; margin-top: 5px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #4D555C;">${t.pillars}</span>
             </span>
           </button>
         `)}

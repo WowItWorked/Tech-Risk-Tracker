@@ -427,8 +427,7 @@ class App extends Component {
       vtotal: d.diffPool.filter((x) => x.d > new Date(this.state.now - 30 * 86400000).toISOString().slice(0, 10)).length,
       // front-page rail: executive takeaways + standing assessments
       sideTakeaways: d.takeaways.slice(0, 3).map((t) => ({
-        head: t.head, pillars: t.pillars, conf: t.conf,
-        confColor: String(t.conf || '').startsWith('high') ? '#10314F' : String(t.conf || '').startsWith('moderate') ? '#B25C00' : '#6B747C',
+        head: t.head, body: t.body, pillars: t.pillars, conf: t.conf,
         go: () => this.go('diff'),
       })),
       takeawaysTotal: d.takeaways.length,
