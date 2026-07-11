@@ -4,14 +4,14 @@
   "startedOn": "2026-07-09",
   "generatedAt": "2026-07-11T12:26:50-04:00",
   "issueNo": 2,
-  "recordHash": "2afd18a",
+  "recordHash": "9d6e68e",
   "windowLabel": "June 9 – July 11, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
   "feedNote": "17 of 19 allowlisted feeds returned (CISA Cybersecurity Advisories: edge WAF returned 403 for every user agent tried; FinCEN newsroom page: 404, page restructured). Nacha's feed required stripping a non-XML theme-debug preamble before it would parse. FinCEN and Anthropic are page-checked sources; Anthropic's page returned content but nothing published in this window's cutoff was sector-relevant."
  },
  "lead": {
-  "head": "Three stories lead today: Progress Software’s emergency shutdown order for ShareFile servers, an indicted insider theft from financial institutions, and a technique that tricks AI coding assistants into leaking secrets",
+  "head": "Leading stories: Progress Software’s emergency shutdown order for ShareFile servers; an indicted insider theft from financial institutions; and a technique that tricks AI coding assistants into leaking secrets",
   "dek": "Three stories share the front page, drawn from the twelve items recorded in today’s edition. Every item links to its source.",
   "items": [
    {
