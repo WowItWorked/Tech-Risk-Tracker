@@ -3,7 +3,7 @@ import { html } from './ui.js';
 
 const KICKER = "font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;";
 // Uniform chips: source-material links (blue) and risk-area labels (navy on gray).
-export const SRC_CHIP = "font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; color: #0069AA; background: #F4F9FC; border: 1px solid #C5E2F0; border-radius: 999px; padding: 2px 9px; line-height: 1.4;";
+export const SRC_CHIP = "font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; color: #0069AA; background: #F4F9FC; border: 1px solid #C5E2F0; border-radius: 999px; padding: 2px 9px; line-height: 1.4; text-decoration: none;";
 export const AREA_CHIP = "font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; color: #10314F; background: #F1F3F4; border: 1px solid #D7DBDF; border-radius: 999px; padding: 2px 9px; line-height: 1.4; white-space: nowrap;";
 const NBSP2 = '  ';
 
@@ -14,6 +14,7 @@ export function Today(v) {
     <div style="flex: 1 1 600px; min-width: 0;">
       <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px 16px;">
         <span style=${KICKER}>The daily brief</span>
+        <button onClick=${v.printDaily} title="Open today’s edition as a printable page" class="hv-ul" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #0069AA;">Print / save PDF</button>
       </div>
       <h2 style="margin: 12px 0 10px 0; font-family: 'Source Serif 4', Georgia, serif; font-optical-sizing: auto; font-size: clamp(30px, 4.6vw, 43px); line-height: 1.12; font-weight: 600; letter-spacing: -0.015em; color: #14171A; text-wrap: pretty;">${v.leadHead}</h2>
       <p style="margin: 0 0 16px 0; font-size: 19px; line-height: 1.5; color: #4D555C; max-width: 62ch; text-wrap: pretty;">${v.leadDek}</p>

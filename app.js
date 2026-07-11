@@ -10,6 +10,7 @@ const D = { P, PS, wire: WIRE, lead, riskAreas, diffPool, takeaways, publication
 
 const hmET = (t) => new Date(t).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'America/New_York' });
 const mdET = (t) => new Date(t).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'America/New_York' });
+const esc = (t) => String(t == null ? '' : t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
 class App extends Component {
   state = {
@@ -164,6 +165,108 @@ class App extends Component {
     try { history.replaceState(null, '', '#' + target); } catch (err) {}
     window.scrollTo(0, 0);
     this._hlT = setTimeout(() => this.setState({ hl: null }), 2600);
+  }
+
+  // ---------- printable report pages ----------
+  printPage(title, inner) {
+    const w = window.open('', '_blank');
+    if (!w) { window.alert('Allow pop-ups for this site to open the printable report.'); return; }
+    const css = '@page{margin:16mm}'
+      + 'body{margin:0 auto;max-width:760px;padding:26px 20px 44px 20px;font-family:Georgia,"Times New Roman",serif;color:#14171A;line-height:1.55}'
+      + '.k{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#10314F}'
+      + '.meta{font-family:system-ui,sans-serif;font-size:11px;color:#6B747C;margin-top:4px}'
+      + 'h1{font-size:29px;line-height:1.18;margin:8px 0 4px 0;letter-spacing:-.01em}'
+      + 'h2{font-size:17px;line-height:1.35;margin:0}'
+      + 'p{margin:5px 0 0 0}'
+      + '.sec{border-top:2px solid #14171A;margin-top:26px;padding-top:8px}'
+      + '.item{border-top:1px solid #E9EBED;padding:10px 0;break-inside:avoid}'
+      + '.item:first-of-type{border-top:0}'
+      + '.why{font-family:system-ui,sans-serif;font-size:12.5px;color:#4D555C}'
+      + '.src{font-family:system-ui,sans-serif;font-size:10.5px;color:#0069AA;margin-top:4px;word-break:break-all}'
+      + '.tag{font-family:system-ui,sans-serif;font-size:9.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#4D555C}'
+      + '.noprint{margin:0 0 20px 0;text-align:center}'
+      + '.noprint button{font-family:system-ui,sans-serif;font-size:13px;font-weight:600;padding:10px 22px;background:#10314F;color:#fff;border:0;border-radius:4px;cursor:pointer}'
+      + '@media print{.noprint{display:none}}';
+    w.document.write('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>' + esc(title) + '</title><style>' + css + '</style></head><body>'
+      + '<div class="noprint"><button onclick="window.print()">Print / save as PDF</button></div>'
+      + inner + '</body></html>');
+    w.document.close();
+    setTimeout(() => { try { w.focus(); w.print(); } catch (err) {} }, 350);
+  }
+
+  printDaily() {
+    const dateLong = new Date(this.state.now).toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric', timeZone: 'America/New_York' });
+    let h = '<div class="k">Tech Risk Tracker — Daily Edition</div>'
+      + '<div class="meta">No. ' + esc(META.issueNo) + ' · ' + esc(dateLong) + ' · Generated ' + esc(hmET(META.generatedAt)) + ' ET · Record ' + esc(META.recordHash) + '</div>'
+      + '<h1>' + esc(D.lead.head) + '</h1>'
+      + '<p style="font-size:15.5px;color:#4D555C">' + esc(D.lead.dek) + '</p>'
+      + '<div class="sec"><div class="k">The daily brief</div>';
+    D.lead.items.forEach((li, i) => {
+      h += '<div class="item"><h2>' + (i + 1) + '. ' + esc(li.text) + '</h2>'
+        + '<p class="why"><strong>Why it matters</strong> — ' + esc(li.why) + '</p>'
+        + '<div class="src">' + esc(li.srcText) + ' · ' + esc(li.srcUrl) + '</div></div>';
+    });
+    h += '</div><div class="sec"><div class="k">What should change your week</div>';
+    D.takeaways.forEach((t) => {
+      h += '<div class="item"><h2>' + esc(t.head) + ' <span class="tag">' + esc(t.conf) + '</span></h2>'
+        + '<p style="font-size:14px">' + esc(t.body) + '</p>'
+        + '<div class="tag" style="margin-top:4px">' + esc(t.pillars) + '</div></div>';
+    });
+    h += '</div><div class="sec"><div class="k">The wire — every update today</div>';
+    D.wire.forEach((x) => {
+      h += '<div class="item"><div class="tag">' + esc(hmET(x.ts)) + ' ET · ' + esc(D.PS[x.p]) + ' · ' + esc(x.tri) + '</div>'
+        + '<h2 style="margin-top:3px;font-size:15.5px">' + esc(x.title) + '</h2>'
+        + '<div class="src">' + esc(x.src) + ', ' + esc(mdET(x.ts)) + ' · ' + esc(x.srcUrl) + '</div></div>';
+    });
+    h += '</div><p class="meta" style="margin-top:26px;font-style:italic">Drafted by the system from allowlisted sources under the published editorial policy; every item links to its source.</p>';
+    this.printPage('Tech Risk Tracker — Daily Edition No. ' + META.issueNo, h);
+  }
+
+  printBrief(b) {
+    let h = '<div class="k">Tech Risk Tracker — Meeting Prep</div>'
+      + '<h1>Since your last meeting</h1>'
+      + '<div class="meta">' + esc(b.count) + ' changes of note since ' + esc(b.since) + (b.scope ? ' · ' + esc(b.scope) : '') + ' · Record ' + esc(META.recordHash) + '</div>';
+    if (b.takeaways.length) {
+      h += '<div class="sec"><div class="k">Executive summary — what should change your week</div>';
+      b.takeaways.forEach((t) => {
+        h += '<div class="item"><h2>' + esc(t.head) + ' <span class="tag">' + esc(t.conf) + '</span></h2>'
+          + '<p style="font-size:14px">' + esc(t.body) + '</p>'
+          + '<div class="tag" style="margin-top:4px">' + esc(t.pillars) + '</div></div>';
+      });
+      h += '</div>';
+    }
+    b.groups.forEach((g) => {
+      h += '<div class="sec"><div class="k">' + esc(g.label) + ' — ' + g.items.length + ' recorded</div>';
+      g.items.forEach((x) => {
+        h += '<div class="item"><div class="tag">' + esc(x.dateStr) + '</div>'
+          + '<p style="font-size:14.5px;margin-top:2px">' + esc(x.line) + '</p>'
+          + '<div class="src">' + esc(x.src) + ' · ' + esc(x.srcUrl) + '</div></div>';
+      });
+      h += '</div>';
+    });
+    h += '<p class="meta" style="margin-top:26px;font-style:italic">Rendered from the confirmed record; every item links to its source.</p>';
+    this.printPage('Tech Risk Tracker — Meeting Prep brief', h);
+  }
+
+  printMonthly() {
+    const r = D.monthlyReport;
+    if (!r) return;
+    let h = '<div class="k">Tech Risk Tracker — Monthly</div>'
+      + '<div class="meta">No. ' + esc(r.no) + ' — ' + esc(r.month) + ' · Issued ' + esc(r.issued) + ' · Covers ' + esc(r.covers) + ' · ' + esc(r.changes) + ' confirmed changes · Record ' + esc(r.hash) + '</div>'
+      + '<h1>' + esc(r.title) + '</h1>'
+      + '<p style="font-size:15.5px;color:#4D555C">' + esc(r.dek) + '</p>';
+    (r.sections || []).forEach((ms) => {
+      h += '<div class="sec"><div class="k">' + esc(ms.pillar) + '</div><h2 style="margin-top:6px">' + esc(ms.head) + '</h2>';
+      (ms.grafs || []).forEach((g) => { h += '<p style="font-size:14.5px">' + esc(g.t) + '</p>'; });
+      if ((ms.imps || []).length) {
+        h += '<div class="tag" style="margin-top:8px">Implications for controls posture</div>';
+        ms.imps.forEach((im) => { h += '<p style="font-size:13.5px">• ' + esc(im.t) + ' <span class="tag">' + esc(im.conf) + '</span></p>'; });
+      }
+      if ((ms.srcs || []).length) h += '<div class="src">Sources: ' + ms.srcs.map((mx) => esc(mx.text) + ' · ' + esc(mx.url)).join(' — ') + '</div>';
+      h += '</div>';
+    });
+    h += '<p class="meta" style="margin-top:26px;font-style:italic">' + esc(r.footnote || '') + ' Drafted by the system · issued by Technology Risk.</p>';
+    this.printPage('Tech Risk Tracker — Monthly No. ' + r.no, h);
   }
 
   cmdkFiltered() {
@@ -513,6 +616,19 @@ class App extends Component {
           }) };
       }),
       diffListLabel: s.diffSel.length === 0 ? 'Appendix — every recorded change in the window, by category' : 'Reading list — recorded items and sources, newest first',
+      // printable reports
+      printDaily: () => this.printDaily(),
+      printMonthly: () => this.printMonthly(),
+      printDiffBrief: () => this.printBrief({
+        since: fmtLong(since),
+        count: inWindow.length,
+        scope: s.diffSel.length ? 'Scope: ' + s.diffSel.map((p) => d.PS[p]).join(', ') : null,
+        takeaways: diffTakeaways,
+        groups: order
+          .map((p) => ({ label: d.P[p], items: inWindow.filter((x) => x.p === p).sort((a, b) => b.d.localeCompare(a.d)).map((x) => ({ ...x, dateStr: fmtMD(x.d) })) }))
+          .filter((g) => g.items.length)
+          .sort((a, b) => b.items.length - a.items.length),
+      }),
       // global search
       gq: s.gq,
       onGq: (e) => this.setState({ gq: e.target.value, gFocus: true }),
