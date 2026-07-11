@@ -2,6 +2,9 @@
 import { html } from './ui.js';
 
 const KICKER = "font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;";
+// Uniform chips: source-material links (blue) and risk-area labels (navy on gray).
+export const SRC_CHIP = "font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; color: #0069AA; background: #F4F9FC; border: 1px solid #C5E2F0; border-radius: 999px; padding: 2px 9px; line-height: 1.4;";
+export const AREA_CHIP = "font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; color: #10314F; background: #F1F3F4; border: 1px solid #D7DBDF; border-radius: 999px; padding: 2px 9px; line-height: 1.4; white-space: nowrap;";
 const NBSP2 = '  ';
 
 export function Today(v) {
@@ -19,9 +22,9 @@ export function Today(v) {
         <div style="display: flex; gap: 14px; padding: 13px 0; border-top: 1px solid #E9EBED;">
           <span style="font-family: 'Public Sans', system-ui, sans-serif; font-variant-numeric: tabular-nums; font-size: 12px; color: #10314F; min-width: 16px; padding-top: 3px;">${li.n}</span>
           <div style="min-width: 0;">
-            <p style="margin: 0; font-size: 16.5px; line-height: 1.58; color: #14171A; text-wrap: pretty;">${li.text}${NBSP2}<span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #4D555C; background: #E9EBED; border-radius: 4px; padding: 2px 7px; white-space: nowrap; vertical-align: 2px;">${li.pillarLabel}</span></p>
+            <p style="margin: 0; font-size: 16.5px; line-height: 1.58; color: #14171A; text-wrap: pretty;">${li.text}${NBSP2}<button onClick=${li.open} title=${li.areaTitle} class="hv-soft" style="${AREA_CHIP} vertical-align: 2px;">${li.pillarLabel}</button></p>
             <p style="margin: 6px 0 0 0; font-family: 'Public Sans', system-ui, sans-serif; font-size: 12.5px; line-height: 1.55; color: #4D555C; max-width: 78ch; text-wrap: pretty;"><span style="font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #10314F;">Why it matters</span> — ${li.why}</p>
-            <div style="margin-top: 5px; font-family: 'Public Sans', system-ui, sans-serif; font-size: 11.5px; color: #6B747C;">Source: <a href=${li.srcUrl} target="_blank" rel="noopener" title=${li.srcTitle} style="color: #0069AA; text-decoration: underline; text-decoration-color: #C5E2F0; text-underline-offset: 2px;">${li.srcText} ↗</a></div>
+            <div style="margin-top: 7px; display: flex; flex-wrap: wrap; gap: 5px 8px;"><a href=${li.srcUrl} target="_blank" rel="noopener" title=${li.srcTitle} class="hv-soft" style=${SRC_CHIP}>${li.srcText}</a></div>
           </div>
         </div>
       `)}
@@ -46,8 +49,8 @@ export function Today(v) {
               <div style="font-size: 17px; line-height: 1.45; font-weight: ${w.titleWeight}; font-style: ${w.titleStyle}; color: ${w.titleColor}; text-wrap: pretty;">${w.title}</div>
               <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 5px 8px; margin-top: 6px;">
                 <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: ${w.triFg}; background: ${w.triBg}; border: 1px solid ${w.triBd}; border-radius: 999px; padding: 2px 8px; line-height: 1.3;">${w.triage}</span>
-                <a href=${w.srcUrl} target="_blank" rel="noopener" title=${w.srcTitle} class="hv-soft" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; color: #0069AA; background: #F4F9FC; border: 1px solid #C5E2F0; border-radius: 999px; padding: 2px 9px; line-height: 1.4; white-space: nowrap;">${w.source} · ${w.srcDate} ↗</a>
-                ${w.linked ? html`<button onClick=${w.open} title=${w.areaTitle} class="hv-soft" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; color: #10314F; background: #F1F3F4; border: 1px solid #D7DBDF; border-radius: 999px; padding: 2px 9px; line-height: 1.4; white-space: nowrap;">${w.pillarLabel} →</button>` : html`<span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; color: #4D555C; background: #F1F3F4; border: 1px solid #D7DBDF; border-radius: 999px; padding: 2px 9px; line-height: 1.4; white-space: nowrap;">${w.pillarLabel}</span>`}
+                <a href=${w.srcUrl} target="_blank" rel="noopener" title=${w.srcTitle} class="hv-soft" style="${SRC_CHIP} white-space: nowrap;">${w.source} · ${w.srcDate}</a>
+                ${w.linked ? html`<button onClick=${w.open} title=${w.areaTitle} class="hv-soft" style=${AREA_CHIP}>${w.pillarLabel}</button>` : html`<span style=${AREA_CHIP}>${w.pillarLabel}</span>`}
               </div>
             </div>
           </div>
@@ -114,7 +117,7 @@ export function RiskIndex(v) {
   </div>`;
 }
 
-const srcRow = (list) => html`<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 3px 14px; margin-top: 7px;"><span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #6B747C;">Sources</span>${list.map((sx) => html`<a href=${sx.url} target="_blank" rel="noopener" title=${sx.title} style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11.5px; color: #0069AA; text-decoration: underline; text-decoration-color: #C5E2F0; text-underline-offset: 2px;">${sx.text} ↗</a>`)}</div>`;
+const srcRow = (list) => html`<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 5px 8px; margin-top: 8px;"><span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #6B747C;">Sources</span>${list.map((sx) => html`<a href=${sx.url} target="_blank" rel="noopener" title=${sx.title} class="hv-soft" style=${SRC_CHIP}>${sx.text}</a>`)}</div>`;
 
 export function Dossier(v) {
   return html`
@@ -158,7 +161,7 @@ export function Dossier(v) {
                 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; margin-top: 4px;">
                   <span style="font-family: 'Public Sans', system-ui, sans-serif; font-variant-numeric: tabular-nums; font-size: 10.5px; font-weight: 600; color: #10314F;">${e.ver}</span>
                   <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: ${e.stW}; letter-spacing: ${e.stLs}; text-transform: ${e.stTr}; font-style: ${e.stStyle}; color: ${e.stFg};">${e.status}</span>
-                  <a href=${e.srcUrl} target="_blank" rel="noopener" title=${e.srcTitle} style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; color: #0069AA; text-decoration: underline; text-decoration-color: #BCC2C8; text-underline-offset: 2px;">— ${e.source} ↗</a>
+                  <a href=${e.srcUrl} target="_blank" rel="noopener" title=${e.srcTitle} class="hv-soft" style="${SRC_CHIP} white-space: nowrap;">${e.source}</a>
                 </div>
               </div>
             </div>
@@ -171,7 +174,7 @@ export function Dossier(v) {
           <div style=${KICKER}>Monitored feeds — government, trade & press</div>
           ${v.raFeeds.map((f) => html`
             <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 7px 0; border-bottom: 1px solid #E9EBED;">
-              <a href=${f.url} target="_blank" rel="noopener" title="Open this publication" style="font-family: 'Source Serif 4', Georgia, serif; font-size: 14.5px; color: #0069AA; text-decoration: underline; text-decoration-color: #BCC2C8; text-underline-offset: 2px; white-space: nowrap;">${f.name} ↗</a>
+              <a href=${f.url} target="_blank" rel="noopener" title="Open this publication" class="hv-soft" style="${SRC_CHIP} white-space: nowrap;">${f.name}</a>
               <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; color: #6B747C; text-align: right;">${f.desc}</span>
             </div>
           `)}

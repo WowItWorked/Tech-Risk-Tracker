@@ -2,6 +2,7 @@
 import { html } from './ui.js';
 
 const KICKER = "font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #10314F;";
+const SRC_CHIP = "font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; color: #0069AA; background: #F4F9FC; border: 1px solid #C5E2F0; border-radius: 999px; padding: 2px 9px; line-height: 1.4; white-space: nowrap;";
 const NBSP2 = '  ';
 
 export function Publications(v) {
@@ -216,7 +217,7 @@ export function Diff(v) {
                 <span style="font-family: 'Public Sans', system-ui, sans-serif; font-variant-numeric: tabular-nums; font-size: 11px; color: #6B747C; padding-top: 2px;">${di.dateStr}</span>
                 <div style="min-width: 0;">
                   <span style="font-size: 15.5px; line-height: 1.5; color: #14171A; text-wrap: pretty;">${di.line}</span>
-                  <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; color: #6B747C; white-space: nowrap;"> — </span><a href=${di.srcUrl} target="_blank" rel="noopener" title=${di.srcTitle} style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; color: #0069AA; text-decoration: underline; text-decoration-color: #BCC2C8; text-underline-offset: 2px; white-space: nowrap;">${di.src} ↗</a>
+                  <div style="margin-top: 5px;"><a href=${di.srcUrl} target="_blank" rel="noopener" title=${di.srcTitle} class="hv-soft" style=${SRC_CHIP}>${di.src}</a></div>
                 </div>
               </div>
             `)}

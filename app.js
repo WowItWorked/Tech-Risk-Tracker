@@ -409,7 +409,7 @@ class App extends Component {
       // today
       leadHead: d.lead.head,
       leadDek: d.lead.dek,
-      leadItems: d.lead.items.map((x) => ({ ...deco(x), srcText: x.srcText, srcUrl: x.srcUrl, srcTitle: 'Open the primary source' })),
+      leadItems: d.lead.items.map((x) => ({ ...deco(x), srcText: x.srcText, srcUrl: x.srcUrl, srcTitle: 'Open the primary source', open: () => this.goArea(x.p), areaTitle: 'Open the ' + d.PS[x.p] + ' dossier' })),
       wire, wireCount: wire.length,
       pillarChips,
       sortLabel: s.wireSort === 'time' ? 'newest' : 'triage',
