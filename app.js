@@ -311,7 +311,7 @@ class App extends Component {
     // nav
     const navDefs = [
       { id: 'today', label: 'Today' }, { id: 'riskindex', label: 'Risk Areas' }, { id: 'publications', label: 'Publications' },
-      { id: 'diff', label: 'Meeting Prep' },
+      { id: 'diff', label: 'Meeting Prep' }, { id: 'archive', label: 'Archive' },
     ];
     const navActive = { monthly: 'publications', components: '', dossier: 'riskindex' }[scr] || scr;
     const raMenu = Object.keys(d.riskAreas).map((k) => ({ label: d.riskAreas[k].name, meta: 'updated ' + d.riskAreas[k].events[0].date, go: () => this.goArea(k) }));
@@ -340,7 +340,7 @@ class App extends Component {
     const isMobile = (s.vw || 1200) < 640;
     const mobileMenu = navDefs.map((x) => ({
       label: x.label,
-      meta: x.id === navActive ? 'you are here' : { today: 'front page · the wire', riskindex: 'eight standing watches', publications: 'dailies · weeklies · monthlies', diff: 'since your last meeting' }[x.id] || '',
+      meta: x.id === navActive ? 'you are here' : { today: 'front page · the wire', riskindex: 'eight standing watches', publications: 'dailies · weeklies · monthlies', diff: 'since your last meeting', archive: 'every recorded item' }[x.id] || '',
       go: () => this.go(x.id),
     }));
     const navItems = isMobile ? [{
@@ -504,7 +504,7 @@ class App extends Component {
       menuPanelItems: panelMenu || [],
       menuPanelClose: () => this.setState({ navMenu: null }),
       menuPanelHasFooter: s.navMenu !== 'mobile',
-      menuPanelFooter: s.navMenu === 'riskindex' ? 'All risk areas' : 'Full archive',
+      menuPanelFooter: s.navMenu === 'riskindex' ? 'All risk areas' : 'Reports Archive',
       menuPanelFooterGo: s.navMenu === 'riskindex' ? () => this.go('riskindex') : () => this.go('publications'),
       navLeave: () => this.setState((st) => (st.navMenu ? { navMenu: null } : null)),
       goToday: () => this.go('today'),
