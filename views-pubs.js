@@ -59,7 +59,7 @@ export function Publications(v) {
     <section data-pub-sec="daily" style="border-top: 2px solid #14171A; margin-top: 34px; padding-top: 10px;">
       <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px 16px;">
         <span style=${KICKER}>Daily briefs</span>
-        <span style="font-family: 'Public Sans', system-ui, sans-serif; font-variant-numeric: tabular-nums; font-size: 11px; color: #6B747C;">Speed · Weekdays 6:00 AM ET · Showing ${v.dShowingLabel} of ${v.dTotal}</span>
+        <span style="font-family: 'Public Sans', system-ui, sans-serif; font-variant-numeric: tabular-nums; font-size: 11px; color: #6B747C;">Speed · Daily Editions, Updated Hourly · Showing ${v.dShowingLabel} of ${v.dTotal}</span>
       </div>
       ${v.dailies.map((d) => html`
         <div style="display: grid; grid-template-columns: 92px 1fr auto; gap: 8px 18px; align-items: baseline; padding: 10px 0; border-bottom: 1px solid #E9EBED;">

@@ -1,8 +1,11 @@
-# Daily update runbook
+# Update runbook
 
-Run every weekday at 6:00 AM America/New_York. The agent executing this runbook must have
-read [EDITORIAL.md](EDITORIAL.md) first — it is binding. All output paths are relative to
-the repo root.
+Runs hourly, 6:00 AM through 6:00 PM America/New_York, on weekdays. The **6 AM run opens
+the day's edition** (new issue number); each later run the same day is an **intraday
+update** that appends newly admitted items to the open edition and refreshes it in place.
+An intraday run that admits nothing commits nothing and logs nothing. The agent executing
+this runbook must have read [EDITORIAL.md](EDITORIAL.md) first — it is binding. All output
+paths are relative to the repo root.
 
 ## Steps
 
@@ -16,18 +19,21 @@ the repo root.
    run log (the FTC feed is known to require this). For `type: "page"` sources, fetch
    the page and read only what is on it.
 
-3. **Select candidates.** Items published since `meta.lastRun` minus a 12-hour overlap.
-   Apply the relevance gate (EDITORIAL §3). For each candidate capture verbatim:
-   origTitle, origExcerpt (≤60 words from the feed), sourceUrl, publishedAt, fetchedAt.
+3. **Select candidates.** Items published since `meta.lastRun` minus an overlap
+   (12 hours for the day-opening run; 2 hours for intraday runs). Apply the relevance
+   gate (EDITORIAL §3). For each candidate capture verbatim: origTitle, origExcerpt
+   (≤60 words from the feed), sourceUrl, publishedAt, fetchedAt. **Intraday early
+   exit:** if no candidate survives the relevance gate, stop here — no commit, no log.
 
 4. **Admission** (EDITORIAL §1): every relevant item from an allowlisted source enters
    the record on a single report, in the same format as every other item — the allowlist
    itself is the gate. There is no pending state.
 
 5. **Write the record** — regenerate `data/record.json`:
-   - `wire`: today's items, newest first, triaged
+   - `wire`: every item admitted today (ET), newest first, triaged
      flash (active exploitation / sector-wide impact) · priority (regulatory action,
-     major vendor incident) · routine.
+     major vendor incident) · routine. The day-opening run starts the wire fresh;
+     intraday runs keep the day's existing wire items and add the new ones.
    - `diffPool`: append all new items (id `L-####`, sequential). The diff pool is the
      record's running memory — it feeds the site's Archive page — so existing entries
      are never removed, renumbered, or rewritten (corrections follow EDITORIAL §9).
@@ -44,16 +50,21 @@ the repo root.
      recorded in the edition; it must not characterize the lead stories as "unrelated"
      or otherwise remark on their variety — the list format already carries that.
    - `takeaways`: only where a recorded item changes what an executive should do.
-   - `publications.dailies`: prepend today's issue (next `issueNo`).
-   - Fridays: prepend a weekly digest entry (count from the week's recorded items).
-     First business day of the month: draft the monthly report from that month's
-     recorded items only.
+   - `publications.dailies`: the day-opening run prepends today's issue (next
+     `issueNo`); intraday runs update that same issue's counts in place — one issue
+     number per day, aggregating everything admitted that day even after items roll
+     off the board (the diff pool preserves them permanently regardless).
+   - Fridays (day-opening run only): prepend a weekly digest entry (count from the
+     week's recorded items). First business day of the month (day-opening run only):
+     draft the monthly report from that month's recorded items.
    - `meta`: `generatedAt` (ISO, ET), `lastRun`, `issueNo`, `recordHash` (first 7 hex
      chars of SHA-256 of the record content), counts.
 
 6. **Verification pass** (EDITORIAL §7). Re-read every new/changed sentence against its
    cited excerpts. Fix or cut failures. Log to `data/run-log.md`:
    `date · feeds ok/failed · candidates · recorded · verify: checked/edited/cut`.
+   The day-opening run always logs its line; an intraday run logs a compact line only
+   when it admitted at least one item (`date HH:MM ET intraday · +N items · verify: …`).
 
 7. **Sanity checks before publish:**
    - `data/record.json` parses as valid JSON.
@@ -62,8 +73,9 @@ the repo root.
    - No item lacks origTitle/origExcerpt/publishedAt.
    - Rendered counts are plausible (0 is fine; 500 is a bug).
 
-8. **Publish.** Commit `record: daily update YYYY-MM-DD (N items)` and push
-   to main. GitHub Pages serves the update; no build step exists.
+8. **Publish.** Day-opening run: commit `record: daily update YYYY-MM-DD (N items)`.
+   Intraday run: commit `record: intraday update YYYY-MM-DD HH:MM ET (+N items)`.
+   Push to main. GitHub Pages serves the update; no build step exists.
 
 ## Failure mode
 

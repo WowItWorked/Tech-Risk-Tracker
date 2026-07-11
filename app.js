@@ -316,7 +316,7 @@ class App extends Component {
     const navActive = { monthly: 'publications', components: '', dossier: 'riskindex' }[scr] || scr;
     const raMenu = Object.keys(d.riskAreas).map((k) => ({ label: d.riskAreas[k].name, meta: 'updated ' + d.riskAreas[k].events[0].date, go: () => this.goArea(k) }));
     const pubMenu = [
-      { label: 'Daily briefs', meta: d.publications.dTotal + (d.publications.dTotal === 1 ? ' issue' : ' issues') + ' · weekdays 6:00 am et', go: () => this.goPub('daily') },
+      { label: 'Daily briefs', meta: d.publications.dTotal + (d.publications.dTotal === 1 ? ' issue' : ' issues') + ' · updated hourly, weekdays', go: () => this.goPub('daily') },
       { label: 'Weekly digests', meta: d.publications.wkTotal ? d.publications.wkTotal + ' issues · Fridays' : 'first issue ' + META.nextWeekly, go: () => this.goPub('weekly') },
       { label: 'Monthly reports', meta: d.publications.mTotal ? d.publications.mTotal + ' issues' : 'first issue ' + META.nextMonthly, go: () => this.goPub('monthly') },
       { label: 'Catch-up briefs', meta: 'saved from Meeting Prep', go: () => this.goPub('catchup') },
