@@ -37,21 +37,17 @@ export function Today(v) {
               <button onClick=${pc.select} class="hv-ink" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 3px 0 2px 0; color: ${pc.color}; border-bottom: 2px solid ${pc.border};">${pc.label}</button>
             `)}
           </div>
-          <div style="display: flex; align-items: center; gap: 16px;">
-            <button onClick=${v.toggleSort} class="hv-ink" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #6B747C;">sort: ${v.sortLabel} ▾</button>
-            <input value=${v.wireQ} onInput=${v.onWireQ} placeholder="search the wire" aria-label="Search the wire" class="fc-navy" style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11.5px; color: #14171A; background: transparent; border-bottom: 1px solid #BCC2C8; padding: 3px 2px; width: 150px;" />
-          </div>
+          <button onClick=${v.toggleSort} class="hv-ink" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #6B747C;">sort: ${v.sortLabel} ▾</button>
         </div>
         ${v.wire.map((w) => html`
           <div class="hv-soft" style="display: grid; grid-template-columns: 56px 1fr; gap: 14px; padding: ${v.rowPad}; padding-left: 10px; border-left: 3px solid ${w.leftRule}; border-bottom: 1px solid #E9EBED; animation: ${w.anim};">
             <span style="font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 11.5px; color: #6B747C; padding-top: 3px;">${w.time}</span>
             <div style="min-width: 0;">
               <div style="font-size: 17px; line-height: 1.45; font-weight: ${w.titleWeight}; font-style: ${w.titleStyle}; color: ${w.titleColor}; text-wrap: pretty;">${w.title}</div>
-              <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; margin-top: 5px;">
-                <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #4D555C;">${w.pillarLabel}</span>
-                <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: ${w.triFg}; background: ${w.triBg}; border: 1px solid ${w.triBd}; border-radius: 4px; padding: 2px 6px; line-height: 1.3;">${w.triage}</span>
-                <a href=${w.srcUrl} target="_blank" rel="noopener" title=${w.srcTitle} style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; color: #0069AA; text-decoration: underline; text-decoration-color: #BCC2C8; text-underline-offset: 2px;">— ${w.source} ↗</a>
-                ${w.linked ? html`<button onClick=${w.open} class="hv-ul" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; letter-spacing: 0.08em; color: #0069AA;">risk area →</button>` : null}
+              <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 5px 8px; margin-top: 6px;">
+                <span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: ${w.triFg}; background: ${w.triBg}; border: 1px solid ${w.triBd}; border-radius: 999px; padding: 2px 8px; line-height: 1.3;">${w.triage}</span>
+                <a href=${w.srcUrl} target="_blank" rel="noopener" title=${w.srcTitle} class="hv-soft" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; color: #0069AA; background: #F4F9FC; border: 1px solid #C5E2F0; border-radius: 999px; padding: 2px 9px; line-height: 1.4; white-space: nowrap;">${w.source} · ${w.srcDate} ↗</a>
+                ${w.linked ? html`<button onClick=${w.open} title=${w.areaTitle} class="hv-soft" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; color: #10314F; background: #F1F3F4; border: 1px solid #D7DBDF; border-radius: 999px; padding: 2px 9px; line-height: 1.4; white-space: nowrap;">${w.pillarLabel} →</button>` : html`<span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.5px; font-weight: 600; color: #4D555C; background: #F1F3F4; border: 1px solid #D7DBDF; border-radius: 999px; padding: 2px 9px; line-height: 1.4; white-space: nowrap;">${w.pillarLabel}</span>`}
               </div>
             </div>
           </div>

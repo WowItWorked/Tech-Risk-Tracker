@@ -9,6 +9,7 @@ import { Components } from './views-components.js';
 const D = { P, PS, wire: WIRE, lead, riskAreas, diffPool, takeaways, publications: PUBS, monthlyReport };
 
 const hmET = (t) => new Date(t).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'America/New_York' });
+const mdET = (t) => new Date(t).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'America/New_York' });
 
 class App extends Component {
   state = {
@@ -18,7 +19,6 @@ class App extends Component {
     vw: 1200,
     now: Date.now(),
     pillar: 'all',
-    wireQ: '',
     wireSort: 'time',
     diffDate: '2026-06-09',
     diffApplied: '2026-06-09',
@@ -267,13 +267,9 @@ class App extends Component {
     };
     const triRank = { flash: 0, priority: 1, routine: 2 };
     let wire = d.wire
-      .filter((w) => (s.pillar === 'all' || w.p === s.pillar))
-      .filter((w) => {
-        const q = s.wireQ.trim().toLowerCase();
-        return !q || (w.title + ' ' + w.src + ' ' + d.PS[w.p] + ' ' + w.id).toLowerCase().includes(q);
-      });
+      .filter((w) => (s.pillar === 'all' || w.p === s.pillar));
     if (s.wireSort === 'triage') wire = wire.slice().sort((a, b) => (triRank[a.tri] - triRank[b.tri]) || (Date.parse(b.ts) - Date.parse(a.ts)));
-    wire = wire.map((w) => ({ ...deco(w), time: hmET(w.ts), linked: true, open: () => this.goArea(w.p), srcUrl: w.srcUrl, srcTitle: 'Open the source for this item' }));
+    wire = wire.map((w) => ({ ...deco(w), time: hmET(w.ts), srcDate: mdET(w.ts), linked: true, open: () => this.goArea(w.p), areaTitle: 'Open the ' + d.PS[w.p] + ' dossier', srcUrl: w.srcUrl, srcTitle: 'Open the source for this item' }));
 
     const pillarChips = [{ id: 'all', label: 'All' }].concat(Object.keys(d.PS).map((k) => ({ id: k, label: d.PS[k] }))).map((pc) => ({
       ...pc,
@@ -418,8 +414,6 @@ class App extends Component {
       pillarChips,
       sortLabel: s.wireSort === 'time' ? 'newest' : 'triage',
       toggleSort: () => this.setState((st) => ({ wireSort: st.wireSort === 'time' ? 'triage' : 'time' })),
-      wireQ: s.wireQ,
-      onWireQ: (e) => this.setState({ wireQ: e.target.value }),
       velocity: (() => {
         const since30 = new Date(this.state.now - 30 * 86400000).toISOString().slice(0, 10);
         const vc = {};
