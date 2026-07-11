@@ -1,8 +1,7 @@
 {
-  "comment": "Allowlisted sources for the Tech Risk Tracker. Only items traceable to one of these feeds may enter the record; every listed source is trusted and a single report admits an item. Tier labels are descriptive only (T1 official/primary, T2 vetted press/trade).",
+  "comment": "Allowlisted sources for the Tech Risk Tracker. Only items traceable to one of these feeds may enter the record; every listed source is trusted and a single report admits an item. Tier labels are descriptive only (T1 official/primary, T2 vetted press/trade). Removed 2026-07-11: cisa-adv (CISA advisories RSS) — CISA's edge WAF blocks the update agent's cloud egress IPs on every advisory-feed path (403; verified in-environment against all.xml, cybersecurity-advisories.xml, and news.xml) while the static KEV JSON remains reachable; CISA advisory coverage continues via cisa-kev (T1) and therecord/bleeping/darkreading (T2). Do not re-add cisa-adv without confirming it fetches from the cloud environment.",
   "sources": [
     { "id": "cisa-kev",   "name": "CISA Known Exploited Vulnerabilities", "tier": "T1", "type": "json", "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json", "pillars": ["cyber"] },
-    { "id": "cisa-adv",   "name": "CISA Cybersecurity Advisories", "tier": "T1", "type": "rss", "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml", "pillars": ["cyber", "insider", "physical"] },
     { "id": "fbi-ic3",    "name": "FBI IC3 Public Service Announcements", "tier": "T1", "type": "rss", "url": "https://www.ic3.gov/PSA/RSS", "pillars": ["cyber", "fraud", "insider"] },
     { "id": "occ",        "name": "OCC Bulletins", "tier": "T1", "type": "rss", "url": "https://www.occ.gov/rss/occ_bulletins.xml", "pillars": ["ai", "tp", "data", "cyber", "resilience"] },
     { "id": "fed",        "name": "Federal Reserve press releases", "tier": "T1", "type": "rss", "url": "https://www.federalreserve.gov/feeds/press_all.xml", "pillars": ["ai", "resilience", "tp", "data"] },
@@ -14,7 +13,8 @@
     { "id": "nacha",      "name": "Nacha news", "tier": "T1", "type": "rss", "url": "https://www.nacha.org/rss.xml", "pillars": ["fraud", "resilience"] },
     { "id": "openai",     "name": "OpenAI news", "tier": "T1", "type": "rss", "url": "https://openai.com/news/rss.xml", "pillars": ["ai"] },
     { "id": "anthropic",  "name": "Anthropic news", "tier": "T1", "type": "page", "url": "https://www.anthropic.com/news", "pillars": ["ai"] },
-    { "id": "fincen",     "name": "FinCEN newsroom", "tier": "T1", "type": "page", "url": "https://www.fincen.gov/news-room/news", "pillars": ["fraud", "data"] },
+    { "id": "fincen",     "name": "FinCEN newsroom", "tier": "T1", "type": "page", "url": "https://www.fincen.gov/news", "pillars": ["fraud", "data"] },
+    { "id": "fincen-fr",  "name": "FinCEN documents (Federal Register)", "tier": "T1", "type": "rss", "url": "https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bagencies%5D%5B%5D=financial-crimes-enforcement-network", "pillars": ["fraud", "data"] },
     { "id": "krebs",      "name": "Krebs on Security", "tier": "T2", "type": "rss", "url": "https://krebsonsecurity.com/feed/", "pillars": ["cyber", "fraud", "insider"] },
     { "id": "therecord",  "name": "The Record (Recorded Future News)", "tier": "T2", "type": "rss", "url": "https://therecord.media/feed", "pillars": ["cyber", "ai", "tp", "physical"] },
     { "id": "bleeping",   "name": "BleepingComputer", "tier": "T2", "type": "rss", "url": "https://www.bleepingcomputer.com/feed/", "pillars": ["cyber", "tp"] },

@@ -11,7 +11,10 @@ the repo root.
 
 2. **Fetch.** Retrieve every feed in `sources.json` (curl with a descriptive User-Agent,
    15s timeout; note failures — a failed feed is reported in the run log, never guessed).
-   For `type: "page"` sources, fetch the page and read only what is on it.
+   If a feed returns 403 with the descriptive User-Agent, retry once with a standard
+   browser User-Agent and count it OK if that returns 200, noting the fallback in the
+   run log (the FTC feed is known to require this). For `type: "page"` sources, fetch
+   the page and read only what is on it.
 
 3. **Select candidates.** Items published since `meta.lastRun` minus a 12-hour overlap.
    Apply the relevance gate (EDITORIAL §3). For each candidate capture verbatim:
