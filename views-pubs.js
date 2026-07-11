@@ -230,9 +230,9 @@ export function Diff(v) {
           <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px 16px;">
             <span style=${KICKER}>Executive summary — what should change your week</span>
           </div>
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); column-gap: 56px; align-items: start;">
+          <div style="column-width: 420px; column-gap: 56px;">
           ${v.diffTakeaways.map((tw) => html`
-            <div style="display: flex; gap: 12px; padding: 14px 0; border-bottom: 1px solid #E9EBED; align-items: baseline;">
+            <div style="display: flex; gap: 12px; padding: 14px 0; border-bottom: 1px solid #E9EBED; align-items: baseline; break-inside: avoid;">
               <span style="width: 6px; height: 6px; background: #10314F; flex-shrink: 0; position: relative; top: -1px;"></span>
               <div style="min-width: 0;">
                 <div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 17.5px; line-height: 1.4; font-weight: 600; color: #14171A; text-wrap: pretty;">${tw.head}${NBSP2}<span style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #4D555C; border: 1px solid #D7DBDF; border-radius: 4px; padding: 1px 5px; white-space: nowrap; vertical-align: 2px;">${tw.conf}</span></div>

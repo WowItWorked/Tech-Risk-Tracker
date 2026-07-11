@@ -37,12 +37,12 @@ the repo root.
      three sources per unit, no source cited twice in the same unit.
    - `lead`: top 3 by triage, each with a "why it matters" line obeying the
      entailment constraint. **Headline rule:** if the lead items are one connected story,
-     the headline may narrate it; if they are unrelated stories (the usual case), the
-     headline must present them as an explicit list the reader can count — e.g.
-     "Three stories lead today: X, Y, and Z" — never a blended sentence that reads as
-     a single event. The dek says how many items were recorded in the edition; it must
-     not characterize the lead stories as "unrelated" or otherwise remark on their
-     variety — the list format already carries that.
+     the headline may narrate it; otherwise (the usual case) the headline opens with
+     "Leading stories:" and lists the items separated by **semicolons**, never commas —
+     e.g. "Leading stories: X; Y; and Z" — so each story reads as its own item, never a
+     blended sentence that reads as a single event. The dek says how many items were
+     recorded in the edition; it must not characterize the lead stories as "unrelated"
+     or otherwise remark on their variety — the list format already carries that.
    - `takeaways`: only where a recorded item changes what an executive should do.
    - `publications.dailies`: prepend today's issue (next `issueNo`).
    - Fridays: prepend a weekly digest entry (count from the week's recorded items).
