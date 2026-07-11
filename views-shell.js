@@ -76,9 +76,9 @@ export function Footer(v) {
     <div style="max-width: 1320px; margin: 0 auto; padding: 22px clamp(16px, 4vw, 32px) 26px clamp(16px, 4vw, 32px);">
       <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px 24px;">
         <button onClick=${v.goToday} style="font-family: 'Source Serif 4', Georgia, serif; font-size: 19px; font-weight: 600; letter-spacing: -0.02em; color: #FFFFFF; line-height: 1;">Tech Risk Tracker</button>
-        <span style="font-family: 'Public Sans', system-ui, sans-serif; font-variant-numeric: tabular-nums; font-size: 10.5px; color: #8FA3B5;">Record ${v.recordHash} · Updated Weekdays 6:00 AM ET</span>
+        <span style="font-family: 'Public Sans', system-ui, sans-serif; font-variant-numeric: tabular-nums; font-size: 10.5px; color: #8FA3B5;">Updated Weekdays 6:00 AM ET</span>
       </div>
-      <p style="margin: 12px 0 0 0; padding-top: 12px; border-top: 1px solid rgba(255, 255, 255, 0.18); font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-style: italic; line-height: 1.5; color: #B9C7D6; max-width: 110ch; text-wrap: pretty;">Content derives solely from an allowlisted set of trusted official and vetted press sources; every item links to its source. Summaries are AI-drafted under a binding <a href="EDITORIAL.md" style="color: #B9C7D6;">editorial policy</a>; analytic assessments are labeled with confidence. Challenged items are re-verified against their primary sources; corrections publish as new record versions.</p>
+      <p style="margin: 12px 0 0 0; padding-top: 12px; border-top: 1px solid rgba(255, 255, 255, 0.18); font-family: 'Public Sans', system-ui, sans-serif; font-size: 11px; font-style: italic; line-height: 1.5; color: #B9C7D6; max-width: 110ch; text-wrap: pretty;">Content derives solely from a set of trusted official and vetted sources; every item links to its source. Summaries are AI-drafted.</p>
     </div>
   </footer>`;
 }
