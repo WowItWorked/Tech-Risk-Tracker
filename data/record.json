@@ -2,199 +2,67 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-11T12:26:50-04:00",
-  "issueNo": 2,
-  "recordHash": "9d6e68e",
-  "windowLabel": "June 9 – July 11, 2026",
+  "generatedAt": "2026-07-13T06:10:31-04:00",
+  "issueNo": 3,
+  "recordHash": "938cdc9",
+  "windowLabel": "June 9 – July 13, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "17 of 19 allowlisted feeds returned (CISA Cybersecurity Advisories: edge WAF returned 403 for every user agent tried; FinCEN newsroom page: 404, page restructured). Nacha's feed required stripping a non-XML theme-debug preamble before it would parse. FinCEN and Anthropic are page-checked sources; Anthropic's page returned content but nothing published in this window's cutoff was sector-relevant."
+  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 403 for the descriptive User-Agent, retried with a standard browser User-Agent and returned 200, per the runbook's fallback). This is the first collection against the expanded 27-source allowlist added July 11; of the eight new UK/EU regulatory sources, the UK National Cyber Security Centre (NCSC) carried this run's lead item — the Russian router-exploitation advisory — while the other seven (FCA, Bank of England, ICO, EBA, ECB, ENISA, EDPB) returned no window-qualifying candidates."
  },
  "lead": {
-  "head": "Leading stories: Progress Software’s emergency shutdown order for ShareFile servers; an indicted insider theft from financial institutions; and a technique that tricks AI coding assistants into leaking secrets",
-  "dek": "Three stories share the front page, drawn from the twelve items recorded in today’s edition. Every item links to its source.",
+  "head": "Leading stories: a nine-country advisory on Russian state hackers exploiting poorly configured routers; and an Android malware strain spread by impersonating financial institutions",
+  "dek": "Two stories open today’s edition, drawn from the two items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
     "p": "cyber",
-    "tri": "priority",
+    "tri": "flash",
     "st": "confirmed",
-    "id": "L-0043",
+    "id": "L-0055",
     "conf": "",
-    "text": "Progress Software is emailing ShareFile customers who use Storage Zone Controllers to immediately shut down their servers after identifying what it describes as a “credible external security threat” targeting the on-premises file-sharing software.",
-    "why": "Progress is telling customers to shut servers down immediately — a signal of how serious it judges the threat, and a prompt for technology teams to check whether they run the affected Storage Zone Controllers.",
-    "srcText": "BleepingComputer, Jul 10",
-    "srcUrl": "https://www.bleepingcomputer.com/news/security/progress-urges-sharefile-customers-to-shut-down-servers-over-credible-threat/"
+    "text": "The UK’s National Cyber Security Centre (NCSC) and cybersecurity agencies from the United States and eight other countries warn that hackers linked to Russia’s Federal Security Service (FSB) are exploiting routers with default or weak passwords to infiltrate critical infrastructure networks.",
+    "why": "This joint nine-country advisory names financial services among the sectors most at risk from the router weakness described — a direct prompt for technology teams to check their own router configurations.",
+    "srcText": "NCSC + BleepingComputer, Jul 13",
+    "srcUrl": "https://www.ncsc.gov.uk/news/uk-and-allies-urge-critical-sectors-to-improve-defences-against-russian-intelligence-targeting"
    },
    {
     "n": "2",
-    "p": "insider",
-    "tri": "priority",
+    "p": "cyber",
+    "tri": "routine",
     "st": "confirmed",
-    "id": "L-0053",
+    "id": "L-0056",
     "conf": "",
-    "text": "A Woodinville, Washington man has been indicted on 30 federal felonies for a scheme to steal from the financial institutions where he worked and then launder the money through other banks, the Department of Justice announced.",
-    "why": "The case shows how a trusted employee can become a direct path to loss, with stolen funds moving through other banks in the process — relevant to both insider-threat and anti-money-laundering controls.",
-    "srcText": "DOJ press release, Jul 10",
-    "srcUrl": "https://www.justice.gov/usao-wdwa/pr/woodinville-washington-man-indicted-stealing-440000-financial-institutions-where-he"
-   },
-   {
-    "n": "3",
-    "p": "ai",
-    "tri": "priority",
-    "st": "confirmed",
-    "id": "L-0051",
-    "conf": "",
-    "text": "Researchers demonstrated “Ghostcommit,” a technique that hides a prompt injection inside an image file, slipping past AI code reviewers CodeRabbit and Bugbot — which never open image files — and convincing a coding agent to read a repository’s .env file and write its secrets into the code.",
-    "why": "This shows a concrete way to turn an AI coding assistant against its own repository — worth a look at what AI tools in the software pipeline can access, and what file types they never check.",
-    "srcText": "BleepingComputer, Jul 11",
-    "srcUrl": "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/"
+    "text": "Group-IB researchers report a new version of the RedHook Android malware that abuses Android’s Wireless Debugging feature to gain shell-level device access without rooting the phone, spread in part through messages that impersonate government agencies or financial institutions.",
+    "why": "A malware strain that uses financial-institution impersonation as a distribution lure, then steals credentials via fake verification screens, is worth flagging to fraud and mobile-security teams.",
+    "srcText": "BleepingComputer, Jul 12",
+    "srcUrl": "https://www.bleepingcomputer.com/news/security/redhook-android-malware-now-uses-wireless-adb-for-shell-access/"
    }
   ]
  },
  "wire": [
   {
-   "ts": "2026-07-11T14:18:23Z",
+   "ts": "2026-07-13T09:32:23Z",
    "p": "cyber",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0045",
-   "title": "Australia’s Cyber Security Centre warns of a global exploitation campaign targeting vulnerable content-management-system platforms and plugins",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/australia-warns-of-global-campaign-targeting-vulnerable-cms-platforms/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-11T09:03:57Z",
-   "p": "ai",
-   "tri": "priority",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0051",
-   "title": "Researchers demonstrate “Ghostcommit,” a technique that hides a prompt injection inside an image file to fool AI code-review tools and steal a repository’s secrets",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-10T17:01:00Z",
-   "p": "insider",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0054",
-   "title": "A man accused of deploying Ryuk ransomware pleads guilty to conspiracy and computer fraud in an Oregon federal court",
-   "src": "The Record",
-   "srcUrl": "https://therecord.media/ryuk-operator-pleads-guilty-alphv-conspirator-sentenced",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-10T16:26:10Z",
-   "p": "cyber",
-   "tri": "priority",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0043",
-   "title": "Progress Software urges ShareFile customers running Storage Zone Controllers to immediately shut down their servers over a “credible external security threat”",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/progress-urges-sharefile-customers-to-shut-down-servers-over-credible-threat/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-10T15:48:38Z",
-   "p": "cyber",
-   "tri": "priority",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0044",
-   "title": "Hackers actively exploit a critical authentication-bypass flaw in the official Docker image for the Gitea self-hosted Git service, letting attackers impersonate any user including administrators",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-auth-bypass-in-gitea-docker-image/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-10T15:30:19Z",
-   "p": "fraud",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0052",
-   "title": "A Bulgarian national already imprisoned for laundering fraud proceeds is charged with stealing $290,000 in government-seized cryptocurrency while incarcerated",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/money-launderer-accused-of-stealing-seized-crypto-while-in-prison/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-10T15:24:29Z",
-   "p": "cyber",
-   "tri": "priority",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0047",
-   "title": "An initial access broker is linked to weaponization of the CitrixBleed2 flaw",
-   "src": "Cybersecurity Dive",
-   "srcUrl": "https://www.cybersecuritydive.com/news/initial-access-broker-citrixbleed2-flaw-DragonForce/824961/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-10T14:49:17Z",
-   "p": "cyber",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0048",
-   "title": "CISA details the security lapses that led to a GitHub leak of passwords and cloud access keys",
-   "src": "Cybersecurity Dive",
-   "srcUrl": "https://www.cybersecuritydive.com/news/cisa-github-passwords-leak-contractor-report/824953/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-10T14:00:00Z",
-   "p": "cyber",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0049",
-   "title": "Research reports holes in a Microsoft BitLocker security wrapper that could put ATMs at risk of compromise",
-   "src": "Dark Reading",
-   "srcUrl": "https://www.darkreading.com/vulnerabilities-threats/atm-crypto-software-bugs-jackpot-bust",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-10T12:00:00Z",
-   "p": "cyber",
-   "tri": "routine",
+   "tri": "flash",
    "st": "confirmed",
    "tier": "T1",
-   "id": "L-0050",
-   "title": "CISA adds two more exploited flaws to its known-exploited list: Balbooa Forms and iCagenda (unrestricted file upload)",
-   "src": "CISA KEV catalog",
-   "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+   "id": "L-0055",
+   "title": "The UK’s National Cyber Security Centre (NCSC) and cybersecurity agencies from the United States and eight other countries warn that hackers linked to Russia’s Federal Security Service (FSB) are exploiting routers with default or weak passwords to infiltrate critical infrastructure — naming financial services among the sectors most at risk",
+   "src": "NCSC + BleepingComputer",
+   "srcUrl": "https://www.ncsc.gov.uk/news/uk-and-allies-urge-critical-sectors-to-improve-defences-against-russian-intelligence-targeting",
    "linked": true
   },
   {
-   "ts": "2026-07-10T12:00:00Z",
-   "p": "insider",
-   "tri": "priority",
-   "st": "confirmed",
-   "tier": "T1",
-   "id": "L-0053",
-   "title": "A Woodinville, Washington man is indicted on 30 federal felonies for stealing $440,000 from the financial institutions where he worked and laundering the money through other banks",
-   "src": "DOJ press release",
-   "srcUrl": "https://www.justice.gov/usao-wdwa/pr/woodinville-washington-man-indicted-stealing-440000-financial-institutions-where-he",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-10T11:47:38Z",
+   "ts": "2026-07-12T14:27:32Z",
    "p": "cyber",
    "tri": "routine",
    "st": "confirmed",
    "tier": "T2",
-   "id": "L-0046",
-   "title": "Zimbra urges customers to patch a critical cross-site-scripting flaw in the Classic Web Client used to access the Zimbra Collaboration suite",
+   "id": "L-0056",
+   "title": "A new version of the RedHook Android malware gains shell-level device access by abusing Android’s Wireless Debugging feature, and is spread in part through messages that impersonate government agencies or financial institutions",
    "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/zimbra-urges-customers-to-patch-critical-web-client-xss-flaw/",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/redhook-android-malware-now-uses-wireless-adb-for-shell-access/",
    "linked": true
   }
  ],
@@ -382,17 +250,35 @@
    "scope": "cybersecurity · exploitation & exposure",
    "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
    "opened": "July 2026",
-   "ver": "v9",
-   "verRange": "v1–v9",
-   "asOf": "July 11, 2026",
+   "ver": "v11",
+   "verRange": "v1–v11",
+   "asOf": "July 13, 2026",
    "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
    "p1Sup": "1, 3, 10",
-   "p2": "The FBI and CISA warn that Russian intelligence services continue to target commercial messaging applications. Researchers report “JadePuffer,” described as a ransomware attack run end-to-end by an AI agent that broke in through the exploited Langflow flaw. Separately, Progress Software urged ShareFile customers running Storage Zone Controllers to shut down their servers immediately over a “credible external security threat.”",
-   "p2Sup": "4, 6, 11",
+   "p2": "The UK’s National Cyber Security Centre (NCSC) and cybersecurity agencies from the United States and eight other countries warn that hackers linked to Russia’s Federal Security Service (FSB) are exploiting routers with default or weak passwords to infiltrate critical infrastructure, naming financial services among the sectors most at risk. Researchers report “JadePuffer,” described as a ransomware attack run end-to-end by an AI agent that broke in through the exploited Langflow flaw. Separately, Progress Software urged ShareFile customers running Storage Zone Controllers to shut down their servers immediately over a “credible external security threat.”",
+   "p2Sup": "15, 6, 11",
    "assess": "We assess as likely that web-facing enterprise software remains the sector’s most exploited edge in the near term: every confirmed addition to the known-exploited list this window is an internet-reachable platform, and an actively exploited flaw was found in a self-hosted Git-hosting tool.",
    "assessSup": "1, 8",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 13, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0055",
+     "src": "NCSC + BleepingComputer",
+     "srcUrl": "https://www.ncsc.gov.uk/news/uk-and-allies-urge-critical-sectors-to-improve-defences-against-russian-intelligence-targeting",
+     "line": "The UK’s National Cyber Security Centre (NCSC) and cybersecurity agencies from the United States and eight other countries warn that hackers linked to Russia’s Federal Security Service (FSB) are exploiting routers with default or weak passwords to infiltrate critical infrastructure, naming financial services among the sectors most at risk."
+    },
+    {
+     "date": "Jul 12, 26",
+     "st": "confirmed",
+     "ver": "—",
+     "id": "L-0056",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/redhook-android-malware-now-uses-wireless-adb-for-shell-access/",
+     "line": "Group-IB researchers report a new version of the RedHook Android malware that abuses Android’s Wireless Debugging feature to gain shell-level device access without rooting the phone, spread in part through messages that impersonate government agencies or financial institutions."
+    },
     {
      "date": "Jul 11, 26",
      "st": "confirmed",
@@ -617,6 +503,16 @@
      "n": "14",
      "text": "Dark Reading — ATM BitLocker wrapper bugs, Jul 10, 2026",
      "url": "https://www.darkreading.com/vulnerabilities-threats/atm-crypto-software-bugs-jackpot-bust"
+    },
+    {
+     "n": "15",
+     "text": "NCSC + allied agencies — joint advisory on Russian state exploitation of poorly configured routers, Jul 13, 2026",
+     "url": "https://www.ncsc.gov.uk/news/uk-and-allies-urge-critical-sectors-to-improve-defences-against-russian-intelligence-targeting"
+    },
+    {
+     "n": "16",
+     "text": "BleepingComputer — RedHook Android malware Wireless ADB technique, Jul 12, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/redhook-android-malware-now-uses-wireless-adb-for-shell-access/"
     }
    ],
    "related": [
@@ -1829,6 +1725,22 @@
    "line": "Zimbra urges customers to patch a critical cross-site-scripting flaw in the Classic Web Client used to access the Zimbra Collaboration suite.",
    "src": "BleepingComputer",
    "srcUrl": "https://www.bleepingcomputer.com/news/security/zimbra-urges-customers-to-patch-critical-web-client-xss-flaw/"
+  },
+  {
+   "d": "2026-07-13",
+   "p": "cyber",
+   "id": "L-0055",
+   "line": "The UK’s National Cyber Security Centre (NCSC) and cybersecurity agencies from the United States and eight other countries warn that hackers linked to Russia’s Federal Security Service (FSB) are exploiting routers with default or weak passwords to infiltrate critical infrastructure, naming financial services among the sectors most at risk.",
+   "src": "NCSC + BleepingComputer",
+   "srcUrl": "https://www.ncsc.gov.uk/news/uk-and-allies-urge-critical-sectors-to-improve-defences-against-russian-intelligence-targeting"
+  },
+  {
+   "d": "2026-07-12",
+   "p": "cyber",
+   "id": "L-0056",
+   "line": "Group-IB researchers report a new version of the RedHook Android malware that abuses Android’s Wireless Debugging feature to gain shell-level device access without rooting the phone, spread in part through messages that impersonate government agencies or financial institutions.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/redhook-android-malware-now-uses-wireless-adb-for-shell-access/"
   }
  ],
  "takeaways": [
@@ -1898,10 +1810,36 @@
    "conf": "moderate confidence",
    "head": "AI code reviewers that never open image files have a blind spot — now demonstrated, not theoretical.",
    "body": "Researchers showed that a prompt injection hidden in an image file slips past AI code reviewers CodeRabbit and Bugbot, which never open image files, and can convince a coding agent to leak a repository's secrets. Teams using AI code-review tools should confirm what file types those tools actually scan."
+  },
+  {
+   "anchors": [
+    "L-0055"
+   ],
+   "pillars": "Cybersecurity",
+   "conf": "high confidence",
+   "head": "A nine-country cyber advisory says state hackers are getting into critical infrastructure — including financial services — through routers with default or weak passwords.",
+   "body": "The UK’s National Cyber Security Centre (NCSC) and cybersecurity agencies from the United States and eight other countries warn that hackers linked to Russia’s Federal Security Service (FSB) are exploiting routers with default or weak passwords to infiltrate critical infrastructure, naming financial services among the sectors most at risk. Technology and network teams should confirm their own routers are not using default or weak credentials."
+  },
+  {
+   "anchors": [
+    "L-0056"
+   ],
+   "pillars": "Cybersecurity · fraud",
+   "conf": "moderate confidence",
+   "head": "A banking-themed malware lure is spreading via messages that impersonate government agencies and financial institutions.",
+   "body": "A new version of the RedHook Android malware, analyzed by Group-IB, spreads partly through social-engineering messages that impersonate government agencies or financial institutions to direct victims to fake app-store pages, then abuses Android's Wireless Debugging feature to gain deep device access and steal credentials. Fraud and mobile-security teams should factor this distribution pattern into customer-facing scam awareness."
   }
  ],
  "publications": {
   "dailies": [
+   {
+    "no": "3",
+    "date": "Mon, Jul 13, 2026",
+    "confirmed": "2",
+    "pending": "0",
+    "flash": "—",
+    "linked": true
+   },
    {
     "no": "2",
     "date": "Sat, Jul 11, 2026",
@@ -1921,7 +1859,7 @@
   ],
   "weeklies": [],
   "monthlies": [],
-  "dTotal": 2,
+  "dTotal": 3,
   "wkTotal": 0,
   "mTotal": 0
  }
