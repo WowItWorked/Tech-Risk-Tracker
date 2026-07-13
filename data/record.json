@@ -2,18 +2,18 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-13T14:10:32-04:00",
+  "generatedAt": "2026-07-13T15:13:52-04:00",
   "issueNo": 3,
-  "recordHash": "534cc03",
+  "recordHash": "743c992",
   "windowLabel": "June 9 – July 13, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 403 for the descriptive User-Agent, retried with a standard browser User-Agent and returned 200, per the runbook's fallback). One new item was admitted this run: a Dark Reading report on \"GigaWiper,\" a modular malware implant combining backdoor and destructive-wiper capabilities.",
-  "lastRun": "2026-07-13T14:10:32-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 403 for the descriptive User-Agent, retried with a standard browser User-Agent and returned 200, per the runbook's fallback). Three new items were admitted this run: the U.S. Treasury's sanctions on VPN provider First VPN Service (1VPNS) and its administrator for aiding ransomware groups, CISA's addition of a Cisco IOS cross-site request forgery flaw (CVE-2008-4128) to its known-exploited list, and a BleepingComputer report on “CrashStealer,” new macOS credential- and crypto-wallet-stealing malware.",
+  "lastRun": "2026-07-13T15:13:52-04:00"
  },
  "lead": {
-  "head": "Leading stories: a nine-country advisory on Russian state hackers exploiting poorly configured routers; the European Union and United Kingdom’s first joint cyber sanctions on Russia; and United Kingdom charges over a caller-ID spoofing platform tied to more than 1.8 million scam calls",
-  "dek": "Today’s edition draws on the seven items recorded so far. Every item links to its source.",
+  "head": "Leading stories: a nine-country advisory on Russian state hackers exploiting poorly configured routers; the U.S. Treasury Department’s sanctions on a VPN service used by ransomware gangs to hide their identities; and United Kingdom charges over a caller-ID spoofing platform tied to more than 1.8 million scam calls",
+  "dek": "Today’s edition draws on the ten items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
@@ -32,12 +32,12 @@
     "p": "cyber",
     "tri": "priority",
     "st": "confirmed",
-    "id": "L-0057",
+    "id": "L-0062",
     "conf": "",
-    "text": "The European Union and the United Kingdom have jointly sanctioned dozens of Russian individuals and entities in what is described as their first joint cyber sanctions package, accusing Russia of coordinating hacking groups behind attacks across Europe; the allies blame the Federal Security Service (FSB) unit Center 16 for attempted sabotage of Poland’s energy and water facilities.",
-    "why": "New sanctions designations require banks to refresh the names they screen for, and the action flags Russian state hacking groups for technology and threat-intelligence teams to track.",
-    "srcText": "BleepingComputer, Jul 13 · corroborated by The Record, Jul 12",
-    "srcUrl": "https://www.bleepingcomputer.com/news/security/eu-and-uk-hit-russia-with-first-joint-cyber-sanctions-package/"
+    "text": "The U.S. Department of the Treasury sanctions VPN provider First VPN Service (1VPNS) and its Ukrainian administrator for supplying ransomware gangs with tools to hide their identities and evade detection, and separately sanctions a Belarusian man for selling malware “cryptors.”",
+    "why": "New Treasury sanctions designations mean banks must refresh the names and entities they screen against before processing transactions.",
+    "srcText": "The Record, Jul 13",
+    "srcUrl": "https://therecord.media/first-vpn-administrator-us-sanctions-ransomware-groups"
    },
    {
     "n": "3",
@@ -54,6 +54,42 @@
   ]
  },
  "wire": [
+  {
+   "ts": "2026-07-13T19:04:02Z",
+   "p": "cyber",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0064",
+   "title": "A new strain of information-stealing malware called “CrashStealer” disguises itself as Apple’s macOS crash-reporting tool to steal credentials, keychain data, and cryptocurrency wallets, focusing on more than 80 crypto wallet extensions and password managers.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/new-crashstealer-malware-poses-as-apple-crash-reporting-tool/",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-13T18:50:00Z",
+   "p": "cyber",
+   "tri": "priority",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0062",
+   "title": "The U.S. Department of the Treasury sanctions VPN provider First VPN Service (1VPNS) and its Ukrainian administrator for supplying ransomware gangs with tools to hide their identities and evade detection, and separately sanctions a Belarusian man for selling malware “cryptors.”",
+   "src": "The Record",
+   "srcUrl": "https://therecord.media/first-vpn-administrator-us-sanctions-ransomware-groups",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-13T17:00:17Z",
+   "p": "cyber",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T1",
+   "id": "L-0063",
+   "title": "CISA adds a cross-site request forgery flaw in Cisco IOS (CVE-2008-4128) to its known-exploited list.",
+   "src": "CISA KEV catalog",
+   "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+   "linked": true
+  },
   {
    "ts": "2026-07-13T16:50:54Z",
    "p": "cyber",
@@ -323,8 +359,8 @@
    "scope": "cybersecurity · exploitation & exposure",
    "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
    "opened": "July 2026",
-   "ver": "v15",
-   "verRange": "v1–v15",
+   "ver": "v18",
+   "verRange": "v1–v18",
    "asOf": "July 13, 2026",
    "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
    "p1Sup": "1, 3, 10",
@@ -334,6 +370,33 @@
    "assessSup": "1, 8",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 13, 26",
+     "st": "confirmed",
+     "ver": "v18",
+     "id": "L-0064",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/new-crashstealer-malware-poses-as-apple-crash-reporting-tool/",
+     "line": "A new strain of information-stealing malware called “CrashStealer” disguises itself as Apple’s macOS crash-reporting tool to steal credentials, keychain data, and cryptocurrency wallets, focusing on more than 80 crypto wallet extensions and password managers."
+    },
+    {
+     "date": "Jul 13, 26",
+     "st": "confirmed",
+     "ver": "v17",
+     "id": "L-0062",
+     "src": "The Record",
+     "srcUrl": "https://therecord.media/first-vpn-administrator-us-sanctions-ransomware-groups",
+     "line": "The U.S. Department of the Treasury sanctions VPN provider First VPN Service (1VPNS) and its Ukrainian administrator for supplying ransomware gangs with tools to hide their identities and evade detection, and separately sanctions a Belarusian man for selling malware “cryptors.”"
+    },
+    {
+     "date": "Jul 13, 26",
+     "st": "confirmed",
+     "ver": "v16",
+     "id": "L-0063",
+     "src": "CISA KEV catalog",
+     "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+     "line": "CISA adds a cross-site request forgery flaw in Cisco IOS (CVE-2008-4128) to its known-exploited list."
+    },
     {
      "date": "Jul 13, 26",
      "st": "confirmed",
@@ -637,6 +700,21 @@
      "n": "19",
      "text": "Dark Reading — “GigaWiper” modular backdoor/wiper implant, Jul 13, 2026",
      "url": "https://www.darkreading.com/cyberattacks-data-breaches/gigawiper-threat-actors-choose-their-own-destructive-attack"
+    },
+    {
+     "n": "20",
+     "text": "The Record — U.S. Treasury sanctions VPN provider First VPN Service (1VPNS) and administrator for aiding ransomware groups, Jul 13, 2026",
+     "url": "https://therecord.media/first-vpn-administrator-us-sanctions-ransomware-groups"
+    },
+    {
+     "n": "21",
+     "text": "CISA — KEV entry: Cisco IOS CVE-2008-4128 cross-site request forgery, Jul 13, 2026",
+     "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+     "n": "22",
+     "text": "BleepingComputer — “CrashStealer” macOS credential/crypto-wallet-stealing malware, Jul 13, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/new-crashstealer-malware-poses-as-apple-crash-reporting-tool/"
     }
    ],
    "related": [
@@ -1914,6 +1992,30 @@
    "line": "A new modular malware implant called “GigaWiper” combines backdoor and wiper capabilities borrowed from various malware families, letting attackers choose their own destructive attack while aiming to maximize impact and minimize operational output.",
    "src": "Dark Reading",
    "srcUrl": "https://www.darkreading.com/cyberattacks-data-breaches/gigawiper-threat-actors-choose-their-own-destructive-attack"
+  },
+  {
+   "d": "2026-07-13",
+   "p": "cyber",
+   "id": "L-0062",
+   "line": "The U.S. Department of the Treasury sanctions VPN provider First VPN Service (1VPNS) and its Ukrainian administrator for supplying ransomware gangs with tools to hide their identities and evade detection, and separately sanctions a Belarusian man for selling malware “cryptors.”",
+   "src": "The Record",
+   "srcUrl": "https://therecord.media/first-vpn-administrator-us-sanctions-ransomware-groups"
+  },
+  {
+   "d": "2026-07-13",
+   "p": "cyber",
+   "id": "L-0063",
+   "line": "CISA adds a cross-site request forgery flaw in Cisco IOS (CVE-2008-4128) to its known-exploited list.",
+   "src": "CISA KEV catalog",
+   "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+  },
+  {
+   "d": "2026-07-13",
+   "p": "cyber",
+   "id": "L-0064",
+   "line": "A new strain of information-stealing malware called “CrashStealer” disguises itself as Apple’s macOS crash-reporting tool to steal credentials, keychain data, and cryptocurrency wallets, focusing on more than 80 crypto wallet extensions and password managers.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/new-crashstealer-malware-poses-as-apple-crash-reporting-tool/"
   }
  ],
  "takeaways": [
@@ -1925,6 +2027,15 @@
    "conf": "moderate confidence",
    "head": "A Microsoft Entra attack technique evades the usual account-enumeration alarms.",
    "body": "Hackers are spoofing Microsoft Entra OAuth client IDs to collect usernames and passwords from Microsoft's Entra identity database without operating a genuine, trusted application, Proofpoint reports. Organizations should check their logs for signs of this technique."
+  },
+  {
+   "anchors": [
+    "L-0062"
+   ],
+   "pillars": "Fraud · cybersecurity",
+   "conf": "high confidence",
+   "head": "A ransomware-enabling VPN service is now under U.S. sanctions.",
+   "body": "The U.S. Department of the Treasury sanctioned VPN provider First VPN Service (1VPNS), its administrator, and, separately, a Belarusian man for selling malware “cryptors.” Sanctions and compliance teams should add these designees to their screening lists."
   },
   {
    "anchors": [
@@ -2027,7 +2138,7 @@
    {
     "no": "3",
     "date": "Mon, Jul 13, 2026",
-    "confirmed": "7",
+    "confirmed": "10",
     "pending": "0",
     "flash": "—",
     "linked": true
