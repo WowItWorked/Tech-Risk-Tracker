@@ -2,17 +2,18 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-13T06:10:31-04:00",
+  "generatedAt": "2026-07-13T10:02:35-04:00",
   "issueNo": 3,
-  "recordHash": "938cdc9",
+  "recordHash": "1fdffcf",
   "windowLabel": "June 9 – July 13, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 403 for the descriptive User-Agent, retried with a standard browser User-Agent and returned 200, per the runbook's fallback). This is the first collection against the expanded 27-source allowlist added July 11; of the eight new UK/EU regulatory sources, the UK National Cyber Security Centre (NCSC) carried this run's lead item — the Russian router-exploitation advisory — while the other seven (FCA, Bank of England, ICO, EBA, ECB, ENISA, EDPB) returned no window-qualifying candidates."
+  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 403 for the descriptive User-Agent, retried with a standard browser User-Agent and returned 200, per the runbook's fallback). This is the first collection against the expanded 27-source allowlist added July 11; of the eight new UK/EU regulatory sources, the UK National Cyber Security Centre (NCSC) carried this run's lead item — the Russian router-exploitation advisory — while the other seven (FCA, Bank of England, ICO, EBA, ECB, ENISA, EDPB) returned no window-qualifying candidates.",
+  "lastRun": "2026-07-13T10:02:35-04:00"
  },
  "lead": {
-  "head": "Leading stories: a nine-country advisory on Russian state hackers exploiting poorly configured routers; and an Android malware strain spread by impersonating financial institutions",
-  "dek": "Two stories open today’s edition, drawn from the two items recorded so far. Every item links to its source.",
+  "head": "Leading stories: a nine-country advisory on Russian state hackers exploiting poorly configured routers; the European Union and United Kingdom’s first joint cyber sanctions on Russia; and United Kingdom charges over a caller-ID spoofing platform tied to more than 1.8 million scam calls",
+  "dek": "Today’s edition draws on the four items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
@@ -29,18 +30,54 @@
    {
     "n": "2",
     "p": "cyber",
-    "tri": "routine",
+    "tri": "priority",
     "st": "confirmed",
-    "id": "L-0056",
+    "id": "L-0057",
     "conf": "",
-    "text": "Group-IB researchers report a new version of the RedHook Android malware that abuses Android’s Wireless Debugging feature to gain shell-level device access without rooting the phone, spread in part through messages that impersonate government agencies or financial institutions.",
-    "why": "A malware strain that uses financial-institution impersonation as a distribution lure, then steals credentials via fake verification screens, is worth flagging to fraud and mobile-security teams.",
-    "srcText": "BleepingComputer, Jul 12",
-    "srcUrl": "https://www.bleepingcomputer.com/news/security/redhook-android-malware-now-uses-wireless-adb-for-shell-access/"
+    "text": "The European Union and the United Kingdom have jointly sanctioned dozens of Russian individuals and entities in what is described as their first joint cyber sanctions package, accusing Russia of coordinating hacking groups behind attacks across Europe; the allies blame the Federal Security Service (FSB) unit Center 16 for attempted sabotage of Poland’s energy and water facilities.",
+    "why": "New sanctions designations require banks to refresh the names they screen for, and the action flags Russian state hacking groups for technology and threat-intelligence teams to track.",
+    "srcText": "BleepingComputer, Jul 13 · corroborated by The Record, Jul 12",
+    "srcUrl": "https://www.bleepingcomputer.com/news/security/eu-and-uk-hit-russia-with-first-joint-cyber-sanctions-package/"
+   },
+   {
+    "n": "3",
+    "p": "fraud",
+    "tri": "priority",
+    "st": "confirmed",
+    "id": "L-0058",
+    "conf": "",
+    "text": "United Kingdom authorities have charged five people following a National Crime Agency (NCA) investigation into “Russian Coms,” described as a major caller-ID spoofing platform that criminals used to make more than 1.8 million scam calls.",
+    "why": "A caller-ID spoofing platform tied to more than 1.8 million scam calls is now the subject of United Kingdom criminal charges; fraud teams should treat spoofed-number calling as an active channel and review customer-facing defenses.",
+    "srcText": "BleepingComputer, Jul 13",
+    "srcUrl": "https://www.bleepingcomputer.com/news/security/uk-charges-suspects-linked-to-russian-coms-call-spoofing-platform/"
    }
   ]
  },
  "wire": [
+  {
+   "ts": "2026-07-13T13:23:30Z",
+   "p": "fraud",
+   "tri": "priority",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0058",
+   "title": "United Kingdom authorities charge five people over “Russian Coms,” a caller-ID spoofing platform that criminals used to make more than 1.8 million scam calls",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/uk-charges-suspects-linked-to-russian-coms-call-spoofing-platform/",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-13T11:19:05Z",
+   "p": "cyber",
+   "tri": "priority",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0057",
+   "title": "The European Union and the United Kingdom impose their first joint cyber sanctions, penalizing dozens of Russian individuals and entities; the allies blame the Federal Security Service (FSB) unit Center 16 for attempted sabotage of Poland’s energy and water facilities",
+   "src": "BleepingComputer + The Record",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/eu-and-uk-hit-russia-with-first-joint-cyber-sanctions-package/",
+   "linked": true
+  },
   {
    "ts": "2026-07-13T09:32:23Z",
    "p": "cyber",
@@ -250,8 +287,8 @@
    "scope": "cybersecurity · exploitation & exposure",
    "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
    "opened": "July 2026",
-   "ver": "v11",
-   "verRange": "v1–v11",
+   "ver": "v12",
+   "verRange": "v1–v12",
    "asOf": "July 13, 2026",
    "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
    "p1Sup": "1, 3, 10",
@@ -261,6 +298,15 @@
    "assessSup": "1, 8",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 13, 26",
+     "st": "confirmed",
+     "ver": "v12",
+     "id": "L-0057",
+     "src": "BleepingComputer + The Record",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/eu-and-uk-hit-russia-with-first-joint-cyber-sanctions-package/",
+     "line": "EU and UK impose their first joint cyber sanctions on dozens of Russian individuals and entities; FSB unit Center 16 blamed for attempted sabotage of Poland’s energy and water facilities."
+    },
     {
      "date": "Jul 13, 26",
      "st": "confirmed",
@@ -563,9 +609,9 @@
    "scope": "fraud · AML rulemaking & scam patterns",
    "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
    "opened": "July 2026",
-   "ver": "v2",
-   "verRange": "v1–v2",
-   "asOf": "July 11, 2026",
+   "ver": "v3",
+   "verRange": "v1–v3",
+   "asOf": "July 13, 2026",
    "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22).",
    "p1Sup": "1, 3",
    "p2": "Operationally, the OCC is highlighting FinCEN’s updated Section 314(b) fact sheet clarifying how institutions can share suspected-fraud information with each other. The FBI’s recent consumer-facing warnings describe criminals redirecting users to fraudulent websites through malicious traffic-distribution systems. On the criminal side, a Bulgarian national already imprisoned for helping launder millions in fraud proceeds is charged with stealing $290,000 in government-seized cryptocurrency while incarcerated.",
@@ -574,6 +620,15 @@
    "assessSup": "2, 3",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 13, 26",
+     "st": "confirmed",
+     "ver": "v3",
+     "id": "L-0058",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/uk-charges-suspects-linked-to-russian-coms-call-spoofing-platform/",
+     "line": "UK authorities charge five people over “Russian Coms,” a caller-ID spoofing platform that criminals used to make more than 1.8 million scam calls (National Crime Agency investigation)."
+    },
     {
      "date": "Jul 10, 26",
      "st": "confirmed",
@@ -1295,6 +1350,22 @@
  },
  "diffPool": [
   {
+   "d": "2026-07-13",
+   "p": "fraud",
+   "id": "L-0058",
+   "line": "UK authorities charge five people over “Russian Coms,” a caller-ID spoofing platform that criminals used to make more than 1.8 million scam calls (National Crime Agency investigation).",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/uk-charges-suspects-linked-to-russian-coms-call-spoofing-platform/"
+  },
+  {
+   "d": "2026-07-13",
+   "p": "cyber",
+   "id": "L-0057",
+   "line": "EU and UK impose their first joint cyber sanctions on dozens of Russian individuals and entities; FSB unit Center 16 blamed for attempted sabotage of Poland’s energy and water facilities.",
+   "src": "BleepingComputer + The Record",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/eu-and-uk-hit-russia-with-first-joint-cyber-sanctions-package/"
+  },
+  {
    "d": "2026-07-09",
    "p": "cyber",
    "id": "L-0026",
@@ -1746,6 +1817,16 @@
  "takeaways": [
   {
    "anchors": [
+    "L-0057",
+    "L-0058"
+   ],
+   "pillars": "Fraud · cybersecurity",
+   "conf": "moderate confidence",
+   "head": "New Russia-linked sanctions and a dismantled scam-call platform touch both sanctions screening and fraud defenses.",
+   "body": "The European Union and United Kingdom imposed their first joint cyber sanctions on dozens of Russian individuals and entities, and United Kingdom authorities charged five people over the “Russian Coms” caller-ID spoofing platform tied to more than 1.8 million scam calls. Sanctions teams should refresh screening lists, and fraud teams should treat spoofed-number calling as an active channel."
+  },
+  {
+   "anchors": [
     "L-0008",
     "L-0007"
    ],
@@ -1835,7 +1916,7 @@
    {
     "no": "3",
     "date": "Mon, Jul 13, 2026",
-    "confirmed": "2",
+    "confirmed": "4",
     "pending": "0",
     "flash": "—",
     "linked": true
