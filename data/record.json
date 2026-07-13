@@ -2,18 +2,18 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-13T15:13:52-04:00",
+  "generatedAt": "2026-07-13T16:11:30-04:00",
   "issueNo": 3,
-  "recordHash": "743c992",
+  "recordHash": "cf3d69e",
   "windowLabel": "June 9 – July 13, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 403 for the descriptive User-Agent, retried with a standard browser User-Agent and returned 200, per the runbook's fallback). Three new items were admitted this run: the U.S. Treasury's sanctions on VPN provider First VPN Service (1VPNS) and its administrator for aiding ransomware groups, CISA's addition of a Cisco IOS cross-site request forgery flaw (CVE-2008-4128) to its known-exploited list, and a BleepingComputer report on “CrashStealer,” new macOS credential- and crypto-wallet-stealing malware.",
-  "lastRun": "2026-07-13T15:13:52-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 200 directly this run; no browser-User-Agent fallback was needed). One new item was admitted this run: a BleepingComputer report that hackers backdoored the Jscrambler client-side web-security npm package with information-stealing malware.",
+  "lastRun": "2026-07-13T16:11:30-04:00"
  },
  "lead": {
   "head": "Leading stories: a nine-country advisory on Russian state hackers exploiting poorly configured routers; the U.S. Treasury Department’s sanctions on a VPN service used by ransomware gangs to hide their identities; and United Kingdom charges over a caller-ID spoofing platform tied to more than 1.8 million scam calls",
-  "dek": "Today’s edition draws on the ten items recorded so far. Every item links to its source.",
+  "dek": "Today’s edition draws on the eleven items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
@@ -54,6 +54,18 @@
   ]
  },
  "wire": [
+  {
+   "ts": "2026-07-13T19:44:19Z",
+   "p": "tp",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0065",
+   "title": "Jscrambler, a client-side web-security vendor, disclosed that hackers published a malicious version of its npm package that was downloaded almost 1,500 times; developers who used the malicious package should treat their environment as compromised, rotate all secrets, and restore from safe backups.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/hackers-backdoor-jscrambler-npm-package-with-infostealer-malware/",
+   "linked": true
+  },
   {
    "ts": "2026-07-13T19:04:02Z",
    "p": "cyber",
@@ -952,9 +964,9 @@
    "scope": "third-party risk · vendor software & supply chain",
    "watch": "Vendor tools under active attack, software-supply-chain compromises aimed at financial applications, and vendor incident disclosures.",
    "opened": "July 2026",
-   "ver": "v1",
-   "verRange": "v1",
-   "asOf": "July 9, 2026",
+   "ver": "v2",
+   "verRange": "v1–v2",
+   "asOf": "July 13, 2026",
    "p1": "One vendor-channel exploit is confirmed this window: SimpleHelp, a remote-support tool, carries an authentication-bypass flaw on CISA’s known-exploited list — in a vulnerable configuration, a remote, unauthenticated attacker can log in with a forged token.",
    "p1Sup": "1",
    "p2": "The rest of the vendor picture clusters around the software supply chain: a claimed breach at consulting firm Accenture said to involve source code and encryption keys, and malicious look-alike software kits for the Paysafe, Skrill, and Neteller payment applications on public code registries.",
@@ -963,6 +975,15 @@
    "assessSup": "1",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 13, 26",
+     "st": "confirmed",
+     "ver": "v2",
+     "id": "L-0065",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/hackers-backdoor-jscrambler-npm-package-with-infostealer-malware/",
+     "line": "Jscrambler, a client-side web-security vendor, disclosed that hackers published a malicious version of its npm package that was downloaded almost 1,500 times; developers who used the malicious package should treat their environment as compromised, rotate all secrets, and restore from safe backups."
+    },
     {
      "date": "Jul 9, 26",
      "st": "confirmed",
@@ -1043,6 +1064,11 @@
      "n": "5",
      "text": "Cybersecurity Dive — Cisco SD-WAN campaign, Jul 7, 2026",
      "url": "https://www.cybersecuritydive.com/news/sophisticated-threat-campaign-pushes-cisco-to-the-very-edge/824569/"
+    },
+    {
+     "n": "6",
+     "text": "BleepingComputer — Jscrambler npm package backdoored with infostealer malware, Jul 13, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/hackers-backdoor-jscrambler-npm-package-with-infostealer-malware/"
     }
    ],
    "related": [
@@ -2016,6 +2042,14 @@
    "line": "A new strain of information-stealing malware called “CrashStealer” disguises itself as Apple’s macOS crash-reporting tool to steal credentials, keychain data, and cryptocurrency wallets, focusing on more than 80 crypto wallet extensions and password managers.",
    "src": "BleepingComputer",
    "srcUrl": "https://www.bleepingcomputer.com/news/security/new-crashstealer-malware-poses-as-apple-crash-reporting-tool/"
+  },
+  {
+   "d": "2026-07-13",
+   "p": "tp",
+   "id": "L-0065",
+   "line": "Jscrambler, a client-side web-security vendor, disclosed that hackers published a malicious version of its npm package that was downloaded almost 1,500 times; developers who used the malicious package should treat their environment as compromised, rotate all secrets, and restore from safe backups.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/hackers-backdoor-jscrambler-npm-package-with-infostealer-malware/"
   }
  ],
  "takeaways": [
@@ -2131,6 +2165,15 @@
    "conf": "moderate confidence",
    "head": "A banking-themed malware lure is spreading via messages that impersonate government agencies and financial institutions.",
    "body": "A new version of the RedHook Android malware, analyzed by Group-IB, spreads partly through social-engineering messages that impersonate government agencies or financial institutions to direct victims to fake app-store pages, then abuses Android's Wireless Debugging feature to gain deep device access and steal credentials. Fraud and mobile-security teams should factor this distribution pattern into customer-facing scam awareness."
+  },
+  {
+   "anchors": [
+    "L-0065"
+   ],
+   "pillars": "Third-party risk · cybersecurity",
+   "conf": "moderate confidence",
+   "head": "A backdoored npm package from a web-security vendor is a reminder to audit software-supply-chain exposure.",
+   "body": "Hackers published a malicious version of the Jscrambler client-side web-security package, downloaded almost 1,500 times before it was pulled. Technology teams that used the affected package should treat their environment as compromised, rotate all secrets, and restore from safe backups."
   }
  ],
  "publications": {
@@ -2138,7 +2181,7 @@
    {
     "no": "3",
     "date": "Mon, Jul 13, 2026",
-    "confirmed": "10",
+    "confirmed": "11",
     "pending": "0",
     "flash": "—",
     "linked": true
