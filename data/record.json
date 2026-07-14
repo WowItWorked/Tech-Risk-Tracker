@@ -2,188 +2,68 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-13T16:11:30-04:00",
-  "issueNo": 3,
-  "recordHash": "cf3d69e",
-  "windowLabel": "June 9 – July 13, 2026",
+  "generatedAt": "2026-07-14T06:13:38-04:00",
+  "issueNo": 4,
+  "recordHash": "07e4352",
+  "windowLabel": "June 9 – July 14, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 200 directly this run; no browser-User-Agent fallback was needed). One new item was admitted this run: a BleepingComputer report that hackers backdoored the Jscrambler client-side web-security npm package with information-stealing malware.",
-  "lastRun": "2026-07-13T16:11:30-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 403 for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook's fallback, returning 200; counted OK, not failed). Two new items were admitted this run, opening issue No. 4: a DOJ press release on a federal bank fraud conspiracy conviction in Mobile, Alabama, and a European Central Bank press release on the digital euro pilot's selection of 36 payment service providers.",
+  "lastRun": "2026-07-14T06:13:38-04:00"
  },
  "lead": {
-  "head": "Leading stories: a nine-country advisory on Russian state hackers exploiting poorly configured routers; the U.S. Treasury Department’s sanctions on a VPN service used by ransomware gangs to hide their identities; and United Kingdom charges over a caller-ID spoofing platform tied to more than 1.8 million scam calls",
-  "dek": "Today’s edition draws on the eleven items recorded so far. Every item links to its source.",
+  "head": "Leading stories: a federal jury's conviction of a Mobile, Alabama man in a multimillion-dollar bank fraud conspiracy; and the European Central Bank's selection of 36 payment service providers to join its digital euro pilot",
+  "dek": "Today's edition draws on the two items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
-    "p": "cyber",
-    "tri": "flash",
+    "p": "resilience",
+    "tri": "routine",
     "st": "confirmed",
-    "id": "L-0055",
+    "id": "L-0067",
     "conf": "",
-    "text": "The UK’s National Cyber Security Centre (NCSC) and cybersecurity agencies from the United States and eight other countries warn that hackers linked to Russia’s Federal Security Service (FSB) are exploiting routers with default or weak passwords to infiltrate critical infrastructure networks.",
-    "why": "This joint nine-country advisory names financial services among the sectors most at risk from the router weakness described — a direct prompt for technology teams to check their own router configurations.",
-    "srcText": "NCSC + BleepingComputer, Jul 13",
-    "srcUrl": "https://www.ncsc.gov.uk/news/uk-and-allies-urge-critical-sectors-to-improve-defences-against-russian-intelligence-targeting"
+    "text": "The European Central Bank (ECB) selects 36 payment service providers across the euro area to take part in a pilot testing the digital euro's technical functioning and operational processes.",
+    "why": "The European Central Bank has selected 36 payment service providers to take part in a pilot testing the digital euro's technical functioning and operational processes — a concrete step for any payments provider tracking the digital euro's progress.",
+    "srcText": "European Central Bank, Jul 14",
+    "srcUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260714~8cd07d9d45.en.html"
    },
    {
     "n": "2",
-    "p": "cyber",
-    "tri": "priority",
-    "st": "confirmed",
-    "id": "L-0062",
-    "conf": "",
-    "text": "The U.S. Department of the Treasury sanctions VPN provider First VPN Service (1VPNS) and its Ukrainian administrator for supplying ransomware gangs with tools to hide their identities and evade detection, and separately sanctions a Belarusian man for selling malware “cryptors.”",
-    "why": "New Treasury sanctions designations mean banks must refresh the names and entities they screen against before processing transactions.",
-    "srcText": "The Record, Jul 13",
-    "srcUrl": "https://therecord.media/first-vpn-administrator-us-sanctions-ransomware-groups"
-   },
-   {
-    "n": "3",
     "p": "fraud",
-    "tri": "priority",
+    "tri": "routine",
     "st": "confirmed",
-    "id": "L-0058",
+    "id": "L-0066",
     "conf": "",
-    "text": "United Kingdom authorities have charged five people following a National Crime Agency (NCA) investigation into “Russian Coms,” described as a major caller-ID spoofing platform that criminals used to make more than 1.8 million scam calls.",
-    "why": "A caller-ID spoofing platform tied to more than 1.8 million scam calls is now the subject of United Kingdom criminal charges; fraud teams should treat spoofed-number calling as an active channel and review customer-facing defenses.",
-    "srcText": "BleepingComputer, Jul 13",
-    "srcUrl": "https://www.bleepingcomputer.com/news/security/uk-charges-suspects-linked-to-russian-coms-call-spoofing-platform/"
+    "text": "A federal jury convicts a man from Mobile, Alabama, for participating in a multimillion-dollar bank fraud conspiracy that involved stealing mail, stealing identities, counterfeiting checks and money orders, and fraudulent financial transactions.",
+    "why": "A coordinated fraud scheme combining mail theft, identity theft, and counterfeit checks and money orders is now the subject of a federal conviction — a reminder for fraud teams to keep check-fraud and identity-theft detection controls current.",
+    "srcText": "DOJ press release, Jul 13",
+    "srcUrl": "https://www.justice.gov/usao-sdal/pr/mobile-man-convicted-trial-participating-multimillion-dollar-bank-fraud-conspiracy"
    }
   ]
  },
  "wire": [
   {
-   "ts": "2026-07-13T19:44:19Z",
-   "p": "tp",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0065",
-   "title": "Jscrambler, a client-side web-security vendor, disclosed that hackers published a malicious version of its npm package that was downloaded almost 1,500 times; developers who used the malicious package should treat their environment as compromised, rotate all secrets, and restore from safe backups.",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/hackers-backdoor-jscrambler-npm-package-with-infostealer-malware/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-13T19:04:02Z",
-   "p": "cyber",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0064",
-   "title": "A new strain of information-stealing malware called “CrashStealer” disguises itself as Apple’s macOS crash-reporting tool to steal credentials, keychain data, and cryptocurrency wallets, focusing on more than 80 crypto wallet extensions and password managers.",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/new-crashstealer-malware-poses-as-apple-crash-reporting-tool/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-13T18:50:00Z",
-   "p": "cyber",
-   "tri": "priority",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0062",
-   "title": "The U.S. Department of the Treasury sanctions VPN provider First VPN Service (1VPNS) and its Ukrainian administrator for supplying ransomware gangs with tools to hide their identities and evade detection, and separately sanctions a Belarusian man for selling malware “cryptors.”",
-   "src": "The Record",
-   "srcUrl": "https://therecord.media/first-vpn-administrator-us-sanctions-ransomware-groups",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-13T17:00:17Z",
-   "p": "cyber",
+   "ts": "2026-07-14T09:00:00Z",
+   "p": "resilience",
    "tri": "routine",
    "st": "confirmed",
    "tier": "T1",
-   "id": "L-0063",
-   "title": "CISA adds a cross-site request forgery flaw in Cisco IOS (CVE-2008-4128) to its known-exploited list.",
-   "src": "CISA KEV catalog",
-   "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+   "id": "L-0067",
+   "title": "The European Central Bank (ECB) selects 36 payment service providers across the euro area to take part in a pilot testing the digital euro's technical functioning and operational processes.",
+   "src": "European Central Bank",
+   "srcUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260714~8cd07d9d45.en.html",
    "linked": true
   },
   {
-   "ts": "2026-07-13T16:50:54Z",
-   "p": "cyber",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0061",
-   "title": "A new modular malware implant called “GigaWiper” combines backdoor and wiper capabilities borrowed from various malware families, letting attackers choose their own destructive attack while aiming to maximize impact and minimize operational output",
-   "src": "Dark Reading",
-   "srcUrl": "https://www.darkreading.com/cyberattacks-data-breaches/gigawiper-threat-actors-choose-their-own-destructive-attack",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-13T15:03:28Z",
-   "p": "cyber",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0060",
-   "title": "The Cybersecurity and Infrastructure Security Agency (CISA) publishes a postmortem describing how a contractor's leak of internal CISA credentials, including AWS GovCloud keys, sat undetected in a public GitHub repository for almost six months until KrebsOnSecurity notified the agency",
-   "src": "Krebs on Security",
-   "srcUrl": "https://krebsonsecurity.com/2026/07/lessons-learned-from-cisas-recent-github-leak/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-13T14:31:47Z",
-   "p": "cyber",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0059",
-   "title": "Hackers are spoofing Microsoft Entra OAuth client IDs to collect usernames and passwords from Microsoft's Entra identity database without operating a genuine, trusted application — a technique organizations should check their logs for, Proofpoint says",
-   "src": "Cybersecurity Dive",
-   "srcUrl": "https://www.cybersecuritydive.com/news/microsoft-entra-user-enumeration-bypass-proofpoint/825052/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-13T13:23:30Z",
+   "ts": "2026-07-13T12:00:00Z",
    "p": "fraud",
-   "tri": "priority",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0058",
-   "title": "United Kingdom authorities charge five people over “Russian Coms,” a caller-ID spoofing platform that criminals used to make more than 1.8 million scam calls",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/uk-charges-suspects-linked-to-russian-coms-call-spoofing-platform/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-13T11:19:05Z",
-   "p": "cyber",
-   "tri": "priority",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0057",
-   "title": "The European Union and the United Kingdom impose their first joint cyber sanctions, penalizing dozens of Russian individuals and entities; the allies blame the Federal Security Service (FSB) unit Center 16 for attempted sabotage of Poland’s energy and water facilities",
-   "src": "BleepingComputer + The Record",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/eu-and-uk-hit-russia-with-first-joint-cyber-sanctions-package/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-13T09:32:23Z",
-   "p": "cyber",
-   "tri": "flash",
-   "st": "confirmed",
-   "tier": "T1",
-   "id": "L-0055",
-   "title": "The UK’s National Cyber Security Centre (NCSC) and cybersecurity agencies from the United States and eight other countries warn that hackers linked to Russia’s Federal Security Service (FSB) are exploiting routers with default or weak passwords to infiltrate critical infrastructure — naming financial services among the sectors most at risk",
-   "src": "NCSC + BleepingComputer",
-   "srcUrl": "https://www.ncsc.gov.uk/news/uk-and-allies-urge-critical-sectors-to-improve-defences-against-russian-intelligence-targeting",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-12T14:27:32Z",
-   "p": "cyber",
    "tri": "routine",
    "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0056",
-   "title": "A new version of the RedHook Android malware gains shell-level device access by abusing Android’s Wireless Debugging feature, and is spread in part through messages that impersonate government agencies or financial institutions",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/redhook-android-malware-now-uses-wireless-adb-for-shell-access/",
+   "tier": "T1",
+   "id": "L-0066",
+   "title": "A federal jury convicts a man from Mobile, Alabama, for participating in a multimillion-dollar bank fraud conspiracy that involved stealing mail, stealing identities, counterfeiting checks and money orders, and fraudulent financial transactions.",
+   "src": "DOJ press release",
+   "srcUrl": "https://www.justice.gov/usao-sdal/pr/mobile-man-convicted-trial-participating-multimillion-dollar-bank-fraud-conspiracy",
    "linked": true
   }
  ],
@@ -777,8 +657,8 @@
    "scope": "fraud · AML rulemaking & scam patterns",
    "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
    "opened": "July 2026",
-   "ver": "v3",
-   "verRange": "v1–v3",
+   "ver": "v4",
+   "verRange": "v1–v4",
    "asOf": "July 13, 2026",
    "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22).",
    "p1Sup": "1, 3",
@@ -788,6 +668,15 @@
    "assessSup": "2, 3",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 13, 26",
+     "st": "confirmed",
+     "ver": "v4",
+     "id": "L-0066",
+     "src": "DOJ press release",
+     "srcUrl": "https://www.justice.gov/usao-sdal/pr/mobile-man-convicted-trial-participating-multimillion-dollar-bank-fraud-conspiracy",
+     "line": "A federal jury convicts a man from Mobile, Alabama, for participating in a multimillion-dollar bank fraud conspiracy that involved stealing mail, stealing identities, counterfeiting checks and money orders, and fraudulent financial transactions."
+    },
     {
      "date": "Jul 13, 26",
      "st": "confirmed",
@@ -914,6 +803,11 @@
      "n": "7",
      "text": "BleepingComputer — money launderer charged with seized-crypto theft, Jul 10, 2026",
      "url": "https://www.bleepingcomputer.com/news/security/money-launderer-accused-of-stealing-seized-crypto-while-in-prison/"
+    },
+    {
+     "n": "8",
+     "text": "DOJ — Mobile, Alabama bank fraud conspiracy conviction, Jul 13, 2026",
+     "url": "https://www.justice.gov/usao-sdal/pr/mobile-man-convicted-trial-participating-multimillion-dollar-bank-fraud-conspiracy"
     }
    ],
    "related": [
@@ -1104,9 +998,9 @@
    "scope": "resilience · sector capacity & season risk",
    "watch": "Stress-test results, payments-system findings, severe-weather outlooks, and infrastructure-software advisories relevant to operations.",
    "opened": "July 2026",
-   "ver": "v1",
-   "verRange": "v1",
-   "asOf": "July 9, 2026",
+   "ver": "v2",
+   "verRange": "v1–v2",
+   "asOf": "July 14, 2026",
    "p1": "The Federal Reserve’s annual stress test, released June 24, concludes that large banks are well positioned to weather a severe recession and continue lending to households and businesses.",
    "p1Sup": "1",
    "p2": "Season risk is quiet: the National Hurricane Center’s July 9 outlook expects no tropical cyclone formation in the Atlantic over the next seven days. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
@@ -1115,6 +1009,15 @@
    "assessSup": "3",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 14, 26",
+     "st": "confirmed",
+     "ver": "v2",
+     "id": "L-0067",
+     "src": "European Central Bank",
+     "srcUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260714~8cd07d9d45.en.html",
+     "line": "The European Central Bank (ECB) selects 36 payment service providers across the euro area to take part in a pilot testing the digital euro's technical functioning and operational processes."
+    },
     {
      "date": "Jul 9, 26",
      "st": "confirmed",
@@ -1181,6 +1084,11 @@
      "n": "4",
      "text": "CISA — ICS advisory ICSA-26-190-02 (Schneider PowerChute), Jul 9, 2026",
      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-190-02"
+    },
+    {
+     "n": "5",
+     "text": "European Central Bank — digital euro pilot, 36 payment service providers selected, Jul 14, 2026",
+     "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260714~8cd07d9d45.en.html"
     }
    ],
    "related": [
@@ -2050,6 +1958,22 @@
    "line": "Jscrambler, a client-side web-security vendor, disclosed that hackers published a malicious version of its npm package that was downloaded almost 1,500 times; developers who used the malicious package should treat their environment as compromised, rotate all secrets, and restore from safe backups.",
    "src": "BleepingComputer",
    "srcUrl": "https://www.bleepingcomputer.com/news/security/hackers-backdoor-jscrambler-npm-package-with-infostealer-malware/"
+  },
+  {
+   "d": "2026-07-13",
+   "p": "fraud",
+   "id": "L-0066",
+   "line": "A federal jury convicts a man from Mobile, Alabama, for participating in a multimillion-dollar bank fraud conspiracy that involved stealing mail, stealing identities, counterfeiting checks and money orders, and fraudulent financial transactions.",
+   "src": "DOJ press release",
+   "srcUrl": "https://www.justice.gov/usao-sdal/pr/mobile-man-convicted-trial-participating-multimillion-dollar-bank-fraud-conspiracy"
+  },
+  {
+   "d": "2026-07-14",
+   "p": "resilience",
+   "id": "L-0067",
+   "line": "The European Central Bank (ECB) selects 36 payment service providers across the euro area to take part in a pilot testing the digital euro's technical functioning and operational processes.",
+   "src": "European Central Bank",
+   "srcUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260714~8cd07d9d45.en.html"
   }
  ],
  "takeaways": [
@@ -2179,6 +2103,14 @@
  "publications": {
   "dailies": [
    {
+    "no": "4",
+    "date": "Tue, Jul 14, 2026",
+    "confirmed": "2",
+    "pending": "0",
+    "flash": "—",
+    "linked": true
+   },
+   {
     "no": "3",
     "date": "Mon, Jul 13, 2026",
     "confirmed": "11",
@@ -2205,7 +2137,7 @@
   ],
   "weeklies": [],
   "monthlies": [],
-  "dTotal": 3,
+  "dTotal": 4,
   "wkTotal": 0,
   "mTotal": 0
  }
