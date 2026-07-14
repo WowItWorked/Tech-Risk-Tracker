@@ -2,21 +2,45 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-14T08:13:10-04:00",
+  "generatedAt": "2026-07-14T09:13:42-04:00",
   "issueNo": 4,
-  "recordHash": "7bf85df",
+  "recordHash": "aa055ed",
   "windowLabel": "June 9 – July 14, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 403 for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook's fallback, returning 200; counted OK, not failed). One new item was admitted this intraday run: BleepingComputer's report on SAP's July 2026 security update patching critical flaws in NetWeaver, Commerce Cloud, and AppRouter.",
-  "lastRun": "2026-07-14T08:13:10-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 403 for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook's fallback, returning 200; counted OK, not failed). Two new items were admitted this intraday run: BleepingComputer's report on two new phishing kits (Jalisco, OmegaLord) that defeat MFA on Microsoft 365 accounts, and Dark Reading's report on an unpatched Cursor IDE flaw that auto-executes malicious code from poisoned repositories.",
+  "lastRun": "2026-07-14T09:13:42-04:00"
  },
  "lead": {
-  "head": "Leading stories: SAP's disclosure of critical flaws in its NetWeaver and Commerce Cloud software; the European Central Bank's selection of 36 payment service providers to join its digital euro pilot; and a federal jury's conviction of a Mobile, Alabama man in a multimillion-dollar bank fraud conspiracy",
-  "dek": "Today's edition draws on the three items recorded so far. Every item links to its source.",
+  "head": "Leading stories: a flaw letting Cursor's AI coding platform auto-execute malicious code from poisoned repositories; two new phishing kits defeating multi-factor authentication on Microsoft 365 accounts; and SAP's disclosure of critical flaws in its NetWeaver and Commerce Cloud software",
+  "dek": "Today's edition draws on the five items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
+    "p": "ai",
+    "tri": "routine",
+    "st": "confirmed",
+    "id": "L-0070",
+    "conf": "",
+    "text": "A flaw that lets Cursor, a popular artificial intelligence (AI) coding platform, automatically execute malicious code from poisoned repositories was reported to Cursor in December but still remains in the platform, researchers say.",
+    "why": "A live risk for any bank's technology teams using this AI coding tool, since the flaw reportedly remains unfixed.",
+    "srcText": "Dark Reading, Jul 14",
+    "srcUrl": "https://www.darkreading.com/application-security/cursor-ide-malicious-code-poisoned-repos"
+   },
+   {
+    "n": "2",
+    "p": "cyber",
+    "tri": "routine",
+    "st": "confirmed",
+    "id": "L-0069",
+    "conf": "",
+    "text": "Two new phishing kits, Jalisco and OmegaLord, are being used in attacks against Microsoft 365 accounts that defeat multi-factor authentication (MFA).",
+    "why": "A reminder that multi-factor authentication is not foolproof — fraud and technology teams should watch for these new kits and reinforce phishing-awareness training for employees with Microsoft 365 access.",
+    "srcText": "BleepingComputer, Jul 14",
+    "srcUrl": "https://www.bleepingcomputer.com/news/security/new-phishing-kits-target-microsoft-365-accounts-evade-mfa/"
+   },
+   {
+    "n": "3",
     "p": "cyber",
     "tri": "routine",
     "st": "confirmed",
@@ -26,34 +50,34 @@
     "why": "SAP has patched 16 vulnerabilities in its July 2026 security update, including three critical flaws in its NetWeaver, Commerce Cloud, and AppRouter software — a reminder for technology teams to prioritize applying vendor patches promptly.",
     "srcText": "BleepingComputer, Jul 14",
     "srcUrl": "https://www.bleepingcomputer.com/news/security/sap-warns-of-critical-flaws-in-netweaver-and-commerce-cloud/"
-   },
-   {
-    "n": "2",
-    "p": "resilience",
-    "tri": "routine",
-    "st": "confirmed",
-    "id": "L-0067",
-    "conf": "",
-    "text": "The European Central Bank (ECB) selects 36 payment service providers across the euro area to take part in a pilot testing the digital euro's technical functioning and operational processes.",
-    "why": "The European Central Bank has selected 36 payment service providers to take part in a pilot testing the digital euro's technical functioning and operational processes — a concrete step for any payments provider tracking the digital euro's progress.",
-    "srcText": "European Central Bank, Jul 14",
-    "srcUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260714~8cd07d9d45.en.html"
-   },
-   {
-    "n": "3",
-    "p": "fraud",
-    "tri": "routine",
-    "st": "confirmed",
-    "id": "L-0066",
-    "conf": "",
-    "text": "A federal jury convicts a man from Mobile, Alabama, for participating in a multimillion-dollar bank fraud conspiracy that involved stealing mail, stealing identities, counterfeiting checks and money orders, and fraudulent financial transactions.",
-    "why": "A coordinated fraud scheme combining mail theft, identity theft, and counterfeit checks and money orders is now the subject of a federal conviction — a reminder for fraud teams to keep check-fraud and identity-theft detection controls current.",
-    "srcText": "DOJ press release, Jul 13",
-    "srcUrl": "https://www.justice.gov/usao-sdal/pr/mobile-man-convicted-trial-participating-multimillion-dollar-bank-fraud-conspiracy"
    }
   ]
  },
  "wire": [
+  {
+   "ts": "2026-07-14T13:00:00Z",
+   "p": "ai",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0070",
+   "title": "A flaw that lets Cursor, a popular artificial intelligence (AI) coding platform, automatically execute malicious code from poisoned repositories was reported to Cursor in December but still remains in the platform, researchers say.",
+   "src": "Dark Reading",
+   "srcUrl": "https://www.darkreading.com/application-security/cursor-ide-malicious-code-poisoned-repos",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-14T12:49:00Z",
+   "p": "cyber",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0069",
+   "title": "Two new phishing kits, Jalisco and OmegaLord, are being used in attacks against Microsoft 365 accounts that defeat multi-factor authentication (MFA).",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/new-phishing-kits-target-microsoft-365-accounts-evade-mfa/",
+   "linked": true
+  },
   {
    "ts": "2026-07-14T11:42:21Z",
    "p": "cyber",
@@ -97,9 +121,9 @@
    "scope": "artificial intelligence · capability & governance",
    "watch": "Frontier capability, bank-scale adoption, and the governance that is (or is not) keeping pace — from allowlisted lab, regulator, and press feeds.",
    "opened": "July 2026",
-   "ver": "v2",
-   "verRange": "v1–v2",
-   "asOf": "July 11, 2026",
+   "ver": "v3",
+   "verRange": "v1–v3",
+   "asOf": "July 14, 2026",
    "p1": "Frontier capability advanced again this window: OpenAI released GPT-5.6 on July 9, describing it as delivering “more intelligence from every token, stronger performance per dollar.”",
    "p1Sup": "1",
    "p2": "Banks are adopting at scale: OpenAI reports BBVA scaled ChatGPT Enterprise to 100,000 employees in an AI-powered banking transformation. The regulatory line is earlier-stage: the FTC opened public comment on a policy statement addressing AI accuracy on July 1. AI is confirmed on the attack side too: an exploited flaw in Langflow, an AI-workflow tool, is on CISA’s known-exploited list.",
@@ -108,6 +132,15 @@
    "assessSup": "5, 6",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 14, 26",
+     "st": "confirmed",
+     "ver": "v3",
+     "id": "L-0070",
+     "src": "Dark Reading",
+     "srcUrl": "https://www.darkreading.com/application-security/cursor-ide-malicious-code-poisoned-repos",
+     "line": "A flaw that lets Cursor, a popular artificial intelligence (AI) coding platform, automatically execute malicious code from poisoned repositories was reported to Cursor in December but still remains in the platform, researchers say."
+    },
     {
      "date": "Jul 11, 26",
      "st": "confirmed",
@@ -275,8 +308,8 @@
    "scope": "cybersecurity · exploitation & exposure",
    "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
    "opened": "July 2026",
-   "ver": "v19",
-   "verRange": "v1–v19",
+   "ver": "v20",
+   "verRange": "v1–v20",
    "asOf": "July 14, 2026",
    "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
    "p1Sup": "1, 3, 10",
@@ -286,6 +319,15 @@
    "assessSup": "1, 8",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 14, 26",
+     "st": "confirmed",
+     "ver": "v20",
+     "id": "L-0069",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/new-phishing-kits-target-microsoft-365-accounts-evade-mfa/",
+     "line": "Two new phishing kits, Jalisco and OmegaLord, are being used in attacks against Microsoft 365 accounts that defeat multi-factor authentication (MFA)."
+    },
     {
      "date": "Jul 14, 26",
      "st": "confirmed",
@@ -2015,6 +2057,22 @@
    "line": "SAP addresses 16 vulnerabilities across multiple products in its July 2026 security update, including three critical flaws in its NetWeaver, Commerce Cloud, and AppRouter software.",
    "src": "BleepingComputer",
    "srcUrl": "https://www.bleepingcomputer.com/news/security/sap-warns-of-critical-flaws-in-netweaver-and-commerce-cloud/"
+  },
+  {
+   "d": "2026-07-14",
+   "p": "cyber",
+   "id": "L-0069",
+   "line": "Two new phishing kits, Jalisco and OmegaLord, are being used in attacks against Microsoft 365 accounts that defeat multi-factor authentication (MFA).",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/new-phishing-kits-target-microsoft-365-accounts-evade-mfa/"
+  },
+  {
+   "d": "2026-07-14",
+   "p": "ai",
+   "id": "L-0070",
+   "line": "A flaw that lets Cursor, a popular artificial intelligence (AI) coding platform, automatically execute malicious code from poisoned repositories was reported to Cursor in December but still remains in the platform, researchers say.",
+   "src": "Dark Reading",
+   "srcUrl": "https://www.darkreading.com/application-security/cursor-ide-malicious-code-poisoned-repos"
   }
  ],
  "takeaways": [
@@ -2146,7 +2204,7 @@
    {
     "no": "4",
     "date": "Tue, Jul 14, 2026",
-    "confirmed": "3",
+    "confirmed": "5",
     "pending": "0",
     "flash": "—",
     "linked": true
