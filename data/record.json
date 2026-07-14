@@ -2,21 +2,45 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-14T09:13:42-04:00",
+  "generatedAt": "2026-07-14T12:14:00-04:00",
   "issueNo": 4,
-  "recordHash": "aa055ed",
+  "recordHash": "e64933d",
   "windowLabel": "June 9 – July 14, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 403 for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook's fallback, returning 200; counted OK, not failed). Two new items were admitted this intraday run: BleepingComputer's report on two new phishing kits (Jalisco, OmegaLord) that defeat MFA on Microsoft 365 accounts, and Dark Reading's report on an unpatched Cursor IDE flaw that auto-executes malicious code from poisoned repositories.",
-  "lastRun": "2026-07-14T09:13:42-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 403 for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook's fallback, returning 200; counted OK, not failed). Two new items were admitted this intraday run: a SANS Institute report, via Cybersecurity Dive, finding a governance gap between senior security leaders and frontline practitioners on AI adoption for cyber defense, and BleepingComputer's report on a phishing campaign using fake security-notice emails against LastPass and Bitwarden users.",
+  "lastRun": "2026-07-14T12:14:00-04:00"
  },
  "lead": {
-  "head": "Leading stories: a flaw letting Cursor's AI coding platform auto-execute malicious code from poisoned repositories; two new phishing kits defeating multi-factor authentication on Microsoft 365 accounts; and SAP's disclosure of critical flaws in its NetWeaver and Commerce Cloud software",
-  "dek": "Today's edition draws on the five items recorded so far. Every item links to its source.",
+  "head": "Leading stories: a phishing campaign using fake security-notice emails against LastPass and Bitwarden users; a SANS Institute report finding a major AI governance gap in cyber defense adoption; and a flaw letting Cursor's AI coding platform auto-execute malicious code from poisoned repositories",
+  "dek": "Today's edition draws on the seven items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
+    "p": "cyber",
+    "tri": "routine",
+    "st": "confirmed",
+    "id": "L-0072",
+    "conf": "",
+    "text": "LastPass warns that criminals are running a phishing campaign using fake security-notice emails to direct users to fraudulent websites; BleepingComputer reports Bitwarden users are being targeted by similar emails.",
+    "why": "A prompt for technology and security teams to alert any employees using LastPass or Bitwarden to this specific phishing pattern before they click through fake security-policy emails.",
+    "srcText": "BleepingComputer, Jul 14",
+    "srcUrl": "https://www.bleepingcomputer.com/news/security/lastpass-bitwarden-users-targeted-with-fake-security-alerts/"
+   },
+   {
+    "n": "2",
+    "p": "ai",
+    "tri": "routine",
+    "st": "confirmed",
+    "id": "L-0071",
+    "conf": "",
+    "text": "A SANS Institute report finds that a sharp rise in artificial intelligence (AI) adoption for cyber defense has exposed a major governance gap, with senior security leaders and frontline practitioners split on the issue.",
+    "why": "A prompt for banks' technology and security leadership to check whether frontline security staff share their view on how prepared AI-driven cyber defenses really are, given the reported gap between the two groups.",
+    "srcText": "Cybersecurity Dive, Jul 14",
+    "srcUrl": "https://www.cybersecuritydive.com/news/ai-adoption-cyber-defense-governance-gap/825179/"
+   },
+   {
+    "n": "3",
     "p": "ai",
     "tri": "routine",
     "st": "confirmed",
@@ -26,34 +50,34 @@
     "why": "A live risk for any bank's technology teams using this AI coding tool, since the flaw reportedly remains unfixed.",
     "srcText": "Dark Reading, Jul 14",
     "srcUrl": "https://www.darkreading.com/application-security/cursor-ide-malicious-code-poisoned-repos"
-   },
-   {
-    "n": "2",
-    "p": "cyber",
-    "tri": "routine",
-    "st": "confirmed",
-    "id": "L-0069",
-    "conf": "",
-    "text": "Two new phishing kits, Jalisco and OmegaLord, are being used in attacks against Microsoft 365 accounts that defeat multi-factor authentication (MFA).",
-    "why": "A reminder that multi-factor authentication is not foolproof — fraud and technology teams should watch for these new kits and reinforce phishing-awareness training for employees with Microsoft 365 access.",
-    "srcText": "BleepingComputer, Jul 14",
-    "srcUrl": "https://www.bleepingcomputer.com/news/security/new-phishing-kits-target-microsoft-365-accounts-evade-mfa/"
-   },
-   {
-    "n": "3",
-    "p": "cyber",
-    "tri": "routine",
-    "st": "confirmed",
-    "id": "L-0068",
-    "conf": "",
-    "text": "SAP addresses 16 vulnerabilities across multiple products in its July 2026 security update, including three critical flaws in its NetWeaver, Commerce Cloud, and AppRouter software.",
-    "why": "SAP has patched 16 vulnerabilities in its July 2026 security update, including three critical flaws in its NetWeaver, Commerce Cloud, and AppRouter software — a reminder for technology teams to prioritize applying vendor patches promptly.",
-    "srcText": "BleepingComputer, Jul 14",
-    "srcUrl": "https://www.bleepingcomputer.com/news/security/sap-warns-of-critical-flaws-in-netweaver-and-commerce-cloud/"
    }
   ]
  },
  "wire": [
+  {
+   "ts": "2026-07-14T15:31:52Z",
+   "p": "cyber",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0072",
+   "title": "LastPass warns that criminals are running a phishing campaign using fake security-notice emails to direct users to fraudulent websites; BleepingComputer reports Bitwarden users are being targeted by similar emails.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/lastpass-bitwarden-users-targeted-with-fake-security-alerts/",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-14T14:46:39Z",
+   "p": "ai",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0071",
+   "title": "A SANS Institute report finds that a sharp rise in artificial intelligence (AI) adoption for cyber defense has exposed a major governance gap, with senior security leaders and frontline practitioners split on the issue.",
+   "src": "Cybersecurity Dive",
+   "srcUrl": "https://www.cybersecuritydive.com/news/ai-adoption-cyber-defense-governance-gap/825179/",
+   "linked": true
+  },
   {
    "ts": "2026-07-14T13:00:00Z",
    "p": "ai",
@@ -121,8 +145,8 @@
    "scope": "artificial intelligence · capability & governance",
    "watch": "Frontier capability, bank-scale adoption, and the governance that is (or is not) keeping pace — from allowlisted lab, regulator, and press feeds.",
    "opened": "July 2026",
-   "ver": "v3",
-   "verRange": "v1–v3",
+   "ver": "v4",
+   "verRange": "v1–v4",
    "asOf": "July 14, 2026",
    "p1": "Frontier capability advanced again this window: OpenAI released GPT-5.6 on July 9, describing it as delivering “more intelligence from every token, stronger performance per dollar.”",
    "p1Sup": "1",
@@ -132,6 +156,15 @@
    "assessSup": "5, 6",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 14, 26",
+     "st": "confirmed",
+     "ver": "v4",
+     "id": "L-0071",
+     "src": "Cybersecurity Dive",
+     "srcUrl": "https://www.cybersecuritydive.com/news/ai-adoption-cyber-defense-governance-gap/825179/",
+     "line": "A SANS Institute report finds that a sharp rise in artificial intelligence (AI) adoption for cyber defense has exposed a major governance gap, with senior security leaders and frontline practitioners split on the issue."
+    },
     {
      "date": "Jul 14, 26",
      "st": "confirmed",
@@ -308,8 +341,8 @@
    "scope": "cybersecurity · exploitation & exposure",
    "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
    "opened": "July 2026",
-   "ver": "v20",
-   "verRange": "v1–v20",
+   "ver": "v21",
+   "verRange": "v1–v21",
    "asOf": "July 14, 2026",
    "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
    "p1Sup": "1, 3, 10",
@@ -319,6 +352,15 @@
    "assessSup": "1, 8",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 14, 26",
+     "st": "confirmed",
+     "ver": "v21",
+     "id": "L-0072",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/lastpass-bitwarden-users-targeted-with-fake-security-alerts/",
+     "line": "LastPass warns that criminals are running a phishing campaign using fake security-notice emails to direct users to fraudulent websites; BleepingComputer reports Bitwarden users are being targeted by similar emails."
+    },
     {
      "date": "Jul 14, 26",
      "st": "confirmed",
@@ -2073,6 +2115,22 @@
    "line": "A flaw that lets Cursor, a popular artificial intelligence (AI) coding platform, automatically execute malicious code from poisoned repositories was reported to Cursor in December but still remains in the platform, researchers say.",
    "src": "Dark Reading",
    "srcUrl": "https://www.darkreading.com/application-security/cursor-ide-malicious-code-poisoned-repos"
+  },
+  {
+   "d": "2026-07-14",
+   "p": "ai",
+   "id": "L-0071",
+   "line": "A SANS Institute report finds that a sharp rise in artificial intelligence (AI) adoption for cyber defense has exposed a major governance gap, with senior security leaders and frontline practitioners split on the issue.",
+   "src": "Cybersecurity Dive",
+   "srcUrl": "https://www.cybersecuritydive.com/news/ai-adoption-cyber-defense-governance-gap/825179/"
+  },
+  {
+   "d": "2026-07-14",
+   "p": "cyber",
+   "id": "L-0072",
+   "line": "LastPass warns that criminals are running a phishing campaign using fake security-notice emails to direct users to fraudulent websites; BleepingComputer reports Bitwarden users are being targeted by similar emails.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/lastpass-bitwarden-users-targeted-with-fake-security-alerts/"
   }
  ],
  "takeaways": [
@@ -2204,7 +2262,7 @@
    {
     "no": "4",
     "date": "Tue, Jul 14, 2026",
-    "confirmed": "5",
+    "confirmed": "7",
     "pending": "0",
     "flash": "—",
     "linked": true
