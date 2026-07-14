@@ -2,21 +2,33 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-14T13:12:00-04:00",
+  "generatedAt": "2026-07-14T14:09:50-04:00",
   "issueNo": 4,
-  "recordHash": "5103395",
+  "recordHash": "1068fd0",
   "windowLabel": "June 9 – July 14, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 403 for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook's fallback, returning 200; counted OK, not failed). One new item was admitted this intraday run: BleepingComputer's report that Progress Software confirmed a high-severity zero-day vulnerability behind last week's emergency shutdown of ShareFile Storage Zone Controllers and has released security updates to patch it.",
-  "lastRun": "2026-07-14T13:12:00-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 403 for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook's fallback, returning 200; counted OK, not failed). One new item was admitted this intraday run: BleepingComputer's report on Microsoft's July 2026 Patch Tuesday, which fixed a record-breaking 570 flaws including two zero-day vulnerabilities that were already being exploited in attacks.",
+  "lastRun": "2026-07-14T14:09:50-04:00"
  },
  "lead": {
-  "head": "Leading stories: a confirmed zero-day flaw behind last week’s ShareFile Storage Zone Controller shutdown; a phishing campaign using fake security-notice emails against LastPass and Bitwarden users; and a SANS Institute report finding a major AI governance gap in cyber defense adoption",
-  "dek": "Today’s edition draws on the eight items recorded so far. Every item links to its source.",
+  "head": "Leading stories: Microsoft’s July 2026 Patch Tuesday fixing a record 570 flaws, including two actively exploited zero-days; a confirmed zero-day flaw behind last week’s ShareFile Storage Zone Controller shutdown; and a phishing campaign using fake security-notice emails against LastPass and Bitwarden users",
+  "dek": "Today’s edition draws on the nine items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
+    "p": "cyber",
+    "tri": "flash",
+    "st": "confirmed",
+    "id": "L-0074",
+    "conf": "",
+    "text": "Microsoft's July 2026 Patch Tuesday fixes a record-breaking 570 flaws, including two zero-day vulnerabilities that criminals were already exploiting and one that was publicly disclosed.",
+    "why": "A reminder for technology teams to prioritize deploying this month's Microsoft security updates without delay, since criminals were already exploiting two of the fixed flaws.",
+    "srcText": "BleepingComputer, Jul 14",
+    "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-july-2026-patch-tuesday-fixes-massive-570-flaws-3-zero-days/"
+   },
+   {
+    "n": "2",
     "p": "cyber",
     "tri": "priority",
     "st": "confirmed",
@@ -28,7 +40,7 @@
     "srcUrl": "https://www.bleepingcomputer.com/news/security/progress-confirms-sharefile-zero-day-flaw-behind-storage-zone-shutdown/"
    },
    {
-    "n": "2",
+    "n": "3",
     "p": "cyber",
     "tri": "routine",
     "st": "confirmed",
@@ -38,22 +50,22 @@
     "why": "A prompt for technology and security teams to alert any employees using LastPass or Bitwarden to this specific phishing pattern before they click through fake security-policy emails.",
     "srcText": "BleepingComputer, Jul 14",
     "srcUrl": "https://www.bleepingcomputer.com/news/security/lastpass-bitwarden-users-targeted-with-fake-security-alerts/"
-   },
-   {
-    "n": "3",
-    "p": "ai",
-    "tri": "routine",
-    "st": "confirmed",
-    "id": "L-0071",
-    "conf": "",
-    "text": "A SANS Institute report finds that a sharp rise in artificial intelligence (AI) adoption for cyber defense has exposed a major governance gap, with senior security leaders and frontline practitioners split on the issue.",
-    "why": "A prompt for banks' technology and security leadership to check whether frontline security staff share their view on how prepared AI-driven cyber defenses really are, given the reported gap between the two groups.",
-    "srcText": "Cybersecurity Dive, Jul 14",
-    "srcUrl": "https://www.cybersecuritydive.com/news/ai-adoption-cyber-defense-governance-gap/825179/"
    }
   ]
  },
  "wire": [
+  {
+   "ts": "2026-07-14T18:01:36Z",
+   "p": "cyber",
+   "tri": "flash",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0074",
+   "title": "Microsoft's July 2026 Patch Tuesday fixes a record-breaking 570 flaws, including two zero-day vulnerabilities that criminals were already exploiting and one that was publicly disclosed.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-july-2026-patch-tuesday-fixes-massive-570-flaws-3-zero-days/",
+   "linked": true
+  },
   {
    "ts": "2026-07-14T16:08:47Z",
    "p": "cyber",
@@ -353,8 +365,8 @@
    "scope": "cybersecurity · exploitation & exposure",
    "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
    "opened": "July 2026",
-   "ver": "v22",
-   "verRange": "v1–v22",
+   "ver": "v23",
+   "verRange": "v1–v23",
    "asOf": "July 14, 2026",
    "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
    "p1Sup": "1, 3, 10",
@@ -364,6 +376,15 @@
    "assessSup": "1, 8",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 14, 26",
+     "st": "confirmed",
+     "ver": "v23",
+     "id": "L-0074",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-july-2026-patch-tuesday-fixes-massive-570-flaws-3-zero-days/",
+     "line": "Microsoft's July 2026 Patch Tuesday fixes a record-breaking 570 flaws, including two zero-day vulnerabilities that criminals were already exploiting and one that was publicly disclosed."
+    },
     {
      "date": "Jul 14, 26",
      "st": "confirmed",
@@ -2160,9 +2181,26 @@
    "line": "Progress Software confirms a high-severity zero-day flaw was behind last week’s emergency shutdown of ShareFile Storage Zone Controllers and releases security updates to patch it.",
    "src": "BleepingComputer",
    "srcUrl": "https://www.bleepingcomputer.com/news/security/progress-confirms-sharefile-zero-day-flaw-behind-storage-zone-shutdown/"
+  },
+  {
+   "d": "2026-07-14",
+   "p": "cyber",
+   "id": "L-0074",
+   "line": "Microsoft's July 2026 Patch Tuesday fixes a record-breaking 570 flaws, including two zero-day vulnerabilities that criminals were already exploiting and one that was publicly disclosed.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-july-2026-patch-tuesday-fixes-massive-570-flaws-3-zero-days/"
   }
  ],
  "takeaways": [
+  {
+   "anchors": [
+    "L-0074"
+   ],
+   "pillars": "Cybersecurity",
+   "conf": "high confidence",
+   "head": "Microsoft's July 2026 Patch Tuesday includes two zero-days already under attack.",
+   "body": "Microsoft's July 2026 Patch Tuesday fixes a record-breaking 570 flaws, including two zero-day vulnerabilities that criminals were already exploiting. Technology teams should prioritize deploying this month's Microsoft security updates, especially for the two actively exploited flaws."
+  },
   {
    "anchors": [
     "L-0073"
@@ -2300,9 +2338,9 @@
    {
     "no": "4",
     "date": "Tue, Jul 14, 2026",
-    "confirmed": "8",
+    "confirmed": "9",
     "pending": "0",
-    "flash": "—",
+    "flash": "1",
     "linked": true
    },
    {
