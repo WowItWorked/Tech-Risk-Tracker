@@ -2,21 +2,33 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-14T17:09:54-04:00",
+  "generatedAt": "2026-07-14T18:11:03-04:00",
   "issueNo": 4,
-  "recordHash": "49b1964",
+  "recordHash": "680c2dc",
   "windowLabel": "June 9 – July 14, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 403 for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook's fallback, returning 200; counted OK, not failed). One new item was admitted this intraday run: Spanish police dismantled a cybercrime and money-laundering ring accused of making €140 million ($160 million) through investment fraud and business email compromise (BEC) attacks, arresting four people in Spain, Portugal, and Panama.",
-  "lastRun": "2026-07-14T17:09:54-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 403 for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook's fallback, returning 200; counted OK, not failed). One new item was admitted this intraday run: SonicWall confirmed criminals are actively exploiting two zero-day flaws in its SMA1000 appliances, and CISA added both to its known-exploited vulnerabilities list with a July 17, 2026 remediation deadline.",
+  "lastRun": "2026-07-14T18:11:03-04:00"
  },
  "lead": {
-  "head": "Leading stories: Microsoft’s July 2026 Patch Tuesday fixing a record 570 flaws, including two actively exploited zero-days; the United States unsealing an indictment against three Russians tied to a bulletproof hosting provider; and CISA adding two more exploited Microsoft flaws — in Active Directory Federation Services and SharePoint Server — to its known-exploited list",
-  "dek": "Today’s edition draws on the thirteen items recorded so far. Every item links to its source.",
+  "head": "Leading stories: SonicWall confirming criminals are exploiting two zero-day flaws in its SMA1000 appliances, with CISA setting a July 17 fix deadline; Microsoft's July 2026 Patch Tuesday fixing a record 570 flaws, including two actively exploited zero-days; and the United States unsealing an indictment against three Russians tied to a bulletproof hosting provider",
+  "dek": "Today’s edition draws on the fourteen items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
+    "p": "cyber",
+    "tri": "flash",
+    "st": "confirmed",
+    "id": "L-0079",
+    "conf": "",
+    "text": "SonicWall confirms criminals are actively exploiting two zero-day flaws in its SMA1000 appliances, tracked as CVE-2026-15409 and CVE-2026-15410: a server-side request forgery vulnerability that could let a remote, unauthenticated attacker cause the appliance to make requests to unintended locations, and a code injection vulnerability that could let a remote attacker authenticated as an administrator execute arbitrary operating system commands. CISA adds both flaws to its known-exploited vulnerabilities catalog with a July 17, 2026 remediation deadline.",
+    "why": "SonicWall's own investigation confirms criminals are already exploiting both flaws, and CISA's July 17, 2026 deadline gives technology teams running SMA1000 appliances a concrete date to fix them.",
+    "srcText": "CISA KEV catalog + BleepingComputer, Jul 14",
+    "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+   },
+   {
+    "n": "2",
     "p": "cyber",
     "tri": "flash",
     "st": "confirmed",
@@ -28,7 +40,7 @@
     "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-july-2026-patch-tuesday-fixes-massive-570-flaws-3-zero-days/"
    },
    {
-    "n": "2",
+    "n": "3",
     "p": "cyber",
     "tri": "priority",
     "st": "confirmed",
@@ -38,22 +50,22 @@
     "why": "Federal prosecutors unseal charges against three Russians tied to a hosting provider already under U.S. and allied sanctions for supplying cybercriminals with infrastructure and technical support — a reminder that law enforcement is targeting the infrastructure providers behind attacks, not just the attackers themselves.",
     "srcText": "The Record, Jul 14",
     "srcUrl": "https://therecord.media/us-unseals-indictment-russians-bulletproof-hosting"
-   },
-   {
-    "n": "3",
-    "p": "cyber",
-    "tri": "priority",
-    "st": "confirmed",
-    "id": "L-0075",
-    "conf": "",
-    "text": "CISA adds two exploited Microsoft flaws to its known-exploited list: an Active Directory Federation Services flaw that lets an authorized attacker locally escalate privileges (CVE-2026-56155), and a SharePoint Server flaw that lets an unauthorized attacker escalate privileges over a network without authentication (CVE-2026-56164).",
-    "why": "CISA's addition of these flaws to its known-exploited list confirms both are being actively exploited, and sets a July 17, 2026 deadline to fix the SharePoint flaw — a signal for technology teams running Active Directory Federation Services or SharePoint Server to prioritize patching now.",
-    "srcText": "CISA KEV catalog, Jul 14",
-    "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
    }
   ]
  },
  "wire": [
+  {
+   "ts": "2026-07-14T21:23:24Z",
+   "p": "cyber",
+   "tri": "flash",
+   "st": "confirmed",
+   "tier": "T1",
+   "id": "L-0079",
+   "title": "SonicWall confirms criminals are actively exploiting two zero-day flaws in its SMA1000 appliances, tracked as CVE-2026-15409 and CVE-2026-15410: a server-side request forgery vulnerability that could let a remote, unauthenticated attacker cause the appliance to make requests to unintended locations, and a code injection vulnerability that could let a remote attacker authenticated as an administrator execute arbitrary operating system commands. CISA adds both flaws to its known-exploited vulnerabilities catalog with a July 17, 2026 remediation deadline.",
+   "src": "CISA KEV catalog + BleepingComputer",
+   "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+   "linked": true
+  },
   {
    "ts": "2026-07-14T20:23:09Z",
    "p": "fraud",
@@ -413,8 +425,8 @@
    "scope": "cybersecurity · exploitation & exposure",
    "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
    "opened": "July 2026",
-   "ver": "v26",
-   "verRange": "v1–v26",
+   "ver": "v27",
+   "verRange": "v1–v27",
    "asOf": "July 14, 2026",
    "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
    "p1Sup": "1, 3, 10",
@@ -424,6 +436,15 @@
    "assessSup": "1, 8",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 14, 26",
+     "st": "confirmed",
+     "ver": "v27",
+     "id": "L-0079",
+     "src": "CISA KEV catalog + BleepingComputer",
+     "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+     "line": "SonicWall confirms criminals are actively exploiting two zero-day flaws in its SMA1000 appliances, tracked as CVE-2026-15409 and CVE-2026-15410: a server-side request forgery vulnerability that could let a remote, unauthenticated attacker cause the appliance to make requests to unintended locations, and a code injection vulnerability that could let a remote attacker authenticated as an administrator execute arbitrary operating system commands. CISA adds both flaws to its known-exploited vulnerabilities catalog with a July 17, 2026 remediation deadline."
+    },
     {
      "date": "Jul 14, 26",
      "st": "confirmed",
@@ -851,6 +872,11 @@
      "n": "24",
      "text": "The Record — indictment unsealed against Russian bulletproof-hosting operators (Media Land / ML Cloud), Jul 14, 2026",
      "url": "https://therecord.media/us-unseals-indictment-russians-bulletproof-hosting"
+    },
+    {
+     "n": "25",
+     "text": "CISA KEV catalog + BleepingComputer — SonicWall SMA1000 zero-day flaws actively exploited (CVE-2026-15409, CVE-2026-15410), Jul 14, 2026",
+     "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
     }
    ],
    "related": [
@@ -2315,6 +2341,14 @@
    "line": "Spanish police dismantle a cybercrime and money-laundering ring accused of making €140 million ($160 million) through investment fraud and business email compromise (BEC) attacks, arresting four people in Spain, Portugal, and Panama.",
    "src": "BleepingComputer",
    "srcUrl": "https://www.bleepingcomputer.com/news/security/spanish-police-take-down-140-million-cyber-fraud-ring-arrest-four/"
+  },
+  {
+   "d": "2026-07-14",
+   "p": "cyber",
+   "id": "L-0079",
+   "line": "SonicWall confirms criminals are actively exploiting two zero-day flaws in its SMA1000 appliances, tracked as CVE-2026-15409 and CVE-2026-15410: a server-side request forgery vulnerability that could let a remote, unauthenticated attacker cause the appliance to make requests to unintended locations, and a code injection vulnerability that could let a remote attacker authenticated as an administrator execute arbitrary operating system commands. CISA adds both flaws to its known-exploited vulnerabilities catalog with a July 17, 2026 remediation deadline.",
+   "src": "CISA KEV catalog + BleepingComputer",
+   "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
   }
  ],
  "takeaways": [
@@ -2484,6 +2518,15 @@
    "conf": "moderate confidence",
    "head": "A newly indicted bulletproof hosting operation is a new name for sanctions and threat-intelligence screening lists.",
    "body": "Federal prosecutors unsealed an indictment against three Russians tied to a bulletproof hosting provider — already sanctioned by the U.S. and two allies — that gave cybercriminals infrastructure and technical support through Media Land and ML Cloud. Sanctions and threat-intelligence teams should add these entities to their screening and blocking lists."
+  },
+  {
+   "anchors": [
+    "L-0079"
+   ],
+   "pillars": "Cybersecurity",
+   "conf": "high confidence",
+   "head": "A critical, actively exploited SonicWall SMA1000 flaw has a July 17 fix deadline.",
+   "body": "SonicWall confirmed criminals are actively exploiting two zero-day flaws in its SMA1000 appliances (CVE-2026-15409, CVE-2026-15410), and CISA added both to its known-exploited vulnerabilities catalog with a July 17, 2026 remediation deadline. Technology teams running SMA1000 appliances should apply SonicWall's security updates now."
   }
  ],
  "publications": {
@@ -2491,9 +2534,9 @@
    {
     "no": "4",
     "date": "Tue, Jul 14, 2026",
-    "confirmed": "13",
+    "confirmed": "14",
     "pending": "0",
-    "flash": "1",
+    "flash": "2",
     "linked": true
    },
    {
