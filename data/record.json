@@ -2,21 +2,33 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-14T06:13:38-04:00",
+  "generatedAt": "2026-07-14T08:13:10-04:00",
   "issueNo": 4,
-  "recordHash": "07e4352",
+  "recordHash": "7bf85df",
   "windowLabel": "June 9 – July 14, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 403 for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook's fallback, returning 200; counted OK, not failed). Two new items were admitted this run, opening issue No. 4: a DOJ press release on a federal bank fraud conspiracy conviction in Mobile, Alabama, and a European Central Bank press release on the digital euro pilot's selection of 36 payment service providers.",
-  "lastRun": "2026-07-14T06:13:38-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 403 for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook's fallback, returning 200; counted OK, not failed). One new item was admitted this intraday run: BleepingComputer's report on SAP's July 2026 security update patching critical flaws in NetWeaver, Commerce Cloud, and AppRouter.",
+  "lastRun": "2026-07-14T08:13:10-04:00"
  },
  "lead": {
-  "head": "Leading stories: a federal jury's conviction of a Mobile, Alabama man in a multimillion-dollar bank fraud conspiracy; and the European Central Bank's selection of 36 payment service providers to join its digital euro pilot",
-  "dek": "Today's edition draws on the two items recorded so far. Every item links to its source.",
+  "head": "Leading stories: SAP's disclosure of critical flaws in its NetWeaver and Commerce Cloud software; the European Central Bank's selection of 36 payment service providers to join its digital euro pilot; and a federal jury's conviction of a Mobile, Alabama man in a multimillion-dollar bank fraud conspiracy",
+  "dek": "Today's edition draws on the three items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
+    "p": "cyber",
+    "tri": "routine",
+    "st": "confirmed",
+    "id": "L-0068",
+    "conf": "",
+    "text": "SAP addresses 16 vulnerabilities across multiple products in its July 2026 security update, including three critical flaws in its NetWeaver, Commerce Cloud, and AppRouter software.",
+    "why": "SAP has patched 16 vulnerabilities in its July 2026 security update, including three critical flaws in its NetWeaver, Commerce Cloud, and AppRouter software — a reminder for technology teams to prioritize applying vendor patches promptly.",
+    "srcText": "BleepingComputer, Jul 14",
+    "srcUrl": "https://www.bleepingcomputer.com/news/security/sap-warns-of-critical-flaws-in-netweaver-and-commerce-cloud/"
+   },
+   {
+    "n": "2",
     "p": "resilience",
     "tri": "routine",
     "st": "confirmed",
@@ -28,7 +40,7 @@
     "srcUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260714~8cd07d9d45.en.html"
    },
    {
-    "n": "2",
+    "n": "3",
     "p": "fraud",
     "tri": "routine",
     "st": "confirmed",
@@ -42,6 +54,18 @@
   ]
  },
  "wire": [
+  {
+   "ts": "2026-07-14T11:42:21Z",
+   "p": "cyber",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0068",
+   "title": "SAP addresses 16 vulnerabilities across multiple products in its July 2026 security update, including three critical flaws in its NetWeaver, Commerce Cloud, and AppRouter software.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/sap-warns-of-critical-flaws-in-netweaver-and-commerce-cloud/",
+   "linked": true
+  },
   {
    "ts": "2026-07-14T09:00:00Z",
    "p": "resilience",
@@ -251,9 +275,9 @@
    "scope": "cybersecurity · exploitation & exposure",
    "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
    "opened": "July 2026",
-   "ver": "v18",
-   "verRange": "v1–v18",
-   "asOf": "July 13, 2026",
+   "ver": "v19",
+   "verRange": "v1–v19",
+   "asOf": "July 14, 2026",
    "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
    "p1Sup": "1, 3, 10",
    "p2": "The UK’s National Cyber Security Centre (NCSC) and cybersecurity agencies from the United States and eight other countries warn that hackers linked to Russia’s Federal Security Service (FSB) are exploiting routers with default or weak passwords to infiltrate critical infrastructure, naming financial services among the sectors most at risk. Researchers report “JadePuffer,” described as a ransomware attack run end-to-end by an AI agent that broke in through the exploited Langflow flaw. Separately, Progress Software urged ShareFile customers running Storage Zone Controllers to shut down their servers immediately over a “credible external security threat.”",
@@ -262,6 +286,15 @@
    "assessSup": "1, 8",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 14, 26",
+     "st": "confirmed",
+     "ver": "v19",
+     "id": "L-0068",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/sap-warns-of-critical-flaws-in-netweaver-and-commerce-cloud/",
+     "line": "SAP addresses 16 vulnerabilities across multiple products in its July 2026 security update, including three critical flaws in its NetWeaver, Commerce Cloud, and AppRouter software."
+    },
     {
      "date": "Jul 13, 26",
      "st": "confirmed",
@@ -1974,6 +2007,14 @@
    "line": "The European Central Bank (ECB) selects 36 payment service providers across the euro area to take part in a pilot testing the digital euro's technical functioning and operational processes.",
    "src": "European Central Bank",
    "srcUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260714~8cd07d9d45.en.html"
+  },
+  {
+   "d": "2026-07-14",
+   "p": "cyber",
+   "id": "L-0068",
+   "line": "SAP addresses 16 vulnerabilities across multiple products in its July 2026 security update, including three critical flaws in its NetWeaver, Commerce Cloud, and AppRouter software.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/sap-warns-of-critical-flaws-in-netweaver-and-commerce-cloud/"
   }
  ],
  "takeaways": [
@@ -2105,7 +2146,7 @@
    {
     "no": "4",
     "date": "Tue, Jul 14, 2026",
-    "confirmed": "2",
+    "confirmed": "3",
     "pending": "0",
     "flash": "—",
     "linked": true
