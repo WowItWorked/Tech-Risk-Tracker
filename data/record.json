@@ -2,18 +2,18 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-14T15:11:06-04:00",
+  "generatedAt": "2026-07-14T16:10:47-04:00",
   "issueNo": 4,
-  "recordHash": "ad84355",
+  "recordHash": "4f1708d",
   "windowLabel": "June 9 – July 14, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 403 for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook's fallback, returning 200; counted OK, not failed). One new item was admitted this intraday run: CISA added two exploited Microsoft flaws to its Known Exploited Vulnerabilities catalog — an Active Directory Federation Services flaw and a SharePoint Server flaw — the latter with a July 17, 2026 remediation deadline.",
-  "lastRun": "2026-07-14T15:11:06-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 403 for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook's fallback, returning 200; counted OK, not failed). Two new items were admitted this intraday run: nearly 300 fake GitHub repositories impersonating legitimate software and security projects were found pushing infostealer malware, with search traffic drawn in part through cryptocurrency and financial-tool searches; and federal prosecutors unsealed an indictment against three Russians tied to a bulletproof hosting provider — already under U.S. and allied sanctions — accused of giving cybercriminals infrastructure and technical support through Media Land and ML Cloud.",
+  "lastRun": "2026-07-14T16:10:47-04:00"
  },
  "lead": {
-  "head": "Leading stories: Microsoft’s July 2026 Patch Tuesday fixing a record 570 flaws, including two actively exploited zero-days; CISA adding two more exploited Microsoft flaws — in Active Directory Federation Services and SharePoint Server — to its known-exploited list; and a confirmed zero-day flaw behind last week’s ShareFile Storage Zone Controller shutdown",
-  "dek": "Today’s edition draws on the ten items recorded so far. Every item links to its source.",
+  "head": "Leading stories: Microsoft’s July 2026 Patch Tuesday fixing a record 570 flaws, including two actively exploited zero-days; the United States unsealing an indictment against three Russians tied to a bulletproof hosting provider; and CISA adding two more exploited Microsoft flaws — in Active Directory Federation Services and SharePoint Server — to its known-exploited list",
+  "dek": "Today’s edition draws on the twelve items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
@@ -32,28 +32,52 @@
     "p": "cyber",
     "tri": "priority",
     "st": "confirmed",
-    "id": "L-0075",
+    "id": "L-0077",
     "conf": "",
-    "text": "CISA adds two exploited Microsoft flaws to its known-exploited list: an Active Directory Federation Services flaw that lets an authorized attacker locally escalate privileges (CVE-2026-56155), and a SharePoint Server flaw that lets an unauthorized attacker escalate privileges over a network without authentication (CVE-2026-56164).",
-    "why": "CISA's addition of these flaws to its known-exploited list confirms both are being actively exploited, and sets a July 17, 2026 deadline to fix the SharePoint flaw — a signal for technology teams running Active Directory Federation Services or SharePoint Server to prioritize patching now.",
-    "srcText": "CISA KEV catalog, Jul 14",
-    "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    "text": "The United States unseals an indictment against three Russians tied to a bulletproof hosting provider previously sanctioned by the U.S. and two allies, accusing them of giving cybercriminals infrastructure and technical support through the St. Petersburg-based Media Land and a sister company, ML Cloud.",
+    "why": "Federal prosecutors unseal charges against three Russians tied to a hosting provider already under U.S. and allied sanctions for supplying cybercriminals with infrastructure and technical support — a reminder that law enforcement is targeting the infrastructure providers behind attacks, not just the attackers themselves.",
+    "srcText": "The Record, Jul 14",
+    "srcUrl": "https://therecord.media/us-unseals-indictment-russians-bulletproof-hosting"
    },
    {
     "n": "3",
     "p": "cyber",
     "tri": "priority",
     "st": "confirmed",
-    "id": "L-0073",
+    "id": "L-0075",
     "conf": "",
-    "text": "Progress Software confirms a high-severity zero-day flaw was behind last week’s emergency shutdown of ShareFile Storage Zone Controllers and releases security updates to patch it.",
-    "why": "Confirms the zero-day behind last week’s ShareFile shutdown was real — a signal for technology teams still running Storage Zone Controllers to apply Progress’s patch without delay.",
-    "srcText": "BleepingComputer, Jul 14",
-    "srcUrl": "https://www.bleepingcomputer.com/news/security/progress-confirms-sharefile-zero-day-flaw-behind-storage-zone-shutdown/"
+    "text": "CISA adds two exploited Microsoft flaws to its known-exploited list: an Active Directory Federation Services flaw that lets an authorized attacker locally escalate privileges (CVE-2026-56155), and a SharePoint Server flaw that lets an unauthorized attacker escalate privileges over a network without authentication (CVE-2026-56164).",
+    "why": "CISA's addition of these flaws to its known-exploited list confirms both are being actively exploited, and sets a July 17, 2026 deadline to fix the SharePoint flaw — a signal for technology teams running Active Directory Federation Services or SharePoint Server to prioritize patching now.",
+    "srcText": "CISA KEV catalog, Jul 14",
+    "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
    }
   ]
  },
  "wire": [
+  {
+   "ts": "2026-07-14T19:26:00Z",
+   "p": "cyber",
+   "tri": "priority",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0077",
+   "title": "The United States unseals an indictment against three Russians tied to a bulletproof hosting provider previously sanctioned by the U.S. and two allies, accusing them of giving cybercriminals infrastructure and technical support through the St. Petersburg-based Media Land and a sister company, ML Cloud.",
+   "src": "The Record",
+   "srcUrl": "https://therecord.media/us-unseals-indictment-russians-bulletproof-hosting",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-14T19:15:17Z",
+   "p": "cyber",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0076",
+   "title": "Criminals publish nearly 300 fake GitHub repositories impersonating legitimate software and security projects to distribute information-stealing malware; the campaign draws search traffic in part through cryptocurrency services and financial tools among the impersonated categories.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/nearly-300-github-repos-pose-as-legit-software-to-push-malware/",
+   "linked": true
+  },
   {
    "ts": "2026-07-14T18:01:36Z",
    "p": "cyber",
@@ -377,8 +401,8 @@
    "scope": "cybersecurity · exploitation & exposure",
    "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
    "opened": "July 2026",
-   "ver": "v24",
-   "verRange": "v1–v24",
+   "ver": "v26",
+   "verRange": "v1–v26",
    "asOf": "July 14, 2026",
    "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
    "p1Sup": "1, 3, 10",
@@ -388,6 +412,24 @@
    "assessSup": "1, 8",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 14, 26",
+     "st": "confirmed",
+     "ver": "v26",
+     "id": "L-0077",
+     "src": "The Record",
+     "srcUrl": "https://therecord.media/us-unseals-indictment-russians-bulletproof-hosting",
+     "line": "The United States unseals an indictment against three Russians tied to a bulletproof hosting provider previously sanctioned by the U.S. and two allies, accusing them of giving cybercriminals infrastructure and technical support through the St. Petersburg-based Media Land and a sister company, ML Cloud."
+    },
+    {
+     "date": "Jul 14, 26",
+     "st": "confirmed",
+     "ver": "v25",
+     "id": "L-0076",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/nearly-300-github-repos-pose-as-legit-software-to-push-malware/",
+     "line": "Criminals publish nearly 300 fake GitHub repositories impersonating legitimate software and security projects to distribute information-stealing malware; the campaign draws search traffic in part through cryptocurrency services and financial tools among the impersonated categories."
+    },
     {
      "date": "Jul 14, 26",
      "st": "confirmed",
@@ -787,6 +829,16 @@
      "n": "22",
      "text": "BleepingComputer — “CrashStealer” macOS credential/crypto-wallet-stealing malware, Jul 13, 2026",
      "url": "https://www.bleepingcomputer.com/news/security/new-crashstealer-malware-poses-as-apple-crash-reporting-tool/"
+    },
+    {
+     "n": "23",
+     "text": "BleepingComputer — nearly 300 fake GitHub repos push infostealer malware, Jul 14, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/nearly-300-github-repos-pose-as-legit-software-to-push-malware/"
+    },
+    {
+     "n": "24",
+     "text": "The Record — indictment unsealed against Russian bulletproof-hosting operators (Media Land / ML Cloud), Jul 14, 2026",
+     "url": "https://therecord.media/us-unseals-indictment-russians-bulletproof-hosting"
     }
    ],
    "related": [
@@ -2218,6 +2270,22 @@
    "line": "CISA adds two exploited Microsoft flaws to its known-exploited list: an Active Directory Federation Services flaw that lets an authorized attacker locally escalate privileges (CVE-2026-56155), and a SharePoint Server flaw that lets an unauthorized attacker escalate privileges over a network without authentication (CVE-2026-56164).",
    "src": "CISA KEV catalog",
    "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+  },
+  {
+   "d": "2026-07-14",
+   "p": "cyber",
+   "id": "L-0076",
+   "line": "Criminals publish nearly 300 fake GitHub repositories impersonating legitimate software and security projects to distribute information-stealing malware; the campaign draws search traffic in part through cryptocurrency services and financial tools among the impersonated categories.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/nearly-300-github-repos-pose-as-legit-software-to-push-malware/"
+  },
+  {
+   "d": "2026-07-14",
+   "p": "cyber",
+   "id": "L-0077",
+   "line": "The United States unseals an indictment against three Russians tied to a bulletproof hosting provider previously sanctioned by the U.S. and two allies, accusing them of giving cybercriminals infrastructure and technical support through the St. Petersburg-based Media Land and a sister company, ML Cloud.",
+   "src": "The Record",
+   "srcUrl": "https://therecord.media/us-unseals-indictment-russians-bulletproof-hosting"
   }
  ],
  "takeaways": [
@@ -2369,6 +2437,24 @@
    "conf": "moderate confidence",
    "head": "A backdoored npm package from a web-security vendor is a reminder to audit software-supply-chain exposure.",
    "body": "Hackers published a malicious version of the Jscrambler client-side web-security package, downloaded almost 1,500 times before it was pulled. Technology teams that used the affected package should treat their environment as compromised, rotate all secrets, and restore from safe backups."
+  },
+  {
+   "anchors": [
+    "L-0076"
+   ],
+   "pillars": "Cybersecurity",
+   "conf": "moderate confidence",
+   "head": "Fake GitHub repositories impersonating security and financial tools are pushing infostealer malware.",
+   "body": "Criminals have published nearly 300 fake GitHub repositories impersonating legitimate software, drawing search traffic aimed in part at security products, cryptocurrency services, and financial tools. Technology teams should verify the authenticity of any GitHub repository before downloading code, especially for security or financial tooling."
+  },
+  {
+   "anchors": [
+    "L-0077"
+   ],
+   "pillars": "Cybersecurity · fraud",
+   "conf": "moderate confidence",
+   "head": "A newly indicted bulletproof hosting operation is a new name for sanctions and threat-intelligence screening lists.",
+   "body": "Federal prosecutors unsealed an indictment against three Russians tied to a bulletproof hosting provider — already sanctioned by the U.S. and two allies — that gave cybercriminals infrastructure and technical support through Media Land and ML Cloud. Sanctions and threat-intelligence teams should add these entities to their screening and blocking lists."
   }
  ],
  "publications": {
@@ -2376,7 +2462,7 @@
    {
     "no": "4",
     "date": "Tue, Jul 14, 2026",
-    "confirmed": "10",
+    "confirmed": "12",
     "pending": "0",
     "flash": "1",
     "linked": true
