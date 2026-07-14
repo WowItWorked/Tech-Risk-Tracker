@@ -2,18 +2,18 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-14T16:10:47-04:00",
+  "generatedAt": "2026-07-14T17:09:54-04:00",
   "issueNo": 4,
-  "recordHash": "4f1708d",
+  "recordHash": "49b1964",
   "windowLabel": "June 9 – July 14, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 403 for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook's fallback, returning 200; counted OK, not failed). Two new items were admitted this intraday run: nearly 300 fake GitHub repositories impersonating legitimate software and security projects were found pushing infostealer malware, with search traffic drawn in part through cryptocurrency and financial-tool searches; and federal prosecutors unsealed an indictment against three Russians tied to a bulletproof hosting provider — already under U.S. and allied sanctions — accused of giving cybercriminals infrastructure and technical support through Media Land and ML Cloud.",
-  "lastRun": "2026-07-14T16:10:47-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 403 for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook's fallback, returning 200; counted OK, not failed). One new item was admitted this intraday run: Spanish police dismantled a cybercrime and money-laundering ring accused of making €140 million ($160 million) through investment fraud and business email compromise (BEC) attacks, arresting four people in Spain, Portugal, and Panama.",
+  "lastRun": "2026-07-14T17:09:54-04:00"
  },
  "lead": {
   "head": "Leading stories: Microsoft’s July 2026 Patch Tuesday fixing a record 570 flaws, including two actively exploited zero-days; the United States unsealing an indictment against three Russians tied to a bulletproof hosting provider; and CISA adding two more exploited Microsoft flaws — in Active Directory Federation Services and SharePoint Server — to its known-exploited list",
-  "dek": "Today’s edition draws on the twelve items recorded so far. Every item links to its source.",
+  "dek": "Today’s edition draws on the thirteen items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
@@ -54,6 +54,18 @@
   ]
  },
  "wire": [
+  {
+   "ts": "2026-07-14T20:23:09Z",
+   "p": "fraud",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0078",
+   "title": "Spanish police dismantle a cybercrime and money-laundering ring accused of making €140 million ($160 million) through investment fraud and business email compromise (BEC) attacks, arresting four people in Spain, Portugal, and Panama.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/spanish-police-take-down-140-million-cyber-fraud-ring-arrest-four/",
+   "linked": true
+  },
   {
    "ts": "2026-07-14T19:26:00Z",
    "p": "cyber",
@@ -889,9 +901,9 @@
    "scope": "fraud · AML rulemaking & scam patterns",
    "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
    "opened": "July 2026",
-   "ver": "v4",
-   "verRange": "v1–v4",
-   "asOf": "July 13, 2026",
+   "ver": "v5",
+   "verRange": "v1–v5",
+   "asOf": "July 14, 2026",
    "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22).",
    "p1Sup": "1, 3",
    "p2": "Operationally, the OCC is highlighting FinCEN’s updated Section 314(b) fact sheet clarifying how institutions can share suspected-fraud information with each other. The FBI’s recent consumer-facing warnings describe criminals redirecting users to fraudulent websites through malicious traffic-distribution systems. On the criminal side, a Bulgarian national already imprisoned for helping launder millions in fraud proceeds is charged with stealing $290,000 in government-seized cryptocurrency while incarcerated.",
@@ -900,6 +912,15 @@
    "assessSup": "2, 3",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 14, 26",
+     "st": "confirmed",
+     "ver": "v5",
+     "id": "L-0078",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/spanish-police-take-down-140-million-cyber-fraud-ring-arrest-four/",
+     "line": "Spanish police dismantle a cybercrime and money-laundering ring accused of making €140 million ($160 million) through investment fraud and business email compromise (BEC) attacks, arresting four people in Spain, Portugal, and Panama."
+    },
     {
      "date": "Jul 13, 26",
      "st": "confirmed",
@@ -2286,6 +2307,14 @@
    "line": "The United States unseals an indictment against three Russians tied to a bulletproof hosting provider previously sanctioned by the U.S. and two allies, accusing them of giving cybercriminals infrastructure and technical support through the St. Petersburg-based Media Land and a sister company, ML Cloud.",
    "src": "The Record",
    "srcUrl": "https://therecord.media/us-unseals-indictment-russians-bulletproof-hosting"
+  },
+  {
+   "d": "2026-07-14",
+   "p": "fraud",
+   "id": "L-0078",
+   "line": "Spanish police dismantle a cybercrime and money-laundering ring accused of making €140 million ($160 million) through investment fraud and business email compromise (BEC) attacks, arresting four people in Spain, Portugal, and Panama.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/spanish-police-take-down-140-million-cyber-fraud-ring-arrest-four/"
   }
  ],
  "takeaways": [
@@ -2462,7 +2491,7 @@
    {
     "no": "4",
     "date": "Tue, Jul 14, 2026",
-    "confirmed": "12",
+    "confirmed": "13",
     "pending": "0",
     "flash": "1",
     "linked": true
