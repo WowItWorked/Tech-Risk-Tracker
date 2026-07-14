@@ -2,18 +2,18 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-14T14:09:50-04:00",
+  "generatedAt": "2026-07-14T15:11:06-04:00",
   "issueNo": 4,
-  "recordHash": "1068fd0",
+  "recordHash": "ad84355",
   "windowLabel": "June 9 – July 14, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 403 for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook's fallback, returning 200; counted OK, not failed). One new item was admitted this intraday run: BleepingComputer's report on Microsoft's July 2026 Patch Tuesday, which fixed a record-breaking 570 flaws including two zero-day vulnerabilities that were already being exploited in attacks.",
-  "lastRun": "2026-07-14T14:09:50-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 403 for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook's fallback, returning 200; counted OK, not failed). One new item was admitted this intraday run: CISA added two exploited Microsoft flaws to its Known Exploited Vulnerabilities catalog — an Active Directory Federation Services flaw and a SharePoint Server flaw — the latter with a July 17, 2026 remediation deadline.",
+  "lastRun": "2026-07-14T15:11:06-04:00"
  },
  "lead": {
-  "head": "Leading stories: Microsoft’s July 2026 Patch Tuesday fixing a record 570 flaws, including two actively exploited zero-days; a confirmed zero-day flaw behind last week’s ShareFile Storage Zone Controller shutdown; and a phishing campaign using fake security-notice emails against LastPass and Bitwarden users",
-  "dek": "Today’s edition draws on the nine items recorded so far. Every item links to its source.",
+  "head": "Leading stories: Microsoft’s July 2026 Patch Tuesday fixing a record 570 flaws, including two actively exploited zero-days; CISA adding two more exploited Microsoft flaws — in Active Directory Federation Services and SharePoint Server — to its known-exploited list; and a confirmed zero-day flaw behind last week’s ShareFile Storage Zone Controller shutdown",
+  "dek": "Today’s edition draws on the ten items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
@@ -32,24 +32,24 @@
     "p": "cyber",
     "tri": "priority",
     "st": "confirmed",
+    "id": "L-0075",
+    "conf": "",
+    "text": "CISA adds two exploited Microsoft flaws to its known-exploited list: an Active Directory Federation Services flaw that lets an authorized attacker locally escalate privileges (CVE-2026-56155), and a SharePoint Server flaw that lets an unauthorized attacker escalate privileges over a network without authentication (CVE-2026-56164).",
+    "why": "CISA's addition of these flaws to its known-exploited list confirms both are being actively exploited, and sets a July 17, 2026 deadline to fix the SharePoint flaw — a signal for technology teams running Active Directory Federation Services or SharePoint Server to prioritize patching now.",
+    "srcText": "CISA KEV catalog, Jul 14",
+    "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+   },
+   {
+    "n": "3",
+    "p": "cyber",
+    "tri": "priority",
+    "st": "confirmed",
     "id": "L-0073",
     "conf": "",
     "text": "Progress Software confirms a high-severity zero-day flaw was behind last week’s emergency shutdown of ShareFile Storage Zone Controllers and releases security updates to patch it.",
     "why": "Confirms the zero-day behind last week’s ShareFile shutdown was real — a signal for technology teams still running Storage Zone Controllers to apply Progress’s patch without delay.",
     "srcText": "BleepingComputer, Jul 14",
     "srcUrl": "https://www.bleepingcomputer.com/news/security/progress-confirms-sharefile-zero-day-flaw-behind-storage-zone-shutdown/"
-   },
-   {
-    "n": "3",
-    "p": "cyber",
-    "tri": "routine",
-    "st": "confirmed",
-    "id": "L-0072",
-    "conf": "",
-    "text": "LastPass warns that criminals are running a phishing campaign using fake security-notice emails to direct users to fraudulent websites; BleepingComputer reports Bitwarden users are being targeted by similar emails.",
-    "why": "A prompt for technology and security teams to alert any employees using LastPass or Bitwarden to this specific phishing pattern before they click through fake security-policy emails.",
-    "srcText": "BleepingComputer, Jul 14",
-    "srcUrl": "https://www.bleepingcomputer.com/news/security/lastpass-bitwarden-users-targeted-with-fake-security-alerts/"
    }
   ]
  },
@@ -64,6 +64,18 @@
    "title": "Microsoft's July 2026 Patch Tuesday fixes a record-breaking 570 flaws, including two zero-day vulnerabilities that criminals were already exploiting and one that was publicly disclosed.",
    "src": "BleepingComputer",
    "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-july-2026-patch-tuesday-fixes-massive-570-flaws-3-zero-days/",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-14T17:38:34Z",
+   "p": "cyber",
+   "tri": "priority",
+   "st": "confirmed",
+   "tier": "T1",
+   "id": "L-0075",
+   "title": "CISA adds two exploited Microsoft flaws to its known-exploited list: an Active Directory Federation Services flaw that lets an authorized attacker locally escalate privileges (CVE-2026-56155), and a SharePoint Server flaw that lets an unauthorized attacker escalate privileges over a network without authentication (CVE-2026-56164).",
+   "src": "CISA KEV catalog",
+   "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
    "linked": true
   },
   {
@@ -365,8 +377,8 @@
    "scope": "cybersecurity · exploitation & exposure",
    "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
    "opened": "July 2026",
-   "ver": "v23",
-   "verRange": "v1–v23",
+   "ver": "v24",
+   "verRange": "v1–v24",
    "asOf": "July 14, 2026",
    "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
    "p1Sup": "1, 3, 10",
@@ -376,6 +388,15 @@
    "assessSup": "1, 8",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 14, 26",
+     "st": "confirmed",
+     "ver": "v24",
+     "id": "L-0075",
+     "src": "CISA KEV catalog",
+     "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+     "line": "CISA adds two exploited Microsoft flaws to its known-exploited list: an Active Directory Federation Services flaw that lets an authorized attacker locally escalate privileges (CVE-2026-56155), and a SharePoint Server flaw that lets an unauthorized attacker escalate privileges over a network without authentication (CVE-2026-56164, remediation due July 17, 2026)."
+    },
     {
      "date": "Jul 14, 26",
      "st": "confirmed",
@@ -2189,6 +2210,14 @@
    "line": "Microsoft's July 2026 Patch Tuesday fixes a record-breaking 570 flaws, including two zero-day vulnerabilities that criminals were already exploiting and one that was publicly disclosed.",
    "src": "BleepingComputer",
    "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-july-2026-patch-tuesday-fixes-massive-570-flaws-3-zero-days/"
+  },
+  {
+   "d": "2026-07-14",
+   "p": "cyber",
+   "id": "L-0075",
+   "line": "CISA adds two exploited Microsoft flaws to its known-exploited list: an Active Directory Federation Services flaw that lets an authorized attacker locally escalate privileges (CVE-2026-56155), and a SharePoint Server flaw that lets an unauthorized attacker escalate privileges over a network without authentication (CVE-2026-56164).",
+   "src": "CISA KEV catalog",
+   "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
   }
  ],
  "takeaways": [
@@ -2209,6 +2238,15 @@
    "conf": "high confidence",
    "head": "The ShareFile zero-day behind last week’s emergency shutdown is now patchable.",
    "body": "Progress Software confirmed a high-severity zero-day vulnerability caused last week’s emergency shutdown of ShareFile Storage Zone Controllers and has released security updates to fix it. Technology teams running Storage Zone Controllers should apply the update now."
+  },
+  {
+   "anchors": [
+    "L-0075"
+   ],
+   "pillars": "Cybersecurity",
+   "conf": "high confidence",
+   "head": "Two more actively exploited Microsoft flaws are on CISA's known-exploited list, one due for a fix by July 17.",
+   "body": "CISA added an Active Directory Federation Services privilege-escalation flaw (CVE-2026-56155) and a SharePoint Server flaw exploitable over a network without authentication (CVE-2026-56164) to its known-exploited vulnerabilities catalog, giving the SharePoint flaw a July 17, 2026 remediation deadline. Technology teams running either product should prioritize patching now."
   },
   {
    "anchors": [
@@ -2338,7 +2376,7 @@
    {
     "no": "4",
     "date": "Tue, Jul 14, 2026",
-    "confirmed": "9",
+    "confirmed": "10",
     "pending": "0",
     "flash": "1",
     "linked": true
