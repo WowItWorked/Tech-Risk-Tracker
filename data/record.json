@@ -2,18 +2,18 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-15T17:11:31-04:00",
+  "generatedAt": "2026-07-15T18:11:00-04:00",
   "issueNo": 5,
-  "recordHash": "45b5b73",
+  "recordHash": "3661ce5",
   "windowLabel": "June 9 – July 15, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). Two new items were admitted this run: a BleepingComputer report on a critical, already-patched Zoom account-takeover flaw (CVE-2026-53412), and a Dark Reading report that email-based attacks, not software flaws, became the leading cause of ransomware incidents last year.",
-  "lastRun": "2026-07-15T17:11:31-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). Two new items were admitted this run: a BleepingComputer follow-up naming the main suspect and additional arrests in the previously recorded Dutch investment-fraud case, and a Dark Reading report on revoked UEFI shim bootloaders that still bypass Secure Boot.",
+  "lastRun": "2026-07-15T18:11:00-04:00"
  },
  "lead": {
   "head": "Leading stories: a newly catalogued flaw letting attackers take over Oracle Payments without valid credentials; additional flaws being chained into the active SharePoint attacks with a full fix not expected until August; and the U.S. government’s launch of “Gold Eagle,” a program to speed up finding and fixing software flaws across industries and sectors",
-  "dek": "Today’s edition draws on the eighteen items recorded so far. Every item links to its source.",
+  "dek": "Today’s edition draws on the twenty items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
@@ -54,6 +54,30 @@
   ]
  },
  "wire": [
+  {
+   "ts": "2026-07-15T21:55:50Z",
+   "p": "fraud",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0098",
+   "title": "BleepingComputer names the main suspect behind an investment fraud ring as a 46-year-old Israeli-Polish national arrested in Poland on May 26, with additional Dutch and Belgian nationals arrested in Cyprus, Greece, and Belgium between July 7 and 10; Dutch authorities have linked at least 550 fraud reports and $28.6 million in reported losses to the organization.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/dutch-police-bust-investment-fraud-ring-stealing-over-100-million/",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-15T21:19:19Z",
+   "p": "cyber",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0099",
+   "title": "Dark Reading reports that nearly a dozen vulnerable, now-revoked Unified Extensible Firmware Interface (UEFI) shim bootloaders remained trusted for years, giving criminals a way to bypass Secure Boot — the check meant to verify only trusted software runs when a device starts up.",
+   "src": "Dark Reading",
+   "srcUrl": "https://www.darkreading.com/cyber-risk/forgotten-bootloaders-expose-secure-boot-blind-spot",
+   "linked": true
+  },
   {
    "ts": "2026-07-15T20:16:13Z",
    "p": "cyber",
@@ -515,8 +539,8 @@
    "scope": "cybersecurity · exploitation & exposure",
    "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
    "opened": "July 2026",
-   "ver": "v36",
-   "verRange": "v1–v36",
+   "ver": "v37",
+   "verRange": "v1–v37",
    "asOf": "July 15, 2026",
    "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
    "p1Sup": "1, 3, 10",
@@ -526,6 +550,15 @@
    "assessSup": "1, 8",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 15, 26",
+     "st": "confirmed",
+     "ver": "v37",
+     "id": "L-0099",
+     "src": "Dark Reading",
+     "srcUrl": "https://www.darkreading.com/cyber-risk/forgotten-bootloaders-expose-secure-boot-blind-spot",
+     "line": "Dark Reading reports that nearly a dozen vulnerable, now-revoked Unified Extensible Firmware Interface (UEFI) shim bootloaders remained trusted for years, giving criminals a way to bypass Secure Boot — the check meant to verify only trusted software runs when a device starts up."
+    },
     {
      "date": "Jul 15, 26",
      "st": "confirmed",
@@ -1093,6 +1126,11 @@
      "n": "34",
      "text": "Dark Reading — identity attacks overtake exploits as top ransomware cause, Jul 15, 2026",
      "url": "https://www.darkreading.com/identity-access-management-security/identity-attacks-overtake-exploits-top-ransomware-cause"
+    },
+    {
+     "n": "35",
+     "text": "Dark Reading — UEFI shim bootloader Secure Boot bypass report, Jul 15, 2026",
+     "url": "https://www.darkreading.com/cyber-risk/forgotten-bootloaders-expose-secure-boot-blind-spot"
     }
    ],
    "related": [
@@ -1143,8 +1181,8 @@
    "scope": "fraud · AML rulemaking & scam patterns",
    "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
    "opened": "July 2026",
-   "ver": "v9",
-   "verRange": "v1–v9",
+   "ver": "v10",
+   "verRange": "v1–v10",
    "asOf": "July 15, 2026",
    "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22).",
    "p1Sup": "1, 3",
@@ -1154,6 +1192,15 @@
    "assessSup": "2, 3",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 15, 26",
+     "st": "confirmed",
+     "ver": "v10",
+     "id": "L-0098",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/dutch-police-bust-investment-fraud-ring-stealing-over-100-million/",
+     "line": "BleepingComputer names the main suspect behind an investment fraud ring as a 46-year-old Israeli-Polish national arrested in Poland on May 26, with additional Dutch and Belgian nationals arrested in Cyprus, Greece, and Belgium between July 7 and 10; Dutch authorities have linked at least 550 fraud reports and $28.6 million in reported losses to the organization."
+    },
     {
      "date": "Jul 15, 26",
      "st": "confirmed",
@@ -1359,6 +1406,11 @@
      "n": "12",
      "text": "The Record — Dutch police dismantle global crypto investment scam, Jul 15, 2026",
      "url": "https://therecord.media/dutch-police-dismantle-global-crypto-investment-scam"
+    },
+    {
+     "n": "13",
+     "text": "BleepingComputer — Dutch investment-fraud-ring suspect ID and additional arrests, Jul 15, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/dutch-police-bust-investment-fraud-ring-stealing-over-100-million/"
     }
    ],
    "related": [
@@ -2793,6 +2845,22 @@
    "line": "Dark Reading reports that email-based attacks, not software flaws, became the leading cause of ransomware incidents last year, and that multi-factor authentication (MFA) — a login check beyond just a password — was used in 97% of attacks based on stolen or guessed logins but still failed to stop the criminals.",
    "src": "Dark Reading",
    "srcUrl": "https://www.darkreading.com/identity-access-management-security/identity-attacks-overtake-exploits-top-ransomware-cause"
+  },
+  {
+   "d": "2026-07-15",
+   "p": "fraud",
+   "id": "L-0098",
+   "line": "BleepingComputer names the main suspect behind an investment fraud ring as a 46-year-old Israeli-Polish national arrested in Poland on May 26, with additional Dutch and Belgian nationals arrested in Cyprus, Greece, and Belgium between July 7 and 10; Dutch authorities have linked at least 550 fraud reports and $28.6 million in reported losses to the organization.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/dutch-police-bust-investment-fraud-ring-stealing-over-100-million/"
+  },
+  {
+   "d": "2026-07-15",
+   "p": "cyber",
+   "id": "L-0099",
+   "line": "Dark Reading reports that nearly a dozen vulnerable, now-revoked Unified Extensible Firmware Interface (UEFI) shim bootloaders remained trusted for years, giving criminals a way to bypass Secure Boot — the check meant to verify only trusted software runs when a device starts up.",
+   "src": "Dark Reading",
+   "srcUrl": "https://www.darkreading.com/cyber-risk/forgotten-bootloaders-expose-secure-boot-blind-spot"
   }
  ],
  "takeaways": [
@@ -3023,7 +3091,7 @@
    {
     "no": "5",
     "date": "Wed, Jul 15, 2026",
-    "confirmed": "18",
+    "confirmed": "20",
     "pending": "0",
     "flash": "—",
     "linked": true
