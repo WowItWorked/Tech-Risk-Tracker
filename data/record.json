@@ -2,18 +2,18 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-15T10:11:00-04:00",
+  "generatedAt": "2026-07-15T11:11:00-04:00",
   "issueNo": 5,
-  "recordHash": "abd7ed5",
+  "recordHash": "e15377e",
   "windowLabel": "June 9 – July 15, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 403 for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook's fallback, returning 200; counted OK, not failed). Two new items were admitted this run: a BleepingComputer report on a security company's AI-powered tool that automatically discovered and exploited a previously unknown WordPress plugin flaw, and a DOJ press release on a former U.S. Department of Education employee's settlement over false Paycheck Protection Program (PPP) loan claims.",
-  "lastRun": "2026-07-15T10:11:00-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned, all directly (no browser-User-Agent fallback needed this run). One new item was admitted this run: a The Record report on Dutch police dismantling a global cryptocurrency investment scam and arresting its alleged mastermind.",
+  "lastRun": "2026-07-15T11:11:00-04:00"
  },
  "lead": {
-  "head": "Leading stories: CISA warning that criminals are actively exploiting three flaws in internet-exposed, on-premises Microsoft SharePoint Server systems; a company demonstrating an AI-powered tool that automatically found and exploited a previously unknown flaw in a WordPress plugin; and a two-click flaw letting criminals take over a developer's environment in Cursor, a popular artificial intelligence (AI) coding platform",
-  "dek": "Today’s edition draws on the seven items recorded so far. Every item links to its source.",
+  "head": "Leading stories: CISA warning that criminals are actively exploiting three flaws in internet-exposed, on-premises Microsoft SharePoint Server systems; Dutch police dismantling a global cryptocurrency investment scam and arresting its alleged mastermind; and a company demonstrating an AI-powered tool that automatically found and exploited a previously unknown flaw in a WordPress plugin",
+  "dek": "Today’s edition draws on the eight items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
@@ -29,6 +29,18 @@
    },
    {
     "n": "2",
+    "p": "fraud",
+    "tri": "routine",
+    "st": "confirmed",
+    "id": "L-0087",
+    "conf": "",
+    "text": "Dutch police dismantle a global cryptocurrency investment scam and arrest its alleged mastermind. Authorities said the group had operated like a legitimate international business since at least 2021, running about two dozen call centers across several countries and employing more than 700 people who posed as professional financial advisers.",
+    "why": "A criminal organization operated like a legitimate international business — running about two dozen call centers and employing more than 700 people posing as financial advisers — the kind of elaborate investment-fraud front that banks' fraud and anti-money-laundering teams should watch for in suspicious account activity.",
+    "srcText": "The Record, Jul 15",
+    "srcUrl": "https://therecord.media/dutch-police-dismantle-global-crypto-investment-scam"
+   },
+   {
+    "n": "3",
     "p": "ai",
     "tri": "routine",
     "st": "confirmed",
@@ -38,22 +50,22 @@
     "why": "An AI-powered tool automatically finding and exploiting a real, previously unknown software flaw is a concrete sign of how far automated vulnerability discovery has advanced, and a trend technology and security teams should track.",
     "srcText": "BleepingComputer, Jul 15",
     "srcUrl": "https://www.bleepingcomputer.com/news/security/we-built-a-vulnerability-vending-machine-ai-tokens-in-zero-days-out/"
-   },
-   {
-    "n": "3",
-    "p": "ai",
-    "tri": "routine",
-    "st": "confirmed",
-    "id": "L-0084",
-    "conf": "",
-    "text": "A flaw requiring only two clicks lets criminals take over a developer's environment in Cursor, a popular artificial intelligence (AI) coding platform, exploiting old, simple bugs to access developers' secrets and source code.",
-    "why": "The exploit's low bar — just two clicks — makes this a practical risk for technology teams whose developers use Cursor, since it can expose their secrets and source code to criminals.",
-    "srcText": "Dark Reading, Jul 15",
-    "srcUrl": "https://www.darkreading.com/application-security/2-click-cursor-exploit-dev-environment-takeover"
    }
   ]
  },
  "wire": [
+  {
+   "ts": "2026-07-15T14:14:00Z",
+   "p": "fraud",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0087",
+   "title": "Dutch police dismantle a global cryptocurrency investment scam and arrest its alleged mastermind. Authorities said the group had operated like a legitimate international business since at least 2021, running about two dozen call centers across several countries and employing more than 700 people who posed as professional financial advisers.",
+   "src": "The Record",
+   "srcUrl": "https://therecord.media/dutch-police-dismantle-global-crypto-investment-scam",
+   "linked": true
+  },
   {
    "ts": "2026-07-15T14:01:11Z",
    "p": "ai",
@@ -899,8 +911,8 @@
    "scope": "fraud · AML rulemaking & scam patterns",
    "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
    "opened": "July 2026",
-   "ver": "v8",
-   "verRange": "v1–v8",
+   "ver": "v9",
+   "verRange": "v1–v9",
    "asOf": "July 15, 2026",
    "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22).",
    "p1Sup": "1, 3",
@@ -910,6 +922,15 @@
    "assessSup": "2, 3",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 15, 26",
+     "st": "confirmed",
+     "ver": "v9",
+     "id": "L-0087",
+     "src": "The Record",
+     "srcUrl": "https://therecord.media/dutch-police-dismantle-global-crypto-investment-scam",
+     "line": "Dutch police dismantle a global cryptocurrency investment scam and arrest its alleged mastermind. Authorities said the group had operated like a legitimate international business since at least 2021, running about two dozen call centers across several countries and employing more than 700 people who posed as professional financial advisers."
+    },
     {
      "date": "Jul 15, 26",
      "st": "confirmed",
@@ -1101,6 +1122,11 @@
      "n": "11",
      "text": "DOJ — PPP loan fraud settlement, former Dept. of Education employee, Jul 15, 2026",
      "url": "https://www.justice.gov/usao-md/pr/former-department-education-employee-agrees-pay-more-160000-resolve-false-claims-act"
+    },
+    {
+     "n": "12",
+     "text": "The Record — Dutch police dismantle global crypto investment scam, Jul 15, 2026",
+     "url": "https://therecord.media/dutch-police-dismantle-global-crypto-investment-scam"
     }
    ],
    "related": [
@@ -2419,6 +2445,14 @@
    "line": "A company called Intruder built an AI-powered tool it calls a “vulnerability vending machine,” which combines code analysis with large language models (LLMs) to automatically find complex software flaws; the company says it used the tool to discover and exploit a previously unknown flaw in a WordPress plugin, with more findings already reported privately to the affected software makers for fixing.",
    "src": "BleepingComputer",
    "srcUrl": "https://www.bleepingcomputer.com/news/security/we-built-a-vulnerability-vending-machine-ai-tokens-in-zero-days-out/"
+  },
+  {
+   "d": "2026-07-15",
+   "p": "fraud",
+   "id": "L-0087",
+   "line": "Dutch police dismantle a global cryptocurrency investment scam and arrest its alleged mastermind. Authorities said the group had operated like a legitimate international business since at least 2021, running about two dozen call centers across several countries and employing more than 700 people who posed as professional financial advisers.",
+   "src": "The Record",
+   "srcUrl": "https://therecord.media/dutch-police-dismantle-global-crypto-investment-scam"
   }
  ],
  "takeaways": [
@@ -2622,7 +2656,7 @@
    {
     "no": "5",
     "date": "Wed, Jul 15, 2026",
-    "confirmed": "7",
+    "confirmed": "8",
     "pending": "0",
     "flash": "—",
     "linked": true
