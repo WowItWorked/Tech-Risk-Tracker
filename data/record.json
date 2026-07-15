@@ -2,21 +2,45 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-15T11:11:00-04:00",
+  "generatedAt": "2026-07-15T12:14:49-04:00",
   "issueNo": 5,
-  "recordHash": "e15377e",
+  "recordHash": "1e3ef48",
   "windowLabel": "June 9 – July 15, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned, all directly (no browser-User-Agent fallback needed this run). One new item was admitted this run: a The Record report on Dutch police dismantling a global cryptocurrency investment scam and arresting its alleged mastermind.",
-  "lastRun": "2026-07-15T11:11:00-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). Four new items were admitted this run: two Cybersecurity Dive reports — the federal government’s launch of the AI-assisted “Gold Eagle” vulnerability clearinghouse, and additional flaws being chained into the active SharePoint attacks with a fix not expected until August — a Dark Reading report on a now-fixed flaw in Claude that could send malicious prompts to AI agents, and a BleepingComputer report on malicious AsyncAPI npm packages carrying credential-stealing malware.",
+  "lastRun": "2026-07-15T12:14:49-04:00"
  },
  "lead": {
-  "head": "Leading stories: CISA warning that criminals are actively exploiting three flaws in internet-exposed, on-premises Microsoft SharePoint Server systems; Dutch police dismantling a global cryptocurrency investment scam and arresting its alleged mastermind; and a company demonstrating an AI-powered tool that automatically found and exploited a previously unknown flaw in a WordPress plugin",
-  "dek": "Today’s edition draws on the eight items recorded so far. Every item links to its source.",
+  "head": "Leading stories: additional flaws being chained into the active SharePoint attacks with a full fix not expected until August; the U.S. government’s launch of “Gold Eagle,” a program to speed up finding and fixing software flaws across industries and sectors; and CISA’s warning that criminals are actively exploiting three flaws in internet-exposed, on-premises Microsoft SharePoint Server systems",
+  "dek": "Today’s edition draws on the twelve items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
+    "p": "cyber",
+    "tri": "priority",
+    "st": "confirmed",
+    "id": "L-0089",
+    "conf": "",
+    "text": "Cybersecurity Dive reports that security researchers say additional flaws in SharePoint are being chained together, and a fix will not be available until August; researchers at Rapid7 separately warn that a newly disclosed flaw, tracked as CVE-2026-55040, could let attackers run code remotely if combined with a second flaw.",
+    "why": "This underscores the urgency of patching SharePoint now: additional flaws are being chained into the attack, and a full fix isn't expected until August.",
+    "srcText": "Cybersecurity Dive, Jul 15",
+    "srcUrl": "https://www.cybersecuritydive.com/news/cisa-multiple-vulnerabilities-sharepoint-exploitation/825306/"
+   },
+   {
+    "n": "2",
+    "p": "cyber",
+    "tri": "priority",
+    "st": "confirmed",
+    "id": "L-0088",
+    "conf": "",
+    "text": "The Trump administration launches \"Gold Eagle,\" a government-coordinated program that uses artificial intelligence (AI) tools and security researchers to speed up the discovery and fixing of software flaws; the White House says the program has already begun taking in and prioritizing vulnerabilities \"from across industries and sectors.\"",
+    "why": "This is a new federal effort to speed up how quickly newly discovered software flaws are found and fixed across industries and sectors, a pipeline technology and security teams should watch as it matures.",
+    "srcText": "Cybersecurity Dive, Jul 15",
+    "srcUrl": "https://www.cybersecuritydive.com/news/vulnerability-clearinghouse-ai-white-house-launch-gold-eagle/825298/"
+   },
+   {
+    "n": "3",
     "p": "cyber",
     "tri": "priority",
     "st": "confirmed",
@@ -26,34 +50,58 @@
     "why": "CISA's warning that criminals are already exploiting these flaws gives technology teams a clear signal to patch on-premises SharePoint Server systems now.",
     "srcText": "BleepingComputer, Jul 15",
     "srcUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-patch-actively-exploited-sharepoint-flaws/"
-   },
-   {
-    "n": "2",
-    "p": "fraud",
-    "tri": "routine",
-    "st": "confirmed",
-    "id": "L-0087",
-    "conf": "",
-    "text": "Dutch police dismantle a global cryptocurrency investment scam and arrest its alleged mastermind. Authorities said the group had operated like a legitimate international business since at least 2021, running about two dozen call centers across several countries and employing more than 700 people who posed as professional financial advisers.",
-    "why": "A criminal organization operated like a legitimate international business — running about two dozen call centers and employing more than 700 people posing as financial advisers — the kind of elaborate investment-fraud front that banks' fraud and anti-money-laundering teams should watch for in suspicious account activity.",
-    "srcText": "The Record, Jul 15",
-    "srcUrl": "https://therecord.media/dutch-police-dismantle-global-crypto-investment-scam"
-   },
-   {
-    "n": "3",
-    "p": "ai",
-    "tri": "routine",
-    "st": "confirmed",
-    "id": "L-0086",
-    "conf": "",
-    "text": "A company called Intruder built an AI-powered tool it calls a “vulnerability vending machine,” which combines code analysis with large language models (LLMs) to automatically find complex software flaws; the company says it used the tool to discover and exploit a previously unknown flaw in a WordPress plugin, with more findings already reported privately to the affected software makers for fixing.",
-    "why": "An AI-powered tool automatically finding and exploiting a real, previously unknown software flaw is a concrete sign of how far automated vulnerability discovery has advanced, and a trend technology and security teams should track.",
-    "srcText": "BleepingComputer, Jul 15",
-    "srcUrl": "https://www.bleepingcomputer.com/news/security/we-built-a-vulnerability-vending-machine-ai-tokens-in-zero-days-out/"
    }
   ]
  },
  "wire": [
+  {
+   "ts": "2026-07-15T15:37:27Z",
+   "p": "tp",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0091",
+   "title": "Five malicious versions of AsyncAPI software packages were published to the Node Package Manager (npm) in a supply-chain attack that delivered a remote access trojan (RAT) with credential- and information-stealing capabilities, BleepingComputer reports.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/-asyncapi-npm-packages-infected-with-credential-stealing-malware/",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-15T15:27:35Z",
+   "p": "ai",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0090",
+   "title": "A flaw in Claude, nicknamed \"PromptFiction,\" automatically sent malicious prompts to AI agents; combined with another exploit, it could have enabled an end-to-end attack on a targeted system. The flaw has since been fixed.",
+   "src": "Dark Reading",
+   "srcUrl": "https://www.darkreading.com/vulnerabilities-threats/claude-flaw-malicious-prompts-ai-agents",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-15T15:05:44Z",
+   "p": "cyber",
+   "tri": "priority",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0089",
+   "title": "Cybersecurity Dive reports that security researchers say additional flaws in SharePoint are being chained together, and a fix will not be available until August; researchers at Rapid7 separately warn that a newly disclosed flaw, tracked as CVE-2026-55040, could let attackers run code remotely if combined with a second flaw.",
+   "src": "Cybersecurity Dive",
+   "srcUrl": "https://www.cybersecuritydive.com/news/cisa-multiple-vulnerabilities-sharepoint-exploitation/825306/",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-15T14:51:12Z",
+   "p": "cyber",
+   "tri": "priority",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0088",
+   "title": "The Trump administration launches \"Gold Eagle,\" a government-coordinated program that uses artificial intelligence (AI) tools and security researchers to speed up the discovery and fixing of software flaws; the White House says the program has already begun taking in and prioritizing vulnerabilities \"from across industries and sectors.\"",
+   "src": "Cybersecurity Dive",
+   "srcUrl": "https://www.cybersecuritydive.com/news/vulnerability-clearinghouse-ai-white-house-launch-gold-eagle/825298/",
+   "linked": true
+  },
   {
    "ts": "2026-07-15T14:14:00Z",
    "p": "fraud",
@@ -157,8 +205,8 @@
    "scope": "artificial intelligence · capability & governance",
    "watch": "Frontier capability, bank-scale adoption, and the governance that is (or is not) keeping pace — from allowlisted lab, regulator, and press feeds.",
    "opened": "July 2026",
-   "ver": "v6",
-   "verRange": "v1–v6",
+   "ver": "v7",
+   "verRange": "v1–v7",
    "asOf": "July 15, 2026",
    "p1": "Frontier capability advanced again this window: OpenAI released GPT-5.6 on July 9, describing it as delivering “more intelligence from every token, stronger performance per dollar.”",
    "p1Sup": "1",
@@ -168,6 +216,15 @@
    "assessSup": "5, 6",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 15, 26",
+     "st": "confirmed",
+     "ver": "v7",
+     "id": "L-0090",
+     "src": "Dark Reading",
+     "srcUrl": "https://www.darkreading.com/vulnerabilities-threats/claude-flaw-malicious-prompts-ai-agents",
+     "line": "A flaw in Claude, nicknamed \"PromptFiction,\" automatically sent malicious prompts to AI agents; combined with another exploit, it could have enabled an end-to-end attack on a targeted system. The flaw has since been fixed."
+    },
     {
      "date": "Jul 15, 26",
      "st": "confirmed",
@@ -336,6 +393,11 @@
      "n": "10",
      "text": "BleepingComputer — “We built a vulnerability vending machine: AI tokens in, zero-days out,” Jul 15, 2026",
      "url": "https://www.bleepingcomputer.com/news/security/we-built-a-vulnerability-vending-machine-ai-tokens-in-zero-days-out/"
+    },
+    {
+     "n": "11",
+     "text": "Dark Reading — Claude \"PromptFiction\" flaw, Jul 15, 2026",
+     "url": "https://www.darkreading.com/vulnerabilities-threats/claude-flaw-malicious-prompts-ai-agents"
     }
    ],
    "related": [
@@ -381,8 +443,8 @@
    "scope": "cybersecurity · exploitation & exposure",
    "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
    "opened": "July 2026",
-   "ver": "v29",
-   "verRange": "v1–v29",
+   "ver": "v31",
+   "verRange": "v1–v31",
    "asOf": "July 15, 2026",
    "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
    "p1Sup": "1, 3, 10",
@@ -392,6 +454,24 @@
    "assessSup": "1, 8",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 15, 26",
+     "st": "confirmed",
+     "ver": "v31",
+     "id": "L-0089",
+     "src": "Cybersecurity Dive",
+     "srcUrl": "https://www.cybersecuritydive.com/news/cisa-multiple-vulnerabilities-sharepoint-exploitation/825306/",
+     "line": "Cybersecurity Dive reports that security researchers say additional flaws in SharePoint are being chained together, and a fix will not be available until August; researchers at Rapid7 separately warn that a newly disclosed flaw, tracked as CVE-2026-55040, could let attackers run code remotely if combined with a second flaw."
+    },
+    {
+     "date": "Jul 15, 26",
+     "st": "confirmed",
+     "ver": "v30",
+     "id": "L-0088",
+     "src": "Cybersecurity Dive",
+     "srcUrl": "https://www.cybersecuritydive.com/news/vulnerability-clearinghouse-ai-white-house-launch-gold-eagle/825298/",
+     "line": "The Trump administration launches \"Gold Eagle,\" a government-coordinated program that uses artificial intelligence (AI) tools and security researchers to speed up the discovery and fixing of software flaws; the White House says the program has already begun taking in and prioritizing vulnerabilities \"from across industries and sectors.\""
+    },
     {
      "date": "Jul 15, 26",
      "st": "confirmed",
@@ -861,6 +941,16 @@
      "n": "27",
      "text": "BleepingComputer — Entra ID default passkey authentication announcement, Jul 14, 2026",
      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-entra-id-gets-passkeys-default-authentication-starting-september/"
+    },
+    {
+     "n": "28",
+     "text": "Cybersecurity Dive — \"Gold Eagle\" vulnerability clearinghouse launch, Jul 15, 2026",
+     "url": "https://www.cybersecuritydive.com/news/vulnerability-clearinghouse-ai-white-house-launch-gold-eagle/825298/"
+    },
+    {
+     "n": "29",
+     "text": "Cybersecurity Dive — SharePoint additional-flaw chaining, patch delayed to August, Jul 15, 2026",
+     "url": "https://www.cybersecuritydive.com/news/cisa-multiple-vulnerabilities-sharepoint-exploitation/825306/"
     }
    ],
    "related": [
@@ -1177,9 +1267,9 @@
    "scope": "third-party risk · vendor software & supply chain",
    "watch": "Vendor tools under active attack, software-supply-chain compromises aimed at financial applications, and vendor incident disclosures.",
    "opened": "July 2026",
-   "ver": "v2",
-   "verRange": "v1–v2",
-   "asOf": "July 13, 2026",
+   "ver": "v3",
+   "verRange": "v1–v3",
+   "asOf": "July 15, 2026",
    "p1": "One vendor-channel exploit is confirmed this window: SimpleHelp, a remote-support tool, carries an authentication-bypass flaw on CISA’s known-exploited list — in a vulnerable configuration, a remote, unauthenticated attacker can log in with a forged token.",
    "p1Sup": "1",
    "p2": "The rest of the vendor picture clusters around the software supply chain: a claimed breach at consulting firm Accenture said to involve source code and encryption keys, and malicious look-alike software kits for the Paysafe, Skrill, and Neteller payment applications on public code registries.",
@@ -1188,6 +1278,15 @@
    "assessSup": "1",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 15, 26",
+     "st": "confirmed",
+     "ver": "v3",
+     "id": "L-0091",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/-asyncapi-npm-packages-infected-with-credential-stealing-malware/",
+     "line": "Five malicious versions of AsyncAPI software packages were published to the Node Package Manager (npm) in a supply-chain attack that delivered a remote access trojan (RAT) with credential- and information-stealing capabilities, BleepingComputer reports."
+    },
     {
      "date": "Jul 13, 26",
      "st": "confirmed",
@@ -1282,6 +1381,11 @@
      "n": "6",
      "text": "BleepingComputer — Jscrambler npm package backdoored with infostealer malware, Jul 13, 2026",
      "url": "https://www.bleepingcomputer.com/news/security/hackers-backdoor-jscrambler-npm-package-with-infostealer-malware/"
+    },
+    {
+     "n": "7",
+     "text": "BleepingComputer — AsyncAPI npm packages infected with credential-stealing malware, Jul 15, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/-asyncapi-npm-packages-infected-with-credential-stealing-malware/"
     }
    ],
    "related": [
@@ -2453,9 +2557,50 @@
    "line": "Dutch police dismantle a global cryptocurrency investment scam and arrest its alleged mastermind. Authorities said the group had operated like a legitimate international business since at least 2021, running about two dozen call centers across several countries and employing more than 700 people who posed as professional financial advisers.",
    "src": "The Record",
    "srcUrl": "https://therecord.media/dutch-police-dismantle-global-crypto-investment-scam"
+  },
+  {
+   "d": "2026-07-15",
+   "p": "cyber",
+   "id": "L-0088",
+   "line": "The Trump administration launches \"Gold Eagle,\" a government-coordinated program that uses artificial intelligence (AI) tools and security researchers to speed up the discovery and fixing of software flaws; the White House says the program has already begun taking in and prioritizing vulnerabilities \"from across industries and sectors.\"",
+   "src": "Cybersecurity Dive",
+   "srcUrl": "https://www.cybersecuritydive.com/news/vulnerability-clearinghouse-ai-white-house-launch-gold-eagle/825298/"
+  },
+  {
+   "d": "2026-07-15",
+   "p": "cyber",
+   "id": "L-0089",
+   "line": "Cybersecurity Dive reports that security researchers say additional flaws in SharePoint are being chained together, and a fix will not be available until August; researchers at Rapid7 separately warn that a newly disclosed flaw, tracked as CVE-2026-55040, could let attackers run code remotely if combined with a second flaw.",
+   "src": "Cybersecurity Dive",
+   "srcUrl": "https://www.cybersecuritydive.com/news/cisa-multiple-vulnerabilities-sharepoint-exploitation/825306/"
+  },
+  {
+   "d": "2026-07-15",
+   "p": "ai",
+   "id": "L-0090",
+   "line": "A flaw in Claude, nicknamed \"PromptFiction,\" automatically sent malicious prompts to AI agents; combined with another exploit, it could have enabled an end-to-end attack on a targeted system. The flaw has since been fixed.",
+   "src": "Dark Reading",
+   "srcUrl": "https://www.darkreading.com/vulnerabilities-threats/claude-flaw-malicious-prompts-ai-agents"
+  },
+  {
+   "d": "2026-07-15",
+   "p": "tp",
+   "id": "L-0091",
+   "line": "Five malicious versions of AsyncAPI software packages were published to the Node Package Manager (npm) in a supply-chain attack that delivered a remote access trojan (RAT) with credential- and information-stealing capabilities, BleepingComputer reports.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/-asyncapi-npm-packages-infected-with-credential-stealing-malware/"
   }
  ],
  "takeaways": [
+  {
+   "anchors": [
+    "L-0089"
+   ],
+   "pillars": "Cybersecurity",
+   "conf": "high confidence",
+   "head": "A full fix for the actively exploited SharePoint flaws won't arrive until August.",
+   "body": "Cybersecurity Dive reports that additional flaws are being chained into the active SharePoint attacks, and a full fix will not be available until August. Technology teams running SharePoint should treat it as still exposed and prioritize interim safeguards while the patch is pending."
+  },
   {
    "anchors": [
     "L-0080"
@@ -2656,7 +2801,7 @@
    {
     "no": "5",
     "date": "Wed, Jul 15, 2026",
-    "confirmed": "8",
+    "confirmed": "12",
     "pending": "0",
     "flash": "—",
     "linked": true
