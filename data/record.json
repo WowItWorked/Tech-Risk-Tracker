@@ -2,224 +2,104 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-14T18:11:03-04:00",
-  "issueNo": 4,
-  "recordHash": "680c2dc",
-  "windowLabel": "June 9 – July 14, 2026",
+  "generatedAt": "2026-07-15T06:15:31-04:00",
+  "issueNo": 5,
+  "recordHash": "b943968",
+  "windowLabel": "June 9 – July 15, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 403 for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook's fallback, returning 200; counted OK, not failed). One new item was admitted this intraday run: SonicWall confirmed criminals are actively exploiting two zero-day flaws in its SMA1000 appliances, and CISA added both to its known-exploited vulnerabilities list with a July 17, 2026 remediation deadline.",
-  "lastRun": "2026-07-14T18:11:03-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 403 for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook's fallback, returning 200; counted OK, not failed). Four new items were admitted this run: CISA warning that criminals are actively exploiting three flaws in internet-exposed, on-premises Microsoft SharePoint Server systems; Microsoft's announcement that passkeys become Entra ID's default sign-in method starting September 2026; and two DOJ actions — an indictment over an ATM jackpotting scheme in Reno and Sparks, Nevada, and the extradition of a Ghanaian national accused of an $8+ million romance fraud scheme targeting elderly victims.",
+  "lastRun": "2026-07-15T06:15:31-04:00"
  },
  "lead": {
-  "head": "Leading stories: SonicWall confirming criminals are exploiting two zero-day flaws in its SMA1000 appliances, with CISA setting a July 17 fix deadline; Microsoft's July 2026 Patch Tuesday fixing a record 570 flaws, including two actively exploited zero-days; and the United States unsealing an indictment against three Russians tied to a bulletproof hosting provider",
-  "dek": "Today’s edition draws on the fourteen items recorded so far. Every item links to its source.",
+  "head": "Leading stories: CISA warning that criminals are actively exploiting three flaws in internet-exposed, on-premises Microsoft SharePoint Server systems; Microsoft announcing passkeys will become Entra ID's default authentication method starting September 2026; and the indictment of two men in an ATM jackpotting scheme in Reno and Sparks, Nevada",
+  "dek": "Today’s edition draws on the four items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
     "p": "cyber",
-    "tri": "flash",
+    "tri": "priority",
     "st": "confirmed",
-    "id": "L-0079",
+    "id": "L-0080",
     "conf": "",
-    "text": "SonicWall confirms criminals are actively exploiting two zero-day flaws in its SMA1000 appliances, tracked as CVE-2026-15409 and CVE-2026-15410: a server-side request forgery vulnerability that could let a remote, unauthenticated attacker cause the appliance to make requests to unintended locations, and a code injection vulnerability that could let a remote attacker authenticated as an administrator execute arbitrary operating system commands. CISA adds both flaws to its known-exploited vulnerabilities catalog with a July 17, 2026 remediation deadline.",
-    "why": "SonicWall's own investigation confirms criminals are already exploiting both flaws, and CISA's July 17, 2026 deadline gives technology teams running SMA1000 appliances a concrete date to fix them.",
-    "srcText": "CISA KEV catalog + BleepingComputer, Jul 14",
-    "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    "text": "CISA (the Cybersecurity and Infrastructure Security Agency) warns that criminals are actively exploiting three vulnerabilities in internet-exposed, on-premises Microsoft SharePoint Server systems, and urges administrators to patch them.",
+    "why": "CISA's warning that criminals are already exploiting these flaws gives technology teams a clear signal to patch on-premises SharePoint Server systems now.",
+    "srcText": "BleepingComputer, Jul 15",
+    "srcUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-patch-actively-exploited-sharepoint-flaws/"
    },
    {
     "n": "2",
     "p": "cyber",
-    "tri": "flash",
+    "tri": "routine",
     "st": "confirmed",
-    "id": "L-0074",
+    "id": "L-0081",
     "conf": "",
-    "text": "Microsoft's July 2026 Patch Tuesday fixes a record-breaking 570 flaws, including two zero-day vulnerabilities that criminals were already exploiting and one that was publicly disclosed.",
-    "why": "A reminder for technology teams to prioritize deploying this month's Microsoft security updates without delay, since criminals were already exploiting two of the fixed flaws.",
+    "text": "Microsoft announces that passkeys, a password-free way to sign in, will become the default authentication method for Entra ID, its enterprise identity service, starting in September 2026.",
+    "why": "Technology and identity teams responsible for Entra ID sign-in policies now have a September 2026 deadline to prepare for passkeys becoming the default authentication method.",
     "srcText": "BleepingComputer, Jul 14",
-    "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-july-2026-patch-tuesday-fixes-massive-570-flaws-3-zero-days/"
+    "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-entra-id-gets-passkeys-default-authentication-starting-september/"
    },
    {
     "n": "3",
-    "p": "cyber",
-    "tri": "priority",
+    "p": "fraud",
+    "tri": "routine",
     "st": "confirmed",
-    "id": "L-0077",
+    "id": "L-0082",
     "conf": "",
-    "text": "The United States unseals an indictment against three Russians tied to a bulletproof hosting provider previously sanctioned by the U.S. and two allies, accusing them of giving cybercriminals infrastructure and technical support through the St. Petersburg-based Media Land and a sister company, ML Cloud.",
-    "why": "Federal prosecutors unseal charges against three Russians tied to a hosting provider already under U.S. and allied sanctions for supplying cybercriminals with infrastructure and technical support — a reminder that law enforcement is targeting the infrastructure providers behind attacks, not just the attackers themselves.",
-    "srcText": "The Record, Jul 14",
-    "srcUrl": "https://therecord.media/us-unseals-indictment-russians-bulletproof-hosting"
+    "text": "Two men are indicted for allegedly stealing money from multiple ATMs in Reno and Sparks, Nevada, in a scheme known as “ATM jackpotting.”",
+    "why": "Today's indictment is a reminder for banks and other ATM operators to keep monitoring and safeguards on cash machines current against jackpotting schemes.",
+    "srcText": "DOJ press release, Jul 14",
+    "srcUrl": "https://www.justice.gov/usao-nv/pr/two-men-indicted-alleged-roles-atm-jackpotting-scheme"
    }
   ]
  },
  "wire": [
   {
-   "ts": "2026-07-14T21:23:24Z",
-   "p": "cyber",
-   "tri": "flash",
-   "st": "confirmed",
-   "tier": "T1",
-   "id": "L-0079",
-   "title": "SonicWall confirms criminals are actively exploiting two zero-day flaws in its SMA1000 appliances, tracked as CVE-2026-15409 and CVE-2026-15410: a server-side request forgery vulnerability that could let a remote, unauthenticated attacker cause the appliance to make requests to unintended locations, and a code injection vulnerability that could let a remote attacker authenticated as an administrator execute arbitrary operating system commands. CISA adds both flaws to its known-exploited vulnerabilities catalog with a July 17, 2026 remediation deadline.",
-   "src": "CISA KEV catalog + BleepingComputer",
-   "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-14T20:23:09Z",
-   "p": "fraud",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0078",
-   "title": "Spanish police dismantle a cybercrime and money-laundering ring accused of making €140 million ($160 million) through investment fraud and business email compromise (BEC) attacks, arresting four people in Spain, Portugal, and Panama.",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/spanish-police-take-down-140-million-cyber-fraud-ring-arrest-four/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-14T19:26:00Z",
+   "ts": "2026-07-15T09:44:52Z",
    "p": "cyber",
    "tri": "priority",
    "st": "confirmed",
    "tier": "T2",
-   "id": "L-0077",
-   "title": "The United States unseals an indictment against three Russians tied to a bulletproof hosting provider previously sanctioned by the U.S. and two allies, accusing them of giving cybercriminals infrastructure and technical support through the St. Petersburg-based Media Land and a sister company, ML Cloud.",
-   "src": "The Record",
-   "srcUrl": "https://therecord.media/us-unseals-indictment-russians-bulletproof-hosting",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-14T19:15:17Z",
-   "p": "cyber",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0076",
-   "title": "Criminals publish nearly 300 fake GitHub repositories impersonating legitimate software and security projects to distribute information-stealing malware; the campaign draws search traffic in part through cryptocurrency services and financial tools among the impersonated categories.",
+   "id": "L-0080",
+   "title": "CISA (the Cybersecurity and Infrastructure Security Agency) warns that criminals are actively exploiting three vulnerabilities in internet-exposed, on-premises Microsoft SharePoint Server systems, and urges administrators to patch them.",
    "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/nearly-300-github-repos-pose-as-legit-software-to-push-malware/",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-patch-actively-exploited-sharepoint-flaws/",
    "linked": true
   },
   {
-   "ts": "2026-07-14T18:01:36Z",
+   "ts": "2026-07-14T12:49:56Z",
    "p": "cyber",
-   "tri": "flash",
+   "tri": "routine",
    "st": "confirmed",
    "tier": "T2",
-   "id": "L-0074",
-   "title": "Microsoft's July 2026 Patch Tuesday fixes a record-breaking 570 flaws, including two zero-day vulnerabilities that criminals were already exploiting and one that was publicly disclosed.",
+   "id": "L-0081",
+   "title": "Microsoft announces that passkeys, a password-free way to sign in, will become the default authentication method for Entra ID, its enterprise identity service, starting in September 2026.",
    "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-july-2026-patch-tuesday-fixes-massive-570-flaws-3-zero-days/",
+   "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-entra-id-gets-passkeys-default-authentication-starting-september/",
    "linked": true
   },
   {
-   "ts": "2026-07-14T17:38:34Z",
-   "p": "cyber",
-   "tri": "priority",
-   "st": "confirmed",
-   "tier": "T1",
-   "id": "L-0075",
-   "title": "CISA adds two exploited Microsoft flaws to its known-exploited list: an Active Directory Federation Services flaw that lets an authorized attacker locally escalate privileges (CVE-2026-56155), and a SharePoint Server flaw that lets an unauthorized attacker escalate privileges over a network without authentication (CVE-2026-56164).",
-   "src": "CISA KEV catalog",
-   "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-14T16:08:47Z",
-   "p": "cyber",
-   "tri": "priority",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0073",
-   "title": "Progress Software confirms a high-severity zero-day flaw was behind last week’s emergency shutdown of ShareFile Storage Zone Controllers and releases security updates to patch it.",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/progress-confirms-sharefile-zero-day-flaw-behind-storage-zone-shutdown/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-14T15:31:52Z",
-   "p": "cyber",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0072",
-   "title": "LastPass warns that criminals are running a phishing campaign using fake security-notice emails to direct users to fraudulent websites; BleepingComputer reports Bitwarden users are being targeted by similar emails.",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/lastpass-bitwarden-users-targeted-with-fake-security-alerts/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-14T14:46:39Z",
-   "p": "ai",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0071",
-   "title": "A SANS Institute report finds that a sharp rise in artificial intelligence (AI) adoption for cyber defense has exposed a major governance gap, with senior security leaders and frontline practitioners split on the issue.",
-   "src": "Cybersecurity Dive",
-   "srcUrl": "https://www.cybersecuritydive.com/news/ai-adoption-cyber-defense-governance-gap/825179/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-14T13:00:00Z",
-   "p": "ai",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0070",
-   "title": "A flaw that lets Cursor, a popular artificial intelligence (AI) coding platform, automatically execute malicious code from poisoned repositories was reported to Cursor in December but still remains in the platform, researchers say.",
-   "src": "Dark Reading",
-   "srcUrl": "https://www.darkreading.com/application-security/cursor-ide-malicious-code-poisoned-repos",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-14T12:49:00Z",
-   "p": "cyber",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0069",
-   "title": "Two new phishing kits, Jalisco and OmegaLord, are being used in attacks against Microsoft 365 accounts that defeat multi-factor authentication (MFA).",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/new-phishing-kits-target-microsoft-365-accounts-evade-mfa/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-14T11:42:21Z",
-   "p": "cyber",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0068",
-   "title": "SAP addresses 16 vulnerabilities across multiple products in its July 2026 security update, including three critical flaws in its NetWeaver, Commerce Cloud, and AppRouter software.",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/sap-warns-of-critical-flaws-in-netweaver-and-commerce-cloud/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-14T09:00:00Z",
-   "p": "resilience",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T1",
-   "id": "L-0067",
-   "title": "The European Central Bank (ECB) selects 36 payment service providers across the euro area to take part in a pilot testing the digital euro's technical functioning and operational processes.",
-   "src": "European Central Bank",
-   "srcUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260714~8cd07d9d45.en.html",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-13T12:00:00Z",
+   "ts": "2026-07-14T12:00:00Z",
    "p": "fraud",
    "tri": "routine",
    "st": "confirmed",
    "tier": "T1",
-   "id": "L-0066",
-   "title": "A federal jury convicts a man from Mobile, Alabama, for participating in a multimillion-dollar bank fraud conspiracy that involved stealing mail, stealing identities, counterfeiting checks and money orders, and fraudulent financial transactions.",
+   "id": "L-0082",
+   "title": "Two men are indicted for allegedly stealing money from multiple ATMs in Reno and Sparks, Nevada, in a scheme known as “ATM jackpotting.”",
    "src": "DOJ press release",
-   "srcUrl": "https://www.justice.gov/usao-sdal/pr/mobile-man-convicted-trial-participating-multimillion-dollar-bank-fraud-conspiracy",
+   "srcUrl": "https://www.justice.gov/usao-nv/pr/two-men-indicted-alleged-roles-atm-jackpotting-scheme",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-14T12:00:00Z",
+   "p": "fraud",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T1",
+   "id": "L-0083",
+   "title": "A 31-year-old Ghanaian national is extradited to the United States to face charges of running romance fraud schemes that took more than $8 million from more than 80 elderly victims.",
+   "src": "DOJ press release",
+   "srcUrl": "https://www.justice.gov/usao-ndoh/pr/ghanaian-national-extradited-us-face-accusations-using-romance-fraud-schemes-take-8",
    "linked": true
   }
  ],
@@ -425,9 +305,9 @@
    "scope": "cybersecurity · exploitation & exposure",
    "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
    "opened": "July 2026",
-   "ver": "v27",
-   "verRange": "v1–v27",
-   "asOf": "July 14, 2026",
+   "ver": "v29",
+   "verRange": "v1–v29",
+   "asOf": "July 15, 2026",
    "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
    "p1Sup": "1, 3, 10",
    "p2": "The UK’s National Cyber Security Centre (NCSC) and cybersecurity agencies from the United States and eight other countries warn that hackers linked to Russia’s Federal Security Service (FSB) are exploiting routers with default or weak passwords to infiltrate critical infrastructure, naming financial services among the sectors most at risk. Researchers report “JadePuffer,” described as a ransomware attack run end-to-end by an AI agent that broke in through the exploited Langflow flaw. Separately, Progress Software urged ShareFile customers running Storage Zone Controllers to shut down their servers immediately over a “credible external security threat.”",
@@ -436,6 +316,24 @@
    "assessSup": "1, 8",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 15, 26",
+     "st": "confirmed",
+     "ver": "v29",
+     "id": "L-0080",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-patch-actively-exploited-sharepoint-flaws/",
+     "line": "CISA (the Cybersecurity and Infrastructure Security Agency) warns that criminals are actively exploiting three vulnerabilities in internet-exposed, on-premises Microsoft SharePoint Server systems, and urges administrators to patch them."
+    },
+    {
+     "date": "Jul 14, 26",
+     "st": "confirmed",
+     "ver": "v28",
+     "id": "L-0081",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-entra-id-gets-passkeys-default-authentication-starting-september/",
+     "line": "Microsoft announces that passkeys, a password-free way to sign in, will become the default authentication method for Entra ID, its enterprise identity service, starting in September 2026."
+    },
     {
      "date": "Jul 14, 26",
      "st": "confirmed",
@@ -877,6 +775,16 @@
      "n": "25",
      "text": "CISA KEV catalog + BleepingComputer — SonicWall SMA1000 zero-day flaws actively exploited (CVE-2026-15409, CVE-2026-15410), Jul 14, 2026",
      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+     "n": "26",
+     "text": "BleepingComputer — CISA warning on actively exploited SharePoint Server flaws, Jul 15, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-patch-actively-exploited-sharepoint-flaws/"
+    },
+    {
+     "n": "27",
+     "text": "BleepingComputer — Entra ID default passkey authentication announcement, Jul 14, 2026",
+     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-entra-id-gets-passkeys-default-authentication-starting-september/"
     }
    ],
    "related": [
@@ -927,9 +835,9 @@
    "scope": "fraud · AML rulemaking & scam patterns",
    "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
    "opened": "July 2026",
-   "ver": "v5",
-   "verRange": "v1–v5",
-   "asOf": "July 14, 2026",
+   "ver": "v7",
+   "verRange": "v1–v7",
+   "asOf": "July 15, 2026",
    "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22).",
    "p1Sup": "1, 3",
    "p2": "Operationally, the OCC is highlighting FinCEN’s updated Section 314(b) fact sheet clarifying how institutions can share suspected-fraud information with each other. The FBI’s recent consumer-facing warnings describe criminals redirecting users to fraudulent websites through malicious traffic-distribution systems. On the criminal side, a Bulgarian national already imprisoned for helping launder millions in fraud proceeds is charged with stealing $290,000 in government-seized cryptocurrency while incarcerated.",
@@ -938,6 +846,24 @@
    "assessSup": "2, 3",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 14, 26",
+     "st": "confirmed",
+     "ver": "v7",
+     "id": "L-0082",
+     "src": "DOJ press release",
+     "srcUrl": "https://www.justice.gov/usao-nv/pr/two-men-indicted-alleged-roles-atm-jackpotting-scheme",
+     "line": "Two men are indicted for allegedly stealing money from multiple ATMs in Reno and Sparks, Nevada, in a scheme known as “ATM jackpotting.”"
+    },
+    {
+     "date": "Jul 14, 26",
+     "st": "confirmed",
+     "ver": "v6",
+     "id": "L-0083",
+     "src": "DOJ press release",
+     "srcUrl": "https://www.justice.gov/usao-ndoh/pr/ghanaian-national-extradited-us-face-accusations-using-romance-fraud-schemes-take-8",
+     "line": "A 31-year-old Ghanaian national is extradited to the United States to face charges of running romance fraud schemes that took more than $8 million from more than 80 elderly victims."
+    },
     {
      "date": "Jul 14, 26",
      "st": "confirmed",
@@ -1087,6 +1013,16 @@
      "n": "8",
      "text": "DOJ — Mobile, Alabama bank fraud conspiracy conviction, Jul 13, 2026",
      "url": "https://www.justice.gov/usao-sdal/pr/mobile-man-convicted-trial-participating-multimillion-dollar-bank-fraud-conspiracy"
+    },
+    {
+     "n": "9",
+     "text": "DOJ — ATM jackpotting indictment, Reno/Sparks, Nevada, Jul 14, 2026",
+     "url": "https://www.justice.gov/usao-nv/pr/two-men-indicted-alleged-roles-atm-jackpotting-scheme"
+    },
+    {
+     "n": "10",
+     "text": "DOJ — Ghanaian national extradited, $8M+ romance fraud scheme, Jul 14, 2026",
+     "url": "https://www.justice.gov/usao-ndoh/pr/ghanaian-national-extradited-us-face-accusations-using-romance-fraud-schemes-take-8"
     }
    ],
    "related": [
@@ -2349,9 +2285,59 @@
    "line": "SonicWall confirms criminals are actively exploiting two zero-day flaws in its SMA1000 appliances, tracked as CVE-2026-15409 and CVE-2026-15410: a server-side request forgery vulnerability that could let a remote, unauthenticated attacker cause the appliance to make requests to unintended locations, and a code injection vulnerability that could let a remote attacker authenticated as an administrator execute arbitrary operating system commands. CISA adds both flaws to its known-exploited vulnerabilities catalog with a July 17, 2026 remediation deadline.",
    "src": "CISA KEV catalog + BleepingComputer",
    "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+  },
+  {
+   "d": "2026-07-15",
+   "p": "cyber",
+   "id": "L-0080",
+   "line": "CISA (the Cybersecurity and Infrastructure Security Agency) warns that criminals are actively exploiting three vulnerabilities in internet-exposed, on-premises Microsoft SharePoint Server systems, and urges administrators to patch them.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-patch-actively-exploited-sharepoint-flaws/"
+  },
+  {
+   "d": "2026-07-14",
+   "p": "cyber",
+   "id": "L-0081",
+   "line": "Microsoft announces that passkeys, a password-free way to sign in, will become the default authentication method for Entra ID, its enterprise identity service, starting in September 2026.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-entra-id-gets-passkeys-default-authentication-starting-september/"
+  },
+  {
+   "d": "2026-07-14",
+   "p": "fraud",
+   "id": "L-0082",
+   "line": "Two men are indicted for allegedly stealing money from multiple ATMs in Reno and Sparks, Nevada, in a scheme known as “ATM jackpotting.”",
+   "src": "DOJ press release",
+   "srcUrl": "https://www.justice.gov/usao-nv/pr/two-men-indicted-alleged-roles-atm-jackpotting-scheme"
+  },
+  {
+   "d": "2026-07-14",
+   "p": "fraud",
+   "id": "L-0083",
+   "line": "A 31-year-old Ghanaian national is extradited to the United States to face charges of running romance fraud schemes that took more than $8 million from more than 80 elderly victims.",
+   "src": "DOJ press release",
+   "srcUrl": "https://www.justice.gov/usao-ndoh/pr/ghanaian-national-extradited-us-face-accusations-using-romance-fraud-schemes-take-8"
   }
  ],
  "takeaways": [
+  {
+   "anchors": [
+    "L-0080"
+   ],
+   "pillars": "Cybersecurity",
+   "conf": "high confidence",
+   "head": "CISA warns three SharePoint Server flaws are under active exploitation.",
+   "body": "CISA warned that criminals are actively exploiting three vulnerabilities in internet-exposed, on-premises Microsoft SharePoint Server systems. Technology teams running on-premises SharePoint Server should patch it now."
+  },
+  {
+   "anchors": [
+    "L-0081"
+   ],
+   "pillars": "Cybersecurity",
+   "conf": "moderate confidence",
+   "head": "Entra ID will default to passkeys for sign-in starting September 2026.",
+   "body": "Microsoft announced passkeys will become the default authentication method for Entra ID starting September 2026. Technology and identity teams should prepare for this shift away from passwords ahead of the deadline."
+  },
   {
    "anchors": [
     "L-0074"
@@ -2532,6 +2518,14 @@
  "publications": {
   "dailies": [
    {
+    "no": "5",
+    "date": "Wed, Jul 15, 2026",
+    "confirmed": "4",
+    "pending": "0",
+    "flash": "—",
+    "linked": true
+   },
+   {
     "no": "4",
     "date": "Tue, Jul 14, 2026",
     "confirmed": "14",
@@ -2566,7 +2560,7 @@
   ],
   "weeklies": [],
   "monthlies": [],
-  "dTotal": 4,
+  "dTotal": 5,
   "wkTotal": 0,
   "mTotal": 0
  }
