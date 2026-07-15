@@ -2,18 +2,18 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-15T15:11:29-04:00",
+  "generatedAt": "2026-07-15T17:11:31-04:00",
   "issueNo": 5,
-  "recordHash": "689f7fe",
+  "recordHash": "45b5b73",
   "windowLabel": "June 9 – July 15, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). Four new items were admitted this run: a The Record report on a 42-state attorneys general settlement with 23andMe over its data breach, a BleepingComputer report on a Russian-speaking criminal group abusing Google’s Gemini CLI as a hacking agent and botnet tool, and two additions to CISA’s known-exploited vulnerabilities list — an unauthenticated takeover flaw in Oracle E-Business Suite’s Payments module, and an account-lockout flaw in the KNX building-automation protocol.",
-  "lastRun": "2026-07-15T15:11:29-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). Two new items were admitted this run: a BleepingComputer report on a critical, already-patched Zoom account-takeover flaw (CVE-2026-53412), and a Dark Reading report that email-based attacks, not software flaws, became the leading cause of ransomware incidents last year.",
+  "lastRun": "2026-07-15T17:11:31-04:00"
  },
  "lead": {
   "head": "Leading stories: a newly catalogued flaw letting attackers take over Oracle Payments without valid credentials; additional flaws being chained into the active SharePoint attacks with a full fix not expected until August; and the U.S. government’s launch of “Gold Eagle,” a program to speed up finding and fixing software flaws across industries and sectors",
-  "dek": "Today’s edition draws on the sixteen items recorded so far. Every item links to its source.",
+  "dek": "Today’s edition draws on the eighteen items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
@@ -54,6 +54,30 @@
   ]
  },
  "wire": [
+  {
+   "ts": "2026-07-15T20:16:13Z",
+   "p": "cyber",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0097",
+   "title": "Dark Reading reports that email-based attacks, not software flaws, became the leading cause of ransomware incidents last year, and that multi-factor authentication (MFA) — a login check beyond just a password — was used in 97% of attacks based on stolen or guessed logins but still failed to stop the criminals.",
+   "src": "Dark Reading",
+   "srcUrl": "https://www.darkreading.com/identity-access-management-security/identity-attacks-overtake-exploits-top-ransomware-cause",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-15T20:16:02Z",
+   "p": "cyber",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0096",
+   "title": "BleepingComputer reports that Zoom is warning of a critical flaw, tracked as CVE-2026-53412 with a severity score of 9.8 out of 10, in its desktop client and software development kit for Windows that could let an unauthenticated attacker take over a user’s account; the company recommends applying the latest updates.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/zoom-warns-of-critical-account-takeover-vulnerability/",
+   "linked": true
+  },
   {
    "ts": "2026-07-15T19:11:05Z",
    "p": "cyber",
@@ -491,8 +515,8 @@
    "scope": "cybersecurity · exploitation & exposure",
    "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
    "opened": "July 2026",
-   "ver": "v34",
-   "verRange": "v1–v34",
+   "ver": "v36",
+   "verRange": "v1–v36",
    "asOf": "July 15, 2026",
    "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
    "p1Sup": "1, 3, 10",
@@ -502,6 +526,24 @@
    "assessSup": "1, 8",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 15, 26",
+     "st": "confirmed",
+     "ver": "v36",
+     "id": "L-0097",
+     "src": "Dark Reading",
+     "srcUrl": "https://www.darkreading.com/identity-access-management-security/identity-attacks-overtake-exploits-top-ransomware-cause",
+     "line": "Dark Reading reports that email-based attacks, not software flaws, became the leading cause of ransomware incidents last year, and that multi-factor authentication (MFA) — a login check beyond just a password — was used in 97% of attacks based on stolen or guessed logins but still failed to stop the criminals."
+    },
+    {
+     "date": "Jul 15, 26",
+     "st": "confirmed",
+     "ver": "v35",
+     "id": "L-0096",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/zoom-warns-of-critical-account-takeover-vulnerability/",
+     "line": "BleepingComputer reports that Zoom is warning of a critical flaw, tracked as CVE-2026-53412 with a severity score of 9.8 out of 10, in its desktop client and software development kit for Windows that could let an unauthenticated attacker take over a user’s account; the company recommends applying the latest updates."
+    },
     {
      "date": "Jul 15, 26",
      "st": "confirmed",
@@ -1041,6 +1083,16 @@
      "n": "32",
      "text": "CISA KEV catalog — KNX Protocol flaw (CVE-2023-4346), Jul 15, 2026",
      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+     "n": "33",
+     "text": "BleepingComputer — Zoom critical account-takeover flaw (CVE-2026-53412), Jul 15, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/zoom-warns-of-critical-account-takeover-vulnerability/"
+    },
+    {
+     "n": "34",
+     "text": "Dark Reading — identity attacks overtake exploits as top ransomware cause, Jul 15, 2026",
+     "url": "https://www.darkreading.com/identity-access-management-security/identity-attacks-overtake-exploits-top-ransomware-cause"
     }
    ],
    "related": [
@@ -2725,9 +2777,34 @@
    "line": "KNX Association KNX Protocol flaw (CVE-2023-4346) added to CISA’s known-exploited list: an attacker could purge all connected devices lacking additional security options, then set an access key to lock the device.",
    "src": "CISA KEV catalog",
    "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+  },
+  {
+   "d": "2026-07-15",
+   "p": "cyber",
+   "id": "L-0096",
+   "line": "BleepingComputer reports that Zoom is warning of a critical flaw, tracked as CVE-2026-53412 with a severity score of 9.8 out of 10, in its desktop client and software development kit for Windows that could let an unauthenticated attacker take over a user’s account; the company recommends applying the latest updates.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/zoom-warns-of-critical-account-takeover-vulnerability/"
+  },
+  {
+   "d": "2026-07-15",
+   "p": "cyber",
+   "id": "L-0097",
+   "line": "Dark Reading reports that email-based attacks, not software flaws, became the leading cause of ransomware incidents last year, and that multi-factor authentication (MFA) — a login check beyond just a password — was used in 97% of attacks based on stolen or guessed logins but still failed to stop the criminals.",
+   "src": "Dark Reading",
+   "srcUrl": "https://www.darkreading.com/identity-access-management-security/identity-attacks-overtake-exploits-top-ransomware-cause"
   }
  ],
  "takeaways": [
+  {
+   "anchors": [
+    "L-0096"
+   ],
+   "pillars": "Cybersecurity",
+   "conf": "high confidence",
+   "head": "Zoom is warning of a critical, already-patched flaw that could let an unauthenticated attacker take over a user’s account.",
+   "body": "BleepingComputer reports that Zoom disclosed a critical flaw (CVE-2026-53412, severity 9.8 out of 10) in its desktop client and software development kit for Windows that could let an unauthenticated attacker take over a user’s account. Technology teams should apply Zoom’s latest updates now."
+  },
   {
    "anchors": [
     "L-0094"
@@ -2946,7 +3023,7 @@
    {
     "no": "5",
     "date": "Wed, Jul 15, 2026",
-    "confirmed": "16",
+    "confirmed": "18",
     "pending": "0",
     "flash": "—",
     "linked": true
