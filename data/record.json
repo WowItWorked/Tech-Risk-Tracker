@@ -2,18 +2,18 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-15T06:15:31-04:00",
+  "generatedAt": "2026-07-15T09:12:00-04:00",
   "issueNo": 5,
-  "recordHash": "b943968",
+  "recordHash": "8f2cc05",
   "windowLabel": "June 9 – July 15, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 403 for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook's fallback, returning 200; counted OK, not failed). Four new items were admitted this run: CISA warning that criminals are actively exploiting three flaws in internet-exposed, on-premises Microsoft SharePoint Server systems; Microsoft's announcement that passkeys become Entra ID's default sign-in method starting September 2026; and two DOJ actions — an indictment over an ATM jackpotting scheme in Reno and Sparks, Nevada, and the extradition of a Ghanaian national accused of an $8+ million romance fraud scheme targeting elderly victims.",
-  "lastRun": "2026-07-15T06:15:31-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned (FTC's feed returned 403 for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook's fallback, returning 200; counted OK, not failed). One new item was admitted this run: a Dark Reading report on a two-click exploit that lets criminals take over a developer's environment in Cursor, a popular artificial intelligence (AI) coding platform, to access developers' secrets and source code.",
+  "lastRun": "2026-07-15T09:12:00-04:00"
  },
  "lead": {
-  "head": "Leading stories: CISA warning that criminals are actively exploiting three flaws in internet-exposed, on-premises Microsoft SharePoint Server systems; Microsoft announcing passkeys will become Entra ID's default authentication method starting September 2026; and the indictment of two men in an ATM jackpotting scheme in Reno and Sparks, Nevada",
-  "dek": "Today’s edition draws on the four items recorded so far. Every item links to its source.",
+  "head": "Leading stories: CISA warning that criminals are actively exploiting three flaws in internet-exposed, on-premises Microsoft SharePoint Server systems; a two-click flaw letting criminals take over a developer's environment in Cursor, a popular artificial intelligence (AI) coding platform; and Microsoft announcing passkeys will become Entra ID's default authentication method starting September 2026",
+  "dek": "Today’s edition draws on the five items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
@@ -29,6 +29,18 @@
    },
    {
     "n": "2",
+    "p": "ai",
+    "tri": "routine",
+    "st": "confirmed",
+    "id": "L-0084",
+    "conf": "",
+    "text": "A flaw requiring only two clicks lets criminals take over a developer's environment in Cursor, a popular artificial intelligence (AI) coding platform, exploiting old, simple bugs to access developers' secrets and source code.",
+    "why": "The exploit's low bar — just two clicks — makes this a practical risk for technology teams whose developers use Cursor, since it can expose their secrets and source code to criminals.",
+    "srcText": "Dark Reading, Jul 15",
+    "srcUrl": "https://www.darkreading.com/application-security/2-click-cursor-exploit-dev-environment-takeover"
+   },
+   {
+    "n": "3",
     "p": "cyber",
     "tri": "routine",
     "st": "confirmed",
@@ -38,22 +50,22 @@
     "why": "Technology and identity teams responsible for Entra ID sign-in policies now have a September 2026 deadline to prepare for passkeys becoming the default authentication method.",
     "srcText": "BleepingComputer, Jul 14",
     "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-entra-id-gets-passkeys-default-authentication-starting-september/"
-   },
-   {
-    "n": "3",
-    "p": "fraud",
-    "tri": "routine",
-    "st": "confirmed",
-    "id": "L-0082",
-    "conf": "",
-    "text": "Two men are indicted for allegedly stealing money from multiple ATMs in Reno and Sparks, Nevada, in a scheme known as “ATM jackpotting.”",
-    "why": "Today's indictment is a reminder for banks and other ATM operators to keep monitoring and safeguards on cash machines current against jackpotting schemes.",
-    "srcText": "DOJ press release, Jul 14",
-    "srcUrl": "https://www.justice.gov/usao-nv/pr/two-men-indicted-alleged-roles-atm-jackpotting-scheme"
    }
   ]
  },
  "wire": [
+  {
+   "ts": "2026-07-15T13:00:00Z",
+   "p": "ai",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0084",
+   "title": "A flaw requiring only two clicks lets criminals take over a developer's environment in Cursor, a popular artificial intelligence (AI) coding platform, exploiting old, simple bugs to access developers' secrets and source code.",
+   "src": "Dark Reading",
+   "srcUrl": "https://www.darkreading.com/application-security/2-click-cursor-exploit-dev-environment-takeover",
+   "linked": true
+  },
   {
    "ts": "2026-07-15T09:44:52Z",
    "p": "cyber",
@@ -109,9 +121,9 @@
    "scope": "artificial intelligence · capability & governance",
    "watch": "Frontier capability, bank-scale adoption, and the governance that is (or is not) keeping pace — from allowlisted lab, regulator, and press feeds.",
    "opened": "July 2026",
-   "ver": "v4",
-   "verRange": "v1–v4",
-   "asOf": "July 14, 2026",
+   "ver": "v5",
+   "verRange": "v1–v5",
+   "asOf": "July 15, 2026",
    "p1": "Frontier capability advanced again this window: OpenAI released GPT-5.6 on July 9, describing it as delivering “more intelligence from every token, stronger performance per dollar.”",
    "p1Sup": "1",
    "p2": "Banks are adopting at scale: OpenAI reports BBVA scaled ChatGPT Enterprise to 100,000 employees in an AI-powered banking transformation. The regulatory line is earlier-stage: the FTC opened public comment on a policy statement addressing AI accuracy on July 1. AI is confirmed on the attack side too: an exploited flaw in Langflow, an AI-workflow tool, is on CISA’s known-exploited list.",
@@ -120,6 +132,15 @@
    "assessSup": "5, 6",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 15, 26",
+     "st": "confirmed",
+     "ver": "v5",
+     "id": "L-0084",
+     "src": "Dark Reading",
+     "srcUrl": "https://www.darkreading.com/application-security/2-click-cursor-exploit-dev-environment-takeover",
+     "line": "A flaw requiring only two clicks lets criminals take over a developer's environment in Cursor, a popular artificial intelligence (AI) coding platform, exploiting old, simple bugs to access developers' secrets and source code."
+    },
     {
      "date": "Jul 14, 26",
      "st": "confirmed",
@@ -260,6 +281,11 @@
      "n": "8",
      "text": "BleepingComputer — “Ghostcommit” prompt-injection technique, Jul 11, 2026",
      "url": "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/"
+    },
+    {
+     "n": "9",
+     "text": "Dark Reading — “2-Click Cursor Exploit Enables Dev Environment Takeover,” Jul 15, 2026",
+     "url": "https://www.darkreading.com/application-security/2-click-cursor-exploit-dev-environment-takeover"
     }
    ],
    "related": [
@@ -2317,6 +2343,14 @@
    "line": "A 31-year-old Ghanaian national is extradited to the United States to face charges of running romance fraud schemes that took more than $8 million from more than 80 elderly victims.",
    "src": "DOJ press release",
    "srcUrl": "https://www.justice.gov/usao-ndoh/pr/ghanaian-national-extradited-us-face-accusations-using-romance-fraud-schemes-take-8"
+  },
+  {
+   "d": "2026-07-15",
+   "p": "ai",
+   "id": "L-0084",
+   "line": "A flaw requiring only two clicks lets criminals take over a developer's environment in Cursor, a popular artificial intelligence (AI) coding platform, exploiting old, simple bugs to access developers' secrets and source code.",
+   "src": "Dark Reading",
+   "srcUrl": "https://www.darkreading.com/application-security/2-click-cursor-exploit-dev-environment-takeover"
   }
  ],
  "takeaways": [
@@ -2520,7 +2554,7 @@
    {
     "no": "5",
     "date": "Wed, Jul 15, 2026",
-    "confirmed": "4",
+    "confirmed": "5",
     "pending": "0",
     "flash": "—",
     "linked": true
