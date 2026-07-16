@@ -2,18 +2,18 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-16T07:11:00-04:00",
+  "generatedAt": "2026-07-16T09:11:00-04:00",
   "issueNo": 6,
-  "recordHash": "48ed863",
+  "recordHash": "629075e",
   "windowLabel": "June 9 – July 16, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed returned 200 directly this run — no browser-User-Agent fallback needed. Two new items append to today’s edition: BleepingComputer’s report that CISA ordered federal agencies to secure Oracle E-Business Suite systems by Saturday against ongoing attacks on a financial-application flaw, and BleepingComputer’s report of a Russian criminal group using trojanized WebEx and Zoom installers to push a new Starland RAT backdoor and steal credentials and cryptocurrency.",
-  "lastRun": "2026-07-16T07:11:00-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). Two new items append to today’s edition: The Record’s report that two Scattered Spider hackers were sentenced to 5.5 years in prison for the 2024 £29 million cyberattack on Transport for London, and BleepingComputer’s report that Microsoft will end security updates for Windows 11 24H2 Home/Pro and Windows 10 Enterprise LTSB 2016 within three months.",
+  "lastRun": "2026-07-16T09:11:00-04:00"
  },
  "lead": {
-  "head": "Leading stories: CISA’s order for federal agencies to secure Oracle E-Business Suite systems against active attacks by Saturday; a cyberattack on Japan’s largest cold-chain logistics company that disrupted food supplies nationwide; and a Russian criminal group’s use of trojanized WebEx and Zoom installers to steal credentials and cryptocurrency",
-  "dek": "Today’s edition draws on the four items recorded so far. Every item links to its source.",
+  "head": "Leading stories: CISA’s order for federal agencies to secure Oracle E-Business Suite systems against active attacks by Saturday; a cyberattack on Japan’s largest cold-chain logistics company that disrupted food supplies nationwide; and the sentencing of two Scattered Spider hackers to 5.5 years in prison for a 2024 cyberattack on Transport for London",
+  "dek": "Today’s edition draws on the six items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
@@ -44,16 +44,40 @@
     "p": "cyber",
     "tri": "routine",
     "st": "confirmed",
-    "id": "L-0103",
+    "id": "L-0104",
     "conf": "",
-    "text": "A financially motivated Russian criminal group tracked as UAT-11795 uses trojanized (malware-laced) copies of legitimate software — including MobaXterm, WebEx, Zoom, DBeaver, and FaceIT — to install a new backdoor called Starland RAT and steal credentials and cryptocurrency, Cisco Talos researchers report.",
-    "why": "This shows criminals disguising malware inside trojanized copies of legitimate software to steal both login credentials and cryptocurrency, a reminder for banks to verify the source of software installers and watch for unusual credential or cryptocurrency activity.",
-    "srcText": "BleepingComputer, Jul 16",
-    "srcUrl": "https://www.bleepingcomputer.com/news/security/russian-hackers-trojanize-webex-zoom-apps-to-push-starland-malware/"
+    "text": "Two members of the Scattered Spider cybercrime collective were sentenced to 5.5 years in prison for the 2024 £29 million cyberattack on Transport for London (TfL).",
+    "why": "This shows that hackers behind a cyberattack can be tracked down, prosecuted, and imprisoned for years, a reminder that cybercrime carries real legal risk for the people who commit it.",
+    "srcText": "The Record, Jul 16",
+    "srcUrl": "https://therecord.media/scattered-spider-hackers-tfl-sentenced"
    }
   ]
  },
  "wire": [
+  {
+   "ts": "2026-07-16T12:00:00Z",
+   "p": "cyber",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0104",
+   "title": "Two members of the Scattered Spider cybercrime collective were sentenced to 5.5 years in prison for the 2024 £29 million cyberattack on Transport for London (TfL).",
+   "src": "The Record",
+   "srcUrl": "https://therecord.media/scattered-spider-hackers-tfl-sentenced",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-16T11:59:24Z",
+   "p": "cyber",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0105",
+   "title": "Microsoft announced that systems running Windows 10 Enterprise LTSB 2016 and Windows 11 24H2’s Home and Pro editions will stop receiving updates in three months, after which they will no longer receive the monthly security updates that protect against the latest threats.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-11-24h2-home-and-pro-reach-end-of-support-in-90-days/",
+   "linked": true
+  },
   {
    "ts": "2026-07-16T10:56:03Z",
    "p": "cyber",
@@ -347,8 +371,8 @@
    "scope": "cybersecurity · exploitation & exposure",
    "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
    "opened": "July 2026",
-   "ver": "v39",
-   "verRange": "v1–v39",
+   "ver": "v41",
+   "verRange": "v1–v41",
    "asOf": "July 16, 2026",
    "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
    "p1Sup": "1, 3, 10",
@@ -358,6 +382,24 @@
    "assessSup": "1, 8",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 16, 26",
+     "st": "confirmed",
+     "ver": "v41",
+     "id": "L-0104",
+     "src": "The Record",
+     "srcUrl": "https://therecord.media/scattered-spider-hackers-tfl-sentenced",
+     "line": "Two members of the Scattered Spider cybercrime collective were sentenced to 5.5 years in prison for the 2024 £29 million cyberattack on Transport for London (TfL)."
+    },
+    {
+     "date": "Jul 16, 26",
+     "st": "confirmed",
+     "ver": "v40",
+     "id": "L-0105",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-11-24h2-home-and-pro-reach-end-of-support-in-90-days/",
+     "line": "Microsoft announced that systems running Windows 10 Enterprise LTSB 2016 and Windows 11 24H2’s Home and Pro editions will stop receiving updates in three months, after which they will no longer receive the monthly security updates that protect against the latest threats."
+    },
     {
      "date": "Jul 16, 26",
      "st": "confirmed",
@@ -967,6 +1009,16 @@
      "n": "37",
      "text": "BleepingComputer — Russian hackers trojanize WebEx, Zoom apps to push Starland malware, Jul 16, 2026",
      "url": "https://www.bleepingcomputer.com/news/security/russian-hackers-trojanize-webex-zoom-apps-to-push-starland-malware/"
+    },
+    {
+     "n": "38",
+     "text": "The Record — Scattered Spider hackers sentenced to 5.5 years over £29 million Transport for London hack, Jul 16, 2026",
+     "url": "https://therecord.media/scattered-spider-hackers-tfl-sentenced"
+    },
+    {
+     "n": "39",
+     "text": "BleepingComputer — Windows 11 24H2 Home/Pro and Windows 10 Enterprise LTSB 2016 to stop receiving updates in three months, Jul 16, 2026",
+     "url": "https://www.bleepingcomputer.com/news/microsoft/windows-11-24h2-home-and-pro-reach-end-of-support-in-90-days/"
     }
    ],
    "related": [
@@ -2757,9 +2809,34 @@
    "line": "A financially motivated Russian criminal group tracked as UAT-11795 uses trojanized (malware-laced) copies of legitimate software — including MobaXterm, WebEx, Zoom, DBeaver, and FaceIT — to install a new backdoor called Starland RAT and steal credentials and cryptocurrency, Cisco Talos researchers report.",
    "src": "BleepingComputer",
    "srcUrl": "https://www.bleepingcomputer.com/news/security/russian-hackers-trojanize-webex-zoom-apps-to-push-starland-malware/"
+  },
+  {
+   "d": "2026-07-16",
+   "p": "cyber",
+   "id": "L-0104",
+   "line": "Two members of the Scattered Spider cybercrime collective were sentenced to 5.5 years in prison for the 2024 £29 million cyberattack on Transport for London (TfL).",
+   "src": "The Record",
+   "srcUrl": "https://therecord.media/scattered-spider-hackers-tfl-sentenced"
+  },
+  {
+   "d": "2026-07-16",
+   "p": "cyber",
+   "id": "L-0105",
+   "line": "Microsoft announced that systems running Windows 10 Enterprise LTSB 2016 and Windows 11 24H2’s Home and Pro editions will stop receiving updates in three months, after which they will no longer receive the monthly security updates that protect against the latest threats.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-11-24h2-home-and-pro-reach-end-of-support-in-90-days/"
   }
  ],
  "takeaways": [
+  {
+   "anchors": [
+    "L-0105"
+   ],
+   "pillars": "Cybersecurity",
+   "conf": "high confidence",
+   "head": "Windows 11 24H2 Home/Pro and Windows 10 Enterprise LTSB 2016 will stop getting security updates in three months.",
+   "body": "Microsoft announced that these editions will stop receiving updates in three months, after which they will no longer get the monthly security updates that protect against the latest threats. Technology teams running any of these editions should plan to upgrade before support ends."
+  },
   {
    "anchors": [
     "L-0102"
@@ -2996,7 +3073,7 @@
    {
     "no": "6",
     "date": "Thu, Jul 16, 2026",
-    "confirmed": "4",
+    "confirmed": "6",
     "pending": "0",
     "flash": "—",
     "linked": true
