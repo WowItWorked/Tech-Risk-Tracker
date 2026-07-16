@@ -2,21 +2,33 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-16T09:11:00-04:00",
+  "generatedAt": "2026-07-16T11:12:00-04:00",
   "issueNo": 6,
-  "recordHash": "629075e",
+  "recordHash": "c7e391b",
   "windowLabel": "June 9 – July 16, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). Two new items append to today’s edition: The Record’s report that two Scattered Spider hackers were sentenced to 5.5 years in prison for the 2024 £29 million cyberattack on Transport for London, and BleepingComputer’s report that Microsoft will end security updates for Windows 11 24H2 Home/Pro and Windows 10 Enterprise LTSB 2016 within three months.",
-  "lastRun": "2026-07-16T09:11:00-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). One new item appends to today’s edition: the Federal Reserve Board’s prohibition order against James Burns, former chief lending officer of Heritage State Bank in Lawrenceville, Illinois, for appraisal-related lending misconduct.",
+  "lastRun": "2026-07-16T11:12:00-04:00"
  },
  "lead": {
-  "head": "Leading stories: CISA’s order for federal agencies to secure Oracle E-Business Suite systems against active attacks by Saturday; a cyberattack on Japan’s largest cold-chain logistics company that disrupted food supplies nationwide; and the sentencing of two Scattered Spider hackers to 5.5 years in prison for a 2024 cyberattack on Transport for London",
-  "dek": "Today’s edition draws on the six items recorded so far. Every item links to its source.",
+  "head": "Leading stories: the Federal Reserve Board’s prohibition order against a former bank chief lending officer for appraisal-related lending misconduct; CISA’s order for federal agencies to secure Oracle E-Business Suite systems against active attacks by Saturday; and a cyberattack on Japan’s largest cold-chain logistics company that disrupted food supplies nationwide",
+  "dek": "Today’s edition draws on the seven items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
+    "p": "insider",
+    "tri": "priority",
+    "st": "confirmed",
+    "id": "L-0106",
+    "conf": "",
+    "text": "The Federal Reserve Board issues a prohibition order against James Burns, former chief lending officer of Heritage State Bank in Lawrenceville, Illinois, for appraisal-related lending misconduct.",
+    "why": "This shows a bank regulator taking direct action against an individual banker for lending-related misconduct, a reminder that individual employees — not just institutions — face real consequences for misconduct in lending and appraisal processes.",
+    "srcText": "Federal Reserve press release, Jul 16",
+    "srcUrl": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260716a.htm"
+   },
+   {
+    "n": "2",
     "p": "cyber",
     "tri": "priority",
     "st": "confirmed",
@@ -28,7 +40,7 @@
     "srcUrl": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-oracle-flaw-by-saturday/"
    },
    {
-    "n": "2",
+    "n": "3",
     "p": "tp",
     "tri": "priority",
     "st": "confirmed",
@@ -38,22 +50,22 @@
     "why": "This shows how a cyberattack on a single vendor can disrupt operations for many businesses far beyond the company itself, a reminder for banks to weigh how an outage at a critical vendor could affect their own operations.",
     "srcText": "The Record, Jul 15",
     "srcUrl": "https://therecord.media/cyberattack-japan-nichirei-logistics-impacts-kfc"
-   },
-   {
-    "n": "3",
-    "p": "cyber",
-    "tri": "routine",
-    "st": "confirmed",
-    "id": "L-0104",
-    "conf": "",
-    "text": "Two members of the Scattered Spider cybercrime collective were sentenced to 5.5 years in prison for the 2024 £29 million cyberattack on Transport for London (TfL).",
-    "why": "This shows that hackers behind a cyberattack can be tracked down, prosecuted, and imprisoned for years, a reminder that cybercrime carries real legal risk for the people who commit it.",
-    "srcText": "The Record, Jul 16",
-    "srcUrl": "https://therecord.media/scattered-spider-hackers-tfl-sentenced"
    }
   ]
  },
  "wire": [
+  {
+   "ts": "2026-07-16T15:00:00Z",
+   "p": "insider",
+   "tri": "priority",
+   "st": "confirmed",
+   "tier": "T1",
+   "id": "L-0106",
+   "title": "The Federal Reserve Board issues a prohibition order against James Burns, former chief lending officer of Heritage State Bank in Lawrenceville, Illinois, for appraisal-related lending misconduct.",
+   "src": "Federal Reserve press release",
+   "srcUrl": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260716a.htm",
+   "linked": true
+  },
   {
    "ts": "2026-07-16T12:00:00Z",
    "p": "cyber",
@@ -1797,9 +1809,9 @@
    "scope": "insider threat · co-opted trust",
    "watch": "Prosecutions and advisories where trusted roles — employees, contractors, hired specialists — are the attack path.",
    "opened": "July 2026",
-   "ver": "v4",
-   "verRange": "v1–v4",
-   "asOf": "July 15, 2026",
+   "ver": "v5",
+   "verRange": "v1–v5",
+   "asOf": "July 16, 2026",
    "p1": "One confirmed event this window sits squarely on trusted-role co-option: a former ransomware negotiator was sentenced to 70 months for conspiring with BlackCat ransomware actors to extort the victims he was engaged to help — and with other former cybersecurity professionals to attack additional victims.",
    "p1Sup": "1",
    "p2": "Adjacent signals point the same direction: the AssuranceAmerica breach began with attackers targeting a company employee, and a man accused of deploying Ryuk ransomware pleaded guilty to conspiracy and computer fraud in an Oregon federal court.",
@@ -1808,6 +1820,15 @@
    "assessSup": "4, 5",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 16, 26",
+     "st": "confirmed",
+     "ver": "v5",
+     "id": "L-0106",
+     "src": "Federal Reserve press release",
+     "srcUrl": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260716a.htm",
+     "line": "The Federal Reserve Board issues a prohibition order against James Burns, former chief lending officer of Heritage State Bank in Lawrenceville, Illinois, for appraisal-related lending misconduct."
+    },
     {
      "date": "Jul 15, 26",
      "st": "confirmed",
@@ -1893,6 +1914,11 @@
      "n": "6",
      "text": "DOJ — TD Bank insiders sentenced for money laundering, Jul 15, 2026",
      "url": "https://www.justice.gov/opa/pr/two-td-bank-insiders-sentenced-prison-facilitating-money-laundering-fraud"
+    },
+    {
+     "n": "7",
+     "text": "Federal Reserve — prohibition order against former Heritage State Bank chief lending officer, Jul 16, 2026",
+     "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260716a.htm"
     }
    ],
    "related": [
@@ -2825,6 +2851,14 @@
    "line": "Microsoft announced that systems running Windows 10 Enterprise LTSB 2016 and Windows 11 24H2’s Home and Pro editions will stop receiving updates in three months, after which they will no longer receive the monthly security updates that protect against the latest threats.",
    "src": "BleepingComputer",
    "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-11-24h2-home-and-pro-reach-end-of-support-in-90-days/"
+  },
+  {
+   "d": "2026-07-16",
+   "p": "insider",
+   "id": "L-0106",
+   "line": "The Federal Reserve Board issues a prohibition order against James Burns, former chief lending officer of Heritage State Bank in Lawrenceville, Illinois, for appraisal-related lending misconduct.",
+   "src": "Federal Reserve press release",
+   "srcUrl": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260716a.htm"
   }
  ],
  "takeaways": [
@@ -3073,7 +3107,7 @@
    {
     "no": "6",
     "date": "Thu, Jul 16, 2026",
-    "confirmed": "6",
+    "confirmed": "7",
     "pending": "0",
     "flash": "—",
     "linked": true
