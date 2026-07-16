@@ -2,21 +2,33 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-16T13:17:00-04:00",
+  "generatedAt": "2026-07-16T14:12:00-04:00",
   "issueNo": 6,
-  "recordHash": "6a9a29f",
+  "recordHash": "3d6ee77",
   "windowLabel": "June 9 – July 16, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). Four new items append to today’s edition: CISA’s known-exploited-vulnerabilities catalog added a Microsoft SharePoint flaw and two Fortinet FortiSandbox flaws; DOJ press releases report a Lawrence, Mass. bank-embezzlement sentencing, a Sioux Falls crypto-investor fraud indictment, and a former Federal Reserve Board of Governors adviser’s sentencing for sharing restricted Fed information with Chinese intelligence operatives.",
-  "lastRun": "2026-07-16T13:17:00-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). One new item appends to today’s edition: the OCC, Federal Reserve, and FDIC issued a joint statement on identifying and handling highly sensitive information during bank examinations, including a 72-hour breach-notification commitment for confidential supervisory information.",
+  "lastRun": "2026-07-16T14:12:00-04:00"
  },
  "lead": {
-  "head": "Leading stories: CISA’s addition of a Microsoft SharePoint flaw and two Fortinet FortiSandbox flaws to its known-exploited vulnerabilities list; the Federal Reserve Board’s prohibition order against a former bank chief lending officer for appraisal-related lending misconduct; and CISA’s order for federal agencies to secure Oracle E-Business Suite systems against active attacks by Saturday",
-  "dek": "Today’s edition draws on the twelve items recorded so far. Every item links to its source.",
+  "head": "Leading stories: the Office of the Comptroller of the Currency (OCC), Federal Reserve, and Federal Deposit Insurance Corporation (FDIC)’s joint statement on handling highly sensitive information during bank examinations, including a 72-hour breach-notification commitment; CISA’s addition of a Microsoft SharePoint flaw and two Fortinet FortiSandbox flaws to its known-exploited vulnerabilities list; and the Federal Reserve Board’s prohibition order against a former bank chief lending officer for appraisal-related lending misconduct",
+  "dek": "Today’s edition draws on the thirteen items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
+    "p": "data",
+    "tri": "priority",
+    "st": "confirmed",
+    "id": "L-0112",
+    "conf": "",
+    "text": "The Office of the Comptroller of the Currency (OCC), the Federal Reserve Board, and the Federal Deposit Insurance Corporation (FDIC) issue a joint statement on identifying and handling highly sensitive information during bank examinations, including a commitment to notify affected banks of a potential or confirmed material data breach involving confidential supervisory information within no more than 72 hours.",
+    "why": "Three federal banking regulators are committing to notify examined banks within 72 hours of a potential or confirmed breach of confidential supervisory information, giving technology and compliance teams a concrete timeline to plan around.",
+    "srcText": "OCC + Federal Reserve, Jul 16",
+    "srcUrl": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-32.html"
+   },
+   {
+    "n": "2",
     "p": "cyber",
     "tri": "priority",
     "st": "confirmed",
@@ -28,7 +40,7 @@
     "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
    },
    {
-    "n": "2",
+    "n": "3",
     "p": "insider",
     "tri": "priority",
     "st": "confirmed",
@@ -38,22 +50,22 @@
     "why": "This shows a bank regulator taking direct action against an individual banker for lending-related misconduct, a reminder that individual employees — not just institutions — face real consequences for misconduct in lending and appraisal processes.",
     "srcText": "Federal Reserve press release, Jul 16",
     "srcUrl": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260716a.htm"
-   },
-   {
-    "n": "3",
-    "p": "cyber",
-    "tri": "priority",
-    "st": "confirmed",
-    "id": "L-0102",
-    "conf": "",
-    "text": "CISA (the Cybersecurity and Infrastructure Security Agency) orders federal agencies to secure their systems by Saturday against ongoing attacks exploiting a flaw in Oracle E-Business Suite, a financial application.",
-    "why": "This shows CISA treating a flaw in financial-application software as urgent enough to set federal agencies a hard deadline to patch, a reminder for banks and their vendors running the same software to confirm they’ve applied the fix.",
-    "srcText": "BleepingComputer, Jul 16",
-    "srcUrl": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-oracle-flaw-by-saturday/"
    }
   ]
  },
  "wire": [
+  {
+   "ts": "2026-07-16T18:00:00Z",
+   "p": "data",
+   "tri": "priority",
+   "st": "confirmed",
+   "tier": "T1",
+   "id": "L-0112",
+   "title": "The Office of the Comptroller of the Currency (OCC), the Federal Reserve Board, and the Federal Deposit Insurance Corporation (FDIC) issue a joint statement on identifying and handling highly sensitive information during bank examinations, including a commitment to notify affected banks of a potential or confirmed material data breach involving confidential supervisory information within no more than 72 hours.",
+   "src": "OCC + Federal Reserve",
+   "srcUrl": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-32.html",
+   "linked": true
+  },
   {
    "ts": "2026-07-16T17:17:00Z",
    "p": "cyber",
@@ -1757,9 +1769,9 @@
    "scope": "data risk · reporting standards & data accuracy",
    "watch": "Data-standards rulemaking, consumer-data enforcement, and breach disclosures at financial firms.",
    "opened": "July 2026",
-   "ver": "v2",
-   "verRange": "v1–v2",
-   "asOf": "July 15, 2026",
+   "ver": "v3",
+   "verRange": "v1–v3",
+   "asOf": "July 16, 2026",
    "p1": "Uniform data-reporting standards are now final: the OCC, Federal Reserve, FDIC, and five other agencies issued the joint Financial Data Transparency Act rule on June 11, establishing data standards for certain regulatory collections.",
    "p1Sup": "1",
    "p2": "Enforcement pressure sits on consumer-data accuracy. The FTC required tenant-screening provider RentGrow to pay $2.25 million over duplicate records and undisclosed data sources (July 9). Separately, insurance company AssuranceAmerica disclosed a breach affecting records of 6.9 million drivers.",
@@ -1768,6 +1780,15 @@
    "assessSup": "4",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 16, 26",
+     "st": "confirmed",
+     "ver": "v3",
+     "id": "L-0112",
+     "src": "OCC + Federal Reserve",
+     "srcUrl": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-32.html",
+     "line": "The Office of the Comptroller of the Currency (OCC), the Federal Reserve Board, and the Federal Deposit Insurance Corporation (FDIC) issue a joint statement on identifying and handling highly sensitive information during bank examinations, including a commitment to notify affected banks of a potential or confirmed material data breach involving confidential supervisory information within no more than 72 hours."
+    },
     {
      "date": "Jul 15, 26",
      "st": "confirmed",
@@ -1871,6 +1892,11 @@
      "n": "6",
      "text": "The Record — 23andMe $18M multistate breach settlement, Jul 15, 2026",
      "url": "https://therecord.media/genetic-testing-settlement-data-breach"
+    },
+    {
+     "n": "7",
+     "text": "OCC Bulletin 2026-32 + Federal Reserve press release — joint statement on highly sensitive information in examinations, Jul 16, 2026",
+     "url": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-32.html"
     }
    ],
    "related": [
@@ -3029,9 +3055,26 @@
    "line": "A former senior adviser for the Federal Reserve Board of Governors, John Harold Rogers, is sentenced to 38 months in federal prison for making false statements to federal investigators about sharing restricted Federal Reserve information with Chinese intelligence operatives.",
    "src": "DOJ press release",
    "srcUrl": "https://www.justice.gov/opa/pr/former-adviser-federal-reserve-board-governors-sentenced-federal-prison-term"
+  },
+  {
+   "d": "2026-07-16",
+   "p": "data",
+   "id": "L-0112",
+   "line": "The Office of the Comptroller of the Currency (OCC), the Federal Reserve Board, and the Federal Deposit Insurance Corporation (FDIC) issue a joint statement on identifying and handling highly sensitive information during bank examinations, including a commitment to notify affected banks of a potential or confirmed material data breach involving confidential supervisory information within no more than 72 hours.",
+   "src": "OCC + Federal Reserve",
+   "srcUrl": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-32.html"
   }
  ],
  "takeaways": [
+  {
+   "anchors": [
+    "L-0112"
+   ],
+   "pillars": "Data risk",
+   "conf": "high confidence",
+   "head": "Banking regulators commit to notify banks within 72 hours of a breach involving confidential supervisory information.",
+   "body": "The Office of the Comptroller of the Currency (OCC), Federal Reserve, and Federal Deposit Insurance Corporation (FDIC) issued a joint statement committing to notify affected banks of a potential or confirmed material data breach involving confidential supervisory information within no more than 72 hours, and outlining ways to minimize the highly sensitive information collected and stored during examinations. Compliance and technology teams should factor this notification commitment into their own incident-response expectations for examination-related data."
+  },
   {
    "anchors": [
     "L-0108"
@@ -3286,7 +3329,7 @@
    {
     "no": "6",
     "date": "Thu, Jul 16, 2026",
-    "confirmed": "12",
+    "confirmed": "13",
     "pending": "0",
     "flash": "—",
     "linked": true
