@@ -2,18 +2,18 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-16T16:13:00-04:00",
+  "generatedAt": "2026-07-16T17:07:00-04:00",
   "issueNo": 6,
-  "recordHash": "bd2ae14",
+  "recordHash": "c0e993e",
   "windowLabel": "June 9 – July 16, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). Four new items append to today’s edition: a disclosed flaw in Anthropic’s Claude for Chrome browser extension that could let a malicious extension trigger Claude’s actions and abuse its access to connected services; a new “OkoBot” malware framework stealing cryptocurrency wallet seed phrases and other data; a federal indictment of two men for laundering proceeds of “pig butchering” investment-fraud scams; and the sentencing of a Crips gang member for a $2.8 million bank-fraud scheme run through Instagram-recruited straw accounts.",
-  "lastRun": "2026-07-16T16:13:00-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). One new item appends to today’s edition: a Dark Reading report that more than 1 million phishing emails used hidden text (“text salting”) to evade AI-based email security filters. The CISA KEV catalog and BleepingComputer's OkoBot and Claude-for-Chrome items already surfaced this window were confirmed unchanged since the prior run (already recorded as L-0108/L-0113/L-0114); an OCC bulletin on a revised “Allowances for Credit Losses” Comptroller's Handbook booklet was reviewed and excluded as an accounting/credit-risk standard, not a technology-risk item under any of the eight pillars. Anthropic's newest dated item remains Jul 14; FinCEN's and ICO's fetched pages again returned no readable, dated news-list content in the window; ENISA's newest dated item remains Jul 14.",
+  "lastRun": "2026-07-16T17:07:00-04:00"
  },
  "lead": {
   "head": "Leading stories: the Office of the Comptroller of the Currency (OCC), Federal Reserve, and Federal Deposit Insurance Corporation (FDIC)’s joint statement on handling highly sensitive information during bank examinations, including a 72-hour breach-notification commitment; CISA’s addition of a Microsoft SharePoint flaw and two Fortinet FortiSandbox flaws to its known-exploited vulnerabilities list; and the Federal Reserve Board’s prohibition order against a former bank chief lending officer for appraisal-related lending misconduct",
-  "dek": "Today’s edition draws on the seventeen items recorded so far. Every item links to its source.",
+  "dek": "Today’s edition draws on the eighteen items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
@@ -54,6 +54,18 @@
   ]
  },
  "wire": [
+  {
+   "ts": "2026-07-16T19:41:31Z",
+   "p": "cyber",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0117",
+   "title": "More than 1 million phishing emails used hidden text, a technique called “text salting,” to evade artificial intelligence (AI)-based email security filters and reach inboxes, Dark Reading reports.",
+   "src": "Dark Reading",
+   "srcUrl": "https://www.darkreading.com/threat-intelligence/1m-emails-hidden-text-dupe-ai-security-filters",
+   "linked": true
+  },
   {
    "ts": "2026-07-16T19:26:07Z",
    "p": "cyber",
@@ -503,8 +515,8 @@
    "scope": "cybersecurity · exploitation & exposure",
    "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
    "opened": "July 2026",
-   "ver": "v45",
-   "verRange": "v1–v45",
+   "ver": "v46",
+   "verRange": "v1–v46",
    "asOf": "July 16, 2026",
    "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
    "p1Sup": "1, 3, 10",
@@ -514,6 +526,15 @@
    "assessSup": "1, 8",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 16, 26",
+     "st": "confirmed",
+     "ver": "v46",
+     "id": "L-0117",
+     "src": "Dark Reading",
+     "srcUrl": "https://www.darkreading.com/threat-intelligence/1m-emails-hidden-text-dupe-ai-security-filters",
+     "line": "More than 1 million phishing emails used hidden text, a technique called “text salting,” to evade artificial intelligence (AI)-based email security filters and reach inboxes, Dark Reading reports."
+    },
     {
      "date": "Jul 16, 26",
      "st": "confirmed",
@@ -1207,6 +1228,11 @@
      "n": "43",
      "text": "BleepingComputer — Claude Chrome extension flaw lets malicious extensions trigger AI actions, Jul 16, 2026",
      "url": "https://www.bleepingcomputer.com/news/security/claude-chrome-extension-flaw-lets-malicious-extensions-trigger-ai-actions/"
+    },
+    {
+     "n": "44",
+     "text": "Dark Reading — 1M+ Emails Use Hidden Text to Dupe AI Security Filters, Jul 16, 2026",
+     "url": "https://www.darkreading.com/threat-intelligence/1m-emails-hidden-text-dupe-ai-security-filters"
     }
    ],
    "related": [
@@ -3199,9 +3225,26 @@
    "line": "A member of the South Los Angeles-based Crips street gang is sentenced to 108 months in federal prison for a $2.8 million scheme in which he stole checks in the mail, altered them, then used Instagram to recruit bank account holders to give him access to their accounts to deposit the checks.",
    "src": "DOJ press release",
    "srcUrl": "https://www.justice.gov/usao-cdca/pr/member-south-la-based-crips-street-gang-sentenced-9-years-federal-prison-role-28"
+  },
+  {
+   "d": "2026-07-16",
+   "p": "cyber",
+   "id": "L-0117",
+   "line": "More than 1 million phishing emails used hidden text, a technique called “text salting,” to evade artificial intelligence (AI)-based email security filters and reach inboxes, Dark Reading reports.",
+   "src": "Dark Reading",
+   "srcUrl": "https://www.darkreading.com/threat-intelligence/1m-emails-hidden-text-dupe-ai-security-filters"
   }
  ],
  "takeaways": [
+  {
+   "anchors": [
+    "L-0117"
+   ],
+   "pillars": "Cybersecurity",
+   "conf": "moderate confidence",
+   "head": "Hidden text embedded in phishing emails is evading AI-based email security filters.",
+   "body": "Dark Reading reports that more than 1 million phishing emails used hidden text, a technique called “text salting,” to evade artificial intelligence (AI)-based email security filters and reach inboxes. Technology and security teams relying on AI-based email filtering should treat text salting as a known blind spot and layer additional detection."
+  },
   {
    "anchors": [
     "L-0112"
@@ -3465,7 +3508,7 @@
    {
     "no": "6",
     "date": "Thu, Jul 16, 2026",
-    "confirmed": "17",
+    "confirmed": "18",
     "pending": "0",
     "flash": "—",
     "linked": true
