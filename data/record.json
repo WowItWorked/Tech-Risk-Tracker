@@ -2,21 +2,33 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-16T06:18:00-04:00",
+  "generatedAt": "2026-07-16T07:11:00-04:00",
   "issueNo": 6,
-  "recordHash": "6cf97ac",
+  "recordHash": "48ed863",
   "windowLabel": "June 9 – July 16, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). The FCA’s RSS feed carries no publication-date field on any item, so its content could not be reliably windowed this run; no FCA items were admitted for lack of a verifiable publishedAt. Two new items open today’s edition: The Record’s report of a cyberattack on Japan’s largest cold-chain logistics operator disrupting KFC and other restaurant chains’ supplies, and a DOJ press release on a former TD Bank employee sentenced for facilitating a money-laundering network’s movement of funds through the bank.",
-  "lastRun": "2026-07-16T06:18:00-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed returned 200 directly this run — no browser-User-Agent fallback needed. Two new items append to today’s edition: BleepingComputer’s report that CISA ordered federal agencies to secure Oracle E-Business Suite systems by Saturday against ongoing attacks on a financial-application flaw, and BleepingComputer’s report of a Russian criminal group using trojanized WebEx and Zoom installers to push a new Starland RAT backdoor and steal credentials and cryptocurrency.",
+  "lastRun": "2026-07-16T07:11:00-04:00"
  },
  "lead": {
-  "head": "Leading stories: a cyberattack on Japan’s largest cold-chain logistics company that disrupted food supplies nationwide; and the sentencing of a former TD Bank employee for facilitating a money-laundering network’s movement of millions of dollars through the bank",
-  "dek": "Today’s edition draws on the two items recorded so far. Every item links to its source.",
+  "head": "Leading stories: CISA’s order for federal agencies to secure Oracle E-Business Suite systems against active attacks by Saturday; a cyberattack on Japan’s largest cold-chain logistics company that disrupted food supplies nationwide; and a Russian criminal group’s use of trojanized WebEx and Zoom installers to steal credentials and cryptocurrency",
+  "dek": "Today’s edition draws on the four items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
+    "p": "cyber",
+    "tri": "priority",
+    "st": "confirmed",
+    "id": "L-0102",
+    "conf": "",
+    "text": "CISA (the Cybersecurity and Infrastructure Security Agency) orders federal agencies to secure their systems by Saturday against ongoing attacks exploiting a flaw in Oracle E-Business Suite, a financial application.",
+    "why": "This shows CISA treating a flaw in financial-application software as urgent enough to set federal agencies a hard deadline to patch, a reminder for banks and their vendors running the same software to confirm they’ve applied the fix.",
+    "srcText": "BleepingComputer, Jul 16",
+    "srcUrl": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-oracle-flaw-by-saturday/"
+   },
+   {
+    "n": "2",
     "p": "tp",
     "tri": "priority",
     "st": "confirmed",
@@ -28,20 +40,44 @@
     "srcUrl": "https://therecord.media/cyberattack-japan-nichirei-logistics-impacts-kfc"
    },
    {
-    "n": "2",
-    "p": "insider",
+    "n": "3",
+    "p": "cyber",
     "tri": "routine",
     "st": "confirmed",
-    "id": "L-0100",
+    "id": "L-0103",
     "conf": "",
-    "text": "A former TD Bank employee is sentenced to 46 months in prison for facilitating a money-laundering network’s movement of millions of dollars through TD Bank accounts.",
-    "why": "This shows criminals can use bank employees to facilitate the movement of large sums through legitimate accounts, not just outside attacks — a reminder for fraud and compliance teams to strengthen internal controls and employee monitoring.",
-    "srcText": "DOJ press release, Jul 15",
-    "srcUrl": "https://www.justice.gov/opa/pr/two-td-bank-insiders-sentenced-prison-facilitating-money-laundering-fraud"
+    "text": "A financially motivated Russian criminal group tracked as UAT-11795 uses trojanized (malware-laced) copies of legitimate software — including MobaXterm, WebEx, Zoom, DBeaver, and FaceIT — to install a new backdoor called Starland RAT and steal credentials and cryptocurrency, Cisco Talos researchers report.",
+    "why": "This shows criminals disguising malware inside trojanized copies of legitimate software to steal both login credentials and cryptocurrency, a reminder for banks to verify the source of software installers and watch for unusual credential or cryptocurrency activity.",
+    "srcText": "BleepingComputer, Jul 16",
+    "srcUrl": "https://www.bleepingcomputer.com/news/security/russian-hackers-trojanize-webex-zoom-apps-to-push-starland-malware/"
    }
   ]
  },
  "wire": [
+  {
+   "ts": "2026-07-16T10:56:03Z",
+   "p": "cyber",
+   "tri": "priority",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0102",
+   "title": "CISA (the Cybersecurity and Infrastructure Security Agency) orders federal agencies to secure their systems by Saturday against ongoing attacks exploiting a flaw in Oracle E-Business Suite, a financial application.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-oracle-flaw-by-saturday/",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-16T10:19:34Z",
+   "p": "cyber",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0103",
+   "title": "A financially motivated Russian criminal group tracked as UAT-11795 uses trojanized (malware-laced) copies of legitimate software — including MobaXterm, WebEx, Zoom, DBeaver, and FaceIT — to install a new backdoor called Starland RAT and steal credentials and cryptocurrency, Cisco Talos researchers report.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/russian-hackers-trojanize-webex-zoom-apps-to-push-starland-malware/",
+   "linked": true
+  },
   {
    "ts": "2026-07-15T23:00:00Z",
    "p": "tp",
@@ -311,9 +347,9 @@
    "scope": "cybersecurity · exploitation & exposure",
    "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
    "opened": "July 2026",
-   "ver": "v37",
-   "verRange": "v1–v37",
-   "asOf": "July 15, 2026",
+   "ver": "v39",
+   "verRange": "v1–v39",
+   "asOf": "July 16, 2026",
    "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
    "p1Sup": "1, 3, 10",
    "p2": "The UK’s National Cyber Security Centre (NCSC) and cybersecurity agencies from the United States and eight other countries warn that hackers linked to Russia’s Federal Security Service (FSB) are exploiting routers with default or weak passwords to infiltrate critical infrastructure, naming financial services among the sectors most at risk. Researchers report “JadePuffer,” described as a ransomware attack run end-to-end by an AI agent that broke in through the exploited Langflow flaw. Separately, Progress Software urged ShareFile customers running Storage Zone Controllers to shut down their servers immediately over a “credible external security threat.”",
@@ -322,6 +358,24 @@
    "assessSup": "1, 8",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 16, 26",
+     "st": "confirmed",
+     "ver": "v39",
+     "id": "L-0102",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-oracle-flaw-by-saturday/",
+     "line": "CISA (the Cybersecurity and Infrastructure Security Agency) orders federal agencies to secure their systems by Saturday against ongoing attacks exploiting a flaw in Oracle E-Business Suite, a financial application."
+    },
+    {
+     "date": "Jul 16, 26",
+     "st": "confirmed",
+     "ver": "v38",
+     "id": "L-0103",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/russian-hackers-trojanize-webex-zoom-apps-to-push-starland-malware/",
+     "line": "A financially motivated Russian criminal group tracked as UAT-11795 uses trojanized (malware-laced) copies of legitimate software — including MobaXterm, WebEx, Zoom, DBeaver, and FaceIT — to install a new backdoor called Starland RAT and steal credentials and cryptocurrency, Cisco Talos researchers report."
+    },
     {
      "date": "Jul 15, 26",
      "st": "confirmed",
@@ -903,6 +957,16 @@
      "n": "35",
      "text": "Dark Reading — UEFI shim bootloader Secure Boot bypass report, Jul 15, 2026",
      "url": "https://www.darkreading.com/cyber-risk/forgotten-bootloaders-expose-secure-boot-blind-spot"
+    },
+    {
+     "n": "36",
+     "text": "BleepingComputer — CISA orders federal agencies to patch actively exploited Oracle E-Business Suite flaw by Saturday, Jul 16, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-oracle-flaw-by-saturday/"
+    },
+    {
+     "n": "37",
+     "text": "BleepingComputer — Russian hackers trojanize WebEx, Zoom apps to push Starland malware, Jul 16, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/russian-hackers-trojanize-webex-zoom-apps-to-push-starland-malware/"
     }
    ],
    "related": [
@@ -2677,9 +2741,34 @@
    "line": "A cyberattack on Nichirei Logistics Group, Japan’s largest refrigerated logistics company, disrupted the country’s food supply chain, leaving Kentucky Fried Chicken restaurants short on ingredients and major restaurant chains struggling to keep up with deliveries; Nichirei, which serves about 5,000 customers across Japan, said it experienced a system outage on Monday.",
    "src": "The Record",
    "srcUrl": "https://therecord.media/cyberattack-japan-nichirei-logistics-impacts-kfc"
+  },
+  {
+   "d": "2026-07-16",
+   "p": "cyber",
+   "id": "L-0102",
+   "line": "CISA (the Cybersecurity and Infrastructure Security Agency) orders federal agencies to secure their systems by Saturday against ongoing attacks exploiting a flaw in Oracle E-Business Suite, a financial application.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-oracle-flaw-by-saturday/"
+  },
+  {
+   "d": "2026-07-16",
+   "p": "cyber",
+   "id": "L-0103",
+   "line": "A financially motivated Russian criminal group tracked as UAT-11795 uses trojanized (malware-laced) copies of legitimate software — including MobaXterm, WebEx, Zoom, DBeaver, and FaceIT — to install a new backdoor called Starland RAT and steal credentials and cryptocurrency, Cisco Talos researchers report.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/russian-hackers-trojanize-webex-zoom-apps-to-push-starland-malware/"
   }
  ],
  "takeaways": [
+  {
+   "anchors": [
+    "L-0102"
+   ],
+   "pillars": "Cybersecurity",
+   "conf": "high confidence",
+   "head": "CISA orders federal agencies to secure Oracle E-Business Suite systems by Saturday against active attacks.",
+   "body": "CISA ordered federal agencies to secure their systems by Saturday against ongoing attacks exploiting a flaw in Oracle E-Business Suite, a financial application. Technology teams running Oracle E-Business Suite should treat this as a firm deadline to confirm patches are applied."
+  },
   {
    "anchors": [
     "L-0096"
@@ -2907,7 +2996,7 @@
    {
     "no": "6",
     "date": "Thu, Jul 16, 2026",
-    "confirmed": "2",
+    "confirmed": "4",
     "pending": "0",
     "flash": "—",
     "linked": true
