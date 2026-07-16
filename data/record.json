@@ -2,21 +2,33 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-16T12:11:00-04:00",
+  "generatedAt": "2026-07-16T13:17:00-04:00",
   "issueNo": 6,
-  "recordHash": "274332b",
+  "recordHash": "6a9a29f",
   "windowLabel": "June 9 – July 16, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). One new item appends to today’s edition: a Cybersecurity Dive report on Iran-linked state and hacktivist groups using AI tools such as ChatGPT to enhance their cyber playbook.",
-  "lastRun": "2026-07-16T12:11:00-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). Four new items append to today’s edition: CISA’s known-exploited-vulnerabilities catalog added a Microsoft SharePoint flaw and two Fortinet FortiSandbox flaws; DOJ press releases report a Lawrence, Mass. bank-embezzlement sentencing, a Sioux Falls crypto-investor fraud indictment, and a former Federal Reserve Board of Governors adviser’s sentencing for sharing restricted Fed information with Chinese intelligence operatives.",
+  "lastRun": "2026-07-16T13:17:00-04:00"
  },
  "lead": {
-  "head": "Leading stories: the Federal Reserve Board’s prohibition order against a former bank chief lending officer for appraisal-related lending misconduct; CISA’s order for federal agencies to secure Oracle E-Business Suite systems against active attacks by Saturday; and a cyberattack on Japan’s largest cold-chain logistics company that disrupted food supplies nationwide",
-  "dek": "Today’s edition draws on the eight items recorded so far. Every item links to its source.",
+  "head": "Leading stories: CISA’s addition of a Microsoft SharePoint flaw and two Fortinet FortiSandbox flaws to its known-exploited vulnerabilities list; the Federal Reserve Board’s prohibition order against a former bank chief lending officer for appraisal-related lending misconduct; and CISA’s order for federal agencies to secure Oracle E-Business Suite systems against active attacks by Saturday",
+  "dek": "Today’s edition draws on the twelve items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
+    "p": "cyber",
+    "tri": "priority",
+    "st": "confirmed",
+    "id": "L-0108",
+    "conf": "",
+    "text": "CISA adds three exploited flaws to its known-exploited vulnerabilities list: a Microsoft SharePoint deserialization flaw allowing code execution over a network (CVE-2026-58644), and two Fortinet FortiSandbox command-injection flaws allowing an unauthenticated attacker to execute unauthorized commands (CVE-2026-25089, CVE-2026-39808).",
+    "why": "CISA has confirmed active exploitation of a Microsoft SharePoint flaw and two Fortinet FortiSandbox flaws, giving technology teams running either product a clear signal to patch before the July 19 deadline.",
+    "srcText": "CISA KEV catalog, Jul 16",
+    "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+   },
+   {
+    "n": "2",
     "p": "insider",
     "tri": "priority",
     "st": "confirmed",
@@ -28,7 +40,7 @@
     "srcUrl": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260716a.htm"
    },
    {
-    "n": "2",
+    "n": "3",
     "p": "cyber",
     "tri": "priority",
     "st": "confirmed",
@@ -38,22 +50,22 @@
     "why": "This shows CISA treating a flaw in financial-application software as urgent enough to set federal agencies a hard deadline to patch, a reminder for banks and their vendors running the same software to confirm they’ve applied the fix.",
     "srcText": "BleepingComputer, Jul 16",
     "srcUrl": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-oracle-flaw-by-saturday/"
-   },
-   {
-    "n": "3",
-    "p": "tp",
-    "tri": "priority",
-    "st": "confirmed",
-    "id": "L-0101",
-    "conf": "",
-    "text": "A cyberattack on Nichirei Logistics Group, Japan’s largest refrigerated logistics company, disrupted the country’s food supply chain, leaving Kentucky Fried Chicken restaurants short on ingredients and major restaurant chains struggling to keep up with deliveries; Nichirei, which serves about 5,000 customers across Japan, said it experienced a system outage on Monday.",
-    "why": "This shows how a cyberattack on a single vendor can disrupt operations for many businesses far beyond the company itself, a reminder for banks to weigh how an outage at a critical vendor could affect their own operations.",
-    "srcText": "The Record, Jul 15",
-    "srcUrl": "https://therecord.media/cyberattack-japan-nichirei-logistics-impacts-kfc"
    }
   ]
  },
  "wire": [
+  {
+   "ts": "2026-07-16T17:17:00Z",
+   "p": "cyber",
+   "tri": "priority",
+   "st": "confirmed",
+   "tier": "T1",
+   "id": "L-0108",
+   "title": "CISA adds three exploited flaws to its known-exploited vulnerabilities list: a Microsoft SharePoint deserialization flaw allowing code execution over a network (CVE-2026-58644), and two Fortinet FortiSandbox command-injection flaws allowing an unauthenticated attacker to execute unauthorized commands (CVE-2026-25089, CVE-2026-39808).",
+   "src": "CISA KEV catalog",
+   "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+   "linked": true
+  },
   {
    "ts": "2026-07-16T15:00:00Z",
    "p": "insider",
@@ -88,6 +100,42 @@
    "title": "Two members of the Scattered Spider cybercrime collective were sentenced to 5.5 years in prison for the 2024 £29 million cyberattack on Transport for London (TfL).",
    "src": "The Record",
    "srcUrl": "https://therecord.media/scattered-spider-hackers-tfl-sentenced",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-16T12:00:00Z",
+   "p": "insider",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T1",
+   "id": "L-0109",
+   "title": "A Lawrence man is sentenced to prison for embezzling hundreds of thousands of dollars from a Citizens Bank branch in Tewksbury, Massachusetts.",
+   "src": "DOJ press release",
+   "srcUrl": "https://www.justice.gov/usao-ma/pr/lawrence-man-sentenced-prison-bank-embezzlement",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-16T12:00:00Z",
+   "p": "fraud",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T1",
+   "id": "L-0110",
+   "title": "A federal grand jury indicts a Sioux Falls, South Dakota crypto investor on charges of wire fraud, money laundering, bank fraud, and aggravated identity theft.",
+   "src": "DOJ press release",
+   "srcUrl": "https://www.justice.gov/usao-sd/pr/sioux-falls-crypto-investor-indicted-wire-fraud-money-laundering-bank-fraud-and",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-16T12:00:00Z",
+   "p": "insider",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T1",
+   "id": "L-0111",
+   "title": "A former senior adviser for the Federal Reserve Board of Governors, John Harold Rogers, is sentenced to 38 months in federal prison for making false statements to federal investigators about sharing restricted Federal Reserve information with Chinese intelligence operatives.",
+   "src": "DOJ press release",
+   "srcUrl": "https://www.justice.gov/opa/pr/former-adviser-federal-reserve-board-governors-sentenced-federal-prison-term",
    "linked": true
   },
   {
@@ -395,8 +443,8 @@
    "scope": "cybersecurity · exploitation & exposure",
    "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
    "opened": "July 2026",
-   "ver": "v42",
-   "verRange": "v1–v42",
+   "ver": "v43",
+   "verRange": "v1–v43",
    "asOf": "July 16, 2026",
    "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
    "p1Sup": "1, 3, 10",
@@ -406,6 +454,15 @@
    "assessSup": "1, 8",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 16, 26",
+     "st": "confirmed",
+     "ver": "v43",
+     "id": "L-0108",
+     "src": "CISA KEV catalog",
+     "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+     "line": "CISA adds three exploited flaws to its known-exploited vulnerabilities list: a Microsoft SharePoint deserialization flaw allowing code execution over a network (CVE-2026-58644), and two Fortinet FortiSandbox command-injection flaws allowing an unauthenticated attacker to execute unauthorized commands (CVE-2026-25089, CVE-2026-39808)."
+    },
     {
      "date": "Jul 16, 26",
      "st": "confirmed",
@@ -1057,6 +1114,11 @@
      "n": "40",
      "text": "Cybersecurity Dive — Iran-nexus actors using AI to enhance cyber playbook, Jul 16, 2026",
      "url": "https://www.cybersecuritydive.com/news/iran-nexus-actors-ai-cyber-ChatGPT-malware/825415/"
+    },
+    {
+     "n": "41",
+     "text": "CISA — Known Exploited Vulnerabilities catalog, additions: Microsoft SharePoint CVE-2026-58644, Fortinet FortiSandbox CVE-2026-25089 & CVE-2026-39808, Jul 16, 2026",
+     "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
     }
    ],
    "related": [
@@ -1107,9 +1169,9 @@
    "scope": "fraud · AML rulemaking & scam patterns",
    "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
    "opened": "July 2026",
-   "ver": "v10",
-   "verRange": "v1–v10",
-   "asOf": "July 15, 2026",
+   "ver": "v11",
+   "verRange": "v1–v11",
+   "asOf": "July 16, 2026",
    "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22).",
    "p1Sup": "1, 3",
    "p2": "Operationally, the OCC is highlighting FinCEN’s updated Section 314(b) fact sheet clarifying how institutions can share suspected-fraud information with each other. The FBI’s recent consumer-facing warnings describe criminals redirecting users to fraudulent websites through malicious traffic-distribution systems. On the criminal side, a Bulgarian national already imprisoned for helping launder millions in fraud proceeds is charged with stealing $290,000 in government-seized cryptocurrency while incarcerated.",
@@ -1118,6 +1180,15 @@
    "assessSup": "2, 3",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 16, 26",
+     "st": "confirmed",
+     "ver": "v11",
+     "id": "L-0110",
+     "src": "DOJ press release",
+     "srcUrl": "https://www.justice.gov/usao-sd/pr/sioux-falls-crypto-investor-indicted-wire-fraud-money-laundering-bank-fraud-and",
+     "line": "A federal grand jury indicts a Sioux Falls, South Dakota crypto investor on charges of wire fraud, money laundering, bank fraud, and aggravated identity theft."
+    },
     {
      "date": "Jul 15, 26",
      "st": "confirmed",
@@ -1337,6 +1408,11 @@
      "n": "13",
      "text": "BleepingComputer — Dutch investment-fraud-ring suspect ID and additional arrests, Jul 15, 2026",
      "url": "https://www.bleepingcomputer.com/news/security/dutch-police-bust-investment-fraud-ring-stealing-over-100-million/"
+    },
+    {
+     "n": "14",
+     "text": "DOJ — Sioux Falls crypto investor indicted (wire fraud, money laundering, bank fraud, aggravated identity theft), Jul 16, 2026",
+     "url": "https://www.justice.gov/usao-sd/pr/sioux-falls-crypto-investor-indicted-wire-fraud-money-laundering-bank-fraud-and"
     }
    ],
    "related": [
@@ -1835,8 +1911,8 @@
    "scope": "insider threat · co-opted trust",
    "watch": "Prosecutions and advisories where trusted roles — employees, contractors, hired specialists — are the attack path.",
    "opened": "July 2026",
-   "ver": "v5",
-   "verRange": "v1–v5",
+   "ver": "v7",
+   "verRange": "v1–v7",
    "asOf": "July 16, 2026",
    "p1": "One confirmed event this window sits squarely on trusted-role co-option: a former ransomware negotiator was sentenced to 70 months for conspiring with BlackCat ransomware actors to extort the victims he was engaged to help — and with other former cybersecurity professionals to attack additional victims.",
    "p1Sup": "1",
@@ -1846,6 +1922,24 @@
    "assessSup": "4, 5",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 16, 26",
+     "st": "confirmed",
+     "ver": "v7",
+     "id": "L-0111",
+     "src": "DOJ press release",
+     "srcUrl": "https://www.justice.gov/opa/pr/former-adviser-federal-reserve-board-governors-sentenced-federal-prison-term",
+     "line": "A former senior adviser for the Federal Reserve Board of Governors, John Harold Rogers, is sentenced to 38 months in federal prison for making false statements to federal investigators about sharing restricted Federal Reserve information with Chinese intelligence operatives."
+    },
+    {
+     "date": "Jul 16, 26",
+     "st": "confirmed",
+     "ver": "v6",
+     "id": "L-0109",
+     "src": "DOJ press release",
+     "srcUrl": "https://www.justice.gov/usao-ma/pr/lawrence-man-sentenced-prison-bank-embezzlement",
+     "line": "A Lawrence man is sentenced to prison for embezzling hundreds of thousands of dollars from a Citizens Bank branch in Tewksbury, Massachusetts."
+    },
     {
      "date": "Jul 16, 26",
      "st": "confirmed",
@@ -1945,6 +2039,16 @@
      "n": "7",
      "text": "Federal Reserve — prohibition order against former Heritage State Bank chief lending officer, Jul 16, 2026",
      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260716a.htm"
+    },
+    {
+     "n": "8",
+     "text": "DOJ — Lawrence, Mass. bank-embezzlement sentencing (Citizens Bank, Tewksbury), Jul 16, 2026",
+     "url": "https://www.justice.gov/usao-ma/pr/lawrence-man-sentenced-prison-bank-embezzlement"
+    },
+    {
+     "n": "9",
+     "text": "DOJ — former Federal Reserve Board of Governors adviser sentenced (Rogers), Jul 16, 2026",
+     "url": "https://www.justice.gov/opa/pr/former-adviser-federal-reserve-board-governors-sentenced-federal-prison-term"
     }
    ],
    "related": [
@@ -2893,9 +2997,50 @@
    "line": "Iran-linked state and hacktivist groups are using artificial intelligence (AI) tools such as ChatGPT for malware development, phishing, and mapping out industrial sites, a report cited by Cybersecurity Dive found.",
    "src": "Cybersecurity Dive",
    "srcUrl": "https://www.cybersecuritydive.com/news/iran-nexus-actors-ai-cyber-ChatGPT-malware/825415/"
+  },
+  {
+   "d": "2026-07-16",
+   "p": "cyber",
+   "id": "L-0108",
+   "line": "CISA adds three exploited flaws to its known-exploited vulnerabilities list: a Microsoft SharePoint deserialization flaw allowing code execution over a network (CVE-2026-58644), and two Fortinet FortiSandbox command-injection flaws allowing an unauthenticated attacker to execute unauthorized commands (CVE-2026-25089, CVE-2026-39808).",
+   "src": "CISA KEV catalog",
+   "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+  },
+  {
+   "d": "2026-07-16",
+   "p": "insider",
+   "id": "L-0109",
+   "line": "A Lawrence man is sentenced to prison for embezzling hundreds of thousands of dollars from a Citizens Bank branch in Tewksbury, Massachusetts.",
+   "src": "DOJ press release",
+   "srcUrl": "https://www.justice.gov/usao-ma/pr/lawrence-man-sentenced-prison-bank-embezzlement"
+  },
+  {
+   "d": "2026-07-16",
+   "p": "fraud",
+   "id": "L-0110",
+   "line": "A federal grand jury indicts a Sioux Falls, South Dakota crypto investor on charges of wire fraud, money laundering, bank fraud, and aggravated identity theft.",
+   "src": "DOJ press release",
+   "srcUrl": "https://www.justice.gov/usao-sd/pr/sioux-falls-crypto-investor-indicted-wire-fraud-money-laundering-bank-fraud-and"
+  },
+  {
+   "d": "2026-07-16",
+   "p": "insider",
+   "id": "L-0111",
+   "line": "A former senior adviser for the Federal Reserve Board of Governors, John Harold Rogers, is sentenced to 38 months in federal prison for making false statements to federal investigators about sharing restricted Federal Reserve information with Chinese intelligence operatives.",
+   "src": "DOJ press release",
+   "srcUrl": "https://www.justice.gov/opa/pr/former-adviser-federal-reserve-board-governors-sentenced-federal-prison-term"
   }
  ],
  "takeaways": [
+  {
+   "anchors": [
+    "L-0108"
+   ],
+   "pillars": "Cybersecurity",
+   "conf": "high confidence",
+   "head": "CISA gives banks until July 19 to patch a new SharePoint flaw and two Fortinet FortiSandbox flaws.",
+   "body": "CISA's known-exploited vulnerabilities catalog lists a Microsoft SharePoint deserialization flaw (CVE-2026-58644) and two Fortinet FortiSandbox command-injection flaws (CVE-2026-25089, CVE-2026-39808), each with a July 19, 2026 remediation deadline. Technology teams running SharePoint or FortiSandbox should apply the required patches before that date."
+  },
   {
    "anchors": [
     "L-0105"
@@ -3141,7 +3286,7 @@
    {
     "no": "6",
     "date": "Thu, Jul 16, 2026",
-    "confirmed": "8",
+    "confirmed": "12",
     "pending": "0",
     "flash": "—",
     "linked": true
