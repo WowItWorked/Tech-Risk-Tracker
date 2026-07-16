@@ -2,18 +2,18 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-16T14:12:00-04:00",
+  "generatedAt": "2026-07-16T16:13:00-04:00",
   "issueNo": 6,
-  "recordHash": "3d6ee77",
+  "recordHash": "bd2ae14",
   "windowLabel": "June 9 – July 16, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). One new item appends to today’s edition: the OCC, Federal Reserve, and FDIC issued a joint statement on identifying and handling highly sensitive information during bank examinations, including a 72-hour breach-notification commitment for confidential supervisory information.",
-  "lastRun": "2026-07-16T14:12:00-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). Four new items append to today’s edition: a disclosed flaw in Anthropic’s Claude for Chrome browser extension that could let a malicious extension trigger Claude’s actions and abuse its access to connected services; a new “OkoBot” malware framework stealing cryptocurrency wallet seed phrases and other data; a federal indictment of two men for laundering proceeds of “pig butchering” investment-fraud scams; and the sentencing of a Crips gang member for a $2.8 million bank-fraud scheme run through Instagram-recruited straw accounts.",
+  "lastRun": "2026-07-16T16:13:00-04:00"
  },
  "lead": {
   "head": "Leading stories: the Office of the Comptroller of the Currency (OCC), Federal Reserve, and Federal Deposit Insurance Corporation (FDIC)’s joint statement on handling highly sensitive information during bank examinations, including a 72-hour breach-notification commitment; CISA’s addition of a Microsoft SharePoint flaw and two Fortinet FortiSandbox flaws to its known-exploited vulnerabilities list; and the Federal Reserve Board’s prohibition order against a former bank chief lending officer for appraisal-related lending misconduct",
-  "dek": "Today’s edition draws on the thirteen items recorded so far. Every item links to its source.",
+  "dek": "Today’s edition draws on the seventeen items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
@@ -54,6 +54,30 @@
   ]
  },
  "wire": [
+  {
+   "ts": "2026-07-16T19:26:07Z",
+   "p": "cyber",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0113",
+   "title": "A flaw in Anthropic's Claude for Chrome browser extension could let a malicious browser extension trigger Claude's built-in actions by simulating user clicks, letting it abuse Claude's access to connected services such as Gmail, Google Docs, Google Calendar, and Salesforce.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/claude-chrome-extension-flaw-lets-malicious-extensions-trigger-ai-actions/",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-16T19:09:35Z",
+   "p": "cyber",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0114",
+   "title": "A new malicious framework called “OkoBot” delivers more than 20 payloads in attacks focused on stealing cryptocurrency wallet seed phrases, credentials, and other sensitive data.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/new-okobot-framework-deploys-20-payloads-to-steal-data-crypto/",
+   "linked": true
+  },
   {
    "ts": "2026-07-16T18:00:00Z",
    "p": "data",
@@ -148,6 +172,30 @@
    "title": "A former senior adviser for the Federal Reserve Board of Governors, John Harold Rogers, is sentenced to 38 months in federal prison for making false statements to federal investigators about sharing restricted Federal Reserve information with Chinese intelligence operatives.",
    "src": "DOJ press release",
    "srcUrl": "https://www.justice.gov/opa/pr/former-adviser-federal-reserve-board-governors-sentenced-federal-prison-term",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-16T12:00:00Z",
+   "p": "fraud",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T1",
+   "id": "L-0115",
+   "title": "A federal indictment unsealed in Brooklyn charges Zhuoying Chen and Haojie Zhang with money laundering conspiracy for laundering funds derived from cyber investment fraud scams, known as “pig butchering” scams.",
+   "src": "DOJ press release",
+   "srcUrl": "https://www.justice.gov/usao-edny/pr/two-members-chinese-money-laundering-network-charged-laundering-investment-fraud",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-16T12:00:00Z",
+   "p": "fraud",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T1",
+   "id": "L-0116",
+   "title": "A member of the South Los Angeles-based Crips street gang is sentenced to 108 months in federal prison for a $2.8 million scheme in which he stole checks in the mail, altered them, then used Instagram to recruit bank account holders to give him access to their accounts to deposit the checks.",
+   "src": "DOJ press release",
+   "srcUrl": "https://www.justice.gov/usao-cdca/pr/member-south-la-based-crips-street-gang-sentenced-9-years-federal-prison-role-28",
    "linked": true
   },
   {
@@ -455,8 +503,8 @@
    "scope": "cybersecurity · exploitation & exposure",
    "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
    "opened": "July 2026",
-   "ver": "v43",
-   "verRange": "v1–v43",
+   "ver": "v45",
+   "verRange": "v1–v45",
    "asOf": "July 16, 2026",
    "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
    "p1Sup": "1, 3, 10",
@@ -466,6 +514,24 @@
    "assessSup": "1, 8",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 16, 26",
+     "st": "confirmed",
+     "ver": "v45",
+     "id": "L-0113",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/claude-chrome-extension-flaw-lets-malicious-extensions-trigger-ai-actions/",
+     "line": "A flaw in Anthropic's Claude for Chrome browser extension could let a malicious browser extension trigger Claude's built-in actions by simulating user clicks, letting it abuse Claude's access to connected services such as Gmail, Google Docs, Google Calendar, and Salesforce."
+    },
+    {
+     "date": "Jul 16, 26",
+     "st": "confirmed",
+     "ver": "v44",
+     "id": "L-0114",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/new-okobot-framework-deploys-20-payloads-to-steal-data-crypto/",
+     "line": "A new malicious framework called “OkoBot” delivers more than 20 payloads in attacks focused on stealing cryptocurrency wallet seed phrases, credentials, and other sensitive data."
+    },
     {
      "date": "Jul 16, 26",
      "st": "confirmed",
@@ -1131,6 +1197,16 @@
      "n": "41",
      "text": "CISA — Known Exploited Vulnerabilities catalog, additions: Microsoft SharePoint CVE-2026-58644, Fortinet FortiSandbox CVE-2026-25089 & CVE-2026-39808, Jul 16, 2026",
      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+     "n": "42",
+     "text": "BleepingComputer — New OkoBot framework deploys 20 payloads to steal data, crypto, Jul 16, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/new-okobot-framework-deploys-20-payloads-to-steal-data-crypto/"
+    },
+    {
+     "n": "43",
+     "text": "BleepingComputer — Claude Chrome extension flaw lets malicious extensions trigger AI actions, Jul 16, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/claude-chrome-extension-flaw-lets-malicious-extensions-trigger-ai-actions/"
     }
    ],
    "related": [
@@ -1181,8 +1257,8 @@
    "scope": "fraud · AML rulemaking & scam patterns",
    "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
    "opened": "July 2026",
-   "ver": "v11",
-   "verRange": "v1–v11",
+   "ver": "v13",
+   "verRange": "v1–v13",
    "asOf": "July 16, 2026",
    "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22).",
    "p1Sup": "1, 3",
@@ -1192,6 +1268,24 @@
    "assessSup": "2, 3",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 16, 26",
+     "st": "confirmed",
+     "ver": "v13",
+     "id": "L-0116",
+     "src": "DOJ press release",
+     "srcUrl": "https://www.justice.gov/usao-cdca/pr/member-south-la-based-crips-street-gang-sentenced-9-years-federal-prison-role-28",
+     "line": "A member of the South Los Angeles-based Crips street gang is sentenced to 108 months in federal prison for a $2.8 million scheme in which he stole checks in the mail, altered them, then used Instagram to recruit bank account holders to give him access to their accounts to deposit the checks."
+    },
+    {
+     "date": "Jul 16, 26",
+     "st": "confirmed",
+     "ver": "v12",
+     "id": "L-0115",
+     "src": "DOJ press release",
+     "srcUrl": "https://www.justice.gov/usao-edny/pr/two-members-chinese-money-laundering-network-charged-laundering-investment-fraud",
+     "line": "A federal indictment unsealed in Brooklyn charges Zhuoying Chen and Haojie Zhang with money laundering conspiracy for laundering funds derived from cyber investment fraud scams, known as “pig butchering” scams."
+    },
     {
      "date": "Jul 16, 26",
      "st": "confirmed",
@@ -1425,6 +1519,16 @@
      "n": "14",
      "text": "DOJ — Sioux Falls crypto investor indicted (wire fraud, money laundering, bank fraud, aggravated identity theft), Jul 16, 2026",
      "url": "https://www.justice.gov/usao-sd/pr/sioux-falls-crypto-investor-indicted-wire-fraud-money-laundering-bank-fraud-and"
+    },
+    {
+     "n": "15",
+     "text": "DOJ — Two members of Chinese money-laundering network charged with laundering “pig butchering” investment-fraud proceeds, Jul 16, 2026",
+     "url": "https://www.justice.gov/usao-edny/pr/two-members-chinese-money-laundering-network-charged-laundering-investment-fraud"
+    },
+    {
+     "n": "16",
+     "text": "DOJ — South Los Angeles Crips gang member sentenced for $2.8 million bank-fraud scheme advertised on Instagram, Jul 16, 2026",
+     "url": "https://www.justice.gov/usao-cdca/pr/member-south-la-based-crips-street-gang-sentenced-9-years-federal-prison-role-28"
     }
    ],
    "related": [
@@ -3063,6 +3167,38 @@
    "line": "The Office of the Comptroller of the Currency (OCC), the Federal Reserve Board, and the Federal Deposit Insurance Corporation (FDIC) issue a joint statement on identifying and handling highly sensitive information during bank examinations, including a commitment to notify affected banks of a potential or confirmed material data breach involving confidential supervisory information within no more than 72 hours.",
    "src": "OCC + Federal Reserve",
    "srcUrl": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-32.html"
+  },
+  {
+   "d": "2026-07-16",
+   "p": "cyber",
+   "id": "L-0113",
+   "line": "A flaw in Anthropic's Claude for Chrome browser extension could let a malicious browser extension trigger Claude's built-in actions by simulating user clicks, letting it abuse Claude's access to connected services such as Gmail, Google Docs, Google Calendar, and Salesforce.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/claude-chrome-extension-flaw-lets-malicious-extensions-trigger-ai-actions/"
+  },
+  {
+   "d": "2026-07-16",
+   "p": "cyber",
+   "id": "L-0114",
+   "line": "A new malicious framework called “OkoBot” delivers more than 20 payloads in attacks focused on stealing cryptocurrency wallet seed phrases, credentials, and other sensitive data.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/new-okobot-framework-deploys-20-payloads-to-steal-data-crypto/"
+  },
+  {
+   "d": "2026-07-16",
+   "p": "fraud",
+   "id": "L-0115",
+   "line": "A federal indictment unsealed in Brooklyn charges Zhuoying Chen and Haojie Zhang with money laundering conspiracy for laundering funds derived from cyber investment fraud scams, known as “pig butchering” scams.",
+   "src": "DOJ press release",
+   "srcUrl": "https://www.justice.gov/usao-edny/pr/two-members-chinese-money-laundering-network-charged-laundering-investment-fraud"
+  },
+  {
+   "d": "2026-07-16",
+   "p": "fraud",
+   "id": "L-0116",
+   "line": "A member of the South Los Angeles-based Crips street gang is sentenced to 108 months in federal prison for a $2.8 million scheme in which he stole checks in the mail, altered them, then used Instagram to recruit bank account holders to give him access to their accounts to deposit the checks.",
+   "src": "DOJ press release",
+   "srcUrl": "https://www.justice.gov/usao-cdca/pr/member-south-la-based-crips-street-gang-sentenced-9-years-federal-prison-role-28"
   }
  ],
  "takeaways": [
@@ -3329,7 +3465,7 @@
    {
     "no": "6",
     "date": "Thu, Jul 16, 2026",
-    "confirmed": "13",
+    "confirmed": "17",
     "pending": "0",
     "flash": "—",
     "linked": true
