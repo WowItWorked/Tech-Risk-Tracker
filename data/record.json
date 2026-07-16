@@ -2,21 +2,33 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-16T17:07:00-04:00",
+  "generatedAt": "2026-07-16T18:09:00-04:00",
   "issueNo": 6,
-  "recordHash": "c0e993e",
+  "recordHash": "63783dd",
   "windowLabel": "June 9 – July 16, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). One new item appends to today’s edition: a Dark Reading report that more than 1 million phishing emails used hidden text (“text salting”) to evade AI-based email security filters. The CISA KEV catalog and BleepingComputer's OkoBot and Claude-for-Chrome items already surfaced this window were confirmed unchanged since the prior run (already recorded as L-0108/L-0113/L-0114); an OCC bulletin on a revised “Allowances for Credit Losses” Comptroller's Handbook booklet was reviewed and excluded as an accounting/credit-risk standard, not a technology-risk item under any of the eight pillars. Anthropic's newest dated item remains Jul 14; FinCEN's and ICO's fetched pages again returned no readable, dated news-list content in the window; ENISA's newest dated item remains Jul 14.",
-  "lastRun": "2026-07-16T17:07:00-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). Three new items append to today’s edition: BleepingComputer reports on a new macOS credential-stealing malware called “ClickLock” and on a ransomware attack that halted Fairlife dairy production nationwide after Coca-Cola’s disclosure; a DOJ press release reports a former U.S. Postal Service employee and two Philadelphia men admitting roles in a stolen-check bank-fraud conspiracy. The CISA KEV catalog stayed at catalogVersion 2026.07.16 (1,647 entries, no new additions). OCC bulletin 2026-33 (an accounting-standard examiner handbook update) and a DOJ press release on the same Chinese money-laundering network already recorded as L-0115 both reappeared and were not re-admitted. The Record’s report of a senator’s letter urging pressure on proposed Canadian surveillance legislation and Dark Reading’s opinion column on agentic AI security were excluded at the relevance gate. Anthropic’s newest dated item remains Jul 14; FinCEN’s newest dated item remains Jun 30; ICO’s fetched page again returned no readable, dated news-list content; ENISA’s newest dated item remains Jul 14.",
+  "lastRun": "2026-07-16T18:09:00-04:00"
  },
  "lead": {
-  "head": "Leading stories: the Office of the Comptroller of the Currency (OCC), Federal Reserve, and Federal Deposit Insurance Corporation (FDIC)’s joint statement on handling highly sensitive information during bank examinations, including a 72-hour breach-notification commitment; CISA’s addition of a Microsoft SharePoint flaw and two Fortinet FortiSandbox flaws to its known-exploited vulnerabilities list; and the Federal Reserve Board’s prohibition order against a former bank chief lending officer for appraisal-related lending misconduct",
-  "dek": "Today’s edition draws on the eighteen items recorded so far. Every item links to its source.",
+  "head": "Leading stories: Coca-Cola’s disclosure that a ransomware attack on its Fairlife dairy subsidiary halted US production; the Office of the Comptroller of the Currency (OCC), Federal Reserve, and Federal Deposit Insurance Corporation (FDIC)’s joint statement on handling highly sensitive information during bank examinations, including a 72-hour breach-notification commitment; and CISA’s addition of a Microsoft SharePoint flaw and two Fortinet FortiSandbox flaws to its known-exploited vulnerabilities list",
+  "dek": "Today’s edition draws on the twenty-one items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
+    "p": "tp",
+    "tri": "priority",
+    "st": "confirmed",
+    "id": "L-0119",
+    "conf": "",
+    "text": "The Coca-Cola Company disclosed that a ransomware attack on its Fairlife dairy subsidiary disrupted operations, temporarily suspending production of Fairlife products across the United States, BleepingComputer reports.",
+    "why": "A ransomware attack disrupted a company’s operations nationwide, temporarily halting production at its dairy subsidiary — a reminder that a single attack on a vendor or supplier can halt operations at national scale.",
+    "srcText": "BleepingComputer, Jul 16",
+    "srcUrl": "https://www.bleepingcomputer.com/news/security/coca-cola-says-fairlife-ransomware-attack-halts-us-dairy-production/"
+   },
+   {
+    "n": "2",
     "p": "data",
     "tri": "priority",
     "st": "confirmed",
@@ -28,7 +40,7 @@
     "srcUrl": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-32.html"
    },
    {
-    "n": "2",
+    "n": "3",
     "p": "cyber",
     "tri": "priority",
     "st": "confirmed",
@@ -38,22 +50,34 @@
     "why": "CISA has confirmed active exploitation of a Microsoft SharePoint flaw and two Fortinet FortiSandbox flaws, giving technology teams running either product a clear signal to patch before the July 19 deadline.",
     "srcText": "CISA KEV catalog, Jul 16",
     "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-   },
-   {
-    "n": "3",
-    "p": "insider",
-    "tri": "priority",
-    "st": "confirmed",
-    "id": "L-0106",
-    "conf": "",
-    "text": "The Federal Reserve Board issues a prohibition order against James Burns, former chief lending officer of Heritage State Bank in Lawrenceville, Illinois, for appraisal-related lending misconduct.",
-    "why": "This shows a bank regulator taking direct action against an individual banker for lending-related misconduct, a reminder that individual employees — not just institutions — face real consequences for misconduct in lending and appraisal processes.",
-    "srcText": "Federal Reserve press release, Jul 16",
-    "srcUrl": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260716a.htm"
    }
   ]
  },
  "wire": [
+  {
+   "ts": "2026-07-16T21:52:54Z",
+   "p": "cyber",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0118",
+   "title": "A new macOS information-stealing malware dubbed “ClickLock” terminates all visible processes to force users into entering their system login password, BleepingComputer reports.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/new-clicklock-macos-malware-traps-users-into-revealing-login-password/",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-16T21:09:41Z",
+   "p": "tp",
+   "tri": "priority",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0119",
+   "title": "The Coca-Cola Company disclosed that a ransomware attack on its Fairlife dairy subsidiary disrupted operations, temporarily suspending production of Fairlife products across the United States, BleepingComputer reports.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/coca-cola-says-fairlife-ransomware-attack-halts-us-dairy-production/",
+   "linked": true
+  },
   {
    "ts": "2026-07-16T19:41:31Z",
    "p": "cyber",
@@ -208,6 +232,18 @@
    "title": "A member of the South Los Angeles-based Crips street gang is sentenced to 108 months in federal prison for a $2.8 million scheme in which he stole checks in the mail, altered them, then used Instagram to recruit bank account holders to give him access to their accounts to deposit the checks.",
    "src": "DOJ press release",
    "srcUrl": "https://www.justice.gov/usao-cdca/pr/member-south-la-based-crips-street-gang-sentenced-9-years-federal-prison-role-28",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-16T12:00:00Z",
+   "p": "fraud",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T1",
+   "id": "L-0120",
+   "title": "A former U.S. Postal Service employee admitted to stealing checks from the U.S. mail and selling them to others, one Philadelphia man admitted to advertising and reselling the stolen checks, and another Philadelphia man admitted to working with others to fraudulently negotiate one of the stolen checks, the Department of Justice reports.",
+   "src": "DOJ press release",
+   "srcUrl": "https://www.justice.gov/usao-nj/pr/former-postal-worker-and-two-philadelphia-men-admit-conspiring-commit-bank-fraud-mount",
    "linked": true
   },
   {
@@ -515,8 +551,8 @@
    "scope": "cybersecurity · exploitation & exposure",
    "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
    "opened": "July 2026",
-   "ver": "v46",
-   "verRange": "v1–v46",
+   "ver": "v47",
+   "verRange": "v1–v47",
    "asOf": "July 16, 2026",
    "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
    "p1Sup": "1, 3, 10",
@@ -526,6 +562,15 @@
    "assessSup": "1, 8",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 16, 26",
+     "st": "confirmed",
+     "ver": "v47",
+     "id": "L-0118",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/new-clicklock-macos-malware-traps-users-into-revealing-login-password/",
+     "line": "A new macOS information-stealing malware dubbed “ClickLock” terminates all visible processes to force users into entering their system login password, BleepingComputer reports."
+    },
     {
      "date": "Jul 16, 26",
      "st": "confirmed",
@@ -1233,6 +1278,11 @@
      "n": "44",
      "text": "Dark Reading — 1M+ Emails Use Hidden Text to Dupe AI Security Filters, Jul 16, 2026",
      "url": "https://www.darkreading.com/threat-intelligence/1m-emails-hidden-text-dupe-ai-security-filters"
+    },
+    {
+     "n": "45",
+     "text": "BleepingComputer — New ClickLock macOS malware traps users into revealing login password, Jul 16, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/new-clicklock-macos-malware-traps-users-into-revealing-login-password/"
     }
    ],
    "related": [
@@ -1283,8 +1333,8 @@
    "scope": "fraud · AML rulemaking & scam patterns",
    "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
    "opened": "July 2026",
-   "ver": "v13",
-   "verRange": "v1–v13",
+   "ver": "v14",
+   "verRange": "v1–v14",
    "asOf": "July 16, 2026",
    "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22).",
    "p1Sup": "1, 3",
@@ -1294,6 +1344,15 @@
    "assessSup": "2, 3",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 16, 26",
+     "st": "confirmed",
+     "ver": "v14",
+     "id": "L-0120",
+     "src": "DOJ press release",
+     "srcUrl": "https://www.justice.gov/usao-nj/pr/former-postal-worker-and-two-philadelphia-men-admit-conspiring-commit-bank-fraud-mount",
+     "line": "A former U.S. Postal Service employee admitted to stealing checks from the U.S. mail and selling them to others, one Philadelphia man admitted to advertising and reselling the stolen checks, and another Philadelphia man admitted to working with others to fraudulently negotiate one of the stolen checks, the Department of Justice reports."
+    },
     {
      "date": "Jul 16, 26",
      "st": "confirmed",
@@ -1555,6 +1614,11 @@
      "n": "16",
      "text": "DOJ — South Los Angeles Crips gang member sentenced for $2.8 million bank-fraud scheme advertised on Instagram, Jul 16, 2026",
      "url": "https://www.justice.gov/usao-cdca/pr/member-south-la-based-crips-street-gang-sentenced-9-years-federal-prison-role-28"
+    },
+    {
+     "n": "17",
+     "text": "DOJ — Former postal worker and two Philadelphia men admit conspiring to commit bank fraud, Jul 16, 2026",
+     "url": "https://www.justice.gov/usao-nj/pr/former-postal-worker-and-two-philadelphia-men-admit-conspiring-commit-bank-fraud-mount"
     }
    ],
    "related": [
@@ -1605,9 +1669,9 @@
    "scope": "third-party risk · vendor software & supply chain",
    "watch": "Vendor tools under active attack, software-supply-chain compromises aimed at financial applications, and vendor incident disclosures.",
    "opened": "July 2026",
-   "ver": "v4",
-   "verRange": "v1–v4",
-   "asOf": "July 15, 2026",
+   "ver": "v5",
+   "verRange": "v1–v5",
+   "asOf": "July 16, 2026",
    "p1": "One vendor-channel exploit is confirmed this window: SimpleHelp, a remote-support tool, carries an authentication-bypass flaw on CISA’s known-exploited list — in a vulnerable configuration, a remote, unauthenticated attacker can log in with a forged token.",
    "p1Sup": "1",
    "p2": "The rest of the vendor picture clusters around the software supply chain: a claimed breach at consulting firm Accenture said to involve source code and encryption keys, and malicious look-alike software kits for the Paysafe, Skrill, and Neteller payment applications on public code registries.",
@@ -1616,6 +1680,15 @@
    "assessSup": "1",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 16, 26",
+     "st": "confirmed",
+     "ver": "v5",
+     "id": "L-0119",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/coca-cola-says-fairlife-ransomware-attack-halts-us-dairy-production/",
+     "line": "The Coca-Cola Company disclosed that a ransomware attack on its Fairlife dairy subsidiary disrupted operations, temporarily suspending production of Fairlife products across the United States, BleepingComputer reports."
+    },
     {
      "date": "Jul 15, 26",
      "st": "confirmed",
@@ -1738,6 +1811,11 @@
      "n": "8",
      "text": "The Record — Nichirei Logistics cyberattack disrupts KFC supply chain, Jul 15, 2026",
      "url": "https://therecord.media/cyberattack-japan-nichirei-logistics-impacts-kfc"
+    },
+    {
+     "n": "9",
+     "text": "BleepingComputer — Coca-Cola says Fairlife ransomware attack halts US dairy production, Jul 16, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/coca-cola-says-fairlife-ransomware-attack-halts-us-dairy-production/"
     }
    ],
    "related": [
@@ -3233,6 +3311,30 @@
    "line": "More than 1 million phishing emails used hidden text, a technique called “text salting,” to evade artificial intelligence (AI)-based email security filters and reach inboxes, Dark Reading reports.",
    "src": "Dark Reading",
    "srcUrl": "https://www.darkreading.com/threat-intelligence/1m-emails-hidden-text-dupe-ai-security-filters"
+  },
+  {
+   "d": "2026-07-16",
+   "p": "cyber",
+   "id": "L-0118",
+   "line": "A new macOS information-stealing malware dubbed “ClickLock” terminates all visible processes to force users into entering their system login password, BleepingComputer reports.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/new-clicklock-macos-malware-traps-users-into-revealing-login-password/"
+  },
+  {
+   "d": "2026-07-16",
+   "p": "tp",
+   "id": "L-0119",
+   "line": "The Coca-Cola Company disclosed that a ransomware attack on its Fairlife dairy subsidiary disrupted operations, temporarily suspending production of Fairlife products across the United States, BleepingComputer reports.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/coca-cola-says-fairlife-ransomware-attack-halts-us-dairy-production/"
+  },
+  {
+   "d": "2026-07-16",
+   "p": "fraud",
+   "id": "L-0120",
+   "line": "A former U.S. Postal Service employee admitted to stealing checks from the U.S. mail and selling them to others, one Philadelphia man admitted to advertising and reselling the stolen checks, and another Philadelphia man admitted to working with others to fraudulently negotiate one of the stolen checks, the Department of Justice reports.",
+   "src": "DOJ press release",
+   "srcUrl": "https://www.justice.gov/usao-nj/pr/former-postal-worker-and-two-philadelphia-men-admit-conspiring-commit-bank-fraud-mount"
   }
  ],
  "takeaways": [
@@ -3508,7 +3610,7 @@
    {
     "no": "6",
     "date": "Thu, Jul 16, 2026",
-    "confirmed": "18",
+    "confirmed": "21",
     "pending": "0",
     "flash": "—",
     "linked": true
