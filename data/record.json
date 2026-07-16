@@ -2,296 +2,68 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-15T18:11:00-04:00",
-  "issueNo": 5,
-  "recordHash": "3661ce5",
-  "windowLabel": "June 9 – July 15, 2026",
+  "generatedAt": "2026-07-16T06:18:00-04:00",
+  "issueNo": 6,
+  "recordHash": "6cf97ac",
+  "windowLabel": "June 9 – July 16, 2026",
   "nextWeekly": "Fri, Jul 17",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). Two new items were admitted this run: a BleepingComputer follow-up naming the main suspect and additional arrests in the previously recorded Dutch investment-fraud case, and a Dark Reading report on revoked UEFI shim bootloaders that still bypass Secure Boot.",
-  "lastRun": "2026-07-15T18:11:00-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). The FCA’s RSS feed carries no publication-date field on any item, so its content could not be reliably windowed this run; no FCA items were admitted for lack of a verifiable publishedAt. Two new items open today’s edition: The Record’s report of a cyberattack on Japan’s largest cold-chain logistics operator disrupting KFC and other restaurant chains’ supplies, and a DOJ press release on a former TD Bank employee sentenced for facilitating a money-laundering network’s movement of funds through the bank.",
+  "lastRun": "2026-07-16T06:18:00-04:00"
  },
  "lead": {
-  "head": "Leading stories: a newly catalogued flaw letting attackers take over Oracle Payments without valid credentials; additional flaws being chained into the active SharePoint attacks with a full fix not expected until August; and the U.S. government’s launch of “Gold Eagle,” a program to speed up finding and fixing software flaws across industries and sectors",
-  "dek": "Today’s edition draws on the twenty items recorded so far. Every item links to its source.",
+  "head": "Leading stories: a cyberattack on Japan’s largest cold-chain logistics company that disrupted food supplies nationwide; and the sentencing of a former TD Bank employee for facilitating a money-laundering network’s movement of millions of dollars through the bank",
+  "dek": "Today’s edition draws on the two items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
-    "p": "cyber",
+    "p": "tp",
     "tri": "priority",
     "st": "confirmed",
-    "id": "L-0094",
+    "id": "L-0101",
     "conf": "",
-    "text": "Oracle E-Business Suite flaw (CVE-2026-46817) added to CISA’s known-exploited list: an unauthenticated attacker with network access can compromise and take over Oracle Payments.",
-    "why": "This newly listed flaw lets an attacker take over Oracle Payments without needing valid credentials — a clear signal for any technology team running Oracle E-Business Suite to patch immediately.",
-    "srcText": "CISA KEV catalog, Jul 15",
-    "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    "text": "A cyberattack on Nichirei Logistics Group, Japan’s largest refrigerated logistics company, disrupted the country’s food supply chain, leaving Kentucky Fried Chicken restaurants short on ingredients and major restaurant chains struggling to keep up with deliveries; Nichirei, which serves about 5,000 customers across Japan, said it experienced a system outage on Monday.",
+    "why": "This shows how a cyberattack on a single vendor can disrupt operations for many businesses far beyond the company itself, a reminder for banks to weigh how an outage at a critical vendor could affect their own operations.",
+    "srcText": "The Record, Jul 15",
+    "srcUrl": "https://therecord.media/cyberattack-japan-nichirei-logistics-impacts-kfc"
    },
    {
     "n": "2",
-    "p": "cyber",
-    "tri": "priority",
+    "p": "insider",
+    "tri": "routine",
     "st": "confirmed",
-    "id": "L-0089",
+    "id": "L-0100",
     "conf": "",
-    "text": "Cybersecurity Dive reports that security researchers say additional flaws in SharePoint are being chained together, and a fix will not be available until August; researchers at Rapid7 separately warn that a newly disclosed flaw, tracked as CVE-2026-55040, could let attackers run code remotely if combined with a second flaw.",
-    "why": "This underscores the urgency of patching SharePoint now: additional flaws are being chained into the attack, and a full fix isn't expected until August.",
-    "srcText": "Cybersecurity Dive, Jul 15",
-    "srcUrl": "https://www.cybersecuritydive.com/news/cisa-multiple-vulnerabilities-sharepoint-exploitation/825306/"
-   },
-   {
-    "n": "3",
-    "p": "cyber",
-    "tri": "priority",
-    "st": "confirmed",
-    "id": "L-0088",
-    "conf": "",
-    "text": "The Trump administration launches \"Gold Eagle,\" a government-coordinated program that uses artificial intelligence (AI) tools and security researchers to speed up the discovery and fixing of software flaws; the White House says the program has already begun taking in and prioritizing vulnerabilities \"from across industries and sectors.\"",
-    "why": "This is a new federal effort to speed up how quickly newly discovered software flaws are found and fixed across industries and sectors, a pipeline technology and security teams should watch as it matures.",
-    "srcText": "Cybersecurity Dive, Jul 15",
-    "srcUrl": "https://www.cybersecuritydive.com/news/vulnerability-clearinghouse-ai-white-house-launch-gold-eagle/825298/"
+    "text": "A former TD Bank employee is sentenced to 46 months in prison for facilitating a money-laundering network’s movement of millions of dollars through TD Bank accounts.",
+    "why": "This shows criminals can use bank employees to facilitate the movement of large sums through legitimate accounts, not just outside attacks — a reminder for fraud and compliance teams to strengthen internal controls and employee monitoring.",
+    "srcText": "DOJ press release, Jul 15",
+    "srcUrl": "https://www.justice.gov/opa/pr/two-td-bank-insiders-sentenced-prison-facilitating-money-laundering-fraud"
    }
   ]
  },
  "wire": [
   {
-   "ts": "2026-07-15T21:55:50Z",
-   "p": "fraud",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0098",
-   "title": "BleepingComputer names the main suspect behind an investment fraud ring as a 46-year-old Israeli-Polish national arrested in Poland on May 26, with additional Dutch and Belgian nationals arrested in Cyprus, Greece, and Belgium between July 7 and 10; Dutch authorities have linked at least 550 fraud reports and $28.6 million in reported losses to the organization.",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/dutch-police-bust-investment-fraud-ring-stealing-over-100-million/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-15T21:19:19Z",
-   "p": "cyber",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0099",
-   "title": "Dark Reading reports that nearly a dozen vulnerable, now-revoked Unified Extensible Firmware Interface (UEFI) shim bootloaders remained trusted for years, giving criminals a way to bypass Secure Boot — the check meant to verify only trusted software runs when a device starts up.",
-   "src": "Dark Reading",
-   "srcUrl": "https://www.darkreading.com/cyber-risk/forgotten-bootloaders-expose-secure-boot-blind-spot",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-15T20:16:13Z",
-   "p": "cyber",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0097",
-   "title": "Dark Reading reports that email-based attacks, not software flaws, became the leading cause of ransomware incidents last year, and that multi-factor authentication (MFA) — a login check beyond just a password — was used in 97% of attacks based on stolen or guessed logins but still failed to stop the criminals.",
-   "src": "Dark Reading",
-   "srcUrl": "https://www.darkreading.com/identity-access-management-security/identity-attacks-overtake-exploits-top-ransomware-cause",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-15T20:16:02Z",
-   "p": "cyber",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0096",
-   "title": "BleepingComputer reports that Zoom is warning of a critical flaw, tracked as CVE-2026-53412 with a severity score of 9.8 out of 10, in its desktop client and software development kit for Windows that could let an unauthenticated attacker take over a user’s account; the company recommends applying the latest updates.",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/zoom-warns-of-critical-account-takeover-vulnerability/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-15T19:11:05Z",
-   "p": "cyber",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T1",
-   "id": "L-0095",
-   "title": "KNX Association KNX Protocol flaw (CVE-2023-4346) added to CISA’s known-exploited list: an attacker could purge all connected devices lacking additional security options, then set an access key to lock the device.",
-   "src": "CISA KEV catalog",
-   "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-15T19:11:00Z",
-   "p": "cyber",
-   "tri": "priority",
-   "st": "confirmed",
-   "tier": "T1",
-   "id": "L-0094",
-   "title": "Oracle E-Business Suite flaw (CVE-2026-46817) added to CISA’s known-exploited list: an unauthenticated attacker with network access can compromise and take over Oracle Payments.",
-   "src": "CISA KEV catalog",
-   "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-15T18:33:48Z",
-   "p": "cyber",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0093",
-   "title": "A Russian-speaking criminal group known as “bandcampro” used Google’s open-source Gemini CLI, an artificial intelligence (AI) tool, as a hacking agent and to run a small-scale network of infected computers (a botnet), BleepingComputer reports.",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/google-gemini-cli-abused-as-a-hacking-agent-malware-botnet-operator/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-15T17:45:00Z",
-   "p": "data",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0092",
-   "title": "A coalition of 42 state attorneys general reaches an $18 million settlement with 23andMe over cybersecurity failings that led to a data breach, The Record reports.",
-   "src": "The Record",
-   "srcUrl": "https://therecord.media/genetic-testing-settlement-data-breach",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-15T15:37:27Z",
+   "ts": "2026-07-15T23:00:00Z",
    "p": "tp",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0091",
-   "title": "Five malicious versions of AsyncAPI software packages were published to the Node Package Manager (npm) in a supply-chain attack that delivered a remote access trojan (RAT) with credential- and information-stealing capabilities, BleepingComputer reports.",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/-asyncapi-npm-packages-infected-with-credential-stealing-malware/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-15T15:27:35Z",
-   "p": "ai",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0090",
-   "title": "A flaw in Claude, nicknamed \"PromptFiction,\" automatically sent malicious prompts to AI agents; combined with another exploit, it could have enabled an end-to-end attack on a targeted system. The flaw has since been fixed.",
-   "src": "Dark Reading",
-   "srcUrl": "https://www.darkreading.com/vulnerabilities-threats/claude-flaw-malicious-prompts-ai-agents",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-15T15:05:44Z",
-   "p": "cyber",
    "tri": "priority",
    "st": "confirmed",
    "tier": "T2",
-   "id": "L-0089",
-   "title": "Cybersecurity Dive reports that security researchers say additional flaws in SharePoint are being chained together, and a fix will not be available until August; researchers at Rapid7 separately warn that a newly disclosed flaw, tracked as CVE-2026-55040, could let attackers run code remotely if combined with a second flaw.",
-   "src": "Cybersecurity Dive",
-   "srcUrl": "https://www.cybersecuritydive.com/news/cisa-multiple-vulnerabilities-sharepoint-exploitation/825306/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-15T14:51:12Z",
-   "p": "cyber",
-   "tri": "priority",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0088",
-   "title": "The Trump administration launches \"Gold Eagle,\" a government-coordinated program that uses artificial intelligence (AI) tools and security researchers to speed up the discovery and fixing of software flaws; the White House says the program has already begun taking in and prioritizing vulnerabilities \"from across industries and sectors.\"",
-   "src": "Cybersecurity Dive",
-   "srcUrl": "https://www.cybersecuritydive.com/news/vulnerability-clearinghouse-ai-white-house-launch-gold-eagle/825298/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-15T14:14:00Z",
-   "p": "fraud",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0087",
-   "title": "Dutch police dismantle a global cryptocurrency investment scam and arrest its alleged mastermind. Authorities said the group had operated like a legitimate international business since at least 2021, running about two dozen call centers across several countries and employing more than 700 people who posed as professional financial advisers.",
+   "id": "L-0101",
+   "title": "A cyberattack on Nichirei Logistics Group, Japan’s largest refrigerated logistics company, disrupted the country’s food supply chain, leaving Kentucky Fried Chicken restaurants short on ingredients and major restaurant chains struggling to keep up with deliveries; Nichirei, which serves about 5,000 customers across Japan, said it experienced a system outage on Monday.",
    "src": "The Record",
-   "srcUrl": "https://therecord.media/dutch-police-dismantle-global-crypto-investment-scam",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-15T14:01:11Z",
-   "p": "ai",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0086",
-   "title": "A company called Intruder built an AI-powered tool it calls a “vulnerability vending machine,” which combines code analysis with large language models (LLMs) to automatically find complex software flaws; the company says it used the tool to discover and exploit a previously unknown flaw in a WordPress plugin, with more findings already reported privately to the affected software makers for fixing.",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/we-built-a-vulnerability-vending-machine-ai-tokens-in-zero-days-out/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-15T13:00:00Z",
-   "p": "ai",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0084",
-   "title": "A flaw requiring only two clicks lets criminals take over a developer's environment in Cursor, a popular artificial intelligence (AI) coding platform, exploiting old, simple bugs to access developers' secrets and source code.",
-   "src": "Dark Reading",
-   "srcUrl": "https://www.darkreading.com/application-security/2-click-cursor-exploit-dev-environment-takeover",
+   "srcUrl": "https://therecord.media/cyberattack-japan-nichirei-logistics-impacts-kfc",
    "linked": true
   },
   {
    "ts": "2026-07-15T12:00:00Z",
-   "p": "fraud",
+   "p": "insider",
    "tri": "routine",
    "st": "confirmed",
    "tier": "T1",
-   "id": "L-0085",
-   "title": "A former U.S. Department of Education employee agrees to pay the United States $161,248.30 to resolve allegations that she submitted false claims to obtain three Paycheck Protection Program (PPP) loans.",
+   "id": "L-0100",
+   "title": "A former TD Bank employee is sentenced to 46 months in prison for facilitating a money-laundering network’s movement of millions of dollars through TD Bank accounts.",
    "src": "DOJ press release",
-   "srcUrl": "https://www.justice.gov/usao-md/pr/former-department-education-employee-agrees-pay-more-160000-resolve-false-claims-act",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-15T09:44:52Z",
-   "p": "cyber",
-   "tri": "priority",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0080",
-   "title": "CISA (the Cybersecurity and Infrastructure Security Agency) warns that criminals are actively exploiting three vulnerabilities in internet-exposed, on-premises Microsoft SharePoint Server systems, and urges administrators to patch them.",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-patch-actively-exploited-sharepoint-flaws/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-14T12:49:56Z",
-   "p": "cyber",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0081",
-   "title": "Microsoft announces that passkeys, a password-free way to sign in, will become the default authentication method for Entra ID, its enterprise identity service, starting in September 2026.",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-entra-id-gets-passkeys-default-authentication-starting-september/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-14T12:00:00Z",
-   "p": "fraud",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T1",
-   "id": "L-0082",
-   "title": "Two men are indicted for allegedly stealing money from multiple ATMs in Reno and Sparks, Nevada, in a scheme known as “ATM jackpotting.”",
-   "src": "DOJ press release",
-   "srcUrl": "https://www.justice.gov/usao-nv/pr/two-men-indicted-alleged-roles-atm-jackpotting-scheme",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-14T12:00:00Z",
-   "p": "fraud",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T1",
-   "id": "L-0083",
-   "title": "A 31-year-old Ghanaian national is extradited to the United States to face charges of running romance fraud schemes that took more than $8 million from more than 80 elderly victims.",
-   "src": "DOJ press release",
-   "srcUrl": "https://www.justice.gov/usao-ndoh/pr/ghanaian-national-extradited-us-face-accusations-using-romance-fraud-schemes-take-8",
+   "srcUrl": "https://www.justice.gov/opa/pr/two-td-bank-insiders-sentenced-prison-facilitating-money-laundering-fraud",
    "linked": true
   }
  ],
@@ -1461,8 +1233,8 @@
    "scope": "third-party risk · vendor software & supply chain",
    "watch": "Vendor tools under active attack, software-supply-chain compromises aimed at financial applications, and vendor incident disclosures.",
    "opened": "July 2026",
-   "ver": "v3",
-   "verRange": "v1–v3",
+   "ver": "v4",
+   "verRange": "v1–v4",
    "asOf": "July 15, 2026",
    "p1": "One vendor-channel exploit is confirmed this window: SimpleHelp, a remote-support tool, carries an authentication-bypass flaw on CISA’s known-exploited list — in a vulnerable configuration, a remote, unauthenticated attacker can log in with a forged token.",
    "p1Sup": "1",
@@ -1472,6 +1244,15 @@
    "assessSup": "1",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 15, 26",
+     "st": "confirmed",
+     "ver": "v4",
+     "id": "L-0101",
+     "src": "The Record",
+     "srcUrl": "https://therecord.media/cyberattack-japan-nichirei-logistics-impacts-kfc",
+     "line": "A cyberattack on Nichirei Logistics Group, Japan’s largest refrigerated logistics company, disrupted the country’s food supply chain, leaving Kentucky Fried Chicken restaurants short on ingredients and major restaurant chains struggling to keep up with deliveries; Nichirei, which serves about 5,000 customers across Japan, said it experienced a system outage on Monday."
+    },
     {
      "date": "Jul 15, 26",
      "st": "confirmed",
@@ -1580,6 +1361,11 @@
      "n": "7",
      "text": "BleepingComputer — AsyncAPI npm packages infected with credential-stealing malware, Jul 15, 2026",
      "url": "https://www.bleepingcomputer.com/news/security/-asyncapi-npm-packages-infected-with-credential-stealing-malware/"
+    },
+    {
+     "n": "8",
+     "text": "The Record — Nichirei Logistics cyberattack disrupts KFC supply chain, Jul 15, 2026",
+     "url": "https://therecord.media/cyberattack-japan-nichirei-logistics-impacts-kfc"
     }
    ],
    "related": [
@@ -1895,9 +1681,9 @@
    "scope": "insider threat · co-opted trust",
    "watch": "Prosecutions and advisories where trusted roles — employees, contractors, hired specialists — are the attack path.",
    "opened": "July 2026",
-   "ver": "v3",
-   "verRange": "v1–v3",
-   "asOf": "July 11, 2026",
+   "ver": "v4",
+   "verRange": "v1–v4",
+   "asOf": "July 15, 2026",
    "p1": "One confirmed event this window sits squarely on trusted-role co-option: a former ransomware negotiator was sentenced to 70 months for conspiring with BlackCat ransomware actors to extort the victims he was engaged to help — and with other former cybersecurity professionals to attack additional victims.",
    "p1Sup": "1",
    "p2": "Adjacent signals point the same direction: the AssuranceAmerica breach began with attackers targeting a company employee, and a man accused of deploying Ryuk ransomware pleaded guilty to conspiracy and computer fraud in an Oregon federal court.",
@@ -1906,6 +1692,15 @@
    "assessSup": "4, 5",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 15, 26",
+     "st": "confirmed",
+     "ver": "v4",
+     "id": "L-0100",
+     "src": "DOJ press release",
+     "srcUrl": "https://www.justice.gov/opa/pr/two-td-bank-insiders-sentenced-prison-facilitating-money-laundering-fraud",
+     "line": "A former TD Bank employee is sentenced to 46 months in prison for facilitating a money-laundering network’s movement of millions of dollars through TD Bank accounts."
+    },
     {
      "date": "Jul 10, 26",
      "st": "confirmed",
@@ -1977,6 +1772,11 @@
      "n": "5",
      "text": "The Record — Ryuk operator guilty plea, Jul 10, 2026",
      "url": "https://therecord.media/ryuk-operator-pleads-guilty-alphv-conspirator-sentenced"
+    },
+    {
+     "n": "6",
+     "text": "DOJ — TD Bank insiders sentenced for money laundering, Jul 15, 2026",
+     "url": "https://www.justice.gov/opa/pr/two-td-bank-insiders-sentenced-prison-facilitating-money-laundering-fraud"
     }
    ],
    "related": [
@@ -2861,6 +2661,22 @@
    "line": "Dark Reading reports that nearly a dozen vulnerable, now-revoked Unified Extensible Firmware Interface (UEFI) shim bootloaders remained trusted for years, giving criminals a way to bypass Secure Boot — the check meant to verify only trusted software runs when a device starts up.",
    "src": "Dark Reading",
    "srcUrl": "https://www.darkreading.com/cyber-risk/forgotten-bootloaders-expose-secure-boot-blind-spot"
+  },
+  {
+   "d": "2026-07-15",
+   "p": "insider",
+   "id": "L-0100",
+   "line": "A former TD Bank employee is sentenced to 46 months in prison for facilitating a money-laundering network’s movement of millions of dollars through TD Bank accounts.",
+   "src": "DOJ press release",
+   "srcUrl": "https://www.justice.gov/opa/pr/two-td-bank-insiders-sentenced-prison-facilitating-money-laundering-fraud"
+  },
+  {
+   "d": "2026-07-15",
+   "p": "tp",
+   "id": "L-0101",
+   "line": "A cyberattack on Nichirei Logistics Group, Japan’s largest refrigerated logistics company, disrupted the country’s food supply chain, leaving Kentucky Fried Chicken restaurants short on ingredients and major restaurant chains struggling to keep up with deliveries; Nichirei, which serves about 5,000 customers across Japan, said it experienced a system outage on Monday.",
+   "src": "The Record",
+   "srcUrl": "https://therecord.media/cyberattack-japan-nichirei-logistics-impacts-kfc"
   }
  ],
  "takeaways": [
@@ -3089,6 +2905,14 @@
  "publications": {
   "dailies": [
    {
+    "no": "6",
+    "date": "Thu, Jul 16, 2026",
+    "confirmed": "2",
+    "pending": "0",
+    "flash": "—",
+    "linked": true
+   },
+   {
     "no": "5",
     "date": "Wed, Jul 15, 2026",
     "confirmed": "20",
@@ -3131,7 +2955,7 @@
   ],
   "weeklies": [],
   "monthlies": [],
-  "dTotal": 5,
+  "dTotal": 6,
   "wkTotal": 0,
   "mTotal": 0
  }
