@@ -2,18 +2,18 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-17T11:17:00-04:00",
+  "generatedAt": "2026-07-17T12:05:00-04:00",
   "issueNo": 7,
-  "recordHash": "6e33d29",
+  "recordHash": "00cd496",
   "windowLabel": "June 9 – July 17, 2026",
   "nextWeekly": "Fri, Jul 24",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). Two new items append to today’s edition: Ernst & Young, one of the world’s four largest auditing and professional-services firms, is notifying customers of a data breach after its own support-ticket system was compromised, with documents containing client tax information among what may have been exposed (BleepingComputer); and Flare’s research on 2,889 underground-forum posts finds carders increasingly pairing “residential” internet proxies with stolen browser fingerprints and other identity data to evade fraud detection, cautioning that residential traffic alone is not evidence a user is legitimate (BleepingComputer). Dark Reading’s “Gold Eagle Clearinghouse Targets Security Gap” was not re-admitted: it follows up on the White House’s Gold Eagle vulnerability-coordination program already recorded as L-0088 (Cybersecurity Dive, Jul 15), and its RSS description’s vague reference to “multiple questions linger over how it’s being implemented” names no concrete new fact beyond the original launch — the full article sat behind a Cloudflare challenge that blocked direct fetch. Dark Reading’s “Google Bets Agentic Defense Strategy” item was excluded at the relevance gate as a vendor product/capability announcement describing no discrete incident or risk event (full article also Cloudflare-blocked). The Record’s Fairlife dairy cyber-incident follow-up was not re-admitted: it reports the same Coca-Cola/Fairlife ransomware production halt already recorded as L-0119 (BleepingComputer, Jul 16), adding only a detection date, an unaffected-Canada detail, and other food-sector victim examples, not a materially distinct event. The European Data Protection Board’s call for a legal basis for cross-regulatory information sharing was excluded at the relevance gate: it is a request for future legislation from a Dublin meeting, not a concrete rule, guidance, or action, unlike the OCC bulletins and ECB pilot-selection items previously admitted. DOJ’s “Mexican National Sentenced for 28-Year Identity Theft Scheme” was excluded at the relevance gate: unlike the bank-fraud, ATM-jackpotting, and check-fraud DOJ items on record, its excerpt names no bank, financial institution, or specific financial mechanism. The CISA KEV catalog stayed at catalogVersion 2026.07.16 (1,647 entries, no new additions). Anthropic’s newest dated item remains Jul 14; FinCEN’s newest dated item remains Jun 30; ICO’s fetched page again returned no readable, dated news-list content; ENISA’s newest dated item remains Jul 14.",
-  "lastRun": "2026-07-17T11:17:00-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). One new item appends to today’s edition: a federal jury convicted a Duncan, South Carolina credit-repair business operator on nine counts of wire fraud and one count of credit card fraud (DOJ). BleepingComputer’s “Ernst & Young discloses data breach” and “Inside the Search for ‘Clean’ Residential Proxies for Carding” were not re-admitted: both are identical URLs to the items already recorded as L-0125 and L-0126. Cybersecurity Dive’s and The Record’s coverage of the Coca-Cola/Fairlife ransomware production halt were not re-admitted: both report the same incident already recorded as L-0119. Cybersecurity Dive’s “Abbott discloses cyberattack on cancer diagnostics business” was excluded at the relevance gate: the fetched article states unauthorized access to internal systems at Abbott’s cancer-diagnostics business with no financial-sector nexus stated anywhere in the article. The European Banking Authority’s “EBA E-mail alert 17 July, 2026” was excluded as an unreadable newsletter-wrapper stub, the same disposition applied to this item’s daily recurrence in prior runs. DOJ’s “Jacksonville Man Sentenced…for Second Time for Bank Robbery” was excluded at the relevance gate: the excerpt states only a sentence length and a repeat bank-robbery conviction, with no fraud scheme, technology, or financial mechanism stated, matching the disposition applied to the Massachusetts bank-robbery charge excluded earlier this week. DOJ’s “West Bloomfield Resident Charged for Investment Fraud Scheme” carried an empty RSS description — insufficient excerpt content to ground an entry, the same disposition applied to prior empty-description DOJ items. The CISA KEV catalog stayed at catalogVersion 2026.07.16 (1,647 entries, no new additions). Anthropic’s newest dated item remains Jul 14; FinCEN’s newest dated item remains Jun 30; ICO’s fetched page again returned no readable, dated news-list content; ENISA’s newest dated item remains Jul 14.",
+  "lastRun": "2026-07-17T12:05:00-04:00"
  },
  "lead": {
-  "head": "Leading stories: Ernst & Young disclosing a data breach that may have exposed client tax documents after its support-ticket system was compromised; new research on how carders combine “residential” proxies with stolen identity data to evade fraud detection; and a newly released Windows zero-day exploit called LegacyHive that lets attackers gain administrator privileges",
-  "dek": "Today’s edition draws on the six items recorded so far. Every item links to its source.",
+  "head": "Leading stories: Ernst & Young disclosing a data breach that may have exposed client tax documents after its support-ticket system was compromised; new research on how carders combine “residential” proxies with stolen identity data to evade fraud detection; and a federal jury convicting a South Carolina credit-repair business operator on wire fraud and credit card fraud charges",
+  "dek": "Today’s edition draws on the seven items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
@@ -41,15 +41,15 @@
    },
    {
     "n": "3",
-    "p": "cyber",
+    "p": "fraud",
     "tri": "routine",
     "st": "confirmed",
-    "id": "L-0124",
+    "id": "L-0127",
     "conf": "",
-    "text": "A security researcher using the handle “Nightmare Eclipse” has publicly released a Windows zero-day exploit called LegacyHive that lets attackers gain administrator-level privileges on fully updated Windows systems, BleepingComputer reports.",
-    "why": "A publicly released privilege-escalation exploit for Windows gives attackers a ready-made way to gain administrator access on systems that are otherwise fully updated, a new flaw for technology teams to watch for.",
-    "srcText": "BleepingComputer, Jul 17",
-    "srcUrl": "https://www.bleepingcomputer.com/news/security/new-windows-legacyhive-zero-day-exploit-grants-hackers-admin-access/"
+    "text": "A federal jury convicts Joseph F. Wallace, 51, a Duncan, South Carolina credit-repair business operator, on nine counts of wire fraud and one count of credit card fraud following a four-day trial, the Department of Justice reports.",
+    "why": "A credit-repair business operator’s conviction on nine counts of wire fraud and one count of credit card fraud is now the subject of a federal jury verdict — a reminder for fraud teams to keep wire-fraud and credit-card-fraud detection controls current.",
+    "srcText": "DOJ press release, Jul 17",
+    "srcUrl": "https://www.justice.gov/usao-sc/pr/federal-jury-convicts-duncan-credit-repair-operator-wire-fraud-and-credit-card-fraud"
    }
   ]
  },
@@ -76,6 +76,18 @@
    "title": "Flare’s security researchers report that carders increasingly combine “residential” internet proxies with browser fingerprints and other identity data to evade modern fraud-detection systems, and caution that residential internet traffic alone should not be treated as evidence a customer is legitimate, BleepingComputer reports.",
    "src": "BleepingComputer",
    "srcUrl": "https://www.bleepingcomputer.com/news/security/inside-the-search-for-clean-residential-proxies-for-carding/",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-17T12:00:00Z",
+   "p": "fraud",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T1",
+   "id": "L-0127",
+   "title": "A federal jury convicts Joseph F. Wallace, 51, a Duncan, South Carolina credit-repair business operator, on nine counts of wire fraud and one count of credit card fraud following a four-day trial, the Department of Justice reports.",
+   "src": "DOJ press release",
+   "srcUrl": "https://www.justice.gov/usao-sc/pr/federal-jury-convicts-duncan-credit-repair-operator-wire-fraud-and-credit-card-fraud",
    "linked": true
   },
   {
@@ -1190,8 +1202,8 @@
    "scope": "fraud · AML rulemaking & scam patterns",
    "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
    "opened": "July 2026",
-   "ver": "v16",
-   "verRange": "v1–v16",
+   "ver": "v17",
+   "verRange": "v1–v17",
    "asOf": "July 17, 2026",
    "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22).",
    "p1Sup": "1, 3",
@@ -1201,6 +1213,15 @@
    "assessSup": "2, 3",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 17, 26",
+     "st": "confirmed",
+     "ver": "v17",
+     "id": "L-0127",
+     "src": "DOJ press release",
+     "srcUrl": "https://www.justice.gov/usao-sc/pr/federal-jury-convicts-duncan-credit-repair-operator-wire-fraud-and-credit-card-fraud",
+     "line": "A federal jury convicts Joseph F. Wallace, 51, a Duncan, South Carolina credit-repair business operator, on nine counts of wire fraud and one count of credit card fraud following a four-day trial, the Department of Justice reports."
+    },
     {
      "date": "Jul 17, 26",
      "st": "confirmed",
@@ -1504,6 +1525,11 @@
      "n": "19",
      "text": "BleepingComputer — Flare research: carders pair “clean” residential proxies with stolen identity data, Jul 17, 2026",
      "url": "https://www.bleepingcomputer.com/news/security/inside-the-search-for-clean-residential-proxies-for-carding/"
+    },
+    {
+     "n": "20",
+     "text": "DOJ — Duncan, South Carolina credit-repair operator convicted of wire fraud and credit card fraud, Jul 17, 2026",
+     "url": "https://www.justice.gov/usao-sc/pr/federal-jury-convicts-duncan-credit-repair-operator-wire-fraud-and-credit-card-fraud"
     }
    ],
    "related": [
@@ -3282,6 +3308,14 @@
    "line": "Flare’s security researchers report that carders increasingly combine “residential” internet proxies with browser fingerprints and other identity data to evade modern fraud-detection systems, and caution that residential internet traffic alone should not be treated as evidence a customer is legitimate, BleepingComputer reports.",
    "src": "BleepingComputer",
    "srcUrl": "https://www.bleepingcomputer.com/news/security/inside-the-search-for-clean-residential-proxies-for-carding/"
+  },
+  {
+   "d": "2026-07-17",
+   "p": "fraud",
+   "id": "L-0127",
+   "line": "A federal jury convicts Joseph F. Wallace, 51, a Duncan, South Carolina credit-repair business operator, on nine counts of wire fraud and one count of credit card fraud following a four-day trial, the Department of Justice reports.",
+   "src": "DOJ press release",
+   "srcUrl": "https://www.justice.gov/usao-sc/pr/federal-jury-convicts-duncan-credit-repair-operator-wire-fraud-and-credit-card-fraud"
   }
  ],
  "takeaways": [
@@ -3575,7 +3609,7 @@
    {
     "no": "7",
     "date": "Fri, Jul 17, 2026",
-    "confirmed": "6",
+    "confirmed": "7",
     "pending": "0",
     "flash": "—",
     "linked": true
