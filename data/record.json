@@ -2,18 +2,18 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-17T12:05:00-04:00",
+  "generatedAt": "2026-07-17T14:10:00-04:00",
   "issueNo": 7,
-  "recordHash": "00cd496",
+  "recordHash": "0be3cb4",
   "windowLabel": "June 9 – July 17, 2026",
   "nextWeekly": "Fri, Jul 24",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). One new item appends to today’s edition: a federal jury convicted a Duncan, South Carolina credit-repair business operator on nine counts of wire fraud and one count of credit card fraud (DOJ). BleepingComputer’s “Ernst & Young discloses data breach” and “Inside the Search for ‘Clean’ Residential Proxies for Carding” were not re-admitted: both are identical URLs to the items already recorded as L-0125 and L-0126. Cybersecurity Dive’s and The Record’s coverage of the Coca-Cola/Fairlife ransomware production halt were not re-admitted: both report the same incident already recorded as L-0119. Cybersecurity Dive’s “Abbott discloses cyberattack on cancer diagnostics business” was excluded at the relevance gate: the fetched article states unauthorized access to internal systems at Abbott’s cancer-diagnostics business with no financial-sector nexus stated anywhere in the article. The European Banking Authority’s “EBA E-mail alert 17 July, 2026” was excluded as an unreadable newsletter-wrapper stub, the same disposition applied to this item’s daily recurrence in prior runs. DOJ’s “Jacksonville Man Sentenced…for Second Time for Bank Robbery” was excluded at the relevance gate: the excerpt states only a sentence length and a repeat bank-robbery conviction, with no fraud scheme, technology, or financial mechanism stated, matching the disposition applied to the Massachusetts bank-robbery charge excluded earlier this week. DOJ’s “West Bloomfield Resident Charged for Investment Fraud Scheme” carried an empty RSS description — insufficient excerpt content to ground an entry, the same disposition applied to prior empty-description DOJ items. The CISA KEV catalog stayed at catalogVersion 2026.07.16 (1,647 entries, no new additions). Anthropic’s newest dated item remains Jul 14; FinCEN’s newest dated item remains Jun 30; ICO’s fetched page again returned no readable, dated news-list content; ENISA’s newest dated item remains Jul 14.",
-  "lastRun": "2026-07-17T12:05:00-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). One new item appends to today’s edition: BleepingComputer reports a newly disclosed flaw dubbed “HollowByte” lets unauthenticated attackers bloat an OpenSSL server’s memory and trigger a denial-of-service condition with an 11-byte payload. BleepingComputer’s “Ernst & Young discloses data breach” was not re-admitted: identical URL to the item already recorded as L-0125. Cybersecurity Dive’s “Ransomware attack forces Coca-Cola to suspend US production at dairy unit” was not re-admitted: reports the same incident already recorded as L-0119. Cybersecurity Dive’s “Abbott discloses cyberattack on cancer diagnostics business” was excluded at the relevance gate again, reappearing in this run’s window: no financial-sector nexus stated. The European Banking Authority’s “EBA E-mail alert 17 July, 2026” was excluded again as an unreadable newsletter-wrapper stub. Dark Reading’s “The Real AI Threat Is Blind Trust” was excluded at the relevance gate: the RSS description (“AI models left to both interpret and execute commands eliminate critical cybersecurity oversight”) reads as opinion/analysis commentary rather than a discrete, checkable event, and the full article was Cloudflare-blocked to both the descriptive and browser User-Agent, matching the disposition applied to prior opinion-column exclusions. DOJ’s “Miami CPA Charged with Preparing False Tax Return” was excluded at the relevance gate: the excerpt describes a false tax return prepared for a shipping company’s CFO, with no bank, financial institution, or technology mechanism stated. DOJ’s remaining current entries matched the same set already reviewed and dispositioned in the 12:05 ET run (including the already-recorded Duncan credit-repair conviction, L-0127, and the already-excluded Jacksonville bank-robbery, West Bloomfield empty-description, Mexican National identity-theft, and Santa Fe embezzlement items). NOAA’s Atlantic outlook carried no new information beyond the standing empty-state entry. The CISA KEV catalog stayed at catalogVersion 2026.07.16 (1,647 entries, no new additions). Anthropic’s newest dated item remains Jul 14; FinCEN’s newest dated item remains Jun 30; ICO’s fetched page again returned no readable, dated news-list content; ENISA’s newest dated item remains Jul 14.",
+  "lastRun": "2026-07-17T14:10:00-04:00"
  },
  "lead": {
-  "head": "Leading stories: Ernst & Young disclosing a data breach that may have exposed client tax documents after its support-ticket system was compromised; new research on how carders combine “residential” proxies with stolen identity data to evade fraud detection; and a federal jury convicting a South Carolina credit-repair business operator on wire fraud and credit card fraud charges",
-  "dek": "Today’s edition draws on the seven items recorded so far. Every item links to its source.",
+  "head": "Leading stories: Ernst & Young disclosing a data breach that may have exposed client tax documents after its support-ticket system was compromised; a newly disclosed “HollowByte” flaw that can bloat an OpenSSL server’s memory and knock it offline with an 11-byte payload; and new research on how carders combine “residential” proxies with identity data to evade fraud detection",
+  "dek": "Today’s edition draws on the eight items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
@@ -29,6 +29,18 @@
    },
    {
     "n": "2",
+    "p": "cyber",
+    "tri": "routine",
+    "st": "confirmed",
+    "id": "L-0128",
+    "conf": "",
+    "text": "BleepingComputer reports that a vulnerability dubbed “HollowByte” lets unauthenticated attackers bloat an OpenSSL server’s memory and trigger a denial-of-service (DoS) condition using a malicious payload of just 11 bytes.",
+    "why": "A newly disclosed flaw called “HollowByte” lets an unauthenticated attacker bloat an OpenSSL server’s memory and knock it offline using a malicious data packet of just 11 bytes — a reminder that internet-facing systems can be disrupted by even a very small malicious input.",
+    "srcText": "BleepingComputer, Jul 17",
+    "srcUrl": "https://www.bleepingcomputer.com/news/security/hollowbyte-ddos-flaw-bloats-openssl-server-memory-with-11-byte-payload/"
+   },
+   {
+    "n": "3",
     "p": "fraud",
     "tri": "routine",
     "st": "confirmed",
@@ -38,22 +50,22 @@
     "why": "Criminals increasingly pair “residential” internet proxies with browser and device data to slip past fraud-detection systems, so fraud teams should treat residential-looking traffic as one signal among many, not proof on its own that a customer is legitimate.",
     "srcText": "BleepingComputer, Jul 17",
     "srcUrl": "https://www.bleepingcomputer.com/news/security/inside-the-search-for-clean-residential-proxies-for-carding/"
-   },
-   {
-    "n": "3",
-    "p": "fraud",
-    "tri": "routine",
-    "st": "confirmed",
-    "id": "L-0127",
-    "conf": "",
-    "text": "A federal jury convicts Joseph F. Wallace, 51, a Duncan, South Carolina credit-repair business operator, on nine counts of wire fraud and one count of credit card fraud following a four-day trial, the Department of Justice reports.",
-    "why": "A credit-repair business operator’s conviction on nine counts of wire fraud and one count of credit card fraud is now the subject of a federal jury verdict — a reminder for fraud teams to keep wire-fraud and credit-card-fraud detection controls current.",
-    "srcText": "DOJ press release, Jul 17",
-    "srcUrl": "https://www.justice.gov/usao-sc/pr/federal-jury-convicts-duncan-credit-repair-operator-wire-fraud-and-credit-card-fraud"
    }
   ]
  },
  "wire": [
+  {
+   "ts": "2026-07-17T17:56:21Z",
+   "p": "cyber",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0128",
+   "title": "BleepingComputer reports that a vulnerability dubbed “HollowByte” lets unauthenticated attackers bloat an OpenSSL server’s memory and trigger a denial-of-service (DoS) condition using a malicious payload of just 11 bytes.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/hollowbyte-ddos-flaw-bloats-openssl-server-memory-with-11-byte-payload/",
+   "linked": true
+  },
   {
    "ts": "2026-07-17T14:55:28Z",
    "p": "tp",
@@ -383,8 +395,8 @@
    "scope": "cybersecurity · exploitation & exposure",
    "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
    "opened": "July 2026",
-   "ver": "v50",
-   "verRange": "v1–v50",
+   "ver": "v51",
+   "verRange": "v1–v51",
    "asOf": "July 17, 2026",
    "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
    "p1Sup": "1, 3, 10",
@@ -394,6 +406,15 @@
    "assessSup": "1, 8",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 17, 26",
+     "st": "confirmed",
+     "ver": "v51",
+     "id": "L-0128",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/hollowbyte-ddos-flaw-bloats-openssl-server-memory-with-11-byte-payload/",
+     "line": "BleepingComputer reports that a vulnerability dubbed “HollowByte” lets unauthenticated attackers bloat an OpenSSL server’s memory and trigger a denial-of-service (DoS) condition using a malicious payload of just 11 bytes."
+    },
     {
      "date": "Jul 17, 26",
      "st": "confirmed",
@@ -1152,6 +1173,11 @@
      "n": "47",
      "text": "The Record — Sandworm hackers' fake-CAPTCHA PowerShell trick targeting Ukrainians, Jul 16, 2026",
      "url": "https://therecord.media/ukraine-sandworm-hacks-captcha-powershell"
+    },
+    {
+     "n": "48",
+     "text": "BleepingComputer — “HollowByte” OpenSSL denial-of-service flaw, Jul 17, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/hollowbyte-ddos-flaw-bloats-openssl-server-memory-with-11-byte-payload/"
     }
    ],
    "related": [
@@ -3316,6 +3342,14 @@
    "line": "A federal jury convicts Joseph F. Wallace, 51, a Duncan, South Carolina credit-repair business operator, on nine counts of wire fraud and one count of credit card fraud following a four-day trial, the Department of Justice reports.",
    "src": "DOJ press release",
    "srcUrl": "https://www.justice.gov/usao-sc/pr/federal-jury-convicts-duncan-credit-repair-operator-wire-fraud-and-credit-card-fraud"
+  },
+  {
+   "d": "2026-07-17",
+   "p": "cyber",
+   "id": "L-0128",
+   "line": "BleepingComputer reports that a vulnerability dubbed “HollowByte” lets unauthenticated attackers bloat an OpenSSL server’s memory and trigger a denial-of-service (DoS) condition using a malicious payload of just 11 bytes.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/hollowbyte-ddos-flaw-bloats-openssl-server-memory-with-11-byte-payload/"
   }
  ],
  "takeaways": [
@@ -3609,7 +3643,7 @@
    {
     "no": "7",
     "date": "Fri, Jul 17, 2026",
-    "confirmed": "7",
+    "confirmed": "8",
     "pending": "0",
     "flash": "—",
     "linked": true
