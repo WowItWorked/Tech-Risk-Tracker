@@ -2,21 +2,45 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-17T08:13:00-04:00",
+  "generatedAt": "2026-07-17T11:17:00-04:00",
   "issueNo": 7,
-  "recordHash": "c00bc79",
+  "recordHash": "6e33d29",
   "windowLabel": "June 9 – July 17, 2026",
   "nextWeekly": "Fri, Jul 24",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). One new item appends to today’s edition: BleepingComputer reports that a security researcher using the “Nightmare Eclipse” handle publicly released a Windows zero-day exploit called LegacyHive that lets attackers escalate to administrator-level privileges on up-to-date Windows systems. BleepingComputer’s Windows Server 2022 end-of-mainstream-support report reappeared with an identical URL to the item already recorded as L-0122 and was not re-admitted. The European Central Bank’s Cipollone digital-euro speech listing carried no excerpt and was excluded on the same grounds as prior speech-listing exclusions; the Financial Conduct Authority’s Anthony Jones (UK) Limited insurance-broker customer notice was excluded at the relevance gate, matching the disposition of the equivalent insurance-broker notice excluded in the prior run. The CISA KEV catalog stayed at catalogVersion 2026.07.16 (1,647 entries, no new additions). Anthropic’s newest dated item remains Jul 14; FinCEN’s newest dated item remains Jun 30; ICO’s fetched page again returned no readable, dated news-list content; ENISA’s newest dated item remains Jul 14.",
-  "lastRun": "2026-07-17T08:13:00-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). Two new items append to today’s edition: Ernst & Young, one of the world’s four largest auditing and professional-services firms, is notifying customers of a data breach after its own support-ticket system was compromised, with documents containing client tax information among what may have been exposed (BleepingComputer); and Flare’s research on 2,889 underground-forum posts finds carders increasingly pairing “residential” internet proxies with stolen browser fingerprints and other identity data to evade fraud detection, cautioning that residential traffic alone is not evidence a user is legitimate (BleepingComputer). Dark Reading’s “Gold Eagle Clearinghouse Targets Security Gap” was not re-admitted: it follows up on the White House’s Gold Eagle vulnerability-coordination program already recorded as L-0088 (Cybersecurity Dive, Jul 15), and its RSS description’s vague reference to “multiple questions linger over how it’s being implemented” names no concrete new fact beyond the original launch — the full article sat behind a Cloudflare challenge that blocked direct fetch. Dark Reading’s “Google Bets Agentic Defense Strategy” item was excluded at the relevance gate as a vendor product/capability announcement describing no discrete incident or risk event (full article also Cloudflare-blocked). The Record’s Fairlife dairy cyber-incident follow-up was not re-admitted: it reports the same Coca-Cola/Fairlife ransomware production halt already recorded as L-0119 (BleepingComputer, Jul 16), adding only a detection date, an unaffected-Canada detail, and other food-sector victim examples, not a materially distinct event. The European Data Protection Board’s call for a legal basis for cross-regulatory information sharing was excluded at the relevance gate: it is a request for future legislation from a Dublin meeting, not a concrete rule, guidance, or action, unlike the OCC bulletins and ECB pilot-selection items previously admitted. DOJ’s “Mexican National Sentenced for 28-Year Identity Theft Scheme” was excluded at the relevance gate: unlike the bank-fraud, ATM-jackpotting, and check-fraud DOJ items on record, its excerpt names no bank, financial institution, or specific financial mechanism. The CISA KEV catalog stayed at catalogVersion 2026.07.16 (1,647 entries, no new additions). Anthropic’s newest dated item remains Jul 14; FinCEN’s newest dated item remains Jun 30; ICO’s fetched page again returned no readable, dated news-list content; ENISA’s newest dated item remains Jul 14.",
+  "lastRun": "2026-07-17T11:17:00-04:00"
  },
  "lead": {
-  "head": "Leading stories: a newly released Windows zero-day exploit called LegacyHive that lets attackers gain administrator privileges; Windows Server 2022 reaching the end of mainstream support in October 2026; and a CAPTCHA check that tricks Ukrainian users into pasting a PowerShell command into their computers",
-  "dek": "Today’s edition draws on the four items recorded so far. Every item links to its source.",
+  "head": "Leading stories: Ernst & Young disclosing a data breach that may have exposed client tax documents after its support-ticket system was compromised; new research on how carders combine “residential” proxies with stolen identity data to evade fraud detection; and a newly released Windows zero-day exploit called LegacyHive that lets attackers gain administrator privileges",
+  "dek": "Today’s edition draws on the six items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
+    "p": "tp",
+    "tri": "priority",
+    "st": "confirmed",
+    "id": "L-0125",
+    "conf": "",
+    "text": "Ernst & Young, one of the world’s four largest auditing and professional-services firms, is notifying customers of a data breach after the compromise of a third-party support-ticket system used by its technology staff; the tickets may have included documents containing client tax information, BleepingComputer reports.",
+    "why": "Ernst & Young is one of the world’s four largest auditing and professional-services firms, and a breach of its own support-ticket system may have exposed documents containing client tax information — a reminder that even large vendors handling sensitive client data can become a route for it to leak.",
+    "srcText": "BleepingComputer, Jul 17",
+    "srcUrl": "https://www.bleepingcomputer.com/news/security/ernst-and-young-discloses-data-breach-after-support-system-hack/"
+   },
+   {
+    "n": "2",
+    "p": "fraud",
+    "tri": "routine",
+    "st": "confirmed",
+    "id": "L-0126",
+    "conf": "",
+    "text": "Flare’s security researchers report that carders increasingly combine “residential” internet proxies with browser fingerprints and other identity data to evade modern fraud-detection systems, and caution that residential internet traffic alone should not be treated as evidence a customer is legitimate, BleepingComputer reports.",
+    "why": "Criminals increasingly pair “residential” internet proxies with browser and device data to slip past fraud-detection systems, so fraud teams should treat residential-looking traffic as one signal among many, not proof on its own that a customer is legitimate.",
+    "srcText": "BleepingComputer, Jul 17",
+    "srcUrl": "https://www.bleepingcomputer.com/news/security/inside-the-search-for-clean-residential-proxies-for-carding/"
+   },
+   {
+    "n": "3",
     "p": "cyber",
     "tri": "routine",
     "st": "confirmed",
@@ -26,34 +50,34 @@
     "why": "A publicly released privilege-escalation exploit for Windows gives attackers a ready-made way to gain administrator access on systems that are otherwise fully updated, a new flaw for technology teams to watch for.",
     "srcText": "BleepingComputer, Jul 17",
     "srcUrl": "https://www.bleepingcomputer.com/news/security/new-windows-legacyhive-zero-day-exploit-grants-hackers-admin-access/"
-   },
-   {
-    "n": "2",
-    "p": "cyber",
-    "tri": "routine",
-    "st": "confirmed",
-    "id": "L-0122",
-    "conf": "",
-    "text": "Microsoft announced that Windows Server 2022 will reach the end of mainstream support in October 2026; it will move to extended support, with security updates continuing for five more years.",
-    "why": "Windows Server 2022 reaching the end of mainstream support in October 2026 gives banks running the platform a concrete timeline to plan a move to extended support or a newer release.",
-    "srcText": "BleepingComputer, Jul 17",
-    "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-server-2022-reach-end-of-mainstream-support-in-90-days/"
-   },
-   {
-    "n": "3",
-    "p": "cyber",
-    "tri": "routine",
-    "st": "confirmed",
-    "id": "L-0123",
-    "conf": "",
-    "text": "Sandworm hackers are using a CAPTCHA check that, rather than verifying users are human, instructs Ukrainian users to copy and paste a PowerShell command into their Windows computers, The Record reports.",
-    "why": "A hacking group's CAPTCHA check that tricks users into pasting a command into their own computer is a reminder that attackers keep finding new ways to get around technical defenses by targeting the user directly.",
-    "srcText": "The Record, Jul 16",
-    "srcUrl": "https://therecord.media/ukraine-sandworm-hacks-captcha-powershell"
    }
   ]
  },
  "wire": [
+  {
+   "ts": "2026-07-17T14:55:28Z",
+   "p": "tp",
+   "tri": "priority",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0125",
+   "title": "Ernst & Young, one of the world’s four largest auditing and professional-services firms, is notifying customers of a data breach after the compromise of a third-party support-ticket system used by its technology staff; the tickets may have included documents containing client tax information, BleepingComputer reports.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/ernst-and-young-discloses-data-breach-after-support-system-hack/",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-17T14:00:10Z",
+   "p": "fraud",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0126",
+   "title": "Flare’s security researchers report that carders increasingly combine “residential” internet proxies with browser fingerprints and other identity data to evade modern fraud-detection systems, and caution that residential internet traffic alone should not be treated as evidence a customer is legitimate, BleepingComputer reports.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/inside-the-search-for-clean-residential-proxies-for-carding/",
+   "linked": true
+  },
   {
    "ts": "2026-07-17T11:05:30Z",
    "p": "cyber",
@@ -1166,9 +1190,9 @@
    "scope": "fraud · AML rulemaking & scam patterns",
    "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
    "opened": "July 2026",
-   "ver": "v15",
-   "verRange": "v1–v15",
-   "asOf": "July 16, 2026",
+   "ver": "v16",
+   "verRange": "v1–v16",
+   "asOf": "July 17, 2026",
    "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22).",
    "p1Sup": "1, 3",
    "p2": "Operationally, the OCC is highlighting FinCEN’s updated Section 314(b) fact sheet clarifying how institutions can share suspected-fraud information with each other. The FBI’s recent consumer-facing warnings describe criminals redirecting users to fraudulent websites through malicious traffic-distribution systems. On the criminal side, a Bulgarian national already imprisoned for helping launder millions in fraud proceeds is charged with stealing $290,000 in government-seized cryptocurrency while incarcerated.",
@@ -1177,6 +1201,15 @@
    "assessSup": "2, 3",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 17, 26",
+     "st": "confirmed",
+     "ver": "v16",
+     "id": "L-0126",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/inside-the-search-for-clean-residential-proxies-for-carding/",
+     "line": "Flare’s security researchers report that carders increasingly combine “residential” internet proxies with browser fingerprints and other identity data to evade modern fraud-detection systems, and caution that residential internet traffic alone should not be treated as evidence a customer is legitimate, BleepingComputer reports."
+    },
     {
      "date": "Jul 16, 26",
      "st": "confirmed",
@@ -1466,6 +1499,11 @@
      "n": "18",
      "text": "DOJ — Buffalo, NY business owner charged with bank fraud over $1M+ in alleged customer losses, Jul 16, 2026",
      "url": "https://www.justice.gov/usao-wdny/pr/buffalo-business-owner-charged-bank-fraud-defrauding-customers-out-more-million"
+    },
+    {
+     "n": "19",
+     "text": "BleepingComputer — Flare research: carders pair “clean” residential proxies with stolen identity data, Jul 17, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/inside-the-search-for-clean-residential-proxies-for-carding/"
     }
    ],
    "related": [
@@ -1516,17 +1554,26 @@
    "scope": "third-party risk · vendor software & supply chain",
    "watch": "Vendor tools under active attack, software-supply-chain compromises aimed at financial applications, and vendor incident disclosures.",
    "opened": "July 2026",
-   "ver": "v5",
-   "verRange": "v1–v5",
-   "asOf": "July 16, 2026",
+   "ver": "v6",
+   "verRange": "v1–v6",
+   "asOf": "July 17, 2026",
    "p1": "One vendor-channel exploit is confirmed this window: SimpleHelp, a remote-support tool, carries an authentication-bypass flaw on CISA’s known-exploited list — in a vulnerable configuration, a remote, unauthenticated attacker can log in with a forged token.",
    "p1Sup": "1",
-   "p2": "The rest of the vendor picture clusters around the software supply chain: a claimed breach at consulting firm Accenture said to involve source code and encryption keys, and malicious look-alike software kits for the Paysafe, Skrill, and Neteller payment applications on public code registries.",
-   "p2Sup": "2, 3",
+   "p2": "The rest of the vendor picture clusters around the software supply chain: a claimed breach at consulting firm Accenture said to involve source code and encryption keys, and malicious look-alike software kits for the Paysafe, Skrill, and Neteller payment applications on public code registries. Separately, Ernst & Young — one of the world’s four largest auditing and professional-services firms — is notifying customers of a data breach after its own support-ticket system was compromised, with documents containing client tax information among what the tickets may have held.",
+   "p2Sup": "2, 3, 10",
    "assess": "We assess with moderate confidence that malicious software packages aimed at payment applications on public code registries are the growth edge in third-party exposure — four separate reports this window point the same way.",
    "assessSup": "1",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 17, 26",
+     "st": "confirmed",
+     "ver": "v6",
+     "id": "L-0125",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/ernst-and-young-discloses-data-breach-after-support-system-hack/",
+     "line": "Ernst & Young, one of the world’s four largest auditing and professional-services firms, is notifying customers of a data breach after the compromise of a third-party support-ticket system used by its technology staff; the tickets may have included documents containing client tax information, BleepingComputer reports."
+    },
     {
      "date": "Jul 16, 26",
      "st": "confirmed",
@@ -1663,6 +1710,11 @@
      "n": "9",
      "text": "BleepingComputer — Coca-Cola says Fairlife ransomware attack halts US dairy production, Jul 16, 2026",
      "url": "https://www.bleepingcomputer.com/news/security/coca-cola-says-fairlife-ransomware-attack-halts-us-dairy-production/"
+    },
+    {
+     "n": "10",
+     "text": "BleepingComputer — Ernst & Young discloses data breach via third-party support-ticket system, Jul 17, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/ernst-and-young-discloses-data-breach-after-support-system-hack/"
     }
    ],
    "related": [
@@ -3214,6 +3266,22 @@
    "line": "A security researcher using the handle “Nightmare Eclipse” has publicly released a Windows zero-day exploit called LegacyHive that lets attackers gain administrator-level privileges on fully updated Windows systems, BleepingComputer reports.",
    "src": "BleepingComputer",
    "srcUrl": "https://www.bleepingcomputer.com/news/security/new-windows-legacyhive-zero-day-exploit-grants-hackers-admin-access/"
+  },
+  {
+   "d": "2026-07-17",
+   "p": "tp",
+   "id": "L-0125",
+   "line": "Ernst & Young, one of the world’s four largest auditing and professional-services firms, is notifying customers of a data breach after the compromise of a third-party support-ticket system used by its technology staff; the tickets may have included documents containing client tax information, BleepingComputer reports.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/ernst-and-young-discloses-data-breach-after-support-system-hack/"
+  },
+  {
+   "d": "2026-07-17",
+   "p": "fraud",
+   "id": "L-0126",
+   "line": "Flare’s security researchers report that carders increasingly combine “residential” internet proxies with browser fingerprints and other identity data to evade modern fraud-detection systems, and caution that residential internet traffic alone should not be treated as evidence a customer is legitimate, BleepingComputer reports.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/inside-the-search-for-clean-residential-proxies-for-carding/"
   }
  ],
  "takeaways": [
@@ -3482,6 +3550,24 @@
    "conf": "high confidence",
    "head": "A critical, actively exploited SonicWall SMA1000 flaw has a July 17 fix deadline.",
    "body": "SonicWall confirmed criminals are actively exploiting two zero-day flaws in its SMA1000 appliances (CVE-2026-15409, CVE-2026-15410), and CISA added both to its known-exploited vulnerabilities catalog with a July 17, 2026 remediation deadline. Technology teams running SMA1000 appliances should apply SonicWall's security updates now."
+  },
+  {
+   "anchors": [
+    "L-0125"
+   ],
+   "pillars": "Third-party risk · data risk",
+   "conf": "moderate confidence",
+   "head": "A Big Four firm’s support-ticket breach may have exposed client tax documents.",
+   "body": "Ernst & Young is notifying customers that a third-party support-ticket system used by its technology staff was compromised, and that the tickets may have included documents containing client tax information. Firms that submitted tax paperwork through Ernst & Young’s support-ticket platform should watch for a breach notification and treat any tax documents submitted through it as potentially exposed."
+  },
+  {
+   "anchors": [
+    "L-0126"
+   ],
+   "pillars": "Fraud",
+   "conf": "high confidence",
+   "head": "Residential-looking proxy traffic alone isn’t proof a login or purchase is legitimate.",
+   "body": "Flare’s research on carding-forum activity found criminals increasingly pair “residential” internet proxies with browser fingerprints and other identity data to get around fraud checks. Fraud teams should treat residential-IP traffic as context, not evidence that a user is legitimate."
   }
  ],
  "publications": {
@@ -3489,7 +3575,7 @@
    {
     "no": "7",
     "date": "Fri, Jul 17, 2026",
-    "confirmed": "4",
+    "confirmed": "6",
     "pending": "0",
     "flash": "—",
     "linked": true
