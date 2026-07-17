@@ -2,188 +2,80 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-16T18:09:00-04:00",
-  "issueNo": 6,
-  "recordHash": "63783dd",
-  "windowLabel": "June 9 – July 16, 2026",
-  "nextWeekly": "Fri, Jul 17",
+  "generatedAt": "2026-07-17T06:22:10-04:00",
+  "issueNo": 7,
+  "recordHash": "9af4d09",
+  "windowLabel": "June 9 – July 17, 2026",
+  "nextWeekly": "Fri, Jul 24",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). Three new items append to today’s edition: BleepingComputer reports on a new macOS credential-stealing malware called “ClickLock” and on a ransomware attack that halted Fairlife dairy production nationwide after Coca-Cola’s disclosure; a DOJ press release reports a former U.S. Postal Service employee and two Philadelphia men admitting roles in a stolen-check bank-fraud conspiracy. The CISA KEV catalog stayed at catalogVersion 2026.07.16 (1,647 entries, no new additions). OCC bulletin 2026-33 (an accounting-standard examiner handbook update) and a DOJ press release on the same Chinese money-laundering network already recorded as L-0115 both reappeared and were not re-admitted. The Record’s report of a senator’s letter urging pressure on proposed Canadian surveillance legislation and Dark Reading’s opinion column on agentic AI security were excluded at the relevance gate. Anthropic’s newest dated item remains Jul 14; FinCEN’s newest dated item remains Jun 30; ICO’s fetched page again returned no readable, dated news-list content; ENISA’s newest dated item remains Jul 14.",
-  "lastRun": "2026-07-16T18:09:00-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). This is the 6 AM day-opening run for Friday, July 17 — issue No. 7 opens with three new items: BleepingComputer reports that Windows Server 2022 will reach the end of mainstream support in October 2026, The Record reports a Sandworm fake-CAPTCHA/PowerShell trick targeting Ukrainian users, and a DOJ press release reports bank-fraud charges against a Buffalo, New York business owner. Per the Friday day-opening rule, the first weekly digest (No. 1, Jul 13–17) is also published this run, aggregating 68 items recorded across the week. Several candidates reappeared from already-recorded events and were not re-admitted: OCC bulletin 2026-32 and the Federal Reserve’s matching press release (the three-agency joint statement on handling highly sensitive examination information, already recorded as L-0112), the Federal Reserve’s enforcement-action release naming James Burns of Heritage State Bank (already recorded as L-0106), a BleepingComputer report on the same Chen/Zhang Chinese money-laundering network already recorded as L-0115, a BleepingComputer report on the same Scattered Spider/Transport for London sentencing already recorded as L-0104, a BleepingComputer report on the same CISA Fortinet FortiSandbox known-exploited-vulnerabilities addition already recorded as L-0108, and a BleepingComputer report on the same 23andMe $18 million settlement already recorded as L-0092. OCC bulletin 2026-33 (an accounting-standard examiner handbook update) was excluded at the relevance gate, as were an FCA insurance-broker notice, an FCA/ASA/SRA/ICO misleading-advertising taskforce update, a bare EBA e-mail alert, an ECB speech listing with no excerpt, an OpenAI post on teen safety features, a GAO aviation-cybersecurity oversight report, Dark Reading and BleepingComputer opinion/analysis columns on agentic AI security, and DOJ’s LS Cable and System USA Inc. PPP-loan settlement release (a reappearance of the item already excluded at the relevance gate in the prior run — a government-program-integrity settlement with no financial-institution nexus stated in its excerpt). The CISA KEV catalog stayed at catalogVersion 2026.07.16 (1,647 entries, no new additions). Anthropic’s newest dated item remains Jul 14; FinCEN’s newest dated item remains Jun 30; ICO’s fetched page again returned no readable, dated news-list content; ENISA’s newest dated item remains Jul 14.",
+  "lastRun": "2026-07-17T06:22:10-04:00"
  },
  "lead": {
-  "head": "Leading stories: Coca-Cola’s disclosure that a ransomware attack on its Fairlife dairy subsidiary halted US production; the Office of the Comptroller of the Currency (OCC), Federal Reserve, and Federal Deposit Insurance Corporation (FDIC)’s joint statement on handling highly sensitive information during bank examinations, including a 72-hour breach-notification commitment; and CISA’s addition of a Microsoft SharePoint flaw and two Fortinet FortiSandbox flaws to its known-exploited vulnerabilities list",
-  "dek": "Today’s edition draws on the twenty-one items recorded so far. Every item links to its source.",
+  "head": "Leading stories: Windows Server 2022 reaching the end of mainstream support in October 2026; a CAPTCHA check that tricks Ukrainian users into pasting a PowerShell command into their computers; and a Buffalo, New York business owner charged with bank fraud for allegedly defrauding customers of more than a million dollars",
+  "dek": "Today’s edition draws on the three items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
-    "p": "tp",
-    "tri": "priority",
+    "p": "cyber",
+    "tri": "routine",
     "st": "confirmed",
-    "id": "L-0119",
+    "id": "L-0122",
     "conf": "",
-    "text": "The Coca-Cola Company disclosed that a ransomware attack on its Fairlife dairy subsidiary disrupted operations, temporarily suspending production of Fairlife products across the United States, BleepingComputer reports.",
-    "why": "A ransomware attack disrupted a company’s operations nationwide, temporarily halting production at its dairy subsidiary — a reminder that a single attack on a vendor or supplier can halt operations at national scale.",
-    "srcText": "BleepingComputer, Jul 16",
-    "srcUrl": "https://www.bleepingcomputer.com/news/security/coca-cola-says-fairlife-ransomware-attack-halts-us-dairy-production/"
+    "text": "Microsoft announced that Windows Server 2022 will reach the end of mainstream support in October 2026; it will move to extended support, with security updates continuing for five more years.",
+    "why": "Windows Server 2022 reaching the end of mainstream support in October 2026 gives banks running the platform a concrete timeline to plan a move to extended support or a newer release.",
+    "srcText": "BleepingComputer, Jul 17",
+    "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-server-2022-reach-end-of-mainstream-support-in-90-days/"
    },
    {
     "n": "2",
-    "p": "data",
-    "tri": "priority",
+    "p": "cyber",
+    "tri": "routine",
     "st": "confirmed",
-    "id": "L-0112",
+    "id": "L-0123",
     "conf": "",
-    "text": "The Office of the Comptroller of the Currency (OCC), the Federal Reserve Board, and the Federal Deposit Insurance Corporation (FDIC) issue a joint statement on identifying and handling highly sensitive information during bank examinations, including a commitment to notify affected banks of a potential or confirmed material data breach involving confidential supervisory information within no more than 72 hours.",
-    "why": "Three federal banking regulators are committing to notify examined banks within 72 hours of a potential or confirmed breach of confidential supervisory information, giving technology and compliance teams a concrete timeline to plan around.",
-    "srcText": "OCC + Federal Reserve, Jul 16",
-    "srcUrl": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-32.html"
+    "text": "Sandworm hackers are using a CAPTCHA check that, rather than verifying users are human, instructs Ukrainian users to copy and paste a PowerShell command into their Windows computers, The Record reports.",
+    "why": "A hacking group's CAPTCHA check that tricks users into pasting a command into their own computer is a reminder that attackers keep finding new ways to get around technical defenses by targeting the user directly.",
+    "srcText": "The Record, Jul 16",
+    "srcUrl": "https://therecord.media/ukraine-sandworm-hacks-captcha-powershell"
    },
    {
     "n": "3",
-    "p": "cyber",
-    "tri": "priority",
+    "p": "fraud",
+    "tri": "routine",
     "st": "confirmed",
-    "id": "L-0108",
+    "id": "L-0121",
     "conf": "",
-    "text": "CISA adds three exploited flaws to its known-exploited vulnerabilities list: a Microsoft SharePoint deserialization flaw allowing code execution over a network (CVE-2026-58644), and two Fortinet FortiSandbox command-injection flaws allowing an unauthenticated attacker to execute unauthorized commands (CVE-2026-25089, CVE-2026-39808).",
-    "why": "CISA has confirmed active exploitation of a Microsoft SharePoint flaw and two Fortinet FortiSandbox flaws, giving technology teams running either product a clear signal to patch before the July 19 deadline.",
-    "srcText": "CISA KEV catalog, Jul 16",
-    "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    "text": "A Buffalo, New York business owner, Jason Knobloch, is charged with bank fraud for allegedly defrauding customers out of more than a million dollars.",
+    "why": "A criminal bank-fraud charge over more than a million dollars in alleged customer losses is a reminder that fraud targeting bank customers remains an active threat for fraud-control teams to screen for.",
+    "srcText": "DOJ press release, Jul 16",
+    "srcUrl": "https://www.justice.gov/usao-wdny/pr/buffalo-business-owner-charged-bank-fraud-defrauding-customers-out-more-million"
    }
   ]
  },
  "wire": [
   {
-   "ts": "2026-07-16T21:52:54Z",
+   "ts": "2026-07-17T09:10:15Z",
    "p": "cyber",
    "tri": "routine",
    "st": "confirmed",
    "tier": "T2",
-   "id": "L-0118",
-   "title": "A new macOS information-stealing malware dubbed “ClickLock” terminates all visible processes to force users into entering their system login password, BleepingComputer reports.",
+   "id": "L-0122",
+   "title": "Microsoft announced that Windows Server 2022 will reach the end of mainstream support in October 2026; it will move to extended support, with security updates continuing for five more years.",
    "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/new-clicklock-macos-malware-traps-users-into-revealing-login-password/",
+   "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-server-2022-reach-end-of-mainstream-support-in-90-days/",
    "linked": true
   },
   {
-   "ts": "2026-07-16T21:09:41Z",
-   "p": "tp",
-   "tri": "priority",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0119",
-   "title": "The Coca-Cola Company disclosed that a ransomware attack on its Fairlife dairy subsidiary disrupted operations, temporarily suspending production of Fairlife products across the United States, BleepingComputer reports.",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/coca-cola-says-fairlife-ransomware-attack-halts-us-dairy-production/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-16T19:41:31Z",
+   "ts": "2026-07-16T13:50:00Z",
    "p": "cyber",
    "tri": "routine",
    "st": "confirmed",
    "tier": "T2",
-   "id": "L-0117",
-   "title": "More than 1 million phishing emails used hidden text, a technique called “text salting,” to evade artificial intelligence (AI)-based email security filters and reach inboxes, Dark Reading reports.",
-   "src": "Dark Reading",
-   "srcUrl": "https://www.darkreading.com/threat-intelligence/1m-emails-hidden-text-dupe-ai-security-filters",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-16T19:26:07Z",
-   "p": "cyber",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0113",
-   "title": "A flaw in Anthropic's Claude for Chrome browser extension could let a malicious browser extension trigger Claude's built-in actions by simulating user clicks, letting it abuse Claude's access to connected services such as Gmail, Google Docs, Google Calendar, and Salesforce.",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/claude-chrome-extension-flaw-lets-malicious-extensions-trigger-ai-actions/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-16T19:09:35Z",
-   "p": "cyber",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0114",
-   "title": "A new malicious framework called “OkoBot” delivers more than 20 payloads in attacks focused on stealing cryptocurrency wallet seed phrases, credentials, and other sensitive data.",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/new-okobot-framework-deploys-20-payloads-to-steal-data-crypto/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-16T18:00:00Z",
-   "p": "data",
-   "tri": "priority",
-   "st": "confirmed",
-   "tier": "T1",
-   "id": "L-0112",
-   "title": "The Office of the Comptroller of the Currency (OCC), the Federal Reserve Board, and the Federal Deposit Insurance Corporation (FDIC) issue a joint statement on identifying and handling highly sensitive information during bank examinations, including a commitment to notify affected banks of a potential or confirmed material data breach involving confidential supervisory information within no more than 72 hours.",
-   "src": "OCC + Federal Reserve",
-   "srcUrl": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-32.html",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-16T17:17:00Z",
-   "p": "cyber",
-   "tri": "priority",
-   "st": "confirmed",
-   "tier": "T1",
-   "id": "L-0108",
-   "title": "CISA adds three exploited flaws to its known-exploited vulnerabilities list: a Microsoft SharePoint deserialization flaw allowing code execution over a network (CVE-2026-58644), and two Fortinet FortiSandbox command-injection flaws allowing an unauthenticated attacker to execute unauthorized commands (CVE-2026-25089, CVE-2026-39808).",
-   "src": "CISA KEV catalog",
-   "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-16T15:00:00Z",
-   "p": "insider",
-   "tri": "priority",
-   "st": "confirmed",
-   "tier": "T1",
-   "id": "L-0106",
-   "title": "The Federal Reserve Board issues a prohibition order against James Burns, former chief lending officer of Heritage State Bank in Lawrenceville, Illinois, for appraisal-related lending misconduct.",
-   "src": "Federal Reserve press release",
-   "srcUrl": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260716a.htm",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-16T14:58:06Z",
-   "p": "cyber",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0107",
-   "title": "Iran-linked state and hacktivist groups are using artificial intelligence (AI) tools such as ChatGPT for malware development, phishing, and mapping out industrial sites, a report cited by Cybersecurity Dive found.",
-   "src": "Cybersecurity Dive",
-   "srcUrl": "https://www.cybersecuritydive.com/news/iran-nexus-actors-ai-cyber-ChatGPT-malware/825415/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-16T12:00:00Z",
-   "p": "cyber",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0104",
-   "title": "Two members of the Scattered Spider cybercrime collective were sentenced to 5.5 years in prison for the 2024 £29 million cyberattack on Transport for London (TfL).",
+   "id": "L-0123",
+   "title": "Sandworm hackers are using a CAPTCHA check that, rather than verifying users are human, instructs Ukrainian users to copy and paste a PowerShell command into their Windows computers, The Record reports.",
    "src": "The Record",
-   "srcUrl": "https://therecord.media/scattered-spider-hackers-tfl-sentenced",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-16T12:00:00Z",
-   "p": "insider",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T1",
-   "id": "L-0109",
-   "title": "A Lawrence man is sentenced to prison for embezzling hundreds of thousands of dollars from a Citizens Bank branch in Tewksbury, Massachusetts.",
-   "src": "DOJ press release",
-   "srcUrl": "https://www.justice.gov/usao-ma/pr/lawrence-man-sentenced-prison-bank-embezzlement",
+   "srcUrl": "https://therecord.media/ukraine-sandworm-hacks-captcha-powershell",
    "linked": true
   },
   {
@@ -192,118 +84,10 @@
    "tri": "routine",
    "st": "confirmed",
    "tier": "T1",
-   "id": "L-0110",
-   "title": "A federal grand jury indicts a Sioux Falls, South Dakota crypto investor on charges of wire fraud, money laundering, bank fraud, and aggravated identity theft.",
+   "id": "L-0121",
+   "title": "A Buffalo, New York business owner, Jason Knobloch, is charged with bank fraud for allegedly defrauding customers out of more than a million dollars.",
    "src": "DOJ press release",
-   "srcUrl": "https://www.justice.gov/usao-sd/pr/sioux-falls-crypto-investor-indicted-wire-fraud-money-laundering-bank-fraud-and",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-16T12:00:00Z",
-   "p": "insider",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T1",
-   "id": "L-0111",
-   "title": "A former senior adviser for the Federal Reserve Board of Governors, John Harold Rogers, is sentenced to 38 months in federal prison for making false statements to federal investigators about sharing restricted Federal Reserve information with Chinese intelligence operatives.",
-   "src": "DOJ press release",
-   "srcUrl": "https://www.justice.gov/opa/pr/former-adviser-federal-reserve-board-governors-sentenced-federal-prison-term",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-16T12:00:00Z",
-   "p": "fraud",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T1",
-   "id": "L-0115",
-   "title": "A federal indictment unsealed in Brooklyn charges Zhuoying Chen and Haojie Zhang with money laundering conspiracy for laundering funds derived from cyber investment fraud scams, known as “pig butchering” scams.",
-   "src": "DOJ press release",
-   "srcUrl": "https://www.justice.gov/usao-edny/pr/two-members-chinese-money-laundering-network-charged-laundering-investment-fraud",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-16T12:00:00Z",
-   "p": "fraud",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T1",
-   "id": "L-0116",
-   "title": "A member of the South Los Angeles-based Crips street gang is sentenced to 108 months in federal prison for a $2.8 million scheme in which he stole checks in the mail, altered them, then used Instagram to recruit bank account holders to give him access to their accounts to deposit the checks.",
-   "src": "DOJ press release",
-   "srcUrl": "https://www.justice.gov/usao-cdca/pr/member-south-la-based-crips-street-gang-sentenced-9-years-federal-prison-role-28",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-16T12:00:00Z",
-   "p": "fraud",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T1",
-   "id": "L-0120",
-   "title": "A former U.S. Postal Service employee admitted to stealing checks from the U.S. mail and selling them to others, one Philadelphia man admitted to advertising and reselling the stolen checks, and another Philadelphia man admitted to working with others to fraudulently negotiate one of the stolen checks, the Department of Justice reports.",
-   "src": "DOJ press release",
-   "srcUrl": "https://www.justice.gov/usao-nj/pr/former-postal-worker-and-two-philadelphia-men-admit-conspiring-commit-bank-fraud-mount",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-16T11:59:24Z",
-   "p": "cyber",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0105",
-   "title": "Microsoft announced that systems running Windows 10 Enterprise LTSB 2016 and Windows 11 24H2’s Home and Pro editions will stop receiving updates in three months, after which they will no longer receive the monthly security updates that protect against the latest threats.",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-11-24h2-home-and-pro-reach-end-of-support-in-90-days/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-16T10:56:03Z",
-   "p": "cyber",
-   "tri": "priority",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0102",
-   "title": "CISA (the Cybersecurity and Infrastructure Security Agency) orders federal agencies to secure their systems by Saturday against ongoing attacks exploiting a flaw in Oracle E-Business Suite, a financial application.",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-oracle-flaw-by-saturday/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-16T10:19:34Z",
-   "p": "cyber",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0103",
-   "title": "A financially motivated Russian criminal group tracked as UAT-11795 uses trojanized (malware-laced) copies of legitimate software — including MobaXterm, WebEx, Zoom, DBeaver, and FaceIT — to install a new backdoor called Starland RAT and steal credentials and cryptocurrency, Cisco Talos researchers report.",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/russian-hackers-trojanize-webex-zoom-apps-to-push-starland-malware/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-15T23:00:00Z",
-   "p": "tp",
-   "tri": "priority",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0101",
-   "title": "A cyberattack on Nichirei Logistics Group, Japan’s largest refrigerated logistics company, disrupted the country’s food supply chain, leaving Kentucky Fried Chicken restaurants short on ingredients and major restaurant chains struggling to keep up with deliveries; Nichirei, which serves about 5,000 customers across Japan, said it experienced a system outage on Monday.",
-   "src": "The Record",
-   "srcUrl": "https://therecord.media/cyberattack-japan-nichirei-logistics-impacts-kfc",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-15T12:00:00Z",
-   "p": "insider",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T1",
-   "id": "L-0100",
-   "title": "A former TD Bank employee is sentenced to 46 months in prison for facilitating a money-laundering network’s movement of millions of dollars through TD Bank accounts.",
-   "src": "DOJ press release",
-   "srcUrl": "https://www.justice.gov/opa/pr/two-td-bank-insiders-sentenced-prison-facilitating-money-laundering-fraud",
+   "srcUrl": "https://www.justice.gov/usao-wdny/pr/buffalo-business-owner-charged-bank-fraud-defrauding-customers-out-more-million",
    "linked": true
   }
  ],
@@ -551,9 +335,9 @@
    "scope": "cybersecurity · exploitation & exposure",
    "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
    "opened": "July 2026",
-   "ver": "v47",
-   "verRange": "v1–v47",
-   "asOf": "July 16, 2026",
+   "ver": "v49",
+   "verRange": "v1–v49",
+   "asOf": "July 17, 2026",
    "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
    "p1Sup": "1, 3, 10",
    "p2": "The UK’s National Cyber Security Centre (NCSC) and cybersecurity agencies from the United States and eight other countries warn that hackers linked to Russia’s Federal Security Service (FSB) are exploiting routers with default or weak passwords to infiltrate critical infrastructure, naming financial services among the sectors most at risk. Researchers report “JadePuffer,” described as a ransomware attack run end-to-end by an AI agent that broke in through the exploited Langflow flaw. Separately, Progress Software urged ShareFile customers running Storage Zone Controllers to shut down their servers immediately over a “credible external security threat.”",
@@ -562,6 +346,24 @@
    "assessSup": "1, 8",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 17, 26",
+     "st": "confirmed",
+     "ver": "v49",
+     "id": "L-0122",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-server-2022-reach-end-of-mainstream-support-in-90-days/",
+     "line": "Microsoft announced that Windows Server 2022 will reach the end of mainstream support in October 2026; it will move to extended support, with security updates continuing for five more years."
+    },
+    {
+     "date": "Jul 16, 26",
+     "st": "confirmed",
+     "ver": "v48",
+     "id": "L-0123",
+     "src": "The Record",
+     "srcUrl": "https://therecord.media/ukraine-sandworm-hacks-captcha-powershell",
+     "line": "Sandworm hackers are using a CAPTCHA check that, rather than verifying users are human, instructs Ukrainian users to copy and paste a PowerShell command into their Windows computers, The Record reports."
+    },
     {
      "date": "Jul 16, 26",
      "st": "confirmed",
@@ -1283,6 +1085,16 @@
      "n": "45",
      "text": "BleepingComputer — New ClickLock macOS malware traps users into revealing login password, Jul 16, 2026",
      "url": "https://www.bleepingcomputer.com/news/security/new-clicklock-macos-malware-traps-users-into-revealing-login-password/"
+    },
+    {
+     "n": "46",
+     "text": "BleepingComputer — Windows Server 2022 reaches end of mainstream support in 90 days, Jul 17, 2026",
+     "url": "https://www.bleepingcomputer.com/news/microsoft/windows-server-2022-reach-end-of-mainstream-support-in-90-days/"
+    },
+    {
+     "n": "47",
+     "text": "The Record — Sandworm hackers' fake-CAPTCHA PowerShell trick targeting Ukrainians, Jul 16, 2026",
+     "url": "https://therecord.media/ukraine-sandworm-hacks-captcha-powershell"
     }
    ],
    "related": [
@@ -1333,8 +1145,8 @@
    "scope": "fraud · AML rulemaking & scam patterns",
    "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
    "opened": "July 2026",
-   "ver": "v14",
-   "verRange": "v1–v14",
+   "ver": "v15",
+   "verRange": "v1–v15",
    "asOf": "July 16, 2026",
    "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22).",
    "p1Sup": "1, 3",
@@ -1344,6 +1156,15 @@
    "assessSup": "2, 3",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 16, 26",
+     "st": "confirmed",
+     "ver": "v15",
+     "id": "L-0121",
+     "src": "DOJ press release",
+     "srcUrl": "https://www.justice.gov/usao-wdny/pr/buffalo-business-owner-charged-bank-fraud-defrauding-customers-out-more-million",
+     "line": "A Buffalo, New York business owner, Jason Knobloch, is charged with bank fraud for allegedly defrauding customers out of more than a million dollars."
+    },
     {
      "date": "Jul 16, 26",
      "st": "confirmed",
@@ -1619,6 +1440,11 @@
      "n": "17",
      "text": "DOJ — Former postal worker and two Philadelphia men admit conspiring to commit bank fraud, Jul 16, 2026",
      "url": "https://www.justice.gov/usao-nj/pr/former-postal-worker-and-two-philadelphia-men-admit-conspiring-commit-bank-fraud-mount"
+    },
+    {
+     "n": "18",
+     "text": "DOJ — Buffalo, NY business owner charged with bank fraud over $1M+ in alleged customer losses, Jul 16, 2026",
+     "url": "https://www.justice.gov/usao-wdny/pr/buffalo-business-owner-charged-bank-fraud-defrauding-customers-out-more-million"
     }
    ],
    "related": [
@@ -3335,6 +3161,30 @@
    "line": "A former U.S. Postal Service employee admitted to stealing checks from the U.S. mail and selling them to others, one Philadelphia man admitted to advertising and reselling the stolen checks, and another Philadelphia man admitted to working with others to fraudulently negotiate one of the stolen checks, the Department of Justice reports.",
    "src": "DOJ press release",
    "srcUrl": "https://www.justice.gov/usao-nj/pr/former-postal-worker-and-two-philadelphia-men-admit-conspiring-commit-bank-fraud-mount"
+  },
+  {
+   "d": "2026-07-16",
+   "p": "fraud",
+   "id": "L-0121",
+   "line": "A Buffalo, New York business owner, Jason Knobloch, is charged with bank fraud for allegedly defrauding customers out of more than a million dollars.",
+   "src": "DOJ press release",
+   "srcUrl": "https://www.justice.gov/usao-wdny/pr/buffalo-business-owner-charged-bank-fraud-defrauding-customers-out-more-million"
+  },
+  {
+   "d": "2026-07-17",
+   "p": "cyber",
+   "id": "L-0122",
+   "line": "Microsoft announced that Windows Server 2022 will reach the end of mainstream support in October 2026; it will move to extended support, with security updates continuing for five more years.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-server-2022-reach-end-of-mainstream-support-in-90-days/"
+  },
+  {
+   "d": "2026-07-16",
+   "p": "cyber",
+   "id": "L-0123",
+   "line": "Sandworm hackers are using a CAPTCHA check that, rather than verifying users are human, instructs Ukrainian users to copy and paste a PowerShell command into their Windows computers, The Record reports.",
+   "src": "The Record",
+   "srcUrl": "https://therecord.media/ukraine-sandworm-hacks-captcha-powershell"
   }
  ],
  "takeaways": [
@@ -3608,6 +3458,14 @@
  "publications": {
   "dailies": [
    {
+    "no": "7",
+    "date": "Fri, Jul 17, 2026",
+    "confirmed": "3",
+    "pending": "0",
+    "flash": "—",
+    "linked": true
+   },
+   {
     "no": "6",
     "date": "Thu, Jul 16, 2026",
     "confirmed": "21",
@@ -3656,10 +3514,16 @@
     "linked": true
    }
   ],
-  "weeklies": [],
+  "weeklies": [
+   {
+    "no": "1",
+    "range": "Jul 13–17, 2026",
+    "meta": "68 confirmed changes"
+   }
+  ],
   "monthlies": [],
-  "dTotal": 6,
-  "wkTotal": 0,
+  "dTotal": 7,
+  "wkTotal": 1,
   "mTotal": 0
  }
 }
