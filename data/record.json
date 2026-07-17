@@ -2,21 +2,33 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-17T14:10:00-04:00",
+  "generatedAt": "2026-07-17T17:10:00-04:00",
   "issueNo": 7,
-  "recordHash": "0be3cb4",
+  "recordHash": "96042dd",
   "windowLabel": "June 9 – July 17, 2026",
   "nextWeekly": "Fri, Jul 24",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). One new item appends to today’s edition: BleepingComputer reports a newly disclosed flaw dubbed “HollowByte” lets unauthenticated attackers bloat an OpenSSL server’s memory and trigger a denial-of-service condition with an 11-byte payload. BleepingComputer’s “Ernst & Young discloses data breach” was not re-admitted: identical URL to the item already recorded as L-0125. Cybersecurity Dive’s “Ransomware attack forces Coca-Cola to suspend US production at dairy unit” was not re-admitted: reports the same incident already recorded as L-0119. Cybersecurity Dive’s “Abbott discloses cyberattack on cancer diagnostics business” was excluded at the relevance gate again, reappearing in this run’s window: no financial-sector nexus stated. The European Banking Authority’s “EBA E-mail alert 17 July, 2026” was excluded again as an unreadable newsletter-wrapper stub. Dark Reading’s “The Real AI Threat Is Blind Trust” was excluded at the relevance gate: the RSS description (“AI models left to both interpret and execute commands eliminate critical cybersecurity oversight”) reads as opinion/analysis commentary rather than a discrete, checkable event, and the full article was Cloudflare-blocked to both the descriptive and browser User-Agent, matching the disposition applied to prior opinion-column exclusions. DOJ’s “Miami CPA Charged with Preparing False Tax Return” was excluded at the relevance gate: the excerpt describes a false tax return prepared for a shipping company’s CFO, with no bank, financial institution, or technology mechanism stated. DOJ’s remaining current entries matched the same set already reviewed and dispositioned in the 12:05 ET run (including the already-recorded Duncan credit-repair conviction, L-0127, and the already-excluded Jacksonville bank-robbery, West Bloomfield empty-description, Mexican National identity-theft, and Santa Fe embezzlement items). NOAA’s Atlantic outlook carried no new information beyond the standing empty-state entry. The CISA KEV catalog stayed at catalogVersion 2026.07.16 (1,647 entries, no new additions). Anthropic’s newest dated item remains Jul 14; FinCEN’s newest dated item remains Jun 30; ICO’s fetched page again returned no readable, dated news-list content; ENISA’s newest dated item remains Jul 14.",
-  "lastRun": "2026-07-17T14:10:00-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). One new item appends to today’s edition: Dark Reading reports that the ransomware group “Inc” is exploiting two zero-day flaws in SonicWall’s SMA mobile access appliances that, chained together, give criminals root-level control of the devices; the article did not name the CVE identifiers, so it was not merged with the already-recorded SonicWall SMA1000 item (L-0079, CVE-2026-15409/CVE-2026-15410) — neither excerpt names the other’s CVEs, so treating them as the same event would be an inference beyond what either excerpt states. BleepingComputer’s “Abbott Laboratories probes two cyber incidents amid extortion claims” was excluded at the relevance gate: the excerpt states unauthorized access to internal Cancer Diagnostics systems and a separate LabCentral portal claim, with no financial-sector nexus stated, the same disposition already reached for Cybersecurity Dive’s Abbott coverage in the 12:05 and 14:10 ET runs. Dark Reading’s “The Real AI Threat Is Blind Trust” was excluded again, reappearing in this run’s window: still reads as opinion/analysis commentary rather than a discrete, checkable event, and the full article remained Cloudflare-blocked to both the descriptive and browser User-Agent. BleepingComputer’s “Ernst & Young discloses data breach” and “Inside the Search for ‘Clean’ Residential Proxies for Carding” were not re-admitted: identical URLs to the already-recorded L-0125 and L-0126. Cybersecurity Dive’s “Ransomware attack forces Coca-Cola to suspend US production at dairy unit” and The Record’s “Dairy company Fairlife suspends production in US after cyber incident” were not re-admitted: both report the same incident already recorded as L-0119. DOJ’s current 25 entries were reviewed directly (its feed carries an unreliable placeholder noon-UTC pubDate): all 25 concerned drug trafficking, immigration, violent crime, firearms, or sexual-abuse offenses with no bank, financial institution, fraud scheme, or technology mechanism stated in any excerpt — an entirely different set of headlines from the DOJ items reviewed in the 12:05 and 14:10 ET runs, all excluded at the relevance gate. The European Banking Authority’s “EBA E-mail alert 17 July, 2026” was excluded again as an unreadable newsletter-wrapper stub. NOAA’s Atlantic outlook carried no new information beyond the standing empty-state entry. The CISA KEV catalog stayed at catalogVersion 2026.07.16 (1,647 entries, no new additions). Anthropic’s newest dated item remains Jul 14; FinCEN’s newest dated item remains Jun 30; ICO’s fetched page again returned no readable, dated news-list content; ENISA’s newest dated item remains Jul 14.",
+  "lastRun": "2026-07-17T17:10:00-04:00"
  },
  "lead": {
-  "head": "Leading stories: Ernst & Young disclosing a data breach that may have exposed client tax documents after its support-ticket system was compromised; a newly disclosed “HollowByte” flaw that can bloat an OpenSSL server’s memory and knock it offline with an 11-byte payload; and new research on how carders combine “residential” proxies with identity data to evade fraud detection",
-  "dek": "Today’s edition draws on the eight items recorded so far. Every item links to its source.",
+  "head": "Leading stories: the ransomware group “Inc” exploiting two zero-day flaws in SonicWall’s SMA mobile access appliances to gain root-level control of the devices; Ernst & Young disclosing a data breach that may have exposed client tax documents after its support-ticket system was compromised; and a newly disclosed “HollowByte” flaw that can bloat an OpenSSL server’s memory and knock it offline with an 11-byte payload",
+  "dek": "Today’s edition draws on the nine items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
+    "p": "cyber",
+    "tri": "flash",
+    "st": "confirmed",
+    "id": "L-0129",
+    "conf": "",
+    "text": "Dark Reading reports that the ransomware group “Inc” is exploiting two zero-day flaws in SonicWall’s SMA mobile access appliances that, when chained together, give criminals root-level control of the devices.",
+    "why": "Dark Reading reports that the ransomware group “Inc” is chaining two zero-day flaws in SonicWall’s SMA mobile access appliances to gain root-level control of the devices — a reminder that even specialized vendor appliances can be fully compromised when multiple flaws are chained together.",
+    "srcText": "Dark Reading, Jul 17",
+    "srcUrl": "https://www.darkreading.com/vulnerabilities-threats/inc-ransomware-exploits-sonicwall-sma-zero-days"
+   },
+   {
+    "n": "2",
     "p": "tp",
     "tri": "priority",
     "st": "confirmed",
@@ -28,7 +40,7 @@
     "srcUrl": "https://www.bleepingcomputer.com/news/security/ernst-and-young-discloses-data-breach-after-support-system-hack/"
    },
    {
-    "n": "2",
+    "n": "3",
     "p": "cyber",
     "tri": "routine",
     "st": "confirmed",
@@ -38,22 +50,22 @@
     "why": "A newly disclosed flaw called “HollowByte” lets an unauthenticated attacker bloat an OpenSSL server’s memory and knock it offline using a malicious data packet of just 11 bytes — a reminder that internet-facing systems can be disrupted by even a very small malicious input.",
     "srcText": "BleepingComputer, Jul 17",
     "srcUrl": "https://www.bleepingcomputer.com/news/security/hollowbyte-ddos-flaw-bloats-openssl-server-memory-with-11-byte-payload/"
-   },
-   {
-    "n": "3",
-    "p": "fraud",
-    "tri": "routine",
-    "st": "confirmed",
-    "id": "L-0126",
-    "conf": "",
-    "text": "Flare’s security researchers report that carders increasingly combine “residential” internet proxies with browser fingerprints and other identity data to evade modern fraud-detection systems, and caution that residential internet traffic alone should not be treated as evidence a customer is legitimate, BleepingComputer reports.",
-    "why": "Criminals increasingly pair “residential” internet proxies with browser and device data to slip past fraud-detection systems, so fraud teams should treat residential-looking traffic as one signal among many, not proof on its own that a customer is legitimate.",
-    "srcText": "BleepingComputer, Jul 17",
-    "srcUrl": "https://www.bleepingcomputer.com/news/security/inside-the-search-for-clean-residential-proxies-for-carding/"
    }
   ]
  },
  "wire": [
+  {
+   "ts": "2026-07-17T20:01:13Z",
+   "p": "cyber",
+   "tri": "flash",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0129",
+   "title": "Dark Reading reports that the ransomware group “Inc” is exploiting two zero-day flaws in SonicWall’s SMA mobile access appliances that, when chained together, give criminals root-level control of the devices.",
+   "src": "Dark Reading",
+   "srcUrl": "https://www.darkreading.com/vulnerabilities-threats/inc-ransomware-exploits-sonicwall-sma-zero-days",
+   "linked": true
+  },
   {
    "ts": "2026-07-17T17:56:21Z",
    "p": "cyber",
@@ -395,8 +407,8 @@
    "scope": "cybersecurity · exploitation & exposure",
    "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
    "opened": "July 2026",
-   "ver": "v51",
-   "verRange": "v1–v51",
+   "ver": "v52",
+   "verRange": "v1–v52",
    "asOf": "July 17, 2026",
    "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
    "p1Sup": "1, 3, 10",
@@ -936,6 +948,15 @@
      "src": "Tech Risk Tracker record",
      "srcUrl": "EDITORIAL.md",
      "line": "Watch opened; baseline compiled from allowlisted feeds, June 9 – July 9, 2026."
+    },
+    {
+     "date": "Jul 17, 26",
+     "st": "confirmed",
+     "ver": "v52",
+     "id": "L-0129",
+     "src": "Dark Reading",
+     "srcUrl": "https://www.darkreading.com/vulnerabilities-threats/inc-ransomware-exploits-sonicwall-sma-zero-days",
+     "line": "Dark Reading reports that the ransomware group “Inc” is exploiting two zero-day flaws in SonicWall’s SMA mobile access appliances that, when chained together, give criminals root-level control of the devices."
     }
    ],
    "sources": [
@@ -1178,6 +1199,11 @@
      "n": "48",
      "text": "BleepingComputer — “HollowByte” OpenSSL denial-of-service flaw, Jul 17, 2026",
      "url": "https://www.bleepingcomputer.com/news/security/hollowbyte-ddos-flaw-bloats-openssl-server-memory-with-11-byte-payload/"
+    },
+    {
+     "n": "49",
+     "text": "Dark Reading — “Inc” ransomware exploiting SonicWall SMA zero-days, Jul 17, 2026",
+     "url": "https://www.darkreading.com/vulnerabilities-threats/inc-ransomware-exploits-sonicwall-sma-zero-days"
     }
    ],
    "related": [
@@ -3350,6 +3376,14 @@
    "line": "BleepingComputer reports that a vulnerability dubbed “HollowByte” lets unauthenticated attackers bloat an OpenSSL server’s memory and trigger a denial-of-service (DoS) condition using a malicious payload of just 11 bytes.",
    "src": "BleepingComputer",
    "srcUrl": "https://www.bleepingcomputer.com/news/security/hollowbyte-ddos-flaw-bloats-openssl-server-memory-with-11-byte-payload/"
+  },
+  {
+   "d": "2026-07-17",
+   "p": "cyber",
+   "id": "L-0129",
+   "line": "Dark Reading reports that the ransomware group “Inc” is exploiting two zero-day flaws in SonicWall’s SMA mobile access appliances that, when chained together, give criminals root-level control of the devices.",
+   "src": "Dark Reading",
+   "srcUrl": "https://www.darkreading.com/vulnerabilities-threats/inc-ransomware-exploits-sonicwall-sma-zero-days"
   }
  ],
  "takeaways": [
@@ -3643,9 +3677,9 @@
    {
     "no": "7",
     "date": "Fri, Jul 17, 2026",
-    "confirmed": "8",
+    "confirmed": "9",
     "pending": "0",
-    "flash": "—",
+    "flash": "1",
     "linked": true
    },
    {
