@@ -2,21 +2,33 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-17T06:22:10-04:00",
+  "generatedAt": "2026-07-17T08:13:00-04:00",
   "issueNo": 7,
-  "recordHash": "9af4d09",
+  "recordHash": "c00bc79",
   "windowLabel": "June 9 – July 17, 2026",
   "nextWeekly": "Fri, Jul 24",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). This is the 6 AM day-opening run for Friday, July 17 — issue No. 7 opens with three new items: BleepingComputer reports that Windows Server 2022 will reach the end of mainstream support in October 2026, The Record reports a Sandworm fake-CAPTCHA/PowerShell trick targeting Ukrainian users, and a DOJ press release reports bank-fraud charges against a Buffalo, New York business owner. Per the Friday day-opening rule, the first weekly digest (No. 1, Jul 13–17) is also published this run, aggregating 68 items recorded across the week. Several candidates reappeared from already-recorded events and were not re-admitted: OCC bulletin 2026-32 and the Federal Reserve’s matching press release (the three-agency joint statement on handling highly sensitive examination information, already recorded as L-0112), the Federal Reserve’s enforcement-action release naming James Burns of Heritage State Bank (already recorded as L-0106), a BleepingComputer report on the same Chen/Zhang Chinese money-laundering network already recorded as L-0115, a BleepingComputer report on the same Scattered Spider/Transport for London sentencing already recorded as L-0104, a BleepingComputer report on the same CISA Fortinet FortiSandbox known-exploited-vulnerabilities addition already recorded as L-0108, and a BleepingComputer report on the same 23andMe $18 million settlement already recorded as L-0092. OCC bulletin 2026-33 (an accounting-standard examiner handbook update) was excluded at the relevance gate, as were an FCA insurance-broker notice, an FCA/ASA/SRA/ICO misleading-advertising taskforce update, a bare EBA e-mail alert, an ECB speech listing with no excerpt, an OpenAI post on teen safety features, a GAO aviation-cybersecurity oversight report, Dark Reading and BleepingComputer opinion/analysis columns on agentic AI security, and DOJ’s LS Cable and System USA Inc. PPP-loan settlement release (a reappearance of the item already excluded at the relevance gate in the prior run — a government-program-integrity settlement with no financial-institution nexus stated in its excerpt). The CISA KEV catalog stayed at catalogVersion 2026.07.16 (1,647 entries, no new additions). Anthropic’s newest dated item remains Jul 14; FinCEN’s newest dated item remains Jun 30; ICO’s fetched page again returned no readable, dated news-list content; ENISA’s newest dated item remains Jul 14.",
-  "lastRun": "2026-07-17T06:22:10-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). One new item appends to today’s edition: BleepingComputer reports that a security researcher using the “Nightmare Eclipse” handle publicly released a Windows zero-day exploit called LegacyHive that lets attackers escalate to administrator-level privileges on up-to-date Windows systems. BleepingComputer’s Windows Server 2022 end-of-mainstream-support report reappeared with an identical URL to the item already recorded as L-0122 and was not re-admitted. The European Central Bank’s Cipollone digital-euro speech listing carried no excerpt and was excluded on the same grounds as prior speech-listing exclusions; the Financial Conduct Authority’s Anthony Jones (UK) Limited insurance-broker customer notice was excluded at the relevance gate, matching the disposition of the equivalent insurance-broker notice excluded in the prior run. The CISA KEV catalog stayed at catalogVersion 2026.07.16 (1,647 entries, no new additions). Anthropic’s newest dated item remains Jul 14; FinCEN’s newest dated item remains Jun 30; ICO’s fetched page again returned no readable, dated news-list content; ENISA’s newest dated item remains Jul 14.",
+  "lastRun": "2026-07-17T08:13:00-04:00"
  },
  "lead": {
-  "head": "Leading stories: Windows Server 2022 reaching the end of mainstream support in October 2026; a CAPTCHA check that tricks Ukrainian users into pasting a PowerShell command into their computers; and a Buffalo, New York business owner charged with bank fraud for allegedly defrauding customers of more than a million dollars",
-  "dek": "Today’s edition draws on the three items recorded so far. Every item links to its source.",
+  "head": "Leading stories: a newly released Windows zero-day exploit called LegacyHive that lets attackers gain administrator privileges; Windows Server 2022 reaching the end of mainstream support in October 2026; and a CAPTCHA check that tricks Ukrainian users into pasting a PowerShell command into their computers",
+  "dek": "Today’s edition draws on the four items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
+    "p": "cyber",
+    "tri": "routine",
+    "st": "confirmed",
+    "id": "L-0124",
+    "conf": "",
+    "text": "A security researcher using the handle “Nightmare Eclipse” has publicly released a Windows zero-day exploit called LegacyHive that lets attackers gain administrator-level privileges on fully updated Windows systems, BleepingComputer reports.",
+    "why": "A publicly released privilege-escalation exploit for Windows gives attackers a ready-made way to gain administrator access on systems that are otherwise fully updated, a new flaw for technology teams to watch for.",
+    "srcText": "BleepingComputer, Jul 17",
+    "srcUrl": "https://www.bleepingcomputer.com/news/security/new-windows-legacyhive-zero-day-exploit-grants-hackers-admin-access/"
+   },
+   {
+    "n": "2",
     "p": "cyber",
     "tri": "routine",
     "st": "confirmed",
@@ -28,7 +40,7 @@
     "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-server-2022-reach-end-of-mainstream-support-in-90-days/"
    },
    {
-    "n": "2",
+    "n": "3",
     "p": "cyber",
     "tri": "routine",
     "st": "confirmed",
@@ -38,22 +50,22 @@
     "why": "A hacking group's CAPTCHA check that tricks users into pasting a command into their own computer is a reminder that attackers keep finding new ways to get around technical defenses by targeting the user directly.",
     "srcText": "The Record, Jul 16",
     "srcUrl": "https://therecord.media/ukraine-sandworm-hacks-captcha-powershell"
-   },
-   {
-    "n": "3",
-    "p": "fraud",
-    "tri": "routine",
-    "st": "confirmed",
-    "id": "L-0121",
-    "conf": "",
-    "text": "A Buffalo, New York business owner, Jason Knobloch, is charged with bank fraud for allegedly defrauding customers out of more than a million dollars.",
-    "why": "A criminal bank-fraud charge over more than a million dollars in alleged customer losses is a reminder that fraud targeting bank customers remains an active threat for fraud-control teams to screen for.",
-    "srcText": "DOJ press release, Jul 16",
-    "srcUrl": "https://www.justice.gov/usao-wdny/pr/buffalo-business-owner-charged-bank-fraud-defrauding-customers-out-more-million"
    }
   ]
  },
  "wire": [
+  {
+   "ts": "2026-07-17T11:05:30Z",
+   "p": "cyber",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0124",
+   "title": "A security researcher using the handle “Nightmare Eclipse” has publicly released a Windows zero-day exploit called LegacyHive that lets attackers gain administrator-level privileges on fully updated Windows systems, BleepingComputer reports.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/new-windows-legacyhive-zero-day-exploit-grants-hackers-admin-access/",
+   "linked": true
+  },
   {
    "ts": "2026-07-17T09:10:15Z",
    "p": "cyber",
@@ -335,8 +347,8 @@
    "scope": "cybersecurity · exploitation & exposure",
    "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
    "opened": "July 2026",
-   "ver": "v49",
-   "verRange": "v1–v49",
+   "ver": "v50",
+   "verRange": "v1–v50",
    "asOf": "July 17, 2026",
    "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
    "p1Sup": "1, 3, 10",
@@ -346,6 +358,15 @@
    "assessSup": "1, 8",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 17, 26",
+     "st": "confirmed",
+     "ver": "v50",
+     "id": "L-0124",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/new-windows-legacyhive-zero-day-exploit-grants-hackers-admin-access/",
+     "line": "A security researcher using the handle “Nightmare Eclipse” has publicly released a Windows zero-day exploit called LegacyHive that lets attackers gain administrator-level privileges on fully updated Windows systems, BleepingComputer reports."
+    },
     {
      "date": "Jul 17, 26",
      "st": "confirmed",
@@ -3185,6 +3206,14 @@
    "line": "Sandworm hackers are using a CAPTCHA check that, rather than verifying users are human, instructs Ukrainian users to copy and paste a PowerShell command into their Windows computers, The Record reports.",
    "src": "The Record",
    "srcUrl": "https://therecord.media/ukraine-sandworm-hacks-captcha-powershell"
+  },
+  {
+   "d": "2026-07-17",
+   "p": "cyber",
+   "id": "L-0124",
+   "line": "A security researcher using the handle “Nightmare Eclipse” has publicly released a Windows zero-day exploit called LegacyHive that lets attackers gain administrator-level privileges on fully updated Windows systems, BleepingComputer reports.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/new-windows-legacyhive-zero-day-exploit-grants-hackers-admin-access/"
   }
  ],
  "takeaways": [
@@ -3460,7 +3489,7 @@
    {
     "no": "7",
     "date": "Fri, Jul 17, 2026",
-    "confirmed": "3",
+    "confirmed": "4",
     "pending": "0",
     "flash": "—",
     "linked": true
