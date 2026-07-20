@@ -2,18 +2,18 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-20T08:13:00-04:00",
+  "generatedAt": "2026-07-20T11:12:00-04:00",
   "issueNo": 8,
-  "recordHash": "7287c87",
+  "recordHash": "5fb1e05",
   "windowLabel": "June 9 – July 20, 2026",
   "nextWeekly": "Fri, Jul 24",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed; ENISA’s page returned a transient 503 on the first attempt and 200 on immediate retry, also counted OK, not a failure). Selection window: 2 hours before this run’s prior `generatedAt` (07:15:00 ET), so candidates are items published since ~05:15 ET / 09:15 UTC. One new item was admitted: BleepingComputer reports Hugging Face, an open-source AI and machine learning platform used by more than 50,000 organizations, disclosed that attackers gained access to internal datasets and credentials after breaching its production infrastructure using an autonomous AI agent system (third-party risk pillar, priority triage on the major-vendor-incident bar). NOAA NHC’s Tropical Depression Two “Public Advisory Number 4a” and its companion Summary, Graphics, and Atlantic Tropical Weather Outlook products reappeared in this run’s window; the advisory itself stated “CHANGES WITH THIS ADVISORY: None” against the already-recorded Advisory Number 4 (L-0132), so none were separately admitted. BleepingComputer’s “Microsoft confirms Windows Server Update Services sync delays” and “Critical ServiceNow code execution flaw now exploited in attacks” reappeared, identical URLs to the already-recorded L-0138 and L-0134; “Windows KB5121767 OOB update fixes shutdowns on some Dell PCs” reappeared, identical URL to the item already excluded at the relevance gate in the prior intraday run. DOJ’s 25 current entries were reviewed directly (unreliable placeholder noon-UTC pubDate); 2 were identical to already-recorded L-0130/L-0131, and the remaining 23 fell in categories already excluded at the relevance gate in prior runs (tax evasion, drug trafficking, firearms, immigration, sexual-abuse/kidnapping, burglary, SNAP-benefits fraud, health-care-fraud civil complaints, stolen-vehicle transport), none stating a bank, financial institution, or technology-risk mechanism — including a repeat appearance of “Omaha Woman Sentenced to 18 Months for Wire Fraud,” excluded on the same basis as the day-opening run (a bare wire-fraud count naming no institution, victim, or mechanism). The CISA Known Exploited Vulnerabilities (KEV) catalog stayed at catalogVersion 2026.07.16 (1,647 entries, no new additions). NIST’s feed again returned an empty channel (known behavior, not a failure). Anthropic’s newest dated item remains Jul 14; FinCEN’s newest dated item remains Jun 30; ICO’s fetched page again returned no readable, dated news-list content; ENISA’s fetched page again returned no readable, dated news-list content.",
-  "lastRun": "2026-07-20T08:13:00-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior `generatedAt` (08:13:00 ET), so candidates are items published since ~06:13 ET / 10:13 UTC. Two new items were admitted: FBI IC3’s PSA260720 (“FBI Warns of Scammers Impersonating the IC3”), an update to a prior advisory describing an ongoing fraud scheme in which criminal scammers impersonate FBI personnel and use AI-generated videos plus spoofed websites to deceive and revictimize scam victims (fraud pillar, routine — a recurring consumer-warning PSA, not a regulatory action or confirmed vendor incident); and NOAA NHC’s Tropical Depression Two Public Advisory Number 5, whose “CHANGES WITH THIS ADVISORY” section states a new Storm Surge Watch (Alabama/Florida border to the mouth of the Mississippi River) and an expanded Tropical Storm Watch reaching into Mississippi and Louisiana — a material update to the already-recorded Alabama-only watch (L-0132), so admitted as its own item rather than a reappearance (resilience pillar, routine — a watch, not a landfall or confirmed infrastructure impact). NOAA’s six companion products for the same Advisory Number 5 cycle (a “Summary” item sharing the Public Advisory’s own URL, plus a Forecast Advisory, Forecast Discussion, Wind Speed Probabilities, Graphics, and Storm Surge Watch/Warning Map product) were not separately admitted, matching the disposition applied to every prior advisory cycle for this storm; the standing Atlantic Tropical Weather Outlook page (fetched directly; graphical content only, no new textual disturbance beyond Tropical Depression Two) again carried nothing new at its already-recorded URL. BleepingComputer’s “Hugging Face warns an autonomous AI agent hacked its network” and “Microsoft confirms Windows Server Update Services sync delays” reappeared in this run’s window, identical URLs to the already-recorded L-0139 and L-0138. BleepingComputer’s “An AI SOC Evaluation Guide for Security Leaders” was excluded at the relevance gate as a vendor-authored (Prophet Security) practical-framework guide, not a discrete checkable event, matching the disposition applied to prior sponsored/guide-type content. Dark Reading’s “Cybersecurity Keeps Events ‘Uneventful’” was excluded as an analysis/retrospective feature on major public-event security postures, not a discrete checkable event, matching the disposition applied to prior opinion/feature exclusions; this is the first time Dark Reading’s feed has returned content since its Jul 17 404. The Record’s “Romania races to restore land registry after cyberattack disrupts property market” was excluded — a government land-registry incident with no bank, financial institution, or technology-risk mechanism stated. The Record’s “Software provider to more than 2,000 US hospitals says hackers stole employee and customer data” and Cybersecurity Dive’s “Hackers steal customer data from major hospital software vendor” both report the same Craneware breach — a healthcare software vendor breach with no financial-sector nexus stated, the same disposition already reached for Abbott’s coverage in prior runs. The CISA Known Exploited Vulnerabilities (KEV) catalog stayed at catalogVersion 2026.07.16 (1,647 entries, no new additions). NIST’s feed again returned an empty channel (known behavior, not a failure). Anthropic’s newest dated item remains Jul 14; FinCEN’s newest dated item remains Jun 30; ENISA’s newest dated item remains Jul 14; ICO’s page returned HTTP 403 to the automated fetch tool; a direct curl retry with a standard browser User-Agent returned HTTP 200, but the body was the same JavaScript-rendered shell with “Loading...” placeholders seen in every prior run, so the disposition is unchanged and this was not counted as a feed failure.",
+  "lastRun": "2026-07-20T11:12:00-04:00"
  },
  "lead": {
   "head": "Leading stories: attackers exploiting a critical flaw in the ServiceNow AI Platform; the Bank of England fining HDI Global SE £4,165,000 for inaccurate regulatory data; and Hugging Face disclosing a breach of its internal datasets and credentials carried out using an autonomous AI agent system",
-  "dek": "Today’s edition draws on the ten items recorded so far. Every item links to its source.",
+  "dek": "Today’s edition draws on the twelve items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
@@ -54,6 +54,30 @@
   ]
  },
  "wire": [
+  {
+   "ts": "2026-07-20T14:48:14Z",
+   "p": "resilience",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T1",
+   "id": "L-0141",
+   "title": "The National Hurricane Center expands its watches for Tropical Depression Two, issuing a Storm Surge Watch for the Alabama/Florida-to-Mississippi Gulf coast and a Tropical Storm Watch reaching into Mississippi and Louisiana.",
+   "src": "NOAA NHC advisory",
+   "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/201448.shtml",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-20T14:00:00Z",
+   "p": "fraud",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T1",
+   "id": "L-0140",
+   "title": "Criminal scammers are impersonating FBI personnel who handle Internet Crime Complaint Center (IC3) complaints, using AI-generated videos and spoofed websites that gather personal information, to deceive and revictimize scam victims, the FBI's IC3 reports.",
+   "src": "FBI IC3 PSA",
+   "srcUrl": "https://www.ic3.gov/PSA/2026/PSA260720",
+   "linked": true
+  },
   {
    "ts": "2026-07-20T12:00:00Z",
    "p": "insider",
@@ -1336,8 +1360,8 @@
    "scope": "fraud · AML rulemaking & scam patterns",
    "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
    "opened": "July 2026",
-   "ver": "v18",
-   "verRange": "v1–v18",
+   "ver": "v19",
+   "verRange": "v1–v19",
    "asOf": "July 20, 2026",
    "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22).",
    "p1Sup": "1, 3",
@@ -1347,6 +1371,15 @@
    "assessSup": "2, 3",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 20, 26",
+     "st": "confirmed",
+     "ver": "v19",
+     "id": "L-0140",
+     "src": "FBI IC3 PSA",
+     "srcUrl": "https://www.ic3.gov/PSA/2026/PSA260720",
+     "line": "Criminal scammers are impersonating FBI personnel who handle Internet Crime Complaint Center (IC3) complaints, using AI-generated videos and spoofed websites that gather personal information, to deceive and revictimize scam victims, the FBI's IC3 reports."
+    },
     {
      "date": "Jul 20, 26",
      "st": "confirmed",
@@ -1678,6 +1711,11 @@
      "n": "21",
      "text": "DOJ — Honduras national sentenced, fake-ID check-cashing bank-fraud conspiracy (Banegas-Contreras), Jul 20, 2026",
      "url": "https://www.justice.gov/usao-edok/pr/illegal-alien-honduras-sentenced-27-months-prison-2023-bank-fraud-conspiracy"
+    },
+    {
+     "n": "22",
+     "text": "FBI IC3 — scammers impersonating IC3 PSA (AI-generated video/spoofed-site scheme), Jul 20, 2026",
+     "url": "https://www.ic3.gov/PSA/2026/PSA260720"
     }
    ],
    "related": [
@@ -1938,17 +1976,26 @@
    "scope": "resilience · sector capacity & season risk",
    "watch": "Stress-test results, payments-system findings, severe-weather outlooks, and infrastructure-software advisories relevant to operations.",
    "opened": "July 2026",
-   "ver": "v3",
-   "verRange": "v1–v3",
+   "ver": "v4",
+   "verRange": "v1–v4",
    "asOf": "July 20, 2026",
    "p1": "The Federal Reserve’s annual stress test, released June 24, concludes that large banks are well positioned to weather a severe recession and continue lending to households and businesses.",
    "p1Sup": "1",
    "p2": "Season risk turned active this window: the National Hurricane Center’s quiet July 9 outlook gave way to a tropical storm watch issued July 20 for the Alabama Gulf coast, as Tropical Depression Two — located about 120 miles south of Panama City, Florida — was expected to strengthen into a tropical storm later that day. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
    "p2Sup": "3, 4, 6",
-   "assess": "We assess with moderate confidence that near-term weather-driven disruption risk is roughly even odds: a tropical storm watch is now in effect for the Alabama Gulf coast as Tropical Depression Two was forecast to strengthen into a tropical storm, though no confirmed systemic-infrastructure stress has entered the record this window.",
-   "assessSup": "3, 6",
+   "assess": "We assess with moderate confidence that near-term weather-driven disruption risk is roughly even odds: a tropical storm watch for the Alabama Gulf coast has been expanded to add a Storm Surge Watch and a Tropical Storm Watch reaching into Mississippi and Louisiana, as Tropical Depression Two was forecast to strengthen into a tropical storm, though no confirmed systemic-infrastructure stress has entered the record this window.",
+   "assessSup": "3, 6, 7",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 20, 26",
+     "st": "confirmed",
+     "ver": "v4",
+     "id": "L-0141",
+     "src": "NOAA NHC advisory",
+     "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/201448.shtml",
+     "line": "The National Hurricane Center expands its watches for Tropical Depression Two, issuing a Storm Surge Watch for the Alabama/Florida-to-Mississippi Gulf coast and a Tropical Storm Watch reaching into Mississippi and Louisiana."
+    },
     {
      "date": "Jul 20, 26",
      "st": "confirmed",
@@ -2043,6 +2090,11 @@
      "n": "6",
      "text": "NOAA NHC — Tropical Depression Two public advisory, tropical storm watch (Alabama Gulf coast), Jul 20, 2026",
      "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/200846.shtml"
+    },
+    {
+     "n": "7",
+     "text": "NOAA NHC — Tropical Depression Two advisory 5, Storm Surge Watch + expanded Tropical Storm Watch (Mississippi/Louisiana), Jul 20, 2026",
+     "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/201448.shtml"
     }
    ],
    "related": [
@@ -3616,6 +3668,22 @@
    "line": "Hugging Face, an open-source AI and machine learning platform used by more than 50,000 organizations, discloses that attackers gained access to internal datasets and credentials after breaching its production infrastructure using an autonomous AI agent system, BleepingComputer reports.",
    "src": "BleepingComputer",
    "srcUrl": "https://www.bleepingcomputer.com/news/security/hugging-face-breach-autonomous-ai-agent-system-internal-datasets-credentials/"
+  },
+  {
+   "d": "2026-07-20",
+   "p": "fraud",
+   "id": "L-0140",
+   "line": "Criminal scammers are impersonating FBI personnel who handle Internet Crime Complaint Center (IC3) complaints, using AI-generated videos and spoofed websites that gather personal information, to deceive and revictimize scam victims, the FBI's IC3 reports.",
+   "src": "FBI IC3 PSA",
+   "srcUrl": "https://www.ic3.gov/PSA/2026/PSA260720"
+  },
+  {
+   "d": "2026-07-20",
+   "p": "resilience",
+   "id": "L-0141",
+   "line": "The National Hurricane Center expands its watches for Tropical Depression Two, issuing a Storm Surge Watch for the Alabama/Florida-to-Mississippi Gulf coast and a Tropical Storm Watch reaching into Mississippi and Louisiana.",
+   "src": "NOAA NHC advisory",
+   "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/201448.shtml"
   }
  ],
  "takeaways": [
@@ -3945,7 +4013,7 @@
    {
     "no": "8",
     "date": "Mon, Jul 20, 2026",
-    "confirmed": "10",
+    "confirmed": "12",
     "pending": "0",
     "flash": "1",
     "linked": true
