@@ -2,164 +2,152 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-17T17:10:00-04:00",
-  "issueNo": 7,
-  "recordHash": "96042dd",
-  "windowLabel": "June 9 – July 17, 2026",
+  "generatedAt": "2026-07-20T06:25:00-04:00",
+  "issueNo": 8,
+  "recordHash": "edabfeb",
+  "windowLabel": "June 9 – July 20, 2026",
   "nextWeekly": "Fri, Jul 24",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned; FTC’s feed 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 (counted OK, not failed). One new item appends to today’s edition: Dark Reading reports that the ransomware group “Inc” is exploiting two zero-day flaws in SonicWall’s SMA mobile access appliances that, chained together, give criminals root-level control of the devices; the article did not name the CVE identifiers, so it was not merged with the already-recorded SonicWall SMA1000 item (L-0079, CVE-2026-15409/CVE-2026-15410) — neither excerpt names the other’s CVEs, so treating them as the same event would be an inference beyond what either excerpt states. BleepingComputer’s “Abbott Laboratories probes two cyber incidents amid extortion claims” was excluded at the relevance gate: the excerpt states unauthorized access to internal Cancer Diagnostics systems and a separate LabCentral portal claim, with no financial-sector nexus stated, the same disposition already reached for Cybersecurity Dive’s Abbott coverage in the 12:05 and 14:10 ET runs. Dark Reading’s “The Real AI Threat Is Blind Trust” was excluded again, reappearing in this run’s window: still reads as opinion/analysis commentary rather than a discrete, checkable event, and the full article remained Cloudflare-blocked to both the descriptive and browser User-Agent. BleepingComputer’s “Ernst & Young discloses data breach” and “Inside the Search for ‘Clean’ Residential Proxies for Carding” were not re-admitted: identical URLs to the already-recorded L-0125 and L-0126. Cybersecurity Dive’s “Ransomware attack forces Coca-Cola to suspend US production at dairy unit” and The Record’s “Dairy company Fairlife suspends production in US after cyber incident” were not re-admitted: both report the same incident already recorded as L-0119. DOJ’s current 25 entries were reviewed directly (its feed carries an unreliable placeholder noon-UTC pubDate): all 25 concerned drug trafficking, immigration, violent crime, firearms, or sexual-abuse offenses with no bank, financial institution, fraud scheme, or technology mechanism stated in any excerpt — an entirely different set of headlines from the DOJ items reviewed in the 12:05 and 14:10 ET runs, all excluded at the relevance gate. The European Banking Authority’s “EBA E-mail alert 17 July, 2026” was excluded again as an unreadable newsletter-wrapper stub. NOAA’s Atlantic outlook carried no new information beyond the standing empty-state entry. The CISA KEV catalog stayed at catalogVersion 2026.07.16 (1,647 entries, no new additions). Anthropic’s newest dated item remains Jul 14; FinCEN’s newest dated item remains Jun 30; ICO’s fetched page again returned no readable, dated news-list content; ENISA’s newest dated item remains Jul 14.",
-  "lastRun": "2026-07-17T17:10:00-04:00"
+  "feedNote": "26 of 27 allowlisted feeds returned (Dark Reading's RSS returned a genuine 404 with both the descriptive and standard-browser User-Agent, confirmed via a direct HEAD request — not a block, the feed path itself is gone — counted as the one failed feed, well above the half-of-feeds failure threshold). FTC's feed 403'd for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook's fallback, returning 200 (counted OK, not failed). Eight new items open today's edition (issue No. 8): a DOJ press release on a former bank chief financial officer (Aaron T. Luneke) sentenced to 36 months for a $4.3 million bank-fraud scheme (insider pillar); a DOJ press release on a Honduran national (Carlos Banegas-Contreras) sentenced to 27 months for a fake-ID check-cashing bank-fraud conspiracy (fraud pillar); the National Hurricane Center's public advisory on Tropical Depression Two, which prompted a tropical storm watch for the Alabama Gulf coast — the first active Atlantic system since the record opened, superseding the standing quiet-season entry (resilience pillar, p2/assess updated); the Bank of England's Prudential Regulation Authority (PRA) fining HDI Global SE £4,165,000 for inaccurate Financial Services Compensation Scheme (FSCS) data (data pillar, p2 updated; the RSS description was a single sentence, so the allowlisted press release page was fetched for the full penalty notice, confirming HDI Global SE's insurance-firm identity and the due-skill-care-and-diligence failure finding); and four BleepingComputer items — active exploitation of a critical ServiceNow AI Platform flaw (CVE-2026-6875, triaged flash; the RSS description was thin, so the article page was fetched to confirm the July 13 patch date for self-hosted instances), a 7-Zip 26.02 fix for a remote-code-execution flaw, public exploits released for WordPress Core's “wp2shell” RCE flaws, and Microsoft's warning of a surge in ACR Stealer credential-theft malware against its enterprise customers (all cyber pillar). DOJ's current 25 entries were reviewed directly (its feed carries an unreliable placeholder noon-UTC pubDate): the two admitted items above were the only ones with a stated bank or financial-institution nexus; the remaining 23 (tax evasion, methamphetamine and drug trafficking, firearms, immigration, sexual-abuse and child-exploitation offenses, arson, SNAP-benefits and health-care-program fraud, and a police-chief bribery case) stated no financial-sector technology-risk nexus, including a wire-fraud sentencing (Omaha) whose excerpt named no institution or mechanism beyond the bare charge. BleepingComputer's “Hackers abuse ViPNet software to target Russian govt agencies” (no financial-sector nexus), “The Future of Age Verification: Your Face Never Leaves Your Device” (a feature/product piece, not a discrete event), and “Abbott probes two cyber incidents amid extortion claims” (the same disposition reached for this story in prior runs — no financial-sector nexus) were excluded. Cybersecurity Dive's three sponsored placements (“Your attack surface is bigger than you think,” “How agentic endpoint security shuts down IDE-based supply chain attacks,” “The secret problem in AI infrastructure”) were excluded as vendor-sponsored content, not reported events. Cybersecurity Dive's and The Record's Abbott and Coca-Cola/Fairlife stories reappearing in this run's wider 12-hour lookback window were not re-admitted: the same dispositions already reached in the July 17 17:10 ET run (no financial-sector nexus for Abbott; same underlying incident as the already-recorded L-0119 for Coca-Cola/Fairlife). The European Data Protection Board's “EDPB calls for legal basis for cross-regulatory information sharing” and The Record's “Zelensky appoints Ukraine's acting security service chief as acting defense minister” reappeared in this run's window with identical URLs to items already excluded at the relevance gate in the July 17 11:17/12:05 ET runs — same disposition, no new substance. The European Banking Authority's “EBA E-mail alert 17 July, 2026” was excluded again as an unreadable newsletter-wrapper stub. Both new-to-window European Central Bank items (a lending-conditions survey and a digital-euro speech listing) carried no `<description>` in the feed — no excerpt, no admission (EDITORIAL §2). OpenAI's “A scorecard for the AI age” was excluded: a product/ROI blog post with no risk or governance angle stated, the same disposition reached for prior Anthropic and OpenAI product-launch posts. The FCA's “Prosper Capital LLP enters creditors' voluntary liquidation” was excluded: a firm-insolvency notice with no cybersecurity, fraud, AI, third-party, resilience, data, physical-security, or insider-threat content stated. The CISA Known Exploited Vulnerabilities (KEV) catalog stayed at catalogVersion 2026.07.16 (1,647 entries, no new additions). NIST's feed again returned an empty channel (known behavior, not a failure). Nacha's feed again required stripping a non-XML theme-debug preamble before the `<rss>` root before it would parse; nothing fell in-window once parsed. The page-checked sources were read directly: Anthropic's newest dated item remains Jul 14; FinCEN's newest dated item remains Jun 30; ICO's fetched page again returned no readable, dated news-list content; ENISA's newest dated item remains Jul 14 — none in window.",
+  "lastRun": "2026-07-20T06:25:00-04:00"
  },
  "lead": {
-  "head": "Leading stories: the ransomware group “Inc” exploiting two zero-day flaws in SonicWall’s SMA mobile access appliances to gain root-level control of the devices; Ernst & Young disclosing a data breach that may have exposed client tax documents after its support-ticket system was compromised; and a newly disclosed “HollowByte” flaw that can bloat an OpenSSL server’s memory and knock it offline with an 11-byte payload",
-  "dek": "Today’s edition draws on the nine items recorded so far. Every item links to its source.",
+  "head": "Leading stories: attackers exploiting a critical flaw in the ServiceNow AI Platform; the Bank of England fining HDI Global SE £4,165,000 for inaccurate regulatory data; and a federal jury convicting a former bank CFO of a $4.3 million bank-fraud scheme",
+  "dek": "Today’s edition draws on the eight items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
     "p": "cyber",
     "tri": "flash",
     "st": "confirmed",
-    "id": "L-0129",
+    "id": "L-0134",
     "conf": "",
-    "text": "Dark Reading reports that the ransomware group “Inc” is exploiting two zero-day flaws in SonicWall’s SMA mobile access appliances that, when chained together, give criminals root-level control of the devices.",
-    "why": "Dark Reading reports that the ransomware group “Inc” is chaining two zero-day flaws in SonicWall’s SMA mobile access appliances to gain root-level control of the devices — a reminder that even specialized vendor appliances can be fully compromised when multiple flaws are chained together.",
-    "srcText": "Dark Reading, Jul 17",
-    "srcUrl": "https://www.darkreading.com/vulnerabilities-threats/inc-ransomware-exploits-sonicwall-sma-zero-days"
+    "text": "Attackers have begun exploiting a critical vulnerability (CVE-2026-6875) in the ServiceNow AI Platform; ServiceNow released security updates for self-hosted instances on July 13, according to threat intelligence firm Defused, BleepingComputer reports.",
+    "why": "Attackers have begun exploiting a critical vulnerability (CVE-2026-6875) in the ServiceNow AI Platform, according to threat intelligence firm Defused, and ServiceNow has released security updates for self-hosted instances — a reminder to confirm the patch has been applied given active exploitation is underway.",
+    "srcText": "BleepingComputer, Jul 20",
+    "srcUrl": "https://www.bleepingcomputer.com/news/security/critical-servicenow-code-execution-flaw-now-exploited-in-attacks/"
    },
    {
     "n": "2",
-    "p": "tp",
+    "p": "data",
     "tri": "priority",
     "st": "confirmed",
-    "id": "L-0125",
+    "id": "L-0133",
     "conf": "",
-    "text": "Ernst & Young, one of the world’s four largest auditing and professional-services firms, is notifying customers of a data breach after the compromise of a third-party support-ticket system used by its technology staff; the tickets may have included documents containing client tax information, BleepingComputer reports.",
-    "why": "Ernst & Young is one of the world’s four largest auditing and professional-services firms, and a breach of its own support-ticket system may have exposed documents containing client tax information — a reminder that even large vendors handling sensitive client data can become a route for it to leak.",
-    "srcText": "BleepingComputer, Jul 17",
-    "srcUrl": "https://www.bleepingcomputer.com/news/security/ernst-and-young-discloses-data-breach-after-support-system-hack/"
+    "text": "The Bank of England's Prudential Regulation Authority (PRA) fines HDI Global SE £4,165,000 for submitting incorrect data on Financial Services Compensation Scheme (FSCS) liabilities and fee-tariff data to the PRA, caused by its failure to apply due skill, care and diligence in calculating the data.",
+    "why": "The Bank of England’s Prudential Regulation Authority (PRA) fines HDI Global SE £4,165,000 for submitting incorrect regulatory data, citing a failure to apply due skill, care and diligence — a reminder that inaccurate regulatory reporting carries real financial penalties.",
+    "srcText": "Bank of England, Jul 20",
+    "srcUrl": "https://www.bankofengland.co.uk/news/2026/july/pra-fines-hdi-global-se-4165000-for-inaccurate-reporting"
    },
    {
     "n": "3",
-    "p": "cyber",
+    "p": "insider",
     "tri": "routine",
     "st": "confirmed",
-    "id": "L-0128",
+    "id": "L-0130",
     "conf": "",
-    "text": "BleepingComputer reports that a vulnerability dubbed “HollowByte” lets unauthenticated attackers bloat an OpenSSL server’s memory and trigger a denial-of-service (DoS) condition using a malicious payload of just 11 bytes.",
-    "why": "A newly disclosed flaw called “HollowByte” lets an unauthenticated attacker bloat an OpenSSL server’s memory and knock it offline using a malicious data packet of just 11 bytes — a reminder that internet-facing systems can be disrupted by even a very small malicious input.",
-    "srcText": "BleepingComputer, Jul 17",
-    "srcUrl": "https://www.bleepingcomputer.com/news/security/hollowbyte-ddos-flaw-bloats-openssl-server-memory-with-11-byte-payload/"
+    "text": "Aaron T. Luneke, 44, of Columbus, Nebraska, a former bank chief financial officer, is sentenced to 36 months in prison after a federal jury convicted him of bank fraud and attempted bank fraud in a scheme involving a car wash and undisclosed debts in a $4.3 million loan, the Department of Justice reports.",
+    "why": "A federal jury convicts Aaron T. Luneke, a former bank chief financial officer, of bank fraud and attempted bank fraud in a $4.3 million loan-fraud scheme — a reminder that insider fraud risk can reach the executive suite.",
+    "srcText": "DOJ press release, Jul 20",
+    "srcUrl": "https://www.justice.gov/usao-ne/pr/former-bank-cfo-sentenced-36-months-imprisonment-bank-fraud-scheme-involving-car-wash"
    }
   ]
  },
  "wire": [
   {
-   "ts": "2026-07-17T20:01:13Z",
+   "ts": "2026-07-20T12:00:00Z",
+   "p": "insider",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T1",
+   "id": "L-0130",
+   "title": "Aaron T. Luneke, 44, of Columbus, Nebraska, a former bank chief financial officer, is sentenced to 36 months in prison after a federal jury convicted him of bank fraud and attempted bank fraud in a scheme involving a car wash and undisclosed debts in a $4.3 million loan, the Department of Justice reports.",
+   "src": "DOJ press release",
+   "srcUrl": "https://www.justice.gov/usao-ne/pr/former-bank-cfo-sentenced-36-months-imprisonment-bank-fraud-scheme-involving-car-wash",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-20T12:00:00Z",
+   "p": "fraud",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T1",
+   "id": "L-0131",
+   "title": "Carlos Banegas-Contreras, an illegal alien from Honduras, is sentenced to 27 months in prison for conspiring to use fake identification cards to cash 178 fraudulent paychecks totaling $299,474 at three check-cashing businesses and five bank branches, the Department of Justice reports.",
+   "src": "DOJ press release",
+   "srcUrl": "https://www.justice.gov/usao-edok/pr/illegal-alien-honduras-sentenced-27-months-prison-2023-bank-fraud-conspiracy",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-20T09:29:20Z",
    "p": "cyber",
    "tri": "flash",
    "st": "confirmed",
    "tier": "T2",
-   "id": "L-0129",
-   "title": "Dark Reading reports that the ransomware group “Inc” is exploiting two zero-day flaws in SonicWall’s SMA mobile access appliances that, when chained together, give criminals root-level control of the devices.",
-   "src": "Dark Reading",
-   "srcUrl": "https://www.darkreading.com/vulnerabilities-threats/inc-ransomware-exploits-sonicwall-sma-zero-days",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-17T17:56:21Z",
-   "p": "cyber",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0128",
-   "title": "BleepingComputer reports that a vulnerability dubbed “HollowByte” lets unauthenticated attackers bloat an OpenSSL server’s memory and trigger a denial-of-service (DoS) condition using a malicious payload of just 11 bytes.",
+   "id": "L-0134",
+   "title": "Attackers have begun exploiting a critical vulnerability (CVE-2026-6875) in the ServiceNow AI Platform; ServiceNow released security updates for self-hosted instances on July 13, according to threat intelligence firm Defused, BleepingComputer reports.",
    "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/hollowbyte-ddos-flaw-bloats-openssl-server-memory-with-11-byte-payload/",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/critical-servicenow-code-execution-flaw-now-exploited-in-attacks/",
    "linked": true
   },
   {
-   "ts": "2026-07-17T14:55:28Z",
-   "p": "tp",
+   "ts": "2026-07-20T09:00:00Z",
+   "p": "data",
    "tri": "priority",
    "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0125",
-   "title": "Ernst & Young, one of the world’s four largest auditing and professional-services firms, is notifying customers of a data breach after the compromise of a third-party support-ticket system used by its technology staff; the tickets may have included documents containing client tax information, BleepingComputer reports.",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/ernst-and-young-discloses-data-breach-after-support-system-hack/",
+   "tier": "T1",
+   "id": "L-0133",
+   "title": "The Bank of England's Prudential Regulation Authority (PRA) fines HDI Global SE £4,165,000 for submitting incorrect data on Financial Services Compensation Scheme (FSCS) liabilities and fee-tariff data to the PRA, caused by its failure to apply due skill, care and diligence in calculating the data.",
+   "src": "Bank of England (PRA)",
+   "srcUrl": "https://www.bankofengland.co.uk/news/2026/july/pra-fines-hdi-global-se-4165000-for-inaccurate-reporting",
    "linked": true
   },
   {
-   "ts": "2026-07-17T14:00:10Z",
-   "p": "fraud",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T2",
-   "id": "L-0126",
-   "title": "Flare’s security researchers report that carders increasingly combine “residential” internet proxies with browser fingerprints and other identity data to evade modern fraud-detection systems, and caution that residential internet traffic alone should not be treated as evidence a customer is legitimate, BleepingComputer reports.",
-   "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/inside-the-search-for-clean-residential-proxies-for-carding/",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-17T12:00:00Z",
-   "p": "fraud",
+   "ts": "2026-07-20T08:46:39Z",
+   "p": "resilience",
    "tri": "routine",
    "st": "confirmed",
    "tier": "T1",
-   "id": "L-0127",
-   "title": "A federal jury convicts Joseph F. Wallace, 51, a Duncan, South Carolina credit-repair business operator, on nine counts of wire fraud and one count of credit card fraud following a four-day trial, the Department of Justice reports.",
-   "src": "DOJ press release",
-   "srcUrl": "https://www.justice.gov/usao-sc/pr/federal-jury-convicts-duncan-credit-repair-operator-wire-fraud-and-credit-card-fraud",
+   "id": "L-0132",
+   "title": "The National Hurricane Center issues a tropical storm watch for the Alabama Gulf coast as Tropical Depression Two, located about 120 miles south of Panama City, Florida, is expected to strengthen into a tropical storm later today.",
+   "src": "NOAA NHC advisory",
+   "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/200846.shtml",
    "linked": true
   },
   {
-   "ts": "2026-07-17T11:05:30Z",
+   "ts": "2026-07-18T19:32:02Z",
    "p": "cyber",
    "tri": "routine",
    "st": "confirmed",
    "tier": "T2",
-   "id": "L-0124",
-   "title": "A security researcher using the handle “Nightmare Eclipse” has publicly released a Windows zero-day exploit called LegacyHive that lets attackers gain administrator-level privileges on fully updated Windows systems, BleepingComputer reports.",
+   "id": "L-0135",
+   "title": "7-Zip releases version 26.02, fixing a remote code execution vulnerability that could let attackers run malicious code if a user opens a specially crafted compressed archive file, BleepingComputer reports.",
    "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/security/new-windows-legacyhive-zero-day-exploit-grants-hackers-admin-access/",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/update-now-7-zip-fixes-rce-flaw-exploitable-with-malicious-archives/",
    "linked": true
   },
   {
-   "ts": "2026-07-17T09:10:15Z",
+   "ts": "2026-07-18T17:22:47Z",
    "p": "cyber",
    "tri": "routine",
    "st": "confirmed",
    "tier": "T2",
-   "id": "L-0122",
-   "title": "Microsoft announced that Windows Server 2022 will reach the end of mainstream support in October 2026; it will move to extended support, with security updates continuing for five more years.",
+   "id": "L-0136",
+   "title": "Public exploits are released for critical “wp2shell” remote code execution vulnerabilities in WordPress Core, prompting warnings that administrators patch their sites immediately, BleepingComputer reports.",
    "src": "BleepingComputer",
-   "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-server-2022-reach-end-of-mainstream-support-in-90-days/",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/wordpress-core-wp2shell-rce-flaws-get-public-exploits-patch-now/",
    "linked": true
   },
   {
-   "ts": "2026-07-16T13:50:00Z",
+   "ts": "2026-07-18T14:17:19Z",
    "p": "cyber",
    "tri": "routine",
    "st": "confirmed",
    "tier": "T2",
-   "id": "L-0123",
-   "title": "Sandworm hackers are using a CAPTCHA check that, rather than verifying users are human, instructs Ukrainian users to copy and paste a PowerShell command into their Windows computers, The Record reports.",
-   "src": "The Record",
-   "srcUrl": "https://therecord.media/ukraine-sandworm-hacks-captcha-powershell",
-   "linked": true
-  },
-  {
-   "ts": "2026-07-16T12:00:00Z",
-   "p": "fraud",
-   "tri": "routine",
-   "st": "confirmed",
-   "tier": "T1",
-   "id": "L-0121",
-   "title": "A Buffalo, New York business owner, Jason Knobloch, is charged with bank fraud for allegedly defrauding customers out of more than a million dollars.",
-   "src": "DOJ press release",
-   "srcUrl": "https://www.justice.gov/usao-wdny/pr/buffalo-business-owner-charged-bank-fraud-defrauding-customers-out-more-million",
+   "id": "L-0137",
+   "title": "Microsoft reports a surge in attacks using the ACR Stealer malware to steal browser-stored passwords, authentication tokens, and sensitive documents from its enterprise customers, BleepingComputer reports.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/microsoft-warns-of-surge-in-acr-stealer-attacks-on-customers/",
    "linked": true
   }
  ],
@@ -407,9 +395,9 @@
    "scope": "cybersecurity · exploitation & exposure",
    "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
    "opened": "July 2026",
-   "ver": "v52",
-   "verRange": "v1–v52",
-   "asOf": "July 17, 2026",
+   "ver": "v56",
+   "verRange": "v1–v56",
+   "asOf": "July 20, 2026",
    "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
    "p1Sup": "1, 3, 10",
    "p2": "The UK’s National Cyber Security Centre (NCSC) and cybersecurity agencies from the United States and eight other countries warn that hackers linked to Russia’s Federal Security Service (FSB) are exploiting routers with default or weak passwords to infiltrate critical infrastructure, naming financial services among the sectors most at risk. Researchers report “JadePuffer,” described as a ransomware attack run end-to-end by an AI agent that broke in through the exploited Langflow flaw. Separately, Progress Software urged ShareFile customers running Storage Zone Controllers to shut down their servers immediately over a “credible external security threat.”",
@@ -418,6 +406,42 @@
    "assessSup": "1, 8",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 20, 26",
+     "st": "confirmed",
+     "ver": "v56",
+     "id": "L-0134",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/critical-servicenow-code-execution-flaw-now-exploited-in-attacks/",
+     "line": "Attackers have begun exploiting a critical vulnerability (CVE-2026-6875) in the ServiceNow AI Platform; ServiceNow released security updates for self-hosted instances on July 13, according to threat intelligence firm Defused, BleepingComputer reports."
+    },
+    {
+     "date": "Jul 18, 26",
+     "st": "confirmed",
+     "ver": "v55",
+     "id": "L-0135",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/update-now-7-zip-fixes-rce-flaw-exploitable-with-malicious-archives/",
+     "line": "7-Zip releases version 26.02, fixing a remote code execution vulnerability that could let attackers run malicious code if a user opens a specially crafted compressed archive file, BleepingComputer reports."
+    },
+    {
+     "date": "Jul 18, 26",
+     "st": "confirmed",
+     "ver": "v54",
+     "id": "L-0136",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/wordpress-core-wp2shell-rce-flaws-get-public-exploits-patch-now/",
+     "line": "Public exploits are released for critical “wp2shell” remote code execution vulnerabilities in WordPress Core, prompting warnings that administrators patch their sites immediately, BleepingComputer reports."
+    },
+    {
+     "date": "Jul 18, 26",
+     "st": "confirmed",
+     "ver": "v53",
+     "id": "L-0137",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/microsoft-warns-of-surge-in-acr-stealer-attacks-on-customers/",
+     "line": "Microsoft reports a surge in attacks using the ACR Stealer malware to steal browser-stored passwords, authentication tokens, and sensitive documents from its enterprise customers, BleepingComputer reports."
+    },
     {
      "date": "Jul 17, 26",
      "st": "confirmed",
@@ -1204,6 +1228,26 @@
      "n": "49",
      "text": "Dark Reading — “Inc” ransomware exploiting SonicWall SMA zero-days, Jul 17, 2026",
      "url": "https://www.darkreading.com/vulnerabilities-threats/inc-ransomware-exploits-sonicwall-sma-zero-days"
+    },
+    {
+     "n": "50",
+     "text": "BleepingComputer — Microsoft warns of ACR Stealer malware surge, Jul 18, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/microsoft-warns-of-surge-in-acr-stealer-attacks-on-customers/"
+    },
+    {
+     "n": "51",
+     "text": "BleepingComputer — WordPress Core “wp2shell” RCE flaws, public exploits released, Jul 18, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/wordpress-core-wp2shell-rce-flaws-get-public-exploits-patch-now/"
+    },
+    {
+     "n": "52",
+     "text": "BleepingComputer — 7-Zip 26.02 fixes remote-code-execution flaw, Jul 18, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/update-now-7-zip-fixes-rce-flaw-exploitable-with-malicious-archives/"
+    },
+    {
+     "n": "53",
+     "text": "BleepingComputer — ServiceNow AI Platform flaw (CVE-2026-6875) actively exploited, Jul 20, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/critical-servicenow-code-execution-flaw-now-exploited-in-attacks/"
     }
    ],
    "related": [
@@ -1254,9 +1298,9 @@
    "scope": "fraud · AML rulemaking & scam patterns",
    "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
    "opened": "July 2026",
-   "ver": "v17",
-   "verRange": "v1–v17",
-   "asOf": "July 17, 2026",
+   "ver": "v18",
+   "verRange": "v1–v18",
+   "asOf": "July 20, 2026",
    "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22).",
    "p1Sup": "1, 3",
    "p2": "Operationally, the OCC is highlighting FinCEN’s updated Section 314(b) fact sheet clarifying how institutions can share suspected-fraud information with each other. The FBI’s recent consumer-facing warnings describe criminals redirecting users to fraudulent websites through malicious traffic-distribution systems. On the criminal side, a Bulgarian national already imprisoned for helping launder millions in fraud proceeds is charged with stealing $290,000 in government-seized cryptocurrency while incarcerated.",
@@ -1265,6 +1309,15 @@
    "assessSup": "2, 3",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 20, 26",
+     "st": "confirmed",
+     "ver": "v18",
+     "id": "L-0131",
+     "src": "DOJ press release",
+     "srcUrl": "https://www.justice.gov/usao-edok/pr/illegal-alien-honduras-sentenced-27-months-prison-2023-bank-fraud-conspiracy",
+     "line": "Carlos Banegas-Contreras, an illegal alien from Honduras, is sentenced to 27 months in prison for conspiring to use fake identification cards to cash 178 fraudulent paychecks totaling $299,474 at three check-cashing businesses and five bank branches, the Department of Justice reports."
+    },
     {
      "date": "Jul 17, 26",
      "st": "confirmed",
@@ -1582,6 +1635,11 @@
      "n": "20",
      "text": "DOJ — Duncan, South Carolina credit-repair operator convicted of wire fraud and credit card fraud, Jul 17, 2026",
      "url": "https://www.justice.gov/usao-sc/pr/federal-jury-convicts-duncan-credit-repair-operator-wire-fraud-and-credit-card-fraud"
+    },
+    {
+     "n": "21",
+     "text": "DOJ — Honduras national sentenced, fake-ID check-cashing bank-fraud conspiracy (Banegas-Contreras), Jul 20, 2026",
+     "url": "https://www.justice.gov/usao-edok/pr/illegal-alien-honduras-sentenced-27-months-prison-2023-bank-fraud-conspiracy"
     }
    ],
    "related": [
@@ -1828,17 +1886,26 @@
    "scope": "resilience · sector capacity & season risk",
    "watch": "Stress-test results, payments-system findings, severe-weather outlooks, and infrastructure-software advisories relevant to operations.",
    "opened": "July 2026",
-   "ver": "v2",
-   "verRange": "v1–v2",
-   "asOf": "July 14, 2026",
+   "ver": "v3",
+   "verRange": "v1–v3",
+   "asOf": "July 20, 2026",
    "p1": "The Federal Reserve’s annual stress test, released June 24, concludes that large banks are well positioned to weather a severe recession and continue lending to households and businesses.",
    "p1Sup": "1",
-   "p2": "Season risk is quiet: the National Hurricane Center’s July 9 outlook expects no tropical cyclone formation in the Atlantic over the next seven days. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
-   "p2Sup": "3, 4",
-   "assess": "On the current outlook we judge near-term weather-driven disruption unlikely, and note that no confirmed systemic-infrastructure stress entered the record this window.",
-   "assessSup": "3",
+   "p2": "Season risk turned active this window: the National Hurricane Center’s quiet July 9 outlook gave way to a tropical storm watch issued July 20 for the Alabama Gulf coast, as Tropical Depression Two — located about 120 miles south of Panama City, Florida — was expected to strengthen into a tropical storm later that day. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
+   "p2Sup": "3, 4, 6",
+   "assess": "We assess with moderate confidence that near-term weather-driven disruption risk is roughly even odds: a tropical storm watch is now in effect for the Alabama Gulf coast as Tropical Depression Two was forecast to strengthen into a tropical storm, though no confirmed systemic-infrastructure stress has entered the record this window.",
+   "assessSup": "3, 6",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 20, 26",
+     "st": "confirmed",
+     "ver": "v3",
+     "id": "L-0132",
+     "src": "NOAA NHC advisory",
+     "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/200846.shtml",
+     "line": "The National Hurricane Center issues a tropical storm watch for the Alabama Gulf coast as Tropical Depression Two, located about 120 miles south of Panama City, Florida, is expected to strengthen into a tropical storm later today."
+    },
     {
      "date": "Jul 14, 26",
      "st": "confirmed",
@@ -1919,6 +1986,11 @@
      "n": "5",
      "text": "European Central Bank — digital euro pilot, 36 payment service providers selected, Jul 14, 2026",
      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260714~8cd07d9d45.en.html"
+    },
+    {
+     "n": "6",
+     "text": "NOAA NHC — Tropical Depression Two public advisory, tropical storm watch (Alabama Gulf coast), Jul 20, 2026",
+     "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/200846.shtml"
     }
    ],
    "related": [
@@ -1954,17 +2026,26 @@
    "scope": "data risk · reporting standards & data accuracy",
    "watch": "Data-standards rulemaking, consumer-data enforcement, and breach disclosures at financial firms.",
    "opened": "July 2026",
-   "ver": "v3",
-   "verRange": "v1–v3",
-   "asOf": "July 16, 2026",
+   "ver": "v4",
+   "verRange": "v1–v4",
+   "asOf": "July 20, 2026",
    "p1": "Uniform data-reporting standards are now final: the OCC, Federal Reserve, FDIC, and five other agencies issued the joint Financial Data Transparency Act rule on June 11, establishing data standards for certain regulatory collections.",
    "p1Sup": "1",
-   "p2": "Enforcement pressure sits on consumer-data accuracy. The FTC required tenant-screening provider RentGrow to pay $2.25 million over duplicate records and undisclosed data sources (July 9). Separately, insurance company AssuranceAmerica disclosed a breach affecting records of 6.9 million drivers.",
-   "p2Sup": "4, 5",
+   "p2": "Enforcement pressure sits on data accuracy on both sides of the Atlantic. The FTC required tenant-screening provider RentGrow to pay $2.25 million over duplicate records and undisclosed data sources (July 9). Separately, insurance company AssuranceAmerica disclosed a breach affecting records of 6.9 million drivers. In the UK, the Bank of England’s Prudential Regulation Authority (PRA) fined HDI Global SE £4,165,000 for submitting incorrect Financial Services Compensation Scheme (FSCS) data, caused by a failure to apply due skill, care and diligence.",
+   "p2Sup": "4, 5, 8",
    "assess": "We assess as likely that data-accuracy obligations — not only data-security ones — drive the next round of consumer-data enforcement: this window’s confirmed FTC action against RentGrow is an accuracy case under the Fair Credit Reporting Act.",
    "assessSup": "4",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 20, 26",
+     "st": "confirmed",
+     "ver": "v4",
+     "id": "L-0133",
+     "src": "Bank of England (PRA)",
+     "srcUrl": "https://www.bankofengland.co.uk/news/2026/july/pra-fines-hdi-global-se-4165000-for-inaccurate-reporting",
+     "line": "The Bank of England's Prudential Regulation Authority (PRA) fines HDI Global SE £4,165,000 for submitting incorrect data on Financial Services Compensation Scheme (FSCS) liabilities and fee-tariff data to the PRA, caused by its failure to apply due skill, care and diligence in calculating the data."
+    },
     {
      "date": "Jul 16, 26",
      "st": "confirmed",
@@ -2082,6 +2163,11 @@
      "n": "7",
      "text": "OCC Bulletin 2026-32 + Federal Reserve press release — joint statement on highly sensitive information in examinations, Jul 16, 2026",
      "url": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-32.html"
+    },
+    {
+     "n": "8",
+     "text": "Bank of England (PRA) — HDI Global SE fined £4,165,000, inaccurate FSCS data, Jul 20, 2026",
+     "url": "https://www.bankofengland.co.uk/news/2026/july/pra-fines-hdi-global-se-4165000-for-inaccurate-reporting"
     }
    ],
    "related": [
@@ -2122,9 +2208,9 @@
    "scope": "insider threat · co-opted trust",
    "watch": "Prosecutions and advisories where trusted roles — employees, contractors, hired specialists — are the attack path.",
    "opened": "July 2026",
-   "ver": "v7",
-   "verRange": "v1–v7",
-   "asOf": "July 16, 2026",
+   "ver": "v8",
+   "verRange": "v1–v8",
+   "asOf": "July 20, 2026",
    "p1": "One confirmed event this window sits squarely on trusted-role co-option: a former ransomware negotiator was sentenced to 70 months for conspiring with BlackCat ransomware actors to extort the victims he was engaged to help — and with other former cybersecurity professionals to attack additional victims.",
    "p1Sup": "1",
    "p2": "Adjacent signals point the same direction: the AssuranceAmerica breach began with attackers targeting a company employee, and a man accused of deploying Ryuk ransomware pleaded guilty to conspiracy and computer fraud in an Oregon federal court.",
@@ -2133,6 +2219,15 @@
    "assessSup": "4, 5",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 20, 26",
+     "st": "confirmed",
+     "ver": "v8",
+     "id": "L-0130",
+     "src": "DOJ press release",
+     "srcUrl": "https://www.justice.gov/usao-ne/pr/former-bank-cfo-sentenced-36-months-imprisonment-bank-fraud-scheme-involving-car-wash",
+     "line": "Aaron T. Luneke, 44, of Columbus, Nebraska, a former bank chief financial officer, is sentenced to 36 months in prison after a federal jury convicted him of bank fraud and attempted bank fraud in a scheme involving a car wash and undisclosed debts in a $4.3 million loan, the Department of Justice reports."
+    },
     {
      "date": "Jul 16, 26",
      "st": "confirmed",
@@ -2260,6 +2355,11 @@
      "n": "9",
      "text": "DOJ — former Federal Reserve Board of Governors adviser sentenced (Rogers), Jul 16, 2026",
      "url": "https://www.justice.gov/opa/pr/former-adviser-federal-reserve-board-governors-sentenced-federal-prison-term"
+    },
+    {
+     "n": "10",
+     "text": "DOJ — former bank CFO sentenced, $4.3M loan-fraud scheme (Luneke), Jul 20, 2026",
+     "url": "https://www.justice.gov/usao-ne/pr/former-bank-cfo-sentenced-36-months-imprisonment-bank-fraud-scheme-involving-car-wash"
     }
    ],
    "related": [
@@ -3384,9 +3484,109 @@
    "line": "Dark Reading reports that the ransomware group “Inc” is exploiting two zero-day flaws in SonicWall’s SMA mobile access appliances that, when chained together, give criminals root-level control of the devices.",
    "src": "Dark Reading",
    "srcUrl": "https://www.darkreading.com/vulnerabilities-threats/inc-ransomware-exploits-sonicwall-sma-zero-days"
+  },
+  {
+   "d": "2026-07-20",
+   "p": "insider",
+   "id": "L-0130",
+   "line": "Aaron T. Luneke, 44, of Columbus, Nebraska, a former bank chief financial officer, is sentenced to 36 months in prison after a federal jury convicted him of bank fraud and attempted bank fraud in a scheme involving a car wash and undisclosed debts in a $4.3 million loan, the Department of Justice reports.",
+   "src": "DOJ press release",
+   "srcUrl": "https://www.justice.gov/usao-ne/pr/former-bank-cfo-sentenced-36-months-imprisonment-bank-fraud-scheme-involving-car-wash"
+  },
+  {
+   "d": "2026-07-20",
+   "p": "fraud",
+   "id": "L-0131",
+   "line": "Carlos Banegas-Contreras, an illegal alien from Honduras, is sentenced to 27 months in prison for conspiring to use fake identification cards to cash 178 fraudulent paychecks totaling $299,474 at three check-cashing businesses and five bank branches, the Department of Justice reports.",
+   "src": "DOJ press release",
+   "srcUrl": "https://www.justice.gov/usao-edok/pr/illegal-alien-honduras-sentenced-27-months-prison-2023-bank-fraud-conspiracy"
+  },
+  {
+   "d": "2026-07-20",
+   "p": "resilience",
+   "id": "L-0132",
+   "line": "The National Hurricane Center issues a tropical storm watch for the Alabama Gulf coast as Tropical Depression Two, located about 120 miles south of Panama City, Florida, is expected to strengthen into a tropical storm later today.",
+   "src": "NOAA NHC advisory",
+   "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/200846.shtml"
+  },
+  {
+   "d": "2026-07-20",
+   "p": "data",
+   "id": "L-0133",
+   "line": "The Bank of England's Prudential Regulation Authority (PRA) fines HDI Global SE £4,165,000 for submitting incorrect data on Financial Services Compensation Scheme (FSCS) liabilities and fee-tariff data to the PRA, caused by its failure to apply due skill, care and diligence in calculating the data.",
+   "src": "Bank of England (PRA)",
+   "srcUrl": "https://www.bankofengland.co.uk/news/2026/july/pra-fines-hdi-global-se-4165000-for-inaccurate-reporting"
+  },
+  {
+   "d": "2026-07-20",
+   "p": "cyber",
+   "id": "L-0134",
+   "line": "Attackers have begun exploiting a critical vulnerability (CVE-2026-6875) in the ServiceNow AI Platform; ServiceNow released security updates for self-hosted instances on July 13, according to threat intelligence firm Defused, BleepingComputer reports.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/critical-servicenow-code-execution-flaw-now-exploited-in-attacks/"
+  },
+  {
+   "d": "2026-07-18",
+   "p": "cyber",
+   "id": "L-0135",
+   "line": "7-Zip releases version 26.02, fixing a remote code execution vulnerability that could let attackers run malicious code if a user opens a specially crafted compressed archive file, BleepingComputer reports.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/update-now-7-zip-fixes-rce-flaw-exploitable-with-malicious-archives/"
+  },
+  {
+   "d": "2026-07-18",
+   "p": "cyber",
+   "id": "L-0136",
+   "line": "Public exploits are released for critical “wp2shell” remote code execution vulnerabilities in WordPress Core, prompting warnings that administrators patch their sites immediately, BleepingComputer reports.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/wordpress-core-wp2shell-rce-flaws-get-public-exploits-patch-now/"
+  },
+  {
+   "d": "2026-07-18",
+   "p": "cyber",
+   "id": "L-0137",
+   "line": "Microsoft reports a surge in attacks using the ACR Stealer malware to steal browser-stored passwords, authentication tokens, and sensitive documents from its enterprise customers, BleepingComputer reports.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/microsoft-warns-of-surge-in-acr-stealer-attacks-on-customers/"
   }
  ],
  "takeaways": [
+  {
+   "anchors": [
+    "L-0134"
+   ],
+   "pillars": "Cybersecurity",
+   "conf": "high confidence",
+   "head": "A ServiceNow AI Platform flaw is now being actively exploited — confirm the July 13 patch is applied.",
+   "body": "Attackers have begun exploiting a critical vulnerability (CVE-2026-6875) in the ServiceNow AI Platform; ServiceNow released security updates for self-hosted instances on July 13 (hosted instances were already addressed). Technology teams running self-hosted ServiceNow AI Platform instances should confirm the patch is applied given confirmed active exploitation."
+  },
+  {
+   "anchors": [
+    "L-0136"
+   ],
+   "pillars": "Cybersecurity",
+   "conf": "high confidence",
+   "head": "Public exploits now exist for WordPress Core's \"wp2shell\" flaws — patch immediately.",
+   "body": "Public exploits have been released for the critical “wp2shell” remote code execution vulnerabilities affecting WordPress Core. Technology teams running WordPress Core should patch their sites immediately."
+  },
+  {
+   "anchors": [
+    "L-0135"
+   ],
+   "pillars": "Cybersecurity",
+   "conf": "high confidence",
+   "head": "7-Zip 26.02 fixes a remote-code-execution flaw — update now.",
+   "body": "7-Zip version 26.02, released June 25, fixes a remote code execution vulnerability that could let attackers run malicious code if a user is convinced to open a specially crafted compressed file. Technology teams should update any deployed 7-Zip installations to version 26.02 or later."
+  },
+  {
+   "anchors": [
+    "L-0133"
+   ],
+   "pillars": "Data risk",
+   "conf": "high confidence",
+   "head": "A £4.2M UK fine over inaccurate FSCS data is a reminder to audit regulatory-reporting controls.",
+   "body": "The Prudential Regulation Authority (PRA) fined HDI Global SE £4,165,000 after finding its errors in Financial Services Compensation Scheme (FSCS) data arose and persisted from a failure to apply due skill, care and diligence in calculating the data. Compliance and regulatory-reporting teams should audit the controls behind their own levy and liability data submissions."
+  },
   {
    "anchors": [
     "L-0117"
@@ -3675,6 +3875,14 @@
  "publications": {
   "dailies": [
    {
+    "no": "8",
+    "date": "Mon, Jul 20, 2026",
+    "confirmed": "8",
+    "pending": "0",
+    "flash": "1",
+    "linked": true
+   },
+   {
     "no": "7",
     "date": "Fri, Jul 17, 2026",
     "confirmed": "9",
@@ -3739,7 +3947,7 @@
    }
   ],
   "monthlies": [],
-  "dTotal": 7,
+  "dTotal": 8,
   "wkTotal": 1,
   "mTotal": 0
  }
