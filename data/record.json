@@ -2,18 +2,18 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-20T07:15:00-04:00",
+  "generatedAt": "2026-07-20T08:13:00-04:00",
   "issueNo": 8,
-  "recordHash": "6724dce",
+  "recordHash": "7287c87",
   "windowLabel": "June 9 – July 20, 2026",
   "nextWeekly": "Fri, Jul 24",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior `generatedAt` (06:25:00 ET), so candidates are items published since ~04:25 ET / 08:25 UTC. One new item was admitted: BleepingComputer reports Microsoft is working to fix a known issue affecting Windows Server Update Services (WSUS) servers that has caused synchronization problems for more than a week (cyber pillar, routine triage) — a patch-management-infrastructure disruption relevant to any enterprise, including banks, relying on WSUS for on-premises update deployment. BleepingComputer’s “Windows KB5121767 OOB update fixes shutdowns on some Dell PCs” was excluded at the relevance gate: a narrow hardware-specific shutdown bug on some Dell PCs, with no financial-sector nexus or enterprise-wide patch-management angle stated beyond the single vendor’s hardware. Cybersecurity Dive’s three sponsored placements (“Your attack surface is bigger than you think,” “How agentic endpoint security shuts down IDE-based supply chain attacks,” “The secret problem in AI infrastructure”) reappeared in this run’s window and were excluded again as vendor-sponsored content, the same disposition reached in the day-opening run. Not re-admitted (already on record, reappearing in this run’s window): BleepingComputer’s “Critical ServiceNow code execution flaw now exploited in attacks,” identical URL to the already-recorded L-0134; the Bank of England’s HDI Global SE fine press release, identical URL to the already-recorded L-0133; NOAA NHC’s Tropical Depression Two “Public Advisory Number 4” (identical URL/timestamp to the already-recorded L-0132) and its companion “Summary,” Forecast Advisory, Forecast Discussion, Wind Speed Probabilities, and Graphics products for the same advisory cycle — all the same storm event already admitted as L-0132, not separately admitted. The CISA Known Exploited Vulnerabilities (KEV) catalog stayed at catalogVersion 2026.07.16 (1,647 entries, no new additions). NIST’s feed again returned an empty channel (known behavior, not a failure).",
-  "lastRun": "2026-07-20T07:15:00-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed; ENISA’s page returned a transient 503 on the first attempt and 200 on immediate retry, also counted OK, not a failure). Selection window: 2 hours before this run’s prior `generatedAt` (07:15:00 ET), so candidates are items published since ~05:15 ET / 09:15 UTC. One new item was admitted: BleepingComputer reports Hugging Face, an open-source AI and machine learning platform used by more than 50,000 organizations, disclosed that attackers gained access to internal datasets and credentials after breaching its production infrastructure using an autonomous AI agent system (third-party risk pillar, priority triage on the major-vendor-incident bar). NOAA NHC’s Tropical Depression Two “Public Advisory Number 4a” and its companion Summary, Graphics, and Atlantic Tropical Weather Outlook products reappeared in this run’s window; the advisory itself stated “CHANGES WITH THIS ADVISORY: None” against the already-recorded Advisory Number 4 (L-0132), so none were separately admitted. BleepingComputer’s “Microsoft confirms Windows Server Update Services sync delays” and “Critical ServiceNow code execution flaw now exploited in attacks” reappeared, identical URLs to the already-recorded L-0138 and L-0134; “Windows KB5121767 OOB update fixes shutdowns on some Dell PCs” reappeared, identical URL to the item already excluded at the relevance gate in the prior intraday run. DOJ’s 25 current entries were reviewed directly (unreliable placeholder noon-UTC pubDate); 2 were identical to already-recorded L-0130/L-0131, and the remaining 23 fell in categories already excluded at the relevance gate in prior runs (tax evasion, drug trafficking, firearms, immigration, sexual-abuse/kidnapping, burglary, SNAP-benefits fraud, health-care-fraud civil complaints, stolen-vehicle transport), none stating a bank, financial institution, or technology-risk mechanism — including a repeat appearance of “Omaha Woman Sentenced to 18 Months for Wire Fraud,” excluded on the same basis as the day-opening run (a bare wire-fraud count naming no institution, victim, or mechanism). The CISA Known Exploited Vulnerabilities (KEV) catalog stayed at catalogVersion 2026.07.16 (1,647 entries, no new additions). NIST’s feed again returned an empty channel (known behavior, not a failure). Anthropic’s newest dated item remains Jul 14; FinCEN’s newest dated item remains Jun 30; ICO’s fetched page again returned no readable, dated news-list content; ENISA’s fetched page again returned no readable, dated news-list content.",
+  "lastRun": "2026-07-20T08:13:00-04:00"
  },
  "lead": {
-  "head": "Leading stories: attackers exploiting a critical flaw in the ServiceNow AI Platform; the Bank of England fining HDI Global SE £4,165,000 for inaccurate regulatory data; and a federal jury convicting a former bank CFO of a $4.3 million bank-fraud scheme",
-  "dek": "Today’s edition draws on the nine items recorded so far. Every item links to its source.",
+  "head": "Leading stories: attackers exploiting a critical flaw in the ServiceNow AI Platform; the Bank of England fining HDI Global SE £4,165,000 for inaccurate regulatory data; and Hugging Face disclosing a breach of its internal datasets and credentials carried out using an autonomous AI agent system",
+  "dek": "Today’s edition draws on the ten items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
@@ -41,15 +41,15 @@
    },
    {
     "n": "3",
-    "p": "insider",
-    "tri": "routine",
+    "p": "tp",
+    "tri": "priority",
     "st": "confirmed",
-    "id": "L-0130",
+    "id": "L-0139",
     "conf": "",
-    "text": "Aaron T. Luneke, 44, of Columbus, Nebraska, a former bank chief financial officer, is sentenced to 36 months in prison after a federal jury convicted him of bank fraud and attempted bank fraud in a scheme involving a car wash and undisclosed debts in a $4.3 million loan, the Department of Justice reports.",
-    "why": "A federal jury convicts Aaron T. Luneke, a former bank chief financial officer, of bank fraud and attempted bank fraud in a $4.3 million loan-fraud scheme — a reminder that insider fraud risk can reach the executive suite.",
-    "srcText": "DOJ press release, Jul 20",
-    "srcUrl": "https://www.justice.gov/usao-ne/pr/former-bank-cfo-sentenced-36-months-imprisonment-bank-fraud-scheme-involving-car-wash"
+    "text": "Hugging Face, an open-source AI and machine learning platform used by more than 50,000 organizations, discloses that attackers gained access to internal datasets and credentials after breaching its production infrastructure using an autonomous AI agent system, BleepingComputer reports.",
+    "why": "Hugging Face, an AI and machine learning platform used by more than 50,000 organizations, discloses that attackers gained access to internal datasets and credentials after breaching its production infrastructure using an autonomous AI agent system — a reminder to weigh vendor risk at the AI platforms banks and their partners rely on.",
+    "srcText": "BleepingComputer, Jul 20",
+    "srcUrl": "https://www.bleepingcomputer.com/news/security/hugging-face-breach-autonomous-ai-agent-system-internal-datasets-credentials/"
    }
   ]
  },
@@ -76,6 +76,18 @@
    "title": "Carlos Banegas-Contreras, an illegal alien from Honduras, is sentenced to 27 months in prison for conspiring to use fake identification cards to cash 178 fraudulent paychecks totaling $299,474 at three check-cashing businesses and five bank branches, the Department of Justice reports.",
    "src": "DOJ press release",
    "srcUrl": "https://www.justice.gov/usao-edok/pr/illegal-alien-honduras-sentenced-27-months-prison-2023-bank-fraud-conspiracy",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-20T11:56:28Z",
+   "p": "tp",
+   "tri": "priority",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0139",
+   "title": "Hugging Face, an open-source AI and machine learning platform used by more than 50,000 organizations, discloses that attackers gained access to internal datasets and credentials after breaching its production infrastructure using an autonomous AI agent system, BleepingComputer reports.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/hugging-face-breach-autonomous-ai-agent-system-internal-datasets-credentials/",
    "linked": true
   },
   {
@@ -1716,9 +1728,9 @@
    "scope": "third-party risk · vendor software & supply chain",
    "watch": "Vendor tools under active attack, software-supply-chain compromises aimed at financial applications, and vendor incident disclosures.",
    "opened": "July 2026",
-   "ver": "v6",
-   "verRange": "v1–v6",
-   "asOf": "July 17, 2026",
+   "ver": "v7",
+   "verRange": "v1–v7",
+   "asOf": "July 20, 2026",
    "p1": "One vendor-channel exploit is confirmed this window: SimpleHelp, a remote-support tool, carries an authentication-bypass flaw on CISA’s known-exploited list — in a vulnerable configuration, a remote, unauthenticated attacker can log in with a forged token.",
    "p1Sup": "1",
    "p2": "The rest of the vendor picture clusters around the software supply chain: a claimed breach at consulting firm Accenture said to involve source code and encryption keys, and malicious look-alike software kits for the Paysafe, Skrill, and Neteller payment applications on public code registries. Separately, Ernst & Young — one of the world’s four largest auditing and professional-services firms — is notifying customers of a data breach after its own support-ticket system was compromised, with documents containing client tax information among what the tickets may have held.",
@@ -1727,6 +1739,15 @@
    "assessSup": "1",
    "conf": "moderate confidence",
    "events": [
+    {
+     "date": "Jul 20, 26",
+     "st": "confirmed",
+     "ver": "v7",
+     "id": "L-0139",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/security/hugging-face-breach-autonomous-ai-agent-system-internal-datasets-credentials/",
+     "line": "Hugging Face, an open-source AI and machine learning platform used by more than 50,000 organizations, discloses that attackers gained access to internal datasets and credentials after breaching its production infrastructure using an autonomous AI agent system, BleepingComputer reports."
+    },
     {
      "date": "Jul 17, 26",
      "st": "confirmed",
@@ -1877,6 +1898,11 @@
      "n": "10",
      "text": "BleepingComputer — Ernst & Young discloses data breach via third-party support-ticket system, Jul 17, 2026",
      "url": "https://www.bleepingcomputer.com/news/security/ernst-and-young-discloses-data-breach-after-support-system-hack/"
+    },
+    {
+     "n": "11",
+     "text": "BleepingComputer — Hugging Face breach via autonomous AI agent system, Jul 20, 2026",
+     "url": "https://www.bleepingcomputer.com/news/security/hugging-face-breach-autonomous-ai-agent-system-internal-datasets-credentials/"
     }
    ],
    "related": [
@@ -3582,6 +3608,14 @@
    "line": "Microsoft is working to fix a known issue affecting Windows Server Update Services (WSUS) servers, which has caused synchronization problems for more than a week, BleepingComputer reports.",
    "src": "BleepingComputer",
    "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-working-to-fix-wsus-server-sync-delays-and-timeouts/"
+  },
+  {
+   "d": "2026-07-20",
+   "p": "tp",
+   "id": "L-0139",
+   "line": "Hugging Face, an open-source AI and machine learning platform used by more than 50,000 organizations, discloses that attackers gained access to internal datasets and credentials after breaching its production infrastructure using an autonomous AI agent system, BleepingComputer reports.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/security/hugging-face-breach-autonomous-ai-agent-system-internal-datasets-credentials/"
   }
  ],
  "takeaways": [
@@ -3911,7 +3945,7 @@
    {
     "no": "8",
     "date": "Mon, Jul 20, 2026",
-    "confirmed": "9",
+    "confirmed": "10",
     "pending": "0",
     "flash": "1",
     "linked": true
