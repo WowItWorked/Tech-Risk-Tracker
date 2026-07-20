@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-20T14:11:00-04:00",
+    "generatedAt": "2026-07-20T15:12:00-04:00",
     "issueNo": 8,
-    "recordHash": "eccae5a",
+    "recordHash": "388c39d",
     "windowLabel": "June 9 – July 20, 2026",
     "nextWeekly": "Fri, Jul 24",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "26 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed); the European Banking Authority's feed timed out with no bytes received on repeated attempts (HTTP 000, a connection-level failure rather than a 403/404), counted as the one feed failure this run — well short of the runbook's \"fewer than half\" threshold. Selection window: 2 hours before this run's prior `generatedAt` (13:13:00 ET), so candidates are items published since ~11:13 ET / 15:13 UTC. The CISA Known Exploited Vulnerabilities (KEV) catalog stayed at `catalogVersion` 2026.07.16 (1,647 entries) — no new additions. NIST's feed again returned an empty channel (known behavior, not a failure). Anthropic's page carried no new item beyond “Rare disease research grants” (Jul 16), already excluded in the prior run. FinCEN's newest dated item remains Jun 30; ENISA's newest dated item remains Jul 14; ICO's page returned the same JavaScript-rendered “Loading...” shell seen in every prior run (not counted as a feed failure). DOJ's current 25 entries were reviewed directly (unreliable placeholder noon-UTC `pubDate`, per established practice); one item was admitted — a Georgia man sentenced to 6 years for a $1.7 million business email scheme in which he illegally accessed victim entities' email accounts to impersonate their vendors, a stated technology-enabled fraud mechanism (not a bare fraud count), admitted to the fraud pillar on the same basis as L-0078's business email compromise (BEC) admission and the pillar's other named-mechanism DOJ sentencings. DOJ's “United States Seizes More than 1,000 Internet Domains Used to Illegally Stream World Cup 2026 Matches” and The Record's matching coverage of the same seizure were excluded — a streaming-piracy domain seizure with no financial-sector or technology-risk-pillar nexus stated, the same disposition already reached for this story in the 13:13 ET run. The Record's “Hackers were inside South Korea's diplomat training system for 9 months” reappeared and was excluded again on the same basis as the prior run (a foreign ministry training-system breach with no bank, financial institution, or technology-risk mechanism stated). BleepingComputer's “New HollowGraph malware uses Microsoft Graph for stealthy C2 comms” was excluded — the fetched article states the campaign, built on the Cavern C2 framework, is “focused on organizations in Israel, pointing to a targeted attack for espionage purposes,” with at least 12 systems infected; a narrow nation-state espionage campaign against Israeli entities, not a broadly exploitable enterprise-software flaw and no financial-sector nexus stated. NOAA NHC's Tropical Depression Two produced a new Intermediate Advisory Number 5A (100 PM CDT) forecasting the depression becoming a tropical storm later Monday, but the advisory's own “CHANGES WITH THIS ADVISORY: None” line confirms no new or expanded watches/warnings beyond the Storm Surge Watch and Tropical Storm Watch already recorded as L-0141 — a forecast-intensity update tied to the same already-recorded advisory cycle, not separately admitted, the same disposition applied to the local-station statements excluded in the 13:13 ET run; three further NOAA graphics/summary products carrying the same advisory content were likewise not separately admitted.",
-    "lastRun": "2026-07-20T14:11:00-04:00"
+    "feedNote": "All 27 allowlisted feeds returned 200 (FTC 403’d the descriptive User-Agent and was retried with the standard-browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed; the European Banking Authority’s feed, which timed out in the prior run, returned 200 this run). Selection window: 2 hours before this run’s prior `generatedAt` (14:11:00 ET), so candidates are items published since ~12:11 ET / 16:11 UTC. The CISA Known Exploited Vulnerabilities (KEV) catalog stayed at `catalogVersion` 2026.07.16 (1,647 entries) — no new additions. NIST’s feed again returned an empty channel (known behavior, not a failure). Anthropic’s page carried no new item beyond “Rare disease research grants” (Jul 16), already excluded in prior runs. FinCEN’s newest dated item remains Jun 30; ENISA’s newest dated item remains Jul 14; ICO’s page returned the same JavaScript-rendered “Loading...” shell seen in every prior run (not counted as a feed failure). DOJ’s current 25 entries are unchanged from the prior (14:11 ET) run’s direct review (unreliable placeholder noon-UTC `pubDate`, per established practice) — no new entries, and the already-admitted Georgia business-email-scheme sentencing (L-0143) is the only tech-risk-relevant item among them; the remaining 24 (arson, firearms, drug trafficking, child exploitation, immigration, a kidnapping standoff, a mid-year prosecutions report, and similar) name no bank, financial institution, or technology-risk mechanism. One new item was admitted:\n- **L-0144** (cyber, routine): Dark Reading reports that criminals are combining fileless techniques with detection-evading malware loaders — dubbed “The TFF Trap” — to deliver remote-access trojans and information-stealing malware, including Agent Tesla, Remcos, XWorm, and Best Private Logger, through business email compromise (BEC) phishing. The RSS `description` field supplied a usable 27-word verbatim excerpt directly. Admitted to the cyber pillar: a named malware-delivery technique targeting BEC phishing, the sector’s leading fraud vector, from an allowlisted T2 source. Triaged **routine**: a technique/trend report naming no specific victim, confirmed campaign scale, or vendor advisory, consistent with L-0137’s ACR Stealer admission.\nNot re-admitted (already on record or already excluded, reappearing in this run’s 2-hour overlap window — 2 items published before the prior run’s close): BleepingComputer’s “New HollowGraph malware uses Microsoft Graph for stealthy C2 comms” and The Record’s “More than 1,000 domains illegally streaming World Cup games seized, DOJ says” — both already excluded in the prior (14:11 ET) run on the same grounds (HollowGraph: a narrow nation-state espionage campaign against Israeli entities with no financial-sector nexus stated; the World Cup domain seizure: a streaming-piracy story with no financial-sector or technology-risk-pillar nexus stated). NOAA NHC’s Tropical Depression Two Intermediate Public Advisory Number 5A and its accompanying Tropical Weather Outlook, Summary, and graphics products (all published 13:27–13:49 ET, before the prior run’s 14:11 ET close) reappeared in this run’s 2-hour overlap window — the same advisory cycle already reviewed and logged in the prior run, with Advisory 5A’s own “CHANGES WITH THIS ADVISORY: None” line confirming the Storm Surge Watch and Tropical Storm Watch already recorded as L-0141 remain unchanged — not separately admitted, the same disposition already reached. Excluded at the relevance gate (EDITORIAL §3, “when in doubt, exclude” — 1 newly reviewed item): The Record’s “India says allegedly leaked nuclear plant files pose no safety risk” — the fetched excerpt states Indian officials confirmed the allegedly leaked Kudankulam Nuclear Power Plant documents “do not contain information pertaining to safety or security,” a nuclear-facility story naming no bank, financial institution, or technology-risk-pillar mechanism.",
+    "lastRun": "2026-07-20T15:12:00-04:00"
   },
   "lead": {
     "head": "Leading stories: attackers exploiting a critical flaw in the ServiceNow AI Platform; researchers tracing active exploitation of SonicWall’s SMA1000 appliances back to late June, with seven customers confirmed compromised; and Hugging Face disclosing a breach of its internal datasets and credentials carried out using an autonomous AI agent system",
-    "dek": "Today’s edition draws on the fourteen items recorded so far. Every item links to its source.",
+    "dek": "Today’s edition draws on the fifteen items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -54,6 +54,18 @@
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-20T18:30:22Z",
+      "p": "cyber",
+      "tri": "routine",
+      "st": "confirmed",
+      "tier": "T2",
+      "id": "L-0144",
+      "title": "Criminals are combining fileless techniques with detection-evading malware loaders — dubbed “The TFF Trap” — to deliver remote-access trojans and information-stealing malware, including Agent Tesla, Remcos, XWorm, and Best Private Logger, through business email compromise (BEC) phishing, Dark Reading reports.",
+      "src": "Dark Reading",
+      "srcUrl": "https://www.darkreading.com/endpoint-security/attackers-combo-evasion-tactics-bec-phishing",
+      "linked": true
+    },
     {
       "ts": "2026-07-20T15:10:51Z",
       "p": "cyber",
@@ -467,8 +479,8 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v58",
-      "verRange": "v1–v58",
+      "ver": "v59",
+      "verRange": "v1–v59",
       "asOf": "July 20, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
@@ -1071,6 +1083,15 @@
           "src": "Cybersecurity Dive",
           "srcUrl": "https://www.cybersecuritydive.com/news/researchers-sonicwall-sma1000-exploitation-june/825654/",
           "line": "Cybersecurity Dive reports that two critical vulnerabilities in SonicWall's SMA1000 appliances have been actively exploited as zero-days since late June, according to cybersecurity firm Volexity, with multiple threat actors — including the INC ransomware group — targeting vulnerable firewall systems; researchers at Huntress confirmed seven customers have been impacted."
+        },
+        {
+          "date": "Jul 20, 26",
+          "st": "confirmed",
+          "ver": "v59",
+          "id": "L-0144",
+          "src": "Dark Reading",
+          "srcUrl": "https://www.darkreading.com/endpoint-security/attackers-combo-evasion-tactics-bec-phishing",
+          "line": "Criminals are combining fileless techniques with detection-evading malware loaders — dubbed “The TFF Trap” — to deliver remote-access trojans and information-stealing malware, including Agent Tesla, Remcos, XWorm, and Best Private Logger, through business email compromise (BEC) phishing, Dark Reading reports."
         }
       ],
       "sources": [
@@ -3752,6 +3773,14 @@
       "line": "A Georgia man is sentenced to 6 years in prison for stealing $1.7 million through a business email scheme in which he illegally accessed victim entities’ email accounts to identify their vendors, then posed as those vendors in emails requesting payments, the Department of Justice reports.",
       "src": "DOJ press release",
       "srcUrl": "https://www.justice.gov/usao-ndoh/pr/georgia-man-sentenced-6-years-prison-stealing-17-million-through-business-email-scheme"
+    },
+    {
+      "d": "2026-07-20",
+      "p": "cyber",
+      "id": "L-0144",
+      "line": "Criminals are combining fileless techniques with detection-evading malware loaders — dubbed “The TFF Trap” — to deliver remote-access trojans and information-stealing malware, including Agent Tesla, Remcos, XWorm, and Best Private Logger, through business email compromise (BEC) phishing, Dark Reading reports.",
+      "src": "Dark Reading",
+      "srcUrl": "https://www.darkreading.com/endpoint-security/attackers-combo-evasion-tactics-bec-phishing"
     }
   ],
   "takeaways": [
@@ -4090,7 +4119,7 @@
       {
         "no": "8",
         "date": "Mon, Jul 20, 2026",
-        "confirmed": "14",
+        "confirmed": "15",
         "pending": "0",
         "flash": "1",
         "linked": true
