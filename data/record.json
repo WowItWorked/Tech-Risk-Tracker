@@ -2,18 +2,18 @@
  "meta": {
   "edition": "Live edition — record opened July 9, 2026",
   "startedOn": "2026-07-09",
-  "generatedAt": "2026-07-20T06:25:00-04:00",
+  "generatedAt": "2026-07-20T07:15:00-04:00",
   "issueNo": 8,
-  "recordHash": "edabfeb",
+  "recordHash": "6724dce",
   "windowLabel": "June 9 – July 20, 2026",
   "nextWeekly": "Fri, Jul 24",
   "nextMonthly": "Mon, Aug 3",
-  "feedNote": "26 of 27 allowlisted feeds returned (Dark Reading's RSS returned a genuine 404 with both the descriptive and standard-browser User-Agent, confirmed via a direct HEAD request — not a block, the feed path itself is gone — counted as the one failed feed, well above the half-of-feeds failure threshold). FTC's feed 403'd for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook's fallback, returning 200 (counted OK, not failed). Eight new items open today's edition (issue No. 8): a DOJ press release on a former bank chief financial officer (Aaron T. Luneke) sentenced to 36 months for a $4.3 million bank-fraud scheme (insider pillar); a DOJ press release on a Honduran national (Carlos Banegas-Contreras) sentenced to 27 months for a fake-ID check-cashing bank-fraud conspiracy (fraud pillar); the National Hurricane Center's public advisory on Tropical Depression Two, which prompted a tropical storm watch for the Alabama Gulf coast — the first active Atlantic system since the record opened, superseding the standing quiet-season entry (resilience pillar, p2/assess updated); the Bank of England's Prudential Regulation Authority (PRA) fining HDI Global SE £4,165,000 for inaccurate Financial Services Compensation Scheme (FSCS) data (data pillar, p2 updated; the RSS description was a single sentence, so the allowlisted press release page was fetched for the full penalty notice, confirming HDI Global SE's insurance-firm identity and the due-skill-care-and-diligence failure finding); and four BleepingComputer items — active exploitation of a critical ServiceNow AI Platform flaw (CVE-2026-6875, triaged flash; the RSS description was thin, so the article page was fetched to confirm the July 13 patch date for self-hosted instances), a 7-Zip 26.02 fix for a remote-code-execution flaw, public exploits released for WordPress Core's “wp2shell” RCE flaws, and Microsoft's warning of a surge in ACR Stealer credential-theft malware against its enterprise customers (all cyber pillar). DOJ's current 25 entries were reviewed directly (its feed carries an unreliable placeholder noon-UTC pubDate): the two admitted items above were the only ones with a stated bank or financial-institution nexus; the remaining 23 (tax evasion, methamphetamine and drug trafficking, firearms, immigration, sexual-abuse and child-exploitation offenses, arson, SNAP-benefits and health-care-program fraud, and a police-chief bribery case) stated no financial-sector technology-risk nexus, including a wire-fraud sentencing (Omaha) whose excerpt named no institution or mechanism beyond the bare charge. BleepingComputer's “Hackers abuse ViPNet software to target Russian govt agencies” (no financial-sector nexus), “The Future of Age Verification: Your Face Never Leaves Your Device” (a feature/product piece, not a discrete event), and “Abbott probes two cyber incidents amid extortion claims” (the same disposition reached for this story in prior runs — no financial-sector nexus) were excluded. Cybersecurity Dive's three sponsored placements (“Your attack surface is bigger than you think,” “How agentic endpoint security shuts down IDE-based supply chain attacks,” “The secret problem in AI infrastructure”) were excluded as vendor-sponsored content, not reported events. Cybersecurity Dive's and The Record's Abbott and Coca-Cola/Fairlife stories reappearing in this run's wider 12-hour lookback window were not re-admitted: the same dispositions already reached in the July 17 17:10 ET run (no financial-sector nexus for Abbott; same underlying incident as the already-recorded L-0119 for Coca-Cola/Fairlife). The European Data Protection Board's “EDPB calls for legal basis for cross-regulatory information sharing” and The Record's “Zelensky appoints Ukraine's acting security service chief as acting defense minister” reappeared in this run's window with identical URLs to items already excluded at the relevance gate in the July 17 11:17/12:05 ET runs — same disposition, no new substance. The European Banking Authority's “EBA E-mail alert 17 July, 2026” was excluded again as an unreadable newsletter-wrapper stub. Both new-to-window European Central Bank items (a lending-conditions survey and a digital-euro speech listing) carried no `<description>` in the feed — no excerpt, no admission (EDITORIAL §2). OpenAI's “A scorecard for the AI age” was excluded: a product/ROI blog post with no risk or governance angle stated, the same disposition reached for prior Anthropic and OpenAI product-launch posts. The FCA's “Prosper Capital LLP enters creditors' voluntary liquidation” was excluded: a firm-insolvency notice with no cybersecurity, fraud, AI, third-party, resilience, data, physical-security, or insider-threat content stated. The CISA Known Exploited Vulnerabilities (KEV) catalog stayed at catalogVersion 2026.07.16 (1,647 entries, no new additions). NIST's feed again returned an empty channel (known behavior, not a failure). Nacha's feed again required stripping a non-XML theme-debug preamble before the `<rss>` root before it would parse; nothing fell in-window once parsed. The page-checked sources were read directly: Anthropic's newest dated item remains Jul 14; FinCEN's newest dated item remains Jun 30; ICO's fetched page again returned no readable, dated news-list content; ENISA's newest dated item remains Jul 14 — none in window.",
-  "lastRun": "2026-07-20T06:25:00-04:00"
+  "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior `generatedAt` (06:25:00 ET), so candidates are items published since ~04:25 ET / 08:25 UTC. One new item was admitted: BleepingComputer reports Microsoft is working to fix a known issue affecting Windows Server Update Services (WSUS) servers that has caused synchronization problems for more than a week (cyber pillar, routine triage) — a patch-management-infrastructure disruption relevant to any enterprise, including banks, relying on WSUS for on-premises update deployment. BleepingComputer’s “Windows KB5121767 OOB update fixes shutdowns on some Dell PCs” was excluded at the relevance gate: a narrow hardware-specific shutdown bug on some Dell PCs, with no financial-sector nexus or enterprise-wide patch-management angle stated beyond the single vendor’s hardware. Cybersecurity Dive’s three sponsored placements (“Your attack surface is bigger than you think,” “How agentic endpoint security shuts down IDE-based supply chain attacks,” “The secret problem in AI infrastructure”) reappeared in this run’s window and were excluded again as vendor-sponsored content, the same disposition reached in the day-opening run. Not re-admitted (already on record, reappearing in this run’s window): BleepingComputer’s “Critical ServiceNow code execution flaw now exploited in attacks,” identical URL to the already-recorded L-0134; the Bank of England’s HDI Global SE fine press release, identical URL to the already-recorded L-0133; NOAA NHC’s Tropical Depression Two “Public Advisory Number 4” (identical URL/timestamp to the already-recorded L-0132) and its companion “Summary,” Forecast Advisory, Forecast Discussion, Wind Speed Probabilities, and Graphics products for the same advisory cycle — all the same storm event already admitted as L-0132, not separately admitted. The CISA Known Exploited Vulnerabilities (KEV) catalog stayed at catalogVersion 2026.07.16 (1,647 entries, no new additions). NIST’s feed again returned an empty channel (known behavior, not a failure).",
+  "lastRun": "2026-07-20T07:15:00-04:00"
  },
  "lead": {
   "head": "Leading stories: attackers exploiting a critical flaw in the ServiceNow AI Platform; the Bank of England fining HDI Global SE £4,165,000 for inaccurate regulatory data; and a federal jury convicting a former bank CFO of a $4.3 million bank-fraud scheme",
-  "dek": "Today’s edition draws on the eight items recorded so far. Every item links to its source.",
+  "dek": "Today’s edition draws on the nine items recorded so far. Every item links to its source.",
   "items": [
    {
     "n": "1",
@@ -76,6 +76,18 @@
    "title": "Carlos Banegas-Contreras, an illegal alien from Honduras, is sentenced to 27 months in prison for conspiring to use fake identification cards to cash 178 fraudulent paychecks totaling $299,474 at three check-cashing businesses and five bank branches, the Department of Justice reports.",
    "src": "DOJ press release",
    "srcUrl": "https://www.justice.gov/usao-edok/pr/illegal-alien-honduras-sentenced-27-months-prison-2023-bank-fraud-conspiracy",
+   "linked": true
+  },
+  {
+   "ts": "2026-07-20T10:47:28Z",
+   "p": "cyber",
+   "tri": "routine",
+   "st": "confirmed",
+   "tier": "T2",
+   "id": "L-0138",
+   "title": "Microsoft is working to fix a known issue affecting Windows Server Update Services (WSUS) servers, which has caused synchronization problems for more than a week, BleepingComputer reports.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-working-to-fix-wsus-server-sync-delays-and-timeouts/",
    "linked": true
   },
   {
@@ -395,8 +407,8 @@
    "scope": "cybersecurity · exploitation & exposure",
    "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
    "opened": "July 2026",
-   "ver": "v56",
-   "verRange": "v1–v56",
+   "ver": "v57",
+   "verRange": "v1–v57",
    "asOf": "July 20, 2026",
    "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
    "p1Sup": "1, 3, 10",
@@ -981,6 +993,15 @@
      "src": "Dark Reading",
      "srcUrl": "https://www.darkreading.com/vulnerabilities-threats/inc-ransomware-exploits-sonicwall-sma-zero-days",
      "line": "Dark Reading reports that the ransomware group “Inc” is exploiting two zero-day flaws in SonicWall’s SMA mobile access appliances that, when chained together, give criminals root-level control of the devices."
+    },
+    {
+     "date": "Jul 20, 26",
+     "st": "confirmed",
+     "ver": "v57",
+     "id": "L-0138",
+     "src": "BleepingComputer",
+     "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-working-to-fix-wsus-server-sync-delays-and-timeouts/",
+     "line": "Microsoft is working to fix a known issue affecting Windows Server Update Services (WSUS) servers, which has caused synchronization problems for more than a week, BleepingComputer reports."
     }
    ],
    "sources": [
@@ -1248,6 +1269,11 @@
      "n": "53",
      "text": "BleepingComputer — ServiceNow AI Platform flaw (CVE-2026-6875) actively exploited, Jul 20, 2026",
      "url": "https://www.bleepingcomputer.com/news/security/critical-servicenow-code-execution-flaw-now-exploited-in-attacks/"
+    },
+    {
+     "n": "54",
+     "text": "BleepingComputer — Windows Server Update Services (WSUS) sync delays, Jul 20, 2026",
+     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-working-to-fix-wsus-server-sync-delays-and-timeouts/"
     }
    ],
    "related": [
@@ -3548,6 +3574,14 @@
    "line": "Microsoft reports a surge in attacks using the ACR Stealer malware to steal browser-stored passwords, authentication tokens, and sensitive documents from its enterprise customers, BleepingComputer reports.",
    "src": "BleepingComputer",
    "srcUrl": "https://www.bleepingcomputer.com/news/security/microsoft-warns-of-surge-in-acr-stealer-attacks-on-customers/"
+  },
+  {
+   "d": "2026-07-20",
+   "p": "cyber",
+   "id": "L-0138",
+   "line": "Microsoft is working to fix a known issue affecting Windows Server Update Services (WSUS) servers, which has caused synchronization problems for more than a week, BleepingComputer reports.",
+   "src": "BleepingComputer",
+   "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-working-to-fix-wsus-server-sync-delays-and-timeouts/"
   }
  ],
  "takeaways": [
@@ -3877,7 +3911,7 @@
    {
     "no": "8",
     "date": "Mon, Jul 20, 2026",
-    "confirmed": "8",
+    "confirmed": "9",
     "pending": "0",
     "flash": "1",
     "linked": true
