@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-20T13:13:00-04:00",
+    "generatedAt": "2026-07-20T14:11:00-04:00",
     "issueNo": 8,
-    "recordHash": "171baff",
+    "recordHash": "eccae5a",
     "windowLabel": "June 9 – July 20, 2026",
     "nextWeekly": "Fri, Jul 24",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior `generatedAt` (11:12:00 ET), so candidates are items published since ~09:12 ET / 13:12 UTC. One new item was admitted: Cybersecurity Dive’s “Researchers trace SonicWall SMA1000 exploitation to late June,” reporting a Volexity finding that two already-recorded, actively exploited SonicWall SMA1000 zero-days (CVE-2026-15409, CVE-2026-15410; first recorded as L-0079 on Jul 14 and updated as L-0129 on Jul 17) have in fact been under exploitation since June 22, with a threat actor tracked as UTA0533, and that Huntress has confirmed seven customers already compromised — a material deepening of the already-recorded incident’s scope and timeline, admitted as its own item on the same standard applied to the NOAA advisory updates (L-0132→L-0141) rather than treated as a routine reappearance. Triaged priority (a major-vendor-incident-scale confirmation of victims, not a fresh active-exploitation disclosure, which is why it does not draw the flash tier already held by L-0134). The CISA Known Exploited Vulnerabilities (KEV) catalog stayed at `catalogVersion` 2026.07.16 (1,647 entries) — no new additions. NIST’s feed again returned an empty channel (known behavior, not a failure). Anthropic’s page carried one new item since the last run (“Rare disease research grants,” Jul 16, Announcements category) — excluded at the relevance gate as philanthropic funding news with no AI-risk, regulatory, or technology-risk content stated. FinCEN’s newest dated item remains Jun 30; ENISA’s newest dated item remains Jul 14; ICO’s page returned the same JavaScript-rendered “Loading...” shell seen in every prior run (not counted as a feed failure). DOJ’s current 25 entries were reviewed directly (unreliable placeholder noon-UTC `pubDate`, per established practice); all 25 were excluded at the relevance gate — immigration, drug-trafficking, firearms, child exploitation, a kidnapping/standoff case, mail theft, citizenship revocation, a streaming-piracy domain seizure, and bare wire-fraud and tax-fraud counts (two convictions and one sentencing) naming no bank, financial institution, or technology-risk mechanism in their descriptions, the same disposition already reached for “Omaha Woman Sentenced to 18 Months for Wire Fraud” in the day-opening run. NOAA NHC carried no new advisory (still Number 5, the same cycle already recorded as L-0141) plus three newly appearing “Local Statement” text products for Tallahassee, New Orleans/Baton Rouge, and Mobile/Pensacola — routine local-station statements tied to the same already-recorded advisory, not separately admitted, matching the disposition applied to the advisory’s other companion products. The Record’s “Hackers were inside South Korea's diplomat training system for 9 months” was excluded — a foreign ministry training-system breach with no bank, financial institution, or technology-risk mechanism stated, the same disposition reached for Romania’s land-registry incident in the prior run. BleepingComputer’s “An AI SOC Evaluation Guide for Security Leaders,” The Record’s Romania land-registry and Craneware-breach coverage, and Cybersecurity Dive’s Craneware-breach and three sponsored placements all reappeared in this run’s window at their already-excluded URLs; BleepingComputer’s Hugging Face and WSUS stories and Dark Reading’s “Cybersecurity Keeps Events ‘Uneventful’” reappeared at their already-recorded or already-excluded URLs.",
-    "lastRun": "2026-07-20T13:13:00-04:00"
+    "feedNote": "26 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed); the European Banking Authority's feed timed out with no bytes received on repeated attempts (HTTP 000, a connection-level failure rather than a 403/404), counted as the one feed failure this run — well short of the runbook's \"fewer than half\" threshold. Selection window: 2 hours before this run's prior `generatedAt` (13:13:00 ET), so candidates are items published since ~11:13 ET / 15:13 UTC. The CISA Known Exploited Vulnerabilities (KEV) catalog stayed at `catalogVersion` 2026.07.16 (1,647 entries) — no new additions. NIST's feed again returned an empty channel (known behavior, not a failure). Anthropic's page carried no new item beyond “Rare disease research grants” (Jul 16), already excluded in the prior run. FinCEN's newest dated item remains Jun 30; ENISA's newest dated item remains Jul 14; ICO's page returned the same JavaScript-rendered “Loading...” shell seen in every prior run (not counted as a feed failure). DOJ's current 25 entries were reviewed directly (unreliable placeholder noon-UTC `pubDate`, per established practice); one item was admitted — a Georgia man sentenced to 6 years for a $1.7 million business email scheme in which he illegally accessed victim entities' email accounts to impersonate their vendors, a stated technology-enabled fraud mechanism (not a bare fraud count), admitted to the fraud pillar on the same basis as L-0078's business email compromise (BEC) admission and the pillar's other named-mechanism DOJ sentencings. DOJ's “United States Seizes More than 1,000 Internet Domains Used to Illegally Stream World Cup 2026 Matches” and The Record's matching coverage of the same seizure were excluded — a streaming-piracy domain seizure with no financial-sector or technology-risk-pillar nexus stated, the same disposition already reached for this story in the 13:13 ET run. The Record's “Hackers were inside South Korea's diplomat training system for 9 months” reappeared and was excluded again on the same basis as the prior run (a foreign ministry training-system breach with no bank, financial institution, or technology-risk mechanism stated). BleepingComputer's “New HollowGraph malware uses Microsoft Graph for stealthy C2 comms” was excluded — the fetched article states the campaign, built on the Cavern C2 framework, is “focused on organizations in Israel, pointing to a targeted attack for espionage purposes,” with at least 12 systems infected; a narrow nation-state espionage campaign against Israeli entities, not a broadly exploitable enterprise-software flaw and no financial-sector nexus stated. NOAA NHC's Tropical Depression Two produced a new Intermediate Advisory Number 5A (100 PM CDT) forecasting the depression becoming a tropical storm later Monday, but the advisory's own “CHANGES WITH THIS ADVISORY: None” line confirms no new or expanded watches/warnings beyond the Storm Surge Watch and Tropical Storm Watch already recorded as L-0141 — a forecast-intensity update tied to the same already-recorded advisory cycle, not separately admitted, the same disposition applied to the local-station statements excluded in the 13:13 ET run; three further NOAA graphics/summary products carrying the same advisory content were likewise not separately admitted.",
+    "lastRun": "2026-07-20T14:11:00-04:00"
   },
   "lead": {
     "head": "Leading stories: attackers exploiting a critical flaw in the ServiceNow AI Platform; researchers tracing active exploitation of SonicWall’s SMA1000 appliances back to late June, with seven customers confirmed compromised; and Hugging Face disclosing a breach of its internal datasets and credentials carried out using an autonomous AI agent system",
-    "dek": "Today’s edition draws on the thirteen items recorded so far. Every item links to its source.",
+    "dek": "Today’s edition draws on the fourteen items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -112,6 +112,18 @@
       "title": "Carlos Banegas-Contreras, an illegal alien from Honduras, is sentenced to 27 months in prison for conspiring to use fake identification cards to cash 178 fraudulent paychecks totaling $299,474 at three check-cashing businesses and five bank branches, the Department of Justice reports.",
       "src": "DOJ press release",
       "srcUrl": "https://www.justice.gov/usao-edok/pr/illegal-alien-honduras-sentenced-27-months-prison-2023-bank-fraud-conspiracy",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-20T12:00:00Z",
+      "p": "fraud",
+      "tri": "routine",
+      "st": "confirmed",
+      "tier": "T1",
+      "id": "L-0143",
+      "title": "A Georgia man is sentenced to 6 years in prison for stealing $1.7 million through a business email scheme in which he illegally accessed victim entities’ email accounts to identify their vendors, then posed as those vendors in emails requesting payments, the Department of Justice reports.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-ndoh/pr/georgia-man-sentenced-6-years-prison-stealing-17-million-through-business-email-scheme",
       "linked": true
     },
     {
@@ -1386,8 +1398,8 @@
       "scope": "fraud · AML rulemaking & scam patterns",
       "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
       "opened": "July 2026",
-      "ver": "v19",
-      "verRange": "v1–v19",
+      "ver": "v20",
+      "verRange": "v1–v20",
       "asOf": "July 20, 2026",
       "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22).",
       "p1Sup": "1, 3",
@@ -1397,6 +1409,15 @@
       "assessSup": "2, 3",
       "conf": "moderate confidence",
       "events": [
+        {
+          "date": "Jul 20, 26",
+          "st": "confirmed",
+          "ver": "v20",
+          "id": "L-0143",
+          "src": "DOJ press release",
+          "srcUrl": "https://www.justice.gov/usao-ndoh/pr/georgia-man-sentenced-6-years-prison-stealing-17-million-through-business-email-scheme",
+          "line": "A Georgia man is sentenced to 6 years in prison for stealing $1.7 million through a business email scheme in which he illegally accessed victim entities’ email accounts to identify their vendors, then posed as those vendors in emails requesting payments, the Department of Justice reports."
+        },
         {
           "date": "Jul 20, 26",
           "st": "confirmed",
@@ -1742,6 +1763,11 @@
           "n": "22",
           "text": "FBI IC3 — scammers impersonating IC3 PSA (AI-generated video/spoofed-site scheme), Jul 20, 2026",
           "url": "https://www.ic3.gov/PSA/2026/PSA260720"
+        },
+        {
+          "n": "23",
+          "text": "DOJ — Georgia man sentenced, $1.7M business email scheme, Jul 20, 2026",
+          "url": "https://www.justice.gov/usao-ndoh/pr/georgia-man-sentenced-6-years-prison-stealing-17-million-through-business-email-scheme"
         }
       ],
       "related": [
@@ -3718,6 +3744,14 @@
       "line": "Cybersecurity Dive reports that two critical vulnerabilities in SonicWall's SMA1000 appliances have been actively exploited as zero-days since late June, according to cybersecurity firm Volexity, with multiple threat actors — including the INC ransomware group — targeting vulnerable firewall systems; researchers at Huntress confirmed seven customers have been impacted.",
       "src": "Cybersecurity Dive",
       "srcUrl": "https://www.cybersecuritydive.com/news/researchers-sonicwall-sma1000-exploitation-june/825654/"
+    },
+    {
+      "d": "2026-07-20",
+      "p": "fraud",
+      "id": "L-0143",
+      "line": "A Georgia man is sentenced to 6 years in prison for stealing $1.7 million through a business email scheme in which he illegally accessed victim entities’ email accounts to identify their vendors, then posed as those vendors in emails requesting payments, the Department of Justice reports.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-ndoh/pr/georgia-man-sentenced-6-years-prison-stealing-17-million-through-business-email-scheme"
     }
   ],
   "takeaways": [
@@ -4056,7 +4090,7 @@
       {
         "no": "8",
         "date": "Mon, Jul 20, 2026",
-        "confirmed": "13",
+        "confirmed": "14",
         "pending": "0",
         "flash": "1",
         "linked": true
