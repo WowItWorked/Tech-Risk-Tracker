@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-20T17:12:00-04:00",
+    "generatedAt": "2026-07-20T18:13:00-04:00",
     "issueNo": 8,
-    "recordHash": "be08765",
+    "recordHash": "f4dc31d",
     "windowLabel": "June 9 – July 20, 2026",
     "nextWeekly": "Fri, Jul 24",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "26 of 27 allowlisted feeds returned 200 (FTC 403’d the descriptive User-Agent and was retried with the standard-browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed); the European Banking Authority’s feed — which returned 200 in the prior run — timed out with no bytes received on repeated attempts this run (TLS handshake completed, then the connection stalled; HTTP 000), counted as the one feed failure this run, well short of the runbook’s “fewer than half” threshold. Selection window: 2 hours before this run’s prior `generatedAt` (15:12:00 ET), so candidates are items published since ~13:12 ET / 17:12 UTC. The CISA Known Exploited Vulnerabilities (KEV) catalog stayed at `catalogVersion` 2026.07.16 (1,647 entries) — no new additions. NIST’s feed again returned an empty channel (known behavior, not a failure). Anthropic’s page now dates its “Rare disease research grants” announcement Jul 20 (previously Jul 16) with no textual change — a science-grant announcement naming no bank, financial institution, or technology-risk mechanism, excluded again on the same grounds as prior runs. FinCEN’s newest dated item remains Jun 30; ENISA’s newest listed item remains its Frontier-AI podcast launch (already reviewed); ICO’s page returned the same JavaScript-rendered “Loading...” shell seen in every prior run (not counted as a feed failure). DOJ’s current 25 entries are unchanged from the prior (15:12 ET) run’s direct review (unreliable placeholder noon-UTC `pubDate`, per established practice) — no new entries, and the already-admitted Georgia business-email-scheme sentencing (L-0143) remains the only tech-risk-relevant item among them. One new item was admitted:\n- **L-0145** (ai, routine): Dark Reading reports that job pressures from AI adoption have led 26% of top security executives (CISOs) to consider leaving their position. The RSS `description` field supplied a usable 23-word verbatim excerpt directly. Admitted to the AI pillar: a workforce/governance strain caused by AI adoption inside security organizations, consistent with L-0071’s SANS AI-governance-gap admission. Triaged **routine**: a survey/trend finding naming no specific institution or incident.\nNot admitted (reviewed, excluded): Dark Reading’s “Remediating Vulnerabilities With LLMs: Inside Ivanti’s Automation Push” — the fetched excerpt describes a vendor CSO’s account of AI-assisted remediation efficacy with open questions on cost and human oversight, but states no risk event, flaw, or financial-sector nexus; a capability/efficacy feature, not a risk item, excluded per EDITORIAL §3 (“when in doubt, exclude”). The Record’s “Flock Safety kills acoustic system designed to detect ‘human distress’” — a license-plate-reader vendor’s decision to drop a voice-detection feature from its gunshot-detection product after community pushback; no bank, financial institution, or technology-risk-pillar mechanism stated, excluded at the relevance gate. Dark Reading’s “Attackers Combo Up Evasion Tactics for BEC Phishing” reappeared in this run’s 2-hour overlap window — already admitted as L-0144 in the prior run (same srcUrl), not re-admitted. BleepingComputer’s “New HollowGraph malware uses Microsoft Graph for stealthy C2 comms” and The Record’s “More than 1,000 domains illegally streaming World Cup games seized, DOJ says” and “India says allegedly leaked nuclear plant files pose no safety risk” all reappeared in the overlap window — each already excluded in the prior (15:12 ET) run on the same grounds, not re-reviewed further. NOAA NHC’s Tropical Depression Two produced Public Advisory Number 6 (4:00 PM CDT) and its accompanying Forecast Advisory, Forecast Discussion, Wind Speed Probabilities, and graphics products — Advisory 6’s own “CHANGES WITH THIS ADVISORY: None” line confirms the Storm Surge Watch and Tropical Storm Watch already recorded as L-0141 remain unchanged; not separately admitted, the same disposition already reached in prior runs.",
-    "lastRun": "2026-07-20T17:12:00-04:00"
+    "feedNote": "26 of 27 allowlisted feeds returned 200 (FTC 403’d the descriptive User-Agent and was retried with the standard-browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed); the European Banking Authority’s feed returned HTTP 502 on three attempts (a server-side error, not a timeout this time), counted as the one feed failure this run, well short of the runbook’s “fewer than half” threshold. Selection window: 2 hours before this run’s prior `generatedAt` (17:12:00 ET), so candidates are items published since ~15:12 ET / 19:12 UTC. The CISA Known Exploited Vulnerabilities (KEV) catalog stayed at `catalogVersion` 2026.07.16 (1,647 entries) — no new additions. NIST’s feed again returned an empty channel (known behavior, not a failure). Anthropic’s page still shows “Rare disease research grants” dated Jul 20 with no textual change — excluded again on the same grounds as prior runs. FinCEN’s newest dated item remains Jun 30; ENISA’s newest listed item remains Jul 14 (already reviewed); ICO’s page returned the same JavaScript-rendered “Loading...” shell seen in every prior run (not counted as a feed failure). DOJ’s current 25 entries were reviewed directly (unreliable placeholder noon-UTC `pubDate`, per established practice) — an entirely new set of 25 sentencing/charging entries versus the prior run, none naming a bank, financial institution, or technology-risk mechanism (individual investment fraud, wire fraud, check fraud, and similar cases with no tech-risk nexus stated); none admitted. Three new items were admitted, all from the cyber pillar:\n- **L-0146** (cyber, priority): BleepingComputer reports that the JadePuffer autonomous AI agent — previously linked to ransomware attacks via an exploited Langflow flaw — has been upgraded with new malware called EncForge that focuses on encrypting artificial intelligence assets, including training datasets, vector databases, and model checkpoints. The RSS `description` field supplied a usable verbatim excerpt directly. Triaged **priority**: a named threat actor's malware capability upgrade with no confirmed victim or sector-wide exploitation claim stated, consistent with prior malware-capability admissions.\n- **L-0147** (cyber, priority): BleepingComputer reports that researchers escaped the sandboxes in Cursor, Codex, Gemini CLI, and Antigravity by having the AI agent write files that trusted host tools later ran, resulting in multiple CVEs; patches have been issued, and Google downgraded two of the Antigravity findings. Triaged **priority**: a multi-vendor security flaw spanning four widely used AI coding tools, already patched.\n- **L-0148** (cyber, flash): Dark Reading reports that attackers are widely chaining together two flaws — CVE-2026-60137 and CVE-2026-63030, dubbed “WP2Shell” — to attack WordPress sites, barely three days after disclosure, threatening millions of sites with remote takeover. This is a continuation of the same wp2shell flaw already recorded as L-0136 (Jul 18, public exploits released); this report confirms the escalation to active mass exploitation. Triaged **flash**: active exploitation at sector-wide scale (“one of the largest attack surfaces on the Internet”), consistent with L-0134's ServiceNow flash admission.\nNot admitted (reviewed, excluded): Dark Reading’s “Remediating Vulnerabilities With LLMs: Inside Ivanti’s Automation Push” and The Record’s “Flock Safety kills acoustic system designed to detect ‘human distress’” both reappeared in this run’s 2-hour overlap window — both already excluded in the prior (17:12 ET) run on the same grounds, not re-reviewed further. NOAA NHC’s Tropical Depression Two Public Advisory Number 6 and its companion Forecast Advisory, Summary, Wind Speed Probabilities, Forecast Discussion, and graphics products (published 16:47–17:51 ET) reappeared or newly appeared in this run’s window — Advisory 6’s own “CHANGES WITH THIS ADVISORY: None” line, already confirmed in the prior run, means the Storm Surge Watch and Tropical Storm Watch already recorded as L-0141 remain unchanged; the later-published graphics are companion products for the same unchanged advisory cycle — not separately admitted.",
+    "lastRun": "2026-07-20T18:13:00-04:00"
   },
   "lead": {
-    "head": "Leading stories: attackers exploiting a critical flaw in the ServiceNow AI Platform; researchers tracing active exploitation of SonicWall’s SMA1000 appliances back to late June, with seven customers confirmed compromised; and Hugging Face disclosing a breach of its internal datasets and credentials carried out using an autonomous AI agent system",
-    "dek": "Today’s edition draws on the sixteen items recorded so far. Every item links to its source.",
+    "head": "Leading stories: attackers exploiting a critical flaw in the ServiceNow AI Platform; attackers widely exploiting critical WordPress flaws just days after disclosure, threatening millions of sites; and researchers tracing active exploitation of SonicWall’s SMA1000 appliances back to late June, with seven customers confirmed compromised",
+    "dek": "Today’s edition draws on the nineteen items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -30,6 +30,18 @@
       {
         "n": "2",
         "p": "cyber",
+        "tri": "flash",
+        "st": "confirmed",
+        "id": "L-0148",
+        "conf": "",
+        "text": "Dark Reading reports that attackers are widely chaining together two flaws — CVE-2026-60137 and CVE-2026-63030, dubbed “WP2Shell” — to attack WordPress sites, barely three days after disclosure, threatening millions of sites with remote takeover.",
+        "why": "Attackers are actively chaining together two newly disclosed WordPress flaws just days after they became public, threatening millions of WordPress-run sites with takeover — banks and vendors running WordPress should patch without delay.",
+        "srcText": "Dark Reading, Jul 20",
+        "srcUrl": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover"
+      },
+      {
+        "n": "3",
+        "p": "cyber",
         "tri": "priority",
         "st": "confirmed",
         "id": "L-0142",
@@ -38,22 +50,46 @@
         "why": "Cybersecurity Dive reports that SonicWall SMA1000 appliances have been under active, confirmed exploitation since late June, with Huntress researchers confirming seven customers already compromised — banks running these appliances should treat this as confirmed, active exploitation and check for signs of compromise without delay.",
         "srcText": "Cybersecurity Dive, Jul 20",
         "srcUrl": "https://www.cybersecuritydive.com/news/researchers-sonicwall-sma1000-exploitation-june/825654/"
-      },
-      {
-        "n": "3",
-        "p": "tp",
-        "tri": "priority",
-        "st": "confirmed",
-        "id": "L-0139",
-        "conf": "",
-        "text": "Hugging Face, an open-source AI and machine learning platform used by more than 50,000 organizations, discloses that attackers gained access to internal datasets and credentials after breaching its production infrastructure using an autonomous AI agent system, BleepingComputer reports.",
-        "why": "Hugging Face, an AI and machine learning platform used by more than 50,000 organizations, discloses that attackers gained access to internal datasets and credentials after breaching its production infrastructure using an autonomous AI agent system — a reminder to weigh vendor risk at the AI platforms banks and their partners rely on.",
-        "srcText": "BleepingComputer, Jul 20",
-        "srcUrl": "https://www.bleepingcomputer.com/news/security/hugging-face-breach-autonomous-ai-agent-system-internal-datasets-credentials/"
       }
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-20T21:08:02Z",
+      "p": "cyber",
+      "tri": "priority",
+      "st": "confirmed",
+      "tier": "T2",
+      "id": "L-0146",
+      "title": "BleepingComputer reports that the JadePuffer autonomous AI agent has been upgraded with new malware called EncForge that focuses on encrypting artificial intelligence assets, including training datasets, vector databases, and model checkpoints.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/jadepuffer-agentic-attacks-now-target-ai-model-data-with-ransomware/",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-20T21:14:42Z",
+      "p": "cyber",
+      "tri": "priority",
+      "st": "confirmed",
+      "tier": "T2",
+      "id": "L-0147",
+      "title": "BleepingComputer reports that researchers escaped the sandboxes in Cursor, Codex, Gemini CLI, and Antigravity by having the AI agent write files that trusted host tools later ran, resulting in multiple CVEs; patches have been issued, and Google downgraded two of the Antigravity findings.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/cursor-codex-gemini-cli-antigravity-hit-by-sandbox-escapes/",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-20T21:38:18Z",
+      "p": "cyber",
+      "tri": "flash",
+      "st": "confirmed",
+      "tier": "T2",
+      "id": "L-0148",
+      "title": "Dark Reading reports that attackers are widely chaining together two flaws — CVE-2026-60137 and CVE-2026-63030, dubbed “WP2Shell” — to attack WordPress sites, barely three days after disclosure, threatening millions of sites with remote takeover.",
+      "src": "Dark Reading",
+      "srcUrl": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover",
+      "linked": true
+    },
     {
       "ts": "2026-07-20T19:07:01Z",
       "p": "ai",
@@ -500,8 +536,8 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v59",
-      "verRange": "v1–v59",
+      "ver": "v62",
+      "verRange": "v1–v62",
       "asOf": "July 20, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
@@ -1113,6 +1149,33 @@
           "src": "Dark Reading",
           "srcUrl": "https://www.darkreading.com/endpoint-security/attackers-combo-evasion-tactics-bec-phishing",
           "line": "Criminals are combining fileless techniques with detection-evading malware loaders — dubbed “The TFF Trap” — to deliver remote-access trojans and information-stealing malware, including Agent Tesla, Remcos, XWorm, and Best Private Logger, through business email compromise (BEC) phishing, Dark Reading reports."
+        },
+        {
+          "date": "Jul 20, 26",
+          "st": "confirmed",
+          "ver": "v60",
+          "id": "L-0146",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/jadepuffer-agentic-attacks-now-target-ai-model-data-with-ransomware/",
+          "line": "BleepingComputer reports that the JadePuffer autonomous AI agent has been upgraded with new malware called EncForge that focuses on encrypting artificial intelligence assets, including training datasets, vector databases, and model checkpoints."
+        },
+        {
+          "date": "Jul 20, 26",
+          "st": "confirmed",
+          "ver": "v61",
+          "id": "L-0147",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/cursor-codex-gemini-cli-antigravity-hit-by-sandbox-escapes/",
+          "line": "BleepingComputer reports that researchers escaped the sandboxes in Cursor, Codex, Gemini CLI, and Antigravity by having the AI agent write files that trusted host tools later ran, resulting in multiple CVEs; patches have been issued, and Google downgraded two of the Antigravity findings."
+        },
+        {
+          "date": "Jul 20, 26",
+          "st": "confirmed",
+          "ver": "v62",
+          "id": "L-0148",
+          "src": "Dark Reading",
+          "srcUrl": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover",
+          "line": "Dark Reading reports that attackers are widely chaining together two flaws — CVE-2026-60137 and CVE-2026-63030, dubbed “WP2Shell” — to attack WordPress sites, barely three days after disclosure, threatening millions of sites with remote takeover."
         }
       ],
       "sources": [
@@ -1390,6 +1453,21 @@
           "n": "55",
           "text": "Cybersecurity Dive — SonicWall SMA1000 exploitation traced to late June, Jul 20, 2026",
           "url": "https://www.cybersecuritydive.com/news/researchers-sonicwall-sma1000-exploitation-june/825654/"
+        },
+        {
+          "n": "56",
+          "text": "BleepingComputer — JadePuffer AI agent ransomware upgraded with EncForge to encrypt AI training data, vector databases, model checkpoints, Jul 20, 2026",
+          "url": "https://www.bleepingcomputer.com/news/security/jadepuffer-agentic-attacks-now-target-ai-model-data-with-ransomware/"
+        },
+        {
+          "n": "57",
+          "text": "BleepingComputer — sandbox-escape CVEs in Cursor, Codex, Gemini CLI, Antigravity AI coding tools, Jul 20, 2026",
+          "url": "https://www.bleepingcomputer.com/news/security/cursor-codex-gemini-cli-antigravity-hit-by-sandbox-escapes/"
+        },
+        {
+          "n": "58",
+          "text": "Dark Reading — “WP2Shell” WordPress Core RCE flaws under active mass exploitation (CVE-2026-60137, CVE-2026-63030), Jul 20, 2026",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover"
         }
       ],
       "related": [
@@ -3810,9 +3888,52 @@
       "line": "Job pressures from AI adoption have led 26% of top security executives to consider leaving their position, Dark Reading reports.",
       "src": "Dark Reading",
       "srcUrl": "https://www.darkreading.com/cybersecurity-operations/cisos-feel-heat-ai-risk"
+    },
+    {
+      "d": "2026-07-20",
+      "p": "cyber",
+      "id": "L-0146",
+      "line": "BleepingComputer reports that the JadePuffer autonomous AI agent has been upgraded with new malware called EncForge that focuses on encrypting artificial intelligence assets, including training datasets, vector databases, and model checkpoints.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/jadepuffer-agentic-attacks-now-target-ai-model-data-with-ransomware/"
+    },
+    {
+      "d": "2026-07-20",
+      "p": "cyber",
+      "id": "L-0147",
+      "line": "BleepingComputer reports that researchers escaped the sandboxes in Cursor, Codex, Gemini CLI, and Antigravity by having the AI agent write files that trusted host tools later ran, resulting in multiple CVEs; patches have been issued, and Google downgraded two of the Antigravity findings.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/cursor-codex-gemini-cli-antigravity-hit-by-sandbox-escapes/"
+    },
+    {
+      "d": "2026-07-20",
+      "p": "cyber",
+      "id": "L-0148",
+      "line": "Dark Reading reports that attackers are widely chaining together two flaws — CVE-2026-60137 and CVE-2026-63030, dubbed “WP2Shell” — to attack WordPress sites, barely three days after disclosure, threatening millions of sites with remote takeover.",
+      "src": "Dark Reading",
+      "srcUrl": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover"
     }
   ],
   "takeaways": [
+    {
+      "anchors": [
+        "L-0147"
+      ],
+      "pillars": "Cybersecurity",
+      "conf": "high confidence",
+      "head": "Sandbox escape flaws in Cursor, Codex, Gemini CLI, and Antigravity have been patched — update without delay.",
+      "body": "BleepingComputer reports that researchers escaped the sandboxes in Cursor, Codex, Gemini CLI, and Antigravity by having the AI agent write files that trusted host tools later ran, resulting in multiple CVEs; patches have been issued. Technology teams using these tools should update to patched versions without delay."
+    },
+    {
+      "anchors": [
+        "L-0148",
+        "L-0136"
+      ],
+      "pillars": "Cybersecurity",
+      "conf": "high confidence",
+      "head": "WordPress Core's “wp2shell” remote-code-execution flaws are now under active mass exploitation — patch immediately if not already done.",
+      "body": "Dark Reading reports that attackers are widely chaining together two flaws — CVE-2026-60137 and CVE-2026-63030, dubbed “WP2Shell” — to attack WordPress sites, barely three days after disclosure, threatening millions of sites with remote takeover; BleepingComputer had already reported that public exploits for these critical WordPress Core remote code execution vulnerabilities became available on Jul 18. Technology teams running WordPress Core should patch immediately if they have not already done so."
+    },
     {
       "anchors": [
         "L-0142"
@@ -4148,9 +4269,9 @@
       {
         "no": "8",
         "date": "Mon, Jul 20, 2026",
-        "confirmed": "16",
+        "confirmed": "19",
         "pending": "0",
-        "flash": "1",
+        "flash": "2",
         "linked": true
       },
       {
