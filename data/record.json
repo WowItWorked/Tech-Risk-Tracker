@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-21T11:04:00-04:00",
+    "generatedAt": "2026-07-21T12:14:00-04:00",
     "issueNo": 9,
-    "recordHash": "eb2b629",
+    "recordHash": "36fd437",
     "windowLabel": "June 9 – July 21, 2026",
     "nextWeekly": "Fri, Jul 24",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (09:22 ET), so candidates are items published since ≈07:22 ET / 11:22 UTC. The CISA Known Exploited Vulnerabilities (KEV) catalog stayed at catalogVersion 2026.07.16 (1,647 entries, no new additions). NIST’s feed again returned an empty channel (known behavior, not a failure). Anthropic’s page (newest Jul 20), FinCEN’s newsroom page (newest Jun 30), and ENISA’s news page (newest 14 July) carried nothing dated after this run’s window; ICO’s page returned the same JavaScript-rendered “Loading...” shell seen in every prior run (not counted as a feed failure). BleepingComputer’s “Choose Wisely” companion listing and Dark Reading’s own re-listing both carried the same URL as L-0160 (admitted in the prior run) and were not re-admitted. The Department of Justice’s six newest items in-window (bribery, drug, firearm, and other non-technology criminal matters from U.S. Attorney’s offices) do not clear the relevance gate. The European Central Bank’s “ECB appoints Boris Kisselevsky as Director General Secretariat” (a personnel appointment, no tech-risk nexus) and The Record’s “Taiwan to slow mobile data during national resilience drills” (a civil-defense exercise with no financial-sector nexus stated in the excerpt) were reviewed and excluded. The Record’s “Kenya probes hack of president’s website after bitcoin ransom demand” reappeared in this run’s window (same URL as reviewed and excluded in the prior run) and was excluded again on the same grounds. BleepingComputer’s “Closing the Identity Gaps in Critical Infrastructure Security” (Specops Software-sponsored guidance, not a reported event) was reviewed and excluded. NOAA NHC’s Atlantic Tropical Weather Outlook (routine, no new system) and Tropical Storm Bertha’s Summary, Forecast Advisory, Discussion, Wind Speed Probabilities, and Graphics products (companion products for the same Advisory Number 9 cycle) were not separately admitted. One item was admitted: NOAA NHC’s Tropical Storm Bertha Advisory Number 9 reports winds strengthened to 60 mph, the Tropical Storm Warning extended, and the Storm Surge Watch discontinued (resilience pillar, routine triage).",
-    "lastRun": "2026-07-21T11:04:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (11:04 ET), so candidates are items published since ≈09:04 ET / 13:04 UTC. The CISA Known Exploited Vulnerabilities (KEV) catalog advanced from catalogVersion 2026.07.16 to 2026.07.21 (1,647 → 1,651 entries), adding four flaws dated 2026-07-21: a chainable WordPress Core SQL-injection/remote-code-execution pair (CVE-2026-60137, CVE-2026-63030 — the same “WP2Shell” chain already recorded via Dark Reading on Jul 20), a second, distinct Langflow flaw (CVE-2026-0770, unrelated to the Langflow authorization-bypass flaw recorded Jul 7), and a legacy DD-WRT buffer-overflow flaw (CVE-2021-27137, first published 2021, newly KEV-listed today). All four were released at 15:12 UTC (11:12 ET), inside this run’s window, and were admitted as one bundled item, consistent with how the Jul 7 four-flaw KEV addition was recorded as a single item. Cybersecurity Dive’s report that ransomware victims often fail to fix the email-security gaps and unpatched flaws that exposed them was also admitted. NOAA NHC’s Tropical Storm Bertha Advisory Number 9 cycle re-appeared with seven companion products (Summary, the Public/Forecast Advisories, Forecast Discussion, Wind Speed Probabilities, Graphics, and the Storm Surge Flooding Map) now timestamped inside this run’s window, but the advisory itself is already on record as L-0161 from the prior run and none carried new facts — not separately admitted. The European Central Bank’s “ECB appoints Boris Kisselevsky” personnel item, The Record’s “Taiwan to slow mobile data” civil-defense item, and BleepingComputer’s sponsored “Closing the Identity Gaps” listing all reappeared in-window with the same URLs reviewed and excluded in the prior run — excluded again on the same grounds. Dark Reading’s AI-generated-code piece (already admitted as L-0160) also re-listed, not re-admitted. FinCEN’s newsroom page (page-checked, no feed) now shows “Opening Statement of FinCEN Director Andrea Gacki before the Committee on Financial Services” timestamped 2026-07-21T12:00:00Z (08:00 ET) — before this run’s 09:04 ET window start despite only now appearing on the page. Consistent with the Jul 11 precedent for late-appearing page content (the Anthropic/Alberta item), it was not backfilled; flagging for a human decision on whether to add it as a correction. Anthropic’s page (newest Jul 20), ENISA’s news page (unchanged, next dated item is an Oct 30 deadline notice), and ICO’s page (same JavaScript-rendered “Loading...” shell) carried nothing admissible. NIST’s feed again returned an empty channel (known behavior, not a failure). DOJ’s newest items (all dated 08:00 ET, before this run’s window, and non-technology criminal matters regardless) do not clear the relevance gate.",
+    "lastRun": "2026-07-21T12:14:00-04:00"
   },
   "lead": {
     "head": "Leading stories: the FTC orders Celsius Network’s founders to pay $16.5 million over deceptive cryptocurrency-deposit claims; Estée Lauder discloses a data breach after hackers exploited a flaw in Oracle E-Business Suite; and hackers steal $23.7 million from crypto platform Ostium in an off-chain infrastructure attack",
-    "dek": "Today’s edition draws on the thirteen items recorded so far. Every item links to its source.",
+    "dek": "Today’s edition draws on the fifteen items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -54,6 +54,30 @@
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-21T15:12:01Z",
+      "p": "cyber",
+      "tri": "priority",
+      "st": "confirmed",
+      "tier": "T1",
+      "id": "L-0162",
+      "title": "The Cybersecurity and Infrastructure Security Agency (CISA) adds four flaws to its Known Exploited Vulnerabilities catalog: two chainable WordPress Core bugs that let an unauthenticated attacker gain remote code execution (CVE-2026-60137, CVE-2026-63030), a Langflow AI-workflow-tool flaw that lets a remote attacker execute arbitrary code (CVE-2026-0770), and a DD-WRT buffer-overflow flaw that lets an unauthenticated attacker trigger code execution (CVE-2021-27137).",
+      "src": "CISA KEV catalog",
+      "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-21T15:08:51Z",
+      "p": "cyber",
+      "tri": "routine",
+      "st": "confirmed",
+      "tier": "T2",
+      "id": "L-0163",
+      "title": "Many organizations that recover from a ransomware attack still haven’t fixed the email-security gaps and unpatched flaws that exposed them in the first place, a new report finds, Cybersecurity Dive reports.",
+      "src": "Cybersecurity Dive",
+      "srcUrl": "https://www.cybersecuritydive.com/news/ransomware-lingering-weaknesses-black-kite/825791/",
+      "linked": true
+    },
     {
       "ts": "2026-07-21T14:54:57Z",
       "p": "resilience",
@@ -473,8 +497,8 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v67",
-      "verRange": "v1–v67",
+      "ver": "v69",
+      "verRange": "v1–v69",
       "asOf": "July 21, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
@@ -1158,6 +1182,24 @@
           "src": "BleepingComputer",
           "srcUrl": "https://www.bleepingcomputer.com/news/security/critical-globalprotect-vpn-bug-now-exploited-in-ransomware-attacks/",
           "line": "The Qilin ransomware gang is exploiting a critical flaw in Palo Alto Networks’ GlobalProtect virtual private network (VPN) software to break into corporate networks and deploy ransomware, cybersecurity firm Arctic Wolf reports. Palo Alto Networks patched the flaw (CVE-2026-0257) on May 13, and the U.S. Cybersecurity and Infrastructure Security Agency (CISA) added it to its Known Exploited Vulnerabilities catalog on May 29."
+        },
+        {
+          "date": "Jul 21, 26",
+          "st": "confirmed",
+          "ver": "v68",
+          "id": "L-0162",
+          "src": "CISA KEV catalog",
+          "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+          "line": "The Cybersecurity and Infrastructure Security Agency (CISA) adds four flaws to its Known Exploited Vulnerabilities catalog: two chainable WordPress Core bugs that let an unauthenticated attacker gain remote code execution (CVE-2026-60137, CVE-2026-63030), a Langflow AI-workflow-tool flaw that lets a remote attacker execute arbitrary code (CVE-2026-0770), and a DD-WRT buffer-overflow flaw that lets an unauthenticated attacker trigger code execution (CVE-2021-27137)."
+        },
+        {
+          "date": "Jul 21, 26",
+          "st": "confirmed",
+          "ver": "v69",
+          "id": "L-0163",
+          "src": "Cybersecurity Dive",
+          "srcUrl": "https://www.cybersecuritydive.com/news/ransomware-lingering-weaknesses-black-kite/825791/",
+          "line": "Many organizations that recover from a ransomware attack still haven’t fixed the email-security gaps and unpatched flaws that exposed them in the first place, a new report finds, Cybersecurity Dive reports."
         }
       ],
       "sources": [
@@ -4116,9 +4158,43 @@
       "line": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 9 reports winds have strengthened to 60 mph, with the Tropical Storm Warning now extended to cover the Bay/Gulf County Line in Florida through the Terrebonne/Lafourche Parish Line in Louisiana and the Storm Surge Watch discontinued along the northern Gulf Coast.",
       "src": "NOAA NHC advisory",
       "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/211454.shtml"
+    },
+    {
+      "d": "2026-07-21",
+      "p": "cyber",
+      "id": "L-0162",
+      "line": "The Cybersecurity and Infrastructure Security Agency (CISA) adds four flaws to its Known Exploited Vulnerabilities catalog: two chainable WordPress Core bugs that let an unauthenticated attacker gain remote code execution (CVE-2026-60137, CVE-2026-63030), a Langflow AI-workflow-tool flaw that lets a remote attacker execute arbitrary code (CVE-2026-0770), and a DD-WRT buffer-overflow flaw that lets an unauthenticated attacker trigger code execution (CVE-2021-27137).",
+      "src": "CISA KEV catalog",
+      "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "d": "2026-07-21",
+      "p": "cyber",
+      "id": "L-0163",
+      "line": "Many organizations that recover from a ransomware attack still haven’t fixed the email-security gaps and unpatched flaws that exposed them in the first place, a new report finds, Cybersecurity Dive reports.",
+      "src": "Cybersecurity Dive",
+      "srcUrl": "https://www.cybersecuritydive.com/news/ransomware-lingering-weaknesses-black-kite/825791/"
     }
   ],
   "takeaways": [
+    {
+      "anchors": [
+        "L-0162"
+      ],
+      "pillars": "Cybersecurity",
+      "conf": "high confidence",
+      "head": "Confirm you’re not running unpatched WordPress Core, Langflow, or DD-WRT router firmware — all four newly listed flaws are now confirmed under active exploitation.",
+      "body": "The Cybersecurity and Infrastructure Security Agency (CISA) added four flaws to its Known Exploited Vulnerabilities catalog: two chainable WordPress Core bugs enabling remote code execution (CVE-2026-60137, CVE-2026-63030), a Langflow AI-workflow-tool flaw enabling arbitrary code execution (CVE-2026-0770), and a DD-WRT buffer-overflow flaw (CVE-2021-27137). Technology teams should confirm patches are applied for any of these products running in their environment."
+    },
+    {
+      "anchors": [
+        "L-0163"
+      ],
+      "pillars": "Cybersecurity",
+      "conf": "moderate confidence",
+      "head": "Ransomware recovery doesn’t always fix the flaw that let attackers in — verify remediation actually closed it.",
+      "body": "A new report found that many organizations recovering from a ransomware attack still hadn’t secured their email or patched the vulnerabilities that exposed them in the first place, Cybersecurity Dive reports. Technology and security teams should verify that post-incident remediation actually closed the flaws that enabled the original attack, not just declare recovery complete."
+    },
     {
       "anchors": [
         "L-0160"
@@ -4509,7 +4585,7 @@
       {
         "no": "9",
         "date": "Tue, Jul 21, 2026",
-        "confirmed": "13",
+        "confirmed": "15",
         "pending": "0",
         "flash": "—",
         "linked": true
