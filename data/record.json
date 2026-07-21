@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-21T13:14:00-04:00",
+    "generatedAt": "2026-07-21T14:09:00-04:00",
     "issueNo": 9,
-    "recordHash": "ea32a35",
+    "recordHash": "3cda444",
     "windowLabel": "June 9 – July 21, 2026",
     "nextWeekly": "Fri, Jul 24",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (12:14 ET), so candidates are items published since ≈10:14 ET / 14:14 UTC. One item was admitted: BleepingComputer’s report that hackers are actively exploiting the “wp2shell” WordPress Core flaws (CVE-2026-63030, CVE-2026-60137 — the same chain recorded via Dark Reading’s Jul 20 mass-exploitation report, L-0148, and this morning’s CISA KEV catalog listing, L-0162) to install persistent webshells and malicious plugins on compromised servers — a new, more concrete fact (confirmed post-exploitation technique) than either prior report stated, so it was admitted as its own item rather than treated as a reappearance, consistent with how L-0148 was admitted atop L-0136. Triaged flash: confirmed active exploitation of a widely deployed CMS platform, matching the bar set by L-0129/L-0134/L-0148. NOAA NHC’s Tropical Storm Bertha Advisory Number 9 cycle re-appeared with seven companion products now timestamped inside this run’s window, but the advisory itself is already on record as L-0161 and no new advisory number has been issued — not separately admitted. Cybersecurity Dive’s ransomware-recovery report reappeared with the same URL already admitted as L-0163 — not re-admitted. OpenAI’s “Introducing the ChatGPT for small business program” published in-window is a product-launch announcement with no technology-risk content stated in its own excerpt — excluded at the relevance gate (“when in doubt, exclude”). The CISA Known Exploited Vulnerabilities (KEV) catalog is unchanged this run (still catalogVersion 2026.07.21, 1,651 entries). FinCEN’s newsroom page (page-checked, no feed) still shows “Opening Statement of FinCEN Director Andrea Gacki before the Committee on Financial Services Subcommittee” as its newest item, timestamped 2026-07-21T12:00:00Z (08:00 ET) — before this run’s 10:14 ET window start, same as the prior two runs; still not backfilled, still flagged for a human decision on whether to add it as a correction. Anthropic’s page (unchanged), ENISA’s news page (unchanged, newest dated item still an Oct 30 deadline notice), and ICO’s page (same JavaScript-rendered “Loading...” shell) carried nothing admissible. NIST’s feed again returned an empty channel (known behavior, not a failure). DOJ’s newest items (all dated 08:00 ET, before this run’s window, and non-technology criminal matters regardless) do not clear the relevance gate.",
-    "lastRun": "2026-07-21T13:14:00-04:00"
+    "feedNote": "26 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed); Dark Reading returned 404 on both the descriptive and a standard browser User-Agent — a genuine feed failure, not the documented FTC-style block, logged and not guessed around). Selection window: 2 hours before this run’s prior lastRun (13:14 ET), so candidates are items published since ≈11:14 ET / 15:14 UTC. One item was admitted: The Record’s report that Spain’s data-protection authority, the Agencia Española de Protección de Datos (AEPD), fined 23andMe nearly $3 million for the cybersecurity failings behind its 2023 hack, affecting more than 2,600 Spaniards as part of a breach that hit 6.9 million people worldwide — continuing the same 23andMe data-breach thread already tracked in the data-risk dossier via the $18 million multistate settlement (L-0092). Triaged routine, consistent with L-0092’s precedent for this same underlying incident (a completed enforcement outcome with a stated figure, not a new rulemaking or active-exploitation warning). NOAA NHC’s Tropical Storm Bertha cycle produced a new Intermediate Advisory Number 9A plus four companion products, but the advisory’s own “CHANGES WITH THIS ADVISORY: None” line confirms no change to the watches, warnings, or wind speed already on record as L-0161 — not separately admitted, same disposition as prior same-cycle companion products. The Atlantic Tropical Weather Outlook again named no new system expected to form within 7 days — routine, excluded. BleepingComputer’s wp2shell report and OpenAI’s small-business ChatGPT announcement reappeared in-window at the same URLs already admitted/excluded (L-0164 and the 13:14 ET run’s exclusion, respectively) — not re-admitted. The CISA KEV catalog is unchanged (still catalogVersion 2026.07.21, 1,651 entries). FinCEN’s newsroom page still shows the Gacki testimony item as newest, before this run’s window, same as prior runs; still flagged for a human backfill decision, not acted on. Anthropic (newest Jul 20), ENISA (newest Jul 14), and ICO (JavaScript-rendered “Loading...” shell) carried nothing admissible; NIST’s feed again returned an empty channel (known behavior, not a failure). DOJ’s newest items (25 entries, before this run’s window) do not clear the relevance gate regardless.",
+    "lastRun": "2026-07-21T14:09:00-04:00"
   },
   "lead": {
     "head": "Leading stories: hackers actively exploit WordPress Core’s “wp2shell” flaws to install webshells and malicious plugins on affected sites; Estée Lauder discloses a data breach after hackers exploited a flaw in Oracle E-Business Suite; and hackers steal $23.7 million from crypto platform Ostium in an off-chain infrastructure attack",
-    "dek": "Today’s edition draws on the sixteen items recorded so far. Every item links to its source.",
+    "dek": "Today’s edition draws on the seventeen items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -54,6 +54,18 @@
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-21T17:10:00Z",
+      "p": "data",
+      "tri": "routine",
+      "st": "confirmed",
+      "tier": "T2",
+      "id": "L-0165",
+      "title": "The Agencia Española de Protección de Datos (AEPD) fines 23andMe nearly $3 million for cybersecurity failings that enabled a 2023 hack affecting more than 2,600 Spaniards, part of a breach that hit 6.9 million people worldwide, The Record reports.",
+      "src": "The Record",
+      "srcUrl": "https://therecord.media/spain-fines-23andme-3-million-cyber-failings-data-breach",
+      "linked": true
+    },
     {
       "ts": "2026-07-21T16:41:50Z",
       "p": "cyber",
@@ -2465,9 +2477,9 @@
       "scope": "data risk · reporting standards & data accuracy",
       "watch": "Data-standards rulemaking, consumer-data enforcement, and breach disclosures at financial firms.",
       "opened": "July 2026",
-      "ver": "v4",
-      "verRange": "v1–v4",
-      "asOf": "July 20, 2026",
+      "ver": "v5",
+      "verRange": "v1–v5",
+      "asOf": "July 21, 2026",
       "p1": "Uniform data-reporting standards are now final: the OCC, Federal Reserve, FDIC, and five other agencies issued the joint Financial Data Transparency Act rule on June 11, establishing data standards for certain regulatory collections.",
       "p1Sup": "1",
       "p2": "Enforcement pressure sits on data accuracy on both sides of the Atlantic. The FTC required tenant-screening provider RentGrow to pay $2.25 million over duplicate records and undisclosed data sources (July 9). Separately, insurance company AssuranceAmerica disclosed a breach affecting records of 6.9 million drivers. In the UK, the Bank of England’s Prudential Regulation Authority (PRA) fined HDI Global SE £4,165,000 for submitting incorrect Financial Services Compensation Scheme (FSCS) data, caused by a failure to apply due skill, care and diligence.",
@@ -2476,6 +2488,15 @@
       "assessSup": "4",
       "conf": "moderate confidence",
       "events": [
+        {
+          "date": "Jul 21, 26",
+          "st": "confirmed",
+          "ver": "v5",
+          "id": "L-0165",
+          "src": "The Record",
+          "srcUrl": "https://therecord.media/spain-fines-23andme-3-million-cyber-failings-data-breach",
+          "line": "The Agencia Española de Protección de Datos (AEPD) fines 23andMe nearly $3 million for cybersecurity failings that enabled a 2023 hack affecting more than 2,600 Spaniards, part of a breach that hit 6.9 million people worldwide, The Record reports."
+        },
         {
           "date": "Jul 20, 26",
           "st": "confirmed",
@@ -2607,6 +2628,11 @@
           "n": "8",
           "text": "Bank of England (PRA) — HDI Global SE fined £4,165,000, inaccurate FSCS data, Jul 20, 2026",
           "url": "https://www.bankofengland.co.uk/news/2026/july/pra-fines-hdi-global-se-4165000-for-inaccurate-reporting"
+        },
+        {
+          "n": "9",
+          "text": "The Record — Spain (AEPD) fines 23andMe ~$3M for 2023 breach, Jul 21, 2026",
+          "url": "https://therecord.media/spain-fines-23andme-3-million-cyber-failings-data-breach"
         }
       ],
       "related": [
@@ -4203,6 +4229,14 @@
       "line": "Hackers are exploiting the “wp2shell” WordPress Core vulnerabilities (CVE-2026-63030, CVE-2026-60137) to deploy persistent webshells and install malicious plugins on affected servers, BleepingComputer reports.",
       "src": "BleepingComputer",
       "srcUrl": "https://www.bleepingcomputer.com/news/security/critical-wp2shell-wordpress-flaws-exploited-to-install-webshells/"
+    },
+    {
+      "d": "2026-07-21",
+      "p": "data",
+      "id": "L-0165",
+      "line": "The Agencia Española de Protección de Datos (AEPD) fines 23andMe nearly $3 million for cybersecurity failings that enabled a 2023 hack affecting more than 2,600 Spaniards, part of a breach that hit 6.9 million people worldwide, The Record reports.",
+      "src": "The Record",
+      "srcUrl": "https://therecord.media/spain-fines-23andme-3-million-cyber-failings-data-breach"
     }
   ],
   "takeaways": [
@@ -4614,7 +4648,7 @@
       {
         "no": "9",
         "date": "Tue, Jul 21, 2026",
-        "confirmed": "16",
+        "confirmed": "17",
         "pending": "0",
         "flash": "1",
         "linked": true
