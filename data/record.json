@@ -2,21 +2,33 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-21T15:07:00-04:00",
+    "generatedAt": "2026-07-21T17:12:00-04:00",
     "issueNo": 9,
-    "recordHash": "3d1005a",
+    "recordHash": "416f78c",
     "windowLabel": "June 9 – July 21, 2026",
     "nextWeekly": "Fri, Jul 24",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed; Dark Reading, which 404’d in the prior run, returned 200 normally this run). Selection window: 2 hours before this run’s prior lastRun (14:09 ET), so candidates are items published since ≈12:09 ET / 16:09 UTC. Two items were admitted: Dark Reading’s report that a Russian-speaking hacker known as “Trim” dismantled publicly available frontier AI models and combined them with offensive security tools to build an attack platform; and BleepingComputer’s report that the Anubis ransomware gang claimed responsibility for the Coca-Cola Fairlife ransomware attack already on record (L-0119) and threatened to leak allegedly stolen corporate data. BleepingComputer’s wp2shell follow-up and The Record’s 23andMe/AEPD fine reappeared in-window at the same URLs already admitted as L-0164 and L-0165 — not re-admitted. OpenAI’s small-business ChatGPT announcement reappeared at the same URL already excluded at the relevance gate — not re-admitted. NOAA NHC’s Tropical Storm Bertha cycle produced no new advisory number since the prior run’s Intermediate Advisory 9A (already reviewed, “CHANGES WITH THIS ADVISORY: None”); its companion products and the routine Atlantic Tropical Weather Outlook were not separately admitted. The CISA KEV catalog is unchanged (still catalogVersion 2026.07.21). FinCEN’s newsroom page still shows the Gacki testimony item as newest, before this run’s window; still flagged for a human backfill decision, not acted on. Anthropic (newest Jul 20), ENISA (newest Jul 14), and ICO (JavaScript-rendered “Loading...” shell) carried nothing admissible; NIST’s feed again returned an empty channel (known behavior, not a failure). DOJ’s newest items (before this run’s window) do not clear the relevance gate regardless.",
-    "lastRun": "2026-07-21T15:07:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (15:07 ET), so candidates are items published since ≈13:07 ET / 17:07 UTC. Two items were admitted: BleepingComputer’s report that hackers are actively exploiting a critical Microsoft SharePoint flaw (CVE-2026-50522) to steal machine keys and maintain access even after affected servers are patched; and the National Hurricane Center’s Tropical Storm Bertha Advisory Number 10, which extended the Tropical Storm Warning west to Morgan City, Louisiana, upgraded the watch to a warning for Metropolitan New Orleans and Lake Pontchartrain, and extended the Tropical Storm Watch west to Cameron, Louisiana. BleepingComputer’s Anubis/Fairlife report, The Record’s 23andMe/AEPD report, and Dark Reading’s “Trim” report reappeared in-window at the same URLs already admitted as L-0167, L-0165, and L-0166 — not re-admitted. The Record’s “DNI nominee Clayton wins Senate panel’s approval” carried no technology-risk content in its own excerpt and was excluded at the relevance gate. NOAA NHC’s Atlantic Tropical Weather Outlook again stated no tropical cyclone formation expected in the North Atlantic, Caribbean Sea, or Gulf of America within 7 days — routine non-event, not admitted; its four other Advisory 10 companion products (Summary, Forecast Advisory, Forecast Discussion, Wind Speed Probabilities, Graphics) share the same facts as the admitted Public Advisory and were not separately admitted. The CISA KEV catalog is unchanged (still catalogVersion 2026.07.21, 1,651 entries). FinCEN’s newsroom page still shows the Gacki testimony item as newest, before this run’s window; still flagged for a human backfill decision, not acted on. Anthropic (newest Jul 20), ENISA (newest Jul 14), and ICO (JavaScript-rendered “Loading...” shell) carried nothing admissible; NIST’s feed again returned an empty channel (known behavior, not a failure). DOJ’s newest items (before this run’s window) do not clear the relevance gate regardless.",
+    "lastRun": "2026-07-21T17:12:00-04:00"
   },
   "lead": {
-    "head": "Leading stories: hackers actively exploit WordPress Core’s “wp2shell” flaws to install webshells and malicious plugins on affected sites; the Anubis ransomware gang claims a cyberattack on Coca-Cola’s Fairlife dairy subsidiary and threatens to leak allegedly stolen data; and Estée Lauder discloses a data breach after hackers exploited a flaw in Oracle E-Business Suite",
-    "dek": "Today’s edition draws on the nineteen items recorded so far. Every item links to its source.",
+    "head": "Leading stories: hackers actively exploit a critical Microsoft SharePoint flaw to steal machine keys and maintain access even after patching; hackers actively exploit WordPress Core’s “wp2shell” flaws to install webshells and malicious plugins on affected sites; and the Anubis ransomware gang claims a cyberattack on Coca-Cola’s Fairlife dairy subsidiary and threatens to leak allegedly stolen data",
+    "dek": "Today’s edition draws on the twenty-one items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
+        "p": "cyber",
+        "tri": "flash",
+        "st": "confirmed",
+        "id": "L-0168",
+        "conf": "",
+        "text": "Hackers are actively exploiting a critical Microsoft SharePoint flaw (CVE-2026-50522) to steal machine keys, letting them keep access to affected servers even after they are patched, BleepingComputer reports.",
+        "why": "Attackers who steal a SharePoint server’s machine keys keep the ability to get back in even after the flaw itself is patched, so any bank or vendor running SharePoint should treat this as a full incident-response event, not a routine update.",
+        "srcText": "BleepingComputer, Jul 21",
+        "srcUrl": "https://www.bleepingcomputer.com/news/security/critical-sharepoint-rce-flaw-exploited-to-steal-machine-keys/"
+      },
+      {
+        "n": "2",
         "p": "cyber",
         "tri": "flash",
         "st": "confirmed",
@@ -28,7 +40,7 @@
         "srcUrl": "https://www.bleepingcomputer.com/news/security/critical-wp2shell-wordpress-flaws-exploited-to-install-webshells/"
       },
       {
-        "n": "2",
+        "n": "3",
         "p": "tp",
         "tri": "priority",
         "st": "confirmed",
@@ -38,22 +50,34 @@
         "why": "The gang’s threat to leak Fairlife’s data, on top of the operational disruption Coca-Cola already disclosed, shows how a single vendor ransomware incident can escalate from an outage into a data-exposure risk as it unfolds.",
         "srcText": "BleepingComputer, Jul 21",
         "srcUrl": "https://www.bleepingcomputer.com/news/security/anubis-ransomware-claims-coca-cola-fairlife-attack-threatens-data-leak/"
-      },
-      {
-        "n": "3",
-        "p": "tp",
-        "tri": "priority",
-        "st": "confirmed",
-        "id": "L-0156",
-        "conf": "",
-        "text": "Cosmetics giant Estée Lauder is notifying customers of a data breach after hackers exploited a flaw in Oracle E-Business Suite, software the company used for human resources (HR) operations, BleepingComputer reports.",
-        "why": "Hackers got in through a flaw in Oracle E-Business Suite, the software Estée Lauder used for HR operations — a reminder that HR and back-office systems, not just customer-facing platforms, are a viable path for attackers into corporate data.",
-        "srcText": "BleepingComputer, Jul 20",
-        "srcUrl": "https://www.bleepingcomputer.com/news/security/est-e-lauder-discloses-data-breach-via-oracle-e-business-flaw/"
       }
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-21T20:54:05Z",
+      "p": "resilience",
+      "tri": "routine",
+      "st": "confirmed",
+      "tier": "T1",
+      "id": "L-0169",
+      "title": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 10 reports the Tropical Storm Warning extended westward to Morgan City, Louisiana, the Tropical Storm Watch for Metropolitan New Orleans and Lake Pontchartrain upgraded to a Warning, and the Tropical Storm Watch itself extended westward to Cameron, Louisiana, with maximum sustained winds holding at 60 mph.",
+      "src": "NOAA NHC advisory",
+      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/212053.shtml",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-21T20:06:55Z",
+      "p": "cyber",
+      "tri": "flash",
+      "st": "confirmed",
+      "tier": "T2",
+      "id": "L-0168",
+      "title": "Hackers are actively exploiting a critical Microsoft SharePoint flaw (CVE-2026-50522) to steal machine keys, letting them keep access to affected servers even after they are patched, BleepingComputer reports.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/critical-sharepoint-rce-flaw-exploited-to-steal-machine-keys/",
+      "linked": true
+    },
     {
       "ts": "2026-07-21T18:50:54Z",
       "p": "tp",
@@ -554,8 +578,8 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v70",
-      "verRange": "v1–v70",
+      "ver": "v71",
+      "verRange": "v1–v71",
       "asOf": "July 21, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
@@ -1266,6 +1290,15 @@
           "src": "BleepingComputer",
           "srcUrl": "https://www.bleepingcomputer.com/news/security/critical-wp2shell-wordpress-flaws-exploited-to-install-webshells/",
           "line": "Hackers are exploiting the “wp2shell” WordPress Core vulnerabilities (CVE-2026-63030, CVE-2026-60137) to deploy persistent webshells and install malicious plugins on affected servers, BleepingComputer reports."
+        },
+        {
+          "date": "Jul 21, 26",
+          "st": "confirmed",
+          "ver": "v71",
+          "id": "L-0168",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/critical-sharepoint-rce-flaw-exploited-to-steal-machine-keys/",
+          "line": "Hackers are actively exploiting a critical Microsoft SharePoint flaw (CVE-2026-50522) to steal machine keys, letting them keep access to affected servers even after they are patched, BleepingComputer reports."
         }
       ],
       "sources": [
@@ -2337,15 +2370,15 @@
       "scope": "resilience · sector capacity & season risk",
       "watch": "Stress-test results, payments-system findings, severe-weather outlooks, and infrastructure-software advisories relevant to operations.",
       "opened": "July 2026",
-      "ver": "v6",
-      "verRange": "v1–v6",
+      "ver": "v7",
+      "verRange": "v1–v7",
       "asOf": "July 21, 2026",
       "p1": "The Federal Reserve’s annual stress test, released June 24, concludes that large banks are well positioned to weather a severe recession and continue lending to households and businesses.",
       "p1Sup": "1",
-      "p2": "Season risk turned active this window: the National Hurricane Center’s quiet July 9 outlook gave way to a system that strengthened into Tropical Storm Bertha, with a Tropical Storm Warning now in effect for the Gulf Coast from the Bay/Gulf County Line in Florida to the Terrebonne/Lafourche Parish Line in Louisiana and maximum sustained winds of 60 mph as of the morning of July 21. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
-      "p2Sup": "3, 4, 9",
-      "assess": "We assess with moderate confidence that near-term weather-driven disruption risk is roughly even odds: Tropical Storm Bertha has strengthened to maximum sustained winds of 60 mph, with a Tropical Storm Warning in effect for the Gulf Coast from the Bay/Gulf County Line in Florida to the Terrebonne/Lafourche Parish Line in Louisiana and a Tropical Storm Watch extended west to the Vermilion/Cameron Parish Line, though the Storm Surge Watch has been discontinued and no confirmed systemic-infrastructure stress has entered the record this window.",
-      "assessSup": "9",
+      "p2": "Season risk turned active this window: the National Hurricane Center’s quiet July 9 outlook gave way to a system that strengthened into Tropical Storm Bertha. Its Tropical Storm Warning now reaches west to Morgan City, Louisiana, and covers Metropolitan New Orleans and Lake Pontchartrain, while its Tropical Storm Watch extends further west to Cameron, Louisiana, with maximum sustained winds holding at 60 mph as of the afternoon of July 21. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
+      "p2Sup": "3, 4, 10",
+      "assess": "We assess with moderate confidence that near-term weather-driven disruption risk is roughly even odds: Tropical Storm Bertha holds at 60 mph maximum sustained winds, with its Tropical Storm Warning now reaching west to Morgan City, Louisiana, and Metropolitan New Orleans, and its Tropical Storm Watch extended west to Cameron, Louisiana, though no confirmed systemic-infrastructure stress has entered the record this window.",
+      "assessSup": "10",
       "conf": "moderate confidence",
       "events": [
         {
@@ -2437,6 +2470,15 @@
           "src": "NOAA NHC advisory",
           "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/211454.shtml",
           "line": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 9 reports winds have strengthened to 60 mph, with the Tropical Storm Warning now extended to cover the Bay/Gulf County Line in Florida through the Terrebonne/Lafourche Parish Line in Louisiana and the Storm Surge Watch discontinued along the northern Gulf Coast."
+        },
+        {
+          "date": "Jul 21, 26",
+          "st": "confirmed",
+          "ver": "v7",
+          "id": "L-0169",
+          "src": "NOAA NHC advisory",
+          "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/212053.shtml",
+          "line": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 10 reports the Tropical Storm Warning extended westward to Morgan City, Louisiana, the Tropical Storm Watch for Metropolitan New Orleans and Lake Pontchartrain upgraded to a Warning, and the Tropical Storm Watch itself extended westward to Cameron, Louisiana, with maximum sustained winds holding at 60 mph."
         }
       ],
       "sources": [
@@ -2484,6 +2526,11 @@
           "n": "9",
           "text": "NOAA NHC — Tropical Storm Bertha advisory 9, Warning extended + Storm Surge Watch discontinued, Jul 21, 2026",
           "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/211454.shtml"
+        },
+        {
+          "n": "10",
+          "text": "NOAA NHC — Tropical Storm Bertha advisory 10, Warning extended to Morgan City & Metro New Orleans, Watch extended to Cameron, Jul 21, 2026",
+          "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/212053.shtml"
         }
       ],
       "related": [
@@ -4295,9 +4342,34 @@
       "line": "The Anubis ransomware gang claims responsibility for a cyberattack on Coca-Cola’s Fairlife dairy subsidiary and threatens to publish allegedly stolen corporate data unless the company pays a ransom, BleepingComputer reports.",
       "src": "BleepingComputer",
       "srcUrl": "https://www.bleepingcomputer.com/news/security/anubis-ransomware-claims-coca-cola-fairlife-attack-threatens-data-leak/"
+    },
+    {
+      "d": "2026-07-21",
+      "p": "cyber",
+      "id": "L-0168",
+      "line": "Hackers are actively exploiting a critical Microsoft SharePoint flaw (CVE-2026-50522) to steal machine keys, letting them keep access to affected servers even after they are patched, BleepingComputer reports.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/critical-sharepoint-rce-flaw-exploited-to-steal-machine-keys/"
+    },
+    {
+      "d": "2026-07-21",
+      "p": "resilience",
+      "id": "L-0169",
+      "line": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 10 reports the Tropical Storm Warning extended westward to Morgan City, Louisiana, the Tropical Storm Watch for Metropolitan New Orleans and Lake Pontchartrain upgraded to a Warning, and the Tropical Storm Watch itself extended westward to Cameron, Louisiana, with maximum sustained winds holding at 60 mph.",
+      "src": "NOAA NHC advisory",
+      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/212053.shtml"
     }
   ],
   "takeaways": [
+    {
+      "anchors": [
+        "L-0168"
+      ],
+      "pillars": "Cybersecurity",
+      "conf": "high confidence",
+      "head": "A new SharePoint flaw lets attackers steal machine keys and keep access even after patching — plan for key rotation, not just a patch.",
+      "body": "Hackers are actively exploiting a critical Microsoft SharePoint flaw (CVE-2026-50522) to steal machine keys, letting them maintain access to affected servers even after the flaw itself is patched, BleepingComputer reports. Technology teams running SharePoint should treat a patch alone as insufficient and plan to rotate machine keys and check for signs of compromise."
+    },
     {
       "anchors": [
         "L-0162"
@@ -4706,9 +4778,9 @@
       {
         "no": "9",
         "date": "Tue, Jul 21, 2026",
-        "confirmed": "19",
+        "confirmed": "21",
         "pending": "0",
-        "flash": "1",
+        "flash": "2",
         "linked": true
       },
       {
