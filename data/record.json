@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-21T09:22:00-04:00",
+    "generatedAt": "2026-07-21T11:04:00-04:00",
     "issueNo": 9,
-    "recordHash": "a1c5a58",
+    "recordHash": "eb2b629",
     "windowLabel": "June 9 – July 21, 2026",
     "nextWeekly": "Fri, Jul 24",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (CISA KEV, FTC, CFPB, DOJ, FinCEN, and the Bank of England 403’d for the descriptive User-Agent and were retried with a standard browser User-Agent per the runbook’s fallback, all returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (07:20 ET), so candidates are items published since ≈05:20 ET / 09:20 UTC. The CISA Known Exploited Vulnerabilities (KEV) catalog stayed at catalogVersion 2026.07.16 (1,647 entries, no new additions). NIST’s feed again returned an empty channel (known behavior, not a failure). Anthropic’s page, FinCEN’s newsroom page, and ENISA’s news page carried nothing dated after this run’s window (Anthropic newest Jul 20; FinCEN newest Jun 30; ENISA’s newest listed item unchanged since the prior run); ICO’s page returned the same JavaScript-rendered “Loading...” shell seen in every prior run (not counted as a feed failure). BleepingComputer’s “Critical Palo Alto VPN bug now exploited by Qilin ransomware gang” reappeared in this run’s window (same URL as L-0159, admitted in the prior run) and was not re-admitted. The National Hurricane Center’s Tropical Storm Bertha Intermediate Advisory Number 8A and its companion Summary, Graphics, and Storm Surge Flooding Map products were not admitted: the advisory’s own “CHANGES WITH THIS ADVISORY: None” line confirms no new watches, warnings, or intensity change since Advisory Number 8 was already admitted as L-0158. The Department of Justice’s newest items in-window (drug, firearm, and other non-technology criminal matters from U.S. Attorney’s offices) do not clear the relevance gate. BleepingComputer’s “US seizes over 1,000 websites in FIFA World Cup piracy crackdown” (streaming piracy, not a financial-sector tech risk pillar) and The Record’s “Kenya probes hack of president’s website after bitcoin ransom demand” (a foreign government website defacement, no financial-sector nexus in the excerpt) were reviewed and excluded. One item was admitted: Dark Reading reports AI-generated code introduces 15 flaws on average per codebase, with the actual risk depending more on coding-framework pairing than on the AI model used (ai pillar, routine triage).",
-    "lastRun": "2026-07-21T09:22:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (09:22 ET), so candidates are items published since ≈07:22 ET / 11:22 UTC. The CISA Known Exploited Vulnerabilities (KEV) catalog stayed at catalogVersion 2026.07.16 (1,647 entries, no new additions). NIST’s feed again returned an empty channel (known behavior, not a failure). Anthropic’s page (newest Jul 20), FinCEN’s newsroom page (newest Jun 30), and ENISA’s news page (newest 14 July) carried nothing dated after this run’s window; ICO’s page returned the same JavaScript-rendered “Loading...” shell seen in every prior run (not counted as a feed failure). BleepingComputer’s “Choose Wisely” companion listing and Dark Reading’s own re-listing both carried the same URL as L-0160 (admitted in the prior run) and were not re-admitted. The Department of Justice’s six newest items in-window (bribery, drug, firearm, and other non-technology criminal matters from U.S. Attorney’s offices) do not clear the relevance gate. The European Central Bank’s “ECB appoints Boris Kisselevsky as Director General Secretariat” (a personnel appointment, no tech-risk nexus) and The Record’s “Taiwan to slow mobile data during national resilience drills” (a civil-defense exercise with no financial-sector nexus stated in the excerpt) were reviewed and excluded. The Record’s “Kenya probes hack of president’s website after bitcoin ransom demand” reappeared in this run’s window (same URL as reviewed and excluded in the prior run) and was excluded again on the same grounds. BleepingComputer’s “Closing the Identity Gaps in Critical Infrastructure Security” (Specops Software-sponsored guidance, not a reported event) was reviewed and excluded. NOAA NHC’s Atlantic Tropical Weather Outlook (routine, no new system) and Tropical Storm Bertha’s Summary, Forecast Advisory, Discussion, Wind Speed Probabilities, and Graphics products (companion products for the same Advisory Number 9 cycle) were not separately admitted. One item was admitted: NOAA NHC’s Tropical Storm Bertha Advisory Number 9 reports winds strengthened to 60 mph, the Tropical Storm Warning extended, and the Storm Surge Watch discontinued (resilience pillar, routine triage).",
+    "lastRun": "2026-07-21T11:04:00-04:00"
   },
   "lead": {
     "head": "Leading stories: the FTC orders Celsius Network’s founders to pay $16.5 million over deceptive cryptocurrency-deposit claims; Estée Lauder discloses a data breach after hackers exploited a flaw in Oracle E-Business Suite; and hackers steal $23.7 million from crypto platform Ostium in an off-chain infrastructure attack",
-    "dek": "Today’s edition draws on the twelve items recorded so far. Every item links to its source.",
+    "dek": "Today’s edition draws on the thirteen items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -54,6 +54,18 @@
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-21T14:54:57Z",
+      "p": "resilience",
+      "tri": "routine",
+      "st": "confirmed",
+      "tier": "T1",
+      "id": "L-0161",
+      "title": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 9 reports winds have strengthened to 60 mph, with the Tropical Storm Warning now extended to cover the Bay/Gulf County Line in Florida through the Terrebonne/Lafourche Parish Line in Louisiana and the Storm Surge Watch discontinued along the northern Gulf Coast.",
+      "src": "NOAA NHC advisory",
+      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/211454.shtml",
+      "linked": true
+    },
     {
       "ts": "2026-07-21T13:00:00Z",
       "p": "ai",
@@ -2208,15 +2220,15 @@
       "scope": "resilience · sector capacity & season risk",
       "watch": "Stress-test results, payments-system findings, severe-weather outlooks, and infrastructure-software advisories relevant to operations.",
       "opened": "July 2026",
-      "ver": "v5",
-      "verRange": "v1–v5",
+      "ver": "v6",
+      "verRange": "v1–v6",
       "asOf": "July 21, 2026",
       "p1": "The Federal Reserve’s annual stress test, released June 24, concludes that large banks are well positioned to weather a severe recession and continue lending to households and businesses.",
       "p1Sup": "1",
-      "p2": "Season risk turned active this window: the National Hurricane Center’s quiet July 9 outlook gave way to a system that strengthened into Tropical Storm Bertha, with a Tropical Storm Warning now in effect from the Alabama/Florida border to the Jefferson/Plaquemines Parish border in Louisiana and maximum sustained winds of 50 mph as of the morning of July 21. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
-      "p2Sup": "3, 4, 8",
-      "assess": "We assess with moderate confidence that near-term weather-driven disruption risk is roughly even odds: the storm previously forecast to strengthen has done so, with Tropical Storm Bertha now carrying a Tropical Storm Warning for the Alabama/Florida border to Louisiana alongside the Storm Surge Watch and Tropical Storm Watch already in effect for the Gulf Coast, though no confirmed systemic-infrastructure stress has entered the record this window.",
-      "assessSup": "7, 8",
+      "p2": "Season risk turned active this window: the National Hurricane Center’s quiet July 9 outlook gave way to a system that strengthened into Tropical Storm Bertha, with a Tropical Storm Warning now in effect for the Gulf Coast from the Bay/Gulf County Line in Florida to the Terrebonne/Lafourche Parish Line in Louisiana and maximum sustained winds of 60 mph as of the morning of July 21. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
+      "p2Sup": "3, 4, 9",
+      "assess": "We assess with moderate confidence that near-term weather-driven disruption risk is roughly even odds: Tropical Storm Bertha has strengthened to maximum sustained winds of 60 mph, with a Tropical Storm Warning in effect for the Gulf Coast from the Bay/Gulf County Line in Florida to the Terrebonne/Lafourche Parish Line in Louisiana and a Tropical Storm Watch extended west to the Vermilion/Cameron Parish Line, though the Storm Surge Watch has been discontinued and no confirmed systemic-infrastructure stress has entered the record this window.",
+      "assessSup": "9",
       "conf": "moderate confidence",
       "events": [
         {
@@ -2299,6 +2311,15 @@
           "src": "NOAA NHC advisory",
           "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/210837.shtml",
           "line": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 8 reports a Tropical Storm Warning now in effect from the Alabama/Florida border to the Jefferson/Plaquemines Parish border in Louisiana, alongside the previously issued Storm Surge Watch and Tropical Storm Watch, with maximum sustained winds of 50 mph."
+        },
+        {
+          "date": "Jul 21, 26",
+          "st": "confirmed",
+          "ver": "v6",
+          "id": "L-0161",
+          "src": "NOAA NHC advisory",
+          "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/211454.shtml",
+          "line": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 9 reports winds have strengthened to 60 mph, with the Tropical Storm Warning now extended to cover the Bay/Gulf County Line in Florida through the Terrebonne/Lafourche Parish Line in Louisiana and the Storm Surge Watch discontinued along the northern Gulf Coast."
         }
       ],
       "sources": [
@@ -2341,6 +2362,11 @@
           "n": "8",
           "text": "NOAA NHC — Tropical Storm Bertha advisory 8, Tropical Storm Warning issued, Jul 21, 2026",
           "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/210837.shtml"
+        },
+        {
+          "n": "9",
+          "text": "NOAA NHC — Tropical Storm Bertha advisory 9, Warning extended + Storm Surge Watch discontinued, Jul 21, 2026",
+          "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/211454.shtml"
         }
       ],
       "related": [
@@ -4082,6 +4108,14 @@
       "line": "Code generated by artificial intelligence (AI) tools introduces an average of 15 flaws per codebase, but how much risk that creates depends more on which coding framework the AI pairs with than on which AI model generated the code, Dark Reading reports.",
       "src": "Dark Reading",
       "srcUrl": "https://www.darkreading.com/application-security/choose-wisely-ai-generated-coding-risk-varies"
+    },
+    {
+      "d": "2026-07-21",
+      "p": "resilience",
+      "id": "L-0161",
+      "line": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 9 reports winds have strengthened to 60 mph, with the Tropical Storm Warning now extended to cover the Bay/Gulf County Line in Florida through the Terrebonne/Lafourche Parish Line in Louisiana and the Storm Surge Watch discontinued along the northern Gulf Coast.",
+      "src": "NOAA NHC advisory",
+      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/211454.shtml"
     }
   ],
   "takeaways": [
@@ -4475,7 +4509,7 @@
       {
         "no": "9",
         "date": "Tue, Jul 21, 2026",
-        "confirmed": "12",
+        "confirmed": "13",
         "pending": "0",
         "flash": "—",
         "linked": true
