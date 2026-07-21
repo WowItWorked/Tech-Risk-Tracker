@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-21T17:12:00-04:00",
+    "generatedAt": "2026-07-21T18:11:00-04:00",
     "issueNo": 9,
-    "recordHash": "416f78c",
+    "recordHash": "baf0818",
     "windowLabel": "June 9 – July 21, 2026",
     "nextWeekly": "Fri, Jul 24",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (15:07 ET), so candidates are items published since ≈13:07 ET / 17:07 UTC. Two items were admitted: BleepingComputer’s report that hackers are actively exploiting a critical Microsoft SharePoint flaw (CVE-2026-50522) to steal machine keys and maintain access even after affected servers are patched; and the National Hurricane Center’s Tropical Storm Bertha Advisory Number 10, which extended the Tropical Storm Warning west to Morgan City, Louisiana, upgraded the watch to a warning for Metropolitan New Orleans and Lake Pontchartrain, and extended the Tropical Storm Watch west to Cameron, Louisiana. BleepingComputer’s Anubis/Fairlife report, The Record’s 23andMe/AEPD report, and Dark Reading’s “Trim” report reappeared in-window at the same URLs already admitted as L-0167, L-0165, and L-0166 — not re-admitted. The Record’s “DNI nominee Clayton wins Senate panel’s approval” carried no technology-risk content in its own excerpt and was excluded at the relevance gate. NOAA NHC’s Atlantic Tropical Weather Outlook again stated no tropical cyclone formation expected in the North Atlantic, Caribbean Sea, or Gulf of America within 7 days — routine non-event, not admitted; its four other Advisory 10 companion products (Summary, Forecast Advisory, Forecast Discussion, Wind Speed Probabilities, Graphics) share the same facts as the admitted Public Advisory and were not separately admitted. The CISA KEV catalog is unchanged (still catalogVersion 2026.07.21, 1,651 entries). FinCEN’s newsroom page still shows the Gacki testimony item as newest, before this run’s window; still flagged for a human backfill decision, not acted on. Anthropic (newest Jul 20), ENISA (newest Jul 14), and ICO (JavaScript-rendered “Loading...” shell) carried nothing admissible; NIST’s feed again returned an empty channel (known behavior, not a failure). DOJ’s newest items (before this run’s window) do not clear the relevance gate regardless.",
-    "lastRun": "2026-07-21T17:12:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (17:12 ET), so candidates are items published since ≈15:12 ET / 19:12 UTC. Two items were admitted: Dark Reading’s report that the latest large language models (LLMs) have high false-positive rates and fail to account for the context of a scan when used to find and prioritize software vulnerabilities, creating more work for security teams; and Dark Reading’s report that ransomware attacks are accelerating — not because of artificial intelligence (AI), researchers say, but due to fragmentation of the ransomware ecosystem, the emergence of new attackers, and expanding attacks on less-defended organizations. BleepingComputer’s SharePoint machine-key report and the National Hurricane Center’s Tropical Storm Bertha Public Advisory Number 10 reappeared in-window at the same URLs already admitted as L-0168 and L-0169 — not re-admitted; NOAA NHC’s five other Advisory 10 companion products (Summary, Forecast Advisory, Forecast Discussion, Wind Speed Probabilities, Graphics, Storm Surge Flooding Map) share the same facts as the admitted Public Advisory and were not separately admitted, and its Atlantic Tropical Weather Outlook again stated no tropical cyclone formation expected in the North Atlantic, Caribbean Sea, or Gulf of America within 7 days — routine non-event, not admitted. The CISA KEV catalog is unchanged (still catalogVersion 2026.07.21, 1,651 entries). Nacha’s feed again required stripping leading theme-debug HTML comments before the XML would parse (known quirk, not a failure) and carried nothing newer than Jul 10. FinCEN’s newsroom page still shows the Gacki testimony item as newest, before this run’s window; still flagged for a human backfill decision, not acted on. Anthropic (newest Jul 20), ENISA (newest Jul 14), and ICO (JavaScript-rendered “Loading...” shell) carried nothing admissible; NIST’s feed again returned an empty channel (known behavior, not a failure). FCA’s newest item (Jul 20, before this run’s window) does not clear the relevance gate regardless. DOJ’s newest items (before this run’s window) do not clear the relevance gate regardless.",
+    "lastRun": "2026-07-21T18:11:00-04:00"
   },
   "lead": {
     "head": "Leading stories: hackers actively exploit a critical Microsoft SharePoint flaw to steal machine keys and maintain access even after patching; hackers actively exploit WordPress Core’s “wp2shell” flaws to install webshells and malicious plugins on affected sites; and the Anubis ransomware gang claims a cyberattack on Coca-Cola’s Fairlife dairy subsidiary and threatens to leak allegedly stolen data",
-    "dek": "Today’s edition draws on the twenty-one items recorded so far. Every item links to its source.",
+    "dek": "Today’s edition draws on the twenty-three items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -54,6 +54,30 @@
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-21T21:48:05Z",
+      "p": "cyber",
+      "tri": "routine",
+      "st": "confirmed",
+      "tier": "T2",
+      "id": "L-0171",
+      "title": "Ransomware attacks are accelerating, but not because of artificial intelligence (AI) — researchers point to fragmentation of the ransomware ecosystem, the emergence of new attackers, and expanding attacks on less-defended organizations, Dark Reading reports.",
+      "src": "Dark Reading",
+      "srcUrl": "https://www.darkreading.com/cyberattacks-data-breaches/ransomware-is-accelerating-not-ai",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-21T21:27:37Z",
+      "p": "ai",
+      "tri": "routine",
+      "st": "confirmed",
+      "tier": "T2",
+      "id": "L-0170",
+      "title": "The latest large language models (LLMs) have high false-positive rates and fail to account for the context of a scan when used to find and prioritize software vulnerabilities, creating more work for security teams, Dark Reading reports.",
+      "src": "Dark Reading",
+      "srcUrl": "https://www.darkreading.com/application-security/finding-and-prioritizing-vulnerabilities-no-easy-task",
+      "linked": true
+    },
     {
       "ts": "2026-07-21T20:54:05Z",
       "p": "resilience",
@@ -313,8 +337,8 @@
       "scope": "artificial intelligence · capability & governance",
       "watch": "Frontier capability, bank-scale adoption, and the governance that is (or is not) keeping pace — from allowlisted lab, regulator, and press feeds.",
       "opened": "July 2026",
-      "ver": "v10",
-      "verRange": "v1–v10",
+      "ver": "v11",
+      "verRange": "v1–v11",
       "asOf": "July 21, 2026",
       "p1": "Frontier capability advanced again this window: OpenAI released GPT-5.6 on July 9, describing it as delivering “more intelligence from every token, stronger performance per dollar.”",
       "p1Sup": "1",
@@ -476,6 +500,15 @@
           "src": "Dark Reading",
           "srcUrl": "https://www.darkreading.com/cyber-risk/hacker-ai-jailbreaks-offensive-attack-platform",
           "line": "A Russian-speaking hacker known as “Trim” dismantled publicly available frontier artificial intelligence (AI) models and combined them with offensive security tools to build an attack platform, Dark Reading reports."
+        },
+        {
+          "date": "Jul 21, 26",
+          "st": "confirmed",
+          "ver": "v11",
+          "id": "L-0170",
+          "src": "Dark Reading",
+          "srcUrl": "https://www.darkreading.com/application-security/finding-and-prioritizing-vulnerabilities-no-easy-task",
+          "line": "The latest large language models (LLMs) have high false-positive rates and fail to account for the context of a scan when used to find and prioritize software vulnerabilities, creating more work for security teams, Dark Reading reports."
         }
       ],
       "sources": [
@@ -578,8 +611,8 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v71",
-      "verRange": "v1–v71",
+      "ver": "v72",
+      "verRange": "v1–v72",
       "asOf": "July 21, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
@@ -1299,6 +1332,15 @@
           "src": "BleepingComputer",
           "srcUrl": "https://www.bleepingcomputer.com/news/security/critical-sharepoint-rce-flaw-exploited-to-steal-machine-keys/",
           "line": "Hackers are actively exploiting a critical Microsoft SharePoint flaw (CVE-2026-50522) to steal machine keys, letting them keep access to affected servers even after they are patched, BleepingComputer reports."
+        },
+        {
+          "date": "Jul 21, 26",
+          "st": "confirmed",
+          "ver": "v72",
+          "id": "L-0171",
+          "src": "Dark Reading",
+          "srcUrl": "https://www.darkreading.com/cyberattacks-data-breaches/ransomware-is-accelerating-not-ai",
+          "line": "Ransomware attacks are accelerating, but not because of artificial intelligence (AI) — researchers point to fragmentation of the ransomware ecosystem, the emergence of new attackers, and expanding attacks on less-defended organizations, Dark Reading reports."
         }
       ],
       "sources": [
@@ -4358,6 +4400,22 @@
       "line": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 10 reports the Tropical Storm Warning extended westward to Morgan City, Louisiana, the Tropical Storm Watch for Metropolitan New Orleans and Lake Pontchartrain upgraded to a Warning, and the Tropical Storm Watch itself extended westward to Cameron, Louisiana, with maximum sustained winds holding at 60 mph.",
       "src": "NOAA NHC advisory",
       "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/212053.shtml"
+    },
+    {
+      "d": "2026-07-21",
+      "p": "ai",
+      "id": "L-0170",
+      "line": "The latest large language models (LLMs) have high false-positive rates and fail to account for the context of a scan when used to find and prioritize software vulnerabilities, creating more work for security teams, Dark Reading reports.",
+      "src": "Dark Reading",
+      "srcUrl": "https://www.darkreading.com/application-security/finding-and-prioritizing-vulnerabilities-no-easy-task"
+    },
+    {
+      "d": "2026-07-21",
+      "p": "cyber",
+      "id": "L-0171",
+      "line": "Ransomware attacks are accelerating, but not because of artificial intelligence (AI) — researchers point to fragmentation of the ransomware ecosystem, the emergence of new attackers, and expanding attacks on less-defended organizations, Dark Reading reports.",
+      "src": "Dark Reading",
+      "srcUrl": "https://www.darkreading.com/cyberattacks-data-breaches/ransomware-is-accelerating-not-ai"
     }
   ],
   "takeaways": [
@@ -4778,7 +4836,7 @@
       {
         "no": "9",
         "date": "Tue, Jul 21, 2026",
-        "confirmed": "21",
+        "confirmed": "23",
         "pending": "0",
         "flash": "2",
         "linked": true
