@@ -2,30 +2,30 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-21T12:14:00-04:00",
+    "generatedAt": "2026-07-21T13:14:00-04:00",
     "issueNo": 9,
-    "recordHash": "36fd437",
+    "recordHash": "ea32a35",
     "windowLabel": "June 9 – July 21, 2026",
     "nextWeekly": "Fri, Jul 24",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (11:04 ET), so candidates are items published since ≈09:04 ET / 13:04 UTC. The CISA Known Exploited Vulnerabilities (KEV) catalog advanced from catalogVersion 2026.07.16 to 2026.07.21 (1,647 → 1,651 entries), adding four flaws dated 2026-07-21: a chainable WordPress Core SQL-injection/remote-code-execution pair (CVE-2026-60137, CVE-2026-63030 — the same “WP2Shell” chain already recorded via Dark Reading on Jul 20), a second, distinct Langflow flaw (CVE-2026-0770, unrelated to the Langflow authorization-bypass flaw recorded Jul 7), and a legacy DD-WRT buffer-overflow flaw (CVE-2021-27137, first published 2021, newly KEV-listed today). All four were released at 15:12 UTC (11:12 ET), inside this run’s window, and were admitted as one bundled item, consistent with how the Jul 7 four-flaw KEV addition was recorded as a single item. Cybersecurity Dive’s report that ransomware victims often fail to fix the email-security gaps and unpatched flaws that exposed them was also admitted. NOAA NHC’s Tropical Storm Bertha Advisory Number 9 cycle re-appeared with seven companion products (Summary, the Public/Forecast Advisories, Forecast Discussion, Wind Speed Probabilities, Graphics, and the Storm Surge Flooding Map) now timestamped inside this run’s window, but the advisory itself is already on record as L-0161 from the prior run and none carried new facts — not separately admitted. The European Central Bank’s “ECB appoints Boris Kisselevsky” personnel item, The Record’s “Taiwan to slow mobile data” civil-defense item, and BleepingComputer’s sponsored “Closing the Identity Gaps” listing all reappeared in-window with the same URLs reviewed and excluded in the prior run — excluded again on the same grounds. Dark Reading’s AI-generated-code piece (already admitted as L-0160) also re-listed, not re-admitted. FinCEN’s newsroom page (page-checked, no feed) now shows “Opening Statement of FinCEN Director Andrea Gacki before the Committee on Financial Services” timestamped 2026-07-21T12:00:00Z (08:00 ET) — before this run’s 09:04 ET window start despite only now appearing on the page. Consistent with the Jul 11 precedent for late-appearing page content (the Anthropic/Alberta item), it was not backfilled; flagging for a human decision on whether to add it as a correction. Anthropic’s page (newest Jul 20), ENISA’s news page (unchanged, next dated item is an Oct 30 deadline notice), and ICO’s page (same JavaScript-rendered “Loading...” shell) carried nothing admissible. NIST’s feed again returned an empty channel (known behavior, not a failure). DOJ’s newest items (all dated 08:00 ET, before this run’s window, and non-technology criminal matters regardless) do not clear the relevance gate.",
-    "lastRun": "2026-07-21T12:14:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (12:14 ET), so candidates are items published since ≈10:14 ET / 14:14 UTC. One item was admitted: BleepingComputer’s report that hackers are actively exploiting the “wp2shell” WordPress Core flaws (CVE-2026-63030, CVE-2026-60137 — the same chain recorded via Dark Reading’s Jul 20 mass-exploitation report, L-0148, and this morning’s CISA KEV catalog listing, L-0162) to install persistent webshells and malicious plugins on compromised servers — a new, more concrete fact (confirmed post-exploitation technique) than either prior report stated, so it was admitted as its own item rather than treated as a reappearance, consistent with how L-0148 was admitted atop L-0136. Triaged flash: confirmed active exploitation of a widely deployed CMS platform, matching the bar set by L-0129/L-0134/L-0148. NOAA NHC’s Tropical Storm Bertha Advisory Number 9 cycle re-appeared with seven companion products now timestamped inside this run’s window, but the advisory itself is already on record as L-0161 and no new advisory number has been issued — not separately admitted. Cybersecurity Dive’s ransomware-recovery report reappeared with the same URL already admitted as L-0163 — not re-admitted. OpenAI’s “Introducing the ChatGPT for small business program” published in-window is a product-launch announcement with no technology-risk content stated in its own excerpt — excluded at the relevance gate (“when in doubt, exclude”). The CISA Known Exploited Vulnerabilities (KEV) catalog is unchanged this run (still catalogVersion 2026.07.21, 1,651 entries). FinCEN’s newsroom page (page-checked, no feed) still shows “Opening Statement of FinCEN Director Andrea Gacki before the Committee on Financial Services Subcommittee” as its newest item, timestamped 2026-07-21T12:00:00Z (08:00 ET) — before this run’s 10:14 ET window start, same as the prior two runs; still not backfilled, still flagged for a human decision on whether to add it as a correction. Anthropic’s page (unchanged), ENISA’s news page (unchanged, newest dated item still an Oct 30 deadline notice), and ICO’s page (same JavaScript-rendered “Loading...” shell) carried nothing admissible. NIST’s feed again returned an empty channel (known behavior, not a failure). DOJ’s newest items (all dated 08:00 ET, before this run’s window, and non-technology criminal matters regardless) do not clear the relevance gate.",
+    "lastRun": "2026-07-21T13:14:00-04:00"
   },
   "lead": {
-    "head": "Leading stories: the FTC orders Celsius Network’s founders to pay $16.5 million over deceptive cryptocurrency-deposit claims; Estée Lauder discloses a data breach after hackers exploited a flaw in Oracle E-Business Suite; and hackers steal $23.7 million from crypto platform Ostium in an off-chain infrastructure attack",
-    "dek": "Today’s edition draws on the fifteen items recorded so far. Every item links to its source.",
+    "head": "Leading stories: hackers actively exploit WordPress Core’s “wp2shell” flaws to install webshells and malicious plugins on affected sites; Estée Lauder discloses a data breach after hackers exploited a flaw in Oracle E-Business Suite; and hackers steal $23.7 million from crypto platform Ostium in an off-chain infrastructure attack",
+    "dek": "Today’s edition draws on the sixteen items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
-        "p": "fraud",
-        "tri": "priority",
+        "p": "cyber",
+        "tri": "flash",
         "st": "confirmed",
-        "id": "L-0149",
+        "id": "L-0164",
         "conf": "",
-        "text": "FTC requires Celsius Network founder Alexander Mashinsky and business partners Shlomi Daniel Leon and Hanoch “Nuke” Goldstein to pay $16.5 million total, resolving charges that they deceived users by falsely promising deposits to their cryptocurrency platform would be safe and always available; the order also bars them from marketing or selling products or services that can be used to deposit or withdraw assets.",
-        "why": "The order bars the defendants from offering similar deposit-or-withdrawal crypto products going forward, underscoring that regulators will pursue individuals — not just companies — over false safety promises made to crypto customers.",
-        "srcText": "FTC, Jul 20",
-        "srcUrl": "https://www.ftc.gov/news-events/news/press-releases/2026/07/founders-celsius-network-ordered-pay-165-million-resolve-ftc-charges"
+        "text": "Hackers are exploiting the “wp2shell” WordPress Core vulnerabilities (CVE-2026-63030, CVE-2026-60137) to deploy persistent webshells and install malicious plugins on affected servers, BleepingComputer reports.",
+        "why": "Confirmed active exploitation — hackers are installing persistent webshells and malicious plugins on affected WordPress servers — means any bank or vendor running an unpatched WordPress Core site should treat this as an active compromise risk, not a future one.",
+        "srcText": "BleepingComputer, Jul 21",
+        "srcUrl": "https://www.bleepingcomputer.com/news/security/critical-wp2shell-wordpress-flaws-exploited-to-install-webshells/"
       },
       {
         "n": "2",
@@ -54,6 +54,18 @@
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-21T16:41:50Z",
+      "p": "cyber",
+      "tri": "flash",
+      "st": "confirmed",
+      "tier": "T2",
+      "id": "L-0164",
+      "title": "Hackers are exploiting the “wp2shell” WordPress Core vulnerabilities (CVE-2026-63030, CVE-2026-60137) to deploy persistent webshells and install malicious plugins on affected servers, BleepingComputer reports.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/critical-wp2shell-wordpress-flaws-exploited-to-install-webshells/",
+      "linked": true
+    },
     {
       "ts": "2026-07-21T15:12:01Z",
       "p": "cyber",
@@ -497,8 +509,8 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v69",
-      "verRange": "v1–v69",
+      "ver": "v70",
+      "verRange": "v1–v70",
       "asOf": "July 21, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
@@ -1200,6 +1212,15 @@
           "src": "Cybersecurity Dive",
           "srcUrl": "https://www.cybersecuritydive.com/news/ransomware-lingering-weaknesses-black-kite/825791/",
           "line": "Many organizations that recover from a ransomware attack still haven’t fixed the email-security gaps and unpatched flaws that exposed them in the first place, a new report finds, Cybersecurity Dive reports."
+        },
+        {
+          "date": "Jul 21, 26",
+          "st": "confirmed",
+          "ver": "v70",
+          "id": "L-0164",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/critical-wp2shell-wordpress-flaws-exploited-to-install-webshells/",
+          "line": "Hackers are exploiting the “wp2shell” WordPress Core vulnerabilities (CVE-2026-63030, CVE-2026-60137) to deploy persistent webshells and install malicious plugins on affected servers, BleepingComputer reports."
         }
       ],
       "sources": [
@@ -4174,6 +4195,14 @@
       "line": "Many organizations that recover from a ransomware attack still haven’t fixed the email-security gaps and unpatched flaws that exposed them in the first place, a new report finds, Cybersecurity Dive reports.",
       "src": "Cybersecurity Dive",
       "srcUrl": "https://www.cybersecuritydive.com/news/ransomware-lingering-weaknesses-black-kite/825791/"
+    },
+    {
+      "d": "2026-07-21",
+      "p": "cyber",
+      "id": "L-0164",
+      "line": "Hackers are exploiting the “wp2shell” WordPress Core vulnerabilities (CVE-2026-63030, CVE-2026-60137) to deploy persistent webshells and install malicious plugins on affected servers, BleepingComputer reports.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/critical-wp2shell-wordpress-flaws-exploited-to-install-webshells/"
     }
   ],
   "takeaways": [
@@ -4585,9 +4614,9 @@
       {
         "no": "9",
         "date": "Tue, Jul 21, 2026",
-        "confirmed": "15",
+        "confirmed": "16",
         "pending": "0",
-        "flash": "—",
+        "flash": "1",
         "linked": true
       },
       {
