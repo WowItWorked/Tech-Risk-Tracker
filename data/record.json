@@ -2,284 +2,176 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-20T18:13:00-04:00",
-    "issueNo": 8,
-    "recordHash": "f4dc31d",
-    "windowLabel": "June 9 – July 20, 2026",
+    "generatedAt": "2026-07-21T06:45:00-04:00",
+    "issueNo": 9,
+    "recordHash": "d3ff37d",
+    "windowLabel": "June 9 – July 21, 2026",
     "nextWeekly": "Fri, Jul 24",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "26 of 27 allowlisted feeds returned 200 (FTC 403’d the descriptive User-Agent and was retried with the standard-browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed); the European Banking Authority’s feed returned HTTP 502 on three attempts (a server-side error, not a timeout this time), counted as the one feed failure this run, well short of the runbook’s “fewer than half” threshold. Selection window: 2 hours before this run’s prior `generatedAt` (17:12:00 ET), so candidates are items published since ~15:12 ET / 19:12 UTC. The CISA Known Exploited Vulnerabilities (KEV) catalog stayed at `catalogVersion` 2026.07.16 (1,647 entries) — no new additions. NIST’s feed again returned an empty channel (known behavior, not a failure). Anthropic’s page still shows “Rare disease research grants” dated Jul 20 with no textual change — excluded again on the same grounds as prior runs. FinCEN’s newest dated item remains Jun 30; ENISA’s newest listed item remains Jul 14 (already reviewed); ICO’s page returned the same JavaScript-rendered “Loading...” shell seen in every prior run (not counted as a feed failure). DOJ’s current 25 entries were reviewed directly (unreliable placeholder noon-UTC `pubDate`, per established practice) — an entirely new set of 25 sentencing/charging entries versus the prior run, none naming a bank, financial institution, or technology-risk mechanism (individual investment fraud, wire fraud, check fraud, and similar cases with no tech-risk nexus stated); none admitted. Three new items were admitted, all from the cyber pillar:\n- **L-0146** (cyber, priority): BleepingComputer reports that the JadePuffer autonomous AI agent — previously linked to ransomware attacks via an exploited Langflow flaw — has been upgraded with new malware called EncForge that focuses on encrypting artificial intelligence assets, including training datasets, vector databases, and model checkpoints. The RSS `description` field supplied a usable verbatim excerpt directly. Triaged **priority**: a named threat actor's malware capability upgrade with no confirmed victim or sector-wide exploitation claim stated, consistent with prior malware-capability admissions.\n- **L-0147** (cyber, priority): BleepingComputer reports that researchers escaped the sandboxes in Cursor, Codex, Gemini CLI, and Antigravity by having the AI agent write files that trusted host tools later ran, resulting in multiple CVEs; patches have been issued, and Google downgraded two of the Antigravity findings. Triaged **priority**: a multi-vendor security flaw spanning four widely used AI coding tools, already patched.\n- **L-0148** (cyber, flash): Dark Reading reports that attackers are widely chaining together two flaws — CVE-2026-60137 and CVE-2026-63030, dubbed “WP2Shell” — to attack WordPress sites, barely three days after disclosure, threatening millions of sites with remote takeover. This is a continuation of the same wp2shell flaw already recorded as L-0136 (Jul 18, public exploits released); this report confirms the escalation to active mass exploitation. Triaged **flash**: active exploitation at sector-wide scale (“one of the largest attack surfaces on the Internet”), consistent with L-0134's ServiceNow flash admission.\nNot admitted (reviewed, excluded): Dark Reading’s “Remediating Vulnerabilities With LLMs: Inside Ivanti’s Automation Push” and The Record’s “Flock Safety kills acoustic system designed to detect ‘human distress’” both reappeared in this run’s 2-hour overlap window — both already excluded in the prior (17:12 ET) run on the same grounds, not re-reviewed further. NOAA NHC’s Tropical Depression Two Public Advisory Number 6 and its companion Forecast Advisory, Summary, Wind Speed Probabilities, Forecast Discussion, and graphics products (published 16:47–17:51 ET) reappeared or newly appeared in this run’s window — Advisory 6’s own “CHANGES WITH THIS ADVISORY: None” line, already confirmed in the prior run, means the Storm Surge Watch and Tropical Storm Watch already recorded as L-0141 remain unchanged; the later-published graphics are companion products for the same unchanged advisory cycle — not separately admitted.",
-    "lastRun": "2026-07-20T18:13:00-04:00"
+    "feedNote": "26 of 27 allowlisted feeds returned 200 (FTC 403’d the descriptive User-Agent and was retried with the standard-browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed); the European Banking Authority’s feed returned HTTP 502 on four attempts (a server-side error, not a timeout), counted as the one feed failure this run, well short of the runbook’s “fewer than half” threshold. Selection window: 12 hours before this run’s prior lastRun (2026-07-20T18:13 ET), so candidates are items published since ~06:13 ET Jul 20 / 10:13 UTC Jul 20 (day-opening overlap). The CISA Known Exploited Vulnerabilities (KEV) catalog stayed at catalogVersion 2026.07.16 (1,647 entries) — no new additions. NIST’s feed again returned an empty channel (known behavior, not a failure). Anthropic’s page still shows “Apply for Anthropic’s AI for Science rare disease research grants” dated Jul 20 with no newer item — excluded again on the same grounds as prior runs (not tech-risk relevant). FinCEN’s newest dated item remains Jun 30; ENISA’s newest listed item remains Jul 14 (already reviewed); ICO’s page returned the same JavaScript-rendered “Loading...” shell seen in every prior run (not counted as a feed failure). DOJ’s 25 in-window entries were reviewed directly (unreliable placeholder noon-UTC pubDate, per established practice); two — an Oregon payment-processing wire-fraud sentencing and an eight-defendant NYC check-fraud charging — were admitted for the fraud pillar, the rest (immigration, firearms, drug, and non-tech-nexus fraud cases) excluded at the relevance gate. Ten new items were admitted: three fraud (FTC Celsius Network founders ordered to pay $16.5M; DOJ Oregon payment-processing wire-fraud sentencing; DOJ NYC check-fraud charging), four cyber (HollowGraph malware abusing Microsoft 365's calendar for C2; a $23.7M Ostium crypto theft via off-chain infrastructure compromise; SonicWall SMA1000 zero-days confirmed pushing custom malware, continuing the L-0079/L-0129/L-0142 thread; free unofficial patches for the Windows LegacyHive zero-day first disclosed as L-0124), two third-party risk (a major hospital software vendor data breach reported by Cybersecurity Dive; Estée Lauder's data breach via an exploited Oracle E-Business Suite flaw), and one resilience (Tropical Depression Two strengthened into Tropical Storm Bertha, now carrying a Tropical Storm Warning alongside the Storm Surge Watch and Tropical Storm Watch recorded as L-0141/L-0132). Not admitted (reviewed, excluded): a Bleeping Computer article on Microsoft's manual WSUS sync-delay mitigation (a follow-up to the already-recorded L-0138 sync-delay item; a resolution note, not a new risk); Dark Reading's 'Remediating Vulnerabilities With LLMs' (Ivanti), '25 Years After Code Red', and 'Cybersecurity Keeps Events “Uneventful”' (opinion/retrospective pieces, no discrete reportable event); BleepingComputer's 'An AI SOC Evaluation Guide' (vendor-sponsored guidance, not a news event); The Record's Flock Safety acoustic-detection, India nuclear-plant-leak, World Cup domain-seizure, South Korea diplomat-academy hack, and Romania land-registry cyberattack items (no stated financial-sector nexus); and the ECB's July 2026 euro area bank lending survey (no textual excerpt and no tech-risk content — macroeconomic survey, outside the eight pillars). Eight items reappearing in this run's window duplicate already-recorded items and were not re-admitted: JadePuffer/EncForge and the Cursor/Codex/Gemini CLI/Antigravity sandbox escapes (L-0146, L-0147), WP2Shell mass exploitation (L-0148), the Hugging Face autonomous-agent breach (L-0139), the original Microsoft WSUS sync-delay report (L-0138), the SonicWall June-tracing report (L-0142), the BEC evasion-tactics report (L-0144), and the CISOs/AI-risk report (L-0145).",
+    "lastRun": "2026-07-21T06:45:00-04:00"
   },
   "lead": {
-    "head": "Leading stories: attackers exploiting a critical flaw in the ServiceNow AI Platform; attackers widely exploiting critical WordPress flaws just days after disclosure, threatening millions of sites; and researchers tracing active exploitation of SonicWall’s SMA1000 appliances back to late June, with seven customers confirmed compromised",
-    "dek": "Today’s edition draws on the nineteen items recorded so far. Every item links to its source.",
+    "head": "Leading stories: the FTC orders Celsius Network’s founders to pay $16.5 million over deceptive cryptocurrency-deposit claims; Estée Lauder discloses a data breach after hackers exploited a flaw in Oracle E-Business Suite; and hackers steal $23.7 million from crypto platform Ostium in an off-chain infrastructure attack",
+    "dek": "Today’s edition draws on the ten items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
-        "p": "cyber",
-        "tri": "flash",
+        "p": "fraud",
+        "tri": "priority",
         "st": "confirmed",
-        "id": "L-0134",
+        "id": "L-0149",
         "conf": "",
-        "text": "Attackers have begun exploiting a critical vulnerability (CVE-2026-6875) in the ServiceNow AI Platform; ServiceNow released security updates for self-hosted instances on July 13, according to threat intelligence firm Defused, BleepingComputer reports.",
-        "why": "Attackers have begun exploiting a critical vulnerability (CVE-2026-6875) in the ServiceNow AI Platform, according to threat intelligence firm Defused, and ServiceNow has released security updates for self-hosted instances — a reminder to confirm the patch has been applied given active exploitation is underway.",
-        "srcText": "BleepingComputer, Jul 20",
-        "srcUrl": "https://www.bleepingcomputer.com/news/security/critical-servicenow-code-execution-flaw-now-exploited-in-attacks/"
+        "text": "FTC requires Celsius Network founder Alexander Mashinsky and business partners Shlomi Daniel Leon and Hanoch “Nuke” Goldstein to pay $16.5 million total, resolving charges that they deceived users by falsely promising deposits to their cryptocurrency platform would be safe and always available; the order also bars them from marketing or selling products or services that can be used to deposit or withdraw assets.",
+        "why": "The order bars the defendants from offering similar deposit-or-withdrawal crypto products going forward, underscoring that regulators will pursue individuals — not just companies — over false safety promises made to crypto customers.",
+        "srcText": "FTC, Jul 20",
+        "srcUrl": "https://www.ftc.gov/news-events/news/press-releases/2026/07/founders-celsius-network-ordered-pay-165-million-resolve-ftc-charges"
       },
       {
         "n": "2",
-        "p": "cyber",
-        "tri": "flash",
+        "p": "tp",
+        "tri": "priority",
         "st": "confirmed",
-        "id": "L-0148",
+        "id": "L-0156",
         "conf": "",
-        "text": "Dark Reading reports that attackers are widely chaining together two flaws — CVE-2026-60137 and CVE-2026-63030, dubbed “WP2Shell” — to attack WordPress sites, barely three days after disclosure, threatening millions of sites with remote takeover.",
-        "why": "Attackers are actively chaining together two newly disclosed WordPress flaws just days after they became public, threatening millions of WordPress-run sites with takeover — banks and vendors running WordPress should patch without delay.",
-        "srcText": "Dark Reading, Jul 20",
-        "srcUrl": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover"
+        "text": "Cosmetics giant Estée Lauder is notifying customers of a data breach after hackers exploited a flaw in Oracle E-Business Suite, software the company used for human resources (HR) operations, BleepingComputer reports.",
+        "why": "Hackers got in through a flaw in Oracle E-Business Suite, the software Estée Lauder used for HR operations — a reminder that HR and back-office systems, not just customer-facing platforms, are a viable path for attackers into corporate data.",
+        "srcText": "BleepingComputer, Jul 20",
+        "srcUrl": "https://www.bleepingcomputer.com/news/security/est-e-lauder-discloses-data-breach-via-oracle-e-business-flaw/"
       },
       {
         "n": "3",
         "p": "cyber",
         "tri": "priority",
         "st": "confirmed",
-        "id": "L-0142",
+        "id": "L-0154",
         "conf": "",
-        "text": "Cybersecurity Dive reports that two critical vulnerabilities in SonicWall's SMA1000 appliances have been actively exploited as zero-days since late June, according to cybersecurity firm Volexity, with multiple threat actors — including the INC ransomware group — targeting vulnerable firewall systems; researchers at Huntress confirmed seven customers have been impacted.",
-        "why": "Cybersecurity Dive reports that SonicWall SMA1000 appliances have been under active, confirmed exploitation since late June, with Huntress researchers confirming seven customers already compromised — banks running these appliances should treat this as confirmed, active exploitation and check for signs of compromise without delay.",
-        "srcText": "Cybersecurity Dive, Jul 20",
-        "srcUrl": "https://www.cybersecuritydive.com/news/researchers-sonicwall-sma1000-exploitation-june/825654/"
+        "text": "The Ostium trading platform says an attacker stole $23.75 million from its liquidity provider vault after compromising off-chain infrastructure used to feed prices into the protocol, BleepingComputer reports.",
+        "why": "The theft targeted the off-chain infrastructure that feeds price data into the trading platform rather than its on-chain code, showing that crypto-trading infrastructure risk extends beyond smart-contract bugs to the systems that support them.",
+        "srcText": "BleepingComputer, Jul 20",
+        "srcUrl": "https://www.bleepingcomputer.com/news/security/hackers-steal-237-million-in-crypto-from-ostium-in-off-chain-attack/"
       }
     ]
   },
   "wire": [
     {
-      "ts": "2026-07-20T21:08:02Z",
-      "p": "cyber",
-      "tri": "priority",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0146",
-      "title": "BleepingComputer reports that the JadePuffer autonomous AI agent has been upgraded with new malware called EncForge that focuses on encrypting artificial intelligence assets, including training datasets, vector databases, and model checkpoints.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/jadepuffer-agentic-attacks-now-target-ai-model-data-with-ransomware/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-20T21:14:42Z",
-      "p": "cyber",
-      "tri": "priority",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0147",
-      "title": "BleepingComputer reports that researchers escaped the sandboxes in Cursor, Codex, Gemini CLI, and Antigravity by having the AI agent write files that trusted host tools later ran, resulting in multiple CVEs; patches have been issued, and Google downgraded two of the Antigravity findings.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/cursor-codex-gemini-cli-antigravity-hit-by-sandbox-escapes/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-20T21:38:18Z",
-      "p": "cyber",
-      "tri": "flash",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0148",
-      "title": "Dark Reading reports that attackers are widely chaining together two flaws — CVE-2026-60137 and CVE-2026-63030, dubbed “WP2Shell” — to attack WordPress sites, barely three days after disclosure, threatening millions of sites with remote takeover.",
-      "src": "Dark Reading",
-      "srcUrl": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-20T19:07:01Z",
-      "p": "ai",
-      "tri": "routine",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0145",
-      "title": "Job pressures from AI adoption have led 26% of top security executives to consider leaving their position, Dark Reading reports.",
-      "src": "Dark Reading",
-      "srcUrl": "https://www.darkreading.com/cybersecurity-operations/cisos-feel-heat-ai-risk",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-20T18:30:22Z",
-      "p": "cyber",
-      "tri": "routine",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0144",
-      "title": "Criminals are combining fileless techniques with detection-evading malware loaders — dubbed “The TFF Trap” — to deliver remote-access trojans and information-stealing malware, including Agent Tesla, Remcos, XWorm, and Best Private Logger, through business email compromise (BEC) phishing, Dark Reading reports.",
-      "src": "Dark Reading",
-      "srcUrl": "https://www.darkreading.com/endpoint-security/attackers-combo-evasion-tactics-bec-phishing",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-20T15:10:51Z",
-      "p": "cyber",
-      "tri": "priority",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0142",
-      "title": "Cybersecurity Dive reports that two critical vulnerabilities in SonicWall's SMA1000 appliances have been actively exploited as zero-days since late June, according to cybersecurity firm Volexity, with multiple threat actors — including the INC ransomware group — targeting vulnerable firewall systems; researchers at Huntress confirmed seven customers have been impacted.",
-      "src": "Cybersecurity Dive",
-      "srcUrl": "https://www.cybersecuritydive.com/news/researchers-sonicwall-sma1000-exploitation-june/825654/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-20T14:48:14Z",
+      "ts": "2026-07-21T08:37:24Z",
       "p": "resilience",
       "tri": "routine",
       "st": "confirmed",
       "tier": "T1",
-      "id": "L-0141",
-      "title": "The National Hurricane Center expands its watches for Tropical Depression Two, issuing a Storm Surge Watch for the Alabama/Florida-to-Mississippi Gulf coast and a Tropical Storm Watch reaching into Mississippi and Louisiana.",
+      "id": "L-0158",
+      "title": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 8 reports a Tropical Storm Warning now in effect from the Alabama/Florida border to the Jefferson/Plaquemines Parish border in Louisiana, alongside the previously issued Storm Surge Watch and Tropical Storm Watch, with maximum sustained winds of 50 mph.",
       "src": "NOAA NHC advisory",
-      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/201448.shtml",
+      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/210837.shtml",
       "linked": true
     },
     {
-      "ts": "2026-07-20T14:00:00Z",
-      "p": "fraud",
+      "ts": "2026-07-21T08:06:26Z",
+      "p": "cyber",
       "tri": "routine",
       "st": "confirmed",
-      "tier": "T1",
-      "id": "L-0140",
-      "title": "Criminal scammers are impersonating FBI personnel who handle Internet Crime Complaint Center (IC3) complaints, using AI-generated videos and spoofed websites that gather personal information, to deceive and revictimize scam victims, the FBI's IC3 reports.",
-      "src": "FBI IC3 PSA",
-      "srcUrl": "https://www.ic3.gov/PSA/2026/PSA260720",
+      "tier": "T2",
+      "id": "L-0157",
+      "title": "Free, unofficial patches are now available for the previously disclosed Windows LegacyHive zero-day flaw that lets attackers escalate privileges on fully updated Windows systems, BleepingComputer reports.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/windows-legacyhive-zero-day-flaw-gets-free-unofficial-patches/",
       "linked": true
     },
     {
-      "ts": "2026-07-20T12:00:00Z",
-      "p": "insider",
-      "tri": "routine",
-      "st": "confirmed",
-      "tier": "T1",
-      "id": "L-0130",
-      "title": "Aaron T. Luneke, 44, of Columbus, Nebraska, a former bank chief financial officer, is sentenced to 36 months in prison after a federal jury convicted him of bank fraud and attempted bank fraud in a scheme involving a car wash and undisclosed debts in a $4.3 million loan, the Department of Justice reports.",
-      "src": "DOJ press release",
-      "srcUrl": "https://www.justice.gov/usao-ne/pr/former-bank-cfo-sentenced-36-months-imprisonment-bank-fraud-scheme-involving-car-wash",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-20T12:00:00Z",
-      "p": "fraud",
-      "tri": "routine",
-      "st": "confirmed",
-      "tier": "T1",
-      "id": "L-0131",
-      "title": "Carlos Banegas-Contreras, an illegal alien from Honduras, is sentenced to 27 months in prison for conspiring to use fake identification cards to cash 178 fraudulent paychecks totaling $299,474 at three check-cashing businesses and five bank branches, the Department of Justice reports.",
-      "src": "DOJ press release",
-      "srcUrl": "https://www.justice.gov/usao-edok/pr/illegal-alien-honduras-sentenced-27-months-prison-2023-bank-fraud-conspiracy",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-20T12:00:00Z",
-      "p": "fraud",
-      "tri": "routine",
-      "st": "confirmed",
-      "tier": "T1",
-      "id": "L-0143",
-      "title": "A Georgia man is sentenced to 6 years in prison for stealing $1.7 million through a business email scheme in which he illegally accessed victim entities’ email accounts to identify their vendors, then posed as those vendors in emails requesting payments, the Department of Justice reports.",
-      "src": "DOJ press release",
-      "srcUrl": "https://www.justice.gov/usao-ndoh/pr/georgia-man-sentenced-6-years-prison-stealing-17-million-through-business-email-scheme",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-20T11:56:28Z",
+      "ts": "2026-07-20T22:39:30Z",
       "p": "tp",
       "tri": "priority",
       "st": "confirmed",
       "tier": "T2",
-      "id": "L-0139",
-      "title": "Hugging Face, an open-source AI and machine learning platform used by more than 50,000 organizations, discloses that attackers gained access to internal datasets and credentials after breaching its production infrastructure using an autonomous AI agent system, BleepingComputer reports.",
+      "id": "L-0156",
+      "title": "Cosmetics giant Estée Lauder is notifying customers of a data breach after hackers exploited a flaw in Oracle E-Business Suite, software the company used for human resources (HR) operations, BleepingComputer reports.",
       "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/hugging-face-breach-autonomous-ai-agent-system-internal-datasets-credentials/",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/est-e-lauder-discloses-data-breach-via-oracle-e-business-flaw/",
       "linked": true
     },
     {
-      "ts": "2026-07-20T10:47:28Z",
+      "ts": "2026-07-20T22:23:23Z",
       "p": "cyber",
-      "tri": "routine",
+      "tri": "priority",
       "st": "confirmed",
       "tier": "T2",
-      "id": "L-0138",
-      "title": "Microsoft is working to fix a known issue affecting Windows Server Update Services (WSUS) servers, which has caused synchronization problems for more than a week, BleepingComputer reports.",
+      "id": "L-0155",
+      "title": "Two previously disclosed SonicWall SMA1000 vulnerabilities were exploited as zero-days for weeks, letting attackers install custom malware on vulnerable VPN appliances, BleepingComputer reports.",
       "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-working-to-fix-wsus-server-sync-delays-and-timeouts/",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/sonicwall-sma1000-flaws-exploited-as-zero-days-to-push-custom-malware/",
       "linked": true
     },
     {
-      "ts": "2026-07-20T09:29:20Z",
+      "ts": "2026-07-20T22:22:56Z",
       "p": "cyber",
-      "tri": "flash",
+      "tri": "priority",
       "st": "confirmed",
       "tier": "T2",
-      "id": "L-0134",
-      "title": "Attackers have begun exploiting a critical vulnerability (CVE-2026-6875) in the ServiceNow AI Platform; ServiceNow released security updates for self-hosted instances on July 13, according to threat intelligence firm Defused, BleepingComputer reports.",
+      "id": "L-0154",
+      "title": "The Ostium trading platform says an attacker stole $23.75 million from its liquidity provider vault after compromising off-chain infrastructure used to feed prices into the protocol, BleepingComputer reports.",
       "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/critical-servicenow-code-execution-flaw-now-exploited-in-attacks/",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/hackers-steal-237-million-in-crypto-from-ostium-in-off-chain-attack/",
       "linked": true
     },
     {
-      "ts": "2026-07-20T09:00:00Z",
-      "p": "data",
+      "ts": "2026-07-20T17:43:01Z",
+      "p": "cyber",
+      "tri": "priority",
+      "st": "confirmed",
+      "tier": "T2",
+      "id": "L-0153",
+      "title": "A malicious component called HollowGraph uses the calendar feature in compromised Microsoft 365 mailboxes as a command-and-control channel to receive attacker commands and exfiltrate stolen data, BleepingComputer reports.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/new-hollowgraph-malware-uses-microsoft-graph-for-stealthy-c2-comms/",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-20T14:28:04Z",
+      "p": "tp",
+      "tri": "priority",
+      "st": "confirmed",
+      "tier": "T2",
+      "id": "L-0152",
+      "title": "Hackers steal customer data from a major hospital software vendor, Cybersecurity Dive reports, calling the breach another reminder of the healthcare industry’s vulnerability to supply-chain attacks.",
+      "src": "Cybersecurity Dive",
+      "srcUrl": "https://www.cybersecuritydive.com/news/craneware-health-care-data-breach/825643/",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-20T12:00:00Z",
+      "p": "fraud",
       "tri": "priority",
       "st": "confirmed",
       "tier": "T1",
-      "id": "L-0133",
-      "title": "The Bank of England's Prudential Regulation Authority (PRA) fines HDI Global SE £4,165,000 for submitting incorrect data on Financial Services Compensation Scheme (FSCS) liabilities and fee-tariff data to the PRA, caused by its failure to apply due skill, care and diligence in calculating the data.",
-      "src": "Bank of England (PRA)",
-      "srcUrl": "https://www.bankofengland.co.uk/news/2026/july/pra-fines-hdi-global-se-4165000-for-inaccurate-reporting",
+      "id": "L-0149",
+      "title": "FTC requires Celsius Network founder Alexander Mashinsky and business partners Shlomi Daniel Leon and Hanoch “Nuke” Goldstein to pay $16.5 million total, resolving charges that they deceived users by falsely promising deposits to their cryptocurrency platform would be safe and always available; the order also bars them from marketing or selling products or services that can be used to deposit or withdraw assets.",
+      "src": "FTC press release",
+      "srcUrl": "https://www.ftc.gov/news-events/news/press-releases/2026/07/founders-celsius-network-ordered-pay-165-million-resolve-ftc-charges",
       "linked": true
     },
     {
-      "ts": "2026-07-20T08:46:39Z",
-      "p": "resilience",
+      "ts": "2026-07-20T12:00:00Z",
+      "p": "fraud",
       "tri": "routine",
       "st": "confirmed",
       "tier": "T1",
-      "id": "L-0132",
-      "title": "The National Hurricane Center issues a tropical storm watch for the Alabama Gulf coast as Tropical Depression Two, located about 120 miles south of Panama City, Florida, is expected to strengthen into a tropical storm later today.",
-      "src": "NOAA NHC advisory",
-      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/200846.shtml",
+      "id": "L-0150",
+      "title": "A payment processing broker is sentenced to three years in prison for facilitating a scheme that stole money from businesses’ bank accounts; sham merchants stole and attempted to steal $14 million from victims’ bank accounts, the Department of Justice reports.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/opa/pr/oregon-payment-processing-broker-sentenced-14-million-dollar-wire-fraud-scheme",
       "linked": true
     },
     {
-      "ts": "2026-07-18T19:32:02Z",
-      "p": "cyber",
+      "ts": "2026-07-20T12:00:00Z",
+      "p": "fraud",
       "tri": "routine",
       "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0135",
-      "title": "7-Zip releases version 26.02, fixing a remote code execution vulnerability that could let attackers run malicious code if a user opens a specially crafted compressed archive file, BleepingComputer reports.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/update-now-7-zip-fixes-rce-flaw-exploitable-with-malicious-archives/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-18T17:22:47Z",
-      "p": "cyber",
-      "tri": "routine",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0136",
-      "title": "Public exploits are released for critical “wp2shell” remote code execution vulnerabilities in WordPress Core, prompting warnings that administrators patch their sites immediately, BleepingComputer reports.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/wordpress-core-wp2shell-rce-flaws-get-public-exploits-patch-now/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-18T14:17:19Z",
-      "p": "cyber",
-      "tri": "routine",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0137",
-      "title": "Microsoft reports a surge in attacks using the ACR Stealer malware to steal browser-stored passwords, authentication tokens, and sensitive documents from its enterprise customers, BleepingComputer reports.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/microsoft-warns-of-surge-in-acr-stealer-attacks-on-customers/",
+      "tier": "T1",
+      "id": "L-0151",
+      "title": "Bianca Vieux and seven co-defendants — including current and former New York City Correction Officers, a Texas parole officer, and a New York City Transit Authority employee — are charged in a scheme involving deposits of falsified checks and production of fraudulent Social Security cards, the Department of Justice reports.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-edny/pr/eight-defendants-including-current-and-former-new-york-city-correction-officers-texas",
       "linked": true
     }
   ],
@@ -536,9 +428,9 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v62",
-      "verRange": "v1–v62",
-      "asOf": "July 20, 2026",
+      "ver": "v66",
+      "verRange": "v1–v66",
+      "asOf": "July 21, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
       "p2": "The UK’s National Cyber Security Centre (NCSC) and cybersecurity agencies from the United States and eight other countries warn that hackers linked to Russia’s Federal Security Service (FSB) are exploiting routers with default or weak passwords to infiltrate critical infrastructure, naming financial services among the sectors most at risk. Researchers report “JadePuffer,” described as a ransomware attack run end-to-end by an AI agent that broke in through the exploited Langflow flaw. Separately, Progress Software urged ShareFile customers running Storage Zone Controllers to shut down their servers immediately over a “credible external security threat.”",
@@ -1176,6 +1068,42 @@
           "src": "Dark Reading",
           "srcUrl": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover",
           "line": "Dark Reading reports that attackers are widely chaining together two flaws — CVE-2026-60137 and CVE-2026-63030, dubbed “WP2Shell” — to attack WordPress sites, barely three days after disclosure, threatening millions of sites with remote takeover."
+        },
+        {
+          "date": "Jul 20, 26",
+          "st": "confirmed",
+          "ver": "v63",
+          "id": "L-0153",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/new-hollowgraph-malware-uses-microsoft-graph-for-stealthy-c2-comms/",
+          "line": "A malicious component called HollowGraph uses the calendar feature in compromised Microsoft 365 mailboxes as a command-and-control channel to receive attacker commands and exfiltrate stolen data, BleepingComputer reports."
+        },
+        {
+          "date": "Jul 20, 26",
+          "st": "confirmed",
+          "ver": "v64",
+          "id": "L-0154",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/hackers-steal-237-million-in-crypto-from-ostium-in-off-chain-attack/",
+          "line": "The Ostium trading platform says an attacker stole $23.75 million from its liquidity provider vault after compromising off-chain infrastructure used to feed prices into the protocol, BleepingComputer reports."
+        },
+        {
+          "date": "Jul 20, 26",
+          "st": "confirmed",
+          "ver": "v65",
+          "id": "L-0155",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/sonicwall-sma1000-flaws-exploited-as-zero-days-to-push-custom-malware/",
+          "line": "Two previously disclosed SonicWall SMA1000 vulnerabilities were exploited as zero-days for weeks, letting attackers install custom malware on vulnerable VPN appliances, BleepingComputer reports."
+        },
+        {
+          "date": "Jul 21, 26",
+          "st": "confirmed",
+          "ver": "v66",
+          "id": "L-0157",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/windows-legacyhive-zero-day-flaw-gets-free-unofficial-patches/",
+          "line": "Free, unofficial patches are now available for the previously disclosed Windows LegacyHive zero-day flaw that lets attackers escalate privileges on fully updated Windows systems, BleepingComputer reports."
         }
       ],
       "sources": [
@@ -1468,6 +1396,26 @@
           "n": "58",
           "text": "Dark Reading — “WP2Shell” WordPress Core RCE flaws under active mass exploitation (CVE-2026-60137, CVE-2026-63030), Jul 20, 2026",
           "url": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover"
+        },
+        {
+          "n": "59",
+          "text": "BleepingComputer — HollowGraph malware abuses Microsoft Graph calendar for C2, Jul 20, 2026",
+          "url": "https://www.bleepingcomputer.com/news/security/new-hollowgraph-malware-uses-microsoft-graph-for-stealthy-c2-comms/"
+        },
+        {
+          "n": "60",
+          "text": "BleepingComputer — Ostium $23.7M crypto theft via off-chain infrastructure compromise, Jul 20, 2026",
+          "url": "https://www.bleepingcomputer.com/news/security/hackers-steal-237-million-in-crypto-from-ostium-in-off-chain-attack/"
+        },
+        {
+          "n": "61",
+          "text": "BleepingComputer — SonicWall SMA1000 zero-days used to push custom malware, Jul 20, 2026",
+          "url": "https://www.bleepingcomputer.com/news/security/sonicwall-sma1000-flaws-exploited-as-zero-days-to-push-custom-malware/"
+        },
+        {
+          "n": "62",
+          "text": "BleepingComputer — Windows LegacyHive zero-day gets free unofficial patches, Jul 21, 2026",
+          "url": "https://www.bleepingcomputer.com/news/security/windows-legacyhive-zero-day-flaw-gets-free-unofficial-patches/"
         }
       ],
       "related": [
@@ -1518,9 +1466,9 @@
       "scope": "fraud · AML rulemaking & scam patterns",
       "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
       "opened": "July 2026",
-      "ver": "v20",
-      "verRange": "v1–v20",
-      "asOf": "July 20, 2026",
+      "ver": "v23",
+      "verRange": "v1–v23",
+      "asOf": "July 21, 2026",
       "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22).",
       "p1Sup": "1, 3",
       "p2": "Operationally, the OCC is highlighting FinCEN’s updated Section 314(b) fact sheet clarifying how institutions can share suspected-fraud information with each other. The FBI’s recent consumer-facing warnings describe criminals redirecting users to fraudulent websites through malicious traffic-distribution systems. On the criminal side, a Bulgarian national already imprisoned for helping launder millions in fraud proceeds is charged with stealing $290,000 in government-seized cryptocurrency while incarcerated.",
@@ -1771,6 +1719,33 @@
           "src": "Tech Risk Tracker record",
           "srcUrl": "EDITORIAL.md",
           "line": "Watch opened; baseline compiled from allowlisted feeds, June 9 – July 9, 2026."
+        },
+        {
+          "date": "Jul 20, 26",
+          "st": "confirmed",
+          "ver": "v21",
+          "id": "L-0149",
+          "src": "FTC press release",
+          "srcUrl": "https://www.ftc.gov/news-events/news/press-releases/2026/07/founders-celsius-network-ordered-pay-165-million-resolve-ftc-charges",
+          "line": "FTC requires Celsius Network founder Alexander Mashinsky and business partners Shlomi Daniel Leon and Hanoch “Nuke” Goldstein to pay $16.5 million total, resolving charges that they deceived users by falsely promising deposits to their cryptocurrency platform would be safe and always available; the order also bars them from marketing or selling products or services that can be used to deposit or withdraw assets."
+        },
+        {
+          "date": "Jul 20, 26",
+          "st": "confirmed",
+          "ver": "v22",
+          "id": "L-0150",
+          "src": "DOJ press release",
+          "srcUrl": "https://www.justice.gov/opa/pr/oregon-payment-processing-broker-sentenced-14-million-dollar-wire-fraud-scheme",
+          "line": "A payment processing broker is sentenced to three years in prison for facilitating a scheme that stole money from businesses’ bank accounts; sham merchants stole and attempted to steal $14 million from victims’ bank accounts, the Department of Justice reports."
+        },
+        {
+          "date": "Jul 20, 26",
+          "st": "confirmed",
+          "ver": "v23",
+          "id": "L-0151",
+          "src": "DOJ press release",
+          "srcUrl": "https://www.justice.gov/usao-edny/pr/eight-defendants-including-current-and-former-new-york-city-correction-officers-texas",
+          "line": "Bianca Vieux and seven co-defendants — including current and former New York City Correction Officers, a Texas parole officer, and a New York City Transit Authority employee — are charged in a scheme involving deposits of falsified checks and production of fraudulent Social Security cards, the Department of Justice reports."
         }
       ],
       "sources": [
@@ -1888,6 +1863,21 @@
           "n": "23",
           "text": "DOJ — Georgia man sentenced, $1.7M business email scheme, Jul 20, 2026",
           "url": "https://www.justice.gov/usao-ndoh/pr/georgia-man-sentenced-6-years-prison-stealing-17-million-through-business-email-scheme"
+        },
+        {
+          "n": "24",
+          "text": "FTC — Celsius Network founders ordered to pay $16.5M, Jul 20, 2026",
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2026/07/founders-celsius-network-ordered-pay-165-million-resolve-ftc-charges"
+        },
+        {
+          "n": "25",
+          "text": "DOJ — Oregon payment processing broker sentenced, $14M wire fraud scheme, Jul 20, 2026",
+          "url": "https://www.justice.gov/opa/pr/oregon-payment-processing-broker-sentenced-14-million-dollar-wire-fraud-scheme"
+        },
+        {
+          "n": "26",
+          "text": "DOJ — Eight defendants charged in NYC check fraud scheme, Jul 20, 2026",
+          "url": "https://www.justice.gov/usao-edny/pr/eight-defendants-including-current-and-former-new-york-city-correction-officers-texas"
         }
       ],
       "related": [
@@ -1938,9 +1928,9 @@
       "scope": "third-party risk · vendor software & supply chain",
       "watch": "Vendor tools under active attack, software-supply-chain compromises aimed at financial applications, and vendor incident disclosures.",
       "opened": "July 2026",
-      "ver": "v7",
-      "verRange": "v1–v7",
-      "asOf": "July 20, 2026",
+      "ver": "v9",
+      "verRange": "v1–v9",
+      "asOf": "July 21, 2026",
       "p1": "One vendor-channel exploit is confirmed this window: SimpleHelp, a remote-support tool, carries an authentication-bypass flaw on CISA’s known-exploited list — in a vulnerable configuration, a remote, unauthenticated attacker can log in with a forged token.",
       "p1Sup": "1",
       "p2": "The rest of the vendor picture clusters around the software supply chain: a claimed breach at consulting firm Accenture said to involve source code and encryption keys, and malicious look-alike software kits for the Paysafe, Skrill, and Neteller payment applications on public code registries. Separately, Ernst & Young — one of the world’s four largest auditing and professional-services firms — is notifying customers of a data breach after its own support-ticket system was compromised, with documents containing client tax information among what the tickets may have held.",
@@ -2056,6 +2046,24 @@
           "src": "Tech Risk Tracker record",
           "srcUrl": "EDITORIAL.md",
           "line": "Watch opened; baseline compiled from allowlisted feeds, June 9 – July 9, 2026."
+        },
+        {
+          "date": "Jul 20, 26",
+          "st": "confirmed",
+          "ver": "v8",
+          "id": "L-0152",
+          "src": "Cybersecurity Dive",
+          "srcUrl": "https://www.cybersecuritydive.com/news/craneware-health-care-data-breach/825643/",
+          "line": "Hackers steal customer data from a major hospital software vendor, Cybersecurity Dive reports, calling the breach another reminder of the healthcare industry’s vulnerability to supply-chain attacks."
+        },
+        {
+          "date": "Jul 20, 26",
+          "st": "confirmed",
+          "ver": "v9",
+          "id": "L-0156",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/est-e-lauder-discloses-data-breach-via-oracle-e-business-flaw/",
+          "line": "Cosmetics giant Estée Lauder is notifying customers of a data breach after hackers exploited a flaw in Oracle E-Business Suite, software the company used for human resources (HR) operations, BleepingComputer reports."
         }
       ],
       "sources": [
@@ -2113,6 +2121,16 @@
           "n": "11",
           "text": "BleepingComputer — Hugging Face breach via autonomous AI agent system, Jul 20, 2026",
           "url": "https://www.bleepingcomputer.com/news/security/hugging-face-breach-autonomous-ai-agent-system-internal-datasets-credentials/"
+        },
+        {
+          "n": "12",
+          "text": "Cybersecurity Dive — major hospital software vendor data breach, Jul 20, 2026",
+          "url": "https://www.cybersecuritydive.com/news/craneware-health-care-data-breach/825643/"
+        },
+        {
+          "n": "13",
+          "text": "BleepingComputer — Estée Lauder data breach via Oracle E-Business Suite flaw, Jul 20, 2026",
+          "url": "https://www.bleepingcomputer.com/news/security/est-e-lauder-discloses-data-breach-via-oracle-e-business-flaw/"
         }
       ],
       "related": [
@@ -2148,15 +2166,15 @@
       "scope": "resilience · sector capacity & season risk",
       "watch": "Stress-test results, payments-system findings, severe-weather outlooks, and infrastructure-software advisories relevant to operations.",
       "opened": "July 2026",
-      "ver": "v4",
-      "verRange": "v1–v4",
-      "asOf": "July 20, 2026",
+      "ver": "v5",
+      "verRange": "v1–v5",
+      "asOf": "July 21, 2026",
       "p1": "The Federal Reserve’s annual stress test, released June 24, concludes that large banks are well positioned to weather a severe recession and continue lending to households and businesses.",
       "p1Sup": "1",
-      "p2": "Season risk turned active this window: the National Hurricane Center’s quiet July 9 outlook gave way to a tropical storm watch issued July 20 for the Alabama Gulf coast, as Tropical Depression Two — located about 120 miles south of Panama City, Florida — was expected to strengthen into a tropical storm later that day. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
-      "p2Sup": "3, 4, 6",
-      "assess": "We assess with moderate confidence that near-term weather-driven disruption risk is roughly even odds: a tropical storm watch for the Alabama Gulf coast has been expanded to add a Storm Surge Watch and a Tropical Storm Watch reaching into Mississippi and Louisiana, as Tropical Depression Two was forecast to strengthen into a tropical storm, though no confirmed systemic-infrastructure stress has entered the record this window.",
-      "assessSup": "3, 6, 7",
+      "p2": "Season risk turned active this window: the National Hurricane Center’s quiet July 9 outlook gave way to a system that strengthened into Tropical Storm Bertha, with a Tropical Storm Warning now in effect from the Alabama/Florida border to the Jefferson/Plaquemines Parish border in Louisiana and maximum sustained winds of 50 mph as of the morning of July 21. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
+      "p2Sup": "3, 4, 8",
+      "assess": "We assess with moderate confidence that near-term weather-driven disruption risk is roughly even odds: the storm previously forecast to strengthen has done so, with Tropical Storm Bertha now carrying a Tropical Storm Warning for the Alabama/Florida border to Louisiana alongside the Storm Surge Watch and Tropical Storm Watch already in effect for the Gulf Coast, though no confirmed systemic-infrastructure stress has entered the record this window.",
+      "assessSup": "7, 8",
       "conf": "moderate confidence",
       "events": [
         {
@@ -2230,6 +2248,15 @@
           "src": "Tech Risk Tracker record",
           "srcUrl": "EDITORIAL.md",
           "line": "Watch opened; baseline compiled from allowlisted feeds, June 9 – July 9, 2026."
+        },
+        {
+          "date": "Jul 21, 26",
+          "st": "confirmed",
+          "ver": "v5",
+          "id": "L-0158",
+          "src": "NOAA NHC advisory",
+          "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/210837.shtml",
+          "line": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 8 reports a Tropical Storm Warning now in effect from the Alabama/Florida border to the Jefferson/Plaquemines Parish border in Louisiana, alongside the previously issued Storm Surge Watch and Tropical Storm Watch, with maximum sustained winds of 50 mph."
         }
       ],
       "sources": [
@@ -2267,6 +2294,11 @@
           "n": "7",
           "text": "NOAA NHC — Tropical Depression Two advisory 5, Storm Surge Watch + expanded Tropical Storm Watch (Mississippi/Louisiana), Jul 20, 2026",
           "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/201448.shtml"
+        },
+        {
+          "n": "8",
+          "text": "NOAA NHC — Tropical Storm Bertha advisory 8, Tropical Storm Warning issued, Jul 21, 2026",
+          "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/210837.shtml"
         }
       ],
       "related": [
@@ -3912,9 +3944,107 @@
       "line": "Dark Reading reports that attackers are widely chaining together two flaws — CVE-2026-60137 and CVE-2026-63030, dubbed “WP2Shell” — to attack WordPress sites, barely three days after disclosure, threatening millions of sites with remote takeover.",
       "src": "Dark Reading",
       "srcUrl": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover"
+    },
+    {
+      "d": "2026-07-20",
+      "p": "fraud",
+      "id": "L-0149",
+      "line": "FTC requires Celsius Network founder Alexander Mashinsky and business partners Shlomi Daniel Leon and Hanoch “Nuke” Goldstein to pay $16.5 million total, resolving charges that they deceived users by falsely promising deposits to their cryptocurrency platform would be safe and always available; the order also bars them from marketing or selling products or services that can be used to deposit or withdraw assets.",
+      "src": "FTC press release",
+      "srcUrl": "https://www.ftc.gov/news-events/news/press-releases/2026/07/founders-celsius-network-ordered-pay-165-million-resolve-ftc-charges"
+    },
+    {
+      "d": "2026-07-20",
+      "p": "fraud",
+      "id": "L-0150",
+      "line": "A payment processing broker is sentenced to three years in prison for facilitating a scheme that stole money from businesses’ bank accounts; sham merchants stole and attempted to steal $14 million from victims’ bank accounts, the Department of Justice reports.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/opa/pr/oregon-payment-processing-broker-sentenced-14-million-dollar-wire-fraud-scheme"
+    },
+    {
+      "d": "2026-07-20",
+      "p": "fraud",
+      "id": "L-0151",
+      "line": "Bianca Vieux and seven co-defendants — including current and former New York City Correction Officers, a Texas parole officer, and a New York City Transit Authority employee — are charged in a scheme involving deposits of falsified checks and production of fraudulent Social Security cards, the Department of Justice reports.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-edny/pr/eight-defendants-including-current-and-former-new-york-city-correction-officers-texas"
+    },
+    {
+      "d": "2026-07-20",
+      "p": "tp",
+      "id": "L-0152",
+      "line": "Hackers steal customer data from a major hospital software vendor, Cybersecurity Dive reports, calling the breach another reminder of the healthcare industry’s vulnerability to supply-chain attacks.",
+      "src": "Cybersecurity Dive",
+      "srcUrl": "https://www.cybersecuritydive.com/news/craneware-health-care-data-breach/825643/"
+    },
+    {
+      "d": "2026-07-20",
+      "p": "cyber",
+      "id": "L-0153",
+      "line": "A malicious component called HollowGraph uses the calendar feature in compromised Microsoft 365 mailboxes as a command-and-control channel to receive attacker commands and exfiltrate stolen data, BleepingComputer reports.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/new-hollowgraph-malware-uses-microsoft-graph-for-stealthy-c2-comms/"
+    },
+    {
+      "d": "2026-07-20",
+      "p": "cyber",
+      "id": "L-0154",
+      "line": "The Ostium trading platform says an attacker stole $23.75 million from its liquidity provider vault after compromising off-chain infrastructure used to feed prices into the protocol, BleepingComputer reports.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/hackers-steal-237-million-in-crypto-from-ostium-in-off-chain-attack/"
+    },
+    {
+      "d": "2026-07-20",
+      "p": "cyber",
+      "id": "L-0155",
+      "line": "Two previously disclosed SonicWall SMA1000 vulnerabilities were exploited as zero-days for weeks, letting attackers install custom malware on vulnerable VPN appliances, BleepingComputer reports.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/sonicwall-sma1000-flaws-exploited-as-zero-days-to-push-custom-malware/"
+    },
+    {
+      "d": "2026-07-20",
+      "p": "tp",
+      "id": "L-0156",
+      "line": "Cosmetics giant Estée Lauder is notifying customers of a data breach after hackers exploited a flaw in Oracle E-Business Suite, software the company used for human resources (HR) operations, BleepingComputer reports.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/est-e-lauder-discloses-data-breach-via-oracle-e-business-flaw/"
+    },
+    {
+      "d": "2026-07-21",
+      "p": "cyber",
+      "id": "L-0157",
+      "line": "Free, unofficial patches are now available for the previously disclosed Windows LegacyHive zero-day flaw that lets attackers escalate privileges on fully updated Windows systems, BleepingComputer reports.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/windows-legacyhive-zero-day-flaw-gets-free-unofficial-patches/"
+    },
+    {
+      "d": "2026-07-21",
+      "p": "resilience",
+      "id": "L-0158",
+      "line": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 8 reports a Tropical Storm Warning now in effect from the Alabama/Florida border to the Jefferson/Plaquemines Parish border in Louisiana, alongside the previously issued Storm Surge Watch and Tropical Storm Watch, with maximum sustained winds of 50 mph.",
+      "src": "NOAA NHC advisory",
+      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/210837.shtml"
     }
   ],
   "takeaways": [
+    {
+      "anchors": [
+        "L-0157"
+      ],
+      "pillars": "Cybersecurity",
+      "conf": "moderate confidence",
+      "head": "Free, unofficial patches now exist for the Windows LegacyHive zero-day — evaluate applying them while an official fix is pending.",
+      "body": "Free unofficial patches are available for the Windows LegacyHive zero-day flaw that lets attackers escalate privileges on fully updated Windows systems, BleepingComputer reports. Technology teams should evaluate applying the available unofficial patch or other mitigations while an official vendor fix is pending."
+    },
+    {
+      "anchors": [
+        "L-0153"
+      ],
+      "pillars": "Cybersecurity",
+      "conf": "moderate confidence",
+      "head": "New HollowGraph malware uses Microsoft 365’s calendar feature as a stealth command channel — watch for it.",
+      "body": "A malicious component called HollowGraph uses the calendar feature in compromised Microsoft 365 mailboxes as a command-and-control channel to receive attacker commands and exfiltrate stolen data, BleepingComputer reports. Security teams monitoring Microsoft 365 environments should watch for anomalous calendar-API activity as a potential sign of compromise."
+    },
     {
       "anchors": [
         "L-0147"
@@ -4267,6 +4397,14 @@
   "publications": {
     "dailies": [
       {
+        "no": "9",
+        "date": "Tue, Jul 21, 2026",
+        "confirmed": "10",
+        "pending": "0",
+        "flash": "—",
+        "linked": true
+      },
+      {
         "no": "8",
         "date": "Mon, Jul 20, 2026",
         "confirmed": "19",
@@ -4339,7 +4477,7 @@
       }
     ],
     "monthlies": [],
-    "dTotal": 8,
+    "dTotal": 9,
     "wkTotal": 1,
     "mTotal": 0
   }
