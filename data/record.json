@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-21T06:45:00-04:00",
+    "generatedAt": "2026-07-21T07:20:00-04:00",
     "issueNo": 9,
-    "recordHash": "d3ff37d",
+    "recordHash": "b69511e",
     "windowLabel": "June 9 – July 21, 2026",
     "nextWeekly": "Fri, Jul 24",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "26 of 27 allowlisted feeds returned 200 (FTC 403’d the descriptive User-Agent and was retried with the standard-browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed); the European Banking Authority’s feed returned HTTP 502 on four attempts (a server-side error, not a timeout), counted as the one feed failure this run, well short of the runbook’s “fewer than half” threshold. Selection window: 12 hours before this run’s prior lastRun (2026-07-20T18:13 ET), so candidates are items published since ~06:13 ET Jul 20 / 10:13 UTC Jul 20 (day-opening overlap). The CISA Known Exploited Vulnerabilities (KEV) catalog stayed at catalogVersion 2026.07.16 (1,647 entries) — no new additions. NIST’s feed again returned an empty channel (known behavior, not a failure). Anthropic’s page still shows “Apply for Anthropic’s AI for Science rare disease research grants” dated Jul 20 with no newer item — excluded again on the same grounds as prior runs (not tech-risk relevant). FinCEN’s newest dated item remains Jun 30; ENISA’s newest listed item remains Jul 14 (already reviewed); ICO’s page returned the same JavaScript-rendered “Loading...” shell seen in every prior run (not counted as a feed failure). DOJ’s 25 in-window entries were reviewed directly (unreliable placeholder noon-UTC pubDate, per established practice); two — an Oregon payment-processing wire-fraud sentencing and an eight-defendant NYC check-fraud charging — were admitted for the fraud pillar, the rest (immigration, firearms, drug, and non-tech-nexus fraud cases) excluded at the relevance gate. Ten new items were admitted: three fraud (FTC Celsius Network founders ordered to pay $16.5M; DOJ Oregon payment-processing wire-fraud sentencing; DOJ NYC check-fraud charging), four cyber (HollowGraph malware abusing Microsoft 365's calendar for C2; a $23.7M Ostium crypto theft via off-chain infrastructure compromise; SonicWall SMA1000 zero-days confirmed pushing custom malware, continuing the L-0079/L-0129/L-0142 thread; free unofficial patches for the Windows LegacyHive zero-day first disclosed as L-0124), two third-party risk (a major hospital software vendor data breach reported by Cybersecurity Dive; Estée Lauder's data breach via an exploited Oracle E-Business Suite flaw), and one resilience (Tropical Depression Two strengthened into Tropical Storm Bertha, now carrying a Tropical Storm Warning alongside the Storm Surge Watch and Tropical Storm Watch recorded as L-0141/L-0132). Not admitted (reviewed, excluded): a Bleeping Computer article on Microsoft's manual WSUS sync-delay mitigation (a follow-up to the already-recorded L-0138 sync-delay item; a resolution note, not a new risk); Dark Reading's 'Remediating Vulnerabilities With LLMs' (Ivanti), '25 Years After Code Red', and 'Cybersecurity Keeps Events “Uneventful”' (opinion/retrospective pieces, no discrete reportable event); BleepingComputer's 'An AI SOC Evaluation Guide' (vendor-sponsored guidance, not a news event); The Record's Flock Safety acoustic-detection, India nuclear-plant-leak, World Cup domain-seizure, South Korea diplomat-academy hack, and Romania land-registry cyberattack items (no stated financial-sector nexus); and the ECB's July 2026 euro area bank lending survey (no textual excerpt and no tech-risk content — macroeconomic survey, outside the eight pillars). Eight items reappearing in this run's window duplicate already-recorded items and were not re-admitted: JadePuffer/EncForge and the Cursor/Codex/Gemini CLI/Antigravity sandbox escapes (L-0146, L-0147), WP2Shell mass exploitation (L-0148), the Hugging Face autonomous-agent breach (L-0139), the original Microsoft WSUS sync-delay report (L-0138), the SonicWall June-tracing report (L-0142), the BEC evasion-tactics report (L-0144), and the CISOs/AI-risk report (L-0145).",
-    "lastRun": "2026-07-21T06:45:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (CISA KEV, FTC, CFPB, DOJ, FinCEN, and the Bank of England 403’d for the descriptive User-Agent and were retried with a standard browser User-Agent per the runbook’s fallback, all returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (06:45 ET), so candidates are items published since ~04:45 ET / 08:45 UTC. The CISA Known Exploited Vulnerabilities (KEV) catalog stayed at catalogVersion 2026.07.16 (1,647 entries, no new additions). NIST’s feed again returned an empty channel (known behavior, not a failure). Anthropic’s page, FinCEN’s newsroom page, and ENISA’s news page carried nothing dated after this run’s window (Anthropic newest Jul 20; FinCEN newest Jun 30; ENISA’s newest listed item unchanged since the prior run); ICO’s page returned the same JavaScript-rendered “Loading...” shell seen in every prior run (not counted as a feed failure). NOAA NHC’s Tropical Storm Bertha Advisory Number 8 and its six companion graphics/text products (Summary, Forecast Advisory, Forecast Discussion, Wind Speed Probabilities, Graphics, Storm Surge Watch/Warning Map) were not admitted: the advisory’s own “CHANGES WITH THIS ADVISORY: None” line confirms no new watches, warnings, or intensity change since Advisory Number 8 was already admitted as L-0158 in the day-opening run — same URL, same timestamp, a genuine reappearance rather than a new event. BleepingComputer’s “Microsoft shares manual fix for WSUS sync delays and timeouts” reappeared in this run’s window and was excluded again on the same grounds as the day-opening run: a resolution/how-to note on the already-recorded L-0138 sync-delay item, not a new risk event. One item was admitted: BleepingComputer reports the Qilin ransomware gang is exploiting a critical, already-patched Palo Alto Networks GlobalProtect VPN flaw (CVE-2026-0257, KEV-listed since May 29) to breach networks and deploy ransomware, per cybersecurity firm Arctic Wolf — not previously on record under this CVE or URL (cyber pillar, priority triage).",
+    "lastRun": "2026-07-21T07:20:00-04:00"
   },
   "lead": {
     "head": "Leading stories: the FTC orders Celsius Network’s founders to pay $16.5 million over deceptive cryptocurrency-deposit claims; Estée Lauder discloses a data breach after hackers exploited a flaw in Oracle E-Business Suite; and hackers steal $23.7 million from crypto platform Ostium in an off-chain infrastructure attack",
-    "dek": "Today’s edition draws on the ten items recorded so far. Every item links to its source.",
+    "dek": "Today’s edition draws on the eleven items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -54,6 +54,18 @@
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-21T10:12:24Z",
+      "p": "cyber",
+      "tri": "priority",
+      "st": "confirmed",
+      "tier": "T2",
+      "id": "L-0159",
+      "title": "The Qilin ransomware gang is exploiting a critical flaw in Palo Alto Networks’ GlobalProtect virtual private network (VPN) software to break into corporate networks and deploy ransomware, cybersecurity firm Arctic Wolf reports. Palo Alto Networks patched the flaw (CVE-2026-0257) on May 13, and the U.S. Cybersecurity and Infrastructure Security Agency (CISA) added it to its Known Exploited Vulnerabilities catalog on May 29.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/critical-globalprotect-vpn-bug-now-exploited-in-ransomware-attacks/",
+      "linked": true
+    },
     {
       "ts": "2026-07-21T08:37:24Z",
       "p": "resilience",
@@ -428,8 +440,8 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v66",
-      "verRange": "v1–v66",
+      "ver": "v67",
+      "verRange": "v1–v67",
       "asOf": "July 21, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
@@ -1104,6 +1116,15 @@
           "src": "BleepingComputer",
           "srcUrl": "https://www.bleepingcomputer.com/news/security/windows-legacyhive-zero-day-flaw-gets-free-unofficial-patches/",
           "line": "Free, unofficial patches are now available for the previously disclosed Windows LegacyHive zero-day flaw that lets attackers escalate privileges on fully updated Windows systems, BleepingComputer reports."
+        },
+        {
+          "date": "Jul 21, 26",
+          "st": "confirmed",
+          "ver": "v67",
+          "id": "L-0159",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/critical-globalprotect-vpn-bug-now-exploited-in-ransomware-attacks/",
+          "line": "The Qilin ransomware gang is exploiting a critical flaw in Palo Alto Networks’ GlobalProtect virtual private network (VPN) software to break into corporate networks and deploy ransomware, cybersecurity firm Arctic Wolf reports. Palo Alto Networks patched the flaw (CVE-2026-0257) on May 13, and the U.S. Cybersecurity and Infrastructure Security Agency (CISA) added it to its Known Exploited Vulnerabilities catalog on May 29."
         }
       ],
       "sources": [
@@ -4024,9 +4045,26 @@
       "line": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 8 reports a Tropical Storm Warning now in effect from the Alabama/Florida border to the Jefferson/Plaquemines Parish border in Louisiana, alongside the previously issued Storm Surge Watch and Tropical Storm Watch, with maximum sustained winds of 50 mph.",
       "src": "NOAA NHC advisory",
       "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/210837.shtml"
+    },
+    {
+      "d": "2026-07-21",
+      "p": "cyber",
+      "id": "L-0159",
+      "line": "The Qilin ransomware gang is exploiting a critical flaw in Palo Alto Networks’ GlobalProtect virtual private network (VPN) software to break into corporate networks and deploy ransomware, cybersecurity firm Arctic Wolf reports. Palo Alto Networks patched the flaw (CVE-2026-0257) on May 13, and the U.S. Cybersecurity and Infrastructure Security Agency (CISA) added it to its Known Exploited Vulnerabilities catalog on May 29.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/critical-globalprotect-vpn-bug-now-exploited-in-ransomware-attacks/"
     }
   ],
   "takeaways": [
+    {
+      "anchors": [
+        "L-0159"
+      ],
+      "pillars": "Cybersecurity",
+      "conf": "high confidence",
+      "head": "Palo Alto GlobalProtect VPN flaw is now confirmed exploited by the Qilin ransomware gang — verify the May patch is applied.",
+      "body": "The Qilin ransomware gang is exploiting a critical flaw (CVE-2026-0257) in Palo Alto Networks’ GlobalProtect VPN software to breach networks and deploy ransomware, cybersecurity firm Arctic Wolf reports; Palo Alto Networks patched the flaw on May 13. Technology teams running GlobalProtect VPN should confirm the patch is applied and check for signs of compromise."
+    },
     {
       "anchors": [
         "L-0157"
@@ -4399,7 +4437,7 @@
       {
         "no": "9",
         "date": "Tue, Jul 21, 2026",
-        "confirmed": "10",
+        "confirmed": "11",
         "pending": "0",
         "flash": "—",
         "linked": true
