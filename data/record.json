@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-21T07:20:00-04:00",
+    "generatedAt": "2026-07-21T09:22:00-04:00",
     "issueNo": 9,
-    "recordHash": "b69511e",
+    "recordHash": "a1c5a58",
     "windowLabel": "June 9 – July 21, 2026",
     "nextWeekly": "Fri, Jul 24",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (CISA KEV, FTC, CFPB, DOJ, FinCEN, and the Bank of England 403’d for the descriptive User-Agent and were retried with a standard browser User-Agent per the runbook’s fallback, all returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (06:45 ET), so candidates are items published since ~04:45 ET / 08:45 UTC. The CISA Known Exploited Vulnerabilities (KEV) catalog stayed at catalogVersion 2026.07.16 (1,647 entries, no new additions). NIST’s feed again returned an empty channel (known behavior, not a failure). Anthropic’s page, FinCEN’s newsroom page, and ENISA’s news page carried nothing dated after this run’s window (Anthropic newest Jul 20; FinCEN newest Jun 30; ENISA’s newest listed item unchanged since the prior run); ICO’s page returned the same JavaScript-rendered “Loading...” shell seen in every prior run (not counted as a feed failure). NOAA NHC’s Tropical Storm Bertha Advisory Number 8 and its six companion graphics/text products (Summary, Forecast Advisory, Forecast Discussion, Wind Speed Probabilities, Graphics, Storm Surge Watch/Warning Map) were not admitted: the advisory’s own “CHANGES WITH THIS ADVISORY: None” line confirms no new watches, warnings, or intensity change since Advisory Number 8 was already admitted as L-0158 in the day-opening run — same URL, same timestamp, a genuine reappearance rather than a new event. BleepingComputer’s “Microsoft shares manual fix for WSUS sync delays and timeouts” reappeared in this run’s window and was excluded again on the same grounds as the day-opening run: a resolution/how-to note on the already-recorded L-0138 sync-delay item, not a new risk event. One item was admitted: BleepingComputer reports the Qilin ransomware gang is exploiting a critical, already-patched Palo Alto Networks GlobalProtect VPN flaw (CVE-2026-0257, KEV-listed since May 29) to breach networks and deploy ransomware, per cybersecurity firm Arctic Wolf — not previously on record under this CVE or URL (cyber pillar, priority triage).",
-    "lastRun": "2026-07-21T07:20:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (CISA KEV, FTC, CFPB, DOJ, FinCEN, and the Bank of England 403’d for the descriptive User-Agent and were retried with a standard browser User-Agent per the runbook’s fallback, all returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (07:20 ET), so candidates are items published since ≈05:20 ET / 09:20 UTC. The CISA Known Exploited Vulnerabilities (KEV) catalog stayed at catalogVersion 2026.07.16 (1,647 entries, no new additions). NIST’s feed again returned an empty channel (known behavior, not a failure). Anthropic’s page, FinCEN’s newsroom page, and ENISA’s news page carried nothing dated after this run’s window (Anthropic newest Jul 20; FinCEN newest Jun 30; ENISA’s newest listed item unchanged since the prior run); ICO’s page returned the same JavaScript-rendered “Loading...” shell seen in every prior run (not counted as a feed failure). BleepingComputer’s “Critical Palo Alto VPN bug now exploited by Qilin ransomware gang” reappeared in this run’s window (same URL as L-0159, admitted in the prior run) and was not re-admitted. The National Hurricane Center’s Tropical Storm Bertha Intermediate Advisory Number 8A and its companion Summary, Graphics, and Storm Surge Flooding Map products were not admitted: the advisory’s own “CHANGES WITH THIS ADVISORY: None” line confirms no new watches, warnings, or intensity change since Advisory Number 8 was already admitted as L-0158. The Department of Justice’s newest items in-window (drug, firearm, and other non-technology criminal matters from U.S. Attorney’s offices) do not clear the relevance gate. BleepingComputer’s “US seizes over 1,000 websites in FIFA World Cup piracy crackdown” (streaming piracy, not a financial-sector tech risk pillar) and The Record’s “Kenya probes hack of president’s website after bitcoin ransom demand” (a foreign government website defacement, no financial-sector nexus in the excerpt) were reviewed and excluded. One item was admitted: Dark Reading reports AI-generated code introduces 15 flaws on average per codebase, with the actual risk depending more on coding-framework pairing than on the AI model used (ai pillar, routine triage).",
+    "lastRun": "2026-07-21T09:22:00-04:00"
   },
   "lead": {
     "head": "Leading stories: the FTC orders Celsius Network’s founders to pay $16.5 million over deceptive cryptocurrency-deposit claims; Estée Lauder discloses a data breach after hackers exploited a flaw in Oracle E-Business Suite; and hackers steal $23.7 million from crypto platform Ostium in an off-chain infrastructure attack",
-    "dek": "Today’s edition draws on the eleven items recorded so far. Every item links to its source.",
+    "dek": "Today’s edition draws on the twelve items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -54,6 +54,18 @@
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-21T13:00:00Z",
+      "p": "ai",
+      "tri": "routine",
+      "st": "confirmed",
+      "tier": "T2",
+      "id": "L-0160",
+      "title": "Code generated by artificial intelligence (AI) tools introduces an average of 15 flaws per codebase, but how much risk that creates depends more on which coding framework the AI pairs with than on which AI model generated the code, Dark Reading reports.",
+      "src": "Dark Reading",
+      "srcUrl": "https://www.darkreading.com/application-security/choose-wisely-ai-generated-coding-risk-varies",
+      "linked": true
+    },
     {
       "ts": "2026-07-21T10:12:24Z",
       "p": "cyber",
@@ -193,9 +205,9 @@
       "scope": "artificial intelligence · capability & governance",
       "watch": "Frontier capability, bank-scale adoption, and the governance that is (or is not) keeping pace — from allowlisted lab, regulator, and press feeds.",
       "opened": "July 2026",
-      "ver": "v8",
-      "verRange": "v1–v8",
-      "asOf": "July 15, 2026",
+      "ver": "v9",
+      "verRange": "v1–v9",
+      "asOf": "July 21, 2026",
       "p1": "Frontier capability advanced again this window: OpenAI released GPT-5.6 on July 9, describing it as delivering “more intelligence from every token, stronger performance per dollar.”",
       "p1Sup": "1",
       "p2": "Banks are adopting at scale: OpenAI reports BBVA scaled ChatGPT Enterprise to 100,000 employees in an AI-powered banking transformation. The regulatory line is earlier-stage: the FTC opened public comment on a policy statement addressing AI accuracy on July 1. AI is confirmed on the attack side too: an exploited flaw in Langflow, an AI-workflow tool, is on CISA’s known-exploited list.",
@@ -338,6 +350,15 @@
           "src": "Dark Reading",
           "srcUrl": "https://www.darkreading.com/cybersecurity-operations/cisos-feel-heat-ai-risk",
           "line": "Job pressures from AI adoption have led 26% of top security executives to consider leaving their position, Dark Reading reports."
+        },
+        {
+          "date": "Jul 21, 26",
+          "st": "confirmed",
+          "ver": "v9",
+          "id": "L-0160",
+          "src": "Dark Reading",
+          "srcUrl": "https://www.darkreading.com/application-security/choose-wisely-ai-generated-coding-risk-varies",
+          "line": "Code generated by artificial intelligence (AI) tools introduces an average of 15 flaws per codebase, but how much risk that creates depends more on which coding framework the AI pairs with than on which AI model generated the code, Dark Reading reports."
         }
       ],
       "sources": [
@@ -4053,9 +4074,26 @@
       "line": "The Qilin ransomware gang is exploiting a critical flaw in Palo Alto Networks’ GlobalProtect virtual private network (VPN) software to break into corporate networks and deploy ransomware, cybersecurity firm Arctic Wolf reports. Palo Alto Networks patched the flaw (CVE-2026-0257) on May 13, and the U.S. Cybersecurity and Infrastructure Security Agency (CISA) added it to its Known Exploited Vulnerabilities catalog on May 29.",
       "src": "BleepingComputer",
       "srcUrl": "https://www.bleepingcomputer.com/news/security/critical-globalprotect-vpn-bug-now-exploited-in-ransomware-attacks/"
+    },
+    {
+      "d": "2026-07-21",
+      "p": "ai",
+      "id": "L-0160",
+      "line": "Code generated by artificial intelligence (AI) tools introduces an average of 15 flaws per codebase, but how much risk that creates depends more on which coding framework the AI pairs with than on which AI model generated the code, Dark Reading reports.",
+      "src": "Dark Reading",
+      "srcUrl": "https://www.darkreading.com/application-security/choose-wisely-ai-generated-coding-risk-varies"
     }
   ],
   "takeaways": [
+    {
+      "anchors": [
+        "L-0160"
+      ],
+      "pillars": "Artificial intelligence",
+      "conf": "moderate confidence",
+      "head": "AI-generated code carries very different vulnerability risk depending on the coding framework it's paired with, not just which AI model wrote it — weigh framework choice when evaluating AI coding tools.",
+      "body": "AI-generated code introduces an average of 15 flaws per codebase, but the actual risk depends more on which coding framework the AI pairs with than on which AI model generated the code, Dark Reading reports. Technology teams evaluating AI coding tools should weigh framework compatibility, not just model choice, when assessing security risk."
+    },
     {
       "anchors": [
         "L-0159"
@@ -4437,7 +4475,7 @@
       {
         "no": "9",
         "date": "Tue, Jul 21, 2026",
-        "confirmed": "11",
+        "confirmed": "12",
         "pending": "0",
         "flash": "—",
         "linked": true
