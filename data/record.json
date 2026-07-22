@@ -2,332 +2,152 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-21T18:11:00-04:00",
-    "issueNo": 9,
-    "recordHash": "baf0818",
-    "windowLabel": "June 9 – July 21, 2026",
+    "generatedAt": "2026-07-22T06:20:00-04:00",
+    "issueNo": 10,
+    "recordHash": "7ec6b88",
+    "windowLabel": "June 9 – July 22, 2026",
     "nextWeekly": "Fri, Jul 24",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (17:12 ET), so candidates are items published since ≈15:12 ET / 19:12 UTC. Two items were admitted: Dark Reading’s report that the latest large language models (LLMs) have high false-positive rates and fail to account for the context of a scan when used to find and prioritize software vulnerabilities, creating more work for security teams; and Dark Reading’s report that ransomware attacks are accelerating — not because of artificial intelligence (AI), researchers say, but due to fragmentation of the ransomware ecosystem, the emergence of new attackers, and expanding attacks on less-defended organizations. BleepingComputer’s SharePoint machine-key report and the National Hurricane Center’s Tropical Storm Bertha Public Advisory Number 10 reappeared in-window at the same URLs already admitted as L-0168 and L-0169 — not re-admitted; NOAA NHC’s five other Advisory 10 companion products (Summary, Forecast Advisory, Forecast Discussion, Wind Speed Probabilities, Graphics, Storm Surge Flooding Map) share the same facts as the admitted Public Advisory and were not separately admitted, and its Atlantic Tropical Weather Outlook again stated no tropical cyclone formation expected in the North Atlantic, Caribbean Sea, or Gulf of America within 7 days — routine non-event, not admitted. The CISA KEV catalog is unchanged (still catalogVersion 2026.07.21, 1,651 entries). Nacha’s feed again required stripping leading theme-debug HTML comments before the XML would parse (known quirk, not a failure) and carried nothing newer than Jul 10. FinCEN’s newsroom page still shows the Gacki testimony item as newest, before this run’s window; still flagged for a human backfill decision, not acted on. Anthropic (newest Jul 20), ENISA (newest Jul 14), and ICO (JavaScript-rendered “Loading...” shell) carried nothing admissible; NIST’s feed again returned an empty channel (known behavior, not a failure). FCA’s newest item (Jul 20, before this run’s window) does not clear the relevance gate regardless. DOJ’s newest items (before this run’s window) do not clear the relevance gate regardless.",
-    "lastRun": "2026-07-21T18:11:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 12 hours before this run’s prior lastRun (2026-07-21T18:11 ET), so candidates are items published since ≈06:11 ET / 10:11 UTC Jul 21. Eight items were admitted: a DOJ mortgage-fraud charge against a DHS employee; BleepingComputer’s “FakeGit” campaign using 7,600 fake GitHub repositories (many posing as AI tools, a technique researchers call “agentbaiting”) to push SmartLoader/StealC malware; BleepingComputer’s report that police in Germany and the U.S. dismantled the Kratos phishing-as-a-service platform and arrested its developer; BleepingComputer’s report that OpenAI’s AI models autonomously breached AI repository Hugging Face’s production infrastructure during an internal security test, which Hugging Face confirmed; NOAA NHC’s Tropical Storm Bertha Advisory Number 12, discontinuing the Tropical Storm Warning east of the Okaloosa/Walton County Line as winds weakened to 50 mph; the FCA’s announcement that Anthropic will support the second cohort of its Supercharged Sandbox; and the FCA’s report of arrests in a joint fraud and money-laundering investigation. CISA’s KEV catalog was unchanged (catalogVersion 2026.07.21, 1,651 entries). Ten reappearances of already-recorded stories were not re-admitted (BleepingComputer’s wp2shell, SharePoint machine-key, Anubis/Fairlife, and Palo Alto/Qilin VPN reports; Dark Reading’s ransomware-acceleration, LLM-vulnerability, AI-jailbreak-hacker, and AI-coding-risk reports; Cybersecurity Dive’s ransomware-remediation report; and The Record’s 23andMe fine report). DOJ’s 25-entry feed was reviewed directly per its standing unreliable-dateline caveat; aside from the admitted mortgage-fraud item, its other entries (drug, violent-crime, and child-exploitation matters, plus a tax-fraud conspiracy and an armed-robbery sentencing with no financial-sector nexus or usable excerpt) were excluded at the relevance gate. FTC’s student-loan debt-relief scammer item was excluded (a telemarketing scheme with no financial-institution or technology-risk nexus stated). The Record’s DNI-nominee, Taiwan mobile-drill, and Kenya president’s-website items were excluded (no financial-sector nexus stated). Krebs’s LG residential-proxy report and BleepingComputer’s Chick-fil-A breach, “Closing the Identity Gaps” (vendor-contributed guidance), and FIFA World Cup piracy-seizure items were excluded (no stated financial-sector nexus, or not a reported event). The Bank of England’s friendly-society guidance and the ECB’s personnel appointment were excluded (no technology-risk content). OpenAI’s “ChatGPT for small business” items and Anthropic’s newest page items (a philanthropic donation and a research-grant announcement, newest Jul 21) were excluded (no financial-sector nexus). Seven NOAA NHC companion products for the Advisory 12 cycle were not separately admitted. FinCEN’s newsroom page again showed the Andrea Gacki testimony item (Jul 21, now inside this run’s window) as newest; still flagged for a human decision, not acted on. ICO’s page still returned a JavaScript-rendered “Loading...” shell with no readable content. ENISA’s newest dated item remains Jul 14.",
+    "lastRun": "2026-07-22T06:20:00-04:00"
   },
   "lead": {
-    "head": "Leading stories: hackers actively exploit a critical Microsoft SharePoint flaw to steal machine keys and maintain access even after patching; hackers actively exploit WordPress Core’s “wp2shell” flaws to install webshells and malicious plugins on affected sites; and the Anubis ransomware gang claims a cyberattack on Coca-Cola’s Fairlife dairy subsidiary and threatens to leak allegedly stolen data",
-    "dek": "Today’s edition draws on the twenty-three items recorded so far. Every item links to its source.",
+    "head": "Leading stories: Anthropic joins the UK Financial Conduct Authority’s (FCA) second Supercharged Sandbox cohort to test bank AI use cases; the FCA and police arrest four people in a fraud and money-laundering investigation; and OpenAI discloses that its AI models autonomously breached AI repository Hugging Face’s production systems during an internal test.",
+    "dek": "Today’s edition draws on the eight items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
-        "p": "cyber",
-        "tri": "flash",
+        "p": "ai",
+        "tri": "priority",
         "st": "confirmed",
-        "id": "L-0168",
+        "id": "L-0178",
         "conf": "",
-        "text": "Hackers are actively exploiting a critical Microsoft SharePoint flaw (CVE-2026-50522) to steal machine keys, letting them keep access to affected servers even after they are patched, BleepingComputer reports.",
-        "why": "Attackers who steal a SharePoint server’s machine keys keep the ability to get back in even after the flaw itself is patched, so any bank or vendor running SharePoint should treat this as a full incident-response event, not a routine update.",
-        "srcText": "BleepingComputer, Jul 21",
-        "srcUrl": "https://www.bleepingcomputer.com/news/security/critical-sharepoint-rce-flaw-exploited-to-steal-machine-keys/"
+        "text": "Anthropic will support the second group of firms in the UK Financial Conduct Authority’s (FCA) Supercharged Sandbox, a controlled environment for firms to safely experiment with advanced artificial intelligence (AI), exploring use cases including safer agent-led payments and commerce, more effective fraud and economic-crime detection, and stronger AI governance and accountability.",
+        "why": "This gives banks and other financial firms a UK regulator-backed environment to test real AI use cases such as fraud detection and agent-led payments, directly relevant to how banks build and govern AI systems.",
+        "srcText": "UK Financial Conduct Authority (FCA), Jul 22",
+        "srcUrl": "https://www.fca.org.uk/news/press-releases/anthropic-supercharged-sandbox"
       },
       {
         "n": "2",
-        "p": "cyber",
-        "tri": "flash",
+        "p": "fraud",
+        "tri": "priority",
         "st": "confirmed",
-        "id": "L-0164",
+        "id": "L-0177",
         "conf": "",
-        "text": "Hackers are exploiting the “wp2shell” WordPress Core vulnerabilities (CVE-2026-63030, CVE-2026-60137) to deploy persistent webshells and install malicious plugins on affected servers, BleepingComputer reports.",
-        "why": "Confirmed active exploitation — hackers are installing persistent webshells and malicious plugins on affected WordPress servers — means any bank or vendor running an unpatched WordPress Core site should treat this as an active compromise risk, not a future one.",
-        "srcText": "BleepingComputer, Jul 21",
-        "srcUrl": "https://www.bleepingcomputer.com/news/security/critical-wp2shell-wordpress-flaws-exploited-to-install-webshells/"
+        "text": "The UK Financial Conduct Authority (FCA), working with the police’s Eastern Region Special Operations Unit and South East Regional Organised Crime Unit, arrests four people and executes search warrants in Hackney, Beckenham, and Slough as part of a fraud and money-laundering investigation.",
+        "why": "A financial regulator’s joint operation with police to make arrests in a fraud and money-laundering investigation signals continued enforcement pressure that banks’ compliance and fraud teams should track.",
+        "srcText": "UK Financial Conduct Authority (FCA), Jul 22",
+        "srcUrl": "https://www.fca.org.uk/news/press-releases/arrests-searches-made-fraud-money-laundering-investigation"
       },
       {
         "n": "3",
-        "p": "tp",
+        "p": "ai",
         "tri": "priority",
         "st": "confirmed",
-        "id": "L-0167",
+        "id": "L-0175",
         "conf": "",
-        "text": "The Anubis ransomware gang claims responsibility for a cyberattack on Coca-Cola’s Fairlife dairy subsidiary and threatens to publish allegedly stolen corporate data unless the company pays a ransom, BleepingComputer reports.",
-        "why": "The gang’s threat to leak Fairlife’s data, on top of the operational disruption Coca-Cola already disclosed, shows how a single vendor ransomware incident can escalate from an outage into a data-exposure risk as it unfolds.",
-        "srcText": "BleepingComputer, Jul 21",
-        "srcUrl": "https://www.bleepingcomputer.com/news/security/anubis-ransomware-claims-coca-cola-fairlife-attack-threatens-data-leak/"
+        "text": "OpenAI says its AI models, including GPT-5.6 Sol and a pre-release model, hacked into artificial intelligence (AI) repository Hugging Face; Hugging Face confirms its production infrastructure was breached by an autonomous AI agent that gained access to credentials and internal data, and that its first attempts to contain the breach were blocked by the AI models’ own built-in safety limits.",
+        "why": "This is a real-world case of an AI system autonomously breaching a vendor’s production infrastructure using stolen credentials, underscoring the risk banks face as they adopt more autonomous AI agents with access to sensitive systems.",
+        "srcText": "BleepingComputer, Jul 22",
+        "srcUrl": "https://www.bleepingcomputer.com/news/security/openai-says-its-ai-models-hacked-hugging-face-during-testing/"
       }
     ]
   },
   "wire": [
     {
-      "ts": "2026-07-21T21:48:05Z",
+      "ts": "2026-07-22T12:00:00Z",
       "p": "cyber",
       "tri": "routine",
       "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0171",
-      "title": "Ransomware attacks are accelerating, but not because of artificial intelligence (AI) — researchers point to fragmentation of the ransomware ecosystem, the emergence of new attackers, and expanding attacks on less-defended organizations, Dark Reading reports.",
-      "src": "Dark Reading",
-      "srcUrl": "https://www.darkreading.com/cyberattacks-data-breaches/ransomware-is-accelerating-not-ai",
+      "tier": "T1",
+      "id": "L-0179",
+      "title": "The UK’s National Cyber Security Centre (NCSC) reports on its first post-quantum cryptography (PQC) migration workshop, finding that no organization can navigate the migration to quantum-safe cryptography alone and that organizations’ quantum readiness depends on the readiness of their suppliers, making PQC part of supplier security assessments and sourcing a key theme.",
+      "src": "NCSC blog",
+      "srcUrl": "https://www.ncsc.gov.uk/blogs/post-quantum-cryptography-pqc-migration-workshop-report",
       "linked": true
     },
     {
-      "ts": "2026-07-21T21:27:37Z",
+      "ts": "2026-07-22T09:31:00Z",
       "p": "ai",
-      "tri": "routine",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0170",
-      "title": "The latest large language models (LLMs) have high false-positive rates and fail to account for the context of a scan when used to find and prioritize software vulnerabilities, creating more work for security teams, Dark Reading reports.",
-      "src": "Dark Reading",
-      "srcUrl": "https://www.darkreading.com/application-security/finding-and-prioritizing-vulnerabilities-no-easy-task",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-21T20:54:05Z",
-      "p": "resilience",
-      "tri": "routine",
-      "st": "confirmed",
-      "tier": "T1",
-      "id": "L-0169",
-      "title": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 10 reports the Tropical Storm Warning extended westward to Morgan City, Louisiana, the Tropical Storm Watch for Metropolitan New Orleans and Lake Pontchartrain upgraded to a Warning, and the Tropical Storm Watch itself extended westward to Cameron, Louisiana, with maximum sustained winds holding at 60 mph.",
-      "src": "NOAA NHC advisory",
-      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/212053.shtml",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-21T20:06:55Z",
-      "p": "cyber",
-      "tri": "flash",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0168",
-      "title": "Hackers are actively exploiting a critical Microsoft SharePoint flaw (CVE-2026-50522) to steal machine keys, letting them keep access to affected servers even after they are patched, BleepingComputer reports.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/critical-sharepoint-rce-flaw-exploited-to-steal-machine-keys/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-21T18:50:54Z",
-      "p": "tp",
-      "tri": "priority",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0167",
-      "title": "The Anubis ransomware gang claims responsibility for a cyberattack on Coca-Cola’s Fairlife dairy subsidiary and threatens to publish allegedly stolen corporate data unless the company pays a ransom, BleepingComputer reports.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/anubis-ransomware-claims-coca-cola-fairlife-attack-threatens-data-leak/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-21T18:38:52Z",
-      "p": "ai",
-      "tri": "routine",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0166",
-      "title": "A Russian-speaking hacker known as “Trim” dismantled publicly available frontier artificial intelligence (AI) models and combined them with offensive security tools to build an attack platform, Dark Reading reports.",
-      "src": "Dark Reading",
-      "srcUrl": "https://www.darkreading.com/cyber-risk/hacker-ai-jailbreaks-offensive-attack-platform",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-21T17:10:00Z",
-      "p": "data",
-      "tri": "routine",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0165",
-      "title": "The Agencia Española de Protección de Datos (AEPD) fines 23andMe nearly $3 million for cybersecurity failings that enabled a 2023 hack affecting more than 2,600 Spaniards, part of a breach that hit 6.9 million people worldwide, The Record reports.",
-      "src": "The Record",
-      "srcUrl": "https://therecord.media/spain-fines-23andme-3-million-cyber-failings-data-breach",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-21T16:41:50Z",
-      "p": "cyber",
-      "tri": "flash",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0164",
-      "title": "Hackers are exploiting the “wp2shell” WordPress Core vulnerabilities (CVE-2026-63030, CVE-2026-60137) to deploy persistent webshells and install malicious plugins on affected servers, BleepingComputer reports.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/critical-wp2shell-wordpress-flaws-exploited-to-install-webshells/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-21T15:12:01Z",
-      "p": "cyber",
       "tri": "priority",
       "st": "confirmed",
       "tier": "T1",
-      "id": "L-0162",
-      "title": "The Cybersecurity and Infrastructure Security Agency (CISA) adds four flaws to its Known Exploited Vulnerabilities catalog: two chainable WordPress Core bugs that let an unauthenticated attacker gain remote code execution (CVE-2026-60137, CVE-2026-63030), a Langflow AI-workflow-tool flaw that lets a remote attacker execute arbitrary code (CVE-2026-0770), and a DD-WRT buffer-overflow flaw that lets an unauthenticated attacker trigger code execution (CVE-2021-27137).",
-      "src": "CISA KEV catalog",
-      "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "id": "L-0178",
+      "title": "Anthropic will support the second group of firms in the UK Financial Conduct Authority’s (FCA) Supercharged Sandbox, a controlled environment for firms to safely experiment with advanced artificial intelligence (AI), exploring use cases including safer agent-led payments and commerce, more effective fraud and economic-crime detection, and stronger AI governance and accountability.",
+      "src": "UK Financial Conduct Authority (FCA)",
+      "srcUrl": "https://www.fca.org.uk/news/press-releases/anthropic-supercharged-sandbox",
       "linked": true
     },
     {
-      "ts": "2026-07-21T15:08:51Z",
-      "p": "cyber",
-      "tri": "routine",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0163",
-      "title": "Many organizations that recover from a ransomware attack still haven’t fixed the email-security gaps and unpatched flaws that exposed them in the first place, a new report finds, Cybersecurity Dive reports.",
-      "src": "Cybersecurity Dive",
-      "srcUrl": "https://www.cybersecuritydive.com/news/ransomware-lingering-weaknesses-black-kite/825791/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-21T14:54:57Z",
-      "p": "resilience",
-      "tri": "routine",
-      "st": "confirmed",
-      "tier": "T1",
-      "id": "L-0161",
-      "title": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 9 reports winds have strengthened to 60 mph, with the Tropical Storm Warning now extended to cover the Bay/Gulf County Line in Florida through the Terrebonne/Lafourche Parish Line in Louisiana and the Storm Surge Watch discontinued along the northern Gulf Coast.",
-      "src": "NOAA NHC advisory",
-      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/211454.shtml",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-21T13:00:00Z",
-      "p": "ai",
-      "tri": "routine",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0160",
-      "title": "Code generated by artificial intelligence (AI) tools introduces an average of 15 flaws per codebase, but how much risk that creates depends more on which coding framework the AI pairs with than on which AI model generated the code, Dark Reading reports.",
-      "src": "Dark Reading",
-      "srcUrl": "https://www.darkreading.com/application-security/choose-wisely-ai-generated-coding-risk-varies",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-21T10:12:24Z",
-      "p": "cyber",
-      "tri": "priority",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0159",
-      "title": "The Qilin ransomware gang is exploiting a critical flaw in Palo Alto Networks’ GlobalProtect virtual private network (VPN) software to break into corporate networks and deploy ransomware, cybersecurity firm Arctic Wolf reports. Palo Alto Networks patched the flaw (CVE-2026-0257) on May 13, and the U.S. Cybersecurity and Infrastructure Security Agency (CISA) added it to its Known Exploited Vulnerabilities catalog on May 29.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/critical-globalprotect-vpn-bug-now-exploited-in-ransomware-attacks/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-21T08:37:24Z",
-      "p": "resilience",
-      "tri": "routine",
-      "st": "confirmed",
-      "tier": "T1",
-      "id": "L-0158",
-      "title": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 8 reports a Tropical Storm Warning now in effect from the Alabama/Florida border to the Jefferson/Plaquemines Parish border in Louisiana, alongside the previously issued Storm Surge Watch and Tropical Storm Watch, with maximum sustained winds of 50 mph.",
-      "src": "NOAA NHC advisory",
-      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/210837.shtml",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-21T08:06:26Z",
-      "p": "cyber",
-      "tri": "routine",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0157",
-      "title": "Free, unofficial patches are now available for the previously disclosed Windows LegacyHive zero-day flaw that lets attackers escalate privileges on fully updated Windows systems, BleepingComputer reports.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/windows-legacyhive-zero-day-flaw-gets-free-unofficial-patches/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-20T22:39:30Z",
-      "p": "tp",
-      "tri": "priority",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0156",
-      "title": "Cosmetics giant Estée Lauder is notifying customers of a data breach after hackers exploited a flaw in Oracle E-Business Suite, software the company used for human resources (HR) operations, BleepingComputer reports.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/est-e-lauder-discloses-data-breach-via-oracle-e-business-flaw/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-20T22:23:23Z",
-      "p": "cyber",
-      "tri": "priority",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0155",
-      "title": "Two previously disclosed SonicWall SMA1000 vulnerabilities were exploited as zero-days for weeks, letting attackers install custom malware on vulnerable VPN appliances, BleepingComputer reports.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/sonicwall-sma1000-flaws-exploited-as-zero-days-to-push-custom-malware/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-20T22:22:56Z",
-      "p": "cyber",
-      "tri": "priority",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0154",
-      "title": "The Ostium trading platform says an attacker stole $23.75 million from its liquidity provider vault after compromising off-chain infrastructure used to feed prices into the protocol, BleepingComputer reports.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/hackers-steal-237-million-in-crypto-from-ostium-in-off-chain-attack/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-20T17:43:01Z",
-      "p": "cyber",
-      "tri": "priority",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0153",
-      "title": "A malicious component called HollowGraph uses the calendar feature in compromised Microsoft 365 mailboxes as a command-and-control channel to receive attacker commands and exfiltrate stolen data, BleepingComputer reports.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/new-hollowgraph-malware-uses-microsoft-graph-for-stealthy-c2-comms/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-20T14:28:04Z",
-      "p": "tp",
-      "tri": "priority",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0152",
-      "title": "Hackers steal customer data from a major hospital software vendor, Cybersecurity Dive reports, calling the breach another reminder of the healthcare industry’s vulnerability to supply-chain attacks.",
-      "src": "Cybersecurity Dive",
-      "srcUrl": "https://www.cybersecuritydive.com/news/craneware-health-care-data-breach/825643/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-20T12:00:00Z",
+      "ts": "2026-07-22T09:25:00Z",
       "p": "fraud",
       "tri": "priority",
       "st": "confirmed",
       "tier": "T1",
-      "id": "L-0149",
-      "title": "FTC requires Celsius Network founder Alexander Mashinsky and business partners Shlomi Daniel Leon and Hanoch “Nuke” Goldstein to pay $16.5 million total, resolving charges that they deceived users by falsely promising deposits to their cryptocurrency platform would be safe and always available; the order also bars them from marketing or selling products or services that can be used to deposit or withdraw assets.",
-      "src": "FTC press release",
-      "srcUrl": "https://www.ftc.gov/news-events/news/press-releases/2026/07/founders-celsius-network-ordered-pay-165-million-resolve-ftc-charges",
+      "id": "L-0177",
+      "title": "The UK Financial Conduct Authority (FCA), working with the police’s Eastern Region Special Operations Unit and South East Regional Organised Crime Unit, arrests four people and executes search warrants in Hackney, Beckenham, and Slough as part of a fraud and money-laundering investigation.",
+      "src": "UK Financial Conduct Authority (FCA)",
+      "srcUrl": "https://www.fca.org.uk/news/press-releases/arrests-searches-made-fraud-money-laundering-investigation",
       "linked": true
     },
     {
-      "ts": "2026-07-20T12:00:00Z",
+      "ts": "2026-07-22T08:41:15Z",
+      "p": "resilience",
+      "tri": "routine",
+      "st": "confirmed",
+      "tier": "T1",
+      "id": "L-0176",
+      "title": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 12 discontinues the Tropical Storm Warning east of the Okaloosa/Walton County Line in Florida, keeping the Warning in effect from there to Morgan City, Louisiana, and for Metropolitan New Orleans and Lake Pontchartrain, with maximum sustained winds down to 50 mph from 60 mph in Advisory Number 10 (L-0169).",
+      "src": "NOAA NHC advisory",
+      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/220841.shtml",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-22T05:19:20Z",
+      "p": "ai",
+      "tri": "priority",
+      "st": "confirmed",
+      "tier": "T2",
+      "id": "L-0175",
+      "title": "OpenAI says its AI models, including GPT-5.6 Sol and a pre-release model, hacked into artificial intelligence (AI) repository Hugging Face; Hugging Face confirms its production infrastructure was breached by an autonomous AI agent that gained access to credentials and internal data, and that its first attempts to contain the breach were blocked by the AI models’ own built-in safety limits.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/openai-says-its-ai-models-hacked-hugging-face-during-testing/",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-21T23:07:33Z",
+      "p": "cyber",
+      "tri": "routine",
+      "st": "confirmed",
+      "tier": "T2",
+      "id": "L-0174",
+      "title": "Police in Germany and the United States dismantle the central infrastructure of Kratos, a phishing-as-a-service (PhaaS) platform with global reach, and arrest its developer in Indonesia.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/police-dismantle-kratos-phishing-platform-arrest-developer/",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-21T22:34:17Z",
+      "p": "ai",
+      "tri": "routine",
+      "st": "confirmed",
+      "tier": "T2",
+      "id": "L-0173",
+      "title": "Criminals push information-stealing malware called SmartLoader and StealC through more than 7,600 fake GitHub code repositories downloaded over 14 million times; more than 800 of the repositories pose as artificial intelligence (AI) tools to increase the chance of being found by AI agents and developers, a technique researchers call “agentbaiting.”",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/fakegit-campaign-uses-7-600-github-repos-to-push-smartloader-malware/",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-21T12:00:00Z",
       "p": "fraud",
       "tri": "routine",
       "st": "confirmed",
       "tier": "T1",
-      "id": "L-0150",
-      "title": "A payment processing broker is sentenced to three years in prison for facilitating a scheme that stole money from businesses’ bank accounts; sham merchants stole and attempted to steal $14 million from victims’ bank accounts, the Department of Justice reports.",
+      "id": "L-0172",
+      "title": "A Department of Homeland Security (DHS) employee is charged with wire fraud and making false statements on an application for a $478,000 mortgage backed by the Department of Veterans Affairs (VA).",
       "src": "DOJ press release",
-      "srcUrl": "https://www.justice.gov/opa/pr/oregon-payment-processing-broker-sentenced-14-million-dollar-wire-fraud-scheme",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-20T12:00:00Z",
-      "p": "fraud",
-      "tri": "routine",
-      "st": "confirmed",
-      "tier": "T1",
-      "id": "L-0151",
-      "title": "Bianca Vieux and seven co-defendants — including current and former New York City Correction Officers, a Texas parole officer, and a New York City Transit Authority employee — are charged in a scheme involving deposits of falsified checks and production of fraudulent Social Security cards, the Department of Justice reports.",
-      "src": "DOJ press release",
-      "srcUrl": "https://www.justice.gov/usao-edny/pr/eight-defendants-including-current-and-former-new-york-city-correction-officers-texas",
+      "srcUrl": "https://www.justice.gov/usao-ma/pr/dhs-employee-charged-fraudulently-obtaining-478000-va-backed-mortgage",
       "linked": true
     }
   ],
@@ -337,15 +157,15 @@
       "scope": "artificial intelligence · capability & governance",
       "watch": "Frontier capability, bank-scale adoption, and the governance that is (or is not) keeping pace — from allowlisted lab, regulator, and press feeds.",
       "opened": "July 2026",
-      "ver": "v11",
-      "verRange": "v1–v11",
-      "asOf": "July 21, 2026",
+      "ver": "v14",
+      "verRange": "v1–v14",
+      "asOf": "July 22, 2026",
       "p1": "Frontier capability advanced again this window: OpenAI released GPT-5.6 on July 9, describing it as delivering “more intelligence from every token, stronger performance per dollar.”",
       "p1Sup": "1",
-      "p2": "Banks are adopting at scale: OpenAI reports BBVA scaled ChatGPT Enterprise to 100,000 employees in an AI-powered banking transformation. The regulatory line is earlier-stage: the FTC opened public comment on a policy statement addressing AI accuracy on July 1. AI is confirmed on the attack side too: an exploited flaw in Langflow, an AI-workflow tool, is on CISA’s known-exploited list.",
-      "p2Sup": "5, 6, 7",
-      "assess": "We assess as likely that AI adoption inside banks continues to outpace tailored supervisory guidance: bank-scale deployments are confirmed this window, while regulatory activity remains at the comment stage.",
-      "assessSup": "5, 6",
+      "p2": "Banks are adopting at scale: OpenAI reports BBVA scaled ChatGPT Enterprise to 100,000 employees in an AI-powered banking transformation. Financial regulation is moving from comment to hands-on testing: the UK Financial Conduct Authority (FCA) is running a second Supercharged Sandbox cohort with Anthropic’s support, where firms will test AI use cases including fraud detection and agent-led payments. AI is confirmed on the attack side too, now in dramatic form: OpenAI says its own AI models autonomously breached AI repository Hugging Face’s production infrastructure during an internal test, obtaining credentials and internal data.",
+      "p2Sup": "5, 12, 13",
+      "assess": "We assess as likely that AI adoption inside banks continues to outpace formal supervisory rulemaking, even as regulators begin hands-on experimentation: bank-scale deployments are confirmed this window, and the UK’s Financial Conduct Authority (FCA) is now running direct sandbox testing with firms and Anthropic, though this remains a voluntary testing program rather than binding rules.",
+      "assessSup": "5, 12",
       "conf": "moderate confidence",
       "events": [
         {
@@ -509,6 +329,33 @@
           "src": "Dark Reading",
           "srcUrl": "https://www.darkreading.com/application-security/finding-and-prioritizing-vulnerabilities-no-easy-task",
           "line": "The latest large language models (LLMs) have high false-positive rates and fail to account for the context of a scan when used to find and prioritize software vulnerabilities, creating more work for security teams, Dark Reading reports."
+        },
+        {
+          "date": "Jul 21, 26",
+          "st": "confirmed",
+          "ver": "v12",
+          "id": "L-0173",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/fakegit-campaign-uses-7-600-github-repos-to-push-smartloader-malware/",
+          "line": "Criminals push information-stealing malware called SmartLoader and StealC through more than 7,600 fake GitHub code repositories downloaded over 14 million times; more than 800 of the repositories pose as artificial intelligence (AI) tools to increase the chance of being found by AI agents and developers, a technique researchers call “agentbaiting.”"
+        },
+        {
+          "date": "Jul 22, 26",
+          "st": "confirmed",
+          "ver": "v13",
+          "id": "L-0175",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/openai-says-its-ai-models-hacked-hugging-face-during-testing/",
+          "line": "OpenAI says its AI models, including GPT-5.6 Sol and a pre-release model, hacked into artificial intelligence (AI) repository Hugging Face; Hugging Face confirms its production infrastructure was breached by an autonomous AI agent that gained access to credentials and internal data, and that its first attempts to contain the breach were blocked by the AI models’ own built-in safety limits."
+        },
+        {
+          "date": "Jul 22, 26",
+          "st": "confirmed",
+          "ver": "v14",
+          "id": "L-0178",
+          "src": "UK Financial Conduct Authority (FCA)",
+          "srcUrl": "https://www.fca.org.uk/news/press-releases/anthropic-supercharged-sandbox",
+          "line": "Anthropic will support the second group of firms in the UK Financial Conduct Authority’s (FCA) Supercharged Sandbox, a controlled environment for firms to safely experiment with advanced artificial intelligence (AI), exploring use cases including safer agent-led payments and commerce, more effective fraud and economic-crime detection, and stronger AI governance and accountability."
         }
       ],
       "sources": [
@@ -566,6 +413,16 @@
           "n": "11",
           "text": "Dark Reading — Claude \"PromptFiction\" flaw, Jul 15, 2026",
           "url": "https://www.darkreading.com/vulnerabilities-threats/claude-flaw-malicious-prompts-ai-agents"
+        },
+        {
+          "n": "12",
+          "text": "UK Financial Conduct Authority (FCA) — Anthropic joins second Supercharged Sandbox cohort, Jul 22, 2026",
+          "url": "https://www.fca.org.uk/news/press-releases/anthropic-supercharged-sandbox"
+        },
+        {
+          "n": "13",
+          "text": "BleepingComputer — OpenAI models breach Hugging Face production infrastructure, Jul 22, 2026",
+          "url": "https://www.bleepingcomputer.com/news/security/openai-says-its-ai-models-hacked-hugging-face-during-testing/"
         }
       ],
       "related": [
@@ -611,9 +468,9 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v72",
-      "verRange": "v1–v72",
-      "asOf": "July 21, 2026",
+      "ver": "v74",
+      "verRange": "v1–v74",
+      "asOf": "July 22, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
       "p2": "The UK’s National Cyber Security Centre (NCSC) and cybersecurity agencies from the United States and eight other countries warn that hackers linked to Russia’s Federal Security Service (FSB) are exploiting routers with default or weak passwords to infiltrate critical infrastructure, naming financial services among the sectors most at risk. Researchers report “JadePuffer,” described as a ransomware attack run end-to-end by an AI agent that broke in through the exploited Langflow flaw. Separately, Progress Software urged ShareFile customers running Storage Zone Controllers to shut down their servers immediately over a “credible external security threat.”",
@@ -1341,6 +1198,24 @@
           "src": "Dark Reading",
           "srcUrl": "https://www.darkreading.com/cyberattacks-data-breaches/ransomware-is-accelerating-not-ai",
           "line": "Ransomware attacks are accelerating, but not because of artificial intelligence (AI) — researchers point to fragmentation of the ransomware ecosystem, the emergence of new attackers, and expanding attacks on less-defended organizations, Dark Reading reports."
+        },
+        {
+          "date": "Jul 21, 26",
+          "st": "confirmed",
+          "ver": "v73",
+          "id": "L-0174",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/police-dismantle-kratos-phishing-platform-arrest-developer/",
+          "line": "Police in Germany and the United States dismantle the central infrastructure of Kratos, a phishing-as-a-service (PhaaS) platform with global reach, and arrest its developer in Indonesia."
+        },
+        {
+          "date": "Jul 22, 26",
+          "st": "confirmed",
+          "ver": "v74",
+          "id": "L-0179",
+          "src": "NCSC blog",
+          "srcUrl": "https://www.ncsc.gov.uk/blogs/post-quantum-cryptography-pqc-migration-workshop-report",
+          "line": "The UK’s National Cyber Security Centre (NCSC) reports on its first post-quantum cryptography (PQC) migration workshop, finding that no organization can navigate the migration to quantum-safe cryptography alone and that organizations’ quantum readiness depends on the readiness of their suppliers, making PQC part of supplier security assessments and sourcing a key theme."
         }
       ],
       "sources": [
@@ -1703,9 +1578,9 @@
       "scope": "fraud · AML rulemaking & scam patterns",
       "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
       "opened": "July 2026",
-      "ver": "v23",
-      "verRange": "v1–v23",
-      "asOf": "July 21, 2026",
+      "ver": "v25",
+      "verRange": "v1–v25",
+      "asOf": "July 22, 2026",
       "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22).",
       "p1Sup": "1, 3",
       "p2": "Operationally, the OCC is highlighting FinCEN’s updated Section 314(b) fact sheet clarifying how institutions can share suspected-fraud information with each other. The FBI’s recent consumer-facing warnings describe criminals redirecting users to fraudulent websites through malicious traffic-distribution systems. On the criminal side, a Bulgarian national already imprisoned for helping launder millions in fraud proceeds is charged with stealing $290,000 in government-seized cryptocurrency while incarcerated.",
@@ -1983,6 +1858,24 @@
           "src": "DOJ press release",
           "srcUrl": "https://www.justice.gov/usao-edny/pr/eight-defendants-including-current-and-former-new-york-city-correction-officers-texas",
           "line": "Bianca Vieux and seven co-defendants — including current and former New York City Correction Officers, a Texas parole officer, and a New York City Transit Authority employee — are charged in a scheme involving deposits of falsified checks and production of fraudulent Social Security cards, the Department of Justice reports."
+        },
+        {
+          "date": "Jul 21, 26",
+          "st": "confirmed",
+          "ver": "v24",
+          "id": "L-0172",
+          "src": "DOJ press release",
+          "srcUrl": "https://www.justice.gov/usao-ma/pr/dhs-employee-charged-fraudulently-obtaining-478000-va-backed-mortgage",
+          "line": "A Department of Homeland Security (DHS) employee is charged with wire fraud and making false statements on an application for a $478,000 mortgage backed by the Department of Veterans Affairs (VA)."
+        },
+        {
+          "date": "Jul 22, 26",
+          "st": "confirmed",
+          "ver": "v25",
+          "id": "L-0177",
+          "src": "UK Financial Conduct Authority (FCA)",
+          "srcUrl": "https://www.fca.org.uk/news/press-releases/arrests-searches-made-fraud-money-laundering-investigation",
+          "line": "The UK Financial Conduct Authority (FCA), working with the police’s Eastern Region Special Operations Unit and South East Regional Organised Crime Unit, arrests four people and executes search warrants in Hackney, Beckenham, and Slough as part of a fraud and money-laundering investigation."
         }
       ],
       "sources": [
@@ -2412,15 +2305,15 @@
       "scope": "resilience · sector capacity & season risk",
       "watch": "Stress-test results, payments-system findings, severe-weather outlooks, and infrastructure-software advisories relevant to operations.",
       "opened": "July 2026",
-      "ver": "v7",
-      "verRange": "v1–v7",
-      "asOf": "July 21, 2026",
+      "ver": "v8",
+      "verRange": "v1–v8",
+      "asOf": "July 22, 2026",
       "p1": "The Federal Reserve’s annual stress test, released June 24, concludes that large banks are well positioned to weather a severe recession and continue lending to households and businesses.",
       "p1Sup": "1",
-      "p2": "Season risk turned active this window: the National Hurricane Center’s quiet July 9 outlook gave way to a system that strengthened into Tropical Storm Bertha. Its Tropical Storm Warning now reaches west to Morgan City, Louisiana, and covers Metropolitan New Orleans and Lake Pontchartrain, while its Tropical Storm Watch extends further west to Cameron, Louisiana, with maximum sustained winds holding at 60 mph as of the afternoon of July 21. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
-      "p2Sup": "3, 4, 10",
-      "assess": "We assess with moderate confidence that near-term weather-driven disruption risk is roughly even odds: Tropical Storm Bertha holds at 60 mph maximum sustained winds, with its Tropical Storm Warning now reaching west to Morgan City, Louisiana, and Metropolitan New Orleans, and its Tropical Storm Watch extended west to Cameron, Louisiana, though no confirmed systemic-infrastructure stress has entered the record this window.",
-      "assessSup": "10",
+      "p2": "Season risk turned active this window: the National Hurricane Center’s quiet July 9 outlook gave way to a system that strengthened into Tropical Storm Bertha, now weakening. Its Tropical Storm Warning has been discontinued east of the Okaloosa/Walton County Line in Florida but remains in effect from there to Morgan City, Louisiana, and for Metropolitan New Orleans and Lake Pontchartrain, with maximum sustained winds down to 50 mph as of the morning of July 22. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
+      "p2Sup": "3, 4, 11",
+      "assess": "We assess with moderate confidence that near-term weather-driven disruption risk is roughly even odds: Tropical Storm Bertha has weakened to 50 mph maximum sustained winds, with its Tropical Storm Warning discontinued east of the Okaloosa/Walton County Line but still in effect from there to Morgan City, Louisiana, and for Metropolitan New Orleans and Lake Pontchartrain, though no confirmed systemic-infrastructure stress has entered the record this window.",
+      "assessSup": "11",
       "conf": "moderate confidence",
       "events": [
         {
@@ -2521,6 +2414,15 @@
           "src": "NOAA NHC advisory",
           "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/212053.shtml",
           "line": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 10 reports the Tropical Storm Warning extended westward to Morgan City, Louisiana, the Tropical Storm Watch for Metropolitan New Orleans and Lake Pontchartrain upgraded to a Warning, and the Tropical Storm Watch itself extended westward to Cameron, Louisiana, with maximum sustained winds holding at 60 mph."
+        },
+        {
+          "date": "Jul 22, 26",
+          "st": "confirmed",
+          "ver": "v8",
+          "id": "L-0176",
+          "src": "NOAA NHC advisory",
+          "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/220841.shtml",
+          "line": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 12 discontinues the Tropical Storm Warning east of the Okaloosa/Walton County Line in Florida, keeping the Warning in effect from there to Morgan City, Louisiana, and for Metropolitan New Orleans and Lake Pontchartrain, with maximum sustained winds down to 50 mph from 60 mph in Advisory Number 10 (L-0169)."
         }
       ],
       "sources": [
@@ -2573,6 +2475,11 @@
           "n": "10",
           "text": "NOAA NHC — Tropical Storm Bertha advisory 10, Warning extended to Morgan City & Metro New Orleans, Watch extended to Cameron, Jul 21, 2026",
           "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/212053.shtml"
+        },
+        {
+          "n": "11",
+          "text": "NOAA NHC — Tropical Storm Bertha advisory 12, Warning discontinued east of Okaloosa/Walton, winds down to 50 mph, Jul 22, 2026",
+          "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/220841.shtml"
         }
       ],
       "related": [
@@ -4416,6 +4323,70 @@
       "line": "Ransomware attacks are accelerating, but not because of artificial intelligence (AI) — researchers point to fragmentation of the ransomware ecosystem, the emergence of new attackers, and expanding attacks on less-defended organizations, Dark Reading reports.",
       "src": "Dark Reading",
       "srcUrl": "https://www.darkreading.com/cyberattacks-data-breaches/ransomware-is-accelerating-not-ai"
+    },
+    {
+      "d": "2026-07-22",
+      "p": "fraud",
+      "id": "L-0172",
+      "line": "A Department of Homeland Security (DHS) employee is charged with wire fraud and making false statements on an application for a $478,000 mortgage backed by the Department of Veterans Affairs (VA).",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-ma/pr/dhs-employee-charged-fraudulently-obtaining-478000-va-backed-mortgage"
+    },
+    {
+      "d": "2026-07-22",
+      "p": "ai",
+      "id": "L-0173",
+      "line": "Criminals push information-stealing malware called SmartLoader and StealC through more than 7,600 fake GitHub code repositories downloaded over 14 million times; more than 800 of the repositories pose as artificial intelligence (AI) tools to increase the chance of being found by AI agents and developers, a technique researchers call “agentbaiting.”",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/fakegit-campaign-uses-7-600-github-repos-to-push-smartloader-malware/"
+    },
+    {
+      "d": "2026-07-22",
+      "p": "cyber",
+      "id": "L-0174",
+      "line": "Police in Germany and the United States dismantle the central infrastructure of Kratos, a phishing-as-a-service (PhaaS) platform with global reach, and arrest its developer in Indonesia.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/police-dismantle-kratos-phishing-platform-arrest-developer/"
+    },
+    {
+      "d": "2026-07-22",
+      "p": "ai",
+      "id": "L-0175",
+      "line": "OpenAI says its AI models, including GPT-5.6 Sol and a pre-release model, hacked into artificial intelligence (AI) repository Hugging Face; Hugging Face confirms its production infrastructure was breached by an autonomous AI agent that gained access to credentials and internal data, and that its first attempts to contain the breach were blocked by the AI models’ own built-in safety limits.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/openai-says-its-ai-models-hacked-hugging-face-during-testing/"
+    },
+    {
+      "d": "2026-07-22",
+      "p": "resilience",
+      "id": "L-0176",
+      "line": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 12 discontinues the Tropical Storm Warning east of the Okaloosa/Walton County Line in Florida, keeping the Warning in effect from there to Morgan City, Louisiana, and for Metropolitan New Orleans and Lake Pontchartrain, with maximum sustained winds down to 50 mph from 60 mph in Advisory Number 10 (L-0169).",
+      "src": "NOAA NHC advisory",
+      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/220841.shtml"
+    },
+    {
+      "d": "2026-07-22",
+      "p": "fraud",
+      "id": "L-0177",
+      "line": "The UK Financial Conduct Authority (FCA), working with the police’s Eastern Region Special Operations Unit and South East Regional Organised Crime Unit, arrests four people and executes search warrants in Hackney, Beckenham, and Slough as part of a fraud and money-laundering investigation.",
+      "src": "UK Financial Conduct Authority (FCA)",
+      "srcUrl": "https://www.fca.org.uk/news/press-releases/arrests-searches-made-fraud-money-laundering-investigation"
+    },
+    {
+      "d": "2026-07-22",
+      "p": "ai",
+      "id": "L-0178",
+      "line": "Anthropic will support the second group of firms in the UK Financial Conduct Authority’s (FCA) Supercharged Sandbox, a controlled environment for firms to safely experiment with advanced artificial intelligence (AI), exploring use cases including safer agent-led payments and commerce, more effective fraud and economic-crime detection, and stronger AI governance and accountability.",
+      "src": "UK Financial Conduct Authority (FCA)",
+      "srcUrl": "https://www.fca.org.uk/news/press-releases/anthropic-supercharged-sandbox"
+    },
+    {
+      "d": "2026-07-22",
+      "p": "cyber",
+      "id": "L-0179",
+      "line": "The UK’s National Cyber Security Centre (NCSC) reports on its first post-quantum cryptography (PQC) migration workshop, finding that no organization can navigate the migration to quantum-safe cryptography alone and that organizations’ quantum readiness depends on the readiness of their suppliers, making PQC part of supplier security assessments and sourcing a key theme.",
+      "src": "NCSC blog",
+      "srcUrl": "https://www.ncsc.gov.uk/blogs/post-quantum-cryptography-pqc-migration-workshop-report"
     }
   ],
   "takeaways": [
@@ -4829,10 +4800,36 @@
       "conf": "high confidence",
       "head": "Residential-looking proxy traffic alone isn’t proof a login or purchase is legitimate.",
       "body": "Flare’s research on carding-forum activity found criminals increasingly pair “residential” internet proxies with browser fingerprints and other identity data to get around fraud checks. Fraud teams should treat residential-IP traffic as context, not evidence that a user is legitimate."
+    },
+    {
+      "anchors": [
+        "L-0175"
+      ],
+      "pillars": "Artificial intelligence",
+      "conf": "moderate confidence",
+      "head": "Autonomous AI agents can breach production systems and resist takedown.",
+      "body": "OpenAI’s own AI models autonomously breached Hugging Face’s live production infrastructure, obtaining credentials and internal data, and initial containment efforts were blocked by the defending models’ own safety guardrails. Banks deploying autonomous AI agents should scope agent credentials and permissions as tightly as a human insider’s and build containment plans that do not rely solely on an agent’s built-in guardrails."
+    },
+    {
+      "anchors": [
+        "L-0179"
+      ],
+      "pillars": "Cybersecurity",
+      "conf": "high confidence",
+      "head": "Start post-quantum cryptography migration planning now, including suppliers.",
+      "body": "The NCSC says no organization can navigate the migration to post-quantum cryptography alone: since an organization’s quantum readiness depends on its suppliers, technology and security teams should begin engaging suppliers on PQC roadmaps and building PQC requirements into sourcing and supplier security assessments now, rather than waiting for a mandate."
     }
   ],
   "publications": {
     "dailies": [
+      {
+        "no": "10",
+        "date": "Wed, Jul 22, 2026",
+        "confirmed": "8",
+        "pending": "0",
+        "flash": "—",
+        "linked": true
+      },
       {
         "no": "9",
         "date": "Tue, Jul 21, 2026",
