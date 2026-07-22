@@ -2,21 +2,45 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-22T12:15:00-04:00",
+    "generatedAt": "2026-07-22T14:14:00-04:00",
     "issueNo": 10,
-    "recordHash": "c8030b7",
+    "recordHash": "5bcae70",
     "windowLabel": "June 9 – July 22, 2026",
     "nextWeekly": "Fri, Jul 24",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed; DOJ’s feed 401’d for the descriptive User-Agent this run and was retried with the same standard browser User-Agent, also returning 200 — counted OK, a new fallback case not previously logged for this feed). Selection window: 2 hours before this run’s prior lastRun (10:13 ET), so candidates are items published since ≈08:13 ET / 12:13 UTC. One item was admitted: The Record’s report that Nichirei Logistics Group is restoring operations after last week’s cyberattack (the KFC-Japan-impacting incident already recorded as L-0101) while the cybercrime group RansomHouse has publicly claimed responsibility and threatened to leak stolen data — a materially new attribution/extortion fact beyond L-0101’s original report, admitted as a distinct item on the same basis as L-0167 (Anubis/Coca-Cola Fairlife). The RSS teaser did not name the extortion group, so the allowlisted article page was fetched for a fuller verbatim excerpt (two sentences, 60 words, within the EDITORIAL §2/runbook cap). Not admitted: BleepingComputer’s “How enterprise GenAI can amplify ransomware risk — and how to contain it” and “New InfraTrust report reveals infrastructure flaws admins should patch first,” both vendor-sponsored explainer/product-launch content (Acronis and Eclypsium respectively) rather than reported events, excluded on the same grounds as the sponsored storage-deals post excluded in the 10:13 ET run. Not separately admitted (reappearances): BleepingComputer’s “Adobe Chrome extension flaw let sites access private WhatsApp chats,” identical URL to the already-recorded L-0183; Cybersecurity Dive’s “Threat group claims credit for ransomware attack on Coca-Cola’s dairy unit,” the same Anubis/Fairlife claim already recorded as L-0167; Cybersecurity Dive’s “OpenAI models escaped containment and hacked a major AI application library,” the same OpenAI/Hugging Face incident already recorded as L-0175; OpenAI’s “Building AI infrastructure with the Effingham County community,” the same data-center community-investment announcement excluded at the relevance gate in the 10:13 ET run (no technology-risk content). Not separately admitted (NOAA companion products for the Tropical Storm Bertha Advisory 13 cycle — 6 items): the Summary, Forecast Advisory, Forecast Discussion, Wind Speed Probabilities, Graphics, and Potential Storm Surge Flooding Map products all share the same facts as the Public Advisory Number 13 itself; Advisory 13’s own “CHANGES WITH THIS ADVISORY” section reads “None,” so — matching the standard applied to every prior Bertha advisory — it was not admitted (no stated change from Advisory 12A/L-0182; maximum sustained winds unchanged at 50 mph). Five NHC Local Statement products for the same cycle carry no machine-readable pubDate and were not treated as candidates. The CISA KEV catalog is unchanged (still catalogVersion 2026.07.21, 1,651 entries). Anthropic’s newest item remains the Jul 21 philanthropic donation, FinCEN’s newest remains the Jul 21 Gacki testimony, ENISA’s newest listed item remains Jul 14, and ICO’s page again returned a JavaScript-rendered “Loading...” shell with no readable content. NIST’s feed again returned an empty channel (known behavior, not a failure); the Federal Reserve’s feed returned its usual 20 items but none published in-window. FBI IC3, OCC, FTC, CFPB, DOJ (beyond its own-day sentencing/indictment items, none clearing the relevance gate), Nacha, the FCA, Bank of England, NCSC (beyond its own reappearance), EBA, ECB, ENISA, EDPB, the Federal Register/FinCEN documents feed, and Krebs carried nothing new and admissible in-window.",
-    "lastRun": "2026-07-22T12:15:00-04:00"
+    "feedNote": "26 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Dark Reading returned 404 for its RSS feed URL and was not retried (only 403s trigger the User-Agent fallback per the runbook) — counted as a failed feed. Selection window: 2 hours before this run’s prior lastRun (12:15 ET), so candidates are items published since ≈10:15 ET / 14:15 UTC. Three items were admitted: The Record’s report that the North Korean hacking group Kimsuky (APT43) compromised South Korean vendors of collaborative-work software and used that access to breach the vendors’ own customers; BleepingComputer’s report that Swiss rail vehicle manufacturer Stadler Rail rejected a $12.3 million ransom demand from the Everest ransomware gang after a breach via a data exchange platform shared with one of its suppliers, and filed a criminal complaint with police; and the National Hurricane Center’s Tropical Storm Bertha Intermediate Advisory Number 13A, discontinuing the Tropical Storm Warning east of the Alabama/Florida border as winds decreased to 45 mph from 50 mph, with the storm approaching the coast of southeastern Louisiana. The CISA KEV catalog is unchanged (still catalogVersion 2026.07.21, 1,651 entries). Not admitted: The Record’s “French Parliament greenlights social media ban for under-15s” (a child online-safety law with no financial-sector or technology-risk nexus stated); Anthropic’s newest page item, a launch of an Anthropic Economic Index connector for Claude (a product-data feature announcement, not a risk event). Not separately admitted (vendor-sponsored explainer/product content, same grounds as prior runs): BleepingComputer’s “How enterprise GenAI can amplify ransomware risk” (Acronis) and “New InfraTrust report reveals infrastructure flaws admins should patch first” (Eclypsium). Not separately admitted (reappearances at identical URLs already in the record): The Record’s “Japanese food logistics giant recovers as extortion group claims cyberattack,” the same Nichirei/RansomHouse story already recorded as L-0184; The Record’s “OpenAI models behind breach of Hugging Face systems,” the same incident already recorded as L-0175; Cybersecurity Dive’s “Threat group claims credit for ransomware attack on Coca-Cola’s dairy unit,” the same Anubis/Fairlife claim already recorded as L-0167; Cybersecurity Dive’s “OpenAI models escaped containment and hacked a major AI application library,” the same OpenAI/Hugging Face incident already recorded as L-0175. Not separately admitted (NOAA companion products for the Bertha Advisory 13/13A cycle — seven items): the Atlantic Tropical Weather Outlook, Summary, Forecast Advisory, Forecast Discussion, Wind Speed Probabilities, Graphics, and Potential Storm Surge Flooding Map products share the same facts as Advisory 13A itself. Four NHC Local Statement products for the same cycle carry no machine-readable pubDate and were not treated as candidates. Nacha’s feed again required stripping leading theme-debug HTML comments before the XML would parse (known quirk, not a failure) and carried nothing newer than Jul 10. FCA’s newest item (the Anthropic Supercharged Sandbox announcement) reappeared but is already recorded as L-0178, published before this run’s window regardless. Anthropic’s next-newest item remains the Jul 21 philanthropic donation, FinCEN’s newsroom page carried nothing new, ENISA’s newest listed item remains the Frontier AI podcast launch, and ICO’s page again returned a JavaScript-rendered “Loading...” shell with no readable content. NIST’s feed again returned an empty channel (known behavior, not a failure); the Federal Reserve, OCC, FTC, CFPB, DOJ (beyond its own-day sentencing/indictment items, none clearing the relevance gate), FBI IC3, OpenAI, Bank of England, NCSC, EBA, ECB, EDPB, the Federal Register/FinCEN documents feed, and Krebs carried nothing new and admissible in-window.",
+    "lastRun": "2026-07-22T14:14:00-04:00"
   },
   "lead": {
-    "head": "Leading stories: Japan’s largest refrigerated logistics company faces an extortion threat from the RansomHouse gang after a cyberattack disrupted its operations nationwide; European banks inadvertently leak customer data to advertisers through website tracking pixels; and Anthropic joins the UK Financial Conduct Authority’s (FCA) second Supercharged Sandbox cohort to test bank AI use cases.",
-    "dek": "Today’s edition draws on the thirteen items recorded so far. Every item links to its source.",
+    "head": "Leading stories: Swiss rail vehicle manufacturer Stadler Rail rejects a $12.3 million ransom demand after a breach via a supplier-shared data exchange platform; the North Korean hacking group Kimsuky compromises South Korean software vendors and pivots into their customers; and Japan’s largest refrigerated logistics company faces an extortion threat from the RansomHouse gang after a cyberattack disrupted its operations nationwide.",
+    "dek": "Today’s edition draws on the sixteen items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
+        "p": "tp",
+        "tri": "priority",
+        "st": "confirmed",
+        "id": "L-0186",
+        "conf": "",
+        "text": "Swiss rail vehicle manufacturer Stadler Rail rejects a $12.3 million ransom demand from the Everest ransomware gang, which breached a data exchange platform shared with one of its suppliers, and files a criminal complaint with police, BleepingComputer reports.",
+        "why": "It shows attackers can reach a major manufacturer through a data exchange platform shared with a supplier, and that a company can refuse a ransom demand and report the incident to police rather than pay — a decision path banks should expect from their own vendors.",
+        "srcText": "BleepingComputer, Jul 22",
+        "srcUrl": "https://www.bleepingcomputer.com/news/security/swiss-rail-giant-stadler-rejects-123m-ransom-demand-after-cyberattack/"
+      },
+      {
+        "n": "2",
+        "p": "tp",
+        "tri": "priority",
+        "st": "confirmed",
+        "id": "L-0185",
+        "conf": "",
+        "text": "Kimsuky, a North Korean state-linked hacking group also known as APT43, compromised South Korean vendors of collaborative-work software and used that access to breach the vendors’ own customers, The Record reports.",
+        "why": "It shows a nation-state hacking group can use a compromised software vendor to pivot straight into that vendor’s customers, a supply-chain risk banks should watch for their own software providers.",
+        "srcText": "The Record, Jul 22",
+        "srcUrl": "https://therecord.media/kimsuky-north-korea-espionage-groupware-companies"
+      },
+      {
+        "n": "3",
         "p": "tp",
         "tri": "priority",
         "st": "confirmed",
@@ -26,34 +50,46 @@
         "why": "It shows that an extortion gang can publicly claim credit for a vendor’s cyberattack and threaten to leak stolen data even as recovery is underway — a pattern any bank should watch for its own logistics and technology vendors.",
         "srcText": "The Record, Jul 22",
         "srcUrl": "https://therecord.media/nichirei-japan-food-logistics-cyberattack-recovery"
-      },
-      {
-        "n": "2",
-        "p": "data",
-        "tri": "priority",
-        "st": "confirmed",
-        "id": "L-0181",
-        "conf": "",
-        "text": "European banks inadvertently transmit customer data to advertising platforms through website tracking pixels, raising compliance, security, and privacy concerns.",
-        "why": "It shows that ordinary website tracking tools can silently leak customer data to advertisers, exposing any bank that uses similar trackers to the same privacy, security, and compliance risk.",
-        "srcText": "Dark Reading, Jul 22",
-        "srcUrl": "https://www.darkreading.com/data-privacy/eu-financial-institutions-cookie-trackers"
-      },
-      {
-        "n": "3",
-        "p": "ai",
-        "tri": "priority",
-        "st": "confirmed",
-        "id": "L-0178",
-        "conf": "",
-        "text": "Anthropic will support the second group of firms in the UK Financial Conduct Authority’s (FCA) Supercharged Sandbox, a controlled environment for firms to safely experiment with advanced artificial intelligence (AI), exploring use cases including safer agent-led payments and commerce, more effective fraud and economic-crime detection, and stronger AI governance and accountability.",
-        "why": "This gives banks and other financial firms a UK regulator-backed environment to test real AI use cases such as fraud detection and agent-led payments, directly relevant to how banks build and govern AI systems.",
-        "srcText": "UK Financial Conduct Authority (FCA), Jul 22",
-        "srcUrl": "https://www.fca.org.uk/news/press-releases/anthropic-supercharged-sandbox"
       }
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-22T17:36:45Z",
+      "p": "resilience",
+      "tri": "routine",
+      "st": "confirmed",
+      "tier": "T1",
+      "id": "L-0187",
+      "title": "The National Hurricane Center’s Tropical Storm Bertha Intermediate Advisory Number 13A discontinues the Tropical Storm Warning east of the Alabama/Florida border, keeping the Warning in effect from there to Morgan City, Louisiana, and for Metropolitan New Orleans and Lake Pontchartrain, with maximum sustained winds down to 45 mph from 50 mph in Advisory Number 12 (L-0176).",
+      "src": "NOAA NHC advisory",
+      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/221736.shtml",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-22T16:59:17Z",
+      "p": "tp",
+      "tri": "priority",
+      "st": "confirmed",
+      "tier": "T2",
+      "id": "L-0186",
+      "title": "Swiss rail vehicle manufacturer Stadler Rail rejects a $12.3 million ransom demand from the Everest ransomware gang, which breached a data exchange platform shared with one of its suppliers, and files a criminal complaint with police, BleepingComputer reports.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/swiss-rail-giant-stadler-rejects-123m-ransom-demand-after-cyberattack/",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-22T16:47:00Z",
+      "p": "tp",
+      "tri": "priority",
+      "st": "confirmed",
+      "tier": "T2",
+      "id": "L-0185",
+      "title": "Kimsuky, a North Korean state-linked hacking group also known as APT43, compromised South Korean vendors of collaborative-work software and used that access to breach the vendors’ own customers, The Record reports.",
+      "src": "The Record",
+      "srcUrl": "https://therecord.media/kimsuky-north-korea-espionage-groupware-companies",
+      "linked": true
+    },
     {
       "ts": "2026-07-22T15:40:00Z",
       "p": "tp",
@@ -2136,8 +2172,8 @@
       "scope": "third-party risk · vendor software & supply chain",
       "watch": "Vendor tools under active attack, software-supply-chain compromises aimed at financial applications, and vendor incident disclosures.",
       "opened": "July 2026",
-      "ver": "v11",
-      "verRange": "v1–v11",
+      "ver": "v13",
+      "verRange": "v1–v13",
       "asOf": "July 22, 2026",
       "p1": "One vendor-channel exploit is confirmed this window: SimpleHelp, a remote-support tool, carries an authentication-bypass flaw on CISA’s known-exploited list — in a vulnerable configuration, a remote, unauthenticated attacker can log in with a forged token.",
       "p1Sup": "1",
@@ -2290,6 +2326,24 @@
           "src": "The Record",
           "srcUrl": "https://therecord.media/nichirei-japan-food-logistics-cyberattack-recovery",
           "line": "Nichirei Logistics Group, Japan’s largest refrigerated logistics company, is restoring operations after a cyberattack disrupted food deliveries nationwide, while the cybercrime group RansomHouse claims responsibility and threatens to leak stolen data, The Record reports."
+        },
+        {
+          "date": "Jul 22, 26",
+          "st": "confirmed",
+          "ver": "v12",
+          "id": "L-0185",
+          "src": "The Record",
+          "srcUrl": "https://therecord.media/kimsuky-north-korea-espionage-groupware-companies",
+          "line": "Kimsuky, a North Korean state-linked hacking group also known as APT43, compromised South Korean vendors of collaborative-work software and used that access to breach the vendors’ own customers, The Record reports."
+        },
+        {
+          "date": "Jul 22, 26",
+          "st": "confirmed",
+          "ver": "v13",
+          "id": "L-0186",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/swiss-rail-giant-stadler-rejects-123m-ransom-demand-after-cyberattack/",
+          "line": "Swiss rail vehicle manufacturer Stadler Rail rejects a $12.3 million ransom demand from the Everest ransomware gang, which breached a data exchange platform shared with one of its suppliers, and files a criminal complaint with police, BleepingComputer reports."
         }
       ],
       "sources": [
@@ -2392,15 +2446,15 @@
       "scope": "resilience · sector capacity & season risk",
       "watch": "Stress-test results, payments-system findings, severe-weather outlooks, and infrastructure-software advisories relevant to operations.",
       "opened": "July 2026",
-      "ver": "v9",
-      "verRange": "v1–v9",
+      "ver": "v10",
+      "verRange": "v1–v10",
       "asOf": "July 22, 2026",
       "p1": "The Federal Reserve’s annual stress test, released June 24, concludes that large banks are well positioned to weather a severe recession and continue lending to households and businesses.",
       "p1Sup": "1",
-      "p2": "Season risk turned active this window: the National Hurricane Center’s quiet July 9 outlook gave way to a system that strengthened into Tropical Storm Bertha, now weakening. Its Tropical Storm Warning has been discontinued east of the Okaloosa/Walton County Line in Florida but remains in effect from there to Morgan City, Louisiana, and for Metropolitan New Orleans and Lake Pontchartrain, with maximum sustained winds holding at 50 mph; the accompanying Tropical Storm Watch has been extended westward to Sargent, Texas. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
-      "p2Sup": "3, 4, 12",
-      "assess": "We assess with moderate confidence that near-term weather-driven disruption risk is roughly even odds: Tropical Storm Bertha has weakened to 50 mph maximum sustained winds, with its Tropical Storm Warning discontinued east of the Okaloosa/Walton County Line but still in effect from there to Morgan City, Louisiana, and for Metropolitan New Orleans and Lake Pontchartrain, and its Tropical Storm Watch now extended westward to Sargent, Texas, though no confirmed systemic-infrastructure stress has entered the record this window.",
-      "assessSup": "12",
+      "p2": "Season risk turned active this window: the National Hurricane Center’s quiet July 9 outlook gave way to a system that strengthened into Tropical Storm Bertha, now weakening as it approaches the coast of southeastern Louisiana. Its Tropical Storm Warning has been discontinued east of the Alabama/Florida border but remains in effect from there to Morgan City, Louisiana, and for Metropolitan New Orleans and Lake Pontchartrain, with maximum sustained winds down to 45 mph; a Tropical Storm Watch remains in effect west of Morgan City to Sargent, Texas, and for Lake Maurepas. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
+      "p2Sup": "3, 4, 13",
+      "assess": "We assess with moderate confidence that near-term weather-driven disruption risk is roughly even odds: Tropical Storm Bertha has weakened further to 45 mph maximum sustained winds as it approaches the coast of southeastern Louisiana, with its Tropical Storm Warning discontinued east of the Alabama/Florida border but still in effect from there to Morgan City, Louisiana, and for Metropolitan New Orleans and Lake Pontchartrain, and its Tropical Storm Watch remaining in effect west of Morgan City to Sargent, Texas, and for Lake Maurepas, though no confirmed systemic-infrastructure stress has entered the record this window.",
+      "assessSup": "13",
       "conf": "moderate confidence",
       "events": [
         {
@@ -2519,6 +2573,15 @@
           "src": "NOAA NHC advisory",
           "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/221145.shtml",
           "line": "The National Hurricane Center’s Tropical Storm Bertha Intermediate Advisory Number 12A extends the Tropical Storm Watch westward to Sargent, Texas, with maximum sustained winds holding at 50 mph."
+        },
+        {
+          "date": "Jul 22, 26",
+          "st": "confirmed",
+          "ver": "v10",
+          "id": "L-0187",
+          "src": "NOAA NHC advisory",
+          "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/221736.shtml",
+          "line": "The National Hurricane Center’s Tropical Storm Bertha Intermediate Advisory Number 13A discontinues the Tropical Storm Warning east of the Alabama/Florida border, keeping the Warning in effect from there to Morgan City, Louisiana, and for Metropolitan New Orleans and Lake Pontchartrain, with maximum sustained winds down to 45 mph from 50 mph in Advisory Number 12 (L-0176)."
         }
       ],
       "sources": [
@@ -2581,6 +2644,11 @@
           "n": "12",
           "text": "NOAA NHC — Tropical Storm Bertha Intermediate Advisory 12A, Tropical Storm Watch extended westward to Sargent, Texas, winds holding at 50 mph, Jul 22, 2026",
           "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/221145.shtml"
+        },
+        {
+          "n": "13",
+          "text": "NOAA NHC — Tropical Storm Bertha Intermediate Advisory 13A, Warning discontinued east of Alabama/Florida border, winds down to 45 mph, Jul 22, 2026",
+          "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/221736.shtml"
         }
       ],
       "related": [
@@ -4542,6 +4610,30 @@
       "line": "Nichirei Logistics Group, Japan’s largest refrigerated logistics company, is restoring operations after a cyberattack disrupted food deliveries nationwide, while the cybercrime group RansomHouse claims responsibility and threatens to leak stolen data, The Record reports.",
       "src": "The Record",
       "srcUrl": "https://therecord.media/nichirei-japan-food-logistics-cyberattack-recovery"
+    },
+    {
+      "d": "2026-07-22",
+      "p": "tp",
+      "id": "L-0185",
+      "line": "Kimsuky, a North Korean state-linked hacking group also known as APT43, compromised South Korean vendors of collaborative-work software and used that access to breach the vendors’ own customers, The Record reports.",
+      "src": "The Record",
+      "srcUrl": "https://therecord.media/kimsuky-north-korea-espionage-groupware-companies"
+    },
+    {
+      "d": "2026-07-22",
+      "p": "tp",
+      "id": "L-0186",
+      "line": "Swiss rail vehicle manufacturer Stadler Rail rejects a $12.3 million ransom demand from the Everest ransomware gang, which breached a data exchange platform shared with one of its suppliers, and files a criminal complaint with police, BleepingComputer reports.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/swiss-rail-giant-stadler-rejects-123m-ransom-demand-after-cyberattack/"
+    },
+    {
+      "d": "2026-07-22",
+      "p": "resilience",
+      "id": "L-0187",
+      "line": "The National Hurricane Center’s Tropical Storm Bertha Intermediate Advisory Number 13A discontinues the Tropical Storm Warning east of the Alabama/Florida border, keeping the Warning in effect from there to Morgan City, Louisiana, and for Metropolitan New Orleans and Lake Pontchartrain, with maximum sustained winds down to 45 mph from 50 mph in Advisory Number 12 (L-0176).",
+      "src": "NOAA NHC advisory",
+      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/221736.shtml"
     }
   ],
   "takeaways": [
@@ -4989,7 +5081,7 @@
       {
         "no": "10",
         "date": "Wed, Jul 22, 2026",
-        "confirmed": "13",
+        "confirmed": "16",
         "pending": "0",
         "flash": "—",
         "linked": true
