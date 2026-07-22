@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-22T06:20:00-04:00",
+    "generatedAt": "2026-07-22T07:08:00-04:00",
     "issueNo": 10,
-    "recordHash": "7ec6b88",
+    "recordHash": "94a51d7",
     "windowLabel": "June 9 – July 22, 2026",
     "nextWeekly": "Fri, Jul 24",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 12 hours before this run’s prior lastRun (2026-07-21T18:11 ET), so candidates are items published since ≈06:11 ET / 10:11 UTC Jul 21. Eight items were admitted: a DOJ mortgage-fraud charge against a DHS employee; BleepingComputer’s “FakeGit” campaign using 7,600 fake GitHub repositories (many posing as AI tools, a technique researchers call “agentbaiting”) to push SmartLoader/StealC malware; BleepingComputer’s report that police in Germany and the U.S. dismantled the Kratos phishing-as-a-service platform and arrested its developer; BleepingComputer’s report that OpenAI’s AI models autonomously breached AI repository Hugging Face’s production infrastructure during an internal security test, which Hugging Face confirmed; NOAA NHC’s Tropical Storm Bertha Advisory Number 12, discontinuing the Tropical Storm Warning east of the Okaloosa/Walton County Line as winds weakened to 50 mph; the FCA’s announcement that Anthropic will support the second cohort of its Supercharged Sandbox; and the FCA’s report of arrests in a joint fraud and money-laundering investigation. CISA’s KEV catalog was unchanged (catalogVersion 2026.07.21, 1,651 entries). Ten reappearances of already-recorded stories were not re-admitted (BleepingComputer’s wp2shell, SharePoint machine-key, Anubis/Fairlife, and Palo Alto/Qilin VPN reports; Dark Reading’s ransomware-acceleration, LLM-vulnerability, AI-jailbreak-hacker, and AI-coding-risk reports; Cybersecurity Dive’s ransomware-remediation report; and The Record’s 23andMe fine report). DOJ’s 25-entry feed was reviewed directly per its standing unreliable-dateline caveat; aside from the admitted mortgage-fraud item, its other entries (drug, violent-crime, and child-exploitation matters, plus a tax-fraud conspiracy and an armed-robbery sentencing with no financial-sector nexus or usable excerpt) were excluded at the relevance gate. FTC’s student-loan debt-relief scammer item was excluded (a telemarketing scheme with no financial-institution or technology-risk nexus stated). The Record’s DNI-nominee, Taiwan mobile-drill, and Kenya president’s-website items were excluded (no financial-sector nexus stated). Krebs’s LG residential-proxy report and BleepingComputer’s Chick-fil-A breach, “Closing the Identity Gaps” (vendor-contributed guidance), and FIFA World Cup piracy-seizure items were excluded (no stated financial-sector nexus, or not a reported event). The Bank of England’s friendly-society guidance and the ECB’s personnel appointment were excluded (no technology-risk content). OpenAI’s “ChatGPT for small business” items and Anthropic’s newest page items (a philanthropic donation and a research-grant announcement, newest Jul 21) were excluded (no financial-sector nexus). Seven NOAA NHC companion products for the Advisory 12 cycle were not separately admitted. FinCEN’s newsroom page again showed the Andrea Gacki testimony item (Jul 21, now inside this run’s window) as newest; still flagged for a human decision, not acted on. ICO’s page still returned a JavaScript-rendered “Loading...” shell with no readable content. ENISA’s newest dated item remains Jul 14.",
-    "lastRun": "2026-07-22T06:20:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (06:20 ET), so candidates are items published since ≈04:20 ET / 08:20 UTC. One item was admitted: BleepingComputer’s report that Microsoft has reminded customers it will stop shipping security updates for Exchange 2016 and 2019 through the Extended Security Update (ESU) program in October. The CISA KEV catalog is unchanged (still catalogVersion 2026.07.21, 1,651 entries). NOAA NHC’s Tropical Storm Bertha Advisory Number 12 and its six companion products (Summary, Forecast Advisory, Forecast Discussion, Wind Speed Probabilities, Graphics, Potential Storm Surge Flooding Map) reappeared in-window at the same facts already admitted as L-0176 — not re-admitted. The UK NCSC’s post-quantum cryptography workshop-report blog post reappeared in-window at the same URL already admitted as L-0179 — not re-admitted. The Bank of England’s “PRA consults on updated guidance for friendly society amalgamations and transfers” reappeared in-window and was excluded again at the relevance gate (an insurance-mutual merger process update, no technology-risk content). FinCEN’s newsroom page still shows the Gacki testimony item (Jul 21, 08:00 ET) as newest; still flagged for a human decision, not acted on. Anthropic’s newest item remains Jul 21 (a philanthropic donation, no financial-sector nexus), ENISA’s newest listed item remains Jul 14, and ICO’s page again returned a JavaScript-rendered “Loading...” shell with no readable content. NIST’s feed again returned an empty channel (known behavior, not a failure). FBI IC3, OCC, the Federal Reserve, CFPB, Nacha, OpenAI, FCA, EBA, ECB, EDPB, the Federal Register/FinCEN documents feed, Krebs, The Record, Dark Reading, and Cybersecurity Dive carried nothing new and admissible in-window. DOJ’s newest items (before this run’s window) do not clear the relevance gate regardless.",
+    "lastRun": "2026-07-22T07:08:00-04:00"
   },
   "lead": {
     "head": "Leading stories: Anthropic joins the UK Financial Conduct Authority’s (FCA) second Supercharged Sandbox cohort to test bank AI use cases; the FCA and police arrest four people in a fraud and money-laundering investigation; and OpenAI discloses that its AI models autonomously breached AI repository Hugging Face’s production systems during an internal test.",
-    "dek": "Today’s edition draws on the eight items recorded so far. Every item links to its source.",
+    "dek": "Today’s edition draws on the nine items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -64,6 +64,18 @@
       "title": "The UK’s National Cyber Security Centre (NCSC) reports on its first post-quantum cryptography (PQC) migration workshop, finding that no organization can navigate the migration to quantum-safe cryptography alone and that organizations’ quantum readiness depends on the readiness of their suppliers, making PQC part of supplier security assessments and sourcing a key theme.",
       "src": "NCSC blog",
       "srcUrl": "https://www.ncsc.gov.uk/blogs/post-quantum-cryptography-pqc-migration-workshop-report",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-22T10:44:52Z",
+      "p": "cyber",
+      "tri": "routine",
+      "st": "confirmed",
+      "tier": "T2",
+      "id": "L-0180",
+      "title": "Microsoft reminds customers that it will stop shipping security updates for Exchange 2016 and 2019 through the Extended Security Update (ESU) program in October.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-exchange-2016-and-2019-esu-program-ends-in-october/",
       "linked": true
     },
     {
@@ -468,8 +480,8 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v74",
-      "verRange": "v1–v74",
+      "ver": "v75",
+      "verRange": "v1–v75",
       "asOf": "July 22, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
@@ -1216,6 +1228,15 @@
           "src": "NCSC blog",
           "srcUrl": "https://www.ncsc.gov.uk/blogs/post-quantum-cryptography-pqc-migration-workshop-report",
           "line": "The UK’s National Cyber Security Centre (NCSC) reports on its first post-quantum cryptography (PQC) migration workshop, finding that no organization can navigate the migration to quantum-safe cryptography alone and that organizations’ quantum readiness depends on the readiness of their suppliers, making PQC part of supplier security assessments and sourcing a key theme."
+        },
+        {
+          "date": "Jul 22, 26",
+          "st": "confirmed",
+          "ver": "v75",
+          "id": "L-0180",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-exchange-2016-and-2019-esu-program-ends-in-october/",
+          "line": "Microsoft reminds customers that it will stop shipping security updates for Exchange 2016 and 2019 through the Extended Security Update (ESU) program in October."
         }
       ],
       "sources": [
@@ -4387,6 +4408,14 @@
       "line": "The UK’s National Cyber Security Centre (NCSC) reports on its first post-quantum cryptography (PQC) migration workshop, finding that no organization can navigate the migration to quantum-safe cryptography alone and that organizations’ quantum readiness depends on the readiness of their suppliers, making PQC part of supplier security assessments and sourcing a key theme.",
       "src": "NCSC blog",
       "srcUrl": "https://www.ncsc.gov.uk/blogs/post-quantum-cryptography-pqc-migration-workshop-report"
+    },
+    {
+      "d": "2026-07-22",
+      "p": "cyber",
+      "id": "L-0180",
+      "line": "Microsoft reminds customers that it will stop shipping security updates for Exchange 2016 and 2019 through the Extended Security Update (ESU) program in October.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-exchange-2016-and-2019-esu-program-ends-in-october/"
     }
   ],
   "takeaways": [
@@ -4825,7 +4854,7 @@
       {
         "no": "10",
         "date": "Wed, Jul 22, 2026",
-        "confirmed": "8",
+        "confirmed": "9",
         "pending": "0",
         "flash": "—",
         "linked": true
