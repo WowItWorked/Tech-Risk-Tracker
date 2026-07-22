@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-22T16:15:00-04:00",
+    "generatedAt": "2026-07-22T17:09:00-04:00",
     "issueNo": 10,
-    "recordHash": "b37b27a",
+    "recordHash": "339c2b7",
     "windowLabel": "June 9 – July 22, 2026",
     "nextWeekly": "Fri, Jul 24",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (15:09 ET), so candidates are items published since ≈13:09 ET / 17:09 UTC. Ten in-window items surfaced across three feeds with window activity — NOAA NHC (6), The Record (2), and the CISA KEV catalog (2 new entries) — all other feeds carried nothing new and admissible in-window. One item was admitted: the CISA Known Exploited Vulnerabilities catalog advanced from catalogVersion 2026.07.21 (1,651 entries) to 2026.07.22 (1,653 entries), adding a Check Point SmartConsole improper-authentication flaw (CVE-2026-16232) and a Microsoft SharePoint deserialization flaw (CVE-2026-50522) — the same SharePoint CVE already reported under active exploitation via BleepingComputer on Jul 21 (L-0168); CISA’s own catalog listing and its July 25 remediation deadline were treated as a new admissible fact, following the precedent set for the Jul 21 WP2Shell KEV listing (L-0162), rather than as a reappearance. Both flaws were bundled into one item. Not admitted (reviewed, excluded): The Record’s “Federal agencies broaden alert on Iran-linked OT attacks” (19:18 UTC) — a CISA/FBI/EPA advisory expanding the manufacturer scope of a warning about attacks on internet-facing operational technology (programmable logic controllers at power, water-treatment, and manufacturing facilities); excluded at the relevance gate, no financial-sector or technology-risk-to-financial-institutions nexus stated in the article text (unlike L-0055, which explicitly named financial services among the sectors most at risk). Not re-admitted (reappearances, already recorded or already excluded, inside this run’s 2-hour overlap window): NOAA’s Tropical Storm Bertha Intermediate Advisory Number 13A (already recorded as L-0187) and its Summary/Public Advisory Update product (already recorded as L-0188, landfall); The Record’s “French Parliament greenlights social media ban for under-15s” (already excluded in prior runs on the same grounds). Not separately admitted (NOAA companion products for the already-recorded advisory cycle): the Atlantic Tropical Weather Outlook, Tropical Storm Bertha Graphics, and the National Weather Service Mobile, AL/Pensacola, FL office’s Local Statement (restating the same warning-cancellation fact already carried by the admitted L-0187 advisory, localized to the Florida Panhandle). FCA, the Bank of England, NCSC, EBA, ECB, EDPB, and FinCEN’s Federal Register feed carried nothing new in-window (FCA’s two newest items, 09:31 and 09:25 UTC, are already recorded as L-0178/L-0177). FTC’s newest item (08:00 ET) and DOJ’s 25 entries (all dated 08:00 ET, non-technology criminal matters) fall before this run’s window. OpenAI’s newest item (13:00 UTC) also falls before the window. NIST’s feed again returned an empty channel (known behavior, not a failure). Anthropic’s newest listed item remains “A research agenda for the Economic Futures Research Fund” (already excluded); FinCEN’s newsroom page’s newest item (comment-period extension on the Huione Group rule, 08:00 ET) and ENISA’s newest item (Frontier AI podcast launch) remain unchanged from the prior run and fall before the window regardless; ICO’s page again returned the same JavaScript-rendered “Loading...” shell with no readable content (not counted as a feed failure). Krebs, BleepingComputer, Dark Reading, and Cybersecurity Dive carried nothing new and admissible in-window — each feed’s newest item (Krebs 01:10 UTC, BleepingComputer 16:59 UTC, Dark Reading 15:53 UTC, Cybersecurity Dive 15:11 UTC) falls before this run’s 17:09 UTC window start.",
-    "lastRun": "2026-07-22T16:15:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (16:15 ET), so candidates are items published since ≈14:15 ET / 18:15 UTC. Raw candidates surfaced across four feeds with window activity — NOAA NHC (7 — the Tropical Storm Bertha Advisory Number 14 cycle's Public Advisory, Forecast Advisory, Forecast Discussion, Wind Speed Probabilities, Summary, and Graphics products, plus a reappearing companion product for the already-recorded Advisory Update landfall bulletin), The Record (2), BleepingComputer (1), and Dark Reading (1) — all other feeds (including CISA's KEV catalog, unchanged, still catalogVersion 2026.07.22, 1,653 entries) carried nothing new and admissible in-window. One item was admitted: NOAA NHC's Tropical Storm Bertha Advisory Number 14, reporting the storm moving westward over southeastern Louisiana with maximum sustained winds holding at 45 mph and extending the Tropical Storm Warning westward to Cameron, Louisiana. Not admitted (reviewed, excluded): The Record's “Extension of CISA 2015 info-sharing protections passes as part of House’s defense bill” (20:39 UTC) — a House NDAA provision renewing the CISA 2015 information-sharing law for the private sector and federal government generally; excluded at the relevance gate, neither the RSS description nor the fetched article body states a financial-sector or financial-institution-specific nexus, and the provision itself has only passed the House, not been enacted. BleepingComputer's “South Korea discloses data breach impacting diplomats worldwide” (20:06:54 UTC) — a breach of South Korea's Ministry of Foreign Affairs training system affecting diplomatic personnel; excluded, no financial-sector or technology-risk-to-financial-institutions nexus stated. Dark Reading's “Fake Bahrain Alert App Deploys Android Surveillance Malware” (19:42:42 UTC) — nation-state civilian surveillance malware tied to Iranian missile strikes on Bahrain; excluded, no financial-sector nexus stated. “When in doubt, exclude” applied to all three. Not re-admitted (reappearances, already recorded or already excluded, inside this run's 2-hour overlap window): NOAA's Tropical Storm Bertha Public Advisory Update Number (19:01 UTC, identical URL to the already-recorded L-0188 landfall update); The Record's “Federal agencies broaden alert on Iran-linked OT attacks” (19:18 UTC, already excluded in the prior run on the same grounds — no financial-sector or technology-risk nexus stated). Not separately admitted (NOAA companion products for the Advisory 14 cycle): the Forecast Advisory, Forecast Discussion, Wind Speed Probabilities, Summary (identical URL to the admitted Public Advisory), and Graphics products — all restate or elaborate on the same facts already carried by the admitted Public Advisory Number 14, following the standing companion-product exclusion practice. FCA, the Bank of England, NCSC, EBA, ECB, EDPB, and FinCEN’s Federal Register feed carried nothing new in-window. FTC's newest item (08:00 ET), DOJ's 25 entries (all dated 08:00 ET, non-technology criminal matters), OpenAI's newest item (13:00 UTC), and Krebs (01:10 UTC) fall before this run's window. NIST's feed again returned an empty channel (known behavior, not a failure). Anthropic's newest listed item remains “A research agenda for the Economic Futures Research Fund” (already excluded); FinCEN's newsroom page's newest item (comment-period extension on the Huione Group rule, 08:00 ET) and ENISA's newest item (Frontier AI podcast launch) remain unchanged from the prior run and fall before the window regardless; ICO's page again returned the same JavaScript-rendered “Loading...” shell with no readable content (not counted as a feed failure).",
+    "lastRun": "2026-07-22T17:09:00-04:00"
   },
   "lead": {
     "head": "Leading stories: Swiss rail vehicle manufacturer Stadler Rail rejects a $12.3 million ransom demand after a breach via a supplier-shared data exchange platform; the North Korean hacking group Kimsuky compromises South Korean software vendors and pivots into their customers; and CISA adds a Check Point SmartConsole flaw and a Microsoft SharePoint flaw to its known-exploited vulnerabilities catalog, both due for patching by July 25.",
-    "dek": "Today’s edition draws on the eighteen items recorded so far. Every item links to its source.",
+    "dek": "Today’s edition draws on the nineteen items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -54,6 +54,18 @@
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-22T20:47:19Z",
+      "p": "resilience",
+      "tri": "routine",
+      "st": "confirmed",
+      "tier": "T1",
+      "id": "L-0190",
+      "title": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 14 reports the storm moving westward over southeastern Louisiana with maximum sustained winds holding at 45 mph, and extends the Tropical Storm Warning westward to Cameron, Louisiana.",
+      "src": "NOAA NHC advisory",
+      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/222047.shtml",
+      "linked": true
+    },
     {
       "ts": "2026-07-22T20:15:00Z",
       "p": "cyber",
@@ -2479,15 +2491,15 @@
       "scope": "resilience · sector capacity & season risk",
       "watch": "Stress-test results, payments-system findings, severe-weather outlooks, and infrastructure-software advisories relevant to operations.",
       "opened": "July 2026",
-      "ver": "v11",
-      "verRange": "v1–v11",
+      "ver": "v12",
+      "verRange": "v1–v12",
       "asOf": "July 22, 2026",
       "p1": "The Federal Reserve’s annual stress test, released June 24, concludes that large banks are well positioned to weather a severe recession and continue lending to households and businesses.",
       "p1Sup": "1",
-      "p2": "Season risk turned active this window: the National Hurricane Center’s quiet July 9 outlook gave way to a system that strengthened into Tropical Storm Bertha, which made landfall near St. Bernard Parish, Louisiana, with maximum sustained winds of about 45 mph. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
-      "p2Sup": "3, 4, 14",
-      "assess": "We assess with moderate confidence that near-term weather-driven disruption risk is roughly even odds: Tropical Storm Bertha has made landfall near St. Bernard Parish, Louisiana, with maximum sustained winds of about 45 mph, though no confirmed systemic-infrastructure stress has entered the record this window.",
-      "assessSup": "14",
+      "p2": "Season risk turned active this window: the National Hurricane Center’s quiet July 9 outlook gave way to a system that strengthened into Tropical Storm Bertha, which made landfall near St. Bernard Parish, Louisiana, and continues moving westward over southeastern Louisiana with maximum sustained winds holding at 45 mph, prompting the Tropical Storm Warning to be extended westward to Cameron, Louisiana. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
+      "p2Sup": "3, 4, 15",
+      "assess": "We assess with moderate confidence that near-term weather-driven disruption risk is roughly even odds: Tropical Storm Bertha continues moving westward over southeastern Louisiana with maximum sustained winds of about 45 mph and an expanded Tropical Storm Warning now reaching Cameron, Louisiana, though no confirmed systemic-infrastructure stress has entered the record this window.",
+      "assessSup": "15",
       "conf": "moderate confidence",
       "events": [
         {
@@ -2624,6 +2636,15 @@
           "src": "NOAA NHC advisory",
           "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCUAT2+shtml/221901.shtml",
           "line": "The National Hurricane Center reports Tropical Storm Bertha made landfall near St. Bernard Parish, Louisiana, with maximum sustained winds of about 45 mph."
+        },
+        {
+          "date": "Jul 22, 26",
+          "st": "confirmed",
+          "ver": "v12",
+          "id": "L-0190",
+          "src": "NOAA NHC advisory",
+          "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/222047.shtml",
+          "line": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 14 reports the storm moving westward over southeastern Louisiana with maximum sustained winds holding at 45 mph, and extends the Tropical Storm Warning westward to Cameron, Louisiana."
         }
       ],
       "sources": [
@@ -2696,6 +2717,11 @@
           "n": "14",
           "text": "NOAA NHC — Tropical Storm Bertha Tropical Cyclone Update, landfall near St. Bernard Parish, Louisiana, winds 45 mph, Jul 22, 2026",
           "url": "https://www.nhc.noaa.gov/text/refresh/MIATCUAT2+shtml/221901.shtml"
+        },
+        {
+          "n": "15",
+          "text": "NOAA NHC — Tropical Storm Bertha Advisory 14, Warning extended westward to Cameron, Watch extended west of Cameron to Sargent, Texas, winds holding at 45 mph, Jul 22, 2026",
+          "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/222047.shtml"
         }
       ],
       "related": [
@@ -4697,6 +4723,14 @@
       "line": "CISA adds two exploited flaws to its Known Exploited Vulnerabilities catalog: an improper-authentication flaw in Check Point SmartConsole that lets an unauthenticated attacker obtain full administrative privileges (CVE-2026-16232), and a Microsoft SharePoint deserialization flaw that lets an attacker execute code over a network (CVE-2026-50522).",
       "src": "CISA KEV catalog",
       "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "d": "2026-07-22",
+      "p": "resilience",
+      "id": "L-0190",
+      "line": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 14 reports the storm moving westward over southeastern Louisiana with maximum sustained winds holding at 45 mph, and extends the Tropical Storm Warning westward to Cameron, Louisiana.",
+      "src": "NOAA NHC advisory",
+      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/222047.shtml"
     }
   ],
   "takeaways": [
@@ -5153,7 +5187,7 @@
       {
         "no": "10",
         "date": "Wed, Jul 22, 2026",
-        "confirmed": "18",
+        "confirmed": "19",
         "pending": "0",
         "flash": "—",
         "linked": true
