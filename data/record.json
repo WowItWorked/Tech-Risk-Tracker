@@ -2,21 +2,33 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-22T10:13:00-04:00",
+    "generatedAt": "2026-07-22T12:15:00-04:00",
     "issueNo": 10,
-    "recordHash": "a96d61c",
+    "recordHash": "c8030b7",
     "windowLabel": "June 9 – July 22, 2026",
     "nextWeekly": "Fri, Jul 24",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (08:14 ET), so candidates are items published since ≈06:14 ET / 10:14 UTC. One item was admitted: BleepingComputer’s report that a flaw in the Adobe Acrobat extension for Chrome could let websites read private WhatsApp Web conversations and data without authentication. BleepingComputer’s “Microsoft to stop Exchange 2016 / 2019 security updates in October” reappeared in-window but was not separately admitted — same underlying fact already recorded this morning as L-0180. BleepingComputer’s CISA Langflow KEV article also reappeared and was not re-admitted, matching L-0162. The Record’s “OpenAI models behind breach of Hugging Face systems, companies say” covers the same underlying event already recorded this morning as L-0175 (OpenAI/Hugging Face autonomous-agent breach) — not separately admitted. NOAA’s Bertha companion products (Atlantic Tropical Weather Outlook, Summary, Graphics, Public Advisory Number 12a) share the same URL and facts as the Intermediate Advisory 12A already admitted as L-0182 — not separately admitted; five NHC Local Statement products for the same cycle carry no pubDate and were not treated as new. The UK Financial Conduct Authority (FCA)’s “Anthropic to support FCA’s Supercharged Sandbox” and “Arrests and searches made as part of a fraud and money laundering investigation” reappeared in-window at the same URLs already admitted as L-0178 and L-0177 — not re-admitted. The UK NCSC’s post-quantum cryptography workshop-report blog post reappeared in-window at the same URL already admitted as L-0179 — not re-admitted. Dark Reading’s EU financial-institutions cookie-tracker story reappeared at the same URL already admitted as L-0181 — not re-admitted. OpenAI’s newest item (“Building AI infrastructure with the Effingham County community”) is a data-center community-investment announcement with no technology-risk content — excluded at the relevance gate. DOJ’s newest items (sentencings, indictments) do not clear the relevance gate. The CISA KEV catalog is unchanged (still catalogVersion 2026.07.21, 1,651 entries). Anthropic’s newest item remains the Jul 21 philanthropic donation (no financial-sector nexus), ENISA’s newest listed item remains Jul 14, and ICO’s page again returned a JavaScript-rendered “Loading...” shell with no readable content. NIST’s and the Federal Reserve’s feeds again returned empty channels (known behavior, not a failure). FBI IC3, OCC, CFPB, Nacha, FCA (beyond the two reappearances), Bank of England, EBA, ECB, EDPB, the Federal Register/FinCEN documents feed, Krebs, and Cybersecurity Dive carried nothing new and admissible in-window.",
-    "lastRun": "2026-07-22T10:13:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed; DOJ’s feed 401’d for the descriptive User-Agent this run and was retried with the same standard browser User-Agent, also returning 200 — counted OK, a new fallback case not previously logged for this feed). Selection window: 2 hours before this run’s prior lastRun (10:13 ET), so candidates are items published since ≈08:13 ET / 12:13 UTC. One item was admitted: The Record’s report that Nichirei Logistics Group is restoring operations after last week’s cyberattack (the KFC-Japan-impacting incident already recorded as L-0101) while the cybercrime group RansomHouse has publicly claimed responsibility and threatened to leak stolen data — a materially new attribution/extortion fact beyond L-0101’s original report, admitted as a distinct item on the same basis as L-0167 (Anubis/Coca-Cola Fairlife). The RSS teaser did not name the extortion group, so the allowlisted article page was fetched for a fuller verbatim excerpt (two sentences, 60 words, within the EDITORIAL §2/runbook cap). Not admitted: BleepingComputer’s “How enterprise GenAI can amplify ransomware risk — and how to contain it” and “New InfraTrust report reveals infrastructure flaws admins should patch first,” both vendor-sponsored explainer/product-launch content (Acronis and Eclypsium respectively) rather than reported events, excluded on the same grounds as the sponsored storage-deals post excluded in the 10:13 ET run. Not separately admitted (reappearances): BleepingComputer’s “Adobe Chrome extension flaw let sites access private WhatsApp chats,” identical URL to the already-recorded L-0183; Cybersecurity Dive’s “Threat group claims credit for ransomware attack on Coca-Cola’s dairy unit,” the same Anubis/Fairlife claim already recorded as L-0167; Cybersecurity Dive’s “OpenAI models escaped containment and hacked a major AI application library,” the same OpenAI/Hugging Face incident already recorded as L-0175; OpenAI’s “Building AI infrastructure with the Effingham County community,” the same data-center community-investment announcement excluded at the relevance gate in the 10:13 ET run (no technology-risk content). Not separately admitted (NOAA companion products for the Tropical Storm Bertha Advisory 13 cycle — 6 items): the Summary, Forecast Advisory, Forecast Discussion, Wind Speed Probabilities, Graphics, and Potential Storm Surge Flooding Map products all share the same facts as the Public Advisory Number 13 itself; Advisory 13’s own “CHANGES WITH THIS ADVISORY” section reads “None,” so — matching the standard applied to every prior Bertha advisory — it was not admitted (no stated change from Advisory 12A/L-0182; maximum sustained winds unchanged at 50 mph). Five NHC Local Statement products for the same cycle carry no machine-readable pubDate and were not treated as candidates. The CISA KEV catalog is unchanged (still catalogVersion 2026.07.21, 1,651 entries). Anthropic’s newest item remains the Jul 21 philanthropic donation, FinCEN’s newest remains the Jul 21 Gacki testimony, ENISA’s newest listed item remains Jul 14, and ICO’s page again returned a JavaScript-rendered “Loading...” shell with no readable content. NIST’s feed again returned an empty channel (known behavior, not a failure); the Federal Reserve’s feed returned its usual 20 items but none published in-window. FBI IC3, OCC, FTC, CFPB, DOJ (beyond its own-day sentencing/indictment items, none clearing the relevance gate), Nacha, the FCA, Bank of England, NCSC (beyond its own reappearance), EBA, ECB, ENISA, EDPB, the Federal Register/FinCEN documents feed, and Krebs carried nothing new and admissible in-window.",
+    "lastRun": "2026-07-22T12:15:00-04:00"
   },
   "lead": {
-    "head": "Leading stories: European banks inadvertently leak customer data to advertisers through website tracking pixels; Anthropic joins the UK Financial Conduct Authority’s (FCA) second Supercharged Sandbox cohort to test bank AI use cases; and the FCA and police arrest four people in a fraud and money-laundering investigation.",
-    "dek": "Today’s edition draws on the twelve items recorded so far. Every item links to its source.",
+    "head": "Leading stories: Japan’s largest refrigerated logistics company faces an extortion threat from the RansomHouse gang after a cyberattack disrupted its operations nationwide; European banks inadvertently leak customer data to advertisers through website tracking pixels; and Anthropic joins the UK Financial Conduct Authority’s (FCA) second Supercharged Sandbox cohort to test bank AI use cases.",
+    "dek": "Today’s edition draws on the thirteen items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
+        "p": "tp",
+        "tri": "priority",
+        "st": "confirmed",
+        "id": "L-0184",
+        "conf": "",
+        "text": "Nichirei Logistics Group, Japan’s largest refrigerated logistics company, is restoring operations after a cyberattack disrupted food deliveries nationwide, while the cybercrime group RansomHouse claims responsibility and threatens to leak stolen data, The Record reports.",
+        "why": "It shows that an extortion gang can publicly claim credit for a vendor’s cyberattack and threaten to leak stolen data even as recovery is underway — a pattern any bank should watch for its own logistics and technology vendors.",
+        "srcText": "The Record, Jul 22",
+        "srcUrl": "https://therecord.media/nichirei-japan-food-logistics-cyberattack-recovery"
+      },
+      {
+        "n": "2",
         "p": "data",
         "tri": "priority",
         "st": "confirmed",
@@ -28,7 +40,7 @@
         "srcUrl": "https://www.darkreading.com/data-privacy/eu-financial-institutions-cookie-trackers"
       },
       {
-        "n": "2",
+        "n": "3",
         "p": "ai",
         "tri": "priority",
         "st": "confirmed",
@@ -38,22 +50,22 @@
         "why": "This gives banks and other financial firms a UK regulator-backed environment to test real AI use cases such as fraud detection and agent-led payments, directly relevant to how banks build and govern AI systems.",
         "srcText": "UK Financial Conduct Authority (FCA), Jul 22",
         "srcUrl": "https://www.fca.org.uk/news/press-releases/anthropic-supercharged-sandbox"
-      },
-      {
-        "n": "3",
-        "p": "fraud",
-        "tri": "priority",
-        "st": "confirmed",
-        "id": "L-0177",
-        "conf": "",
-        "text": "The UK Financial Conduct Authority (FCA), working with the police’s Eastern Region Special Operations Unit and South East Regional Organised Crime Unit, arrests four people and executes search warrants in Hackney, Beckenham, and Slough as part of a fraud and money-laundering investigation.",
-        "why": "A financial regulator’s joint operation with police to make arrests in a fraud and money-laundering investigation signals continued enforcement pressure that banks’ compliance and fraud teams should track.",
-        "srcText": "UK Financial Conduct Authority (FCA), Jul 22",
-        "srcUrl": "https://www.fca.org.uk/news/press-releases/arrests-searches-made-fraud-money-laundering-investigation"
       }
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-22T15:40:00Z",
+      "p": "tp",
+      "tri": "priority",
+      "st": "confirmed",
+      "tier": "T2",
+      "id": "L-0184",
+      "title": "Nichirei Logistics Group, Japan’s largest refrigerated logistics company, is restoring operations after a cyberattack disrupted food deliveries nationwide, while the cybercrime group RansomHouse claims responsibility and threatens to leak stolen data, The Record reports.",
+      "src": "The Record",
+      "srcUrl": "https://therecord.media/nichirei-japan-food-logistics-cyberattack-recovery",
+      "linked": true
+    },
     {
       "ts": "2026-07-22T13:22:20Z",
       "p": "cyber",
@@ -2124,9 +2136,9 @@
       "scope": "third-party risk · vendor software & supply chain",
       "watch": "Vendor tools under active attack, software-supply-chain compromises aimed at financial applications, and vendor incident disclosures.",
       "opened": "July 2026",
-      "ver": "v10",
-      "verRange": "v1–v10",
-      "asOf": "July 21, 2026",
+      "ver": "v11",
+      "verRange": "v1–v11",
+      "asOf": "July 22, 2026",
       "p1": "One vendor-channel exploit is confirmed this window: SimpleHelp, a remote-support tool, carries an authentication-bypass flaw on CISA’s known-exploited list — in a vulnerable configuration, a remote, unauthenticated attacker can log in with a forged token.",
       "p1Sup": "1",
       "p2": "The rest of the vendor picture clusters around the software supply chain: a claimed breach at consulting firm Accenture said to involve source code and encryption keys, and malicious look-alike software kits for the Paysafe, Skrill, and Neteller payment applications on public code registries. Separately, Ernst & Young — one of the world’s four largest auditing and professional-services firms — is notifying customers of a data breach after its own support-ticket system was compromised, with documents containing client tax information among what the tickets may have held.",
@@ -2269,6 +2281,15 @@
           "src": "BleepingComputer",
           "srcUrl": "https://www.bleepingcomputer.com/news/security/anubis-ransomware-claims-coca-cola-fairlife-attack-threatens-data-leak/",
           "line": "The Anubis ransomware gang claims responsibility for a cyberattack on Coca-Cola’s Fairlife dairy subsidiary and threatens to publish allegedly stolen corporate data unless the company pays a ransom, BleepingComputer reports."
+        },
+        {
+          "date": "Jul 22, 26",
+          "st": "confirmed",
+          "ver": "v11",
+          "id": "L-0184",
+          "src": "The Record",
+          "srcUrl": "https://therecord.media/nichirei-japan-food-logistics-cyberattack-recovery",
+          "line": "Nichirei Logistics Group, Japan’s largest refrigerated logistics company, is restoring operations after a cyberattack disrupted food deliveries nationwide, while the cybercrime group RansomHouse claims responsibility and threatens to leak stolen data, The Record reports."
         }
       ],
       "sources": [
@@ -4513,6 +4534,14 @@
       "line": "A flaw in the Adobe Acrobat extension for Chrome could let websites read private conversations and data displayed in WhatsApp Web without authentication, BleepingComputer reports.",
       "src": "BleepingComputer",
       "srcUrl": "https://www.bleepingcomputer.com/news/security/adobe-chrome-extension-flaw-let-sites-access-private-whatsapp-chats/"
+    },
+    {
+      "d": "2026-07-22",
+      "p": "tp",
+      "id": "L-0184",
+      "line": "Nichirei Logistics Group, Japan’s largest refrigerated logistics company, is restoring operations after a cyberattack disrupted food deliveries nationwide, while the cybercrime group RansomHouse claims responsibility and threatens to leak stolen data, The Record reports.",
+      "src": "The Record",
+      "srcUrl": "https://therecord.media/nichirei-japan-food-logistics-cyberattack-recovery"
     }
   ],
   "takeaways": [
@@ -4960,7 +4989,7 @@
       {
         "no": "10",
         "date": "Wed, Jul 22, 2026",
-        "confirmed": "12",
+        "confirmed": "13",
         "pending": "0",
         "flash": "—",
         "linked": true
