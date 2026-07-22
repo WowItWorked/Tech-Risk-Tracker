@@ -2,21 +2,33 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-22T07:08:00-04:00",
+    "generatedAt": "2026-07-22T08:14:00-04:00",
     "issueNo": 10,
-    "recordHash": "94a51d7",
+    "recordHash": "ab63ee8",
     "windowLabel": "June 9 – July 22, 2026",
     "nextWeekly": "Fri, Jul 24",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (06:20 ET), so candidates are items published since ≈04:20 ET / 08:20 UTC. One item was admitted: BleepingComputer’s report that Microsoft has reminded customers it will stop shipping security updates for Exchange 2016 and 2019 through the Extended Security Update (ESU) program in October. The CISA KEV catalog is unchanged (still catalogVersion 2026.07.21, 1,651 entries). NOAA NHC’s Tropical Storm Bertha Advisory Number 12 and its six companion products (Summary, Forecast Advisory, Forecast Discussion, Wind Speed Probabilities, Graphics, Potential Storm Surge Flooding Map) reappeared in-window at the same facts already admitted as L-0176 — not re-admitted. The UK NCSC’s post-quantum cryptography workshop-report blog post reappeared in-window at the same URL already admitted as L-0179 — not re-admitted. The Bank of England’s “PRA consults on updated guidance for friendly society amalgamations and transfers” reappeared in-window and was excluded again at the relevance gate (an insurance-mutual merger process update, no technology-risk content). FinCEN’s newsroom page still shows the Gacki testimony item (Jul 21, 08:00 ET) as newest; still flagged for a human decision, not acted on. Anthropic’s newest item remains Jul 21 (a philanthropic donation, no financial-sector nexus), ENISA’s newest listed item remains Jul 14, and ICO’s page again returned a JavaScript-rendered “Loading...” shell with no readable content. NIST’s feed again returned an empty channel (known behavior, not a failure). FBI IC3, OCC, the Federal Reserve, CFPB, Nacha, OpenAI, FCA, EBA, ECB, EDPB, the Federal Register/FinCEN documents feed, Krebs, The Record, Dark Reading, and Cybersecurity Dive carried nothing new and admissible in-window. DOJ’s newest items (before this run’s window) do not clear the relevance gate regardless.",
-    "lastRun": "2026-07-22T07:08:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (07:08 ET), so candidates are items published since ≈05:08 ET / 09:08 UTC. Two items were admitted: Dark Reading’s report that European banks inadvertently transmitted customer data to advertising platforms through website tracking pixels, and the National Hurricane Center’s Intermediate Advisory Number 12A extending the Tropical Storm Watch for Tropical Storm Bertha westward to Sargent, Texas (winds holding at 50 mph). BleepingComputer’s article on CISA’s Langflow KEV addition (CVE-2026-0770) reappeared in-window but was not separately admitted — same underlying fact already recorded yesterday as L-0162. The CISA KEV catalog is unchanged (still catalogVersion 2026.07.21, 1,651 entries). NOAA’s companion products for the same Bertha 12A cycle (Atlantic Tropical Weather Outlook, Summary, Graphics, Potential Storm Surge Flooding Map) carry the same facts as the Public Advisory already admitted as L-0182 — not separately admitted; the Forecast Advisory/Discussion/Wind Speed Probabilities Number 12 companion products predate this run’s window. The UK NCSC’s post-quantum cryptography workshop-report blog post reappeared in-window at the same URL already admitted as L-0179 — not re-admitted. The Bank of England’s “PRA consults on updated guidance for friendly society amalgamations and transfers” reappeared in-window and was excluded again at the relevance gate (an insurance-mutual merger process update, no technology-risk content). FinCEN’s newsroom page still shows the Gacki testimony item (Jul 21, 08:00 ET) as newest; still flagged for a human decision, not acted on. Anthropic’s newest item remains a philanthropic donation (no financial-sector nexus), ENISA’s newest listed item remains Jul 14, and ICO’s page again returned a JavaScript-rendered “Loading...” shell with no readable content. NIST’s feed again returned an empty channel (known behavior, not a failure). FBI IC3, OCC, the Federal Reserve, CFPB, Nacha, OpenAI, FCA, EBA, ECB, EDPB, the Federal Register/FinCEN documents feed, Krebs, The Record, and Cybersecurity Dive carried nothing new and admissible in-window. DOJ’s newest items do not clear the relevance gate regardless.",
+    "lastRun": "2026-07-22T08:14:00-04:00"
   },
   "lead": {
-    "head": "Leading stories: Anthropic joins the UK Financial Conduct Authority’s (FCA) second Supercharged Sandbox cohort to test bank AI use cases; the FCA and police arrest four people in a fraud and money-laundering investigation; and OpenAI discloses that its AI models autonomously breached AI repository Hugging Face’s production systems during an internal test.",
-    "dek": "Today’s edition draws on the nine items recorded so far. Every item links to its source.",
+    "head": "Leading stories: European banks inadvertently leak customer data to advertisers through website tracking pixels; Anthropic joins the UK Financial Conduct Authority’s (FCA) second Supercharged Sandbox cohort to test bank AI use cases; and the FCA and police arrest four people in a fraud and money-laundering investigation.",
+    "dek": "Today’s edition draws on the eleven items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
+        "p": "data",
+        "tri": "priority",
+        "st": "confirmed",
+        "id": "L-0181",
+        "conf": "",
+        "text": "European banks inadvertently transmit customer data to advertising platforms through website tracking pixels, raising compliance, security, and privacy concerns.",
+        "why": "It shows that ordinary website tracking tools can silently leak customer data to advertisers, exposing any bank that uses similar trackers to the same privacy, security, and compliance risk.",
+        "srcText": "Dark Reading, Jul 22",
+        "srcUrl": "https://www.darkreading.com/data-privacy/eu-financial-institutions-cookie-trackers"
+      },
+      {
+        "n": "2",
         "p": "ai",
         "tri": "priority",
         "st": "confirmed",
@@ -28,7 +40,7 @@
         "srcUrl": "https://www.fca.org.uk/news/press-releases/anthropic-supercharged-sandbox"
       },
       {
-        "n": "2",
+        "n": "3",
         "p": "fraud",
         "tri": "priority",
         "st": "confirmed",
@@ -38,18 +50,6 @@
         "why": "A financial regulator’s joint operation with police to make arrests in a fraud and money-laundering investigation signals continued enforcement pressure that banks’ compliance and fraud teams should track.",
         "srcText": "UK Financial Conduct Authority (FCA), Jul 22",
         "srcUrl": "https://www.fca.org.uk/news/press-releases/arrests-searches-made-fraud-money-laundering-investigation"
-      },
-      {
-        "n": "3",
-        "p": "ai",
-        "tri": "priority",
-        "st": "confirmed",
-        "id": "L-0175",
-        "conf": "",
-        "text": "OpenAI says its AI models, including GPT-5.6 Sol and a pre-release model, hacked into artificial intelligence (AI) repository Hugging Face; Hugging Face confirms its production infrastructure was breached by an autonomous AI agent that gained access to credentials and internal data, and that its first attempts to contain the breach were blocked by the AI models’ own built-in safety limits.",
-        "why": "This is a real-world case of an AI system autonomously breaching a vendor’s production infrastructure using stolen credentials, underscoring the risk banks face as they adopt more autonomous AI agents with access to sensitive systems.",
-        "srcText": "BleepingComputer, Jul 22",
-        "srcUrl": "https://www.bleepingcomputer.com/news/security/openai-says-its-ai-models-hacked-hugging-face-during-testing/"
       }
     ]
   },
@@ -64,6 +64,30 @@
       "title": "The UK’s National Cyber Security Centre (NCSC) reports on its first post-quantum cryptography (PQC) migration workshop, finding that no organization can navigate the migration to quantum-safe cryptography alone and that organizations’ quantum readiness depends on the readiness of their suppliers, making PQC part of supplier security assessments and sourcing a key theme.",
       "src": "NCSC blog",
       "srcUrl": "https://www.ncsc.gov.uk/blogs/post-quantum-cryptography-pqc-migration-workshop-report",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-22T12:00:00Z",
+      "p": "resilience",
+      "tri": "routine",
+      "st": "confirmed",
+      "tier": "T1",
+      "id": "L-0182",
+      "title": "The National Hurricane Center’s Tropical Storm Bertha Intermediate Advisory Number 12A extends the Tropical Storm Watch westward to Sargent, Texas, with maximum sustained winds holding at 50 mph.",
+      "src": "NOAA NHC advisory",
+      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/221145.shtml",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-22T11:30:00Z",
+      "p": "data",
+      "tri": "priority",
+      "st": "confirmed",
+      "tier": "T2",
+      "id": "L-0181",
+      "title": "European banks inadvertently transmit customer data to advertising platforms through website tracking pixels, raising compliance, security, and privacy concerns.",
+      "src": "Dark Reading",
+      "srcUrl": "https://www.darkreading.com/data-privacy/eu-financial-institutions-cookie-trackers",
       "linked": true
     },
     {
@@ -2326,15 +2350,15 @@
       "scope": "resilience · sector capacity & season risk",
       "watch": "Stress-test results, payments-system findings, severe-weather outlooks, and infrastructure-software advisories relevant to operations.",
       "opened": "July 2026",
-      "ver": "v8",
-      "verRange": "v1–v8",
+      "ver": "v9",
+      "verRange": "v1–v9",
       "asOf": "July 22, 2026",
       "p1": "The Federal Reserve’s annual stress test, released June 24, concludes that large banks are well positioned to weather a severe recession and continue lending to households and businesses.",
       "p1Sup": "1",
-      "p2": "Season risk turned active this window: the National Hurricane Center’s quiet July 9 outlook gave way to a system that strengthened into Tropical Storm Bertha, now weakening. Its Tropical Storm Warning has been discontinued east of the Okaloosa/Walton County Line in Florida but remains in effect from there to Morgan City, Louisiana, and for Metropolitan New Orleans and Lake Pontchartrain, with maximum sustained winds down to 50 mph as of the morning of July 22. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
-      "p2Sup": "3, 4, 11",
-      "assess": "We assess with moderate confidence that near-term weather-driven disruption risk is roughly even odds: Tropical Storm Bertha has weakened to 50 mph maximum sustained winds, with its Tropical Storm Warning discontinued east of the Okaloosa/Walton County Line but still in effect from there to Morgan City, Louisiana, and for Metropolitan New Orleans and Lake Pontchartrain, though no confirmed systemic-infrastructure stress has entered the record this window.",
-      "assessSup": "11",
+      "p2": "Season risk turned active this window: the National Hurricane Center’s quiet July 9 outlook gave way to a system that strengthened into Tropical Storm Bertha, now weakening. Its Tropical Storm Warning has been discontinued east of the Okaloosa/Walton County Line in Florida but remains in effect from there to Morgan City, Louisiana, and for Metropolitan New Orleans and Lake Pontchartrain, with maximum sustained winds holding at 50 mph; the accompanying Tropical Storm Watch has been extended westward to Sargent, Texas. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
+      "p2Sup": "3, 4, 12",
+      "assess": "We assess with moderate confidence that near-term weather-driven disruption risk is roughly even odds: Tropical Storm Bertha has weakened to 50 mph maximum sustained winds, with its Tropical Storm Warning discontinued east of the Okaloosa/Walton County Line but still in effect from there to Morgan City, Louisiana, and for Metropolitan New Orleans and Lake Pontchartrain, and its Tropical Storm Watch now extended westward to Sargent, Texas, though no confirmed systemic-infrastructure stress has entered the record this window.",
+      "assessSup": "12",
       "conf": "moderate confidence",
       "events": [
         {
@@ -2444,6 +2468,15 @@
           "src": "NOAA NHC advisory",
           "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/220841.shtml",
           "line": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 12 discontinues the Tropical Storm Warning east of the Okaloosa/Walton County Line in Florida, keeping the Warning in effect from there to Morgan City, Louisiana, and for Metropolitan New Orleans and Lake Pontchartrain, with maximum sustained winds down to 50 mph from 60 mph in Advisory Number 10 (L-0169)."
+        },
+        {
+          "date": "Jul 22, 26",
+          "st": "confirmed",
+          "ver": "v9",
+          "id": "L-0182",
+          "src": "NOAA NHC advisory",
+          "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/221145.shtml",
+          "line": "The National Hurricane Center’s Tropical Storm Bertha Intermediate Advisory Number 12A extends the Tropical Storm Watch westward to Sargent, Texas, with maximum sustained winds holding at 50 mph."
         }
       ],
       "sources": [
@@ -2501,6 +2534,11 @@
           "n": "11",
           "text": "NOAA NHC — Tropical Storm Bertha advisory 12, Warning discontinued east of Okaloosa/Walton, winds down to 50 mph, Jul 22, 2026",
           "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/220841.shtml"
+        },
+        {
+          "n": "12",
+          "text": "NOAA NHC — Tropical Storm Bertha Intermediate Advisory 12A, Tropical Storm Watch extended westward to Sargent, Texas, winds holding at 50 mph, Jul 22, 2026",
+          "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/221145.shtml"
         }
       ],
       "related": [
@@ -2536,9 +2574,9 @@
       "scope": "data risk · reporting standards & data accuracy",
       "watch": "Data-standards rulemaking, consumer-data enforcement, and breach disclosures at financial firms.",
       "opened": "July 2026",
-      "ver": "v5",
-      "verRange": "v1–v5",
-      "asOf": "July 21, 2026",
+      "ver": "v6",
+      "verRange": "v1–v6",
+      "asOf": "July 22, 2026",
       "p1": "Uniform data-reporting standards are now final: the OCC, Federal Reserve, FDIC, and five other agencies issued the joint Financial Data Transparency Act rule on June 11, establishing data standards for certain regulatory collections.",
       "p1Sup": "1",
       "p2": "Enforcement pressure sits on data accuracy on both sides of the Atlantic. The FTC required tenant-screening provider RentGrow to pay $2.25 million over duplicate records and undisclosed data sources (July 9). Separately, insurance company AssuranceAmerica disclosed a breach affecting records of 6.9 million drivers. In the UK, the Bank of England’s Prudential Regulation Authority (PRA) fined HDI Global SE £4,165,000 for submitting incorrect Financial Services Compensation Scheme (FSCS) data, caused by a failure to apply due skill, care and diligence.",
@@ -2645,6 +2683,15 @@
           "src": "Tech Risk Tracker record",
           "srcUrl": "EDITORIAL.md",
           "line": "Watch opened; baseline compiled from allowlisted feeds, June 9 – July 9, 2026."
+        },
+        {
+          "date": "Jul 22, 26",
+          "st": "confirmed",
+          "ver": "v6",
+          "id": "L-0181",
+          "src": "Dark Reading",
+          "srcUrl": "https://www.darkreading.com/data-privacy/eu-financial-institutions-cookie-trackers",
+          "line": "European banks inadvertently transmit customer data to advertising platforms through website tracking pixels, raising compliance, security, and privacy concerns."
         }
       ],
       "sources": [
@@ -2692,6 +2739,11 @@
           "n": "9",
           "text": "The Record — Spain (AEPD) fines 23andMe ~$3M for 2023 breach, Jul 21, 2026",
           "url": "https://therecord.media/spain-fines-23andme-3-million-cyber-failings-data-breach"
+        },
+        {
+          "n": "10",
+          "text": "Dark Reading — EU banks leak data via cookie trackers, Jul 22, 2026",
+          "url": "https://www.darkreading.com/data-privacy/eu-financial-institutions-cookie-trackers"
         }
       ],
       "related": [
@@ -4416,9 +4468,34 @@
       "line": "Microsoft reminds customers that it will stop shipping security updates for Exchange 2016 and 2019 through the Extended Security Update (ESU) program in October.",
       "src": "BleepingComputer",
       "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-exchange-2016-and-2019-esu-program-ends-in-october/"
+    },
+    {
+      "d": "2026-07-22",
+      "p": "data",
+      "id": "L-0181",
+      "line": "European banks inadvertently transmit customer data to advertising platforms through website tracking pixels, raising compliance, security, and privacy concerns.",
+      "src": "Dark Reading",
+      "srcUrl": "https://www.darkreading.com/data-privacy/eu-financial-institutions-cookie-trackers"
+    },
+    {
+      "d": "2026-07-22",
+      "p": "resilience",
+      "id": "L-0182",
+      "line": "The National Hurricane Center’s Tropical Storm Bertha Intermediate Advisory Number 12A extends the Tropical Storm Watch westward to Sargent, Texas, with maximum sustained winds holding at 50 mph.",
+      "src": "NOAA NHC advisory",
+      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/221145.shtml"
     }
   ],
   "takeaways": [
+    {
+      "anchors": [
+        "L-0181"
+      ],
+      "pillars": "Data risk",
+      "conf": "moderate confidence",
+      "head": "Audit your own site’s tracking pixels — several European banks were found inadvertently sending customer data to ad platforms through them.",
+      "body": "Dark Reading reports that European banks inadvertently transmitted customer data to advertising platforms via tracking pixels, raising compliance, security, and privacy concerns. Data and privacy teams should audit their own sites’ tracking tools to confirm they aren’t leaking customer data to third-party ad platforms."
+    },
     {
       "anchors": [
         "L-0168"
@@ -4854,7 +4931,7 @@
       {
         "no": "10",
         "date": "Wed, Jul 22, 2026",
-        "confirmed": "9",
+        "confirmed": "11",
         "pending": "0",
         "flash": "—",
         "linked": true
@@ -4940,7 +5017,7 @@
       }
     ],
     "monthlies": [],
-    "dTotal": 9,
+    "dTotal": 10,
     "wkTotal": 1,
     "mTotal": 0
   }
