@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-22T15:09:00-04:00",
+    "generatedAt": "2026-07-22T16:15:00-04:00",
     "issueNo": 10,
-    "recordHash": "797b4a4",
+    "recordHash": "b37b27a",
     "windowLabel": "June 9 – July 22, 2026",
     "nextWeekly": "Fri, Jul 24",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed; DOJ 401’d for the descriptive User-Agent and was retried the same way, also returning 200 — counted OK, not failed; Dark Reading, which 404’d in the prior run, returned 200 directly this run). Selection window: 2 hours before this run’s prior lastRun (14:14 ET), so candidates are items published since ≈12:14 ET / 16:14 UTC. Eight in-window items surfaced across three feeds with window activity — NOAA NHC (5), The Record (2), and BleepingComputer (1) — all other feeds carried nothing new and admissible in-window. One item was admitted: the National Hurricane Center’s Tropical Cyclone Update reporting Tropical Storm Bertha made landfall near St. Bernard Parish, Louisiana, with maximum sustained winds of about 45 mph. Not separately admitted (companion product sharing identical facts with the admitted update): NOAA’s “Summary for Tropical Storm Bertha,” issued the same minute as the admitted update. Not re-admitted (reappearances, already recorded, inside this run’s 2-hour overlap window): NOAA’s Tropical Storm Bertha Intermediate Advisory Number 13A (already recorded as L-0187), its Atlantic Tropical Weather Outlook and Graphics companion products (already reviewed in the prior run), The Record’s Kimsuky/APT43 report (already recorded as L-0185), and BleepingComputer’s Stadler Rail report (already recorded as L-0186). Not admitted (reviewed, excluded): The Record’s “French Parliament greenlights social media ban for under-15s” (already excluded in the prior run on the same grounds — a child online-safety law with no financial-sector or technology-risk nexus stated). The CISA KEV catalog is unchanged (still catalogVersion 2026.07.21, 1,651 entries). Anthropic’s news page carries one new Jul 22 item ahead of the already-reviewed Anthropic Economic Index connector post — “A research agenda for the Economic Futures Research Fund” — excluded at the relevance gate (an economic-research-funding announcement with no technology-risk-pillar nexus stated in its listing). FinCEN’s newsroom page carries one item dated 08:00 ET Jul 22 (a comment-period extension on a proposed Huione Group rule) published before this run’s 12:14 ET window start, so not evaluated as a candidate this run. DOJ’s current 25 entries are unchanged from the prior run’s direct review (all dated the same 08:00 ET placeholder timestamp) — none clears the relevance gate (sentencing/charging matters in drug, firearms, child-exploitation, and other non-technology crimes, plus one embezzlement case with no financial-institution nexus stated). NIST’s feed again returned an empty channel (known behavior, not a failure). ENISA’s newest listed item remains its Frontier AI podcast launch; ICO’s page again returned the same JavaScript-rendered “Loading...” shell with no readable content (not counted as a feed failure). The Federal Reserve, OCC, FTC (beyond the FTC’s own out-of-window Jul 22 08:00 ET item), CFPB, FBI IC3, OpenAI, the Bank of England, NCSC, EBA, ECB, EDPB, the Federal Register/FinCEN documents feed, Nacha, Krebs, and Dark Reading carried nothing new and admissible in-window.",
-    "lastRun": "2026-07-22T15:09:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (15:09 ET), so candidates are items published since ≈13:09 ET / 17:09 UTC. Ten in-window items surfaced across three feeds with window activity — NOAA NHC (6), The Record (2), and the CISA KEV catalog (2 new entries) — all other feeds carried nothing new and admissible in-window. One item was admitted: the CISA Known Exploited Vulnerabilities catalog advanced from catalogVersion 2026.07.21 (1,651 entries) to 2026.07.22 (1,653 entries), adding a Check Point SmartConsole improper-authentication flaw (CVE-2026-16232) and a Microsoft SharePoint deserialization flaw (CVE-2026-50522) — the same SharePoint CVE already reported under active exploitation via BleepingComputer on Jul 21 (L-0168); CISA’s own catalog listing and its July 25 remediation deadline were treated as a new admissible fact, following the precedent set for the Jul 21 WP2Shell KEV listing (L-0162), rather than as a reappearance. Both flaws were bundled into one item. Not admitted (reviewed, excluded): The Record’s “Federal agencies broaden alert on Iran-linked OT attacks” (19:18 UTC) — a CISA/FBI/EPA advisory expanding the manufacturer scope of a warning about attacks on internet-facing operational technology (programmable logic controllers at power, water-treatment, and manufacturing facilities); excluded at the relevance gate, no financial-sector or technology-risk-to-financial-institutions nexus stated in the article text (unlike L-0055, which explicitly named financial services among the sectors most at risk). Not re-admitted (reappearances, already recorded or already excluded, inside this run’s 2-hour overlap window): NOAA’s Tropical Storm Bertha Intermediate Advisory Number 13A (already recorded as L-0187) and its Summary/Public Advisory Update product (already recorded as L-0188, landfall); The Record’s “French Parliament greenlights social media ban for under-15s” (already excluded in prior runs on the same grounds). Not separately admitted (NOAA companion products for the already-recorded advisory cycle): the Atlantic Tropical Weather Outlook, Tropical Storm Bertha Graphics, and the National Weather Service Mobile, AL/Pensacola, FL office’s Local Statement (restating the same warning-cancellation fact already carried by the admitted L-0187 advisory, localized to the Florida Panhandle). FCA, the Bank of England, NCSC, EBA, ECB, EDPB, and FinCEN’s Federal Register feed carried nothing new in-window (FCA’s two newest items, 09:31 and 09:25 UTC, are already recorded as L-0178/L-0177). FTC’s newest item (08:00 ET) and DOJ’s 25 entries (all dated 08:00 ET, non-technology criminal matters) fall before this run’s window. OpenAI’s newest item (13:00 UTC) also falls before the window. NIST’s feed again returned an empty channel (known behavior, not a failure). Anthropic’s newest listed item remains “A research agenda for the Economic Futures Research Fund” (already excluded); FinCEN’s newsroom page’s newest item (comment-period extension on the Huione Group rule, 08:00 ET) and ENISA’s newest item (Frontier AI podcast launch) remain unchanged from the prior run and fall before the window regardless; ICO’s page again returned the same JavaScript-rendered “Loading...” shell with no readable content (not counted as a feed failure). Krebs, BleepingComputer, Dark Reading, and Cybersecurity Dive carried nothing new and admissible in-window — each feed’s newest item (Krebs 01:10 UTC, BleepingComputer 16:59 UTC, Dark Reading 15:53 UTC, Cybersecurity Dive 15:11 UTC) falls before this run’s 17:09 UTC window start.",
+    "lastRun": "2026-07-22T16:15:00-04:00"
   },
   "lead": {
-    "head": "Leading stories: Swiss rail vehicle manufacturer Stadler Rail rejects a $12.3 million ransom demand after a breach via a supplier-shared data exchange platform; the North Korean hacking group Kimsuky compromises South Korean software vendors and pivots into their customers; and Japan’s largest refrigerated logistics company faces an extortion threat from the RansomHouse gang after a cyberattack disrupted its operations nationwide.",
-    "dek": "Today’s edition draws on the seventeen items recorded so far. Every item links to its source.",
+    "head": "Leading stories: Swiss rail vehicle manufacturer Stadler Rail rejects a $12.3 million ransom demand after a breach via a supplier-shared data exchange platform; the North Korean hacking group Kimsuky compromises South Korean software vendors and pivots into their customers; and CISA adds a Check Point SmartConsole flaw and a Microsoft SharePoint flaw to its known-exploited vulnerabilities catalog, both due for patching by July 25.",
+    "dek": "Today’s edition draws on the eighteen items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -41,19 +41,31 @@
       },
       {
         "n": "3",
-        "p": "tp",
+        "p": "cyber",
         "tri": "priority",
         "st": "confirmed",
-        "id": "L-0184",
+        "id": "L-0189",
         "conf": "",
-        "text": "Nichirei Logistics Group, Japan’s largest refrigerated logistics company, is restoring operations after a cyberattack disrupted food deliveries nationwide, while the cybercrime group RansomHouse claims responsibility and threatens to leak stolen data, The Record reports.",
-        "why": "It shows that an extortion gang can publicly claim credit for a vendor’s cyberattack and threaten to leak stolen data even as recovery is underway — a pattern any bank should watch for its own logistics and technology vendors.",
-        "srcText": "The Record, Jul 22",
-        "srcUrl": "https://therecord.media/nichirei-japan-food-logistics-cyberattack-recovery"
+        "text": "CISA adds two exploited flaws to its Known Exploited Vulnerabilities catalog: an improper-authentication flaw in Check Point SmartConsole that lets an unauthenticated attacker obtain full administrative privileges (CVE-2026-16232), and a Microsoft SharePoint deserialization flaw that lets an attacker execute code over a network (CVE-2026-50522).",
+        "why": "CISA has confirmed active exploitation of a Check Point SmartConsole flaw that gives attackers full administrative access without authentication, and a Microsoft SharePoint flaw that lets attackers execute code over the network, giving technology teams running either product until July 25 to patch.",
+        "srcText": "CISA KEV catalog, Jul 22",
+        "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
       }
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-22T20:15:00Z",
+      "p": "cyber",
+      "tri": "priority",
+      "st": "confirmed",
+      "tier": "T1",
+      "id": "L-0189",
+      "title": "CISA adds two exploited flaws to its Known Exploited Vulnerabilities catalog: an improper-authentication flaw in Check Point SmartConsole that lets an unauthenticated attacker obtain full administrative privileges (CVE-2026-16232), and a Microsoft SharePoint deserialization flaw that lets an attacker execute code over a network (CVE-2026-50522).",
+      "src": "CISA KEV catalog",
+      "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "linked": true
+    },
     {
       "ts": "2026-07-22T19:01:18Z",
       "p": "resilience",
@@ -576,8 +588,8 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v76",
-      "verRange": "v1–v76",
+      "ver": "v77",
+      "verRange": "v1–v77",
       "asOf": "July 22, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
@@ -1342,6 +1354,15 @@
           "src": "BleepingComputer",
           "srcUrl": "https://www.bleepingcomputer.com/news/security/adobe-chrome-extension-flaw-let-sites-access-private-whatsapp-chats/",
           "line": "A flaw in the Adobe Acrobat extension for Chrome could let websites read private conversations and data displayed in WhatsApp Web without authentication, BleepingComputer reports."
+        },
+        {
+          "date": "Jul 22, 26",
+          "st": "confirmed",
+          "ver": "v77",
+          "id": "L-0189",
+          "src": "CISA KEV catalog",
+          "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+          "line": "CISA adds two exploited flaws to its Known Exploited Vulnerabilities catalog: an improper-authentication flaw in Check Point SmartConsole that lets an unauthenticated attacker obtain full administrative privileges (CVE-2026-16232), and a Microsoft SharePoint deserialization flaw that lets an attacker execute code over a network (CVE-2026-50522)."
         }
       ],
       "sources": [
@@ -4668,6 +4689,14 @@
       "line": "The National Hurricane Center reports Tropical Storm Bertha made landfall near St. Bernard Parish, Louisiana, with maximum sustained winds of about 45 mph.",
       "src": "NOAA NHC advisory",
       "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCUAT2+shtml/221901.shtml"
+    },
+    {
+      "d": "2026-07-22",
+      "p": "cyber",
+      "id": "L-0189",
+      "line": "CISA adds two exploited flaws to its Known Exploited Vulnerabilities catalog: an improper-authentication flaw in Check Point SmartConsole that lets an unauthenticated attacker obtain full administrative privileges (CVE-2026-16232), and a Microsoft SharePoint deserialization flaw that lets an attacker execute code over a network (CVE-2026-50522).",
+      "src": "CISA KEV catalog",
+      "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
     }
   ],
   "takeaways": [
@@ -5108,6 +5137,15 @@
       "conf": "high confidence",
       "head": "Start post-quantum cryptography migration planning now, including suppliers.",
       "body": "The NCSC says no organization can navigate the migration to post-quantum cryptography alone: since an organization’s quantum readiness depends on its suppliers, technology and security teams should begin engaging suppliers on PQC roadmaps and building PQC requirements into sourcing and supplier security assessments now, rather than waiting for a mandate."
+    },
+    {
+      "anchors": [
+        "L-0189"
+      ],
+      "pillars": "Cybersecurity",
+      "conf": "high confidence",
+      "head": "Confirm Check Point SmartConsole and Microsoft SharePoint are patched against two newly listed flaws — CISA’s compliance deadline is July 25.",
+      "body": "CISA added a Check Point SmartConsole improper-authentication flaw (CVE-2026-16232) and a Microsoft SharePoint deserialization flaw (CVE-2026-50522) to its Known Exploited Vulnerabilities catalog, both due for remediation by July 25. Technology teams running either product should confirm patches are applied before the deadline."
     }
   ],
   "publications": {
@@ -5115,7 +5153,7 @@
       {
         "no": "10",
         "date": "Wed, Jul 22, 2026",
-        "confirmed": "17",
+        "confirmed": "18",
         "pending": "0",
         "flash": "—",
         "linked": true
