@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-22T14:14:00-04:00",
+    "generatedAt": "2026-07-22T15:09:00-04:00",
     "issueNo": 10,
-    "recordHash": "5bcae70",
+    "recordHash": "797b4a4",
     "windowLabel": "June 9 – July 22, 2026",
     "nextWeekly": "Fri, Jul 24",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "26 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Dark Reading returned 404 for its RSS feed URL and was not retried (only 403s trigger the User-Agent fallback per the runbook) — counted as a failed feed. Selection window: 2 hours before this run’s prior lastRun (12:15 ET), so candidates are items published since ≈10:15 ET / 14:15 UTC. Three items were admitted: The Record’s report that the North Korean hacking group Kimsuky (APT43) compromised South Korean vendors of collaborative-work software and used that access to breach the vendors’ own customers; BleepingComputer’s report that Swiss rail vehicle manufacturer Stadler Rail rejected a $12.3 million ransom demand from the Everest ransomware gang after a breach via a data exchange platform shared with one of its suppliers, and filed a criminal complaint with police; and the National Hurricane Center’s Tropical Storm Bertha Intermediate Advisory Number 13A, discontinuing the Tropical Storm Warning east of the Alabama/Florida border as winds decreased to 45 mph from 50 mph, with the storm approaching the coast of southeastern Louisiana. The CISA KEV catalog is unchanged (still catalogVersion 2026.07.21, 1,651 entries). Not admitted: The Record’s “French Parliament greenlights social media ban for under-15s” (a child online-safety law with no financial-sector or technology-risk nexus stated); Anthropic’s newest page item, a launch of an Anthropic Economic Index connector for Claude (a product-data feature announcement, not a risk event). Not separately admitted (vendor-sponsored explainer/product content, same grounds as prior runs): BleepingComputer’s “How enterprise GenAI can amplify ransomware risk” (Acronis) and “New InfraTrust report reveals infrastructure flaws admins should patch first” (Eclypsium). Not separately admitted (reappearances at identical URLs already in the record): The Record’s “Japanese food logistics giant recovers as extortion group claims cyberattack,” the same Nichirei/RansomHouse story already recorded as L-0184; The Record’s “OpenAI models behind breach of Hugging Face systems,” the same incident already recorded as L-0175; Cybersecurity Dive’s “Threat group claims credit for ransomware attack on Coca-Cola’s dairy unit,” the same Anubis/Fairlife claim already recorded as L-0167; Cybersecurity Dive’s “OpenAI models escaped containment and hacked a major AI application library,” the same OpenAI/Hugging Face incident already recorded as L-0175. Not separately admitted (NOAA companion products for the Bertha Advisory 13/13A cycle — seven items): the Atlantic Tropical Weather Outlook, Summary, Forecast Advisory, Forecast Discussion, Wind Speed Probabilities, Graphics, and Potential Storm Surge Flooding Map products share the same facts as Advisory 13A itself. Four NHC Local Statement products for the same cycle carry no machine-readable pubDate and were not treated as candidates. Nacha’s feed again required stripping leading theme-debug HTML comments before the XML would parse (known quirk, not a failure) and carried nothing newer than Jul 10. FCA’s newest item (the Anthropic Supercharged Sandbox announcement) reappeared but is already recorded as L-0178, published before this run’s window regardless. Anthropic’s next-newest item remains the Jul 21 philanthropic donation, FinCEN’s newsroom page carried nothing new, ENISA’s newest listed item remains the Frontier AI podcast launch, and ICO’s page again returned a JavaScript-rendered “Loading...” shell with no readable content. NIST’s feed again returned an empty channel (known behavior, not a failure); the Federal Reserve, OCC, FTC, CFPB, DOJ (beyond its own-day sentencing/indictment items, none clearing the relevance gate), FBI IC3, OpenAI, Bank of England, NCSC, EBA, ECB, EDPB, the Federal Register/FinCEN documents feed, and Krebs carried nothing new and admissible in-window.",
-    "lastRun": "2026-07-22T14:14:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed; DOJ 401’d for the descriptive User-Agent and was retried the same way, also returning 200 — counted OK, not failed; Dark Reading, which 404’d in the prior run, returned 200 directly this run). Selection window: 2 hours before this run’s prior lastRun (14:14 ET), so candidates are items published since ≈12:14 ET / 16:14 UTC. Eight in-window items surfaced across three feeds with window activity — NOAA NHC (5), The Record (2), and BleepingComputer (1) — all other feeds carried nothing new and admissible in-window. One item was admitted: the National Hurricane Center’s Tropical Cyclone Update reporting Tropical Storm Bertha made landfall near St. Bernard Parish, Louisiana, with maximum sustained winds of about 45 mph. Not separately admitted (companion product sharing identical facts with the admitted update): NOAA’s “Summary for Tropical Storm Bertha,” issued the same minute as the admitted update. Not re-admitted (reappearances, already recorded, inside this run’s 2-hour overlap window): NOAA’s Tropical Storm Bertha Intermediate Advisory Number 13A (already recorded as L-0187), its Atlantic Tropical Weather Outlook and Graphics companion products (already reviewed in the prior run), The Record’s Kimsuky/APT43 report (already recorded as L-0185), and BleepingComputer’s Stadler Rail report (already recorded as L-0186). Not admitted (reviewed, excluded): The Record’s “French Parliament greenlights social media ban for under-15s” (already excluded in the prior run on the same grounds — a child online-safety law with no financial-sector or technology-risk nexus stated). The CISA KEV catalog is unchanged (still catalogVersion 2026.07.21, 1,651 entries). Anthropic’s news page carries one new Jul 22 item ahead of the already-reviewed Anthropic Economic Index connector post — “A research agenda for the Economic Futures Research Fund” — excluded at the relevance gate (an economic-research-funding announcement with no technology-risk-pillar nexus stated in its listing). FinCEN’s newsroom page carries one item dated 08:00 ET Jul 22 (a comment-period extension on a proposed Huione Group rule) published before this run’s 12:14 ET window start, so not evaluated as a candidate this run. DOJ’s current 25 entries are unchanged from the prior run’s direct review (all dated the same 08:00 ET placeholder timestamp) — none clears the relevance gate (sentencing/charging matters in drug, firearms, child-exploitation, and other non-technology crimes, plus one embezzlement case with no financial-institution nexus stated). NIST’s feed again returned an empty channel (known behavior, not a failure). ENISA’s newest listed item remains its Frontier AI podcast launch; ICO’s page again returned the same JavaScript-rendered “Loading...” shell with no readable content (not counted as a feed failure). The Federal Reserve, OCC, FTC (beyond the FTC’s own out-of-window Jul 22 08:00 ET item), CFPB, FBI IC3, OpenAI, the Bank of England, NCSC, EBA, ECB, EDPB, the Federal Register/FinCEN documents feed, Nacha, Krebs, and Dark Reading carried nothing new and admissible in-window.",
+    "lastRun": "2026-07-22T15:09:00-04:00"
   },
   "lead": {
     "head": "Leading stories: Swiss rail vehicle manufacturer Stadler Rail rejects a $12.3 million ransom demand after a breach via a supplier-shared data exchange platform; the North Korean hacking group Kimsuky compromises South Korean software vendors and pivots into their customers; and Japan’s largest refrigerated logistics company faces an extortion threat from the RansomHouse gang after a cyberattack disrupted its operations nationwide.",
-    "dek": "Today’s edition draws on the sixteen items recorded so far. Every item links to its source.",
+    "dek": "Today’s edition draws on the seventeen items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -54,6 +54,18 @@
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-22T19:01:18Z",
+      "p": "resilience",
+      "tri": "routine",
+      "st": "confirmed",
+      "tier": "T1",
+      "id": "L-0188",
+      "title": "The National Hurricane Center reports Tropical Storm Bertha made landfall near St. Bernard Parish, Louisiana, with maximum sustained winds of about 45 mph.",
+      "src": "NOAA NHC advisory",
+      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCUAT2+shtml/221901.shtml",
+      "linked": true
+    },
     {
       "ts": "2026-07-22T17:36:45Z",
       "p": "resilience",
@@ -2446,15 +2458,15 @@
       "scope": "resilience · sector capacity & season risk",
       "watch": "Stress-test results, payments-system findings, severe-weather outlooks, and infrastructure-software advisories relevant to operations.",
       "opened": "July 2026",
-      "ver": "v10",
-      "verRange": "v1–v10",
+      "ver": "v11",
+      "verRange": "v1–v11",
       "asOf": "July 22, 2026",
       "p1": "The Federal Reserve’s annual stress test, released June 24, concludes that large banks are well positioned to weather a severe recession and continue lending to households and businesses.",
       "p1Sup": "1",
-      "p2": "Season risk turned active this window: the National Hurricane Center’s quiet July 9 outlook gave way to a system that strengthened into Tropical Storm Bertha, now weakening as it approaches the coast of southeastern Louisiana. Its Tropical Storm Warning has been discontinued east of the Alabama/Florida border but remains in effect from there to Morgan City, Louisiana, and for Metropolitan New Orleans and Lake Pontchartrain, with maximum sustained winds down to 45 mph; a Tropical Storm Watch remains in effect west of Morgan City to Sargent, Texas, and for Lake Maurepas. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
-      "p2Sup": "3, 4, 13",
-      "assess": "We assess with moderate confidence that near-term weather-driven disruption risk is roughly even odds: Tropical Storm Bertha has weakened further to 45 mph maximum sustained winds as it approaches the coast of southeastern Louisiana, with its Tropical Storm Warning discontinued east of the Alabama/Florida border but still in effect from there to Morgan City, Louisiana, and for Metropolitan New Orleans and Lake Pontchartrain, and its Tropical Storm Watch remaining in effect west of Morgan City to Sargent, Texas, and for Lake Maurepas, though no confirmed systemic-infrastructure stress has entered the record this window.",
-      "assessSup": "13",
+      "p2": "Season risk turned active this window: the National Hurricane Center’s quiet July 9 outlook gave way to a system that strengthened into Tropical Storm Bertha, which made landfall near St. Bernard Parish, Louisiana, with maximum sustained winds of about 45 mph. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
+      "p2Sup": "3, 4, 14",
+      "assess": "We assess with moderate confidence that near-term weather-driven disruption risk is roughly even odds: Tropical Storm Bertha has made landfall near St. Bernard Parish, Louisiana, with maximum sustained winds of about 45 mph, though no confirmed systemic-infrastructure stress has entered the record this window.",
+      "assessSup": "14",
       "conf": "moderate confidence",
       "events": [
         {
@@ -2582,6 +2594,15 @@
           "src": "NOAA NHC advisory",
           "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/221736.shtml",
           "line": "The National Hurricane Center’s Tropical Storm Bertha Intermediate Advisory Number 13A discontinues the Tropical Storm Warning east of the Alabama/Florida border, keeping the Warning in effect from there to Morgan City, Louisiana, and for Metropolitan New Orleans and Lake Pontchartrain, with maximum sustained winds down to 45 mph from 50 mph in Advisory Number 12 (L-0176)."
+        },
+        {
+          "date": "Jul 22, 26",
+          "st": "confirmed",
+          "ver": "v11",
+          "id": "L-0188",
+          "src": "NOAA NHC advisory",
+          "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCUAT2+shtml/221901.shtml",
+          "line": "The National Hurricane Center reports Tropical Storm Bertha made landfall near St. Bernard Parish, Louisiana, with maximum sustained winds of about 45 mph."
         }
       ],
       "sources": [
@@ -2649,6 +2670,11 @@
           "n": "13",
           "text": "NOAA NHC — Tropical Storm Bertha Intermediate Advisory 13A, Warning discontinued east of Alabama/Florida border, winds down to 45 mph, Jul 22, 2026",
           "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/221736.shtml"
+        },
+        {
+          "n": "14",
+          "text": "NOAA NHC — Tropical Storm Bertha Tropical Cyclone Update, landfall near St. Bernard Parish, Louisiana, winds 45 mph, Jul 22, 2026",
+          "url": "https://www.nhc.noaa.gov/text/refresh/MIATCUAT2+shtml/221901.shtml"
         }
       ],
       "related": [
@@ -4634,6 +4660,14 @@
       "line": "The National Hurricane Center’s Tropical Storm Bertha Intermediate Advisory Number 13A discontinues the Tropical Storm Warning east of the Alabama/Florida border, keeping the Warning in effect from there to Morgan City, Louisiana, and for Metropolitan New Orleans and Lake Pontchartrain, with maximum sustained winds down to 45 mph from 50 mph in Advisory Number 12 (L-0176).",
       "src": "NOAA NHC advisory",
       "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/221736.shtml"
+    },
+    {
+      "d": "2026-07-22",
+      "p": "resilience",
+      "id": "L-0188",
+      "line": "The National Hurricane Center reports Tropical Storm Bertha made landfall near St. Bernard Parish, Louisiana, with maximum sustained winds of about 45 mph.",
+      "src": "NOAA NHC advisory",
+      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCUAT2+shtml/221901.shtml"
     }
   ],
   "takeaways": [
@@ -5081,7 +5115,7 @@
       {
         "no": "10",
         "date": "Wed, Jul 22, 2026",
-        "confirmed": "16",
+        "confirmed": "17",
         "pending": "0",
         "flash": "—",
         "linked": true
