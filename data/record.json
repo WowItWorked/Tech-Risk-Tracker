@@ -2,21 +2,33 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-22T17:09:00-04:00",
+    "generatedAt": "2026-07-22T18:10:00-04:00",
     "issueNo": 10,
-    "recordHash": "339c2b7",
+    "recordHash": "27b9515",
     "windowLabel": "June 9 – July 22, 2026",
     "nextWeekly": "Fri, Jul 24",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (16:15 ET), so candidates are items published since ≈14:15 ET / 18:15 UTC. Raw candidates surfaced across four feeds with window activity — NOAA NHC (7 — the Tropical Storm Bertha Advisory Number 14 cycle's Public Advisory, Forecast Advisory, Forecast Discussion, Wind Speed Probabilities, Summary, and Graphics products, plus a reappearing companion product for the already-recorded Advisory Update landfall bulletin), The Record (2), BleepingComputer (1), and Dark Reading (1) — all other feeds (including CISA's KEV catalog, unchanged, still catalogVersion 2026.07.22, 1,653 entries) carried nothing new and admissible in-window. One item was admitted: NOAA NHC's Tropical Storm Bertha Advisory Number 14, reporting the storm moving westward over southeastern Louisiana with maximum sustained winds holding at 45 mph and extending the Tropical Storm Warning westward to Cameron, Louisiana. Not admitted (reviewed, excluded): The Record's “Extension of CISA 2015 info-sharing protections passes as part of House’s defense bill” (20:39 UTC) — a House NDAA provision renewing the CISA 2015 information-sharing law for the private sector and federal government generally; excluded at the relevance gate, neither the RSS description nor the fetched article body states a financial-sector or financial-institution-specific nexus, and the provision itself has only passed the House, not been enacted. BleepingComputer's “South Korea discloses data breach impacting diplomats worldwide” (20:06:54 UTC) — a breach of South Korea's Ministry of Foreign Affairs training system affecting diplomatic personnel; excluded, no financial-sector or technology-risk-to-financial-institutions nexus stated. Dark Reading's “Fake Bahrain Alert App Deploys Android Surveillance Malware” (19:42:42 UTC) — nation-state civilian surveillance malware tied to Iranian missile strikes on Bahrain; excluded, no financial-sector nexus stated. “When in doubt, exclude” applied to all three. Not re-admitted (reappearances, already recorded or already excluded, inside this run's 2-hour overlap window): NOAA's Tropical Storm Bertha Public Advisory Update Number (19:01 UTC, identical URL to the already-recorded L-0188 landfall update); The Record's “Federal agencies broaden alert on Iran-linked OT attacks” (19:18 UTC, already excluded in the prior run on the same grounds — no financial-sector or technology-risk nexus stated). Not separately admitted (NOAA companion products for the Advisory 14 cycle): the Forecast Advisory, Forecast Discussion, Wind Speed Probabilities, Summary (identical URL to the admitted Public Advisory), and Graphics products — all restate or elaborate on the same facts already carried by the admitted Public Advisory Number 14, following the standing companion-product exclusion practice. FCA, the Bank of England, NCSC, EBA, ECB, EDPB, and FinCEN’s Federal Register feed carried nothing new in-window. FTC's newest item (08:00 ET), DOJ's 25 entries (all dated 08:00 ET, non-technology criminal matters), OpenAI's newest item (13:00 UTC), and Krebs (01:10 UTC) fall before this run's window. NIST's feed again returned an empty channel (known behavior, not a failure). Anthropic's newest listed item remains “A research agenda for the Economic Futures Research Fund” (already excluded); FinCEN's newsroom page's newest item (comment-period extension on the Huione Group rule, 08:00 ET) and ENISA's newest item (Frontier AI podcast launch) remain unchanged from the prior run and fall before the window regardless; ICO's page again returned the same JavaScript-rendered “Loading...” shell with no readable content (not counted as a feed failure).",
-    "lastRun": "2026-07-22T17:09:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (17:09 ET), so candidates are items published since ≈15:09 ET / 19:09 UTC. Raw candidates surfaced across three feeds with window activity — NOAA NHC (companion products for the already-recorded Advisory Number 14 cycle: Graphics, and Local Statements for Houston/Galveston TX, Lake Charles LA, and New Orleans/Baton Rouge LA), The Record (2), BleepingComputer (1), and Dark Reading (1) — all other feeds (including CISA's KEV catalog, unchanged, still catalogVersion 2026.07.22, 1,653 entries) carried nothing new and admissible in-window. One item was admitted: BleepingComputer's report that Upbound Group, the fintech company operating Acima Leasing and Rent-A-Center, disclosed in an SEC filing that criminals used stolen customer data to create $13 million in fraudulent Acima lease-to-own agreements in the second quarter. Not admitted (reviewed, excluded): Dark Reading's “Attackers Are Learning to Live Off the AI Toolchain” (21:29:01 UTC) — malware (“Sandworm_Mode”) exploiting trusted AI tools and workflows; the article page 403'd on both the descriptive and standard browser User-Agent, so only the RSS teaser was available — excluded at the relevance gate, the teaser states no financial-sector or financial-institution nexus. “When in doubt, exclude” applied. Not re-admitted (reappearances, already recorded or already excluded, inside this run's 2-hour overlap window): The Record's “Extension of CISA 2015 info-sharing protections passes as part of House’s defense bill” (20:39:35 UTC) and “Federal agencies broaden alert on Iran-linked OT attacks” (19:18:00 UTC), both already reviewed and excluded in the prior (17:09 ET) run on the same grounds — no financial-sector or financial-institution-specific nexus stated. Not separately admitted (NOAA companion products for the already-recorded Advisory Number 14 cycle): the Graphics product (21:22:42 UTC) and Local Statements for Houston/Galveston, TX (21:23 UTC), Lake Charles, LA (21:22 UTC), and New Orleans/Baton Rouge, LA (21:32 UTC) — all restate or elaborate on the same location/wind-speed/warning facts already carried by the admitted Public Advisory Number 14 (L-0190), following the standing companion-product exclusion practice. FCA, the Bank of England, NCSC, EBA, ECB, EDPB, and FinCEN's Federal Register feed carried nothing new in-window. FTC's newest item (08:00 ET), DOJ's 25 entries (all dated 08:00 ET, non-technology criminal matters), OpenAI's newest item (13:00 UTC), and Krebs (01:10 UTC) fall before this run's window. NIST's feed again returned an empty channel (known behavior, not a failure). Anthropic's newest listed item remains “A research agenda for the Economic Futures Research Fund” (already excluded); FinCEN's newsroom page's newest item (comment-period extension on the Huione Group rule, 08:00 ET) and ENISA's newest item (“First steps forward for the implementation of the Health Action Plan,” 12:21 UTC, before this run's window and no financial-sector nexus stated) remain unchanged from or fall before the prior run's review; ICO's page again returned the same JavaScript-rendered “Loading...” shell with no readable content (not counted as a feed failure).",
+    "lastRun": "2026-07-22T18:10:00-04:00"
   },
   "lead": {
-    "head": "Leading stories: Swiss rail vehicle manufacturer Stadler Rail rejects a $12.3 million ransom demand after a breach via a supplier-shared data exchange platform; the North Korean hacking group Kimsuky compromises South Korean software vendors and pivots into their customers; and CISA adds a Check Point SmartConsole flaw and a Microsoft SharePoint flaw to its known-exploited vulnerabilities catalog, both due for patching by July 25.",
-    "dek": "Today’s edition draws on the nineteen items recorded so far. Every item links to its source.",
+    "head": "Leading stories: Upbound Group discloses a hack that let criminals create $13 million in fraudulent Acima lease-to-own agreements; Swiss rail vehicle manufacturer Stadler Rail rejects a $12.3 million ransom demand after a breach via a supplier-shared data exchange platform; and the North Korean hacking group Kimsuky compromises South Korean software vendors and pivots into their customers.",
+    "dek": "Today’s edition draws on the twenty items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
+        "p": "fraud",
+        "tri": "priority",
+        "st": "confirmed",
+        "id": "L-0191",
+        "conf": "",
+        "text": "Upbound Group, the fintech company that operates Acima Leasing and Rent-A-Center, discloses in a Securities and Exchange Commission (SEC) filing that criminals used stolen customer data to create $13 million in fraudulent Acima lease-to-own agreements in the second quarter, BleepingComputer reports.",
+        "why": "It shows a customer-data breach can turn directly into millions of dollars in fraud losses when criminals use the stolen data to open fraudulent financing agreements — fraud teams should treat breached customer data as an application-fraud risk, not just a notification obligation.",
+        "srcText": "BleepingComputer, Jul 22",
+        "srcUrl": "https://www.bleepingcomputer.com/news/security/upbound-says-hack-caused-13-million-in-fraudulent-acima-leases/"
+      },
+      {
+        "n": "2",
         "p": "tp",
         "tri": "priority",
         "st": "confirmed",
@@ -28,7 +40,7 @@
         "srcUrl": "https://www.bleepingcomputer.com/news/security/swiss-rail-giant-stadler-rejects-123m-ransom-demand-after-cyberattack/"
       },
       {
-        "n": "2",
+        "n": "3",
         "p": "tp",
         "tri": "priority",
         "st": "confirmed",
@@ -38,22 +50,22 @@
         "why": "It shows a nation-state hacking group can use a compromised software vendor to pivot straight into that vendor’s customers, a supply-chain risk banks should watch for their own software providers.",
         "srcText": "The Record, Jul 22",
         "srcUrl": "https://therecord.media/kimsuky-north-korea-espionage-groupware-companies"
-      },
-      {
-        "n": "3",
-        "p": "cyber",
-        "tri": "priority",
-        "st": "confirmed",
-        "id": "L-0189",
-        "conf": "",
-        "text": "CISA adds two exploited flaws to its Known Exploited Vulnerabilities catalog: an improper-authentication flaw in Check Point SmartConsole that lets an unauthenticated attacker obtain full administrative privileges (CVE-2026-16232), and a Microsoft SharePoint deserialization flaw that lets an attacker execute code over a network (CVE-2026-50522).",
-        "why": "CISA has confirmed active exploitation of a Check Point SmartConsole flaw that gives attackers full administrative access without authentication, and a Microsoft SharePoint flaw that lets attackers execute code over the network, giving technology teams running either product until July 25 to patch.",
-        "srcText": "CISA KEV catalog, Jul 22",
-        "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
       }
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-22T21:43:39Z",
+      "p": "fraud",
+      "tri": "priority",
+      "st": "confirmed",
+      "tier": "T2",
+      "id": "L-0191",
+      "title": "Upbound Group, the fintech company that operates Acima Leasing and Rent-A-Center, discloses in a Securities and Exchange Commission (SEC) filing that criminals used stolen customer data to create $13 million in fraudulent Acima lease-to-own agreements in the second quarter, BleepingComputer reports.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/upbound-says-hack-caused-13-million-in-fraudulent-acima-leases/",
+      "linked": true
+    },
     {
       "ts": "2026-07-22T20:47:19Z",
       "p": "resilience",
@@ -1737,8 +1749,8 @@
       "scope": "fraud · AML rulemaking & scam patterns",
       "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
       "opened": "July 2026",
-      "ver": "v25",
-      "verRange": "v1–v25",
+      "ver": "v26",
+      "verRange": "v1–v26",
       "asOf": "July 22, 2026",
       "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22).",
       "p1Sup": "1, 3",
@@ -1748,6 +1760,15 @@
       "assessSup": "2, 3",
       "conf": "moderate confidence",
       "events": [
+        {
+          "date": "Jul 22, 26",
+          "st": "confirmed",
+          "ver": "v26",
+          "id": "L-0191",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/upbound-says-hack-caused-13-million-in-fraudulent-acima-leases/",
+          "line": "Upbound Group, the fintech company that operates Acima Leasing and Rent-A-Center, discloses in a Securities and Exchange Commission (SEC) filing that criminals used stolen customer data to create $13 million in fraudulent Acima lease-to-own agreements in the second quarter, BleepingComputer reports."
+        },
         {
           "date": "Jul 20, 26",
           "st": "confirmed",
@@ -4731,6 +4752,14 @@
       "line": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 14 reports the storm moving westward over southeastern Louisiana with maximum sustained winds holding at 45 mph, and extends the Tropical Storm Warning westward to Cameron, Louisiana.",
       "src": "NOAA NHC advisory",
       "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/222047.shtml"
+    },
+    {
+      "d": "2026-07-22",
+      "p": "fraud",
+      "id": "L-0191",
+      "line": "Upbound Group, the fintech company that operates Acima Leasing and Rent-A-Center, discloses in a Securities and Exchange Commission (SEC) filing that criminals used stolen customer data to create $13 million in fraudulent Acima lease-to-own agreements in the second quarter, BleepingComputer reports.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/upbound-says-hack-caused-13-million-in-fraudulent-acima-leases/"
     }
   ],
   "takeaways": [
@@ -5180,6 +5209,15 @@
       "conf": "high confidence",
       "head": "Confirm Check Point SmartConsole and Microsoft SharePoint are patched against two newly listed flaws — CISA’s compliance deadline is July 25.",
       "body": "CISA added a Check Point SmartConsole improper-authentication flaw (CVE-2026-16232) and a Microsoft SharePoint deserialization flaw (CVE-2026-50522) to its Known Exploited Vulnerabilities catalog, both due for remediation by July 25. Technology teams running either product should confirm patches are applied before the deadline."
+    },
+    {
+      "anchors": [
+        "L-0191"
+      ],
+      "pillars": "Fraud",
+      "conf": "high confidence",
+      "head": "Treat customer data exposed in any breach as an application-fraud risk, not just an identity-theft notification obligation.",
+      "body": "Upbound Group disclosed in an SEC filing that criminals used stolen customer data to open $13 million in fraudulent Acima lease-to-own agreements in the second quarter, BleepingComputer reports. Fraud teams should treat customer data exposed in any breach as usable to open fraudulent financing agreements, and confirm application-fraud controls — identity verification and fraud-detection monitoring — account for that risk."
     }
   ],
   "publications": {
@@ -5187,7 +5225,7 @@
       {
         "no": "10",
         "date": "Wed, Jul 22, 2026",
-        "confirmed": "19",
+        "confirmed": "20",
         "pending": "0",
         "flash": "—",
         "linked": true
