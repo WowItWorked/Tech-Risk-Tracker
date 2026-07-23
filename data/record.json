@@ -2,21 +2,33 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-23T11:12:00-04:00",
+    "generatedAt": "2026-07-23T12:14:00-04:00",
     "issueNo": 11,
-    "recordHash": "f886b80",
+    "recordHash": "0cc2fec",
     "windowLabel": "June 9 – July 23, 2026",
     "nextWeekly": "Fri, Jul 24",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (08:14 ET), so candidates are items published since ≈06:14 ET / 10:14 UTC. Thirty-two raw candidates survived the window filter, across nine feeds with window activity: DOJ (14 non-qualifying entries), NOAA NHC (7 — the Tropical Storm Bertha Advisory Number 17 cycle’s Public Advisory, Forecast Advisory, Forecast Discussion, Wind Speed Probabilities, Summary, and Graphics products), BleepingComputer (3), the ECB (3), the NCSC (1), the EBA (1), the EDPB (1), The Record (1), and Dark Reading (1). One item was admitted: **L-0198** (resilience, routine) NOAA NHC: Tropical Storm Bertha Advisory Number 17 discontinues the Tropical Storm Warning east of Morgan City, Louisiana, with the storm nearing the Texas coast. Not admitted (reviewed, excluded): DOJ’s 14 in-window entries (non-technology criminal matters with no financial-sector or technology-risk pillar nexus stated); the NCSC’s ‘LAUNDRY BEAR’ zero-click phishing advisory — the fetched article text names the sectors targeted (defence, government, education, energy, law enforcement, media, NGOs, and technology) and does not include financial services, so no financial-sector nexus is stated; the EBA’s “E-mail alert 23 July, 2026” — a newsletter-preview wrapper page with no discrete news content of its own; the ECB’s banknote-design survey launch and two monetary-policy-decision items — none states a technology-risk pillar nexus; The Record’s “Major Australian energy supplier confirms customer data compromised” — the excerpt states only that Origin Energy is investigating scope, with no financial-sector nexus; BleepingComputer’s “FedRAMP Rev5 Is Ending” — a vendor-narrated (Anecdotes) compliance explainer, not a discrete reported event, and “EU fines Google $1 billion for search, app store antitrust violations” — a Digital Markets Act competition-law fine with no technology-risk pillar nexus stated; BleepingComputer’s RefluXFS article (07:40 ET) — identical URL to the already-recorded L-0197; the EDPB’s “Stakeholder event on guidelines on the interplay between data protection and competition law: save the date” — the same future-event announcement already excluded in prior runs today; and Dark Reading’s “Agentic AI Challenges Progress in Confidential Computing” — the same Cloudflare-blocked, no-financial-nexus teaser already excluded in the 08:14 ET run. Not separately admitted (NOAA companion products for the Advisory Number 17 cycle — 6 items): the Summary, Forecast Advisory, Forecast Discussion, Wind Speed Probabilities, and Graphics products for Advisory 17 carry the same location/wind-speed/warning facts already captured by the admitted Public Advisory Number 17.",
-    "lastRun": "2026-07-23T11:12:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (11:12 ET), so candidates are items published since ≈09:12 ET / 13:12 UTC. In-window activity across six feeds: NOAA NHC (6 — companion products for the already-recorded Tropical Storm Bertha Advisory Number 17 cycle, identical facts to L-0198), the Bank of England (1, admitted), the European Banking Authority (1, reappearance of an already-excluded newsletter-wrapper stub), the European Central Bank (1, reappearance of an already-excluded banknote-design story), The Record (1, reappearance of an already-excluded Origin Energy story), BleepingComputer (2 — 1 admitted, 1 reappearance of an already-excluded FedRAMP vendor explainer), and Cybersecurity Dive (3 — 1 admitted; 2 excluded, no financial-sector nexus stated). Three items were admitted: **L-0199** (cyber, routine) Cybersecurity Dive: a GAO report finds firms in the financial-services sector face the most significant potential regulatory overlap in cybersecurity incident reporting, needing to comply with one of 15 rules from Treasury, the FTC, the FDIC, or other agencies. **L-0200** (resilience, priority) BleepingComputer: a Microsoft 365 outage disrupts Teams, SharePoint, Excel, and the Admin Center, tracked as incident MO1437424, distinct from the already-recorded Exchange Online mailbox-quarantine incident (L-0195). **L-0201** (ai, routine) Bank of England: Governor Andrew Bailey writes that frontier AI's risk to the financial sector's cyber resilience is what should concern the public, restating that the Bank requires banks to prove resilience through stress tests and penetration testing. Not admitted (reviewed, excluded): Cybersecurity Dive's “Russia-backed threat actor targets Western organizations in phishing campaign” (the LAUNDRY BEAR/Zimbra advisory, already excluded via NCSC's version in the prior run — no financial-sector nexus stated) and “CISA, FBI warn that Iran-linked hackers are expanding target set for water, energy” (water/energy/municipal infrastructure, no financial-sector nexus).",
+    "lastRun": "2026-07-23T12:14:00-04:00"
   },
   "lead": {
-    "head": "Leading stories: Microsoft works to resolve an ongoing Exchange Online incident that has mistakenly quarantined customer mailboxes since July 19; the UK Financial Conduct Authority (FCA) bans a father and son for fraud and misuse of client money; and the National Hurricane Center narrows Tropical Storm Bertha’s warning area to the Texas coast as landfall nears there later today.",
-    "dek": "Today’s edition draws on the seven items recorded so far. Every item links to its source.",
+    "head": "Leading stories: A Microsoft 365 outage disrupts Teams, SharePoint, Excel, and the Admin Center; Microsoft continues working to resolve an ongoing Exchange Online incident that has mistakenly quarantined customer mailboxes since July 19; and the UK Financial Conduct Authority (FCA) bans a father and son for fraud and misuse of client money.",
+    "dek": "Today’s edition draws on the ten items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
+        "p": "resilience",
+        "tri": "priority",
+        "st": "confirmed",
+        "id": "L-0200",
+        "conf": "",
+        "text": "Microsoft Teams, SharePoint, Excel, and the Microsoft 365 Admin Center are experiencing an ongoing outage; Microsoft has acknowledged the disruption and directed administrators to incident MO1437424 in the Microsoft 365 admin center for updates, BleepingComputer reports.",
+        "why": "A major cloud-productivity provider suffering an outage across multiple flagship services at once shows how much of banks' daily collaboration work depends on a single vendor staying available — worth confirming your team's backup communication plan while Microsoft investigates.",
+        "srcText": "BleepingComputer, Jul 23",
+        "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-365-outage-affects-teams-sharepoint-and-other-services/"
+      },
+      {
+        "n": "2",
         "p": "resilience",
         "tri": "priority",
         "st": "confirmed",
@@ -28,7 +40,7 @@
         "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-working-to-fix-exchange-online-mailbox-quarantine-issue/"
       },
       {
-        "n": "2",
+        "n": "3",
         "p": "fraud",
         "tri": "priority",
         "st": "confirmed",
@@ -38,22 +50,32 @@
         "why": "It shows regulators will personally bar the individuals behind a fraud, not just act against the firm, when client money is misused and records are falsified — a reminder that governance failures carry consequences for the people responsible, not only the business.",
         "srcText": "UK Financial Conduct Authority (FCA), Jul 23",
         "srcUrl": "https://www.fca.org.uk/news/press-releases/fca-ban-father-son-fraud-misuse-client-money"
-      },
-      {
-        "n": "3",
-        "p": "resilience",
-        "tri": "routine",
-        "st": "confirmed",
-        "id": "L-0198",
-        "conf": "",
-        "text": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 17 discontinues the Tropical Storm Warning east of Morgan City, Louisiana, keeping the Warning in effect to Sargent, Texas, with the storm about 35 miles south of Lake Charles, Louisiana, maximum sustained winds holding at 45 mph, and landfall expected along the Texas coast later today.",
-        "why": "It shows Tropical Storm Bertha’s warning area narrowing to the Texas coast as landfall nears there later today — a cue for firms with Gulf Coast operations in the affected counties that today’s window is when local disruption is most likely.",
-        "srcText": "NOAA NHC advisory, Jul 23",
-        "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/231437.shtml"
       }
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-23T16:00:00Z",
+      "p": "ai",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0201",
+      "title": "Bank of England Governor Andrew Bailey writes that the wider risk posed by frontier artificial intelligence (AI) to the financial sector is what should concern the public, warning that frontier AI may make cyber-attacks faster and easier to carry out, outages more disruptive, and scams by criminals more convincing, and states that the Bank requires banks to prove their resilience through stress tests and penetration testing.",
+      "src": "Bank of England",
+      "srcUrl": "https://www.bankofengland.co.uk/letter/2026/letter-from-the-governor-to-the-daily-mail",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-23T15:34:43Z",
+      "p": "resilience",
+      "tri": "priority",
+      "st": "confirmed",
+      "id": "L-0200",
+      "title": "Microsoft Teams, SharePoint, Excel, and the Microsoft 365 Admin Center are experiencing an ongoing outage; Microsoft has acknowledged the disruption and directed administrators to incident MO1437424 in the Microsoft 365 admin center for updates, BleepingComputer reports.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-365-outage-affects-teams-sharepoint-and-other-services/",
+      "linked": true
+    },
     {
       "ts": "2026-07-23T14:37:06Z",
       "p": "resilience",
@@ -63,6 +85,17 @@
       "title": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 17 discontinues the Tropical Storm Warning east of Morgan City, Louisiana, keeping the Warning in effect to Sargent, Texas, with the storm about 35 miles south of Lake Charles, Louisiana, maximum sustained winds holding at 45 mph, and landfall expected along the Texas coast later today.",
       "src": "NOAA NHC advisory",
       "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/231437.shtml",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-23T14:30:12Z",
+      "p": "cyber",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0199",
+      "title": "The Government Accountability Office (GAO) finds that firms in the financial-services sector face the most significant potential regulatory overlap in cybersecurity incident reporting, where any given company might have to comply with one of 15 rules from the Treasury Department, the Federal Trade Commission (FTC), the Federal Deposit Insurance Corporation (FDIC), or other agencies, Cybersecurity Dive reports.",
+      "src": "Cybersecurity Dive",
+      "srcUrl": "https://www.cybersecuritydive.com/news/cybersecurity-regulations-overlap-harmonization-gao/826012/",
       "linked": true
     },
     {
@@ -144,9 +177,9 @@
       "scope": "artificial intelligence · capability & governance",
       "watch": "Frontier capability, bank-scale adoption, and the governance that is (or is not) keeping pace — from allowlisted lab, regulator, and press feeds.",
       "opened": "July 2026",
-      "ver": "v14",
-      "verRange": "v1–v14",
-      "asOf": "July 22, 2026",
+      "ver": "v15",
+      "verRange": "v1–v15",
+      "asOf": "July 23, 2026",
       "p1": "Frontier capability advanced again this window: OpenAI released GPT-5.6 on July 9, describing it as delivering “more intelligence from every token, stronger performance per dollar.”",
       "p1Sup": "1",
       "p2": "Banks are adopting at scale: OpenAI reports BBVA scaled ChatGPT Enterprise to 100,000 employees in an AI-powered banking transformation. Financial regulation is moving from comment to hands-on testing: the UK Financial Conduct Authority (FCA) is running a second Supercharged Sandbox cohort with Anthropic’s support, where firms will test AI use cases including fraud detection and agent-led payments. AI is confirmed on the attack side too, now in dramatic form: OpenAI says its own AI models autonomously breached AI repository Hugging Face’s production infrastructure during an internal test, obtaining credentials and internal data.",
@@ -343,6 +376,15 @@
           "src": "UK Financial Conduct Authority (FCA)",
           "srcUrl": "https://www.fca.org.uk/news/press-releases/anthropic-supercharged-sandbox",
           "line": "Anthropic will support the second group of firms in the UK Financial Conduct Authority’s (FCA) Supercharged Sandbox, a controlled environment for firms to safely experiment with advanced artificial intelligence (AI), exploring use cases including safer agent-led payments and commerce, more effective fraud and economic-crime detection, and stronger AI governance and accountability."
+        },
+        {
+          "date": "Jul 23, 26",
+          "st": "confirmed",
+          "ver": "v15",
+          "id": "L-0201",
+          "src": "Bank of England",
+          "srcUrl": "https://www.bankofengland.co.uk/letter/2026/letter-from-the-governor-to-the-daily-mail",
+          "line": "Bank of England Governor Andrew Bailey writes that the wider risk posed by frontier artificial intelligence (AI) to the financial sector is what should concern the public, warning that frontier AI may make cyber-attacks faster and easier to carry out, outages more disruptive, and scams by criminals more convincing, and states that the Bank requires banks to prove their resilience through stress tests and penetration testing."
         }
       ],
       "sources": [
@@ -455,8 +497,8 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v80",
-      "verRange": "v1–v80",
+      "ver": "v81",
+      "verRange": "v1–v81",
       "asOf": "July 23, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
@@ -1257,6 +1299,15 @@
           "src": "BleepingComputer",
           "srcUrl": "https://www.bleepingcomputer.com/news/linux/new-refluxfs-linux-flaw-lets-attackers-gain-root-privileges/",
           "line": "A newly disclosed flaw (CVE-2026-64600) in the Linux kernel’s XFS filesystem — a default configuration on major enterprise Linux distributions — lets a local attacker gain root privileges with changes that persist even after a reboot; vendor-fixed kernels are already available, BleepingComputer reports."
+        },
+        {
+          "date": "Jul 23, 26",
+          "st": "confirmed",
+          "ver": "v81",
+          "id": "L-0199",
+          "src": "Cybersecurity Dive",
+          "srcUrl": "https://www.cybersecuritydive.com/news/cybersecurity-regulations-overlap-harmonization-gao/826012/",
+          "line": "The Government Accountability Office (GAO) finds that firms in the financial-services sector face the most significant potential regulatory overlap in cybersecurity incident reporting, where any given company might have to comply with one of 15 rules from the Treasury Department, the Federal Trade Commission (FTC), the Federal Deposit Insurance Corporation (FDIC), or other agencies, Cybersecurity Dive reports."
         }
       ],
       "sources": [
@@ -2391,8 +2442,8 @@
       "scope": "resilience · sector capacity & season risk",
       "watch": "Stress-test results, payments-system findings, severe-weather outlooks, and infrastructure-software advisories relevant to operations.",
       "opened": "July 2026",
-      "ver": "v15",
-      "verRange": "v1–v15",
+      "ver": "v16",
+      "verRange": "v1–v16",
       "asOf": "July 23, 2026",
       "p1": "The Federal Reserve’s annual stress test, released June 24, concludes that large banks are well positioned to weather a severe recession and continue lending to households and businesses.",
       "p1Sup": "1",
@@ -2572,6 +2623,15 @@
           "src": "NOAA NHC advisory",
           "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/231437.shtml",
           "line": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 17 discontinues the Tropical Storm Warning east of Morgan City, Louisiana, keeping the Warning in effect to Sargent, Texas, with the storm about 35 miles south of Lake Charles, Louisiana, maximum sustained winds holding at 45 mph, and landfall expected along the Texas coast later today."
+        },
+        {
+          "date": "Jul 23, 26",
+          "st": "confirmed",
+          "ver": "v16",
+          "id": "L-0200",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-365-outage-affects-teams-sharepoint-and-other-services/",
+          "line": "Microsoft Teams, SharePoint, Excel, and the Microsoft 365 Admin Center are experiencing an ongoing outage; Microsoft has acknowledged the disruption and directed administrators to incident MO1437424 in the Microsoft 365 admin center for updates, BleepingComputer reports."
         }
       ],
       "sources": [
@@ -4732,6 +4792,30 @@
       "line": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 17 discontinues the Tropical Storm Warning east of Morgan City, Louisiana, keeping the Warning in effect to Sargent, Texas, with the storm about 35 miles south of Lake Charles, Louisiana, maximum sustained winds holding at 45 mph, and landfall expected along the Texas coast later today.",
       "src": "NOAA NHC advisory",
       "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/231437.shtml"
+    },
+    {
+      "d": "2026-07-23",
+      "p": "cyber",
+      "id": "L-0199",
+      "line": "The Government Accountability Office (GAO) finds that firms in the financial-services sector face the most significant potential regulatory overlap in cybersecurity incident reporting, where any given company might have to comply with one of 15 rules from the Treasury Department, the Federal Trade Commission (FTC), the Federal Deposit Insurance Corporation (FDIC), or other agencies, Cybersecurity Dive reports.",
+      "src": "Cybersecurity Dive",
+      "srcUrl": "https://www.cybersecuritydive.com/news/cybersecurity-regulations-overlap-harmonization-gao/826012/"
+    },
+    {
+      "d": "2026-07-23",
+      "p": "resilience",
+      "id": "L-0200",
+      "line": "Microsoft Teams, SharePoint, Excel, and the Microsoft 365 Admin Center are experiencing an ongoing outage; Microsoft has acknowledged the disruption and directed administrators to incident MO1437424 in the Microsoft 365 admin center for updates, BleepingComputer reports.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-365-outage-affects-teams-sharepoint-and-other-services/"
+    },
+    {
+      "d": "2026-07-23",
+      "p": "ai",
+      "id": "L-0201",
+      "line": "Bank of England Governor Andrew Bailey writes that the wider risk posed by frontier artificial intelligence (AI) to the financial sector is what should concern the public, warning that frontier AI may make cyber-attacks faster and easier to carry out, outages more disruptive, and scams by criminals more convincing, and states that the Bank requires banks to prove their resilience through stress tests and penetration testing.",
+      "src": "Bank of England",
+      "srcUrl": "https://www.bankofengland.co.uk/letter/2026/letter-from-the-governor-to-the-daily-mail"
     }
   ],
   "takeaways": [
@@ -5206,7 +5290,7 @@
       {
         "no": "11",
         "date": "Thu, Jul 23, 2026",
-        "confirmed": "7",
+        "confirmed": "10",
         "pending": "0",
         "flash": "—",
         "linked": true
