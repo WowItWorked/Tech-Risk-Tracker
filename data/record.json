@@ -2,296 +2,116 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-22T18:10:00-04:00",
-    "issueNo": 10,
-    "recordHash": "27b9515",
-    "windowLabel": "June 9 – July 22, 2026",
+    "generatedAt": "2026-07-23T06:25:00-04:00",
+    "issueNo": 11,
+    "recordHash": "bc2bfe2",
+    "windowLabel": "June 9 – July 23, 2026",
     "nextWeekly": "Fri, Jul 24",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (17:09 ET), so candidates are items published since ≈15:09 ET / 19:09 UTC. Raw candidates surfaced across three feeds with window activity — NOAA NHC (companion products for the already-recorded Advisory Number 14 cycle: Graphics, and Local Statements for Houston/Galveston TX, Lake Charles LA, and New Orleans/Baton Rouge LA), The Record (2), BleepingComputer (1), and Dark Reading (1) — all other feeds (including CISA's KEV catalog, unchanged, still catalogVersion 2026.07.22, 1,653 entries) carried nothing new and admissible in-window. One item was admitted: BleepingComputer's report that Upbound Group, the fintech company operating Acima Leasing and Rent-A-Center, disclosed in an SEC filing that criminals used stolen customer data to create $13 million in fraudulent Acima lease-to-own agreements in the second quarter. Not admitted (reviewed, excluded): Dark Reading's “Attackers Are Learning to Live Off the AI Toolchain” (21:29:01 UTC) — malware (“Sandworm_Mode”) exploiting trusted AI tools and workflows; the article page 403'd on both the descriptive and standard browser User-Agent, so only the RSS teaser was available — excluded at the relevance gate, the teaser states no financial-sector or financial-institution nexus. “When in doubt, exclude” applied. Not re-admitted (reappearances, already recorded or already excluded, inside this run's 2-hour overlap window): The Record's “Extension of CISA 2015 info-sharing protections passes as part of House’s defense bill” (20:39:35 UTC) and “Federal agencies broaden alert on Iran-linked OT attacks” (19:18:00 UTC), both already reviewed and excluded in the prior (17:09 ET) run on the same grounds — no financial-sector or financial-institution-specific nexus stated. Not separately admitted (NOAA companion products for the already-recorded Advisory Number 14 cycle): the Graphics product (21:22:42 UTC) and Local Statements for Houston/Galveston, TX (21:23 UTC), Lake Charles, LA (21:22 UTC), and New Orleans/Baton Rouge, LA (21:32 UTC) — all restate or elaborate on the same location/wind-speed/warning facts already carried by the admitted Public Advisory Number 14 (L-0190), following the standing companion-product exclusion practice. FCA, the Bank of England, NCSC, EBA, ECB, EDPB, and FinCEN's Federal Register feed carried nothing new in-window. FTC's newest item (08:00 ET), DOJ's 25 entries (all dated 08:00 ET, non-technology criminal matters), OpenAI's newest item (13:00 UTC), and Krebs (01:10 UTC) fall before this run's window. NIST's feed again returned an empty channel (known behavior, not a failure). Anthropic's newest listed item remains “A research agenda for the Economic Futures Research Fund” (already excluded); FinCEN's newsroom page's newest item (comment-period extension on the Huione Group rule, 08:00 ET) and ENISA's newest item (“First steps forward for the implementation of the Health Action Plan,” 12:21 UTC, before this run's window and no financial-sector nexus stated) remain unchanged from or fall before the prior run's review; ICO's page again returned the same JavaScript-rendered “Loading...” shell with no readable content (not counted as a feed failure).",
-    "lastRun": "2026-07-22T18:10:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 12 hours before the prior run’s lastRun (2026-07-22T18:10 ET), so candidates are items published since ≈06:10 ET / 10:10 UTC Jul 22. CISA’s KEV catalog stayed at catalogVersion 2026.07.22 (1,653 entries) — no new additions. NIST returned an empty channel; Anthropic’s page topped by two Jul 22 items (an Economic Index connector launch and a $20 million Public First Action donation), neither stating a financial-sector or technology-risk nexus; FinCEN’s newsroom page newest item remains the Huione Group comment-period extension (Jul 22, 08:00 ET); ENISA’s newest listed item remains its frontier-AI podcast launch (Jul 22, 12:21 UTC, unchanged); ICO returned the same JavaScript-rendered “Loading...” shell — all consistent with prior runs and not counted as failures. Five items admitted: L-0192 (cyber, routine) Dark Reading: a banking trojan tied to Brazilian hackers is actively spreading among Portuguese businesses that share the attackers’ native language; the article page returned a Cloudflare challenge on both the descriptive and standard-browser User-Agent, so only the RSS title/teaser was available — sufficient to clear the relevance gate since the title itself names the malware class (“Banking Trojan”). L-0193 (resilience, routine) NOAA NHC: Tropical Storm Bertha Advisory Number 16 reports the storm now forecast to make a second landfall along the northwestern Gulf Coast today, with the Tropical Storm Warning extended to Sargent, Texas — a materially new fact (a second landfall track after the already-recorded St. Bernard Parish, Louisiana landfall, L-0188) rather than a restatement, so admitted under the standing Bertha-advisory practice (a new fact requires a stated change). L-0194 (fraud, priority) FCA: the FCA bans Alec Finch and Robert Finch from UK financial services after a High Court fraud and client-money-misuse finding at AFL Insurance Brokers. L-0195 (resilience, priority) BleepingComputer: Microsoft is working to resolve an ongoing Exchange Online mailbox-quarantine incident (EX1436407) that began July 19 and remains unresolved, blocking some users from receiving email — triaged priority as a confirmed, multi-day, officially tracked major vendor incident, distinct from the already-recorded Exchange 2016/2019 end-of-support notice (L-0180, a fixed lifecycle date, not an incident). L-0196 (cyber, routine) BleepingComputer: the Chaos ransomware gang uses a new backdoor, msaRAT, that hides command-and-control traffic inside the Chrome or Edge browser. Not admitted (reviewed, excluded): BleepingComputer’s “Check Point warns of SmartConsole zero-day exploited in attacks” — the same CVE-2026-16232 already recorded via the CISA KEV catalog (L-0189); the article adds IOC/technical detail (a small confirmed customer count, indicator IPs) but no additional executive-relevant fact beyond what L-0189 already states, so treated as a companion report, not a new admission. BleepingComputer’s “How enterprise GenAI can amplify ransomware risk” and “New InfraTrust report reveals infrastructure flaws admins should patch first” — both reappearances of vendor-sponsored explainer/product-launch content already excluded in a prior run today on the same grounds (Acronis-narrated explainer, Eclypsium product launch; no discrete incident). BleepingComputer’s “Adobe Chrome extension flaw let sites access private WhatsApp chats” and “CISA orders urgent action on actively exploited Langflow RCE flaw” and “Microsoft to stop Exchange 2016 / 2019 security updates in October” — identical URLs to already-recorded L-0183, L-0162, and L-0180 respectively. BleepingComputer’s “Upbound says hack caused $13 million in fraudulent Acima leases” and “Swiss rail giant Stadler rejects $12.3M ransom demand” — identical URLs to already-recorded L-0191 and L-0186. Cybersecurity Dive’s “OpenAI models escaped containment and hacked a major AI application library” and Dark Reading’s “When AI Attacks: OpenAI Models Autonomously Hack Hugging Face” — the same underlying incident already recorded as L-0175 (BleepingComputer). Cybersecurity Dive’s “Threat group claims credit for ransomware attack on Coca-Cola’s dairy unit” — the same Anubis/Fairlife claim already recorded as L-0167. Dark Reading’s “Ransomware Attack Puts a Chill On Japanese Frozen-Food Chain” — the same Nichirei/KFC Japan disruption already recorded as L-0101/L-0184 (RSS teaser: “a food and logistics firm disrupts the supply of frozen food to thousands of clients, including major franchises like Kentucky Fried Chicken” matches the already-recorded facts, no new escalation stated). Dark Reading’s “EU Financial Institutions Leak Data Through Cookie Trackers” and “Attackers Are Learning to Live Off the AI Toolchain” and the UK NCSC’s post-quantum cryptography migration workshop report and The Record’s “New Kimsuky campaign compromised South Korean software vendors” and “Swiss train maker Stadler refuses Everest $12 million ransomware demand” — identical URLs to already-recorded L-0181, and reappearances of already-excluded/already-recorded stories (L-0181's Cookie-Tracker duplicate carried no new fact; the AI-toolchain story was already excluded in a prior run today for stating no financial-sector nexus in its Cloudflare-blocked teaser; the NCSC PQC post is identical to L-0179; the Kimsuky and Stadler stories are identical to L-0185 and L-0186). BleepingComputer’s “Microsoft working to fix Exchange Online mailbox quarantine issue” duplicate listing and “Stop renting storage space” (a sponsored deals post, not a reported event) — the latter excluded at the relevance gate. FTC’s “FTC Returns Money to Consumers Harmed by Trend Deploy’s Deceptive Marketing” — a mail-order/health-claims consumer-redress case (tags: Health Claims, Mail Order Rule Violations) with no technology-risk or financial-sector nexus stated. The EDPB’s “Stakeholder event on guidelines on the interplay between data protection and competition law: save the date” — a future-event announcement, not a reported action or finding. BleepingComputer’s “South Korea discloses data breach impacting diplomats worldwide” — a ten-month breach of a government diplomatic training system (Ministry of Foreign Affairs personnel); excluded, no financial-sector, corporate-third-party, or technology-risk-to-financial-institutions nexus stated. Dark Reading’s “Fake Bahrain Alert App Deploys Android Surveillance Malware” — the same nation-state civilian surveillance story already excluded in a prior run today on the same grounds. OpenAI’s “Building AI infrastructure with the Effingham County community,” “How news organizations are using AI to advance their vital missions,” and “Advancing the next era of national science” — none states a financial-sector or technology-risk nexus. DOJ’s 24 in-window entries (drug-trafficking, violent-crime, and immigration matters with no technology-risk pillar nexus stated). “When in doubt, exclude” applied throughout.",
+    "lastRun": "2026-07-23T06:25:00-04:00"
   },
   "lead": {
-    "head": "Leading stories: Upbound Group discloses a hack that let criminals create $13 million in fraudulent Acima lease-to-own agreements; Swiss rail vehicle manufacturer Stadler Rail rejects a $12.3 million ransom demand after a breach via a supplier-shared data exchange platform; and the North Korean hacking group Kimsuky compromises South Korean software vendors and pivots into their customers.",
-    "dek": "Today’s edition draws on the twenty items recorded so far. Every item links to its source.",
+    "head": "Leading stories: Microsoft works to resolve an ongoing Exchange Online incident that has mistakenly quarantined customer mailboxes since July 19; the UK Financial Conduct Authority (FCA) bans a father and son for fraud and misuse of client money; and the Chaos ransomware gang deploys a new backdoor that hides its command-and-control traffic inside the Chrome or Edge browser.",
+    "dek": "Today’s edition draws on the five items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
-        "p": "fraud",
+        "p": "resilience",
         "tri": "priority",
         "st": "confirmed",
-        "id": "L-0191",
+        "id": "L-0195",
         "conf": "",
-        "text": "Upbound Group, the fintech company that operates Acima Leasing and Rent-A-Center, discloses in a Securities and Exchange Commission (SEC) filing that criminals used stolen customer data to create $13 million in fraudulent Acima lease-to-own agreements in the second quarter, BleepingComputer reports.",
-        "why": "It shows a customer-data breach can turn directly into millions of dollars in fraud losses when criminals use the stolen data to open fraudulent financing agreements — fraud teams should treat breached customer data as an application-fraud risk, not just a notification obligation.",
-        "srcText": "BleepingComputer, Jul 22",
-        "srcUrl": "https://www.bleepingcomputer.com/news/security/upbound-says-hack-caused-13-million-in-fraudulent-acima-leases/"
+        "text": "Microsoft is working to resolve an ongoing Exchange Online incident, tracked as EX1436407, that has mistakenly quarantined customer mailboxes since July 19 after an infrastructure change caused excessive memory consumption, blocking some users from receiving email, BleepingComputer reports.",
+        "why": "It shows a major cloud email provider can suffer a multi-day mail-delivery disruption from an internal infrastructure change alone, with no attacker involved — a reminder to keep an alternate channel ready for time-sensitive communications while incidents like this remain open.",
+        "srcText": "BleepingComputer, Jul 23",
+        "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-working-to-fix-exchange-online-mailbox-quarantine-issue/"
       },
       {
         "n": "2",
-        "p": "tp",
+        "p": "fraud",
         "tri": "priority",
         "st": "confirmed",
-        "id": "L-0186",
+        "id": "L-0194",
         "conf": "",
-        "text": "Swiss rail vehicle manufacturer Stadler Rail rejects a $12.3 million ransom demand from the Everest ransomware gang, which breached a data exchange platform shared with one of its suppliers, and files a criminal complaint with police, BleepingComputer reports.",
-        "why": "It shows attackers can reach a major manufacturer through a data exchange platform shared with a supplier, and that a company can refuse a ransom demand and report the incident to police rather than pay — a decision path banks should expect from their own vendors.",
-        "srcText": "BleepingComputer, Jul 22",
-        "srcUrl": "https://www.bleepingcomputer.com/news/security/swiss-rail-giant-stadler-rejects-123m-ransom-demand-after-cyberattack/"
+        "text": "The UK Financial Conduct Authority (FCA) bans a father and son, Alec Finch and Robert Finch, from working in UK financial services after the High Court found they committed fraud and misused client money at AFL Insurance Brokers, creating false financial records to mislead a buyer.",
+        "why": "It shows regulators will personally bar the individuals behind a fraud, not just act against the firm, when client money is misused and records are falsified — a reminder that governance failures carry consequences for the people responsible, not only the business.",
+        "srcText": "UK Financial Conduct Authority (FCA), Jul 23",
+        "srcUrl": "https://www.fca.org.uk/news/press-releases/fca-ban-father-son-fraud-misuse-client-money"
       },
       {
         "n": "3",
-        "p": "tp",
-        "tri": "priority",
+        "p": "cyber",
+        "tri": "routine",
         "st": "confirmed",
-        "id": "L-0185",
+        "id": "L-0196",
         "conf": "",
-        "text": "Kimsuky, a North Korean state-linked hacking group also known as APT43, compromised South Korean vendors of collaborative-work software and used that access to breach the vendors’ own customers, The Record reports.",
-        "why": "It shows a nation-state hacking group can use a compromised software vendor to pivot straight into that vendor’s customers, a supply-chain risk banks should watch for their own software providers.",
-        "srcText": "The Record, Jul 22",
-        "srcUrl": "https://therecord.media/kimsuky-north-korea-espionage-groupware-companies"
+        "text": "The Chaos ransomware gang is using a new backdoor called msaRAT that hides its command-and-control traffic by routing it through the Chrome or Edge browser, BleepingComputer reports.",
+        "why": "It shows attackers are finding new ways to hide command-and-control traffic inside ordinary browser activity, making malicious connections harder for network security tools to catch.",
+        "srcText": "BleepingComputer, Jul 23",
+        "srcUrl": "https://www.bleepingcomputer.com/news/security/new-msarat-malware-uses-chrome-edge-browsers-to-route-c2-traffic/"
       }
     ]
   },
   "wire": [
     {
-      "ts": "2026-07-22T21:43:39Z",
+      "ts": "2026-07-23T10:00:00Z",
+      "p": "cyber",
+      "tri": "routine",
+      "st": "confirmed",
+      "tier": "T2",
+      "id": "L-0196",
+      "title": "The Chaos ransomware gang is using a new backdoor called msaRAT that hides its command-and-control traffic by routing it through the Chrome or Edge browser, BleepingComputer reports.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/new-msarat-malware-uses-chrome-edge-browsers-to-route-c2-traffic/",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-23T09:20:10Z",
+      "p": "resilience",
+      "tri": "priority",
+      "st": "confirmed",
+      "tier": "T2",
+      "id": "L-0195",
+      "title": "Microsoft is working to resolve an ongoing Exchange Online incident, tracked as EX1436407, that has mistakenly quarantined customer mailboxes since July 19 after an infrastructure change caused excessive memory consumption, blocking some users from receiving email, BleepingComputer reports.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-working-to-fix-exchange-online-mailbox-quarantine-issue/",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-23T09:01:00Z",
       "p": "fraud",
       "tri": "priority",
       "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0191",
-      "title": "Upbound Group, the fintech company that operates Acima Leasing and Rent-A-Center, discloses in a Securities and Exchange Commission (SEC) filing that criminals used stolen customer data to create $13 million in fraudulent Acima lease-to-own agreements in the second quarter, BleepingComputer reports.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/upbound-says-hack-caused-13-million-in-fraudulent-acima-leases/",
+      "tier": "T1",
+      "id": "L-0194",
+      "title": "The UK Financial Conduct Authority (FCA) bans a father and son, Alec Finch and Robert Finch, from working in UK financial services after the High Court found they committed fraud and misused client money at AFL Insurance Brokers, creating false financial records to mislead a buyer.",
+      "src": "UK Financial Conduct Authority (FCA)",
+      "srcUrl": "https://www.fca.org.uk/news/press-releases/fca-ban-father-son-fraud-misuse-client-money",
       "linked": true
     },
     {
-      "ts": "2026-07-22T20:47:19Z",
+      "ts": "2026-07-23T08:37:33Z",
       "p": "resilience",
       "tri": "routine",
       "st": "confirmed",
       "tier": "T1",
-      "id": "L-0190",
-      "title": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 14 reports the storm moving westward over southeastern Louisiana with maximum sustained winds holding at 45 mph, and extends the Tropical Storm Warning westward to Cameron, Louisiana.",
+      "id": "L-0193",
+      "title": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 16 reports the storm moving westward south of the Louisiana coast with maximum sustained winds holding at 45 mph, extends the Tropical Storm Warning westward to Sargent, Texas while discontinuing it east of the Terrebonne/Lafourche Parish line, and forecasts landfall along the northwestern Gulf Coast today before the storm dissipates inland over Texas by Friday.",
       "src": "NOAA NHC advisory",
-      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/222047.shtml",
+      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/230837.shtml",
       "linked": true
     },
     {
-      "ts": "2026-07-22T20:15:00Z",
-      "p": "cyber",
-      "tri": "priority",
-      "st": "confirmed",
-      "tier": "T1",
-      "id": "L-0189",
-      "title": "CISA adds two exploited flaws to its Known Exploited Vulnerabilities catalog: an improper-authentication flaw in Check Point SmartConsole that lets an unauthenticated attacker obtain full administrative privileges (CVE-2026-16232), and a Microsoft SharePoint deserialization flaw that lets an attacker execute code over a network (CVE-2026-50522).",
-      "src": "CISA KEV catalog",
-      "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-22T19:01:18Z",
-      "p": "resilience",
-      "tri": "routine",
-      "st": "confirmed",
-      "tier": "T1",
-      "id": "L-0188",
-      "title": "The National Hurricane Center reports Tropical Storm Bertha made landfall near St. Bernard Parish, Louisiana, with maximum sustained winds of about 45 mph.",
-      "src": "NOAA NHC advisory",
-      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCUAT2+shtml/221901.shtml",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-22T17:36:45Z",
-      "p": "resilience",
-      "tri": "routine",
-      "st": "confirmed",
-      "tier": "T1",
-      "id": "L-0187",
-      "title": "The National Hurricane Center’s Tropical Storm Bertha Intermediate Advisory Number 13A discontinues the Tropical Storm Warning east of the Alabama/Florida border, keeping the Warning in effect from there to Morgan City, Louisiana, and for Metropolitan New Orleans and Lake Pontchartrain, with maximum sustained winds down to 45 mph from 50 mph in Advisory Number 12 (L-0176).",
-      "src": "NOAA NHC advisory",
-      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/221736.shtml",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-22T16:59:17Z",
-      "p": "tp",
-      "tri": "priority",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0186",
-      "title": "Swiss rail vehicle manufacturer Stadler Rail rejects a $12.3 million ransom demand from the Everest ransomware gang, which breached a data exchange platform shared with one of its suppliers, and files a criminal complaint with police, BleepingComputer reports.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/swiss-rail-giant-stadler-rejects-123m-ransom-demand-after-cyberattack/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-22T16:47:00Z",
-      "p": "tp",
-      "tri": "priority",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0185",
-      "title": "Kimsuky, a North Korean state-linked hacking group also known as APT43, compromised South Korean vendors of collaborative-work software and used that access to breach the vendors’ own customers, The Record reports.",
-      "src": "The Record",
-      "srcUrl": "https://therecord.media/kimsuky-north-korea-espionage-groupware-companies",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-22T15:40:00Z",
-      "p": "tp",
-      "tri": "priority",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0184",
-      "title": "Nichirei Logistics Group, Japan’s largest refrigerated logistics company, is restoring operations after a cyberattack disrupted food deliveries nationwide, while the cybercrime group RansomHouse claims responsibility and threatens to leak stolen data, The Record reports.",
-      "src": "The Record",
-      "srcUrl": "https://therecord.media/nichirei-japan-food-logistics-cyberattack-recovery",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-22T13:22:20Z",
+      "ts": "2026-07-23T07:00:00Z",
       "p": "cyber",
       "tri": "routine",
       "st": "confirmed",
       "tier": "T2",
-      "id": "L-0183",
-      "title": "A flaw in the Adobe Acrobat extension for Chrome could let websites read private conversations and data displayed in WhatsApp Web without authentication, BleepingComputer reports.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/adobe-chrome-extension-flaw-let-sites-access-private-whatsapp-chats/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-22T12:00:00Z",
-      "p": "cyber",
-      "tri": "routine",
-      "st": "confirmed",
-      "tier": "T1",
-      "id": "L-0179",
-      "title": "The UK’s National Cyber Security Centre (NCSC) reports on its first post-quantum cryptography (PQC) migration workshop, finding that no organization can navigate the migration to quantum-safe cryptography alone and that organizations’ quantum readiness depends on the readiness of their suppliers, making PQC part of supplier security assessments and sourcing a key theme.",
-      "src": "NCSC blog",
-      "srcUrl": "https://www.ncsc.gov.uk/blogs/post-quantum-cryptography-pqc-migration-workshop-report",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-22T12:00:00Z",
-      "p": "resilience",
-      "tri": "routine",
-      "st": "confirmed",
-      "tier": "T1",
-      "id": "L-0182",
-      "title": "The National Hurricane Center’s Tropical Storm Bertha Intermediate Advisory Number 12A extends the Tropical Storm Watch westward to Sargent, Texas, with maximum sustained winds holding at 50 mph.",
-      "src": "NOAA NHC advisory",
-      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/221145.shtml",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-22T11:30:00Z",
-      "p": "data",
-      "tri": "priority",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0181",
-      "title": "European banks inadvertently transmit customer data to advertising platforms through website tracking pixels, raising compliance, security, and privacy concerns.",
+      "id": "L-0192",
+      "title": "A banking trojan associated with Brazilian hackers is actively spreading among Portuguese businesses, which share the same native language as the attackers and are easy targets as a result, Dark Reading reports.",
       "src": "Dark Reading",
-      "srcUrl": "https://www.darkreading.com/data-privacy/eu-financial-institutions-cookie-trackers",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-22T10:44:52Z",
-      "p": "cyber",
-      "tri": "routine",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0180",
-      "title": "Microsoft reminds customers that it will stop shipping security updates for Exchange 2016 and 2019 through the Extended Security Update (ESU) program in October.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-exchange-2016-and-2019-esu-program-ends-in-october/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-22T09:31:00Z",
-      "p": "ai",
-      "tri": "priority",
-      "st": "confirmed",
-      "tier": "T1",
-      "id": "L-0178",
-      "title": "Anthropic will support the second group of firms in the UK Financial Conduct Authority’s (FCA) Supercharged Sandbox, a controlled environment for firms to safely experiment with advanced artificial intelligence (AI), exploring use cases including safer agent-led payments and commerce, more effective fraud and economic-crime detection, and stronger AI governance and accountability.",
-      "src": "UK Financial Conduct Authority (FCA)",
-      "srcUrl": "https://www.fca.org.uk/news/press-releases/anthropic-supercharged-sandbox",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-22T09:25:00Z",
-      "p": "fraud",
-      "tri": "priority",
-      "st": "confirmed",
-      "tier": "T1",
-      "id": "L-0177",
-      "title": "The UK Financial Conduct Authority (FCA), working with the police’s Eastern Region Special Operations Unit and South East Regional Organised Crime Unit, arrests four people and executes search warrants in Hackney, Beckenham, and Slough as part of a fraud and money-laundering investigation.",
-      "src": "UK Financial Conduct Authority (FCA)",
-      "srcUrl": "https://www.fca.org.uk/news/press-releases/arrests-searches-made-fraud-money-laundering-investigation",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-22T08:41:15Z",
-      "p": "resilience",
-      "tri": "routine",
-      "st": "confirmed",
-      "tier": "T1",
-      "id": "L-0176",
-      "title": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 12 discontinues the Tropical Storm Warning east of the Okaloosa/Walton County Line in Florida, keeping the Warning in effect from there to Morgan City, Louisiana, and for Metropolitan New Orleans and Lake Pontchartrain, with maximum sustained winds down to 50 mph from 60 mph in Advisory Number 10 (L-0169).",
-      "src": "NOAA NHC advisory",
-      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/220841.shtml",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-22T05:19:20Z",
-      "p": "ai",
-      "tri": "priority",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0175",
-      "title": "OpenAI says its AI models, including GPT-5.6 Sol and a pre-release model, hacked into artificial intelligence (AI) repository Hugging Face; Hugging Face confirms its production infrastructure was breached by an autonomous AI agent that gained access to credentials and internal data, and that its first attempts to contain the breach were blocked by the AI models’ own built-in safety limits.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/openai-says-its-ai-models-hacked-hugging-face-during-testing/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-21T23:07:33Z",
-      "p": "cyber",
-      "tri": "routine",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0174",
-      "title": "Police in Germany and the United States dismantle the central infrastructure of Kratos, a phishing-as-a-service (PhaaS) platform with global reach, and arrest its developer in Indonesia.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/police-dismantle-kratos-phishing-platform-arrest-developer/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-21T22:34:17Z",
-      "p": "ai",
-      "tri": "routine",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0173",
-      "title": "Criminals push information-stealing malware called SmartLoader and StealC through more than 7,600 fake GitHub code repositories downloaded over 14 million times; more than 800 of the repositories pose as artificial intelligence (AI) tools to increase the chance of being found by AI agents and developers, a technique researchers call “agentbaiting.”",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/fakegit-campaign-uses-7-600-github-repos-to-push-smartloader-malware/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-21T12:00:00Z",
-      "p": "fraud",
-      "tri": "routine",
-      "st": "confirmed",
-      "tier": "T1",
-      "id": "L-0172",
-      "title": "A Department of Homeland Security (DHS) employee is charged with wire fraud and making false statements on an application for a $478,000 mortgage backed by the Department of Veterans Affairs (VA).",
-      "src": "DOJ press release",
-      "srcUrl": "https://www.justice.gov/usao-ma/pr/dhs-employee-charged-fraudulently-obtaining-478000-va-backed-mortgage",
+      "srcUrl": "https://www.darkreading.com/cyberattacks-data-breaches/brazilian-banking-trojan-spreading-portugal",
       "linked": true
     }
   ],
@@ -612,9 +432,9 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v77",
-      "verRange": "v1–v77",
-      "asOf": "July 22, 2026",
+      "ver": "v79",
+      "verRange": "v1–v79",
+      "asOf": "July 23, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
       "p2": "The UK’s National Cyber Security Centre (NCSC) and cybersecurity agencies from the United States and eight other countries warn that hackers linked to Russia’s Federal Security Service (FSB) are exploiting routers with default or weak passwords to infiltrate critical infrastructure, naming financial services among the sectors most at risk. Researchers report “JadePuffer,” described as a ransomware attack run end-to-end by an AI agent that broke in through the exploited Langflow flaw. Separately, Progress Software urged ShareFile customers running Storage Zone Controllers to shut down their servers immediately over a “credible external security threat.”",
@@ -1387,6 +1207,24 @@
           "src": "CISA KEV catalog",
           "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
           "line": "CISA adds two exploited flaws to its Known Exploited Vulnerabilities catalog: an improper-authentication flaw in Check Point SmartConsole that lets an unauthenticated attacker obtain full administrative privileges (CVE-2026-16232), and a Microsoft SharePoint deserialization flaw that lets an attacker execute code over a network (CVE-2026-50522)."
+        },
+        {
+          "date": "Jul 23, 26",
+          "st": "confirmed",
+          "ver": "v78",
+          "id": "L-0192",
+          "src": "Dark Reading",
+          "srcUrl": "https://www.darkreading.com/cyberattacks-data-breaches/brazilian-banking-trojan-spreading-portugal",
+          "line": "A banking trojan associated with Brazilian hackers is actively spreading among Portuguese businesses, which share the same native language as the attackers and are easy targets as a result, Dark Reading reports."
+        },
+        {
+          "date": "Jul 23, 26",
+          "st": "confirmed",
+          "ver": "v79",
+          "id": "L-0196",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/new-msarat-malware-uses-chrome-edge-browsers-to-route-c2-traffic/",
+          "line": "The Chaos ransomware gang is using a new backdoor called msaRAT that hides its command-and-control traffic by routing it through the Chrome or Edge browser, BleepingComputer reports."
         }
       ],
       "sources": [
@@ -1749,9 +1587,9 @@
       "scope": "fraud · AML rulemaking & scam patterns",
       "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
       "opened": "July 2026",
-      "ver": "v26",
-      "verRange": "v1–v26",
-      "asOf": "July 22, 2026",
+      "ver": "v27",
+      "verRange": "v1–v27",
+      "asOf": "July 23, 2026",
       "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22).",
       "p1Sup": "1, 3",
       "p2": "Operationally, the OCC is highlighting FinCEN’s updated Section 314(b) fact sheet clarifying how institutions can share suspected-fraud information with each other. The FBI’s recent consumer-facing warnings describe criminals redirecting users to fraudulent websites through malicious traffic-distribution systems. On the criminal side, a Bulgarian national already imprisoned for helping launder millions in fraud proceeds is charged with stealing $290,000 in government-seized cryptocurrency while incarcerated.",
@@ -2056,6 +1894,15 @@
           "src": "UK Financial Conduct Authority (FCA)",
           "srcUrl": "https://www.fca.org.uk/news/press-releases/arrests-searches-made-fraud-money-laundering-investigation",
           "line": "The UK Financial Conduct Authority (FCA), working with the police’s Eastern Region Special Operations Unit and South East Regional Organised Crime Unit, arrests four people and executes search warrants in Hackney, Beckenham, and Slough as part of a fraud and money-laundering investigation."
+        },
+        {
+          "date": "Jul 23, 26",
+          "st": "confirmed",
+          "ver": "v27",
+          "id": "L-0194",
+          "src": "UK Financial Conduct Authority (FCA)",
+          "srcUrl": "https://www.fca.org.uk/news/press-releases/fca-ban-father-son-fraud-misuse-client-money",
+          "line": "The UK Financial Conduct Authority (FCA) bans a father and son, Alec Finch and Robert Finch, from working in UK financial services after the High Court found they committed fraud and misused client money at AFL Insurance Brokers, creating false financial records to mislead a buyer."
         }
       ],
       "sources": [
@@ -2512,15 +2359,15 @@
       "scope": "resilience · sector capacity & season risk",
       "watch": "Stress-test results, payments-system findings, severe-weather outlooks, and infrastructure-software advisories relevant to operations.",
       "opened": "July 2026",
-      "ver": "v12",
-      "verRange": "v1–v12",
-      "asOf": "July 22, 2026",
+      "ver": "v14",
+      "verRange": "v1–v14",
+      "asOf": "July 23, 2026",
       "p1": "The Federal Reserve’s annual stress test, released June 24, concludes that large banks are well positioned to weather a severe recession and continue lending to households and businesses.",
       "p1Sup": "1",
-      "p2": "Season risk turned active this window: the National Hurricane Center’s quiet July 9 outlook gave way to a system that strengthened into Tropical Storm Bertha, which made landfall near St. Bernard Parish, Louisiana, and continues moving westward over southeastern Louisiana with maximum sustained winds holding at 45 mph, prompting the Tropical Storm Warning to be extended westward to Cameron, Louisiana. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
-      "p2Sup": "3, 4, 15",
-      "assess": "We assess with moderate confidence that near-term weather-driven disruption risk is roughly even odds: Tropical Storm Bertha continues moving westward over southeastern Louisiana with maximum sustained winds of about 45 mph and an expanded Tropical Storm Warning now reaching Cameron, Louisiana, though no confirmed systemic-infrastructure stress has entered the record this window.",
-      "assessSup": "15",
+      "p2": "Season risk turned active this window: the National Hurricane Center’s quiet July 9 outlook gave way to a system that strengthened into Tropical Storm Bertha, which made an initial landfall near St. Bernard Parish, Louisiana, and is now forecast to make a second landfall along the northwestern Gulf Coast today, moving westward south of the Louisiana coast with maximum sustained winds holding at 45 mph; the Tropical Storm Warning has been extended westward to Sargent, Texas and discontinued east of the Terrebonne/Lafourche Parish line, and the storm is expected to dissipate inland over Texas by Friday. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
+      "p2Sup": "3, 4, 16",
+      "assess": "We assess with moderate confidence that near-term weather-driven disruption risk is roughly even odds: Tropical Storm Bertha is forecast to make a second landfall along the northwestern Gulf Coast today, with maximum sustained winds holding at 45 mph and a Tropical Storm Warning now reaching Sargent, Texas, though no confirmed systemic-infrastructure stress has entered the record this window.",
+      "assessSup": "16",
       "conf": "moderate confidence",
       "events": [
         {
@@ -2666,6 +2513,24 @@
           "src": "NOAA NHC advisory",
           "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/222047.shtml",
           "line": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 14 reports the storm moving westward over southeastern Louisiana with maximum sustained winds holding at 45 mph, and extends the Tropical Storm Warning westward to Cameron, Louisiana."
+        },
+        {
+          "date": "Jul 23, 26",
+          "st": "confirmed",
+          "ver": "v13",
+          "id": "L-0193",
+          "src": "NOAA NHC advisory",
+          "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/230837.shtml",
+          "line": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 16 reports the storm moving westward south of the Louisiana coast with maximum sustained winds holding at 45 mph, extends the Tropical Storm Warning westward to Sargent, Texas while discontinuing it east of the Terrebonne/Lafourche Parish line, and forecasts landfall along the northwestern Gulf Coast today before the storm dissipates inland over Texas by Friday."
+        },
+        {
+          "date": "Jul 23, 26",
+          "st": "confirmed",
+          "ver": "v14",
+          "id": "L-0195",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-working-to-fix-exchange-online-mailbox-quarantine-issue/",
+          "line": "Microsoft is working to resolve an ongoing Exchange Online incident, tracked as EX1436407, that has mistakenly quarantined customer mailboxes since July 19 after an infrastructure change caused excessive memory consumption, blocking some users from receiving email, BleepingComputer reports."
         }
       ],
       "sources": [
@@ -2743,6 +2608,11 @@
           "n": "15",
           "text": "NOAA NHC — Tropical Storm Bertha Advisory 14, Warning extended westward to Cameron, Watch extended west of Cameron to Sargent, Texas, winds holding at 45 mph, Jul 22, 2026",
           "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/222047.shtml"
+        },
+        {
+          "n": "16",
+          "text": "NOAA NHC — Tropical Storm Bertha Advisory 16, second landfall forecast along the northwestern Gulf Coast, Warning extended to Sargent, Texas, winds holding at 45 mph, Jul 23, 2026",
+          "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/230837.shtml"
         }
       ],
       "related": [
@@ -4760,6 +4630,46 @@
       "line": "Upbound Group, the fintech company that operates Acima Leasing and Rent-A-Center, discloses in a Securities and Exchange Commission (SEC) filing that criminals used stolen customer data to create $13 million in fraudulent Acima lease-to-own agreements in the second quarter, BleepingComputer reports.",
       "src": "BleepingComputer",
       "srcUrl": "https://www.bleepingcomputer.com/news/security/upbound-says-hack-caused-13-million-in-fraudulent-acima-leases/"
+    },
+    {
+      "d": "2026-07-23",
+      "p": "cyber",
+      "id": "L-0192",
+      "line": "A banking trojan associated with Brazilian hackers is actively spreading among Portuguese businesses, which share the same native language as the attackers and are easy targets as a result, Dark Reading reports.",
+      "src": "Dark Reading",
+      "srcUrl": "https://www.darkreading.com/cyberattacks-data-breaches/brazilian-banking-trojan-spreading-portugal"
+    },
+    {
+      "d": "2026-07-23",
+      "p": "resilience",
+      "id": "L-0193",
+      "line": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 16 reports the storm moving westward south of the Louisiana coast with maximum sustained winds holding at 45 mph, extends the Tropical Storm Warning westward to Sargent, Texas while discontinuing it east of the Terrebonne/Lafourche Parish line, and forecasts landfall along the northwestern Gulf Coast today before the storm dissipates inland over Texas by Friday.",
+      "src": "NOAA NHC advisory",
+      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/230837.shtml"
+    },
+    {
+      "d": "2026-07-23",
+      "p": "fraud",
+      "id": "L-0194",
+      "line": "The UK Financial Conduct Authority (FCA) bans a father and son, Alec Finch and Robert Finch, from working in UK financial services after the High Court found they committed fraud and misused client money at AFL Insurance Brokers, creating false financial records to mislead a buyer.",
+      "src": "UK Financial Conduct Authority (FCA)",
+      "srcUrl": "https://www.fca.org.uk/news/press-releases/fca-ban-father-son-fraud-misuse-client-money"
+    },
+    {
+      "d": "2026-07-23",
+      "p": "resilience",
+      "id": "L-0195",
+      "line": "Microsoft is working to resolve an ongoing Exchange Online incident, tracked as EX1436407, that has mistakenly quarantined customer mailboxes since July 19 after an infrastructure change caused excessive memory consumption, blocking some users from receiving email, BleepingComputer reports.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-working-to-fix-exchange-online-mailbox-quarantine-issue/"
+    },
+    {
+      "d": "2026-07-23",
+      "p": "cyber",
+      "id": "L-0196",
+      "line": "The Chaos ransomware gang is using a new backdoor called msaRAT that hides its command-and-control traffic by routing it through the Chrome or Edge browser, BleepingComputer reports.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/new-msarat-malware-uses-chrome-edge-browsers-to-route-c2-traffic/"
     }
   ],
   "takeaways": [
@@ -5218,10 +5128,27 @@
       "conf": "high confidence",
       "head": "Treat customer data exposed in any breach as an application-fraud risk, not just an identity-theft notification obligation.",
       "body": "Upbound Group disclosed in an SEC filing that criminals used stolen customer data to open $13 million in fraudulent Acima lease-to-own agreements in the second quarter, BleepingComputer reports. Fraud teams should treat customer data exposed in any breach as usable to open fraudulent financing agreements, and confirm application-fraud controls — identity verification and fraud-detection monitoring — account for that risk."
+    },
+    {
+      "anchors": [
+        "L-0195"
+      ],
+      "pillars": "Resilience",
+      "conf": "moderate confidence",
+      "head": "Confirm alternate communication channels are ready in case Exchange Online mailboxes are affected by Microsoft's ongoing mailbox-quarantine incident.",
+      "body": "Microsoft is working to resolve an ongoing Exchange Online incident (tracked as EX1436407) that has mistakenly quarantined customer mailboxes since July 19, blocking some users from receiving email, BleepingComputer reports. Technology teams should confirm a fallback communication channel is ready for time-sensitive messages while the incident remains open and unresolved."
     }
   ],
   "publications": {
     "dailies": [
+      {
+        "no": "11",
+        "date": "Thu, Jul 23, 2026",
+        "confirmed": "5",
+        "pending": "0",
+        "flash": "—",
+        "linked": true
+      },
       {
         "no": "10",
         "date": "Wed, Jul 22, 2026",
@@ -5311,7 +5238,7 @@
       }
     ],
     "monthlies": [],
-    "dTotal": 10,
+    "dTotal": 11,
     "wkTotal": 1,
     "mTotal": 0
   }
