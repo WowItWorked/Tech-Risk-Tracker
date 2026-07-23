@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-23T08:14:00-04:00",
+    "generatedAt": "2026-07-23T11:12:00-04:00",
     "issueNo": 11,
-    "recordHash": "b23b157",
+    "recordHash": "f886b80",
     "windowLabel": "June 9 – July 23, 2026",
     "nextWeekly": "Fri, Jul 24",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (06:25 ET), so candidates are items published since ≈04:25 ET / 08:25 UTC. Seventeen raw candidates survived the window filter, across four feeds with window activity: NOAA NHC (10 — the Tropical Storm Bertha Intermediate Advisory Number 16A cycle’s Forecast Advisory, Forecast Discussion, Wind Speed Probabilities, Summary, Graphics, and three Local Statement products, plus the routine Atlantic Tropical Weather Outlook), BleepingComputer (3), Dark Reading (1), the FCA (2), and the EDPB (1). One item was admitted: **L-0197** (cyber, routine) BleepingComputer: Qualys’s Threat Research Unit discloses RefluXFS (CVE-2026-64600), a nine-year-old race-condition flaw in the Linux kernel’s XFS filesystem that lets a local attacker gain root privileges, with vendor-fixed kernels already available. Not admitted (reviewed, excluded): Dark Reading’s “Agentic AI Challenges Progress in Confidential Computing” — the article page returned a Cloudflare challenge, and the RSS teaser is a general confidential-computing trend piece with no financial-sector nexus or discrete incident stated. The FCA’s “Managing conflicts of interest in insurance” — a supervisory blog post on insurance business-model conflicts of interest, with no technology-risk pillar nexus stated. The EDPB’s “Stakeholder event on guidelines on the interplay between data protection and competition law: save the date” — a reappearance of the same future-event announcement already excluded in this morning’s day-opening run. Tropical Storm Bertha’s Intermediate Advisory Number 16A states “CHANGES WITH THIS ADVISORY: None” against the already-recorded Advisory Number 16 (L-0193), so it and its companion products (Forecast Advisory 16, Forecast Discussion 16, Wind Speed Probabilities 16, the Summary, Graphics, three Local Statements, and the routine Atlantic Tropical Weather Outlook, which still shows no new system expected) were not separately admitted, consistent with the standing Bertha-advisory practice that a new fact requires a stated change.",
-    "lastRun": "2026-07-23T08:14:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (08:14 ET), so candidates are items published since ≈06:14 ET / 10:14 UTC. Thirty-two raw candidates survived the window filter, across nine feeds with window activity: DOJ (14 non-qualifying entries), NOAA NHC (7 — the Tropical Storm Bertha Advisory Number 17 cycle’s Public Advisory, Forecast Advisory, Forecast Discussion, Wind Speed Probabilities, Summary, and Graphics products), BleepingComputer (3), the ECB (3), the NCSC (1), the EBA (1), the EDPB (1), The Record (1), and Dark Reading (1). One item was admitted: **L-0198** (resilience, routine) NOAA NHC: Tropical Storm Bertha Advisory Number 17 discontinues the Tropical Storm Warning east of Morgan City, Louisiana, with the storm nearing the Texas coast. Not admitted (reviewed, excluded): DOJ’s 14 in-window entries (non-technology criminal matters with no financial-sector or technology-risk pillar nexus stated); the NCSC’s ‘LAUNDRY BEAR’ zero-click phishing advisory — the fetched article text names the sectors targeted (defence, government, education, energy, law enforcement, media, NGOs, and technology) and does not include financial services, so no financial-sector nexus is stated; the EBA’s “E-mail alert 23 July, 2026” — a newsletter-preview wrapper page with no discrete news content of its own; the ECB’s banknote-design survey launch and two monetary-policy-decision items — none states a technology-risk pillar nexus; The Record’s “Major Australian energy supplier confirms customer data compromised” — the excerpt states only that Origin Energy is investigating scope, with no financial-sector nexus; BleepingComputer’s “FedRAMP Rev5 Is Ending” — a vendor-narrated (Anecdotes) compliance explainer, not a discrete reported event, and “EU fines Google $1 billion for search, app store antitrust violations” — a Digital Markets Act competition-law fine with no technology-risk pillar nexus stated; BleepingComputer’s RefluXFS article (07:40 ET) — identical URL to the already-recorded L-0197; the EDPB’s “Stakeholder event on guidelines on the interplay between data protection and competition law: save the date” — the same future-event announcement already excluded in prior runs today; and Dark Reading’s “Agentic AI Challenges Progress in Confidential Computing” — the same Cloudflare-blocked, no-financial-nexus teaser already excluded in the 08:14 ET run. Not separately admitted (NOAA companion products for the Advisory Number 17 cycle — 6 items): the Summary, Forecast Advisory, Forecast Discussion, Wind Speed Probabilities, and Graphics products for Advisory 17 carry the same location/wind-speed/warning facts already captured by the admitted Public Advisory Number 17.",
+    "lastRun": "2026-07-23T11:12:00-04:00"
   },
   "lead": {
-    "head": "Leading stories: Microsoft works to resolve an ongoing Exchange Online incident that has mistakenly quarantined customer mailboxes since July 19; the UK Financial Conduct Authority (FCA) bans a father and son for fraud and misuse of client money; and a newly disclosed flaw in the Linux kernel’s XFS filesystem lets local attackers gain root privileges on widely used enterprise Linux systems.",
-    "dek": "Today’s edition draws on the six items recorded so far. Every item links to its source.",
+    "head": "Leading stories: Microsoft works to resolve an ongoing Exchange Online incident that has mistakenly quarantined customer mailboxes since July 19; the UK Financial Conduct Authority (FCA) bans a father and son for fraud and misuse of client money; and the National Hurricane Center narrows Tropical Storm Bertha’s warning area to the Texas coast as landfall nears there later today.",
+    "dek": "Today’s edition draws on the seven items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -41,19 +41,30 @@
       },
       {
         "n": "3",
-        "p": "cyber",
+        "p": "resilience",
         "tri": "routine",
         "st": "confirmed",
-        "id": "L-0197",
+        "id": "L-0198",
         "conf": "",
-        "text": "A newly disclosed flaw (CVE-2026-64600) in the Linux kernel’s XFS filesystem — a default configuration on major enterprise Linux distributions — lets a local attacker gain root privileges with changes that persist even after a reboot; vendor-fixed kernels are already available, BleepingComputer reports.",
-        "why": "It shows a nine-year-old flaw in widely used enterprise Linux systems can grant root access with changes that persist even after a reboot — a reminder that patch coverage needs to reach infrastructure components like the filesystem layer, not just applications.",
-        "srcText": "BleepingComputer, Jul 23",
-        "srcUrl": "https://www.bleepingcomputer.com/news/linux/new-refluxfs-linux-flaw-lets-attackers-gain-root-privileges/"
+        "text": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 17 discontinues the Tropical Storm Warning east of Morgan City, Louisiana, keeping the Warning in effect to Sargent, Texas, with the storm about 35 miles south of Lake Charles, Louisiana, maximum sustained winds holding at 45 mph, and landfall expected along the Texas coast later today.",
+        "why": "It shows Tropical Storm Bertha’s warning area narrowing to the Texas coast as landfall nears there later today — a cue for firms with Gulf Coast operations in the affected counties that today’s window is when local disruption is most likely.",
+        "srcText": "NOAA NHC advisory, Jul 23",
+        "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/231437.shtml"
       }
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-23T14:37:06Z",
+      "p": "resilience",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0198",
+      "title": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 17 discontinues the Tropical Storm Warning east of Morgan City, Louisiana, keeping the Warning in effect to Sargent, Texas, with the storm about 35 miles south of Lake Charles, Louisiana, maximum sustained winds holding at 45 mph, and landfall expected along the Texas coast later today.",
+      "src": "NOAA NHC advisory",
+      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/231437.shtml",
+      "linked": true
+    },
     {
       "ts": "2026-07-23T11:40:16Z",
       "p": "cyber",
@@ -2380,15 +2391,15 @@
       "scope": "resilience · sector capacity & season risk",
       "watch": "Stress-test results, payments-system findings, severe-weather outlooks, and infrastructure-software advisories relevant to operations.",
       "opened": "July 2026",
-      "ver": "v14",
-      "verRange": "v1–v14",
+      "ver": "v15",
+      "verRange": "v1–v15",
       "asOf": "July 23, 2026",
       "p1": "The Federal Reserve’s annual stress test, released June 24, concludes that large banks are well positioned to weather a severe recession and continue lending to households and businesses.",
       "p1Sup": "1",
-      "p2": "Season risk turned active this window: the National Hurricane Center’s quiet July 9 outlook gave way to a system that strengthened into Tropical Storm Bertha, which made an initial landfall near St. Bernard Parish, Louisiana, and is now forecast to make a second landfall along the northwestern Gulf Coast today, moving westward south of the Louisiana coast with maximum sustained winds holding at 45 mph; the Tropical Storm Warning has been extended westward to Sargent, Texas and discontinued east of the Terrebonne/Lafourche Parish line, and the storm is expected to dissipate inland over Texas by Friday. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
-      "p2Sup": "3, 4, 16",
-      "assess": "We assess with moderate confidence that near-term weather-driven disruption risk is roughly even odds: Tropical Storm Bertha is forecast to make a second landfall along the northwestern Gulf Coast today, with maximum sustained winds holding at 45 mph and a Tropical Storm Warning now reaching Sargent, Texas, though no confirmed systemic-infrastructure stress has entered the record this window.",
-      "assessSup": "16",
+      "p2": "Season risk turned active this window: the National Hurricane Center’s quiet July 9 outlook gave way to a system that strengthened into Tropical Storm Bertha, which made an initial landfall near St. Bernard Parish, Louisiana, and is now moving westward near the southwestern Louisiana coast with maximum sustained winds holding at 45 mph, about 35 miles south of Lake Charles, Louisiana; the Tropical Storm Warning has been extended westward to Sargent, Texas and discontinued east of Morgan City, Louisiana, with landfall expected along the Texas coast later today. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
+      "p2Sup": "3, 4, 17",
+      "assess": "We assess with moderate confidence that near-term weather-driven disruption risk is roughly even odds: Tropical Storm Bertha is forecast to reach the Texas coast later today, with maximum sustained winds holding at 45 mph and a Tropical Storm Warning now discontinued east of Morgan City, Louisiana, though no confirmed systemic-infrastructure stress has entered the record this window.",
+      "assessSup": "17",
       "conf": "moderate confidence",
       "events": [
         {
@@ -2552,6 +2563,15 @@
           "src": "BleepingComputer",
           "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-working-to-fix-exchange-online-mailbox-quarantine-issue/",
           "line": "Microsoft is working to resolve an ongoing Exchange Online incident, tracked as EX1436407, that has mistakenly quarantined customer mailboxes since July 19 after an infrastructure change caused excessive memory consumption, blocking some users from receiving email, BleepingComputer reports."
+        },
+        {
+          "date": "Jul 23, 26",
+          "st": "confirmed",
+          "ver": "v15",
+          "id": "L-0198",
+          "src": "NOAA NHC advisory",
+          "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/231437.shtml",
+          "line": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 17 discontinues the Tropical Storm Warning east of Morgan City, Louisiana, keeping the Warning in effect to Sargent, Texas, with the storm about 35 miles south of Lake Charles, Louisiana, maximum sustained winds holding at 45 mph, and landfall expected along the Texas coast later today."
         }
       ],
       "sources": [
@@ -2634,6 +2654,11 @@
           "n": "16",
           "text": "NOAA NHC — Tropical Storm Bertha Advisory 16, second landfall forecast along the northwestern Gulf Coast, Warning extended to Sargent, Texas, winds holding at 45 mph, Jul 23, 2026",
           "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/230837.shtml"
+        },
+        {
+          "n": "17",
+          "text": "NOAA NHC — Tropical Storm Bertha Advisory 17, Warning discontinued east of Morgan City, Louisiana; storm near Lake Charles, winds holding at 45 mph, Jul 23, 2026",
+          "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/231437.shtml"
         }
       ],
       "related": [
@@ -4699,6 +4724,14 @@
       "line": "A newly disclosed flaw (CVE-2026-64600) in the Linux kernel’s XFS filesystem — a default configuration on major enterprise Linux distributions — lets a local attacker gain root privileges with changes that persist even after a reboot; vendor-fixed kernels are already available, BleepingComputer reports.",
       "src": "BleepingComputer",
       "srcUrl": "https://www.bleepingcomputer.com/news/linux/new-refluxfs-linux-flaw-lets-attackers-gain-root-privileges/"
+    },
+    {
+      "d": "2026-07-23",
+      "p": "resilience",
+      "id": "L-0198",
+      "line": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 17 discontinues the Tropical Storm Warning east of Morgan City, Louisiana, keeping the Warning in effect to Sargent, Texas, with the storm about 35 miles south of Lake Charles, Louisiana, maximum sustained winds holding at 45 mph, and landfall expected along the Texas coast later today.",
+      "src": "NOAA NHC advisory",
+      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/231437.shtml"
     }
   ],
   "takeaways": [
@@ -5173,7 +5206,7 @@
       {
         "no": "11",
         "date": "Thu, Jul 23, 2026",
-        "confirmed": "6",
+        "confirmed": "7",
         "pending": "0",
         "flash": "—",
         "linked": true
