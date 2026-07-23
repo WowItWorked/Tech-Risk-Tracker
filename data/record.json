@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-23T14:15:00-04:00",
+    "generatedAt": "2026-07-23T17:03:33-04:00",
     "issueNo": 11,
-    "recordHash": "7e5725a",
+    "recordHash": "8cbc207",
     "windowLabel": "June 9 – July 23, 2026",
     "nextWeekly": "Fri, Jul 24",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (12:14 ET), so candidates are items published since ≈10:14 ET / 14:14 UTC. In-window activity across seven feeds: NOAA NHC (7 — Tropical Storm Bertha Intermediate Advisory Number 17A and its companion products; Advisory 17A’s own “CHANGES WITH THIS ADVISORY” field reads “None,” consistent with the standing Bertha-advisory practice that a new fact requires a stated change), the Bank of England (1, reappearance of the already-recorded L-0201 letter), the European Banking Authority (1, reappearance of an already-excluded newsletter-wrapper stub), the European Central Bank (1, reappearance of an already-excluded banknote-design story), The Record (2 — 1 admitted, 1 excluded), BleepingComputer (2 new + 1 reappearance of the already-recorded L-0200 outage), and Cybersecurity Dive (3, all reappearances of items already reviewed and excluded in the prior run). One item was admitted: **L-0202** (cyber, flash) The Record: federal cybersecurity agencies in the United States, the United Kingdom, Europe, Australia, and New Zealand warn that Russian state-backed hackers known as Laundry Bear are exploiting a Zimbra Collaboration Suite webmail flaw (CVE-2025-66376) in zero-click phishing attacks against government and commercial organizations across the West; Palo Alto Networks’ Unit 42 research, cited in the same article, names financial organizations among the targeted sectors — the stated basis for admission and for the flash triage (active exploitation + sector-wide impact), matching the precedent set by L-0055. Not admitted (reviewed, excluded): BleepingComputer’s “Russian hackers exploit Zimbra zero-click flaw for email theft” (12:49 ET) — the same underlying campaign, with no financial-sector nexus stated in that particular writeup (covered instead via The Record’s version, which alone states the nexus); BleepingComputer’s “Hackers abuse Notepad++ plugins to stealthily install malware” (12:32 ET) — a Ukraine CERT malware-distribution report naming no financial-sector nexus; The Record’s “State Department imposes visa restrictions on foreign cyber scammers” (12:29 ET) — a visa-policy action against transnational cyber-scam networks generally, with no financial-sector nexus stated.",
-    "lastRun": "2026-07-23T14:15:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (14:15 ET), so candidates are items published since ≈12:15 ET / 16:15 UTC. In-window activity across three feeds: NOAA NHC (7 — Tropical Storm Bertha Public Advisory Number 18 and its companion products; Advisory 18’s own “CHANGES WITH THIS ADVISORY” field states the Tropical Storm Warning east of the Vermilion/Cameron Parish Line has been discontinued, a stated change consistent with the standing Bertha-advisory admission practice), The Record (2, both reappearances — the already-recorded L-0202 Zimbra/Laundry Bear item and the already-excluded visa-restrictions item), and BleepingComputer (4 — 2 reappearances of items already reviewed and excluded in the prior run, plus 2 new). One item was admitted: **L-0203** (resilience, routine) NOAA NHC: Tropical Storm Bertha Advisory Number 18 reports the storm moving inland over eastern Texas with maximum sustained winds decreased to 40 mph, discontinuing the Tropical Storm Warning east of the Vermilion/Cameron Parish Line — a stated change from the prior advisory, matching the standing admission practice for numbered Bertha advisories (e.g., L-0198, L-0193). Not admitted (reviewed, excluded): BleepingComputer’s “Australian energy provider Origin says data breach exposes client data” (16:14 ET) — an Australian energy retailer’s customer-data breach with no financial-institution or financial-sector nexus stated (the partial payment-card/bank-account digits exposed belong to Origin’s own utility customers, not a financial-sector entity); BleepingComputer’s “Fake Claude app promoted by Bing ads pushes SectopRAT malware” (15:48 ET) — a malvertising campaign compromising at least 29 organizations generally, with no financial-sector nexus stated among the victims.",
+    "lastRun": "2026-07-23T17:03:33-04:00"
   },
   "lead": {
     "head": "Leading stories: Russian state-backed hackers exploit a Zimbra webmail flaw to target financial and other organizations across the West; a Microsoft 365 outage disrupts Teams, SharePoint, Excel, and the Admin Center; and Microsoft continues working to resolve an ongoing Exchange Online incident that has mistakenly quarantined customer mailboxes since July 19.",
-    "dek": "Today’s edition draws on the eleven items recorded so far. Every item links to its source.",
+    "dek": "Today’s edition draws on the twelve items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -54,6 +54,17 @@
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-23T20:35:46Z",
+      "p": "resilience",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0203",
+      "title": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 18 reports the storm moving inland over eastern Texas, about 35 miles north of Galveston, Texas, with maximum sustained winds decreased to 40 mph, discontinues the Tropical Storm Warning east of the Vermilion/Cameron Parish Line while keeping it in effect to Sargent, Texas, and forecasts the storm to dissipate tonight or on Friday.",
+      "src": "NOAA NHC advisory",
+      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/232035.shtml",
+      "linked": true
+    },
     {
       "ts": "2026-07-23T16:58:00Z",
       "p": "cyber",
@@ -2467,15 +2478,15 @@
       "scope": "resilience · sector capacity & season risk",
       "watch": "Stress-test results, payments-system findings, severe-weather outlooks, and infrastructure-software advisories relevant to operations.",
       "opened": "July 2026",
-      "ver": "v16",
-      "verRange": "v1–v16",
+      "ver": "v17",
+      "verRange": "v1–v17",
       "asOf": "July 23, 2026",
       "p1": "The Federal Reserve’s annual stress test, released June 24, concludes that large banks are well positioned to weather a severe recession and continue lending to households and businesses.",
       "p1Sup": "1",
-      "p2": "Season risk turned active this window: the National Hurricane Center’s quiet July 9 outlook gave way to a system that strengthened into Tropical Storm Bertha, which made an initial landfall near St. Bernard Parish, Louisiana, and is now moving westward near the southwestern Louisiana coast with maximum sustained winds holding at 45 mph, about 35 miles south of Lake Charles, Louisiana; the Tropical Storm Warning has been extended westward to Sargent, Texas and discontinued east of Morgan City, Louisiana, with landfall expected along the Texas coast later today. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
-      "p2Sup": "3, 4, 17",
-      "assess": "We assess with moderate confidence that near-term weather-driven disruption risk is roughly even odds: Tropical Storm Bertha is forecast to reach the Texas coast later today, with maximum sustained winds holding at 45 mph and a Tropical Storm Warning now discontinued east of Morgan City, Louisiana, though no confirmed systemic-infrastructure stress has entered the record this window.",
-      "assessSup": "17",
+      "p2": "Season risk turned active this window: the National Hurricane Center’s quiet July 9 outlook gave way to a system that strengthened into Tropical Storm Bertha, which made an initial landfall near St. Bernard Parish, Louisiana, and has since moved inland over eastern Texas, about 35 miles north of Galveston, Texas, with maximum sustained winds decreased to 40 mph; the Tropical Storm Warning has been discontinued east of the Vermilion/Cameron Parish Line and remains in effect to Sargent, Texas, with the storm forecast to dissipate tonight or on Friday. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
+      "p2Sup": "3, 4, 18",
+      "assess": "We assess it unlikely that Tropical Storm Bertha produces further disruption to financial-sector infrastructure: the storm has moved inland over eastern Texas with maximum sustained winds decreased to 40 mph and is forecast to dissipate tonight or on Friday, and no confirmed systemic-infrastructure stress has entered the record this window.",
+      "assessSup": "18",
       "conf": "moderate confidence",
       "events": [
         {
@@ -2657,6 +2668,15 @@
           "src": "BleepingComputer",
           "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-365-outage-affects-teams-sharepoint-and-other-services/",
           "line": "Microsoft Teams, SharePoint, Excel, and the Microsoft 365 Admin Center are experiencing an ongoing outage; Microsoft has acknowledged the disruption and directed administrators to incident MO1437424 in the Microsoft 365 admin center for updates, BleepingComputer reports."
+        },
+        {
+          "date": "Jul 23, 26",
+          "st": "confirmed",
+          "ver": "v17",
+          "id": "L-0203",
+          "src": "NOAA NHC advisory",
+          "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/232035.shtml",
+          "line": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 18 reports the storm moving inland over eastern Texas, about 35 miles north of Galveston, Texas, with maximum sustained winds decreased to 40 mph, discontinues the Tropical Storm Warning east of the Vermilion/Cameron Parish Line while keeping it in effect to Sargent, Texas, and forecasts the storm to dissipate tonight or on Friday."
         }
       ],
       "sources": [
@@ -2744,6 +2764,11 @@
           "n": "17",
           "text": "NOAA NHC — Tropical Storm Bertha Advisory 17, Warning discontinued east of Morgan City, Louisiana; storm near Lake Charles, winds holding at 45 mph, Jul 23, 2026",
           "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/231437.shtml"
+        },
+        {
+          "n": "18",
+          "text": "NOAA NHC — Tropical Storm Bertha Advisory 18, moved inland over eastern Texas, winds down to 40 mph, Warning discontinued east of Vermilion/Cameron Parish Line, Jul 23, 2026",
+          "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/232035.shtml"
         }
       ],
       "related": [
@@ -4849,6 +4874,14 @@
       "line": "Russian state-backed hackers known as Laundry Bear are compromising government and commercial organizations across the West through zero-click phishing emails that exploit a Zimbra Collaboration Suite webmail flaw (CVE-2025-66376) patched in November 2025, federal agencies in the United States, the United Kingdom, Europe, Australia, and New Zealand warn; separate research from Palo Alto Networks’ Unit 42 found the hackers targeted financial organizations, alongside the defense and transportation sectors, in NATO member states, Ukraine, Commonwealth of Independent States countries, and Africa, The Record reports.",
       "src": "The Record",
       "srcUrl": "https://therecord.media/zimbra-webmail-zero-click-phishing-russia-laundry-bear"
+    },
+    {
+      "d": "2026-07-23",
+      "p": "resilience",
+      "id": "L-0203",
+      "line": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 18 reports the storm moving inland over eastern Texas, about 35 miles north of Galveston, Texas, with maximum sustained winds decreased to 40 mph, discontinues the Tropical Storm Warning east of the Vermilion/Cameron Parish Line while keeping it in effect to Sargent, Texas, and forecasts the storm to dissipate tonight or on Friday.",
+      "src": "NOAA NHC advisory",
+      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/232035.shtml"
     }
   ],
   "takeaways": [
@@ -5332,7 +5365,7 @@
       {
         "no": "11",
         "date": "Thu, Jul 23, 2026",
-        "confirmed": "11",
+        "confirmed": "12",
         "pending": "0",
         "flash": "1",
         "linked": true
