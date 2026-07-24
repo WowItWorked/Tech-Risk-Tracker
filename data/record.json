@@ -2,21 +2,33 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-24T06:21:34-04:00",
+    "generatedAt": "2026-07-24T10:12:24-04:00",
     "issueNo": 12,
-    "recordHash": "f9c4d1b",
+    "recordHash": "042ef37",
     "windowLabel": "June 9 – July 24, 2026",
     "nextWeekly": "Fri, Jul 31",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 12 hours before this run’s prior lastRun (17:03 ET Jul 23), so candidates are items published since ≈05:03 ET Jul 23 / 09:03 UTC Jul 23. Sixty-seven in-window items surfaced across 13 feeds with window activity: DOJ (25, all non-qualifying), NOAA NHC (7 — the Remnants of Bertha Advisory Number 19 cycle plus the Atlantic Tropical Weather Outlook), BleepingComputer (12), the European Central Bank (8), The Record (3), Dark Reading (3), Cybersecurity Dive (3), and one each from the FCA, Bank of England, NCSC, EBA, EDPB, and the Federal Register (FinCEN documents). Most of this window’s activity had already been reviewed across today’s six prior intraday runs (7 reappearances of already-recorded stories, 18 reappearances of already-excluded stories, 6 NOAA companion products for the one admitted storm-advisory update); the rest — DOJ’s 25 non-qualifying entries, 5 new European Central Bank monetary-operations releases, BleepingComputer’s Clop/Windchill-FlexPLM and Dolphin X malware reports, and Dark Reading’s multilingual-AI-security and Zimbra-zero-day teasers — were newly reviewed and excluded at the relevance gate (no financial-sector nexus stated). Two items were admitted: **L-0204** (resilience, routine) NOAA NHC’s final advisory on the remnants of Tropical Storm Bertha reports the system has degenerated into a trough with no coastal watches or warnings remaining in effect, closing out this window’s storm-season thread. **L-0205** (fraud, routine) FinCEN, via the Federal Register, is extending the public comment period on its proposed rule expanding the Huione Group money-laundering-concern designation to include H-Pay Service PLC, after a technical issue with its comment portal blocked electronic comment filing.",
-    "lastRun": "2026-07-24T06:21:34-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (06:21 ET), so candidates are items published since ≈04:21 ET / 08:21 UTC. Candidates surfaced across six feeds with window activity: BleepingComputer (4), Dark Reading (1), DOJ (6), the European Central Bank (4), NOAA NHC (2), and ENISA’s news page (1, checked directly since it is a page source). All other feeds carried nothing new and admissible in-window; CISA’s KEV catalog remained unchanged (still catalogVersion 2026.07.23, no new dateAdded entries), Nacha stayed at its newest Jul 10 item, and NIST’s feed again returned an empty channel (known behavior, not a failure). Reviewed and excluded at the relevance gate: BleepingComputer’s Chick-fil-A credential-stuffing breach disclosure (a restaurant chain, no financial-sector nexus stated), its sponsored Slopsquatting/HalluSquatting AI-attack explainer (vendor-sponsored content, not a discrete incident, per the same standard applied to prior Acronis/Eclypsium exclusions), and its Europol ‘The Com’ URL-takedown report and Snapchat-account-hacking sentencing (neither states a financial-sector or technology-risk nexus); Dark Reading’s Vatican prayer-app PII leak (no financial-sector nexus); DOJ’s six in-window entries (Medicaid fraud, firearms and immigration offenses, child neglect — none technology-risk-to-financial-institutions); the ECB’s four in-window releases (Governing Council decisions, a climate-collateral-framework extension, a securities-financing-terms survey, and a repo-facility implementation notice — routine monetary-policy and market operations, no cyber/AI/third-party/resilience-risk content stated); and NOAA NHC’s routine ‘no tropical cyclone formation expected’ outlook and ‘no tropical cyclones at this time’ filler (non-events). One item was admitted: **L-0206** (third-party risk, routine) the European Union Agency for Cybersecurity (ENISA) opens a public consultation on a draft candidate cybersecurity certification scheme for EU Managed Security Services, developed with its dedicated Ad Hoc Working Group.",
+    "lastRun": "2026-07-24T10:12:24-04:00"
   },
   "lead": {
-    "head": "Leading stories: FinCEN extends the comment period on its Huione Group money-laundering rule after a technical portal issue; and the National Hurricane Center issues its final advisory as Tropical Storm Bertha’s remnants dissipate.",
-    "dek": "Today’s edition draws on the two items recorded so far. Every item links to its source.",
+    "head": "Leading stories: the European Union Agency for Cybersecurity opens a consultation on a certification scheme for EU Managed Security Services; FinCEN extends the comment period on its Huione Group money-laundering rule after a technical portal issue; and the National Hurricane Center issues its final advisory as Tropical Storm Bertha’s remnants dissipate.",
+    "dek": "Today’s edition draws on the three items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
+        "p": "tp",
+        "tri": "routine",
+        "st": "confirmed",
+        "id": "L-0206",
+        "conf": "",
+        "text": "The European Union Agency for Cybersecurity (ENISA) opens a public consultation on a draft candidate cybersecurity certification scheme for EU Managed Security Services, developed with its dedicated Ad Hoc Working Group.",
+        "why": "ENISA has opened a public consultation on a draft cybersecurity certification scheme for EU Managed Security Services — technology and third-party-risk teams that rely on managed security providers should watch how the scheme’s requirements take shape.",
+        "srcText": "ENISA news, Jul 24",
+        "srcUrl": "https://www.enisa.europa.eu/news/have-your-say-on-the-certification-of-eu-managed-security-services"
+      },
+      {
+        "n": "2",
         "p": "fraud",
         "tri": "routine",
         "st": "confirmed",
@@ -28,7 +40,7 @@
         "srcUrl": "https://www.federalregister.gov/documents/2026/07/24/2026-15030/proposed-amendment-to-the-definition-of-huione-group-a-financial-institution-operating-outside-the"
       },
       {
-        "n": "2",
+        "n": "3",
         "p": "resilience",
         "tri": "routine",
         "st": "confirmed",
@@ -42,6 +54,17 @@
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-24T10:00:13Z",
+      "p": "tp",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0206",
+      "title": "The European Union Agency for Cybersecurity (ENISA) opens a public consultation on a draft candidate cybersecurity certification scheme for EU Managed Security Services, developed with its dedicated Ad Hoc Working Group.",
+      "src": "ENISA news",
+      "srcUrl": "https://www.enisa.europa.eu/news/have-your-say-on-the-certification-of-eu-managed-security-services",
+      "linked": true
+    },
     {
       "ts": "2026-07-24T04:00:00Z",
       "p": "fraud",
@@ -2090,11 +2113,11 @@
       "scope": "third-party risk · vendor software & supply chain",
       "watch": "Vendor tools under active attack, software-supply-chain compromises aimed at financial applications, and vendor incident disclosures.",
       "opened": "July 2026",
-      "ver": "v13",
-      "verRange": "v1–v13",
-      "asOf": "July 22, 2026",
-      "p1": "One vendor-channel exploit is confirmed this window: SimpleHelp, a remote-support tool, carries an authentication-bypass flaw on CISA’s known-exploited list — in a vulnerable configuration, a remote, unauthenticated attacker can log in with a forged token.",
-      "p1Sup": "1",
+      "ver": "v14",
+      "verRange": "v1–v14",
+      "asOf": "July 24, 2026",
+      "p1": "One vendor-channel exploit is confirmed this window: SimpleHelp, a remote-support tool, carries an authentication-bypass flaw on CISA’s known-exploited list — in a vulnerable configuration, a remote, unauthenticated attacker can log in with a forged token. Separately, the European Union Agency for Cybersecurity (ENISA) has opened a public consultation on a draft candidate cybersecurity certification scheme for EU Managed Security Services, developed with its dedicated Ad Hoc Working Group.",
+      "p1Sup": "1, 14",
       "p2": "The rest of the vendor picture clusters around the software supply chain: a claimed breach at consulting firm Accenture said to involve source code and encryption keys, and malicious look-alike software kits for the Paysafe, Skrill, and Neteller payment applications on public code registries. Separately, Ernst & Young — one of the world’s four largest auditing and professional-services firms — is notifying customers of a data breach after its own support-ticket system was compromised, with documents containing client tax information among what the tickets may have held.",
       "p2Sup": "2, 3, 10",
       "assess": "We assess with moderate confidence that malicious software packages aimed at payment applications on public code registries are the growth edge in third-party exposure — four separate reports this window point the same way.",
@@ -2262,6 +2285,15 @@
           "src": "BleepingComputer",
           "srcUrl": "https://www.bleepingcomputer.com/news/security/swiss-rail-giant-stadler-rejects-123m-ransom-demand-after-cyberattack/",
           "line": "Swiss rail vehicle manufacturer Stadler Rail rejects a $12.3 million ransom demand from the Everest ransomware gang, which breached a data exchange platform shared with one of its suppliers, and files a criminal complaint with police, BleepingComputer reports."
+        },
+        {
+          "date": "Jul 24, 26",
+          "st": "confirmed",
+          "ver": "v14",
+          "id": "L-0206",
+          "src": "ENISA news",
+          "srcUrl": "https://www.enisa.europa.eu/news/have-your-say-on-the-certification-of-eu-managed-security-services",
+          "line": "The European Union Agency for Cybersecurity (ENISA) opens a public consultation on a draft candidate cybersecurity certification scheme for EU Managed Security Services, developed with its dedicated Ad Hoc Working Group."
         }
       ],
       "sources": [
@@ -2329,6 +2361,11 @@
           "n": "13",
           "text": "BleepingComputer — Estée Lauder data breach via Oracle E-Business Suite flaw, Jul 20, 2026",
           "url": "https://www.bleepingcomputer.com/news/security/est-e-lauder-discloses-data-breach-via-oracle-e-business-flaw/"
+        },
+        {
+          "n": "14",
+          "text": "ENISA — EU Managed Security Services certification consultation, Jul 24, 2026",
+          "url": "https://www.enisa.europa.eu/news/have-your-say-on-the-certification-of-eu-managed-security-services"
         }
       ],
       "related": [
@@ -4798,6 +4835,14 @@
       "line": "The Financial Crimes Enforcement Network (FinCEN) is extending the public comment period on its proposed rule to expand the money-laundering-concern designation of Huione Group to include H-Pay Service PLC and add a “successor entity” definition, after a technical issue with its comment portal blocked the public from filing comments electronically.",
       "src": "FinCEN (Federal Register)",
       "srcUrl": "https://www.federalregister.gov/documents/2026/07/24/2026-15030/proposed-amendment-to-the-definition-of-huione-group-a-financial-institution-operating-outside-the"
+    },
+    {
+      "d": "2026-07-24",
+      "p": "tp",
+      "id": "L-0206",
+      "line": "The European Union Agency for Cybersecurity (ENISA) opens a public consultation on a draft candidate cybersecurity certification scheme for EU Managed Security Services, developed with its dedicated Ad Hoc Working Group.",
+      "src": "ENISA news",
+      "srcUrl": "https://www.enisa.europa.eu/news/have-your-say-on-the-certification-of-eu-managed-security-services"
     }
   ],
   "takeaways": [
@@ -5281,7 +5326,7 @@
       {
         "no": "12",
         "date": "Fri, Jul 24, 2026",
-        "confirmed": "2",
+        "confirmed": "3",
         "pending": "0",
         "flash": "—",
         "linked": true
