@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-24T11:14:42-04:00",
+    "generatedAt": "2026-07-24T12:09:35-04:00",
     "issueNo": 12,
-    "recordHash": "374fb75",
+    "recordHash": "87b137b",
     "windowLabel": "June 9 – July 24, 2026",
     "nextWeekly": "Fri, Jul 31",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (10:12 ET), so candidates are items published since ≈08:12 ET / 12:12 UTC. Genuinely new candidates required checking each page/feed against the prior run’s already-reviewed items, since several feeds (BleepingComputer, the ECB, Dark Reading, DOJ) resurfaced items already reviewed and excluded earlier today. Three items were admitted: FinCEN’s newsroom page carried a new Alert on fraud schemes targeting federal student aid (first admission via FinCEN’s own newsroom page, as distinct from the fincen-fr Federal Register feed); Dark Reading reported that Microsoft fixed a public-by-default Azure Automation setting that could have enabled cross-tenant identity takeover; and Cybersecurity Dive reported on a Censys internet-exposure study finding hackers exploiting a LiteLLM flaw that risks exposing API keys. All other feeds — including CISA’s KEV catalog (unchanged, still catalogVersion 2026.07.23), Nacha (newest still Jul 10), FBI IC3, OCC, the Federal Reserve, FTC, CFPB, NIST (empty channel again), OpenAI, Krebs, The Record, the FCA, the Bank of England, the NCSC, the EBA (beyond its unreadable e-mail-alert wrapper), the EDPB, the Federal Register/FinCEN documents feed, Anthropic, ICO, and ENISA (still the same EUMSS consultation topping the page) — carried nothing new and admissible in-window.",
-    "lastRun": "2026-07-24T11:14:42-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (11:14 ET), so candidates are items published since ≈09:14 ET / 13:14 UTC. One item was admitted: BleepingComputer reported that Microsoft has identified the cause of Thursday’s Microsoft 365 outage (previously recorded as L-0200, an ongoing incident) as a bug in its automated network-maintenance system. All other feeds carried nothing new and admissible in-window: Cybersecurity Dive’s “Zero-day flaw in Check Point SmartConsole is under exploitation” covers the same flaw already recorded via the CISA KEV catalog (L-0189); its “The most vulnerable AI products are also some of the most commonly exposed online” is the identical URL already recorded as L-0209; BleepingComputer’s “Slopsquatting, Phantom Domains, and HalluSquatting Are the Same AI Attack” is vendor-narrated explainer content with no discrete incident, and its “Chick-fil-A data breach” and “Europol flags 4,340 URLs” items carry no financial-sector nexus / fall outside the selection window; the ECB’s five new Jul 24 releases (including Philip Lane’s economic-outlook speech) are monetary-policy and economic-survey content with no technology-risk pillar nexus; the EBA’s Jul 24 e-mail alert remains the unreadable newsletter-preview wrapper, this time pointing to a reporting-and-disclosure-framework consultation with no technology-risk nexus stated; Dark Reading’s and DOJ’s in-window items fall before the 09:14 ET cutoff or reappear from already-reviewed content; and CISA’s KEV catalog (unchanged, still catalogVersion 2026.07.23), Nacha, FBI IC3, OCC, the Federal Reserve, FTC, CFPB, NIST (empty channel again), OpenAI, Krebs, The Record, the FCA, the Bank of England, the NCSC, the EDPB, the Federal Register/FinCEN documents feed, Anthropic, FinCEN’s newsroom, ICO, and ENISA carried nothing new in-window.",
+    "lastRun": "2026-07-24T12:09:35-04:00"
   },
   "lead": {
-    "head": "Leading stories: the Financial Crimes Enforcement Network issues an Alert on fraud schemes targeting federal student aid; a Censys report finds hackers exploiting a flaw in the AI tool LiteLLM that could expose API keys; and Microsoft fixes an Azure Automation flaw that could have let attackers seize another tenant’s identity.",
-    "dek": "Today’s edition draws on the six items recorded so far. Every item links to its source.",
+    "head": "Leading stories: the Financial Crimes Enforcement Network issues an Alert on fraud schemes targeting federal student aid; Microsoft traces Thursday’s Microsoft 365 outage to a bug in its network-maintenance tooling; and a Censys report finds hackers exploiting a flaw in the AI tool LiteLLM that could expose API keys.",
+    "dek": "Today’s edition draws on the seven items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -29,6 +29,18 @@
       },
       {
         "n": "2",
+        "p": "resilience",
+        "tri": "routine",
+        "st": "confirmed",
+        "id": "L-0210",
+        "conf": "",
+        "text": "BleepingComputer reports that Microsoft has identified the cause of Thursday’s Microsoft 365 outage as a bug in its automated network-maintenance system that mistakenly removed IP routes from more devices than intended, disrupting Azure and Microsoft 365 services.",
+        "why": "Microsoft has traced Thursday’s Microsoft 365 and Azure disruption to a bug in its own maintenance tooling — a reminder that a single vendor’s routine internal change can disrupt collaboration and productivity tools bank-wide.",
+        "srcText": "BleepingComputer, Jul 24",
+        "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-blames-massive-microsoft-365-outage-on-maintenance-bug/"
+      },
+      {
+        "n": "3",
         "p": "ai",
         "tri": "routine",
         "st": "confirmed",
@@ -38,22 +50,21 @@
         "why": "Hackers are actively exploiting a flaw in the AI tool LiteLLM that could expose the API keys used to connect to commercial AI models — technology teams should check whether any internet-exposed LiteLLM instances are in use and rotate keys tied to vulnerable ones.",
         "srcText": "Cybersecurity Dive, Jul 24",
         "srcUrl": "https://www.cybersecuritydive.com/news/industrial-control-systems-ai-internet-exposure-censys-report-preview/826133/"
-      },
-      {
-        "n": "3",
-        "p": "cyber",
-        "tri": "routine",
-        "st": "confirmed",
-        "id": "L-0208",
-        "conf": "",
-        "text": "Dark Reading reports that Microsoft addressed a public-by-default configuration setting and a chain of code flaws in its Azure Automation service that could have let attackers seize another tenant’s identity and access other tenants’ data, credentials, and cloud workloads.",
-        "why": "Microsoft’s fix closes a flaw that could have let an attacker in one Azure tenant seize another tenant’s identity and reach its data, credentials, and cloud workloads — cloud security teams at banks using Azure Automation should confirm the public-by-default setting is no longer in effect in their own tenants.",
-        "srcText": "Dark Reading, Jul 24",
-        "srcUrl": "https://www.darkreading.com/cloud-security/default-azure-automation-setting-cross-tenant-identity-takeover"
       }
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-24T15:41:44Z",
+      "p": "resilience",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0210",
+      "title": "BleepingComputer reports that Microsoft has identified the cause of Thursday’s Microsoft 365 outage as a bug in its automated network-maintenance system that mistakenly removed IP routes from more devices than intended, disrupting Azure and Microsoft 365 services.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-blames-massive-microsoft-365-outage-on-maintenance-bug/",
+      "linked": true
+    },
     {
       "ts": "2026-07-24T14:26:10Z",
       "p": "ai",
@@ -2466,8 +2477,8 @@
       "scope": "resilience · sector capacity & season risk",
       "watch": "Stress-test results, payments-system findings, severe-weather outlooks, and infrastructure-software advisories relevant to operations.",
       "opened": "July 2026",
-      "ver": "v18",
-      "verRange": "v1–v18",
+      "ver": "v19",
+      "verRange": "v1–v19",
       "asOf": "July 24, 2026",
       "p1": "The Federal Reserve’s annual stress test, released June 24, concludes that large banks are well positioned to weather a severe recession and continue lending to households and businesses.",
       "p1Sup": "1",
@@ -2674,6 +2685,15 @@
           "src": "NOAA NHC advisory",
           "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/240233.shtml",
           "line": "The National Hurricane Center issues its final advisory on the remnants of Tropical Storm Bertha, reporting the system has degenerated into a trough about 40 miles west-northwest of Houston, Texas, with maximum sustained winds down to 35 mph, and that no coastal watches or warnings remain in effect."
+        },
+        {
+          "date": "Jul 24, 26",
+          "st": "confirmed",
+          "ver": "v19",
+          "id": "L-0210",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-blames-massive-microsoft-365-outage-on-maintenance-bug/",
+          "line": "BleepingComputer reports that Microsoft has identified the cause of Thursday’s Microsoft 365 outage as a bug in its automated network-maintenance system that mistakenly removed IP routes from more devices than intended, disrupting Azure and Microsoft 365 services."
         }
       ],
       "sources": [
@@ -4932,6 +4952,14 @@
       "line": "Cybersecurity Dive reports that internet-exposed instances of the AI tool LiteLLM, a hub for connecting to commercial large language models (LLMs), nearly doubled as hackers continued exploiting a pre-authentication flaw that could expose a customer’s application programming interface (API) keys for every connected service, according to research from the internet-monitoring firm Censys.",
       "src": "Cybersecurity Dive",
       "srcUrl": "https://www.cybersecuritydive.com/news/industrial-control-systems-ai-internet-exposure-censys-report-preview/826133/"
+    },
+    {
+      "d": "2026-07-24",
+      "p": "resilience",
+      "id": "L-0210",
+      "line": "BleepingComputer reports that Microsoft has identified the cause of Thursday’s Microsoft 365 outage as a bug in its automated network-maintenance system that mistakenly removed IP routes from more devices than intended, disrupting Azure and Microsoft 365 services.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-blames-massive-microsoft-365-outage-on-maintenance-bug/"
     }
   ],
   "takeaways": [
@@ -5433,7 +5461,7 @@
       {
         "no": "12",
         "date": "Fri, Jul 24, 2026",
-        "confirmed": "6",
+        "confirmed": "7",
         "pending": "0",
         "flash": "—",
         "linked": true
