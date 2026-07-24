@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-24T14:10:54-04:00",
+    "generatedAt": "2026-07-24T16:11:00-04:00",
     "issueNo": 12,
-    "recordHash": "d19864e",
+    "recordHash": "19c0219",
     "windowLabel": "June 9 – July 24, 2026",
     "nextWeekly": "Fri, Jul 31",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (13:11 ET), so candidates are items published since ≈11:11 ET / 15:11 UTC. One item was admitted: BleepingComputer’s report that hackers are hijacking hotel and conference-center Wi-Fi networks, changing DNS settings to redirect guests to fake Microsoft 365 login pages. All other in-window items were reappearances or out of scope: BleepingComputer’s Microsoft-365-outage root-cause report is the identical URL already recorded as L-0210; FinCEN’s newsroom page still shows only the student-aid fraud alert already recorded as L-0207 (no newer dated item); Anthropic’s news page still tops with the Claude Opus 5 item already recorded as L-0211 (no newer dated item); the EBA’s 24 July e-mail alert is the same unreadable newsletter-preview wrapper excluded on identical grounds in prior runs; the European Central Bank’s Philip R. Lane speech on the euro area economic outlook is a macroeconomic address with no technology-risk content; The Record’s ‘Wrench’ attacks against crypto holders reappears on the same grounds excluded in the prior run (self-custody individuals, no financial-institution nexus); The Record’s Andy Burnham/Liz Lloyd item describes UK cyber-policy personnel continuity, not a technology-risk event or action with financial-sector bearing; NOAA NHC’s two Atlantic bulletins (no formation expected; no active cyclones) are routine non-events; and CISA’s KEV catalog advanced its catalogVersion to 2026.07.24 with no entries dated 2026-07-24 (a metadata-only refresh, nothing to admit). All other feeds — Nacha (newest still Jul 10), FBI IC3, OCC, the Federal Reserve, CFPB, NIST (empty channel again), OpenAI, Krebs, Dark Reading, the FCA, the Bank of England, the NCSC, the EDPB, the Federal Register/FinCEN documents feed, ICO (still no readable dated content), and ENISA (still the same consultation topping the page) — carried nothing new in-window.",
-    "lastRun": "2026-07-24T14:10:54-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (14:10 ET), so candidates are items published since ≈12:10 ET / 16:10 UTC. One item was admitted: BleepingComputer’s report that hackers used the open-source Hermes AI agent in an alleged breach of Thailand’s Ministry of Finance. All other in-window items were reappearances or out of scope: BleepingComputer’s hotel/conference Wi-Fi DNS-hijacking report is the identical URL already recorded as L-0212; The Record’s Andy Burnham UK cyber-policy item and ‘Wrench’ attacks piece reappear on the same grounds excluded in the prior run; the European Central Bank’s Friday releases (Philip R. Lane’s speech and others) all precede this run’s selection window; NOAA NHC’s Atlantic Tropical Weather Outlook (no formation expected) is a routine non-event; and CISA’s KEV catalog advanced its catalogVersion to 2026.07.24 with no entries dated 2026-07-24. All other feeds — Nacha (newest still Jul 10), FBI IC3, OCC, the Federal Reserve, CFPB, DOJ, NIST (empty channel again), OpenAI, Krebs, Dark Reading, Cybersecurity Dive, the FCA, the Bank of England, the NCSC, the EBA (24 July e-mail alert, same unreadable wrapper), the EDPB, the Federal Register/FinCEN documents feed, FinCEN’s newsroom page (still topped by the already-recorded L-0207), Anthropic (still topped by the already-recorded L-0211), ICO (still no readable dated content), and ENISA (still JS-rendered, no readable list) — carried nothing new in-window.",
+    "lastRun": "2026-07-24T16:11:00-04:00"
   },
   "lead": {
-    "head": "Leading stories: the Financial Crimes Enforcement Network issues an Alert on fraud schemes targeting federal student aid; hackers hijack hotel and conference-center Wi-Fi networks to steal Microsoft 365 credentials; and Anthropic introduces Claude Opus 5, a new AI model built for long-running agents.",
-    "dek": "Today’s edition draws on the nine items recorded so far. Every item links to its source.",
+    "head": "Leading stories: the Financial Crimes Enforcement Network issues an Alert on fraud schemes targeting federal student aid; hackers use an AI agent to automate a cyberattack on Thailand’s Ministry of Finance; and hackers hijack hotel and conference-center Wi-Fi networks to steal Microsoft 365 credentials.",
+    "dek": "Today’s edition draws on the ten items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -32,28 +32,39 @@
         "p": "cyber",
         "tri": "routine",
         "st": "confirmed",
+        "id": "L-0213",
+        "conf": "",
+        "text": "BleepingComputer reports that hackers used the open-source Hermes AI agent, running unattended in “YOLO” mode, to automate follow-on attack activity during an alleged breach of Thailand’s Ministry of Finance.",
+        "why": "Criminals are using off-the-shelf AI agents to automate cyberattacks with less manual effort — technology and security teams should treat unusually fast, multi-system intrusion activity as a possible sign of AI-driven attack tooling.",
+        "srcText": "BleepingComputer, Jul 24",
+        "srcUrl": "https://www.bleepingcomputer.com/news/security/hermes-ai-agent-used-to-automate-attack-on-thai-finance-ministry/"
+      },
+      {
+        "n": "3",
+        "p": "cyber",
+        "tri": "routine",
+        "st": "confirmed",
         "id": "L-0212",
         "conf": "",
         "text": "BleepingComputer reports that hackers are hijacking hotel and conference-center Wi-Fi networks by changing their Domain Name System (DNS) settings, redirecting guests to fake Microsoft 365 login pages that steal their credentials.",
         "why": "Criminals are hijacking hotel and conference-center Wi-Fi to steal Microsoft 365 credentials — employees traveling for business should treat any Microsoft 365 sign-in prompt on hotel or conference Wi-Fi as suspicious and connect through a company VPN instead.",
         "srcText": "BleepingComputer, Jul 24",
         "srcUrl": "https://www.bleepingcomputer.com/news/security/hackers-hijack-hotel-wi-fi-dns-to-steal-microsoft-365-accounts/"
-      },
-      {
-        "n": "3",
-        "p": "ai",
-        "tri": "routine",
-        "st": "confirmed",
-        "id": "L-0211",
-        "conf": "",
-        "text": "Anthropic introduces Claude Opus 5, describing it as a step change improvement for its Opus tier that powers long-running agents and improves coding and professional work.",
-        "why": "A leading AI lab’s newest model is built to power long-running autonomous agents — technology and AI-governance teams should track how quickly banks’ own AI agent deployments could take on this added capability.",
-        "srcText": "Anthropic news, Jul 24",
-        "srcUrl": "https://www.anthropic.com/news/claude-opus-5"
       }
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-24T19:09:09Z",
+      "p": "cyber",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0213",
+      "title": "BleepingComputer reports that hackers used the open-source Hermes AI agent, running unattended in “YOLO” mode, to automate follow-on attack activity during an alleged breach of Thailand’s Ministry of Finance.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/hermes-ai-agent-used-to-automate-attack-on-thai-finance-ministry/",
+      "linked": true
+    },
     {
       "ts": "2026-07-24T17:50:37Z",
       "p": "cyber",
@@ -508,8 +519,8 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v84",
-      "verRange": "v1–v84",
+      "ver": "v85",
+      "verRange": "v1–v85",
       "asOf": "July 24, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
@@ -1346,6 +1357,15 @@
           "src": "BleepingComputer",
           "srcUrl": "https://www.bleepingcomputer.com/news/security/hackers-hijack-hotel-wi-fi-dns-to-steal-microsoft-365-accounts/",
           "line": "BleepingComputer reports that hackers are hijacking hotel and conference-center Wi-Fi networks by changing their Domain Name System (DNS) settings, redirecting guests to fake Microsoft 365 login pages that steal their credentials."
+        },
+        {
+          "date": "Jul 24, 26",
+          "st": "confirmed",
+          "ver": "v85",
+          "id": "L-0213",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/hermes-ai-agent-used-to-automate-attack-on-thai-finance-ministry/",
+          "line": "BleepingComputer reports that hackers used the open-source Hermes AI agent, running unattended in “YOLO” mode, to automate follow-on attack activity during an alleged breach of Thailand’s Ministry of Finance."
         }
       ],
       "sources": [
@@ -5021,6 +5041,14 @@
       "line": "BleepingComputer reports that hackers are hijacking hotel and conference-center Wi-Fi networks by changing their Domain Name System (DNS) settings, redirecting guests to fake Microsoft 365 login pages that steal their credentials.",
       "src": "BleepingComputer",
       "srcUrl": "https://www.bleepingcomputer.com/news/security/hackers-hijack-hotel-wi-fi-dns-to-steal-microsoft-365-accounts/"
+    },
+    {
+      "d": "2026-07-24",
+      "p": "cyber",
+      "id": "L-0213",
+      "line": "BleepingComputer reports that hackers used the open-source Hermes AI agent, running unattended in “YOLO” mode, to automate follow-on attack activity during an alleged breach of Thailand’s Ministry of Finance.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/hermes-ai-agent-used-to-automate-attack-on-thai-finance-ministry/"
     }
   ],
   "takeaways": [
@@ -5531,7 +5559,7 @@
       {
         "no": "12",
         "date": "Fri, Jul 24, 2026",
-        "confirmed": "9",
+        "confirmed": "10",
         "pending": "0",
         "flash": "—",
         "linked": true
