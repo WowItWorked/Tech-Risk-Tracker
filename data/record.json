@@ -2,194 +2,66 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-23T17:03:33-04:00",
-    "issueNo": 11,
-    "recordHash": "8cbc207",
-    "windowLabel": "June 9 – July 23, 2026",
-    "nextWeekly": "Fri, Jul 24",
+    "generatedAt": "2026-07-24T06:21:34-04:00",
+    "issueNo": 12,
+    "recordHash": "f9c4d1b",
+    "windowLabel": "June 9 – July 24, 2026",
+    "nextWeekly": "Fri, Jul 31",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (14:15 ET), so candidates are items published since ≈12:15 ET / 16:15 UTC. In-window activity across three feeds: NOAA NHC (7 — Tropical Storm Bertha Public Advisory Number 18 and its companion products; Advisory 18’s own “CHANGES WITH THIS ADVISORY” field states the Tropical Storm Warning east of the Vermilion/Cameron Parish Line has been discontinued, a stated change consistent with the standing Bertha-advisory admission practice), The Record (2, both reappearances — the already-recorded L-0202 Zimbra/Laundry Bear item and the already-excluded visa-restrictions item), and BleepingComputer (4 — 2 reappearances of items already reviewed and excluded in the prior run, plus 2 new). One item was admitted: **L-0203** (resilience, routine) NOAA NHC: Tropical Storm Bertha Advisory Number 18 reports the storm moving inland over eastern Texas with maximum sustained winds decreased to 40 mph, discontinuing the Tropical Storm Warning east of the Vermilion/Cameron Parish Line — a stated change from the prior advisory, matching the standing admission practice for numbered Bertha advisories (e.g., L-0198, L-0193). Not admitted (reviewed, excluded): BleepingComputer’s “Australian energy provider Origin says data breach exposes client data” (16:14 ET) — an Australian energy retailer’s customer-data breach with no financial-institution or financial-sector nexus stated (the partial payment-card/bank-account digits exposed belong to Origin’s own utility customers, not a financial-sector entity); BleepingComputer’s “Fake Claude app promoted by Bing ads pushes SectopRAT malware” (15:48 ET) — a malvertising campaign compromising at least 29 organizations generally, with no financial-sector nexus stated among the victims.",
-    "lastRun": "2026-07-23T17:03:33-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 12 hours before this run’s prior lastRun (17:03 ET Jul 23), so candidates are items published since ≈05:03 ET Jul 23 / 09:03 UTC Jul 23. Sixty-seven in-window items surfaced across 13 feeds with window activity: DOJ (25, all non-qualifying), NOAA NHC (7 — the Remnants of Bertha Advisory Number 19 cycle plus the Atlantic Tropical Weather Outlook), BleepingComputer (12), the European Central Bank (8), The Record (3), Dark Reading (3), Cybersecurity Dive (3), and one each from the FCA, Bank of England, NCSC, EBA, EDPB, and the Federal Register (FinCEN documents). Most of this window’s activity had already been reviewed across today’s six prior intraday runs (7 reappearances of already-recorded stories, 18 reappearances of already-excluded stories, 6 NOAA companion products for the one admitted storm-advisory update); the rest — DOJ’s 25 non-qualifying entries, 5 new European Central Bank monetary-operations releases, BleepingComputer’s Clop/Windchill-FlexPLM and Dolphin X malware reports, and Dark Reading’s multilingual-AI-security and Zimbra-zero-day teasers — were newly reviewed and excluded at the relevance gate (no financial-sector nexus stated). Two items were admitted: **L-0204** (resilience, routine) NOAA NHC’s final advisory on the remnants of Tropical Storm Bertha reports the system has degenerated into a trough with no coastal watches or warnings remaining in effect, closing out this window’s storm-season thread. **L-0205** (fraud, routine) FinCEN, via the Federal Register, is extending the public comment period on its proposed rule expanding the Huione Group money-laundering-concern designation to include H-Pay Service PLC, after a technical issue with its comment portal blocked electronic comment filing.",
+    "lastRun": "2026-07-24T06:21:34-04:00"
   },
   "lead": {
-    "head": "Leading stories: Russian state-backed hackers exploit a Zimbra webmail flaw to target financial and other organizations across the West; a Microsoft 365 outage disrupts Teams, SharePoint, Excel, and the Admin Center; and Microsoft continues working to resolve an ongoing Exchange Online incident that has mistakenly quarantined customer mailboxes since July 19.",
-    "dek": "Today’s edition draws on the twelve items recorded so far. Every item links to its source.",
+    "head": "Leading stories: FinCEN extends the comment period on its Huione Group money-laundering rule after a technical portal issue; and the National Hurricane Center issues its final advisory as Tropical Storm Bertha’s remnants dissipate.",
+    "dek": "Today’s edition draws on the two items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
-        "p": "cyber",
-        "tri": "flash",
+        "p": "fraud",
+        "tri": "routine",
         "st": "confirmed",
-        "id": "L-0202",
+        "id": "L-0205",
         "conf": "",
-        "text": "Russian state-backed hackers known as Laundry Bear are compromising government and commercial organizations across the West through zero-click phishing emails that exploit a Zimbra Collaboration Suite webmail flaw (CVE-2025-66376) patched in November 2025, federal agencies in the United States, the United Kingdom, Europe, Australia, and New Zealand warn; separate research from Palo Alto Networks’ Unit 42 found the hackers targeted financial organizations, alongside the defense and transportation sectors, in NATO member states, Ukraine, Commonwealth of Independent States countries, and Africa, The Record reports.",
-        "why": "A nation-state hacking group actively exploiting a webmail flaw to reach financial organizations, not just government targets, is a reminder to confirm the patch for this specific flaw is applied if your organization runs Zimbra, and to treat unusual email-account activity as a possible live compromise, not routine noise.",
-        "srcText": "The Record, Jul 23",
-        "srcUrl": "https://therecord.media/zimbra-webmail-zero-click-phishing-russia-laundry-bear"
+        "text": "The Financial Crimes Enforcement Network (FinCEN) is extending the public comment period on its proposed rule to expand the money-laundering-concern designation of Huione Group to include H-Pay Service PLC and add a “successor entity” definition, after a technical issue with its comment portal blocked the public from filing comments electronically.",
+        "why": "FinCEN’s proposal to expand the Huione Group money-laundering designation to cover H-Pay Service PLC remains open for public comment after a technical portal issue delayed submissions — banks and other financial institutions with potential exposure to Huione Group entities should track the final rule before it takes effect.",
+        "srcText": "FinCEN (Federal Register), Jul 24",
+        "srcUrl": "https://www.federalregister.gov/documents/2026/07/24/2026-15030/proposed-amendment-to-the-definition-of-huione-group-a-financial-institution-operating-outside-the"
       },
       {
         "n": "2",
         "p": "resilience",
-        "tri": "priority",
+        "tri": "routine",
         "st": "confirmed",
-        "id": "L-0200",
+        "id": "L-0204",
         "conf": "",
-        "text": "Microsoft Teams, SharePoint, Excel, and the Microsoft 365 Admin Center are experiencing an ongoing outage; Microsoft has acknowledged the disruption and directed administrators to incident MO1437424 in the Microsoft 365 admin center for updates, BleepingComputer reports.",
-        "why": "A major cloud-productivity provider suffering an outage across multiple flagship services at once shows how much of banks' daily collaboration work depends on a single vendor staying available — worth confirming your team's backup communication plan while Microsoft investigates.",
-        "srcText": "BleepingComputer, Jul 23",
-        "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-365-outage-affects-teams-sharepoint-and-other-services/"
-      },
-      {
-        "n": "3",
-        "p": "resilience",
-        "tri": "priority",
-        "st": "confirmed",
-        "id": "L-0195",
-        "conf": "",
-        "text": "Microsoft is working to resolve an ongoing Exchange Online incident, tracked as EX1436407, that has mistakenly quarantined customer mailboxes since July 19 after an infrastructure change caused excessive memory consumption, blocking some users from receiving email, BleepingComputer reports.",
-        "why": "It shows a major cloud email provider can suffer a multi-day mail-delivery disruption from an internal infrastructure change alone, with no attacker involved — a reminder to keep an alternate channel ready for time-sensitive communications while incidents like this remain open.",
-        "srcText": "BleepingComputer, Jul 23",
-        "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-working-to-fix-exchange-online-mailbox-quarantine-issue/"
+        "text": "The National Hurricane Center issues its final advisory on the remnants of Tropical Storm Bertha, reporting the system has degenerated into a trough about 40 miles west-northwest of Houston, Texas, with maximum sustained winds down to 35 mph, and that no coastal watches or warnings remain in effect.",
+        "why": "Tropical Storm Bertha’s remnants have degenerated into a trough with no coastal watches or warnings remaining in effect — this multi-day Gulf Coast storm threat has concluded, with no further advisories expected.",
+        "srcText": "NOAA NHC advisory, Jul 23",
+        "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/240233.shtml"
       }
     ]
   },
   "wire": [
     {
-      "ts": "2026-07-23T20:35:46Z",
-      "p": "resilience",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0203",
-      "title": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 18 reports the storm moving inland over eastern Texas, about 35 miles north of Galveston, Texas, with maximum sustained winds decreased to 40 mph, discontinues the Tropical Storm Warning east of the Vermilion/Cameron Parish Line while keeping it in effect to Sargent, Texas, and forecasts the storm to dissipate tonight or on Friday.",
-      "src": "NOAA NHC advisory",
-      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/232035.shtml",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-23T16:58:00Z",
-      "p": "cyber",
-      "tri": "flash",
-      "st": "confirmed",
-      "id": "L-0202",
-      "title": "Russian state-backed hackers known as Laundry Bear are compromising government and commercial organizations across the West through zero-click phishing emails that exploit a Zimbra Collaboration Suite webmail flaw (CVE-2025-66376) patched in November 2025, federal agencies in the United States, the United Kingdom, Europe, Australia, and New Zealand warn; separate research from Palo Alto Networks’ Unit 42 found the hackers targeted financial organizations, alongside the defense and transportation sectors, in NATO member states, Ukraine, Commonwealth of Independent States countries, and Africa, The Record reports.",
-      "src": "The Record",
-      "srcUrl": "https://therecord.media/zimbra-webmail-zero-click-phishing-russia-laundry-bear",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-23T16:00:00Z",
-      "p": "ai",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0201",
-      "title": "Bank of England Governor Andrew Bailey writes that the wider risk posed by frontier artificial intelligence (AI) to the financial sector is what should concern the public, warning that frontier AI may make cyber-attacks faster and easier to carry out, outages more disruptive, and scams by criminals more convincing, and states that the Bank requires banks to prove their resilience through stress tests and penetration testing.",
-      "src": "Bank of England",
-      "srcUrl": "https://www.bankofengland.co.uk/letter/2026/letter-from-the-governor-to-the-daily-mail",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-23T15:34:43Z",
-      "p": "resilience",
-      "tri": "priority",
-      "st": "confirmed",
-      "id": "L-0200",
-      "title": "Microsoft Teams, SharePoint, Excel, and the Microsoft 365 Admin Center are experiencing an ongoing outage; Microsoft has acknowledged the disruption and directed administrators to incident MO1437424 in the Microsoft 365 admin center for updates, BleepingComputer reports.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-365-outage-affects-teams-sharepoint-and-other-services/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-23T14:37:06Z",
-      "p": "resilience",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0198",
-      "title": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 17 discontinues the Tropical Storm Warning east of Morgan City, Louisiana, keeping the Warning in effect to Sargent, Texas, with the storm about 35 miles south of Lake Charles, Louisiana, maximum sustained winds holding at 45 mph, and landfall expected along the Texas coast later today.",
-      "src": "NOAA NHC advisory",
-      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/231437.shtml",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-23T14:30:12Z",
-      "p": "cyber",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0199",
-      "title": "The Government Accountability Office (GAO) finds that firms in the financial-services sector face the most significant potential regulatory overlap in cybersecurity incident reporting, where any given company might have to comply with one of 15 rules from the Treasury Department, the Federal Trade Commission (FTC), the Federal Deposit Insurance Corporation (FDIC), or other agencies, Cybersecurity Dive reports.",
-      "src": "Cybersecurity Dive",
-      "srcUrl": "https://www.cybersecuritydive.com/news/cybersecurity-regulations-overlap-harmonization-gao/826012/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-23T11:40:16Z",
-      "p": "cyber",
-      "tri": "routine",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0197",
-      "title": "A newly disclosed flaw (CVE-2026-64600) in the Linux kernel’s XFS filesystem — a default configuration on major enterprise Linux distributions — lets a local attacker gain root privileges with changes that persist even after a reboot; vendor-fixed kernels are already available, BleepingComputer reports.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/linux/new-refluxfs-linux-flaw-lets-attackers-gain-root-privileges/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-23T10:00:00Z",
-      "p": "cyber",
-      "tri": "routine",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0196",
-      "title": "The Chaos ransomware gang is using a new backdoor called msaRAT that hides its command-and-control traffic by routing it through the Chrome or Edge browser, BleepingComputer reports.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/new-msarat-malware-uses-chrome-edge-browsers-to-route-c2-traffic/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-23T09:20:10Z",
-      "p": "resilience",
-      "tri": "priority",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0195",
-      "title": "Microsoft is working to resolve an ongoing Exchange Online incident, tracked as EX1436407, that has mistakenly quarantined customer mailboxes since July 19 after an infrastructure change caused excessive memory consumption, blocking some users from receiving email, BleepingComputer reports.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-working-to-fix-exchange-online-mailbox-quarantine-issue/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-23T09:01:00Z",
+      "ts": "2026-07-24T04:00:00Z",
       "p": "fraud",
-      "tri": "priority",
+      "tri": "routine",
       "st": "confirmed",
-      "tier": "T1",
-      "id": "L-0194",
-      "title": "The UK Financial Conduct Authority (FCA) bans a father and son, Alec Finch and Robert Finch, from working in UK financial services after the High Court found they committed fraud and misused client money at AFL Insurance Brokers, creating false financial records to mislead a buyer.",
-      "src": "UK Financial Conduct Authority (FCA)",
-      "srcUrl": "https://www.fca.org.uk/news/press-releases/fca-ban-father-son-fraud-misuse-client-money",
+      "id": "L-0205",
+      "title": "The Financial Crimes Enforcement Network (FinCEN) is extending the public comment period on its proposed rule to expand the money-laundering-concern designation of Huione Group to include H-Pay Service PLC and add a “successor entity” definition, after a technical issue with its comment portal blocked the public from filing comments electronically.",
+      "src": "FinCEN (Federal Register)",
+      "srcUrl": "https://www.federalregister.gov/documents/2026/07/24/2026-15030/proposed-amendment-to-the-definition-of-huione-group-a-financial-institution-operating-outside-the",
       "linked": true
     },
     {
-      "ts": "2026-07-23T08:37:33Z",
+      "ts": "2026-07-24T02:33:41Z",
       "p": "resilience",
       "tri": "routine",
       "st": "confirmed",
-      "tier": "T1",
-      "id": "L-0193",
-      "title": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 16 reports the storm moving westward south of the Louisiana coast with maximum sustained winds holding at 45 mph, extends the Tropical Storm Warning westward to Sargent, Texas while discontinuing it east of the Terrebonne/Lafourche Parish line, and forecasts landfall along the northwestern Gulf Coast today before the storm dissipates inland over Texas by Friday.",
+      "id": "L-0204",
+      "title": "The National Hurricane Center issues its final advisory on the remnants of Tropical Storm Bertha, reporting the system has degenerated into a trough about 40 miles west-northwest of Houston, Texas, with maximum sustained winds down to 35 mph, and that no coastal watches or warnings remain in effect.",
       "src": "NOAA NHC advisory",
-      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/230837.shtml",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-23T07:00:00Z",
-      "p": "cyber",
-      "tri": "routine",
-      "st": "confirmed",
-      "tier": "T2",
-      "id": "L-0192",
-      "title": "A banking trojan associated with Brazilian hackers is actively spreading among Portuguese businesses, which share the same native language as the attackers and are easy targets as a result, Dark Reading reports.",
-      "src": "Dark Reading",
-      "srcUrl": "https://www.darkreading.com/cyberattacks-data-breaches/brazilian-banking-trojan-spreading-portugal",
+      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/240233.shtml",
       "linked": true
     }
   ],
@@ -1706,11 +1578,11 @@
       "scope": "fraud · AML rulemaking & scam patterns",
       "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
       "opened": "July 2026",
-      "ver": "v27",
-      "verRange": "v1–v27",
-      "asOf": "July 23, 2026",
-      "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22).",
-      "p1Sup": "1, 3",
+      "ver": "v28",
+      "verRange": "v1–v28",
+      "asOf": "July 24, 2026",
+      "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22). Separately, the Financial Crimes Enforcement Network (FinCEN) is extending the comment period on its proposal to expand the money-laundering-concern designation of Huione Group to include H-Pay Service PLC, after a technical issue with its comment portal blocked electronic submissions.",
+      "p1Sup": "1, 3, 27",
       "p2": "Operationally, the OCC is highlighting FinCEN’s updated Section 314(b) fact sheet clarifying how institutions can share suspected-fraud information with each other. The FBI’s recent consumer-facing warnings describe criminals redirecting users to fraudulent websites through malicious traffic-distribution systems. On the criminal side, a Bulgarian national already imprisoned for helping launder millions in fraud proceeds is charged with stealing $290,000 in government-seized cryptocurrency while incarcerated.",
       "p2Sup": "4, 5, 7",
       "assess": "We assess as likely that AML expectations formalize around new payment types first: this window's confirmed stablecoin-specific rule actions — a Federal Reserve customer identification program requirement and OCC Bank Secrecy Act and sanctions compliance standards for stablecoin issuers under the GENIUS Act — are open for comment.",
@@ -2022,6 +1894,15 @@
           "src": "UK Financial Conduct Authority (FCA)",
           "srcUrl": "https://www.fca.org.uk/news/press-releases/fca-ban-father-son-fraud-misuse-client-money",
           "line": "The UK Financial Conduct Authority (FCA) bans a father and son, Alec Finch and Robert Finch, from working in UK financial services after the High Court found they committed fraud and misused client money at AFL Insurance Brokers, creating false financial records to mislead a buyer."
+        },
+        {
+          "date": "Jul 24, 26",
+          "st": "confirmed",
+          "ver": "v28",
+          "id": "L-0205",
+          "src": "FinCEN (Federal Register)",
+          "srcUrl": "https://www.federalregister.gov/documents/2026/07/24/2026-15030/proposed-amendment-to-the-definition-of-huione-group-a-financial-institution-operating-outside-the",
+          "line": "The Financial Crimes Enforcement Network (FinCEN) is extending the public comment period on its proposed rule to expand the money-laundering-concern designation of Huione Group to include H-Pay Service PLC and add a “successor entity” definition, after a technical issue with its comment portal blocked the public from filing comments electronically."
         }
       ],
       "sources": [
@@ -2154,6 +2035,11 @@
           "n": "26",
           "text": "DOJ — Eight defendants charged in NYC check fraud scheme, Jul 20, 2026",
           "url": "https://www.justice.gov/usao-edny/pr/eight-defendants-including-current-and-former-new-york-city-correction-officers-texas"
+        },
+        {
+          "n": "27",
+          "text": "FinCEN (Federal Register) — Huione Group NPRM comment-period extension after portal technical issue, Jul 24, 2026",
+          "url": "https://www.federalregister.gov/documents/2026/07/24/2026-15030/proposed-amendment-to-the-definition-of-huione-group-a-financial-institution-operating-outside-the"
         }
       ],
       "related": [
@@ -2478,16 +2364,16 @@
       "scope": "resilience · sector capacity & season risk",
       "watch": "Stress-test results, payments-system findings, severe-weather outlooks, and infrastructure-software advisories relevant to operations.",
       "opened": "July 2026",
-      "ver": "v17",
-      "verRange": "v1–v17",
-      "asOf": "July 23, 2026",
+      "ver": "v18",
+      "verRange": "v1–v18",
+      "asOf": "July 24, 2026",
       "p1": "The Federal Reserve’s annual stress test, released June 24, concludes that large banks are well positioned to weather a severe recession and continue lending to households and businesses.",
       "p1Sup": "1",
-      "p2": "Season risk turned active this window: the National Hurricane Center’s quiet July 9 outlook gave way to a system that strengthened into Tropical Storm Bertha, which made an initial landfall near St. Bernard Parish, Louisiana, and has since moved inland over eastern Texas, about 35 miles north of Galveston, Texas, with maximum sustained winds decreased to 40 mph; the Tropical Storm Warning has been discontinued east of the Vermilion/Cameron Parish Line and remains in effect to Sargent, Texas, with the storm forecast to dissipate tonight or on Friday. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
-      "p2Sup": "3, 4, 18",
-      "assess": "We assess it unlikely that Tropical Storm Bertha produces further disruption to financial-sector infrastructure: the storm has moved inland over eastern Texas with maximum sustained winds decreased to 40 mph and is forecast to dissipate tonight or on Friday, and no confirmed systemic-infrastructure stress has entered the record this window.",
-      "assessSup": "18",
-      "conf": "moderate confidence",
+      "p2": "Season risk turned active this window: the National Hurricane Center’s quiet July 9 outlook gave way to a system that strengthened into Tropical Storm Bertha, made an initial landfall near St. Bernard Parish, Louisiana, and moved inland over Texas before degenerating into a remnant trough; the Center’s final advisory, issued the night of July 23, reports no coastal watches or warnings remain in effect. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
+      "p2Sup": "3, 4, 19",
+      "assess": "We assess it almost certain that Tropical Storm Bertha will produce no further disruption to financial-sector infrastructure: the National Hurricane Center’s final advisory reports the storm has degenerated into a trough with no coastal watches or warnings in effect, and no confirmed systemic-infrastructure stress has entered the record this window.",
+      "assessSup": "19",
+      "conf": "high confidence",
       "events": [
         {
           "date": "Jul 20, 26",
@@ -2677,6 +2563,15 @@
           "src": "NOAA NHC advisory",
           "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/232035.shtml",
           "line": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 18 reports the storm moving inland over eastern Texas, about 35 miles north of Galveston, Texas, with maximum sustained winds decreased to 40 mph, discontinues the Tropical Storm Warning east of the Vermilion/Cameron Parish Line while keeping it in effect to Sargent, Texas, and forecasts the storm to dissipate tonight or on Friday."
+        },
+        {
+          "date": "Jul 24, 26",
+          "st": "confirmed",
+          "ver": "v18",
+          "id": "L-0204",
+          "src": "NOAA NHC advisory",
+          "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/240233.shtml",
+          "line": "The National Hurricane Center issues its final advisory on the remnants of Tropical Storm Bertha, reporting the system has degenerated into a trough about 40 miles west-northwest of Houston, Texas, with maximum sustained winds down to 35 mph, and that no coastal watches or warnings remain in effect."
         }
       ],
       "sources": [
@@ -2769,6 +2664,11 @@
           "n": "18",
           "text": "NOAA NHC — Tropical Storm Bertha Advisory 18, moved inland over eastern Texas, winds down to 40 mph, Warning discontinued east of Vermilion/Cameron Parish Line, Jul 23, 2026",
           "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/232035.shtml"
+        },
+        {
+          "n": "19",
+          "text": "NOAA NHC — Remnants of Bertha, final advisory (No. 19): storm degenerated into a trough, no coastal watches or warnings in effect, Jul 23, 2026",
+          "url": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/240233.shtml"
         }
       ],
       "related": [
@@ -4882,6 +4782,22 @@
       "line": "The National Hurricane Center’s Tropical Storm Bertha Advisory Number 18 reports the storm moving inland over eastern Texas, about 35 miles north of Galveston, Texas, with maximum sustained winds decreased to 40 mph, discontinues the Tropical Storm Warning east of the Vermilion/Cameron Parish Line while keeping it in effect to Sargent, Texas, and forecasts the storm to dissipate tonight or on Friday.",
       "src": "NOAA NHC advisory",
       "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/232035.shtml"
+    },
+    {
+      "d": "2026-07-24",
+      "p": "resilience",
+      "id": "L-0204",
+      "line": "The National Hurricane Center issues its final advisory on the remnants of Tropical Storm Bertha, reporting the system has degenerated into a trough about 40 miles west-northwest of Houston, Texas, with maximum sustained winds down to 35 mph, and that no coastal watches or warnings remain in effect.",
+      "src": "NOAA NHC advisory",
+      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/240233.shtml"
+    },
+    {
+      "d": "2026-07-24",
+      "p": "fraud",
+      "id": "L-0205",
+      "line": "The Financial Crimes Enforcement Network (FinCEN) is extending the public comment period on its proposed rule to expand the money-laundering-concern designation of Huione Group to include H-Pay Service PLC and add a “successor entity” definition, after a technical issue with its comment portal blocked the public from filing comments electronically.",
+      "src": "FinCEN (Federal Register)",
+      "srcUrl": "https://www.federalregister.gov/documents/2026/07/24/2026-15030/proposed-amendment-to-the-definition-of-huione-group-a-financial-institution-operating-outside-the"
     }
   ],
   "takeaways": [
@@ -5363,6 +5279,14 @@
   "publications": {
     "dailies": [
       {
+        "no": "12",
+        "date": "Fri, Jul 24, 2026",
+        "confirmed": "2",
+        "pending": "0",
+        "flash": "—",
+        "linked": true
+      },
+      {
         "no": "11",
         "date": "Thu, Jul 23, 2026",
         "confirmed": "12",
@@ -5453,14 +5377,19 @@
     ],
     "weeklies": [
       {
+        "no": "2",
+        "range": "Jul 20–24, 2026",
+        "meta": "73 confirmed changes"
+      },
+      {
         "no": "1",
         "range": "Jul 13–17, 2026",
         "meta": "68 confirmed changes"
       }
     ],
     "monthlies": [],
-    "dTotal": 11,
-    "wkTotal": 1,
+    "dTotal": 12,
+    "wkTotal": 2,
     "mTotal": 0
   }
 }
