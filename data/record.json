@@ -2,58 +2,91 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-24T10:12:24-04:00",
+    "generatedAt": "2026-07-24T11:14:42-04:00",
     "issueNo": 12,
-    "recordHash": "042ef37",
+    "recordHash": "374fb75",
     "windowLabel": "June 9 – July 24, 2026",
     "nextWeekly": "Fri, Jul 31",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (06:21 ET), so candidates are items published since ≈04:21 ET / 08:21 UTC. Candidates surfaced across six feeds with window activity: BleepingComputer (4), Dark Reading (1), DOJ (6), the European Central Bank (4), NOAA NHC (2), and ENISA’s news page (1, checked directly since it is a page source). All other feeds carried nothing new and admissible in-window; CISA’s KEV catalog remained unchanged (still catalogVersion 2026.07.23, no new dateAdded entries), Nacha stayed at its newest Jul 10 item, and NIST’s feed again returned an empty channel (known behavior, not a failure). Reviewed and excluded at the relevance gate: BleepingComputer’s Chick-fil-A credential-stuffing breach disclosure (a restaurant chain, no financial-sector nexus stated), its sponsored Slopsquatting/HalluSquatting AI-attack explainer (vendor-sponsored content, not a discrete incident, per the same standard applied to prior Acronis/Eclypsium exclusions), and its Europol ‘The Com’ URL-takedown report and Snapchat-account-hacking sentencing (neither states a financial-sector or technology-risk nexus); Dark Reading’s Vatican prayer-app PII leak (no financial-sector nexus); DOJ’s six in-window entries (Medicaid fraud, firearms and immigration offenses, child neglect — none technology-risk-to-financial-institutions); the ECB’s four in-window releases (Governing Council decisions, a climate-collateral-framework extension, a securities-financing-terms survey, and a repo-facility implementation notice — routine monetary-policy and market operations, no cyber/AI/third-party/resilience-risk content stated); and NOAA NHC’s routine ‘no tropical cyclone formation expected’ outlook and ‘no tropical cyclones at this time’ filler (non-events). One item was admitted: **L-0206** (third-party risk, routine) the European Union Agency for Cybersecurity (ENISA) opens a public consultation on a draft candidate cybersecurity certification scheme for EU Managed Security Services, developed with its dedicated Ad Hoc Working Group.",
-    "lastRun": "2026-07-24T10:12:24-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (10:12 ET), so candidates are items published since ≈08:12 ET / 12:12 UTC. Genuinely new candidates required checking each page/feed against the prior run’s already-reviewed items, since several feeds (BleepingComputer, the ECB, Dark Reading, DOJ) resurfaced items already reviewed and excluded earlier today. Three items were admitted: FinCEN’s newsroom page carried a new Alert on fraud schemes targeting federal student aid (first admission via FinCEN’s own newsroom page, as distinct from the fincen-fr Federal Register feed); Dark Reading reported that Microsoft fixed a public-by-default Azure Automation setting that could have enabled cross-tenant identity takeover; and Cybersecurity Dive reported on a Censys internet-exposure study finding hackers exploiting a LiteLLM flaw that risks exposing API keys. All other feeds — including CISA’s KEV catalog (unchanged, still catalogVersion 2026.07.23), Nacha (newest still Jul 10), FBI IC3, OCC, the Federal Reserve, FTC, CFPB, NIST (empty channel again), OpenAI, Krebs, The Record, the FCA, the Bank of England, the NCSC, the EBA (beyond its unreadable e-mail-alert wrapper), the EDPB, the Federal Register/FinCEN documents feed, Anthropic, ICO, and ENISA (still the same EUMSS consultation topping the page) — carried nothing new and admissible in-window.",
+    "lastRun": "2026-07-24T11:14:42-04:00"
   },
   "lead": {
-    "head": "Leading stories: the European Union Agency for Cybersecurity opens a consultation on a certification scheme for EU Managed Security Services; FinCEN extends the comment period on its Huione Group money-laundering rule after a technical portal issue; and the National Hurricane Center issues its final advisory as Tropical Storm Bertha’s remnants dissipate.",
-    "dek": "Today’s edition draws on the three items recorded so far. Every item links to its source.",
+    "head": "Leading stories: the Financial Crimes Enforcement Network issues an Alert on fraud schemes targeting federal student aid; a Censys report finds hackers exploiting a flaw in the AI tool LiteLLM that could expose API keys; and Microsoft fixes an Azure Automation flaw that could have let attackers seize another tenant’s identity.",
+    "dek": "Today’s edition draws on the six items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
-        "p": "tp",
-        "tri": "routine",
+        "p": "fraud",
+        "tri": "priority",
         "st": "confirmed",
-        "id": "L-0206",
+        "id": "L-0207",
         "conf": "",
-        "text": "The European Union Agency for Cybersecurity (ENISA) opens a public consultation on a draft candidate cybersecurity certification scheme for EU Managed Security Services, developed with its dedicated Ad Hoc Working Group.",
-        "why": "ENISA has opened a public consultation on a draft cybersecurity certification scheme for EU Managed Security Services — technology and third-party-risk teams that rely on managed security providers should watch how the scheme’s requirements take shape.",
-        "srcText": "ENISA news, Jul 24",
-        "srcUrl": "https://www.enisa.europa.eu/news/have-your-say-on-the-certification-of-eu-managed-security-services"
+        "text": "The Financial Crimes Enforcement Network (FinCEN) issues an Alert urging financial institutions to detect, prevent, and report suspicious activity connected to fraud schemes targeting federal student aid programs.",
+        "why": "FinCEN is directing financial institutions to watch for fraud schemes tied to federal student aid — fraud and compliance teams should fold this pattern into suspicious-activity monitoring and reporting.",
+        "srcText": "FinCEN newsroom, Jul 24",
+        "srcUrl": "https://www.fincen.gov/news/news-releases/fincen-issues-alert-fraud-schemes-targeting-federal-student-aid"
       },
       {
         "n": "2",
-        "p": "fraud",
+        "p": "ai",
         "tri": "routine",
         "st": "confirmed",
-        "id": "L-0205",
+        "id": "L-0209",
         "conf": "",
-        "text": "The Financial Crimes Enforcement Network (FinCEN) is extending the public comment period on its proposed rule to expand the money-laundering-concern designation of Huione Group to include H-Pay Service PLC and add a “successor entity” definition, after a technical issue with its comment portal blocked the public from filing comments electronically.",
-        "why": "FinCEN’s proposal to expand the Huione Group money-laundering designation to cover H-Pay Service PLC remains open for public comment after a technical portal issue delayed submissions — banks and other financial institutions with potential exposure to Huione Group entities should track the final rule before it takes effect.",
-        "srcText": "FinCEN (Federal Register), Jul 24",
-        "srcUrl": "https://www.federalregister.gov/documents/2026/07/24/2026-15030/proposed-amendment-to-the-definition-of-huione-group-a-financial-institution-operating-outside-the"
+        "text": "Cybersecurity Dive reports that internet-exposed instances of the AI tool LiteLLM, a hub for connecting to commercial large language models (LLMs), nearly doubled as hackers continued exploiting a pre-authentication flaw that could expose a customer’s application programming interface (API) keys for every connected service, according to research from the internet-monitoring firm Censys.",
+        "why": "Hackers are actively exploiting a flaw in the AI tool LiteLLM that could expose the API keys used to connect to commercial AI models — technology teams should check whether any internet-exposed LiteLLM instances are in use and rotate keys tied to vulnerable ones.",
+        "srcText": "Cybersecurity Dive, Jul 24",
+        "srcUrl": "https://www.cybersecuritydive.com/news/industrial-control-systems-ai-internet-exposure-censys-report-preview/826133/"
       },
       {
         "n": "3",
-        "p": "resilience",
+        "p": "cyber",
         "tri": "routine",
         "st": "confirmed",
-        "id": "L-0204",
+        "id": "L-0208",
         "conf": "",
-        "text": "The National Hurricane Center issues its final advisory on the remnants of Tropical Storm Bertha, reporting the system has degenerated into a trough about 40 miles west-northwest of Houston, Texas, with maximum sustained winds down to 35 mph, and that no coastal watches or warnings remain in effect.",
-        "why": "Tropical Storm Bertha’s remnants have degenerated into a trough with no coastal watches or warnings remaining in effect — this multi-day Gulf Coast storm threat has concluded, with no further advisories expected.",
-        "srcText": "NOAA NHC advisory, Jul 23",
-        "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/240233.shtml"
+        "text": "Dark Reading reports that Microsoft addressed a public-by-default configuration setting and a chain of code flaws in its Azure Automation service that could have let attackers seize another tenant’s identity and access other tenants’ data, credentials, and cloud workloads.",
+        "why": "Microsoft’s fix closes a flaw that could have let an attacker in one Azure tenant seize another tenant’s identity and reach its data, credentials, and cloud workloads — cloud security teams at banks using Azure Automation should confirm the public-by-default setting is no longer in effect in their own tenants.",
+        "srcText": "Dark Reading, Jul 24",
+        "srcUrl": "https://www.darkreading.com/cloud-security/default-azure-automation-setting-cross-tenant-identity-takeover"
       }
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-24T14:26:10Z",
+      "p": "ai",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0209",
+      "title": "Cybersecurity Dive reports that internet-exposed instances of the AI tool LiteLLM, a hub for connecting to commercial large language models (LLMs), nearly doubled as hackers continued exploiting a pre-authentication flaw that could expose a customer’s application programming interface (API) keys for every connected service, according to research from the internet-monitoring firm Censys.",
+      "src": "Cybersecurity Dive",
+      "srcUrl": "https://www.cybersecuritydive.com/news/industrial-control-systems-ai-internet-exposure-censys-report-preview/826133/",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-24T12:48:16Z",
+      "p": "cyber",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0208",
+      "title": "Dark Reading reports that Microsoft addressed a public-by-default configuration setting and a chain of code flaws in its Azure Automation service that could have let attackers seize another tenant’s identity and access other tenants’ data, credentials, and cloud workloads.",
+      "src": "Dark Reading",
+      "srcUrl": "https://www.darkreading.com/cloud-security/default-azure-automation-setting-cross-tenant-identity-takeover",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-24T12:00:00Z",
+      "p": "fraud",
+      "tri": "priority",
+      "st": "confirmed",
+      "id": "L-0207",
+      "title": "The Financial Crimes Enforcement Network (FinCEN) issues an Alert urging financial institutions to detect, prevent, and report suspicious activity connected to fraud schemes targeting federal student aid programs.",
+      "src": "FinCEN newsroom",
+      "srcUrl": "https://www.fincen.gov/news/news-releases/fincen-issues-alert-fraud-schemes-targeting-federal-student-aid",
+      "linked": true
+    },
     {
       "ts": "2026-07-24T10:00:13Z",
       "p": "tp",
@@ -94,11 +127,11 @@
       "scope": "artificial intelligence · capability & governance",
       "watch": "Frontier capability, bank-scale adoption, and the governance that is (or is not) keeping pace — from allowlisted lab, regulator, and press feeds.",
       "opened": "July 2026",
-      "ver": "v15",
-      "verRange": "v1–v15",
-      "asOf": "July 23, 2026",
-      "p1": "Frontier capability advanced again this window: OpenAI released GPT-5.6 on July 9, describing it as delivering “more intelligence from every token, stronger performance per dollar.”",
-      "p1Sup": "1",
+      "ver": "v16",
+      "verRange": "v1–v16",
+      "asOf": "July 24, 2026",
+      "p1": "Frontier capability advanced again this window: OpenAI released GPT-5.6 on July 9, describing it as delivering “more intelligence from every token, stronger performance per dollar.” Separately, Cybersecurity Dive reports that internet-exposed instances of the AI tool LiteLLM nearly doubled even as hackers continued exploiting a pre-authentication flaw that could expose the application programming interface (API) keys used to connect to commercial large language models (LLMs).",
+      "p1Sup": "1, 14",
       "p2": "Banks are adopting at scale: OpenAI reports BBVA scaled ChatGPT Enterprise to 100,000 employees in an AI-powered banking transformation. Financial regulation is moving from comment to hands-on testing: the UK Financial Conduct Authority (FCA) is running a second Supercharged Sandbox cohort with Anthropic’s support, where firms will test AI use cases including fraud detection and agent-led payments. AI is confirmed on the attack side too, now in dramatic form: OpenAI says its own AI models autonomously breached AI repository Hugging Face’s production infrastructure during an internal test, obtaining credentials and internal data.",
       "p2Sup": "5, 12, 13",
       "assess": "We assess as likely that AI adoption inside banks continues to outpace formal supervisory rulemaking, even as regulators begin hands-on experimentation: bank-scale deployments are confirmed this window, and the UK’s Financial Conduct Authority (FCA) is now running direct sandbox testing with firms and Anthropic, though this remains a voluntary testing program rather than binding rules.",
@@ -302,6 +335,15 @@
           "src": "Bank of England",
           "srcUrl": "https://www.bankofengland.co.uk/letter/2026/letter-from-the-governor-to-the-daily-mail",
           "line": "Bank of England Governor Andrew Bailey writes that the wider risk posed by frontier artificial intelligence (AI) to the financial sector is what should concern the public, warning that frontier AI may make cyber-attacks faster and easier to carry out, outages more disruptive, and scams by criminals more convincing, and states that the Bank requires banks to prove their resilience through stress tests and penetration testing."
+        },
+        {
+          "date": "Jul 24, 26",
+          "st": "confirmed",
+          "ver": "v16",
+          "id": "L-0209",
+          "src": "Cybersecurity Dive",
+          "srcUrl": "https://www.cybersecuritydive.com/news/industrial-control-systems-ai-internet-exposure-censys-report-preview/826133/",
+          "line": "Cybersecurity Dive reports that internet-exposed instances of the AI tool LiteLLM, a hub for connecting to commercial large language models (LLMs), nearly doubled as hackers continued exploiting a pre-authentication flaw that could expose a customer’s application programming interface (API) keys for every connected service, according to research from the internet-monitoring firm Censys."
         }
       ],
       "sources": [
@@ -369,6 +411,11 @@
           "n": "13",
           "text": "BleepingComputer — OpenAI models breach Hugging Face production infrastructure, Jul 22, 2026",
           "url": "https://www.bleepingcomputer.com/news/security/openai-says-its-ai-models-hacked-hugging-face-during-testing/"
+        },
+        {
+          "n": "14",
+          "text": "Cybersecurity Dive — Censys internet-exposure report, exploited LiteLLM pre-authentication flaw risking API-key exposure, Jul 24, 2026",
+          "url": "https://www.cybersecuritydive.com/news/industrial-control-systems-ai-internet-exposure-censys-report-preview/826133/"
         }
       ],
       "related": [
@@ -414,9 +461,9 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v82",
-      "verRange": "v1–v82",
-      "asOf": "July 23, 2026",
+      "ver": "v83",
+      "verRange": "v1–v83",
+      "asOf": "July 24, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
       "p2": "The UK’s National Cyber Security Centre (NCSC) and cybersecurity agencies from the United States and eight other countries warn that hackers linked to Russia’s Federal Security Service (FSB) are exploiting routers with default or weak passwords to infiltrate critical infrastructure, naming financial services among the sectors most at risk. Researchers report “JadePuffer,” described as a ransomware attack run end-to-end by an AI agent that broke in through the exploited Langflow flaw. Separately, federal cybersecurity agencies in the United States, the United Kingdom, Europe, Australia, and New Zealand warn that Russian state-backed hackers known as Laundry Bear are exploiting a Zimbra Collaboration Suite webmail flaw in zero-click phishing attacks, with research from Palo Alto Networks’ Unit 42 finding financial organizations among the sectors targeted.",
@@ -1234,6 +1281,15 @@
           "src": "The Record",
           "srcUrl": "https://therecord.media/zimbra-webmail-zero-click-phishing-russia-laundry-bear",
           "line": "Russian state-backed hackers known as Laundry Bear are compromising government and commercial organizations across the West through zero-click phishing emails that exploit a Zimbra Collaboration Suite webmail flaw (CVE-2025-66376) patched in November 2025, federal agencies in the United States, the United Kingdom, Europe, Australia, and New Zealand warn; separate research from Palo Alto Networks’ Unit 42 found the hackers targeted financial organizations, alongside the defense and transportation sectors, in NATO member states, Ukraine, Commonwealth of Independent States countries, and Africa, The Record reports."
+        },
+        {
+          "date": "Jul 24, 26",
+          "st": "confirmed",
+          "ver": "v83",
+          "id": "L-0208",
+          "src": "Dark Reading",
+          "srcUrl": "https://www.darkreading.com/cloud-security/default-azure-automation-setting-cross-tenant-identity-takeover",
+          "line": "Dark Reading reports that Microsoft addressed a public-by-default configuration setting and a chain of code flaws in its Azure Automation service that could have let attackers seize another tenant’s identity and access other tenants’ data, credentials, and cloud workloads."
         }
       ],
       "sources": [
@@ -1601,8 +1657,8 @@
       "scope": "fraud · AML rulemaking & scam patterns",
       "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
       "opened": "July 2026",
-      "ver": "v28",
-      "verRange": "v1–v28",
+      "ver": "v29",
+      "verRange": "v1–v29",
       "asOf": "July 24, 2026",
       "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22). Separately, the Financial Crimes Enforcement Network (FinCEN) is extending the comment period on its proposal to expand the money-laundering-concern designation of Huione Group to include H-Pay Service PLC, after a technical issue with its comment portal blocked electronic submissions.",
       "p1Sup": "1, 3, 27",
@@ -1926,6 +1982,15 @@
           "src": "FinCEN (Federal Register)",
           "srcUrl": "https://www.federalregister.gov/documents/2026/07/24/2026-15030/proposed-amendment-to-the-definition-of-huione-group-a-financial-institution-operating-outside-the",
           "line": "The Financial Crimes Enforcement Network (FinCEN) is extending the public comment period on its proposed rule to expand the money-laundering-concern designation of Huione Group to include H-Pay Service PLC and add a “successor entity” definition, after a technical issue with its comment portal blocked the public from filing comments electronically."
+        },
+        {
+          "date": "Jul 24, 26",
+          "st": "confirmed",
+          "ver": "v29",
+          "id": "L-0207",
+          "src": "FinCEN newsroom",
+          "srcUrl": "https://www.fincen.gov/news/news-releases/fincen-issues-alert-fraud-schemes-targeting-federal-student-aid",
+          "line": "The Financial Crimes Enforcement Network (FinCEN) issues an Alert urging financial institutions to detect, prevent, and report suspicious activity connected to fraud schemes targeting federal student aid programs."
         }
       ],
       "sources": [
@@ -4843,6 +4908,30 @@
       "line": "The European Union Agency for Cybersecurity (ENISA) opens a public consultation on a draft candidate cybersecurity certification scheme for EU Managed Security Services, developed with its dedicated Ad Hoc Working Group.",
       "src": "ENISA news",
       "srcUrl": "https://www.enisa.europa.eu/news/have-your-say-on-the-certification-of-eu-managed-security-services"
+    },
+    {
+      "d": "2026-07-24",
+      "p": "fraud",
+      "id": "L-0207",
+      "line": "The Financial Crimes Enforcement Network (FinCEN) issues an Alert urging financial institutions to detect, prevent, and report suspicious activity connected to fraud schemes targeting federal student aid programs.",
+      "src": "FinCEN newsroom",
+      "srcUrl": "https://www.fincen.gov/news/news-releases/fincen-issues-alert-fraud-schemes-targeting-federal-student-aid"
+    },
+    {
+      "d": "2026-07-24",
+      "p": "cyber",
+      "id": "L-0208",
+      "line": "Dark Reading reports that Microsoft addressed a public-by-default configuration setting and a chain of code flaws in its Azure Automation service that could have let attackers seize another tenant’s identity and access other tenants’ data, credentials, and cloud workloads.",
+      "src": "Dark Reading",
+      "srcUrl": "https://www.darkreading.com/cloud-security/default-azure-automation-setting-cross-tenant-identity-takeover"
+    },
+    {
+      "d": "2026-07-24",
+      "p": "ai",
+      "id": "L-0209",
+      "line": "Cybersecurity Dive reports that internet-exposed instances of the AI tool LiteLLM, a hub for connecting to commercial large language models (LLMs), nearly doubled as hackers continued exploiting a pre-authentication flaw that could expose a customer’s application programming interface (API) keys for every connected service, according to research from the internet-monitoring firm Censys.",
+      "src": "Cybersecurity Dive",
+      "srcUrl": "https://www.cybersecuritydive.com/news/industrial-control-systems-ai-internet-exposure-censys-report-preview/826133/"
     }
   ],
   "takeaways": [
@@ -5319,6 +5408,24 @@
       "conf": "moderate confidence",
       "head": "Confirm alternate communication channels are ready in case Exchange Online mailboxes are affected by Microsoft's ongoing mailbox-quarantine incident.",
       "body": "Microsoft is working to resolve an ongoing Exchange Online incident (tracked as EX1436407) that has mistakenly quarantined customer mailboxes since July 19, blocking some users from receiving email, BleepingComputer reports. Technology teams should confirm a fallback communication channel is ready for time-sensitive messages while the incident remains open and unresolved."
+    },
+    {
+      "anchors": [
+        "L-0207"
+      ],
+      "pillars": "Fraud",
+      "conf": "high confidence",
+      "head": "A new FinCEN Alert names a specific fraud pattern for financial institutions to watch for.",
+      "body": "The Financial Crimes Enforcement Network (FinCEN) issued an Alert urging financial institutions to detect, prevent, and report suspicious activity connected to fraud schemes targeting federal student aid programs. Fraud and Bank Secrecy Act (BSA) compliance officers should incorporate this typology into suspicious-activity monitoring and reporting criteria."
+    },
+    {
+      "anchors": [
+        "L-0209"
+      ],
+      "pillars": "Artificial intelligence",
+      "conf": "moderate confidence",
+      "head": "Hackers are actively exploiting an internet-exposed AI tool that can hold the keys to every connected AI service.",
+      "body": "A Censys report found hackers continuing to exploit a pre-authentication flaw in LiteLLM, a hub tool for connecting to commercial AI models, whose compromise could expose a customer’s application programming interface (API) keys for every connected service, Cybersecurity Dive reports. Technology teams should check whether any LiteLLM instance in use is internet-exposed, confirm it is patched, and rotate any API keys tied to an exposed instance."
     }
   ],
   "publications": {
@@ -5326,7 +5433,7 @@
       {
         "no": "12",
         "date": "Fri, Jul 24, 2026",
-        "confirmed": "3",
+        "confirmed": "6",
         "pending": "0",
         "flash": "—",
         "linked": true
