@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-27T14:16:00-04:00",
+    "generatedAt": "2026-07-27T16:09:00-04:00",
     "issueNo": 13,
-    "recordHash": "a77343a",
+    "recordHash": "89944fe",
     "windowLabel": "June 9 – July 27, 2026",
     "nextWeekly": "Fri, Jul 31",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed; Nacha’s feed again carried its non-XML theme-debug preamble before valid RSS, stripped before parsing). Selection window: 2 hours before this run’s prior lastRun (12:15 ET), so candidates are items published since ≈10:15 ET / 14:15 UTC. Three items were admitted: CISA added a Fortinet FortiOS flaw (CVE-2025-68686) to its Known Exploited Vulnerabilities catalog, dueDate August 10, 2026 (catalogVersion advanced 2026.07.24 → 2026.07.27); the Financial Crimes Enforcement Network (FinCEN) issued a statement of enforcement policy assuring U.S. financial institutions it will not pursue supervisory or enforcement action against them for providing financial services in Venezuela in support of earthquake relief, provided reasonable Bank Secrecy Act (BSA) compliance efforts — first admission via FinCEN’s newsroom page since L-0207; and BleepingComputer reported that Apple is being sued by three people who claim a fraudulent Sparrow Wallet application distributed through the App Store was used to steal approximately $1.8 million in Bitcoin from them. Not admitted (reappearance, already on record): BleepingComputer’s Ernst & Young/ShinyHunters report (identical URL to L-0219) and its Coca-Cola/Fairlife data-theft report (identical URL to L-0221); Cybersecurity Dive’s Coca-Cola/Fairlife production-recovery report (identical URL to L-0220). Not admitted (reviewed, excluded — same vendor-sourced explainer, no dated incident, already reviewed and excluded in the prior run): BleepingComputer’s “Shadow AI agents are multiplying” piece, reappearing inside this run’s overlap window. Not admitted (reviewed, excluded — same general industry-policy advocacy already reviewed and excluded in the prior run): Cybersecurity Dive’s “Tech industry giants say US must embrace openness, transparency in AI.” Not admitted (reviewed, excluded — general trend commentary, no dated incident or financial-sector nexus stated): Dark Reading’s “Adversaries Don’t Need a Zero-Day — They Read Your Rulebook,” whose own teaser states only that “confidence in autonomous security tools is declining.” Not admitted (reviewed, excluded — no financial-sector nexus stated): The Record’s “UK court rejects Bahrain immunity claim in spyware case” (state-sponsored surveillance litigation naming no financial entity), “Health system in South Carolina, Georgia closes offices after malware affects networks” (a healthcare-sector disruption), and “Telegram phishing campaign targeted exiled Belarusian activist, Russians and Kazakhstanis” (a campaign against political activists, not the financial sector). Not admitted (reviewed, excluded — routine non-event): NOAA NHC’s Atlantic Tropical Weather Outlook and “There are no tropical cyclones at this time” bulletins. Not admitted (reviewed, excluded — general promotional content, published Jul 14, outside window): ENISA’s “ENISA on Air: Our first podcast launches on Frontier AI.” Anthropic’s news page is still topped by the already-recorded L-0211 Claude Opus 5 item; ICO’s page still carries no readable dated content beyond an e-newsletter link. All other feeds — FBI IC3, OCC, the Federal Reserve, FTC (beyond the UA fallback), CFPB, DOJ, NIST (empty channel again), Nacha (newest still Jul 10), OpenAI, Krebs, the Bank of England, the FCA, the NCSC, the EBA, the European Central Bank, the EDPB, and the Federal Register/FinCEN-documents feed — carried nothing new and admissible in-window.",
-    "lastRun": "2026-07-27T14:16:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed; Nacha’s feed again carried its non-XML theme-debug preamble before valid RSS, stripped before parsing). Selection window: 2 hours before this run’s prior lastRun (14:16 ET), so candidates are items published since ≈12:16 ET / 16:16 UTC. One item was admitted: CISA added an Arista VeloCloud Orchestrator On-Prem flaw (CVE-2026-16812, OS command injection) to its Known Exploited Vulnerabilities catalog, dueDate July 30, 2026 (catalogVersion unchanged at 2026.07.27, a same-day intraday addition to the catalog JSON that postdated the prior run's fetch). Not admitted (reappearance, already on record): BleepingComputer’s Apple/Sparrow Wallet report (identical URL to L-0224, published 17:29 UTC, inside this run’s overlap window but predating the prior run’s lastRun of 18:16 UTC). Not admitted (reviewed, excluded in the prior run, reappearing inside this run’s overlap window with no new content): The Record’s “UK court rejects Bahrain immunity claim in spyware case” and “Health system in South Carolina, Georgia closes offices after malware affects networks”; Dark Reading’s “Adversaries Don’t Need a Zero-Day — They Read Your Rulebook.” Not admitted (reviewed, excluded — routine non-event): NOAA NHC’s Atlantic Tropical Weather Outlook and “There are no tropical cyclones at this time” bulletins. Anthropic’s news page is still topped by the already-recorded L-0211 Claude Opus 5 item; FinCEN’s newsroom page is still topped by the already-recorded L-0223 Venezuela statement; ICO’s page still carries no readable dated content beyond an e-newsletter link; ENISA’s page is still topped by the already-reviewed-and-excluded podcast-launch item. All other feeds — FBI IC3, OCC, the Federal Reserve, FTC (beyond the UA fallback), CFPB, DOJ, NIST (empty channel again), Nacha (newest still Jul 10), OpenAI, Krebs, the Bank of England, the FCA, the NCSC, the EBA, the European Central Bank, the EDPB, and the Federal Register/FinCEN-documents feed — carried nothing new and admissible in-window.",
+    "lastRun": "2026-07-27T16:09:00-04:00"
   },
   "lead": {
     "head": "Leading stories: a zero-day flaw in Check Point's SmartConsole is under active exploitation; Coca-Cola confirms hackers stole data in the Fairlife ransomware attack; and the ShinyHunters extortion gang claims responsibility for the Ernst & Young data breach.",
-    "dek": "Today’s edition draws on the eleven items recorded so far. Every item links to its source.",
+    "dek": "Today’s edition draws on the twelve items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -107,6 +107,17 @@
       "title": "The UK Financial Conduct Authority (FCA) secures a confiscation order for £655,951.40 against John Burford, convicted of defrauding over 100 investors out of £1 million by offering unauthorized trade alerts and investment ‘funds,’ with an estimated 99% of the money originally invested by the roughly 70 known victims set to be returned.",
       "src": "UK Financial Conduct Authority (FCA)",
       "srcUrl": "https://www.fca.org.uk/news/press-releases/fca-secures-majority-victims-money-back-convicted-fraudster",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-27T12:00:00Z",
+      "p": "cyber",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0225",
+      "title": "CISA adds an Arista VeloCloud Orchestrator flaw (CVE-2026-16812) to its Known Exploited Vulnerabilities catalog: a remote attacker can inject operating system commands to reach privileged internal functionality and compromise the orchestrator host, with a remediation deadline of July 30, 2026.",
+      "src": "CISA KEV catalog",
+      "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "linked": true
     },
     {
@@ -530,8 +541,8 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v88",
-      "verRange": "v1–v88",
+      "ver": "v89",
+      "verRange": "v1–v89",
       "asOf": "July 27, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
@@ -1404,6 +1415,15 @@
           "src": "CISA KEV catalog",
           "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
           "line": "CISA adds a Fortinet FortiOS flaw (CVE-2025-68686) to its Known Exploited Vulnerabilities catalog: an attacker who has already compromised a device through another flaw can send crafted web requests to bypass a fix for a symbolic-link persistence mechanism, exposing sensitive information, with a remediation deadline of August 10, 2026."
+        },
+        {
+          "date": "Jul 27, 26",
+          "st": "confirmed",
+          "ver": "v89",
+          "id": "L-0225",
+          "src": "CISA KEV catalog",
+          "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+          "line": "CISA adds an Arista VeloCloud Orchestrator flaw (CVE-2026-16812) to its Known Exploited Vulnerabilities catalog: a remote attacker can inject operating system commands to reach privileged internal functionality and compromise the orchestrator host, with a remediation deadline of July 30, 2026."
         }
       ],
       "sources": [
@@ -5247,6 +5267,14 @@
       "line": "Apple is sued by three people who claim a fraudulent Sparrow Wallet application, distributed through Apple's App Store, was used to steal approximately $1.8 million in Bitcoin from them.",
       "src": "BleepingComputer",
       "srcUrl": "https://www.bleepingcomputer.com/news/apple/apple-sued-over-fake-app-store-crypto-wallet-app-stealing-18m-in-bitcoin/"
+    },
+    {
+      "d": "2026-07-27",
+      "p": "cyber",
+      "id": "L-0225",
+      "line": "CISA adds an Arista VeloCloud Orchestrator flaw (CVE-2026-16812) to its Known Exploited Vulnerabilities catalog: a remote attacker can inject operating system commands to reach privileged internal functionality and compromise the orchestrator host, with a remediation deadline of July 30, 2026.",
+      "src": "CISA KEV catalog",
+      "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
     }
   ],
   "takeaways": [
@@ -5775,7 +5803,7 @@
       {
         "no": "13",
         "date": "Mon, Jul 27, 2026",
-        "confirmed": "11",
+        "confirmed": "12",
         "pending": "0",
         "flash": "1",
         "linked": true
