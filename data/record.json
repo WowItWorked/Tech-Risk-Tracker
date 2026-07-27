@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-27T06:15:00-04:00",
+    "generatedAt": "2026-07-27T10:14:00-04:00",
     "issueNo": 13,
-    "recordHash": "e1cd30b",
+    "recordHash": "a0953e3",
     "windowLabel": "June 9 – July 27, 2026",
     "nextWeekly": "Fri, Jul 31",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "26 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). The European Data Protection Board’s feed returned 503 on the initial fetch and on two retries — counted as failed. Selection window: this is the day-opening run, so candidates are items published since 12 hours before the prior run’s lastRun (Fri, Jul 24, 16:11 ET), i.e. since ≈04:11 ET Jul 24 / 08:11 UTC Jul 24, covering the full weekend gap through this run (no runs occur outside 6 AM–6 PM ET weekdays). Four items were admitted: Cybersecurity Dive’s report of a Check Point SmartConsole zero-day under active exploitation; BleepingComputer’s report of a worldwide ChatGPT outage; BleepingComputer’s report of a malvertising campaign using fake Solana/Luno/TradingView pages to assemble malware in browser memory; and BleepingComputer’s report that GitHub and PyPI added time-based supply-chain defenses to Dependabot. Reappearances of already-recorded items (excluded, identical URLs): BleepingComputer’s Hermes AI agent/Thai Finance Ministry piece (L-0213), hotel/conference Wi-Fi DNS-hijacking piece (L-0212), and Microsoft 365 outage root-cause piece (L-0210); Dark Reading’s Azure Automation cross-tenant piece (L-0208); and Cybersecurity Dive’s LiteLLM internet-exposure piece (L-0209). Reviewed and excluded for lacking a stated financial-sector or technology-risk nexus: BleepingComputer’s OnTrac customer-data-breach report, Chick-fil-A data-breach report, ShinyHunters-linked Bitcoin sextortion-email report (mass consumer extortion using breached data, no financial-institution or -customer targeting stated), and Snapchat-account-hacking sentencing report; Dark Reading’s Vatican prayer-app PII leak; The Record’s UK cyber-policy ministerial-continuity piece and ‘Wrench’ crypto-holder attacks piece (both reappearances of items already excluded on the same grounds in prior runs); Dark Reading’s ‘Escape Artists’ feature, which discusses the same OpenAI/Hugging Face incident already on record as L-0175 rather than reporting a new event; Dark Reading’s ‘CISOs vs. Boards’ feature and BleepingComputer’s Slopsquatting/Phantom Domains explainer, both general-trend/analysis pieces with no dated, sourced event to record; BleepingComputer’s Europol ‘The Com’ URL-takedown report (violent-extremism content, no technology-risk-to-financial-institutions nexus); two Cybersecurity Dive sponsored posts (Mythos/Trojan horse, both /spons/ URLs, not editorial reporting); the DOJ’s 25 same-window releases (sentencing, immigration, and unrelated criminal matters, no technology-risk-to-financial-institutions content); the European Central Bank’s five same-window releases (monetary policy, collateral framework, survey results, a speech, and a repo-facility announcement, none cyber/fraud/AI/third-party/resilience/data/physical/insider content); the EBA’s 24 July e-mail alert (reappears, same unreadable newsletter-preview wrapper excluded in prior runs); and NOAA NHC’s two routine quiet-outlook bulletins. CISA’s KEV catalog carried zero entries with dateAdded on or after 2026-07-24 (catalogVersion unchanged at 2026.07.24). Anthropic’s news page is still topped by the already-recorded L-0211 Claude Opus 5 item; FinCEN’s newsroom page is still topped by the already-recorded L-0207 student-aid Alert; ENISA’s dated news list is still topped by the already-recorded L-0206 EU Managed Security Services consultation (a separate ‘Featured news’ podcast item on the page is dated July 14, before the window); ICO’s page still carries no readable dated content beyond an e-newsletter link. All other feeds — FBI IC3, OCC, the Federal Reserve, FTC, CFPB, NIST (empty channel again), Nacha (newest still Jul 10, after stripping the feed’s non-XML theme-debug preamble), OpenAI (newest item Jul 23, before the window), Krebs, the FCA, the Bank of England, the NCSC, and the Federal Register/FinCEN-documents feed — carried nothing new and admissible in-window.",
-    "lastRun": "2026-07-27T06:15:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed; Nacha’s feed included its usual non-XML theme-debug preamble before valid RSS, stripped before parsing). Selection window: 2 hours before this run’s prior lastRun (06:15 ET), so candidates are items published since ≈04:15 ET / 08:15 UTC. One item was admitted: the UK Financial Conduct Authority’s (FCA) press release securing a confiscation order returning stolen investor funds to victims of convicted fraudster John Burford. Not admitted (reviewed, excluded — no technology-risk or dated-event nexus): the FCA’s Transaction and Post-trade Reporting Harmonisation Taskforce membership announcement (administrative appointments, no incident or risk content), its “Outcomes monitoring” blog post (general Consumer Duty commentary, no dated sourced event), and its nationwide car finance advertising-campaign announcement (consumer awareness campaign, not an enforcement action or incident). Not admitted (reviewed, excluded — same underlying event already on record): The Record’s “Hackers used autonomous AI agent to spy on Thailand's finance ministry” restates the same Hermes-AI-agent/Thai-Ministry-of-Finance event already recorded as L-0213 from BleepingComputer, with no new fact beyond what L-0213 states. Not admitted (reviewed, excluded — vendor-sourced explainer, no dated event): BleepingComputer’s “Shadow AI agents are multiplying” piece, sourced to vendor Nudge Security with no dated incident. Not admitted (reviewed, excluded — vendor-sponsored content): two Cybersecurity Dive /spons/ posts (Mythos runtime-security and AI-security-framing pieces). Not admitted (reviewed, excluded — routine non-event): NOAA NHC’s two quiet Atlantic Tropical Weather Outlook bulletins (no cyclone activity). CISA’s KEV catalog carried zero entries with dateAdded on or after 2026-07-24 (catalogVersion unchanged at 2026.07.24). Anthropic’s news page is still topped by the already-recorded L-0211 Claude Opus 5 item; FinCEN’s newsroom page is still topped by the already-recorded L-0207 student-aid Alert; ENISA’s dated news list is still topped by the already-recorded L-0206 EU Managed Security Services consultation; ICO’s page still carries no readable dated content beyond an e-newsletter link. All other feeds — FBI IC3, OCC, the Federal Reserve, CFPB, DOJ (no new releases since Friday), NIST (empty channel again), Nacha (newest still Jul 10), OpenAI, Krebs, Dark Reading, the Bank of England, the NCSC, the EBA, the European Central Bank, the EDPB, and the Federal Register/FinCEN-documents feed — carried nothing new and admissible in-window.",
+    "lastRun": "2026-07-27T10:14:00-04:00"
   },
   "lead": {
-    "head": "Leading stories: a zero-day flaw in Check Point's SmartConsole is under active exploitation; OpenAI's ChatGPT suffers a worldwide outage; and GitHub and PyPI add new defenses against software supply-chain attacks.",
-    "dek": "Today’s edition draws on the four items recorded so far. Every item links to its source.",
+    "head": "Leading stories: a zero-day flaw in Check Point's SmartConsole is under active exploitation; the UK Financial Conduct Authority (FCA) recovers stolen investor money via a confiscation order against a convicted fraudster; and OpenAI's ChatGPT suffers a worldwide outage.",
+    "dek": "Today’s edition draws on the five items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -29,6 +29,18 @@
       },
       {
         "n": "2",
+        "p": "fraud",
+        "tri": "priority",
+        "st": "confirmed",
+        "id": "L-0218",
+        "conf": "",
+        "text": "The UK Financial Conduct Authority (FCA) secures a confiscation order for £655,951.40 against John Burford, convicted of defrauding over 100 investors out of £1 million by offering unauthorized trade alerts and investment ‘funds,’ with an estimated 99% of the money originally invested by the roughly 70 known victims set to be returned.",
+        "why": "Fraud and financial-crime teams should note that FCA confiscation orders can return the bulk of stolen investor funds even after a fraudster is already sentenced, reinforcing civil recovery as a continuing avenue in fraud enforcement.",
+        "srcText": "UK Financial Conduct Authority (FCA), Jul 27",
+        "srcUrl": "https://www.fca.org.uk/news/press-releases/fca-secures-majority-victims-money-back-convicted-fraudster"
+      },
+      {
+        "n": "3",
         "p": "resilience",
         "tri": "priority",
         "st": "confirmed",
@@ -38,22 +50,21 @@
         "why": "Technology teams whose organizations use ChatGPT should confirm backup processes are ready for outages, since OpenAI confirmed a worldwide connectivity disruption to the chatbot.",
         "srcText": "BleepingComputer, Jul 25",
         "srcUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-confirms-chatgpt-is-down-worldwide/"
-      },
-      {
-        "n": "3",
-        "p": "tp",
-        "tri": "routine",
-        "st": "confirmed",
-        "id": "L-0217",
-        "conf": "",
-        "text": "BleepingComputer reports that GitHub and the Python Package Index (PyPI) added a time-based defense to GitHub's Dependabot dependency-management tool to protect against, and limit the impact of, software supply-chain attacks.",
-        "why": "Third-party risk and open-source dependency management teams should note that GitHub and PyPI now offer stronger, time-based protections against supply-chain attacks in the Dependabot tool.",
-        "srcText": "BleepingComputer, Jul 26",
-        "srcUrl": "https://www.bleepingcomputer.com/news/security/github-pypi-add-time-absed-defenses-against-supply-chain-attacks/"
       }
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-27T14:30:00Z",
+      "p": "fraud",
+      "tri": "priority",
+      "st": "confirmed",
+      "id": "L-0218",
+      "title": "The UK Financial Conduct Authority (FCA) secures a confiscation order for £655,951.40 against John Burford, convicted of defrauding over 100 investors out of £1 million by offering unauthorized trade alerts and investment ‘funds,’ with an estimated 99% of the money originally invested by the roughly 70 known victims set to be returned.",
+      "src": "UK Financial Conduct Authority (FCA)",
+      "srcUrl": "https://www.fca.org.uk/news/press-releases/fca-secures-majority-victims-money-back-convicted-fraudster",
+      "linked": true
+    },
     {
       "ts": "2026-07-26T14:13:39Z",
       "p": "tp",
@@ -1685,9 +1696,9 @@
       "scope": "fraud · AML rulemaking & scam patterns",
       "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
       "opened": "July 2026",
-      "ver": "v29",
-      "verRange": "v1–v29",
-      "asOf": "July 24, 2026",
+      "ver": "v30",
+      "verRange": "v1–v30",
+      "asOf": "July 27, 2026",
       "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22). Separately, the Financial Crimes Enforcement Network (FinCEN) is extending the comment period on its proposal to expand the money-laundering-concern designation of Huione Group to include H-Pay Service PLC, after a technical issue with its comment portal blocked electronic submissions.",
       "p1Sup": "1, 3, 27",
       "p2": "Operationally, the OCC is highlighting FinCEN’s updated Section 314(b) fact sheet clarifying how institutions can share suspected-fraud information with each other. The FBI’s recent consumer-facing warnings describe criminals redirecting users to fraudulent websites through malicious traffic-distribution systems. On the criminal side, a Bulgarian national already imprisoned for helping launder millions in fraud proceeds is charged with stealing $290,000 in government-seized cryptocurrency while incarcerated.",
@@ -2019,6 +2030,15 @@
           "src": "FinCEN newsroom",
           "srcUrl": "https://www.fincen.gov/news/news-releases/fincen-issues-alert-fraud-schemes-targeting-federal-student-aid",
           "line": "The Financial Crimes Enforcement Network (FinCEN) issues an Alert urging financial institutions to detect, prevent, and report suspicious activity connected to fraud schemes targeting federal student aid programs."
+        },
+        {
+          "date": "Jul 27, 26",
+          "st": "confirmed",
+          "ver": "v30",
+          "id": "L-0218",
+          "src": "UK Financial Conduct Authority (FCA)",
+          "srcUrl": "https://www.fca.org.uk/news/press-releases/fca-secures-majority-victims-money-back-convicted-fraudster",
+          "line": "The UK Financial Conduct Authority (FCA) secures a confiscation order for £655,951.40 against John Burford, convicted of defrauding over 100 investors out of £1 million by offering unauthorized trade alerts and investment ‘funds,’ with an estimated 99% of the money originally invested by the roughly 70 known victims set to be returned."
         }
       ],
       "sources": [
@@ -5051,6 +5071,14 @@
       "line": "BleepingComputer reports that GitHub and the Python Package Index (PyPI) added a time-based defense to GitHub's Dependabot dependency-management tool to protect against, and limit the impact of, software supply-chain attacks.",
       "src": "BleepingComputer",
       "srcUrl": "https://www.bleepingcomputer.com/news/security/github-pypi-add-time-absed-defenses-against-supply-chain-attacks/"
+    },
+    {
+      "d": "2026-07-27",
+      "p": "fraud",
+      "id": "L-0218",
+      "line": "The UK Financial Conduct Authority (FCA) secures a confiscation order for £655,951.40 against John Burford, convicted of defrauding over 100 investors out of £1 million by offering unauthorized trade alerts and investment ‘funds,’ with an estimated 99% of the money originally invested by the roughly 70 known victims set to be returned.",
+      "src": "UK Financial Conduct Authority (FCA)",
+      "srcUrl": "https://www.fca.org.uk/news/press-releases/fca-secures-majority-victims-money-back-convicted-fraudster"
     }
   ],
   "takeaways": [
@@ -5570,7 +5598,7 @@
       {
         "no": "13",
         "date": "Mon, Jul 27, 2026",
-        "confirmed": "4",
+        "confirmed": "5",
         "pending": "0",
         "flash": "1",
         "linked": true
