@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-27T16:09:00-04:00",
+    "generatedAt": "2026-07-27T18:12:00-04:00",
     "issueNo": 13,
-    "recordHash": "89944fe",
+    "recordHash": "668a9d8",
     "windowLabel": "June 9 – July 27, 2026",
     "nextWeekly": "Fri, Jul 31",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed; Nacha’s feed again carried its non-XML theme-debug preamble before valid RSS, stripped before parsing). Selection window: 2 hours before this run’s prior lastRun (14:16 ET), so candidates are items published since ≈12:16 ET / 16:16 UTC. One item was admitted: CISA added an Arista VeloCloud Orchestrator On-Prem flaw (CVE-2026-16812, OS command injection) to its Known Exploited Vulnerabilities catalog, dueDate July 30, 2026 (catalogVersion unchanged at 2026.07.27, a same-day intraday addition to the catalog JSON that postdated the prior run's fetch). Not admitted (reappearance, already on record): BleepingComputer’s Apple/Sparrow Wallet report (identical URL to L-0224, published 17:29 UTC, inside this run’s overlap window but predating the prior run’s lastRun of 18:16 UTC). Not admitted (reviewed, excluded in the prior run, reappearing inside this run’s overlap window with no new content): The Record’s “UK court rejects Bahrain immunity claim in spyware case” and “Health system in South Carolina, Georgia closes offices after malware affects networks”; Dark Reading’s “Adversaries Don’t Need a Zero-Day — They Read Your Rulebook.” Not admitted (reviewed, excluded — routine non-event): NOAA NHC’s Atlantic Tropical Weather Outlook and “There are no tropical cyclones at this time” bulletins. Anthropic’s news page is still topped by the already-recorded L-0211 Claude Opus 5 item; FinCEN’s newsroom page is still topped by the already-recorded L-0223 Venezuela statement; ICO’s page still carries no readable dated content beyond an e-newsletter link; ENISA’s page is still topped by the already-reviewed-and-excluded podcast-launch item. All other feeds — FBI IC3, OCC, the Federal Reserve, FTC (beyond the UA fallback), CFPB, DOJ, NIST (empty channel again), Nacha (newest still Jul 10), OpenAI, Krebs, the Bank of England, the FCA, the NCSC, the EBA, the European Central Bank, the EDPB, and the Federal Register/FinCEN-documents feed — carried nothing new and admissible in-window.",
-    "lastRun": "2026-07-27T16:09:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed; Nacha’s feed again carried its non-XML theme-debug preamble before valid RSS, stripped before parsing). Selection window: 2 hours before this run’s prior lastRun (16:09 ET), so candidates are items published since ≈14:09 ET / 18:09 UTC. Three items were admitted, all cyber: Dark Reading’s report that a persistent “confused deputy” vulnerability class affects access controls in Google Cloud and Microsoft Azure; BleepingComputer’s report of a released proof-of-concept exploit (“Certighost”) for a Windows Active Directory Certificate Services flaw; and BleepingComputer’s report of the Dysphoria botnet, which has compromised around 200,000 devices worldwide for distributed denial-of-service (DDoS) attacks. Not admitted (reviewed, excluded — no financial-sector or technology-risk-to-the-sector nexus stated): The Record’s report on Senator Wyden’s letter urging CISA, OMB, and NIST to purge outdated VPNs from federal agencies (the U.S. government’s own infrastructure, not the financial sector or its vendors). Not admitted (reviewed, excluded — retrospective analysis, not a new confirmed fact pattern): Dark Reading’s feature on an FBI agent’s account of how Operation Cronos took down LockBit, a look back at an already-completed law-enforcement operation with no new dated event. Not admitted (reviewed, excluded — routine non-event): NOAA NHC’s “There are no tropical cyclones at this time” bulletin. CISA’s KEV catalog carries no new entries (catalogVersion unchanged at 2026.07.27, still only the two same-day additions already recorded as L-0222/L-0225). Anthropic’s news page is still topped by the already-recorded L-0211 Claude Opus 5 item; FinCEN’s newsroom page is still topped by the already-recorded L-0223 Venezuela statement; ICO’s page still carries no readable dated content beyond an e-newsletter link; ENISA’s page is still topped by the already-reviewed-and-excluded podcast-launch item. All other feeds — FBI IC3, OCC, the Federal Reserve, FTC (beyond the UA fallback), CFPB, DOJ, NIST (empty channel again), Nacha (newest still Jul 10), OpenAI, Krebs, The Record (beyond the VPN item), the Bank of England, the FCA, the NCSC, the EBA, the European Central Bank, the EDPB, and the Federal Register/FinCEN-documents feed — carried nothing new and admissible in-window.",
+    "lastRun": "2026-07-27T18:12:00-04:00"
   },
   "lead": {
     "head": "Leading stories: a zero-day flaw in Check Point's SmartConsole is under active exploitation; Coca-Cola confirms hackers stole data in the Fairlife ransomware attack; and the ShinyHunters extortion gang claims responsibility for the Ernst & Young data breach.",
-    "dek": "Today’s edition draws on the twelve items recorded so far. Every item links to its source.",
+    "dek": "Today’s edition draws on the fifteen items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -54,6 +54,39 @@
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-27T21:08:15Z",
+      "p": "cyber",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0228",
+      "title": "BleepingComputer reports that a botnet called Dysphoria has compromised around 200,000 devices worldwide and is being used to flood targets with distributed denial-of-service (DDoS) traffic and to relay further attack traffic.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/new-dysphoria-ddos-botnet-spreads-to-200k-devices-worldwide/",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-27T21:00:25Z",
+      "p": "cyber",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0227",
+      "title": "BleepingComputer reports that a proof-of-concept exploit called “Certighost” has been released for a vulnerability in Windows Active Directory Certificate Services that could let an already-authenticated attacker take over a Windows domain.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/new-certighost-poc-exploit-lets-attackers-hijack-windows-domains/",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-27T20:57:26Z",
+      "p": "cyber",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0226",
+      "title": "Dark Reading reports that a persistent category of flaws known as “confused deputy” vulnerabilities lets attackers easily gain administrator-level permissions and bypass access controls in Google Cloud and Microsoft Azure.",
+      "src": "Dark Reading",
+      "srcUrl": "https://www.darkreading.com/cloud-security/confused-deputy-flaws-google-cloud-microsoft-azure",
+      "linked": true
+    },
     {
       "ts": "2026-07-27T17:29:07Z",
       "p": "fraud",
@@ -541,8 +574,8 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v89",
-      "verRange": "v1–v89",
+      "ver": "v92",
+      "verRange": "v1–v92",
       "asOf": "July 27, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
@@ -1424,6 +1457,33 @@
           "src": "CISA KEV catalog",
           "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
           "line": "CISA adds an Arista VeloCloud Orchestrator flaw (CVE-2026-16812) to its Known Exploited Vulnerabilities catalog: a remote attacker can inject operating system commands to reach privileged internal functionality and compromise the orchestrator host, with a remediation deadline of July 30, 2026."
+        },
+        {
+          "date": "Jul 27, 26",
+          "st": "confirmed",
+          "ver": "v90",
+          "id": "L-0226",
+          "src": "Dark Reading",
+          "srcUrl": "https://www.darkreading.com/cloud-security/confused-deputy-flaws-google-cloud-microsoft-azure",
+          "line": "Dark Reading reports that a persistent category of flaws known as “confused deputy” vulnerabilities lets attackers easily gain administrator-level permissions and bypass access controls in Google Cloud and Microsoft Azure."
+        },
+        {
+          "date": "Jul 27, 26",
+          "st": "confirmed",
+          "ver": "v91",
+          "id": "L-0227",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/new-certighost-poc-exploit-lets-attackers-hijack-windows-domains/",
+          "line": "BleepingComputer reports that a proof-of-concept exploit called “Certighost” has been released for a vulnerability in Windows Active Directory Certificate Services that could let an already-authenticated attacker take over a Windows domain."
+        },
+        {
+          "date": "Jul 27, 26",
+          "st": "confirmed",
+          "ver": "v92",
+          "id": "L-0228",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/new-dysphoria-ddos-botnet-spreads-to-200k-devices-worldwide/",
+          "line": "BleepingComputer reports that a botnet called Dysphoria has compromised around 200,000 devices worldwide and is being used to flood targets with distributed denial-of-service (DDoS) traffic and to relay further attack traffic."
         }
       ],
       "sources": [
@@ -5275,6 +5335,30 @@
       "line": "CISA adds an Arista VeloCloud Orchestrator flaw (CVE-2026-16812) to its Known Exploited Vulnerabilities catalog: a remote attacker can inject operating system commands to reach privileged internal functionality and compromise the orchestrator host, with a remediation deadline of July 30, 2026.",
       "src": "CISA KEV catalog",
       "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "d": "2026-07-27",
+      "p": "cyber",
+      "id": "L-0226",
+      "line": "Dark Reading reports that a persistent category of flaws known as “confused deputy” vulnerabilities lets attackers easily gain administrator-level permissions and bypass access controls in Google Cloud and Microsoft Azure.",
+      "src": "Dark Reading",
+      "srcUrl": "https://www.darkreading.com/cloud-security/confused-deputy-flaws-google-cloud-microsoft-azure"
+    },
+    {
+      "d": "2026-07-27",
+      "p": "cyber",
+      "id": "L-0227",
+      "line": "BleepingComputer reports that a proof-of-concept exploit called “Certighost” has been released for a vulnerability in Windows Active Directory Certificate Services that could let an already-authenticated attacker take over a Windows domain.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/new-certighost-poc-exploit-lets-attackers-hijack-windows-domains/"
+    },
+    {
+      "d": "2026-07-27",
+      "p": "cyber",
+      "id": "L-0228",
+      "line": "BleepingComputer reports that a botnet called Dysphoria has compromised around 200,000 devices worldwide and is being used to flood targets with distributed denial-of-service (DDoS) traffic and to relay further attack traffic.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/new-dysphoria-ddos-botnet-spreads-to-200k-devices-worldwide/"
     }
   ],
   "takeaways": [
@@ -5803,7 +5887,7 @@
       {
         "no": "13",
         "date": "Mon, Jul 27, 2026",
-        "confirmed": "12",
+        "confirmed": "15",
         "pending": "0",
         "flash": "1",
         "linked": true
