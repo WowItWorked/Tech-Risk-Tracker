@@ -2,166 +2,100 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-24T16:11:00-04:00",
-    "issueNo": 12,
-    "recordHash": "19c0219",
-    "windowLabel": "June 9 – July 24, 2026",
+    "generatedAt": "2026-07-27T06:15:00-04:00",
+    "issueNo": 13,
+    "recordHash": "e1cd30b",
+    "windowLabel": "June 9 – July 27, 2026",
     "nextWeekly": "Fri, Jul 31",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 2 hours before this run’s prior lastRun (14:10 ET), so candidates are items published since ≈12:10 ET / 16:10 UTC. One item was admitted: BleepingComputer’s report that hackers used the open-source Hermes AI agent in an alleged breach of Thailand’s Ministry of Finance. All other in-window items were reappearances or out of scope: BleepingComputer’s hotel/conference Wi-Fi DNS-hijacking report is the identical URL already recorded as L-0212; The Record’s Andy Burnham UK cyber-policy item and ‘Wrench’ attacks piece reappear on the same grounds excluded in the prior run; the European Central Bank’s Friday releases (Philip R. Lane’s speech and others) all precede this run’s selection window; NOAA NHC’s Atlantic Tropical Weather Outlook (no formation expected) is a routine non-event; and CISA’s KEV catalog advanced its catalogVersion to 2026.07.24 with no entries dated 2026-07-24. All other feeds — Nacha (newest still Jul 10), FBI IC3, OCC, the Federal Reserve, CFPB, DOJ, NIST (empty channel again), OpenAI, Krebs, Dark Reading, Cybersecurity Dive, the FCA, the Bank of England, the NCSC, the EBA (24 July e-mail alert, same unreadable wrapper), the EDPB, the Federal Register/FinCEN documents feed, FinCEN’s newsroom page (still topped by the already-recorded L-0207), Anthropic (still topped by the already-recorded L-0211), ICO (still no readable dated content), and ENISA (still JS-rendered, no readable list) — carried nothing new in-window.",
-    "lastRun": "2026-07-24T16:11:00-04:00"
+    "feedNote": "26 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). The European Data Protection Board’s feed returned 503 on the initial fetch and on two retries — counted as failed. Selection window: this is the day-opening run, so candidates are items published since 12 hours before the prior run’s lastRun (Fri, Jul 24, 16:11 ET), i.e. since ≈04:11 ET Jul 24 / 08:11 UTC Jul 24, covering the full weekend gap through this run (no runs occur outside 6 AM–6 PM ET weekdays). Four items were admitted: Cybersecurity Dive’s report of a Check Point SmartConsole zero-day under active exploitation; BleepingComputer’s report of a worldwide ChatGPT outage; BleepingComputer’s report of a malvertising campaign using fake Solana/Luno/TradingView pages to assemble malware in browser memory; and BleepingComputer’s report that GitHub and PyPI added time-based supply-chain defenses to Dependabot. Reappearances of already-recorded items (excluded, identical URLs): BleepingComputer’s Hermes AI agent/Thai Finance Ministry piece (L-0213), hotel/conference Wi-Fi DNS-hijacking piece (L-0212), and Microsoft 365 outage root-cause piece (L-0210); Dark Reading’s Azure Automation cross-tenant piece (L-0208); and Cybersecurity Dive’s LiteLLM internet-exposure piece (L-0209). Reviewed and excluded for lacking a stated financial-sector or technology-risk nexus: BleepingComputer’s OnTrac customer-data-breach report, Chick-fil-A data-breach report, ShinyHunters-linked Bitcoin sextortion-email report (mass consumer extortion using breached data, no financial-institution or -customer targeting stated), and Snapchat-account-hacking sentencing report; Dark Reading’s Vatican prayer-app PII leak; The Record’s UK cyber-policy ministerial-continuity piece and ‘Wrench’ crypto-holder attacks piece (both reappearances of items already excluded on the same grounds in prior runs); Dark Reading’s ‘Escape Artists’ feature, which discusses the same OpenAI/Hugging Face incident already on record as L-0175 rather than reporting a new event; Dark Reading’s ‘CISOs vs. Boards’ feature and BleepingComputer’s Slopsquatting/Phantom Domains explainer, both general-trend/analysis pieces with no dated, sourced event to record; BleepingComputer’s Europol ‘The Com’ URL-takedown report (violent-extremism content, no technology-risk-to-financial-institutions nexus); two Cybersecurity Dive sponsored posts (Mythos/Trojan horse, both /spons/ URLs, not editorial reporting); the DOJ’s 25 same-window releases (sentencing, immigration, and unrelated criminal matters, no technology-risk-to-financial-institutions content); the European Central Bank’s five same-window releases (monetary policy, collateral framework, survey results, a speech, and a repo-facility announcement, none cyber/fraud/AI/third-party/resilience/data/physical/insider content); the EBA’s 24 July e-mail alert (reappears, same unreadable newsletter-preview wrapper excluded in prior runs); and NOAA NHC’s two routine quiet-outlook bulletins. CISA’s KEV catalog carried zero entries with dateAdded on or after 2026-07-24 (catalogVersion unchanged at 2026.07.24). Anthropic’s news page is still topped by the already-recorded L-0211 Claude Opus 5 item; FinCEN’s newsroom page is still topped by the already-recorded L-0207 student-aid Alert; ENISA’s dated news list is still topped by the already-recorded L-0206 EU Managed Security Services consultation (a separate ‘Featured news’ podcast item on the page is dated July 14, before the window); ICO’s page still carries no readable dated content beyond an e-newsletter link. All other feeds — FBI IC3, OCC, the Federal Reserve, FTC, CFPB, NIST (empty channel again), Nacha (newest still Jul 10, after stripping the feed’s non-XML theme-debug preamble), OpenAI (newest item Jul 23, before the window), Krebs, the FCA, the Bank of England, the NCSC, and the Federal Register/FinCEN-documents feed — carried nothing new and admissible in-window.",
+    "lastRun": "2026-07-27T06:15:00-04:00"
   },
   "lead": {
-    "head": "Leading stories: the Financial Crimes Enforcement Network issues an Alert on fraud schemes targeting federal student aid; hackers use an AI agent to automate a cyberattack on Thailand’s Ministry of Finance; and hackers hijack hotel and conference-center Wi-Fi networks to steal Microsoft 365 credentials.",
-    "dek": "Today’s edition draws on the ten items recorded so far. Every item links to its source.",
+    "head": "Leading stories: a zero-day flaw in Check Point's SmartConsole is under active exploitation; OpenAI's ChatGPT suffers a worldwide outage; and GitHub and PyPI add new defenses against software supply-chain attacks.",
+    "dek": "Today’s edition draws on the four items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
-        "p": "fraud",
-        "tri": "priority",
+        "p": "cyber",
+        "tri": "flash",
         "st": "confirmed",
-        "id": "L-0207",
+        "id": "L-0214",
         "conf": "",
-        "text": "The Financial Crimes Enforcement Network (FinCEN) issues an Alert urging financial institutions to detect, prevent, and report suspicious activity connected to fraud schemes targeting federal student aid programs.",
-        "why": "FinCEN is directing financial institutions to watch for fraud schemes tied to federal student aid — fraud and compliance teams should fold this pattern into suspicious-activity monitoring and reporting.",
-        "srcText": "FinCEN newsroom, Jul 24",
-        "srcUrl": "https://www.fincen.gov/news/news-releases/fincen-issues-alert-fraud-schemes-targeting-federal-student-aid"
+        "text": "Cybersecurity Dive reports that a zero-day flaw in Check Point's SmartConsole is under active exploitation, with researchers warning it lets an attacker make key changes to security configurations.",
+        "why": "Technology and security teams should confirm exposure of any Check Point SmartConsole deployment and watch for vendor guidance, given researchers report the flaw is already being exploited to alter security configurations.",
+        "srcText": "Cybersecurity Dive, Jul 24",
+        "srcUrl": "https://www.cybersecuritydive.com/news/zero-day-flaw-check-point-smartconsole-exploitation/826149/"
       },
       {
         "n": "2",
-        "p": "cyber",
-        "tri": "routine",
+        "p": "resilience",
+        "tri": "priority",
         "st": "confirmed",
-        "id": "L-0213",
+        "id": "L-0215",
         "conf": "",
-        "text": "BleepingComputer reports that hackers used the open-source Hermes AI agent, running unattended in “YOLO” mode, to automate follow-on attack activity during an alleged breach of Thailand’s Ministry of Finance.",
-        "why": "Criminals are using off-the-shelf AI agents to automate cyberattacks with less manual effort — technology and security teams should treat unusually fast, multi-system intrusion activity as a possible sign of AI-driven attack tooling.",
-        "srcText": "BleepingComputer, Jul 24",
-        "srcUrl": "https://www.bleepingcomputer.com/news/security/hermes-ai-agent-used-to-automate-attack-on-thai-finance-ministry/"
+        "text": "BleepingComputer reports that OpenAI's ChatGPT chatbot experienced connectivity issues worldwide, with OpenAI confirming the outage.",
+        "why": "Technology teams whose organizations use ChatGPT should confirm backup processes are ready for outages, since OpenAI confirmed a worldwide connectivity disruption to the chatbot.",
+        "srcText": "BleepingComputer, Jul 25",
+        "srcUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-confirms-chatgpt-is-down-worldwide/"
       },
       {
         "n": "3",
-        "p": "cyber",
+        "p": "tp",
         "tri": "routine",
         "st": "confirmed",
-        "id": "L-0212",
+        "id": "L-0217",
         "conf": "",
-        "text": "BleepingComputer reports that hackers are hijacking hotel and conference-center Wi-Fi networks by changing their Domain Name System (DNS) settings, redirecting guests to fake Microsoft 365 login pages that steal their credentials.",
-        "why": "Criminals are hijacking hotel and conference-center Wi-Fi to steal Microsoft 365 credentials — employees traveling for business should treat any Microsoft 365 sign-in prompt on hotel or conference Wi-Fi as suspicious and connect through a company VPN instead.",
-        "srcText": "BleepingComputer, Jul 24",
-        "srcUrl": "https://www.bleepingcomputer.com/news/security/hackers-hijack-hotel-wi-fi-dns-to-steal-microsoft-365-accounts/"
+        "text": "BleepingComputer reports that GitHub and the Python Package Index (PyPI) added a time-based defense to GitHub's Dependabot dependency-management tool to protect against, and limit the impact of, software supply-chain attacks.",
+        "why": "Third-party risk and open-source dependency management teams should note that GitHub and PyPI now offer stronger, time-based protections against supply-chain attacks in the Dependabot tool.",
+        "srcText": "BleepingComputer, Jul 26",
+        "srcUrl": "https://www.bleepingcomputer.com/news/security/github-pypi-add-time-absed-defenses-against-supply-chain-attacks/"
       }
     ]
   },
   "wire": [
     {
-      "ts": "2026-07-24T19:09:09Z",
-      "p": "cyber",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0213",
-      "title": "BleepingComputer reports that hackers used the open-source Hermes AI agent, running unattended in “YOLO” mode, to automate follow-on attack activity during an alleged breach of Thailand’s Ministry of Finance.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/hermes-ai-agent-used-to-automate-attack-on-thai-finance-ministry/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-24T17:50:37Z",
-      "p": "cyber",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0212",
-      "title": "BleepingComputer reports that hackers are hijacking hotel and conference-center Wi-Fi networks by changing their Domain Name System (DNS) settings, redirecting guests to fake Microsoft 365 login pages that steal their credentials.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/hackers-hijack-hotel-wi-fi-dns-to-steal-microsoft-365-accounts/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-24T17:09:00Z",
-      "p": "ai",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0211",
-      "title": "Anthropic introduces Claude Opus 5, describing it as a step change improvement for its Opus tier that powers long-running agents and improves coding and professional work.",
-      "src": "Anthropic news",
-      "srcUrl": "https://www.anthropic.com/news/claude-opus-5",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-24T15:41:44Z",
-      "p": "resilience",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0210",
-      "title": "BleepingComputer reports that Microsoft has identified the cause of Thursday’s Microsoft 365 outage as a bug in its automated network-maintenance system that mistakenly removed IP routes from more devices than intended, disrupting Azure and Microsoft 365 services.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-blames-massive-microsoft-365-outage-on-maintenance-bug/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-24T14:26:10Z",
-      "p": "ai",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0209",
-      "title": "Cybersecurity Dive reports that internet-exposed instances of the AI tool LiteLLM, a hub for connecting to commercial large language models (LLMs), nearly doubled as hackers continued exploiting a pre-authentication flaw that could expose a customer’s application programming interface (API) keys for every connected service, according to research from the internet-monitoring firm Censys.",
-      "src": "Cybersecurity Dive",
-      "srcUrl": "https://www.cybersecuritydive.com/news/industrial-control-systems-ai-internet-exposure-censys-report-preview/826133/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-24T12:48:16Z",
-      "p": "cyber",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0208",
-      "title": "Dark Reading reports that Microsoft addressed a public-by-default configuration setting and a chain of code flaws in its Azure Automation service that could have let attackers seize another tenant’s identity and access other tenants’ data, credentials, and cloud workloads.",
-      "src": "Dark Reading",
-      "srcUrl": "https://www.darkreading.com/cloud-security/default-azure-automation-setting-cross-tenant-identity-takeover",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-24T12:00:00Z",
-      "p": "fraud",
-      "tri": "priority",
-      "st": "confirmed",
-      "id": "L-0207",
-      "title": "The Financial Crimes Enforcement Network (FinCEN) issues an Alert urging financial institutions to detect, prevent, and report suspicious activity connected to fraud schemes targeting federal student aid programs.",
-      "src": "FinCEN newsroom",
-      "srcUrl": "https://www.fincen.gov/news/news-releases/fincen-issues-alert-fraud-schemes-targeting-federal-student-aid",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-24T10:00:13Z",
+      "ts": "2026-07-26T14:13:39Z",
       "p": "tp",
       "tri": "routine",
       "st": "confirmed",
-      "id": "L-0206",
-      "title": "The European Union Agency for Cybersecurity (ENISA) opens a public consultation on a draft candidate cybersecurity certification scheme for EU Managed Security Services, developed with its dedicated Ad Hoc Working Group.",
-      "src": "ENISA news",
-      "srcUrl": "https://www.enisa.europa.eu/news/have-your-say-on-the-certification-of-eu-managed-security-services",
+      "id": "L-0217",
+      "title": "BleepingComputer reports that GitHub and the Python Package Index (PyPI) added a time-based defense to GitHub's Dependabot dependency-management tool to protect against, and limit the impact of, software supply-chain attacks.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/github-pypi-add-time-absed-defenses-against-supply-chain-attacks/",
       "linked": true
     },
     {
-      "ts": "2026-07-24T04:00:00Z",
-      "p": "fraud",
+      "ts": "2026-07-25T15:21:09Z",
+      "p": "cyber",
       "tri": "routine",
       "st": "confirmed",
-      "id": "L-0205",
-      "title": "The Financial Crimes Enforcement Network (FinCEN) is extending the public comment period on its proposed rule to expand the money-laundering-concern designation of Huione Group to include H-Pay Service PLC and add a “successor entity” definition, after a technical issue with its comment portal blocked the public from filing comments electronically.",
-      "src": "FinCEN (Federal Register)",
-      "srcUrl": "https://www.federalregister.gov/documents/2026/07/24/2026-15030/proposed-amendment-to-the-definition-of-huione-group-a-financial-institution-operating-outside-the",
+      "id": "L-0216",
+      "title": "BleepingComputer reports that a large-scale malicious-advertising campaign directs victims to fake Solana, Luno, and TradingView webpages, where hidden JavaScript code assembles malware directly in the browser's memory.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/malicious-sites-use-javascript-to-build-malware-in-browser-memory/",
       "linked": true
     },
     {
-      "ts": "2026-07-24T02:33:41Z",
+      "ts": "2026-07-25T09:31:09Z",
       "p": "resilience",
-      "tri": "routine",
+      "tri": "priority",
       "st": "confirmed",
-      "id": "L-0204",
-      "title": "The National Hurricane Center issues its final advisory on the remnants of Tropical Storm Bertha, reporting the system has degenerated into a trough about 40 miles west-northwest of Houston, Texas, with maximum sustained winds down to 35 mph, and that no coastal watches or warnings remain in effect.",
-      "src": "NOAA NHC advisory",
-      "srcUrl": "https://www.nhc.noaa.gov/text/refresh/MIATCPAT2+shtml/240233.shtml",
+      "id": "L-0215",
+      "title": "BleepingComputer reports that OpenAI's ChatGPT chatbot experienced connectivity issues worldwide, with OpenAI confirming the outage.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-confirms-chatgpt-is-down-worldwide/",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-24T14:55:37Z",
+      "p": "cyber",
+      "tri": "flash",
+      "st": "confirmed",
+      "id": "L-0214",
+      "title": "Cybersecurity Dive reports that a zero-day flaw in Check Point's SmartConsole is under active exploitation, with researchers warning it lets an attacker make key changes to security configurations.",
+      "src": "Cybersecurity Dive",
+      "srcUrl": "https://www.cybersecuritydive.com/news/zero-day-flaw-check-point-smartconsole-exploitation/826149/",
       "linked": true
     }
   ],
@@ -519,9 +453,9 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v85",
-      "verRange": "v1–v85",
-      "asOf": "July 24, 2026",
+      "ver": "v87",
+      "verRange": "v1–v87",
+      "asOf": "July 25, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
       "p2": "The UK’s National Cyber Security Centre (NCSC) and cybersecurity agencies from the United States and eight other countries warn that hackers linked to Russia’s Federal Security Service (FSB) are exploiting routers with default or weak passwords to infiltrate critical infrastructure, naming financial services among the sectors most at risk. Researchers report “JadePuffer,” described as a ransomware attack run end-to-end by an AI agent that broke in through the exploited Langflow flaw. Separately, federal cybersecurity agencies in the United States, the United Kingdom, Europe, Australia, and New Zealand warn that Russian state-backed hackers known as Laundry Bear are exploiting a Zimbra Collaboration Suite webmail flaw in zero-click phishing attacks, with research from Palo Alto Networks’ Unit 42 finding financial organizations among the sectors targeted.",
@@ -1366,6 +1300,24 @@
           "src": "BleepingComputer",
           "srcUrl": "https://www.bleepingcomputer.com/news/security/hermes-ai-agent-used-to-automate-attack-on-thai-finance-ministry/",
           "line": "BleepingComputer reports that hackers used the open-source Hermes AI agent, running unattended in “YOLO” mode, to automate follow-on attack activity during an alleged breach of Thailand’s Ministry of Finance."
+        },
+        {
+          "date": "Jul 24, 26",
+          "st": "confirmed",
+          "ver": "v86",
+          "id": "L-0214",
+          "src": "Cybersecurity Dive",
+          "srcUrl": "https://www.cybersecuritydive.com/news/zero-day-flaw-check-point-smartconsole-exploitation/826149/",
+          "line": "Cybersecurity Dive reports that a zero-day flaw in Check Point's SmartConsole is under active exploitation, with researchers warning it lets an attacker make key changes to security configurations."
+        },
+        {
+          "date": "Jul 25, 26",
+          "st": "confirmed",
+          "ver": "v87",
+          "id": "L-0216",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/malicious-sites-use-javascript-to-build-malware-in-browser-memory/",
+          "line": "BleepingComputer reports that a large-scale malicious-advertising campaign directs victims to fake Solana, Luno, and TradingView webpages, where hidden JavaScript code assembles malware directly in the browser's memory."
         }
       ],
       "sources": [
@@ -2254,9 +2206,9 @@
       "scope": "third-party risk · vendor software & supply chain",
       "watch": "Vendor tools under active attack, software-supply-chain compromises aimed at financial applications, and vendor incident disclosures.",
       "opened": "July 2026",
-      "ver": "v14",
-      "verRange": "v1–v14",
-      "asOf": "July 24, 2026",
+      "ver": "v15",
+      "verRange": "v1–v15",
+      "asOf": "July 26, 2026",
       "p1": "One vendor-channel exploit is confirmed this window: SimpleHelp, a remote-support tool, carries an authentication-bypass flaw on CISA’s known-exploited list — in a vulnerable configuration, a remote, unauthenticated attacker can log in with a forged token. Separately, the European Union Agency for Cybersecurity (ENISA) has opened a public consultation on a draft candidate cybersecurity certification scheme for EU Managed Security Services, developed with its dedicated Ad Hoc Working Group.",
       "p1Sup": "1, 14",
       "p2": "The rest of the vendor picture clusters around the software supply chain: a claimed breach at consulting firm Accenture said to involve source code and encryption keys, and malicious look-alike software kits for the Paysafe, Skrill, and Neteller payment applications on public code registries. Separately, Ernst & Young — one of the world’s four largest auditing and professional-services firms — is notifying customers of a data breach after its own support-ticket system was compromised, with documents containing client tax information among what the tickets may have held.",
@@ -2435,6 +2387,15 @@
           "src": "ENISA news",
           "srcUrl": "https://www.enisa.europa.eu/news/have-your-say-on-the-certification-of-eu-managed-security-services",
           "line": "The European Union Agency for Cybersecurity (ENISA) opens a public consultation on a draft candidate cybersecurity certification scheme for EU Managed Security Services, developed with its dedicated Ad Hoc Working Group."
+        },
+        {
+          "date": "Jul 26, 26",
+          "st": "confirmed",
+          "ver": "v15",
+          "id": "L-0217",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/github-pypi-add-time-absed-defenses-against-supply-chain-attacks/",
+          "line": "BleepingComputer reports that GitHub and the Python Package Index (PyPI) added a time-based defense to GitHub's Dependabot dependency-management tool to protect against, and limit the impact of, software supply-chain attacks."
         }
       ],
       "sources": [
@@ -2542,9 +2503,9 @@
       "scope": "resilience · sector capacity & season risk",
       "watch": "Stress-test results, payments-system findings, severe-weather outlooks, and infrastructure-software advisories relevant to operations.",
       "opened": "July 2026",
-      "ver": "v19",
-      "verRange": "v1–v19",
-      "asOf": "July 24, 2026",
+      "ver": "v20",
+      "verRange": "v1–v20",
+      "asOf": "July 25, 2026",
       "p1": "The Federal Reserve’s annual stress test, released June 24, concludes that large banks are well positioned to weather a severe recession and continue lending to households and businesses.",
       "p1Sup": "1",
       "p2": "Season risk turned active this window: the National Hurricane Center’s quiet July 9 outlook gave way to a system that strengthened into Tropical Storm Bertha, made an initial landfall near St. Bernard Parish, Louisiana, and moved inland over Texas before degenerating into a remnant trough; the Center’s final advisory, issued the night of July 23, reports no coastal watches or warnings remain in effect. One infrastructure-software advisory touches data-center operations — flaws in Schneider Electric PowerChute Serial Shutdown, which manages emergency shutdown of power supplies, could allow attackers to trigger denial-of-service conditions or reset credentials.",
@@ -2759,6 +2720,15 @@
           "src": "BleepingComputer",
           "srcUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-blames-massive-microsoft-365-outage-on-maintenance-bug/",
           "line": "BleepingComputer reports that Microsoft has identified the cause of Thursday’s Microsoft 365 outage as a bug in its automated network-maintenance system that mistakenly removed IP routes from more devices than intended, disrupting Azure and Microsoft 365 services."
+        },
+        {
+          "date": "Jul 25, 26",
+          "st": "confirmed",
+          "ver": "v20",
+          "id": "L-0215",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-confirms-chatgpt-is-down-worldwide/",
+          "line": "BleepingComputer reports that OpenAI's ChatGPT chatbot experienced connectivity issues worldwide, with OpenAI confirming the outage."
         }
       ],
       "sources": [
@@ -5049,6 +5019,38 @@
       "line": "BleepingComputer reports that hackers used the open-source Hermes AI agent, running unattended in “YOLO” mode, to automate follow-on attack activity during an alleged breach of Thailand’s Ministry of Finance.",
       "src": "BleepingComputer",
       "srcUrl": "https://www.bleepingcomputer.com/news/security/hermes-ai-agent-used-to-automate-attack-on-thai-finance-ministry/"
+    },
+    {
+      "d": "2026-07-24",
+      "p": "cyber",
+      "id": "L-0214",
+      "line": "Cybersecurity Dive reports that a zero-day flaw in Check Point's SmartConsole is under active exploitation, with researchers warning it lets an attacker make key changes to security configurations.",
+      "src": "Cybersecurity Dive",
+      "srcUrl": "https://www.cybersecuritydive.com/news/zero-day-flaw-check-point-smartconsole-exploitation/826149/"
+    },
+    {
+      "d": "2026-07-25",
+      "p": "resilience",
+      "id": "L-0215",
+      "line": "BleepingComputer reports that OpenAI's ChatGPT chatbot experienced connectivity issues worldwide, with OpenAI confirming the outage.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-confirms-chatgpt-is-down-worldwide/"
+    },
+    {
+      "d": "2026-07-25",
+      "p": "cyber",
+      "id": "L-0216",
+      "line": "BleepingComputer reports that a large-scale malicious-advertising campaign directs victims to fake Solana, Luno, and TradingView webpages, where hidden JavaScript code assembles malware directly in the browser's memory.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/malicious-sites-use-javascript-to-build-malware-in-browser-memory/"
+    },
+    {
+      "d": "2026-07-26",
+      "p": "tp",
+      "id": "L-0217",
+      "line": "BleepingComputer reports that GitHub and the Python Package Index (PyPI) added a time-based defense to GitHub's Dependabot dependency-management tool to protect against, and limit the impact of, software supply-chain attacks.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/github-pypi-add-time-absed-defenses-against-supply-chain-attacks/"
     }
   ],
   "takeaways": [
@@ -5552,10 +5554,27 @@
       "conf": "moderate confidence",
       "head": "Hackers are actively exploiting an internet-exposed AI tool that can hold the keys to every connected AI service.",
       "body": "A Censys report found hackers continuing to exploit a pre-authentication flaw in LiteLLM, a hub tool for connecting to commercial AI models, whose compromise could expose a customer’s application programming interface (API) keys for every connected service, Cybersecurity Dive reports. Technology teams should check whether any LiteLLM instance in use is internet-exposed, confirm it is patched, and rotate any API keys tied to an exposed instance."
+    },
+    {
+      "anchors": [
+        "L-0216"
+      ],
+      "pillars": "Cybersecurity",
+      "conf": "moderate confidence",
+      "head": "Warn employees who trade cryptocurrency or use TradingView not to click ads for those sites — a malvertising campaign is using fake copies to plant malware.",
+      "body": "BleepingComputer reports that a malicious-advertising campaign is directing victims to fake Solana, Luno, and TradingView webpages that run hidden JavaScript assembling malware directly in the browser's memory. Technology and security-awareness teams should remind employees to navigate to trading and cryptocurrency platforms directly rather than through ad links, and to treat unexpected behavior on those sites as suspicious."
     }
   ],
   "publications": {
     "dailies": [
+      {
+        "no": "13",
+        "date": "Mon, Jul 27, 2026",
+        "confirmed": "4",
+        "pending": "0",
+        "flash": "1",
+        "linked": true
+      },
       {
         "no": "12",
         "date": "Fri, Jul 24, 2026",
@@ -5666,7 +5685,7 @@
       }
     ],
     "monthlies": [],
-    "dTotal": 12,
+    "dTotal": 13,
     "wkTotal": 2,
     "mTotal": 0
   }
