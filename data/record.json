@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-27T12:15:00-04:00",
+    "generatedAt": "2026-07-27T14:16:00-04:00",
     "issueNo": 13,
-    "recordHash": "ef4a545",
+    "recordHash": "a77343a",
     "windowLabel": "June 9 – July 27, 2026",
     "nextWeekly": "Fri, Jul 31",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed; Nacha’s feed again carried its non-XML theme-debug preamble before valid RSS, stripped before parsing). Selection window: 2 hours before this run’s prior lastRun (10:14 ET), so candidates are items published since ≈08:14 ET / 12:14 UTC. Three items were admitted, all third-party risk, all follow-on developments to incidents already on record: BleepingComputer’s report that the ShinyHunters extortion gang has claimed responsibility for the Ernst & Young data breach (L-0125) via a supply-chain credential-theft attack; Cybersecurity Dive’s report that Coca-Cola has restored most production capacity at its Fairlife dairy unit following last month’s ransomware attack, with no material financial impact expected; and BleepingComputer’s report that Coca-Cola has confirmed hackers stole data during that same attack, an escalation from the Anubis gang’s earlier leak threat (L-0167). Not admitted (reappearance, already on record): the UK Financial Conduct Authority’s (FCA) Burford confiscation-order press release, identical URL to the already-recorded L-0218. Not admitted (reviewed, excluded — same vendor-sourced explainer, no dated incident, already reviewed and excluded in the prior run): BleepingComputer’s “Shadow AI agents are multiplying” piece, reappearing inside this run’s overlap window. Not admitted (reviewed, excluded — general industry-policy advocacy, no dated incident or financial-sector nexus): Cybersecurity Dive’s report on two technology-industry coalitions publicly promoting open-weight AI models against Chinese competition. Not admitted (reviewed, excluded — routine non-event): NOAA NHC’s “There are no tropical cyclones at this time” bulletin. CISA’s KEV catalog carried zero entries with dateAdded on or after 2026-07-27 (catalogVersion unchanged at 2026.07.24). Anthropic’s news page is still topped by the already-recorded L-0211 Claude Opus 5 item; FinCEN’s newsroom page is still topped by the already-recorded L-0207 student-aid Alert; ENISA’s dated news list is still topped by the already-recorded L-0206 EU Managed Security Services consultation; ICO’s page still carries no readable dated content beyond an e-newsletter link. All other feeds — FBI IC3, OCC, the Federal Reserve, CFPB, DOJ, NIST (empty channel again), Nacha (newest still Jul 10), OpenAI, Krebs, The Record, Dark Reading, the Bank of England, the NCSC, the EBA, the European Central Bank, the EDPB, and the Federal Register/FinCEN-documents feed — carried nothing new and admissible in-window.",
-    "lastRun": "2026-07-27T12:15:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed; Nacha’s feed again carried its non-XML theme-debug preamble before valid RSS, stripped before parsing). Selection window: 2 hours before this run’s prior lastRun (12:15 ET), so candidates are items published since ≈10:15 ET / 14:15 UTC. Three items were admitted: CISA added a Fortinet FortiOS flaw (CVE-2025-68686) to its Known Exploited Vulnerabilities catalog, dueDate August 10, 2026 (catalogVersion advanced 2026.07.24 → 2026.07.27); the Financial Crimes Enforcement Network (FinCEN) issued a statement of enforcement policy assuring U.S. financial institutions it will not pursue supervisory or enforcement action against them for providing financial services in Venezuela in support of earthquake relief, provided reasonable Bank Secrecy Act (BSA) compliance efforts — first admission via FinCEN’s newsroom page since L-0207; and BleepingComputer reported that Apple is being sued by three people who claim a fraudulent Sparrow Wallet application distributed through the App Store was used to steal approximately $1.8 million in Bitcoin from them. Not admitted (reappearance, already on record): BleepingComputer’s Ernst & Young/ShinyHunters report (identical URL to L-0219) and its Coca-Cola/Fairlife data-theft report (identical URL to L-0221); Cybersecurity Dive’s Coca-Cola/Fairlife production-recovery report (identical URL to L-0220). Not admitted (reviewed, excluded — same vendor-sourced explainer, no dated incident, already reviewed and excluded in the prior run): BleepingComputer’s “Shadow AI agents are multiplying” piece, reappearing inside this run’s overlap window. Not admitted (reviewed, excluded — same general industry-policy advocacy already reviewed and excluded in the prior run): Cybersecurity Dive’s “Tech industry giants say US must embrace openness, transparency in AI.” Not admitted (reviewed, excluded — general trend commentary, no dated incident or financial-sector nexus stated): Dark Reading’s “Adversaries Don’t Need a Zero-Day — They Read Your Rulebook,” whose own teaser states only that “confidence in autonomous security tools is declining.” Not admitted (reviewed, excluded — no financial-sector nexus stated): The Record’s “UK court rejects Bahrain immunity claim in spyware case” (state-sponsored surveillance litigation naming no financial entity), “Health system in South Carolina, Georgia closes offices after malware affects networks” (a healthcare-sector disruption), and “Telegram phishing campaign targeted exiled Belarusian activist, Russians and Kazakhstanis” (a campaign against political activists, not the financial sector). Not admitted (reviewed, excluded — routine non-event): NOAA NHC’s Atlantic Tropical Weather Outlook and “There are no tropical cyclones at this time” bulletins. Not admitted (reviewed, excluded — general promotional content, published Jul 14, outside window): ENISA’s “ENISA on Air: Our first podcast launches on Frontier AI.” Anthropic’s news page is still topped by the already-recorded L-0211 Claude Opus 5 item; ICO’s page still carries no readable dated content beyond an e-newsletter link. All other feeds — FBI IC3, OCC, the Federal Reserve, FTC (beyond the UA fallback), CFPB, DOJ, NIST (empty channel again), Nacha (newest still Jul 10), OpenAI, Krebs, the Bank of England, the FCA, the NCSC, the EBA, the European Central Bank, the EDPB, and the Federal Register/FinCEN-documents feed — carried nothing new and admissible in-window.",
+    "lastRun": "2026-07-27T14:16:00-04:00"
   },
   "lead": {
     "head": "Leading stories: a zero-day flaw in Check Point's SmartConsole is under active exploitation; Coca-Cola confirms hackers stole data in the Fairlife ransomware attack; and the ShinyHunters extortion gang claims responsibility for the Ernst & Young data breach.",
-    "dek": "Today’s edition draws on the eight items recorded so far. Every item links to its source.",
+    "dek": "Today’s edition draws on the eleven items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -54,6 +54,17 @@
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-27T17:29:07Z",
+      "p": "fraud",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0224",
+      "title": "Apple is sued by three people who claim a fraudulent Sparrow Wallet application, distributed through Apple's App Store, was used to steal approximately $1.8 million in Bitcoin from them.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/apple/apple-sued-over-fake-app-store-crypto-wallet-app-stealing-18m-in-bitcoin/",
+      "linked": true
+    },
     {
       "ts": "2026-07-27T15:39:51Z",
       "p": "tp",
@@ -96,6 +107,28 @@
       "title": "The UK Financial Conduct Authority (FCA) secures a confiscation order for £655,951.40 against John Burford, convicted of defrauding over 100 investors out of £1 million by offering unauthorized trade alerts and investment ‘funds,’ with an estimated 99% of the money originally invested by the roughly 70 known victims set to be returned.",
       "src": "UK Financial Conduct Authority (FCA)",
       "srcUrl": "https://www.fca.org.uk/news/press-releases/fca-secures-majority-victims-money-back-convicted-fraudster",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-27T12:00:00Z",
+      "p": "cyber",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0222",
+      "title": "CISA adds a Fortinet FortiOS flaw (CVE-2025-68686) to its Known Exploited Vulnerabilities catalog: an attacker who has already compromised a device through another flaw can send crafted web requests to bypass a fix for a symbolic-link persistence mechanism, exposing sensitive information, with a remediation deadline of August 10, 2026.",
+      "src": "CISA KEV catalog",
+      "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-27T12:00:00Z",
+      "p": "fraud",
+      "tri": "priority",
+      "st": "confirmed",
+      "id": "L-0223",
+      "title": "The Financial Crimes Enforcement Network (FinCEN) issues a statement of enforcement policy assuring U.S. financial institutions it will not pursue supervisory or enforcement action against them for providing financial services in Venezuela in support of earthquake relief efforts, provided the institution makes reasonable efforts to comply with the Bank Secrecy Act (BSA).",
+      "src": "FinCEN newsroom",
+      "srcUrl": "https://www.fincen.gov/news/news-releases/fincen-issues-statement-enforcement-policy-support-venezuelas-economic-recovery",
       "linked": true
     },
     {
@@ -497,9 +530,9 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v87",
-      "verRange": "v1–v87",
-      "asOf": "July 25, 2026",
+      "ver": "v88",
+      "verRange": "v1–v88",
+      "asOf": "July 27, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
       "p2": "The UK’s National Cyber Security Centre (NCSC) and cybersecurity agencies from the United States and eight other countries warn that hackers linked to Russia’s Federal Security Service (FSB) are exploiting routers with default or weak passwords to infiltrate critical infrastructure, naming financial services among the sectors most at risk. Researchers report “JadePuffer,” described as a ransomware attack run end-to-end by an AI agent that broke in through the exploited Langflow flaw. Separately, federal cybersecurity agencies in the United States, the United Kingdom, Europe, Australia, and New Zealand warn that Russian state-backed hackers known as Laundry Bear are exploiting a Zimbra Collaboration Suite webmail flaw in zero-click phishing attacks, with research from Palo Alto Networks’ Unit 42 finding financial organizations among the sectors targeted.",
@@ -1362,6 +1395,15 @@
           "src": "BleepingComputer",
           "srcUrl": "https://www.bleepingcomputer.com/news/security/malicious-sites-use-javascript-to-build-malware-in-browser-memory/",
           "line": "BleepingComputer reports that a large-scale malicious-advertising campaign directs victims to fake Solana, Luno, and TradingView webpages, where hidden JavaScript code assembles malware directly in the browser's memory."
+        },
+        {
+          "date": "Jul 27, 26",
+          "st": "confirmed",
+          "ver": "v88",
+          "id": "L-0222",
+          "src": "CISA KEV catalog",
+          "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+          "line": "CISA adds a Fortinet FortiOS flaw (CVE-2025-68686) to its Known Exploited Vulnerabilities catalog: an attacker who has already compromised a device through another flaw can send crafted web requests to bypass a fix for a symbolic-link persistence mechanism, exposing sensitive information, with a remediation deadline of August 10, 2026."
         }
       ],
       "sources": [
@@ -1729,8 +1771,8 @@
       "scope": "fraud · AML rulemaking & scam patterns",
       "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
       "opened": "July 2026",
-      "ver": "v30",
-      "verRange": "v1–v30",
+      "ver": "v32",
+      "verRange": "v1–v32",
       "asOf": "July 27, 2026",
       "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22). Separately, the Financial Crimes Enforcement Network (FinCEN) is extending the comment period on its proposal to expand the money-laundering-concern designation of Huione Group to include H-Pay Service PLC, after a technical issue with its comment portal blocked electronic submissions.",
       "p1Sup": "1, 3, 27",
@@ -2072,6 +2114,24 @@
           "src": "UK Financial Conduct Authority (FCA)",
           "srcUrl": "https://www.fca.org.uk/news/press-releases/fca-secures-majority-victims-money-back-convicted-fraudster",
           "line": "The UK Financial Conduct Authority (FCA) secures a confiscation order for £655,951.40 against John Burford, convicted of defrauding over 100 investors out of £1 million by offering unauthorized trade alerts and investment ‘funds,’ with an estimated 99% of the money originally invested by the roughly 70 known victims set to be returned."
+        },
+        {
+          "date": "Jul 27, 26",
+          "st": "confirmed",
+          "ver": "v31",
+          "id": "L-0223",
+          "src": "FinCEN newsroom",
+          "srcUrl": "https://www.fincen.gov/news/news-releases/fincen-issues-statement-enforcement-policy-support-venezuelas-economic-recovery",
+          "line": "The Financial Crimes Enforcement Network (FinCEN) issues a statement of enforcement policy assuring U.S. financial institutions it will not pursue supervisory or enforcement action against them for providing financial services in Venezuela in support of earthquake relief efforts, provided the institution makes reasonable efforts to comply with the Bank Secrecy Act (BSA)."
+        },
+        {
+          "date": "Jul 27, 26",
+          "st": "confirmed",
+          "ver": "v32",
+          "id": "L-0224",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/apple/apple-sued-over-fake-app-store-crypto-wallet-app-stealing-18m-in-bitcoin/",
+          "line": "Apple is sued by three people who claim a fraudulent Sparrow Wallet application, distributed through Apple's App Store, was used to steal approximately $1.8 million in Bitcoin from them."
         }
       ],
       "sources": [
@@ -5163,6 +5223,30 @@
       "line": "BleepingComputer reports that the Coca-Cola Company confirms hackers stole data from its Fairlife dairy subsidiary during a ransomware attack earlier this month.",
       "src": "BleepingComputer",
       "srcUrl": "https://www.bleepingcomputer.com/news/security/coca-cola-confirms-data-theft-in-fairlife-ransomware-attack/"
+    },
+    {
+      "d": "2026-07-27",
+      "p": "cyber",
+      "id": "L-0222",
+      "line": "CISA adds a Fortinet FortiOS flaw (CVE-2025-68686) to its Known Exploited Vulnerabilities catalog: an attacker who has already compromised a device through another flaw can send crafted web requests to bypass a fix for a symbolic-link persistence mechanism, exposing sensitive information, with a remediation deadline of August 10, 2026.",
+      "src": "CISA KEV catalog",
+      "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "d": "2026-07-27",
+      "p": "fraud",
+      "id": "L-0223",
+      "line": "The Financial Crimes Enforcement Network (FinCEN) issues a statement of enforcement policy assuring U.S. financial institutions it will not pursue supervisory or enforcement action against them for providing financial services in Venezuela in support of earthquake relief efforts, provided the institution makes reasonable efforts to comply with the Bank Secrecy Act (BSA).",
+      "src": "FinCEN newsroom",
+      "srcUrl": "https://www.fincen.gov/news/news-releases/fincen-issues-statement-enforcement-policy-support-venezuelas-economic-recovery"
+    },
+    {
+      "d": "2026-07-27",
+      "p": "fraud",
+      "id": "L-0224",
+      "line": "Apple is sued by three people who claim a fraudulent Sparrow Wallet application, distributed through Apple's App Store, was used to steal approximately $1.8 million in Bitcoin from them.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/apple/apple-sued-over-fake-app-store-crypto-wallet-app-stealing-18m-in-bitcoin/"
     }
   ],
   "takeaways": [
@@ -5675,6 +5759,15 @@
       "conf": "moderate confidence",
       "head": "Warn employees who trade cryptocurrency or use TradingView not to click ads for those sites — a malvertising campaign is using fake copies to plant malware.",
       "body": "BleepingComputer reports that a malicious-advertising campaign is directing victims to fake Solana, Luno, and TradingView webpages that run hidden JavaScript assembling malware directly in the browser's memory. Technology and security-awareness teams should remind employees to navigate to trading and cryptocurrency platforms directly rather than through ad links, and to treat unexpected behavior on those sites as suspicious."
+    },
+    {
+      "anchors": [
+        "L-0223"
+      ],
+      "pillars": "Fraud",
+      "conf": "high confidence",
+      "head": "FinCEN's new enforcement-policy statement gives U.S. financial institutions a compliance safe harbor for Venezuela-related transactions tied to earthquake relief.",
+      "body": "The Financial Crimes Enforcement Network (FinCEN) issued a statement of enforcement policy saying it will not pursue supervisory or enforcement action against a U.S. financial institution for providing financial services in Venezuela in support of earthquake relief, provided the institution makes reasonable efforts to comply with the Bank Secrecy Act (BSA). Fraud and BSA compliance officers should confirm this safe harbor before restricting or flagging otherwise-compliant Venezuela-related transactions tied to relief efforts."
     }
   ],
   "publications": {
@@ -5682,7 +5775,7 @@
       {
         "no": "13",
         "date": "Mon, Jul 27, 2026",
-        "confirmed": "8",
+        "confirmed": "11",
         "pending": "0",
         "flash": "1",
         "linked": true
