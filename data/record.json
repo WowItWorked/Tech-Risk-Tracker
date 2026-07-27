@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-27T10:14:00-04:00",
+    "generatedAt": "2026-07-27T12:15:00-04:00",
     "issueNo": 13,
-    "recordHash": "a0953e3",
+    "recordHash": "ef4a545",
     "windowLabel": "June 9 – July 27, 2026",
     "nextWeekly": "Fri, Jul 31",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed; Nacha’s feed included its usual non-XML theme-debug preamble before valid RSS, stripped before parsing). Selection window: 2 hours before this run’s prior lastRun (06:15 ET), so candidates are items published since ≈04:15 ET / 08:15 UTC. One item was admitted: the UK Financial Conduct Authority’s (FCA) press release securing a confiscation order returning stolen investor funds to victims of convicted fraudster John Burford. Not admitted (reviewed, excluded — no technology-risk or dated-event nexus): the FCA’s Transaction and Post-trade Reporting Harmonisation Taskforce membership announcement (administrative appointments, no incident or risk content), its “Outcomes monitoring” blog post (general Consumer Duty commentary, no dated sourced event), and its nationwide car finance advertising-campaign announcement (consumer awareness campaign, not an enforcement action or incident). Not admitted (reviewed, excluded — same underlying event already on record): The Record’s “Hackers used autonomous AI agent to spy on Thailand's finance ministry” restates the same Hermes-AI-agent/Thai-Ministry-of-Finance event already recorded as L-0213 from BleepingComputer, with no new fact beyond what L-0213 states. Not admitted (reviewed, excluded — vendor-sourced explainer, no dated event): BleepingComputer’s “Shadow AI agents are multiplying” piece, sourced to vendor Nudge Security with no dated incident. Not admitted (reviewed, excluded — vendor-sponsored content): two Cybersecurity Dive /spons/ posts (Mythos runtime-security and AI-security-framing pieces). Not admitted (reviewed, excluded — routine non-event): NOAA NHC’s two quiet Atlantic Tropical Weather Outlook bulletins (no cyclone activity). CISA’s KEV catalog carried zero entries with dateAdded on or after 2026-07-24 (catalogVersion unchanged at 2026.07.24). Anthropic’s news page is still topped by the already-recorded L-0211 Claude Opus 5 item; FinCEN’s newsroom page is still topped by the already-recorded L-0207 student-aid Alert; ENISA’s dated news list is still topped by the already-recorded L-0206 EU Managed Security Services consultation; ICO’s page still carries no readable dated content beyond an e-newsletter link. All other feeds — FBI IC3, OCC, the Federal Reserve, CFPB, DOJ (no new releases since Friday), NIST (empty channel again), Nacha (newest still Jul 10), OpenAI, Krebs, Dark Reading, the Bank of England, the NCSC, the EBA, the European Central Bank, the EDPB, and the Federal Register/FinCEN-documents feed — carried nothing new and admissible in-window.",
-    "lastRun": "2026-07-27T10:14:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed; Nacha’s feed again carried its non-XML theme-debug preamble before valid RSS, stripped before parsing). Selection window: 2 hours before this run’s prior lastRun (10:14 ET), so candidates are items published since ≈08:14 ET / 12:14 UTC. Three items were admitted, all third-party risk, all follow-on developments to incidents already on record: BleepingComputer’s report that the ShinyHunters extortion gang has claimed responsibility for the Ernst & Young data breach (L-0125) via a supply-chain credential-theft attack; Cybersecurity Dive’s report that Coca-Cola has restored most production capacity at its Fairlife dairy unit following last month’s ransomware attack, with no material financial impact expected; and BleepingComputer’s report that Coca-Cola has confirmed hackers stole data during that same attack, an escalation from the Anubis gang’s earlier leak threat (L-0167). Not admitted (reappearance, already on record): the UK Financial Conduct Authority’s (FCA) Burford confiscation-order press release, identical URL to the already-recorded L-0218. Not admitted (reviewed, excluded — same vendor-sourced explainer, no dated incident, already reviewed and excluded in the prior run): BleepingComputer’s “Shadow AI agents are multiplying” piece, reappearing inside this run’s overlap window. Not admitted (reviewed, excluded — general industry-policy advocacy, no dated incident or financial-sector nexus): Cybersecurity Dive’s report on two technology-industry coalitions publicly promoting open-weight AI models against Chinese competition. Not admitted (reviewed, excluded — routine non-event): NOAA NHC’s “There are no tropical cyclones at this time” bulletin. CISA’s KEV catalog carried zero entries with dateAdded on or after 2026-07-27 (catalogVersion unchanged at 2026.07.24). Anthropic’s news page is still topped by the already-recorded L-0211 Claude Opus 5 item; FinCEN’s newsroom page is still topped by the already-recorded L-0207 student-aid Alert; ENISA’s dated news list is still topped by the already-recorded L-0206 EU Managed Security Services consultation; ICO’s page still carries no readable dated content beyond an e-newsletter link. All other feeds — FBI IC3, OCC, the Federal Reserve, CFPB, DOJ, NIST (empty channel again), Nacha (newest still Jul 10), OpenAI, Krebs, The Record, Dark Reading, the Bank of England, the NCSC, the EBA, the European Central Bank, the EDPB, and the Federal Register/FinCEN-documents feed — carried nothing new and admissible in-window.",
+    "lastRun": "2026-07-27T12:15:00-04:00"
   },
   "lead": {
-    "head": "Leading stories: a zero-day flaw in Check Point's SmartConsole is under active exploitation; the UK Financial Conduct Authority (FCA) recovers stolen investor money via a confiscation order against a convicted fraudster; and OpenAI's ChatGPT suffers a worldwide outage.",
-    "dek": "Today’s edition draws on the five items recorded so far. Every item links to its source.",
+    "head": "Leading stories: a zero-day flaw in Check Point's SmartConsole is under active exploitation; Coca-Cola confirms hackers stole data in the Fairlife ransomware attack; and the ShinyHunters extortion gang claims responsibility for the Ernst & Young data breach.",
+    "dek": "Today’s edition draws on the eight items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -29,31 +29,64 @@
       },
       {
         "n": "2",
-        "p": "fraud",
+        "p": "tp",
         "tri": "priority",
         "st": "confirmed",
-        "id": "L-0218",
+        "id": "L-0221",
         "conf": "",
-        "text": "The UK Financial Conduct Authority (FCA) secures a confiscation order for £655,951.40 against John Burford, convicted of defrauding over 100 investors out of £1 million by offering unauthorized trade alerts and investment ‘funds,’ with an estimated 99% of the money originally invested by the roughly 70 known victims set to be returned.",
-        "why": "Fraud and financial-crime teams should note that FCA confiscation orders can return the bulk of stolen investor funds even after a fraudster is already sentenced, reinforcing civil recovery as a continuing avenue in fraud enforcement.",
-        "srcText": "UK Financial Conduct Authority (FCA), Jul 27",
-        "srcUrl": "https://www.fca.org.uk/news/press-releases/fca-secures-majority-victims-money-back-convicted-fraudster"
+        "text": "BleepingComputer reports that the Coca-Cola Company confirms hackers stole data from its Fairlife dairy subsidiary during a ransomware attack earlier this month.",
+        "why": "Third-party-risk teams should treat the Fairlife ransomware attack as a confirmed data-theft incident, not just an operational disruption, now that Coca-Cola has confirmed hackers stole data from the subsidiary.",
+        "srcText": "BleepingComputer, Jul 27",
+        "srcUrl": "https://www.bleepingcomputer.com/news/security/coca-cola-confirms-data-theft-in-fairlife-ransomware-attack/"
       },
       {
         "n": "3",
-        "p": "resilience",
+        "p": "tp",
         "tri": "priority",
         "st": "confirmed",
-        "id": "L-0215",
+        "id": "L-0219",
         "conf": "",
-        "text": "BleepingComputer reports that OpenAI's ChatGPT chatbot experienced connectivity issues worldwide, with OpenAI confirming the outage.",
-        "why": "Technology teams whose organizations use ChatGPT should confirm backup processes are ready for outages, since OpenAI confirmed a worldwide connectivity disruption to the chatbot.",
-        "srcText": "BleepingComputer, Jul 25",
-        "srcUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-confirms-chatgpt-is-down-worldwide/"
+        "text": "BleepingComputer reports that the ShinyHunters extortion gang claims responsibility for the recently disclosed Ernst & Young data breach, saying it obtained credentials for some of the firm's systems through a supply-chain attack.",
+        "why": "Third-party-risk teams should note that the recently disclosed Ernst & Young data breach is now attributed to the ShinyHunters extortion gang, which claims it obtained access through a supply-chain attack on the firm's systems.",
+        "srcText": "BleepingComputer, Jul 27",
+        "srcUrl": "https://www.bleepingcomputer.com/news/security/ernst-and-young-data-breach-claimed-by-shinyhunters-extortion-gang/"
       }
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-27T15:39:51Z",
+      "p": "tp",
+      "tri": "priority",
+      "st": "confirmed",
+      "id": "L-0221",
+      "title": "BleepingComputer reports that the Coca-Cola Company confirms hackers stole data from its Fairlife dairy subsidiary during a ransomware attack earlier this month.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/coca-cola-confirms-data-theft-in-fairlife-ransomware-attack/",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-27T15:15:35Z",
+      "p": "tp",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0220",
+      "title": "Cybersecurity Dive reports that Coca-Cola says production has mostly resumed at its Fairlife dairy facilities in the United States following the ransomware attack earlier this month, with no material impact expected on financial performance or operations.",
+      "src": "Cybersecurity Dive",
+      "srcUrl": "https://www.cybersecuritydive.com/news/coca-cola-restores-most-production-capacity-at-dairy-unit-after-ransomware/826250/",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-27T15:12:27Z",
+      "p": "tp",
+      "tri": "priority",
+      "st": "confirmed",
+      "id": "L-0219",
+      "title": "BleepingComputer reports that the ShinyHunters extortion gang claims responsibility for the recently disclosed Ernst & Young data breach, saying it obtained credentials for some of the firm's systems through a supply-chain attack.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/ernst-and-young-data-breach-claimed-by-shinyhunters-extortion-gang/",
+      "linked": true
+    },
     {
       "ts": "2026-07-27T14:30:00Z",
       "p": "fraud",
@@ -2226,9 +2259,9 @@
       "scope": "third-party risk · vendor software & supply chain",
       "watch": "Vendor tools under active attack, software-supply-chain compromises aimed at financial applications, and vendor incident disclosures.",
       "opened": "July 2026",
-      "ver": "v15",
-      "verRange": "v1–v15",
-      "asOf": "July 26, 2026",
+      "ver": "v18",
+      "verRange": "v1–v18",
+      "asOf": "July 27, 2026",
       "p1": "One vendor-channel exploit is confirmed this window: SimpleHelp, a remote-support tool, carries an authentication-bypass flaw on CISA’s known-exploited list — in a vulnerable configuration, a remote, unauthenticated attacker can log in with a forged token. Separately, the European Union Agency for Cybersecurity (ENISA) has opened a public consultation on a draft candidate cybersecurity certification scheme for EU Managed Security Services, developed with its dedicated Ad Hoc Working Group.",
       "p1Sup": "1, 14",
       "p2": "The rest of the vendor picture clusters around the software supply chain: a claimed breach at consulting firm Accenture said to involve source code and encryption keys, and malicious look-alike software kits for the Paysafe, Skrill, and Neteller payment applications on public code registries. Separately, Ernst & Young — one of the world’s four largest auditing and professional-services firms — is notifying customers of a data breach after its own support-ticket system was compromised, with documents containing client tax information among what the tickets may have held.",
@@ -2416,6 +2449,33 @@
           "src": "BleepingComputer",
           "srcUrl": "https://www.bleepingcomputer.com/news/security/github-pypi-add-time-absed-defenses-against-supply-chain-attacks/",
           "line": "BleepingComputer reports that GitHub and the Python Package Index (PyPI) added a time-based defense to GitHub's Dependabot dependency-management tool to protect against, and limit the impact of, software supply-chain attacks."
+        },
+        {
+          "date": "Jul 27, 26",
+          "st": "confirmed",
+          "ver": "v16",
+          "id": "L-0219",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/ernst-and-young-data-breach-claimed-by-shinyhunters-extortion-gang/",
+          "line": "BleepingComputer reports that the ShinyHunters extortion gang claims responsibility for the recently disclosed Ernst & Young data breach, saying it obtained credentials for some of the firm's systems through a supply-chain attack."
+        },
+        {
+          "date": "Jul 27, 26",
+          "st": "confirmed",
+          "ver": "v17",
+          "id": "L-0220",
+          "src": "Cybersecurity Dive",
+          "srcUrl": "https://www.cybersecuritydive.com/news/coca-cola-restores-most-production-capacity-at-dairy-unit-after-ransomware/826250/",
+          "line": "Cybersecurity Dive reports that Coca-Cola says production has mostly resumed at its Fairlife dairy facilities in the United States following the ransomware attack earlier this month, with no material impact expected on financial performance or operations."
+        },
+        {
+          "date": "Jul 27, 26",
+          "st": "confirmed",
+          "ver": "v18",
+          "id": "L-0221",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/coca-cola-confirms-data-theft-in-fairlife-ransomware-attack/",
+          "line": "BleepingComputer reports that the Coca-Cola Company confirms hackers stole data from its Fairlife dairy subsidiary during a ransomware attack earlier this month."
         }
       ],
       "sources": [
@@ -5079,6 +5139,30 @@
       "line": "The UK Financial Conduct Authority (FCA) secures a confiscation order for £655,951.40 against John Burford, convicted of defrauding over 100 investors out of £1 million by offering unauthorized trade alerts and investment ‘funds,’ with an estimated 99% of the money originally invested by the roughly 70 known victims set to be returned.",
       "src": "UK Financial Conduct Authority (FCA)",
       "srcUrl": "https://www.fca.org.uk/news/press-releases/fca-secures-majority-victims-money-back-convicted-fraudster"
+    },
+    {
+      "d": "2026-07-27",
+      "p": "tp",
+      "id": "L-0219",
+      "line": "BleepingComputer reports that the ShinyHunters extortion gang claims responsibility for the recently disclosed Ernst & Young data breach, saying it obtained credentials for some of the firm's systems through a supply-chain attack.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/ernst-and-young-data-breach-claimed-by-shinyhunters-extortion-gang/"
+    },
+    {
+      "d": "2026-07-27",
+      "p": "tp",
+      "id": "L-0220",
+      "line": "Cybersecurity Dive reports that Coca-Cola says production has mostly resumed at its Fairlife dairy facilities in the United States following the ransomware attack earlier this month, with no material impact expected on financial performance or operations.",
+      "src": "Cybersecurity Dive",
+      "srcUrl": "https://www.cybersecuritydive.com/news/coca-cola-restores-most-production-capacity-at-dairy-unit-after-ransomware/826250/"
+    },
+    {
+      "d": "2026-07-27",
+      "p": "tp",
+      "id": "L-0221",
+      "line": "BleepingComputer reports that the Coca-Cola Company confirms hackers stole data from its Fairlife dairy subsidiary during a ransomware attack earlier this month.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/coca-cola-confirms-data-theft-in-fairlife-ransomware-attack/"
     }
   ],
   "takeaways": [
@@ -5598,7 +5682,7 @@
       {
         "no": "13",
         "date": "Mon, Jul 27, 2026",
-        "confirmed": "5",
+        "confirmed": "8",
         "pending": "0",
         "flash": "1",
         "linked": true
