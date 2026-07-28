@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-28T12:10:00-04:00",
+    "generatedAt": "2026-07-28T15:12:00-04:00",
     "issueNo": 14,
-    "recordHash": "bc5706c",
+    "recordHash": "c400798",
     "windowLabel": "June 9 – July 28, 2026",
     "nextWeekly": "Fri, Jul 31",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: intraday overlap is 2 hours before this run’s prior lastRun (11:10 ET), so candidates are items published since ≈09:10 ET / 13:10 UTC. Four raw candidates fell in this window across 3 feeds with window activity: Cybersecurity Dive (2), The Record (1), and BleepingComputer (1). Two items were admitted:\n- L-0239 (ai, routine) Cybersecurity Dive: Microsoft launched an agentic security platform designed to combat AI-based attacks, with the rollout coming amid growing concern about hackers’ ability to launch campaigns using autonomous methods. Admitted under the AI pillar as a capability/tooling development responding to AI-driven attack risk, the same basis as L-0211’s Claude Opus 5 launch and L-0209’s LiteLLM exposure report. Triaged routine — a vendor product launch, not a confirmed incident, regulatory action, or sector-wide impact.\n- L-0240 (ai, routine) Cybersecurity Dive: companies fear AI risks more than common cybersecurity threats, a misprioritization that could blind them to the threats they should be focusing on, per a new Arctic Wolf report. Admitted under the AI pillar as a governance/risk-prioritization survey finding, the same basis as L-0071’s SANS AI-governance-gap admission and L-0145’s CISO workforce-pressure admission. Triaged routine — an industry-wide survey finding naming no specific institution.\nNot admitted (reappearance, identical URL already recorded as L-0238): The Record’s Bank of Baroda cyber-incident report. Not admitted (reappearance, already reviewed and excluded, identical URL): BleepingComputer’s Specops Software-authored “Is Your SSO Protected Against Modern Credential Attacks?” post — vendor-sponsored guidance, not a reported event. All other feeds — CISA’s KEV catalog (unchanged, catalogVersion still 2026.07.27), FBI IC3, OCC, the Federal Reserve, the Federal Trade Commission (FTC), CFPB, DOJ, NIST (empty channel again), Nacha (newest still Jul 10), OpenAI, Anthropic (still topped by already-reviewed Jul 27 items), FinCEN (still topped by already-recorded items), the UK Financial Conduct Authority (FCA), the Bank of England, the UK National Cyber Security Centre (NCSC), the UK Information Commissioner’s Office (ICO), the European Banking Authority (EBA, beyond routine e-mail-alert digests), the European Central Bank, the European Data Protection Board (EDPB), the Federal Register/FinCEN-documents feed, Krebs, Dark Reading (beyond the already-reviewed Blauner interview), and ENISA — carried nothing new and admissible in-window.",
-    "lastRun": "2026-07-28T12:10:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: intraday overlap is 2 hours before this run’s prior lastRun (12:10 ET), so candidates are items published since ≈10:10 ET / 14:10 UTC. Seven raw candidates fell in this window across 5 feeds with window activity: BleepingComputer (3), Cybersecurity Dive (2), The Record (1), Dark Reading (1), and OpenAI (1). Two items were admitted:\n- L-0241 (cyber, routine) Dark Reading: Microsoft patched a high-severity ‘Certighost’ flaw affecting Microsoft Active Directory (AD) certificates earlier this month, which could let criminals escalate privileges and compromise an AD environment. Admitted as a distinct item from L-0227 (BleepingComputer’s Jul 27 report on the released Certighost proof-of-concept exploit for the same underlying flaw) because it carries a materially new fact — confirmation that Microsoft has already patched the flaw — matching the precedent set by L-0073/L-0089/L-0234 for admitting follow-on reporting with new facts as its own item. Triaged routine — a patch-availability disclosure, not confirmed active exploitation.\n- L-0242 (cyber, routine) BleepingComputer: vBulletin fixed a critical, unauthenticated remote-code-execution flaw (CVE-2026-61511) in its forum software, affecting versions up to 5.7.5 and 6.2.1, with a public proof-of-concept exploit now available; the fix shipped in version 6.2.2 on July 1. The RSS teaser was truncated, so the allowlisted article page was fetched for a fuller verbatim excerpt (50 words, within the EDITORIAL §2/runbook cap). Admitted under the cyber pillar on the same ‘widely deployed enterprise/community software with a public exploit’ basis as L-0135 (7-Zip) and L-0136 (WordPress Core wp2shell). Triaged routine, matching L-0136’s precedent — a publicly released exploit with no confirmed active exploitation in the wild.\nNot admitted (relevance gate — no financial-sector nexus stated): BleepingComputer’s ‘CISA shares advice on isolating vital systems during cyberattacks’ — the fetched article covers a joint CISA/ACSC/FBI advisory on isolating operational technology (OT) systems (water treatment, electrical, manufacturing, transportation, telecommunications infrastructure); no financial-sector target or nexus stated, matching the disposition given to prior CISA/FBI OT-critical-infrastructure advisories. Not admitted (relevance gate — no tech-risk-pillar nexus): OpenAI’s ‘Scientific computing in the age of agentic AI’ field report on AI coding agents accelerating genomics research, naming no financial-sector angle or risk content. Not admitted (reappearances, identical URLs already recorded): The Record’s Bank of Baroda cyber-incident report (already L-0238); Cybersecurity Dive’s Microsoft agentic-security-platform launch (already L-0239) and companies-fear-AI-risks survey (already L-0240). All other feeds — CISA’s KEV catalog (unchanged, catalogVersion still 2026.07.27), FBI IC3, OCC, the Federal Reserve, the FTC (beyond the UA fallback), CFPB, DOJ, NIST (empty channel again), Nacha (newest still Jul 10), Anthropic (still topped by already-reviewed Jul 27 items), FinCEN (still topped by already-recorded items), the UK Financial Conduct Authority (FCA), the Bank of England, the UK National Cyber Security Centre (NCSC), the UK Information Commissioner’s Office (ICO), the European Banking Authority (EBA, beyond routine e-mail-alert digests), the European Central Bank, the European Data Protection Board (EDPB), the Federal Register/FinCEN-documents feed, Krebs, and ENISA — carried nothing new and admissible in-window. NOAA NHC’s Atlantic Tropical Weather Outlook remained a routine no-cyclone non-event.",
+    "lastRun": "2026-07-28T15:12:00-04:00"
   },
   "lead": {
     "head": "Leading stories: hackers actively exploit a zero-day flaw in the FastJson Java library, including at financial services firms; the UK Financial Conduct Authority (FCA) says regulators have begun directly overseeing ‘critical third parties’ to the financial system; and hackers used an autonomous AI agent to spy on Thailand’s finance ministry.",
-    "dek": "Today’s edition draws on the twelve items recorded so far. Every item links to its source.",
+    "dek": "Today’s edition draws on the fourteen items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -54,6 +54,28 @@
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-28T18:08:50Z",
+      "p": "cyber",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0242",
+      "title": "BleepingComputer reports that vBulletin has fixed a critical flaw (CVE-2026-61511) in its forum software that let attackers without a login execute arbitrary PHP code through template rendering, with a public exploit now available; the flaw affects vBulletin versions up to 5.7.5 (5.x branch) and 6.2.1 (6.x branch), fixed in version 6.2.2, released July 1.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/vbulletin-fixes-critical-pre-auth-rce-flaw-with-public-exploit/",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-28T16:38:48Z",
+      "p": "cyber",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0241",
+      "title": "Dark Reading reports that Microsoft patched a high-severity ‘Certighost’ flaw affecting Microsoft Active Directory (AD) certificates earlier this month, which could let criminals escalate privileges and compromise an AD environment.",
+      "src": "Dark Reading",
+      "srcUrl": "https://www.darkreading.com/vulnerabilities-threats/certighost-flaw-microsoft-active-directory-certificates",
+      "linked": true
+    },
     {
       "ts": "2026-07-28T15:12:28Z",
       "p": "ai",
@@ -568,8 +590,8 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v95",
-      "verRange": "v1–v95",
+      "ver": "v97",
+      "verRange": "v1–v97",
       "asOf": "July 28, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
@@ -1505,6 +1527,24 @@
           "src": "The Record",
           "srcUrl": "https://therecord.media/india-bank-of-baroda-reports-cybersecurity-incident",
           "line": "The Record reports that India’s Bank of Baroda confirmed a cyber incident after hackers claimed to have stolen data, saying an employee’s email account had been compromised, giving attackers unauthorized access to “certain data.”"
+        },
+        {
+          "date": "Jul 28, 26",
+          "st": "confirmed",
+          "ver": "v96",
+          "id": "L-0241",
+          "src": "Dark Reading",
+          "srcUrl": "https://www.darkreading.com/vulnerabilities-threats/certighost-flaw-microsoft-active-directory-certificates",
+          "line": "Dark Reading reports that Microsoft patched a high-severity ‘Certighost’ flaw affecting Microsoft Active Directory (AD) certificates earlier this month, which could let criminals escalate privileges and compromise an AD environment."
+        },
+        {
+          "date": "Jul 28, 26",
+          "st": "confirmed",
+          "ver": "v97",
+          "id": "L-0242",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/vbulletin-fixes-critical-pre-auth-rce-flaw-with-public-exploit/",
+          "line": "BleepingComputer reports that vBulletin has fixed a critical flaw (CVE-2026-61511) in its forum software that let attackers without a login execute arbitrary PHP code through template rendering, with a public exploit now available; the flaw affects vBulletin versions up to 5.7.5 (5.x branch) and 6.2.1 (6.x branch), fixed in version 6.2.2, released July 1."
         }
       ],
       "sources": [
@@ -5540,6 +5580,22 @@
       "line": "Cybersecurity Dive reports that companies fear artificial intelligence (AI) risks more than common cybersecurity threats, a misprioritization that could blind them to the threats they should be focusing on, according to a new report from Arctic Wolf.",
       "src": "Cybersecurity Dive",
       "srcUrl": "https://www.cybersecuritydive.com/news/ai-cybersecurity-threats-business-fears/826352/"
+    },
+    {
+      "d": "2026-07-28",
+      "p": "cyber",
+      "id": "L-0241",
+      "line": "Dark Reading reports that Microsoft patched a high-severity ‘Certighost’ flaw affecting Microsoft Active Directory (AD) certificates earlier this month, which could let criminals escalate privileges and compromise an AD environment.",
+      "src": "Dark Reading",
+      "srcUrl": "https://www.darkreading.com/vulnerabilities-threats/certighost-flaw-microsoft-active-directory-certificates"
+    },
+    {
+      "d": "2026-07-28",
+      "p": "cyber",
+      "id": "L-0242",
+      "line": "BleepingComputer reports that vBulletin has fixed a critical flaw (CVE-2026-61511) in its forum software that let attackers without a login execute arbitrary PHP code through template rendering, with a public exploit now available; the flaw affects vBulletin versions up to 5.7.5 (5.x branch) and 6.2.1 (6.x branch), fixed in version 6.2.2, released July 1.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/vbulletin-fixes-critical-pre-auth-rce-flaw-with-public-exploit/"
     }
   ],
   "takeaways": [
@@ -6079,6 +6135,24 @@
       "conf": "high confidence",
       "head": "Vendors providing critical technology, data, or operational services to UK financial firms should expect direct FCA/Bank of England oversight now that the first ‘critical third parties’ have been designated.",
       "body": "The UK Financial Conduct Authority (FCA) says the UK government has designated the first critical third parties (CTPs) under a new oversight regime, with the Bank of England, the Prudential Regulation Authority (PRA), and the FCA now directly overseeing the resilience of services these providers offer to UK financial firms and financial market infrastructures (FMIs). Third-party-risk teams should confirm whether any of their critical vendors fall under this new designation."
+    },
+    {
+      "anchors": [
+        "L-0241"
+      ],
+      "pillars": "Cybersecurity",
+      "conf": "high confidence",
+      "head": "If your organization manages Microsoft Active Directory (AD) certificates, confirm the patch for the ‘Certighost’ flaw is applied — it could let criminals escalate privileges and take over an AD environment.",
+      "body": "Dark Reading reports that Microsoft patched a high-severity ‘Certighost’ flaw affecting Microsoft Active Directory (AD) certificates earlier this month. Technology and identity teams should confirm the patch is applied, since the flaw could let criminals escalate privileges and compromise an AD environment."
+    },
+    {
+      "anchors": [
+        "L-0242"
+      ],
+      "pillars": "Cybersecurity",
+      "conf": "high confidence",
+      "head": "If you run vBulletin (versions up to 5.7.5 or 6.2.1), update to 6.2.2 now — a public exploit exists for a critical, unauthenticated remote-code-execution flaw.",
+      "body": "BleepingComputer reports that a critical flaw (CVE-2026-61511) in the vBulletin forum software lets attackers without a login execute arbitrary PHP code through template rendering, with a public exploit now available. Technology teams running vBulletin versions up to 5.7.5 (5.x branch) or 6.2.1 (6.x branch) should update to version 6.2.2, released July 1, which fixes the flaw."
     }
   ],
   "publications": {
@@ -6086,7 +6160,7 @@
       {
         "no": "14",
         "date": "Tue, Jul 28, 2026",
-        "confirmed": "12",
+        "confirmed": "14",
         "pending": "0",
         "flash": "1",
         "linked": true
