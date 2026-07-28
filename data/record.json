@@ -2,111 +2,78 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-27T18:12:00-04:00",
-    "issueNo": 13,
-    "recordHash": "668a9d8",
-    "windowLabel": "June 9 – July 27, 2026",
+    "generatedAt": "2026-07-28T06:19:00-04:00",
+    "issueNo": 14,
+    "recordHash": "4f86104",
+    "windowLabel": "June 9 – July 28, 2026",
     "nextWeekly": "Fri, Jul 31",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed; Nacha’s feed again carried its non-XML theme-debug preamble before valid RSS, stripped before parsing). Selection window: 2 hours before this run’s prior lastRun (16:09 ET), so candidates are items published since ≈14:09 ET / 18:09 UTC. Three items were admitted, all cyber: Dark Reading’s report that a persistent “confused deputy” vulnerability class affects access controls in Google Cloud and Microsoft Azure; BleepingComputer’s report of a released proof-of-concept exploit (“Certighost”) for a Windows Active Directory Certificate Services flaw; and BleepingComputer’s report of the Dysphoria botnet, which has compromised around 200,000 devices worldwide for distributed denial-of-service (DDoS) attacks. Not admitted (reviewed, excluded — no financial-sector or technology-risk-to-the-sector nexus stated): The Record’s report on Senator Wyden’s letter urging CISA, OMB, and NIST to purge outdated VPNs from federal agencies (the U.S. government’s own infrastructure, not the financial sector or its vendors). Not admitted (reviewed, excluded — retrospective analysis, not a new confirmed fact pattern): Dark Reading’s feature on an FBI agent’s account of how Operation Cronos took down LockBit, a look back at an already-completed law-enforcement operation with no new dated event. Not admitted (reviewed, excluded — routine non-event): NOAA NHC’s “There are no tropical cyclones at this time” bulletin. CISA’s KEV catalog carries no new entries (catalogVersion unchanged at 2026.07.27, still only the two same-day additions already recorded as L-0222/L-0225). Anthropic’s news page is still topped by the already-recorded L-0211 Claude Opus 5 item; FinCEN’s newsroom page is still topped by the already-recorded L-0223 Venezuela statement; ICO’s page still carries no readable dated content beyond an e-newsletter link; ENISA’s page is still topped by the already-reviewed-and-excluded podcast-launch item. All other feeds — FBI IC3, OCC, the Federal Reserve, FTC (beyond the UA fallback), CFPB, DOJ, NIST (empty channel again), Nacha (newest still Jul 10), OpenAI, Krebs, The Record (beyond the VPN item), the Bank of England, the FCA, the NCSC, the EBA, the European Central Bank, the EDPB, and the Federal Register/FinCEN-documents feed — carried nothing new and admissible in-window.",
-    "lastRun": "2026-07-27T18:12:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 12 hours before this run’s prior lastRun (2026-07-27T18:12 ET), so candidates are items published since ≈2026-07-27T06:12 ET / 10:12 UTC. Eight items were admitted. BleepingComputer reports active exploitation of a zero-day flaw in the FastJson open-source Java library, targeting organizations across financial services, healthcare, computing, retail, and other industries (L-0235, flash). The Record reports hackers used an autonomous AI agent to carry out a cyber-espionage campaign against Thailand’s Ministry of Finance (L-0233, priority). The UK Financial Conduct Authority (FCA) describes the government’s designation of the first ‘critical third parties’ under a new oversight regime jointly run with the Bank of England and the Prudential Regulation Authority (PRA) (L-0236, priority). Cybersecurity Dive reports Coca-Cola has restored most production capacity at its Fairlife dairy unit and does not expect a material financial impact, a follow-up to the already-recorded ransomware/data-theft incident (L-0234, routine). Four DOJ press releases were admitted on their explicit financial-institution or bank-cash nexus: a Westville security-company COO and deputy director charged with embezzlement and bank fraud over $9 million held in trust for a bank (L-0229); a steel manufacturer’s CEO’s guilty plea to a $66 million scheme that defrauded a bank, an investment firm, and investors (L-0230); a German conglomerate’s Peachtree City subsidiary’s $2.6 million Paycheck Protection Program (PPP) False Claims Act settlement (L-0231); and a gunman’s guilty plea to the armed robbery of a Brinks armored truck carrying Bank of America funds (L-0232) — the record’s first confirmed physical-security event. Not admitted (reappearances of already-recorded stories, same source URLs): BleepingComputer’s Arista VeloCloud Orchestrator patch confirmation (L-0225), Dysphoria botnet (L-0228), Certighost PoC (L-0227), Apple/Sparrow Wallet suit (L-0224), Coca-Cola data-theft confirmation (L-0221), and Ernst & Young/ShinyHunters breach (L-0219); the FCA’s John Burford confiscation-order release (L-0218); and Dark Reading’s Confused Deputy and LockBit-takedown retrospective (both already excluded/recorded). Not admitted (reviewed, excluded — no financial-sector or technology-risk-to-the-sector nexus stated): BleepingComputer’s medical-billing-firm (MCBS) breach and vendor-contributed ‘Shadow AI agents’ guidance post; The Record’s outdated-federal-VPNs, Bahrain-spyware-immunity, South Carolina/Georgia health-system malware, and Belarusian-activist-phishing stories; Cybersecurity Dive’s AI-openness industry-advocacy piece and sponsored runtime-security post; the FCA’s Transaction and Post-trade Reporting Harmonisation Taskforce appointment story; the FTC’s Elite Events ticket-bot enforcement; the NCSC’s generic incident-recovery guidance blog; Dark Reading’s zero-day-rulebook opinion piece; and 21 of 25 DOJ press releases (drug, firearms, immigration, tax-evasion, and other matters with no financial-institution or technology-risk nexus stated, including a DoorDash-driver-impersonation fraud with a computer-fraud charge but no financial-sector victim, a marijuana-proceeds money-laundering sentencing naming no institution or technique, and a Dominican passport-fraud/identity-theft sentencing with no financial-sector detail). NOAA NHC’s Atlantic outlook remained a routine no-cyclone non-event. CISA’s KEV catalog carried no entries beyond the two already recorded (L-0222/L-0225, catalogVersion unchanged at 2026.07.27). Anthropic’s news page surfaced two new same-day items (an open-weights-models position statement and a Cognizant partnership announcement), both excluded as promotional/policy content with no financial-sector risk nexus stated. FinCEN’s newsroom remained topped by the already-recorded L-0223 Venezuela statement; ICO’s and ENISA’s pages again carried no readable dated news content beyond a newsletter link and a promotional graphic, respectively. All other feeds — FBI IC3, OCC, the Federal Reserve, CFPB, NIST (empty channel again), Nacha (newest still Jul 10, after stripping the feed’s non-XML theme-debug preamble), OpenAI, Krebs, the Bank of England, the NCSC (beyond the excluded guidance post), the EBA, the European Central Bank, the EDPB, and the Federal Register/FinCEN-documents feed — carried nothing new and admissible in-window.",
+    "lastRun": "2026-07-28T06:19:00-04:00"
   },
   "lead": {
-    "head": "Leading stories: a zero-day flaw in Check Point's SmartConsole is under active exploitation; Coca-Cola confirms hackers stole data in the Fairlife ransomware attack; and the ShinyHunters extortion gang claims responsibility for the Ernst & Young data breach.",
-    "dek": "Today’s edition draws on the fifteen items recorded so far. Every item links to its source.",
+    "head": "Leading stories: hackers actively exploit a zero-day flaw in the FastJson Java library, including at financial services firms; the UK Financial Conduct Authority (FCA) says regulators have begun directly overseeing ‘critical third parties’ to the financial system; and hackers used an autonomous AI agent to spy on Thailand’s finance ministry.",
+    "dek": "Today’s edition draws on the eight items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
         "p": "cyber",
         "tri": "flash",
         "st": "confirmed",
-        "id": "L-0214",
+        "id": "L-0235",
         "conf": "",
-        "text": "Cybersecurity Dive reports that a zero-day flaw in Check Point's SmartConsole is under active exploitation, with researchers warning it lets an attacker make key changes to security configurations.",
-        "why": "Technology and security teams should confirm exposure of any Check Point SmartConsole deployment and watch for vendor guidance, given researchers report the flaw is already being exploited to alter security configurations.",
-        "srcText": "Cybersecurity Dive, Jul 24",
-        "srcUrl": "https://www.cybersecuritydive.com/news/zero-day-flaw-check-point-smartconsole-exploitation/826149/"
+        "text": "BleepingComputer reports that hackers are actively exploiting a zero-day flaw in the FastJson open-source Java library, letting them remotely run code without needing a user to take any action or having elevated access, in attacks targeting organizations across financial services, healthcare, computing, retail, and other industries.",
+        "why": "Technology and security teams should determine whether the FastJson Java library is used anywhere in their stack, since researchers report attackers are already exploiting it remotely without needing user interaction, in attacks that include financial services organizations.",
+        "srcText": "BleepingComputer, Jul 27",
+        "srcUrl": "https://www.bleepingcomputer.com/news/security/hackers-target-us-firms-in-fastjson-rce-zero-day-attacks/"
       },
       {
         "n": "2",
         "p": "tp",
         "tri": "priority",
         "st": "confirmed",
-        "id": "L-0221",
+        "id": "L-0236",
         "conf": "",
-        "text": "BleepingComputer reports that the Coca-Cola Company confirms hackers stole data from its Fairlife dairy subsidiary during a ransomware attack earlier this month.",
-        "why": "Third-party-risk teams should treat the Fairlife ransomware attack as a confirmed data-theft incident, not just an operational disruption, now that Coca-Cola has confirmed hackers stole data from the subsidiary.",
-        "srcText": "BleepingComputer, Jul 27",
-        "srcUrl": "https://www.bleepingcomputer.com/news/security/coca-cola-confirms-data-theft-in-fairlife-ransomware-attack/"
+        "text": "The UK Financial Conduct Authority (FCA) says the UK government has designated the first ‘critical third parties’ under a new oversight regime, with the Bank of England, the Prudential Regulation Authority (PRA), and the FCA now directly overseeing these providers to ensure the services they provide to UK financial firms and financial market infrastructures (FMIs) are resilient.",
+        "why": "Banks and the technology, data, and operational service providers they rely on should expect direct regulatory oversight now that the Bank of England, the Prudential Regulation Authority (PRA), and the FCA have designated the first critical third parties under the UK’s new oversight regime.",
+        "srcText": "UK Financial Conduct Authority (FCA), Jul 28",
+        "srcUrl": "https://www.fca.org.uk/news/blogs/strengthening-resilience-across-increasingly-interconnected-financial-system"
       },
       {
         "n": "3",
-        "p": "tp",
+        "p": "ai",
         "tri": "priority",
         "st": "confirmed",
-        "id": "L-0219",
+        "id": "L-0233",
         "conf": "",
-        "text": "BleepingComputer reports that the ShinyHunters extortion gang claims responsibility for the recently disclosed Ernst & Young data breach, saying it obtained credentials for some of the firm's systems through a supply-chain attack.",
-        "why": "Third-party-risk teams should note that the recently disclosed Ernst & Young data breach is now attributed to the ShinyHunters extortion gang, which claims it obtained access through a supply-chain attack on the firm's systems.",
-        "srcText": "BleepingComputer, Jul 27",
-        "srcUrl": "https://www.bleepingcomputer.com/news/security/ernst-and-young-data-breach-claimed-by-shinyhunters-extortion-gang/"
+        "text": "The Record reports that hackers used an autonomous artificial intelligence (AI) agent to carry out a cyber-espionage campaign against Thailand’s Ministry of Finance, according to researchers.",
+        "why": "Security and artificial intelligence (AI) governance teams should note that researchers have documented an autonomous AI agent independently carrying out a cyber-espionage campaign against a government finance ministry, a new class of AI-driven attack capability.",
+        "srcText": "The Record, Jul 27",
+        "srcUrl": "https://therecord.media/thailand-hackers-ai-finance-ministry"
       }
     ]
   },
   "wire": [
     {
-      "ts": "2026-07-27T21:08:15Z",
-      "p": "cyber",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0228",
-      "title": "BleepingComputer reports that a botnet called Dysphoria has compromised around 200,000 devices worldwide and is being used to flood targets with distributed denial-of-service (DDoS) traffic and to relay further attack traffic.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/new-dysphoria-ddos-botnet-spreads-to-200k-devices-worldwide/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-27T21:00:25Z",
-      "p": "cyber",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0227",
-      "title": "BleepingComputer reports that a proof-of-concept exploit called “Certighost” has been released for a vulnerability in Windows Active Directory Certificate Services that could let an already-authenticated attacker take over a Windows domain.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/new-certighost-poc-exploit-lets-attackers-hijack-windows-domains/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-27T20:57:26Z",
-      "p": "cyber",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0226",
-      "title": "Dark Reading reports that a persistent category of flaws known as “confused deputy” vulnerabilities lets attackers easily gain administrator-level permissions and bypass access controls in Google Cloud and Microsoft Azure.",
-      "src": "Dark Reading",
-      "srcUrl": "https://www.darkreading.com/cloud-security/confused-deputy-flaws-google-cloud-microsoft-azure",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-27T17:29:07Z",
-      "p": "fraud",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0224",
-      "title": "Apple is sued by three people who claim a fraudulent Sparrow Wallet application, distributed through Apple's App Store, was used to steal approximately $1.8 million in Bitcoin from them.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/apple/apple-sued-over-fake-app-store-crypto-wallet-app-stealing-18m-in-bitcoin/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-27T15:39:51Z",
+      "ts": "2026-07-28T11:02:00Z",
       "p": "tp",
       "tri": "priority",
       "st": "confirmed",
-      "id": "L-0221",
-      "title": "BleepingComputer reports that the Coca-Cola Company confirms hackers stole data from its Fairlife dairy subsidiary during a ransomware attack earlier this month.",
+      "id": "L-0236",
+      "title": "The UK Financial Conduct Authority (FCA) says the UK government has designated the first ‘critical third parties’ under a new oversight regime, with the Bank of England, the Prudential Regulation Authority (PRA), and the FCA now directly overseeing these providers to ensure the services they provide to UK financial firms and financial market infrastructures (FMIs) are resilient.",
+      "src": "UK Financial Conduct Authority (FCA)",
+      "srcUrl": "https://www.fca.org.uk/news/blogs/strengthening-resilience-across-increasingly-interconnected-financial-system",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-27T23:49:44Z",
+      "p": "cyber",
+      "tri": "flash",
+      "st": "confirmed",
+      "id": "L-0235",
+      "title": "BleepingComputer reports that hackers are actively exploiting a zero-day flaw in the FastJson open-source Java library, letting them remotely run code without needing a user to take any action or having elevated access, in attacks targeting organizations across financial services, healthcare, computing, retail, and other industries.",
       "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/coca-cola-confirms-data-theft-in-fairlife-ransomware-attack/",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/hackers-target-us-firms-in-fastjson-rce-zero-day-attacks/",
       "linked": true
     },
     {
@@ -114,109 +81,65 @@
       "p": "tp",
       "tri": "routine",
       "st": "confirmed",
-      "id": "L-0220",
-      "title": "Cybersecurity Dive reports that Coca-Cola says production has mostly resumed at its Fairlife dairy facilities in the United States following the ransomware attack earlier this month, with no material impact expected on financial performance or operations.",
+      "id": "L-0234",
+      "title": "Cybersecurity Dive reports that Coca-Cola has restored most production capacity at its Fairlife dairy unit after the ransomware attack, and the company does not expect the disruption to have a material impact on financial performance or operations.",
       "src": "Cybersecurity Dive",
       "srcUrl": "https://www.cybersecuritydive.com/news/coca-cola-restores-most-production-capacity-at-dairy-unit-after-ransomware/826250/",
       "linked": true
     },
     {
-      "ts": "2026-07-27T15:12:27Z",
-      "p": "tp",
-      "tri": "priority",
-      "st": "confirmed",
-      "id": "L-0219",
-      "title": "BleepingComputer reports that the ShinyHunters extortion gang claims responsibility for the recently disclosed Ernst & Young data breach, saying it obtained credentials for some of the firm's systems through a supply-chain attack.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/ernst-and-young-data-breach-claimed-by-shinyhunters-extortion-gang/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-27T14:30:00Z",
-      "p": "fraud",
-      "tri": "priority",
-      "st": "confirmed",
-      "id": "L-0218",
-      "title": "The UK Financial Conduct Authority (FCA) secures a confiscation order for £655,951.40 against John Burford, convicted of defrauding over 100 investors out of £1 million by offering unauthorized trade alerts and investment ‘funds,’ with an estimated 99% of the money originally invested by the roughly 70 known victims set to be returned.",
-      "src": "UK Financial Conduct Authority (FCA)",
-      "srcUrl": "https://www.fca.org.uk/news/press-releases/fca-secures-majority-victims-money-back-convicted-fraudster",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-27T12:00:00Z",
-      "p": "cyber",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0225",
-      "title": "CISA adds an Arista VeloCloud Orchestrator flaw (CVE-2026-16812) to its Known Exploited Vulnerabilities catalog: a remote attacker can inject operating system commands to reach privileged internal functionality and compromise the orchestrator host, with a remediation deadline of July 30, 2026.",
-      "src": "CISA KEV catalog",
-      "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-27T12:00:00Z",
-      "p": "cyber",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0222",
-      "title": "CISA adds a Fortinet FortiOS flaw (CVE-2025-68686) to its Known Exploited Vulnerabilities catalog: an attacker who has already compromised a device through another flaw can send crafted web requests to bypass a fix for a symbolic-link persistence mechanism, exposing sensitive information, with a remediation deadline of August 10, 2026.",
-      "src": "CISA KEV catalog",
-      "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-      "linked": true
-    },
-    {
       "ts": "2026-07-27T12:00:00Z",
       "p": "fraud",
-      "tri": "priority",
-      "st": "confirmed",
-      "id": "L-0223",
-      "title": "The Financial Crimes Enforcement Network (FinCEN) issues a statement of enforcement policy assuring U.S. financial institutions it will not pursue supervisory or enforcement action against them for providing financial services in Venezuela in support of earthquake relief efforts, provided the institution makes reasonable efforts to comply with the Bank Secrecy Act (BSA).",
-      "src": "FinCEN newsroom",
-      "srcUrl": "https://www.fincen.gov/news/news-releases/fincen-issues-statement-enforcement-policy-support-venezuelas-economic-recovery",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-26T14:13:39Z",
-      "p": "tp",
       "tri": "routine",
       "st": "confirmed",
-      "id": "L-0217",
-      "title": "BleepingComputer reports that GitHub and the Python Package Index (PyPI) added a time-based defense to GitHub's Dependabot dependency-management tool to protect against, and limit the impact of, software supply-chain attacks.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/github-pypi-add-time-absed-defenses-against-supply-chain-attacks/",
+      "id": "L-0229",
+      "title": "The Department of Justice (DOJ) charges the chief operating officer and deputy director of a Westville security company with embezzling $3 million from the business and with bank fraud tied to $9 million the company held in trust for a bank.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-nj/pr/chief-operating-officer-and-deputy-director-westville-security-company-charged-their",
       "linked": true
     },
     {
-      "ts": "2026-07-25T15:21:09Z",
-      "p": "cyber",
+      "ts": "2026-07-27T12:00:01Z",
+      "p": "fraud",
       "tri": "routine",
       "st": "confirmed",
-      "id": "L-0216",
-      "title": "BleepingComputer reports that a large-scale malicious-advertising campaign directs victims to fake Solana, Luno, and TradingView webpages, where hidden JavaScript code assembles malware directly in the browser's memory.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/malicious-sites-use-javascript-to-build-malware-in-browser-memory/",
+      "id": "L-0230",
+      "title": "The Department of Justice (DOJ) says a steel manufacturer's chief executive officer, Derek Wachob, pleaded guilty to orchestrating a multi-year scheme that defrauded individual investors, a bank, an investment firm, and two steel pipe distributors of at least $66 million.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-sdny/pr/chief-executive-officer-steel-manufacturer-pleads-guilty-connection-66-million-fraud",
       "linked": true
     },
     {
-      "ts": "2026-07-25T09:31:09Z",
-      "p": "resilience",
+      "ts": "2026-07-27T12:00:02Z",
+      "p": "fraud",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0231",
+      "title": "The Department of Justice (DOJ) announces that a Peachtree City, Georgia-based subsidiary of a German conglomerate will pay $2.6 million to resolve allegations that it violated the False Claims Act in obtaining loan forgiveness under the COVID-era Paycheck Protection Program (PPP).",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-ndga/pr/german-subsidiary-peachtree-city-settles-ppp-fraud-claim-26-million",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-27T12:00:03Z",
+      "p": "physical",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0232",
+      "title": "The Department of Justice (DOJ) says a gunman pleaded guilty to bank robbery and brandishing a firearm in connection with the daytime armed robbery of a Brinks armored truck transporting money belonging to a Bank of America branch.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-edny/pr/gunman-pleads-guilty-daytime-robbery-brinks-armored-truck-queens",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-27T12:00:04Z",
+      "p": "ai",
       "tri": "priority",
       "st": "confirmed",
-      "id": "L-0215",
-      "title": "BleepingComputer reports that OpenAI's ChatGPT chatbot experienced connectivity issues worldwide, with OpenAI confirming the outage.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-confirms-chatgpt-is-down-worldwide/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-24T14:55:37Z",
-      "p": "cyber",
-      "tri": "flash",
-      "st": "confirmed",
-      "id": "L-0214",
-      "title": "Cybersecurity Dive reports that a zero-day flaw in Check Point's SmartConsole is under active exploitation, with researchers warning it lets an attacker make key changes to security configurations.",
-      "src": "Cybersecurity Dive",
-      "srcUrl": "https://www.cybersecuritydive.com/news/zero-day-flaw-check-point-smartconsole-exploitation/826149/",
+      "id": "L-0233",
+      "title": "The Record reports that hackers used an autonomous artificial intelligence (AI) agent to carry out a cyber-espionage campaign against Thailand's Ministry of Finance, according to researchers.",
+      "src": "The Record",
+      "srcUrl": "https://therecord.media/thailand-hackers-ai-finance-ministry",
       "linked": true
     }
   ],
@@ -226,9 +149,9 @@
       "scope": "artificial intelligence · capability & governance",
       "watch": "Frontier capability, bank-scale adoption, and the governance that is (or is not) keeping pace — from allowlisted lab, regulator, and press feeds.",
       "opened": "July 2026",
-      "ver": "v17",
-      "verRange": "v1–v17",
-      "asOf": "July 24, 2026",
+      "ver": "v18",
+      "verRange": "v1–v18",
+      "asOf": "July 27, 2026",
       "p1": "Frontier capability advanced again this window: OpenAI released GPT-5.6 on July 9, describing it as delivering “more intelligence from every token, stronger performance per dollar.” Separately, Cybersecurity Dive reports that internet-exposed instances of the AI tool LiteLLM nearly doubled even as hackers continued exploiting a pre-authentication flaw that could expose the application programming interface (API) keys used to connect to commercial large language models (LLMs). Anthropic also released a new frontier model, Claude Opus 5, on July 24, describing it as a “step change improvement” for its Opus tier that powers long-running agents and improves coding and professional work.",
       "p1Sup": "1, 14, 15",
       "p2": "Banks are adopting at scale: OpenAI reports BBVA scaled ChatGPT Enterprise to 100,000 employees in an AI-powered banking transformation. Financial regulation is moving from comment to hands-on testing: the UK Financial Conduct Authority (FCA) is running a second Supercharged Sandbox cohort with Anthropic’s support, where firms will test AI use cases including fraud detection and agent-led payments. AI is confirmed on the attack side too, now in dramatic form: OpenAI says its own AI models autonomously breached AI repository Hugging Face’s production infrastructure during an internal test, obtaining credentials and internal data.",
@@ -452,6 +375,15 @@
           "src": "Anthropic news",
           "srcUrl": "https://www.anthropic.com/news/claude-opus-5",
           "line": "Anthropic introduces Claude Opus 5, describing it as a step change improvement for its Opus tier that powers long-running agents and improves coding and professional work."
+        },
+        {
+          "date": "Jul 27, 26",
+          "st": "confirmed",
+          "ver": "v18",
+          "id": "L-0233",
+          "src": "The Record",
+          "srcUrl": "https://therecord.media/thailand-hackers-ai-finance-ministry",
+          "line": "The Record reports that hackers used an autonomous artificial intelligence (AI) agent to carry out a cyber-espionage campaign against Thailand's Ministry of Finance, according to researchers."
         }
       ],
       "sources": [
@@ -574,8 +506,8 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v92",
-      "verRange": "v1–v92",
+      "ver": "v93",
+      "verRange": "v1–v93",
       "asOf": "July 27, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
@@ -1484,6 +1416,15 @@
           "src": "BleepingComputer",
           "srcUrl": "https://www.bleepingcomputer.com/news/security/new-dysphoria-ddos-botnet-spreads-to-200k-devices-worldwide/",
           "line": "BleepingComputer reports that a botnet called Dysphoria has compromised around 200,000 devices worldwide and is being used to flood targets with distributed denial-of-service (DDoS) traffic and to relay further attack traffic."
+        },
+        {
+          "date": "Jul 27, 26",
+          "st": "confirmed",
+          "ver": "v93",
+          "id": "L-0235",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/hackers-target-us-firms-in-fastjson-rce-zero-day-attacks/",
+          "line": "BleepingComputer reports that hackers are actively exploiting a zero-day flaw in the FastJson open-source Java library, letting them remotely run code without needing a user to take any action or having elevated access, in attacks targeting organizations across financial services, healthcare, computing, retail, and other industries."
         }
       ],
       "sources": [
@@ -1851,8 +1792,8 @@
       "scope": "fraud · AML rulemaking & scam patterns",
       "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
       "opened": "July 2026",
-      "ver": "v32",
-      "verRange": "v1–v32",
+      "ver": "v35",
+      "verRange": "v1–v35",
       "asOf": "July 27, 2026",
       "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22). Separately, the Financial Crimes Enforcement Network (FinCEN) is extending the comment period on its proposal to expand the money-laundering-concern designation of Huione Group to include H-Pay Service PLC, after a technical issue with its comment portal blocked electronic submissions.",
       "p1Sup": "1, 3, 27",
@@ -2212,6 +2153,33 @@
           "src": "BleepingComputer",
           "srcUrl": "https://www.bleepingcomputer.com/news/apple/apple-sued-over-fake-app-store-crypto-wallet-app-stealing-18m-in-bitcoin/",
           "line": "Apple is sued by three people who claim a fraudulent Sparrow Wallet application, distributed through Apple's App Store, was used to steal approximately $1.8 million in Bitcoin from them."
+        },
+        {
+          "date": "Jul 27, 26",
+          "st": "confirmed",
+          "ver": "v33",
+          "id": "L-0229",
+          "src": "DOJ press release",
+          "srcUrl": "https://www.justice.gov/usao-nj/pr/chief-operating-officer-and-deputy-director-westville-security-company-charged-their",
+          "line": "The Department of Justice (DOJ) charges the chief operating officer and deputy director of a Westville security company with embezzling $3 million from the business and with bank fraud tied to $9 million the company held in trust for a bank."
+        },
+        {
+          "date": "Jul 27, 26",
+          "st": "confirmed",
+          "ver": "v34",
+          "id": "L-0230",
+          "src": "DOJ press release",
+          "srcUrl": "https://www.justice.gov/usao-sdny/pr/chief-executive-officer-steel-manufacturer-pleads-guilty-connection-66-million-fraud",
+          "line": "The Department of Justice (DOJ) says a steel manufacturer's chief executive officer, Derek Wachob, pleaded guilty to orchestrating a multi-year scheme that defrauded individual investors, a bank, an investment firm, and two steel pipe distributors of at least $66 million."
+        },
+        {
+          "date": "Jul 27, 26",
+          "st": "confirmed",
+          "ver": "v35",
+          "id": "L-0231",
+          "src": "DOJ press release",
+          "srcUrl": "https://www.justice.gov/usao-ndga/pr/german-subsidiary-peachtree-city-settles-ppp-fraud-claim-26-million",
+          "line": "The Department of Justice (DOJ) announces that a Peachtree City, Georgia-based subsidiary of a German conglomerate will pay $2.6 million to resolve allegations that it violated the False Claims Act in obtaining loan forgiveness under the COVID-era Paycheck Protection Program (PPP)."
         }
       ],
       "sources": [
@@ -2399,11 +2367,11 @@
       "scope": "third-party risk · vendor software & supply chain",
       "watch": "Vendor tools under active attack, software-supply-chain compromises aimed at financial applications, and vendor incident disclosures.",
       "opened": "July 2026",
-      "ver": "v18",
-      "verRange": "v1–v18",
-      "asOf": "July 27, 2026",
-      "p1": "One vendor-channel exploit is confirmed this window: SimpleHelp, a remote-support tool, carries an authentication-bypass flaw on CISA’s known-exploited list — in a vulnerable configuration, a remote, unauthenticated attacker can log in with a forged token. Separately, the European Union Agency for Cybersecurity (ENISA) has opened a public consultation on a draft candidate cybersecurity certification scheme for EU Managed Security Services, developed with its dedicated Ad Hoc Working Group.",
-      "p1Sup": "1, 14",
+      "ver": "v20",
+      "verRange": "v1–v20",
+      "asOf": "July 28, 2026",
+      "p1": "One vendor-channel exploit is confirmed this window: SimpleHelp, a remote-support tool, carries an authentication-bypass flaw on CISA’s known-exploited list — in a vulnerable configuration, a remote, unauthenticated attacker can log in with a forged token. Separately, the UK Financial Conduct Authority (FCA) says the UK government has designated the first ‘critical third parties’ (CTPs) under a new oversight regime, with the Bank of England, the Prudential Regulation Authority (PRA), and the FCA now directly overseeing the resilience of services these providers offer to UK financial firms and financial market infrastructures (FMIs).",
+      "p1Sup": "1, 14, 15",
       "p2": "The rest of the vendor picture clusters around the software supply chain: a claimed breach at consulting firm Accenture said to involve source code and encryption keys, and malicious look-alike software kits for the Paysafe, Skrill, and Neteller payment applications on public code registries. Separately, Ernst & Young — one of the world’s four largest auditing and professional-services firms — is notifying customers of a data breach after its own support-ticket system was compromised, with documents containing client tax information among what the tickets may have held.",
       "p2Sup": "2, 3, 10",
       "assess": "We assess with moderate confidence that malicious software packages aimed at payment applications on public code registries are the growth edge in third-party exposure — four separate reports this window point the same way.",
@@ -2616,6 +2584,24 @@
           "src": "BleepingComputer",
           "srcUrl": "https://www.bleepingcomputer.com/news/security/coca-cola-confirms-data-theft-in-fairlife-ransomware-attack/",
           "line": "BleepingComputer reports that the Coca-Cola Company confirms hackers stole data from its Fairlife dairy subsidiary during a ransomware attack earlier this month."
+        },
+        {
+          "date": "Jul 27, 26",
+          "st": "confirmed",
+          "ver": "v19",
+          "id": "L-0234",
+          "src": "Cybersecurity Dive",
+          "srcUrl": "https://www.cybersecuritydive.com/news/coca-cola-restores-most-production-capacity-at-dairy-unit-after-ransomware/826250/",
+          "line": "Cybersecurity Dive reports that Coca-Cola has restored most production capacity at its Fairlife dairy unit after the ransomware attack, and the company does not expect the disruption to have a material impact on financial performance or operations."
+        },
+        {
+          "date": "Jul 28, 26",
+          "st": "confirmed",
+          "ver": "v20",
+          "id": "L-0236",
+          "src": "UK Financial Conduct Authority (FCA)",
+          "srcUrl": "https://www.fca.org.uk/news/blogs/strengthening-resilience-across-increasingly-interconnected-financial-system",
+          "line": "The UK Financial Conduct Authority (FCA) says the UK government has designated the first ‘critical third parties’ under a new oversight regime, with the Bank of England, the Prudential Regulation Authority (PRA), and the FCA now directly overseeing these providers to ensure the services they provide to UK financial firms and financial market infrastructures (FMIs) are resilient."
         }
       ],
       "sources": [
@@ -2688,6 +2674,11 @@
           "n": "14",
           "text": "ENISA — EU Managed Security Services certification consultation, Jul 24, 2026",
           "url": "https://www.enisa.europa.eu/news/have-your-say-on-the-certification-of-eu-managed-security-services"
+        },
+        {
+          "n": "15",
+          "text": "UK Financial Conduct Authority (FCA) — Critical Third Parties oversight regime blog, Jul 28, 2026",
+          "url": "https://www.fca.org.uk/news/blogs/strengthening-resilience-across-increasingly-interconnected-financial-system"
         }
       ],
       "related": [
@@ -3478,14 +3469,14 @@
       "scope": "physical security · facilities & infrastructure adjacency",
       "watch": "Grid bulletins, law-enforcement advisories, and severe-weather threats to facilities — via the allowlisted feeds.",
       "opened": "July 2026",
-      "ver": "v1",
-      "verRange": "v1",
-      "asOf": "July 9, 2026",
-      "p1": "No confirmed physical-security events have entered the record since collection began on July 9, 2026. The watch monitors CISA advisories, law-enforcement releases, and severe-weather outlooks through the allowlisted feeds.",
-      "p1Sup": "",
+      "ver": "v2",
+      "verRange": "v1–v2",
+      "asOf": "July 27, 2026",
+      "p1": "The record’s first confirmed physical-security event: the Department of Justice (DOJ) reports a gunman pleaded guilty to the armed daytime robbery of a Brinks armored truck transporting money belonging to a Bank of America branch, in a case prosecuted in Brooklyn federal court.",
+      "p1Sup": "2",
       "p2": "The nearest adjacent signal is seasonal and quiet: the National Hurricane Center’s current Atlantic outlook expects no tropical cyclone formation over the next seven days (tracked under Resilience).",
       "p2Sup": "1",
-      "assess": "No assessment — the record holds no confirmed physical-security events yet. One will be made when there is something to assess.",
+      "assess": "No assessment yet — one confirmed physical-security event is not enough to support a forward-looking judgment. An assessment will be made once a pattern emerges.",
       "assessSup": "",
       "conf": "not rated",
       "events": [
@@ -3497,6 +3488,15 @@
           "src": "Tech Risk Tracker record",
           "srcUrl": "EDITORIAL.md",
           "line": "Watch opened; baseline compiled from allowlisted feeds, June 9 – July 9, 2026. No qualifying physical-security events in the window."
+        },
+        {
+          "date": "Jul 27, 26",
+          "st": "confirmed",
+          "ver": "v2",
+          "id": "L-0232",
+          "src": "DOJ press release",
+          "srcUrl": "https://www.justice.gov/usao-edny/pr/gunman-pleads-guilty-daytime-robbery-brinks-armored-truck-queens",
+          "line": "The Department of Justice (DOJ) says a gunman pleaded guilty to bank robbery and brandishing a firearm in connection with the daytime armed robbery of a Brinks armored truck transporting money belonging to a Bank of America branch."
         }
       ],
       "sources": [
@@ -3504,6 +3504,11 @@
           "n": "1",
           "text": "NOAA NHC — Atlantic tropical weather outlook, Jul 9, 2026",
           "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+        },
+        {
+          "n": "2",
+          "text": "DOJ — Brinks armored truck robbery, guilty plea, Jul 27, 2026",
+          "url": "https://www.justice.gov/usao-edny/pr/gunman-pleads-guilty-daytime-robbery-brinks-armored-truck-queens"
         }
       ],
       "related": [
@@ -5359,6 +5364,70 @@
       "line": "BleepingComputer reports that a botnet called Dysphoria has compromised around 200,000 devices worldwide and is being used to flood targets with distributed denial-of-service (DDoS) traffic and to relay further attack traffic.",
       "src": "BleepingComputer",
       "srcUrl": "https://www.bleepingcomputer.com/news/security/new-dysphoria-ddos-botnet-spreads-to-200k-devices-worldwide/"
+    },
+    {
+      "d": "2026-07-27",
+      "p": "fraud",
+      "id": "L-0229",
+      "line": "The Department of Justice (DOJ) charges the chief operating officer and deputy director of a Westville security company with embezzling $3 million from the business and with bank fraud tied to $9 million the company held in trust for a bank.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-nj/pr/chief-operating-officer-and-deputy-director-westville-security-company-charged-their"
+    },
+    {
+      "d": "2026-07-27",
+      "p": "fraud",
+      "id": "L-0230",
+      "line": "The Department of Justice (DOJ) says a steel manufacturer's chief executive officer, Derek Wachob, pleaded guilty to orchestrating a multi-year scheme that defrauded individual investors, a bank, an investment firm, and two steel pipe distributors of at least $66 million.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-sdny/pr/chief-executive-officer-steel-manufacturer-pleads-guilty-connection-66-million-fraud"
+    },
+    {
+      "d": "2026-07-27",
+      "p": "fraud",
+      "id": "L-0231",
+      "line": "The Department of Justice (DOJ) announces that a Peachtree City, Georgia-based subsidiary of a German conglomerate will pay $2.6 million to resolve allegations that it violated the False Claims Act in obtaining loan forgiveness under the COVID-era Paycheck Protection Program (PPP).",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-ndga/pr/german-subsidiary-peachtree-city-settles-ppp-fraud-claim-26-million"
+    },
+    {
+      "d": "2026-07-27",
+      "p": "physical",
+      "id": "L-0232",
+      "line": "The Department of Justice (DOJ) says a gunman pleaded guilty to bank robbery and brandishing a firearm in connection with the daytime armed robbery of a Brinks armored truck transporting money belonging to a Bank of America branch.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-edny/pr/gunman-pleads-guilty-daytime-robbery-brinks-armored-truck-queens"
+    },
+    {
+      "d": "2026-07-27",
+      "p": "ai",
+      "id": "L-0233",
+      "line": "The Record reports that hackers used an autonomous artificial intelligence (AI) agent to carry out a cyber-espionage campaign against Thailand's Ministry of Finance, according to researchers.",
+      "src": "The Record",
+      "srcUrl": "https://therecord.media/thailand-hackers-ai-finance-ministry"
+    },
+    {
+      "d": "2026-07-27",
+      "p": "tp",
+      "id": "L-0234",
+      "line": "Cybersecurity Dive reports that Coca-Cola has restored most production capacity at its Fairlife dairy unit after the ransomware attack, and the company does not expect the disruption to have a material impact on financial performance or operations.",
+      "src": "Cybersecurity Dive",
+      "srcUrl": "https://www.cybersecuritydive.com/news/coca-cola-restores-most-production-capacity-at-dairy-unit-after-ransomware/826250/"
+    },
+    {
+      "d": "2026-07-27",
+      "p": "cyber",
+      "id": "L-0235",
+      "line": "BleepingComputer reports that hackers are actively exploiting a zero-day flaw in the FastJson open-source Java library, letting them remotely run code without needing a user to take any action or having elevated access, in attacks targeting organizations across financial services, healthcare, computing, retail, and other industries.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/hackers-target-us-firms-in-fastjson-rce-zero-day-attacks/"
+    },
+    {
+      "d": "2026-07-28",
+      "p": "tp",
+      "id": "L-0236",
+      "line": "The UK Financial Conduct Authority (FCA) says the UK government has designated the first ‘critical third parties’ under a new oversight regime, with the Bank of England, the Prudential Regulation Authority (PRA), and the FCA now directly overseeing these providers to ensure the services they provide to UK financial firms and financial market infrastructures (FMIs) are resilient.",
+      "src": "UK Financial Conduct Authority (FCA)",
+      "srcUrl": "https://www.fca.org.uk/news/blogs/strengthening-resilience-across-increasingly-interconnected-financial-system"
     }
   ],
   "takeaways": [
@@ -5880,10 +5949,36 @@
       "conf": "high confidence",
       "head": "FinCEN's new enforcement-policy statement gives U.S. financial institutions a compliance safe harbor for Venezuela-related transactions tied to earthquake relief.",
       "body": "The Financial Crimes Enforcement Network (FinCEN) issued a statement of enforcement policy saying it will not pursue supervisory or enforcement action against a U.S. financial institution for providing financial services in Venezuela in support of earthquake relief, provided the institution makes reasonable efforts to comply with the Bank Secrecy Act (BSA). Fraud and BSA compliance officers should confirm this safe harbor before restricting or flagging otherwise-compliant Venezuela-related transactions tied to relief efforts."
+    },
+    {
+      "anchors": [
+        "L-0235"
+      ],
+      "pillars": "Cybersecurity",
+      "conf": "high confidence",
+      "head": "Check your technology stack for the FastJson Java library — attackers are actively exploiting a zero-day flaw in it, including against financial services firms.",
+      "body": "BleepingComputer reports that hackers are actively exploiting a zero-day vulnerability in the FastJson open-source Java library (versions 1.2.68 through 1.2.83), letting them remotely run code without user interaction or elevated privileges, in attacks targeting organizations across financial services, healthcare, computing, retail, and other industries. Technology and security teams should confirm whether any FastJson instance in their stack falls in the affected version range and monitor for exploitation attempts."
+    },
+    {
+      "anchors": [
+        "L-0236"
+      ],
+      "pillars": "Third-party risk",
+      "conf": "high confidence",
+      "head": "Vendors providing critical technology, data, or operational services to UK financial firms should expect direct FCA/Bank of England oversight now that the first ‘critical third parties’ have been designated.",
+      "body": "The UK Financial Conduct Authority (FCA) says the UK government has designated the first critical third parties (CTPs) under a new oversight regime, with the Bank of England, the Prudential Regulation Authority (PRA), and the FCA now directly overseeing the resilience of services these providers offer to UK financial firms and financial market infrastructures (FMIs). Third-party-risk teams should confirm whether any of their critical vendors fall under this new designation."
     }
   ],
   "publications": {
     "dailies": [
+      {
+        "no": "14",
+        "date": "Tue, Jul 28, 2026",
+        "confirmed": "8",
+        "pending": "0",
+        "flash": "1",
+        "linked": true
+      },
       {
         "no": "13",
         "date": "Mon, Jul 27, 2026",
@@ -6002,7 +6097,7 @@
       }
     ],
     "monthlies": [],
-    "dTotal": 13,
+    "dTotal": 14,
     "wkTotal": 2,
     "mTotal": 0
   }
