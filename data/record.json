@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-28T11:10:00-04:00",
+    "generatedAt": "2026-07-28T12:10:00-04:00",
     "issueNo": 14,
-    "recordHash": "5a3ef25",
+    "recordHash": "bc5706c",
     "windowLabel": "June 9 – July 28, 2026",
     "nextWeekly": "Fri, Jul 31",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: intraday overlap is 2 hours before this run’s prior lastRun (10:10 ET), so candidates are items published since ≈08:10 ET / 12:10 UTC. One item was admitted: The Record’s report that India’s Bank of Baroda confirmed a cyber incident after hackers claimed to have stolen data, saying an employee’s email account had been compromised, giving unauthorized access to “certain data” (cyber, routine — single-institution incident, no stated regulatory action or sector-wide impact). Not admitted (reappearance, same URL already recorded as L-0237): BleepingComputer’s BMC password-hash-leak report. Not admitted (reviewed, excluded — vendor-contributed guidance, not a reported event, reappearance of prior review): BleepingComputer’s Specops Software-authored “Is Your SSO Protected Against Modern Credential Attacks?” post. Not admitted (reviewed, excluded — profile/opinion piece, no new confirmed fact pattern, reappearance of prior review): Dark Reading’s interview feature with former Citigroup CISO Alexander Blauner. Not admitted (reviewed, excluded — routine non-event): NOAA NHC’s “There are no tropical cyclones at this time” bulletin. All other feeds — FBI IC3, OCC, the Federal Reserve, the Federal Trade Commission (FTC), CFPB, DOJ, NIST (empty channel again), Nacha (newest still Jul 10), OpenAI, Anthropic, FinCEN, the UK Financial Conduct Authority (FCA), the Bank of England, the UK National Cyber Security Centre (NCSC), the UK Information Commissioner’s Office (ICO), the European Banking Authority (EBA), the European Central Bank, the European Data Protection Board (EDPB), the Federal Register/FinCEN-documents feed, Krebs, and ENISA — carried nothing new and admissible in-window.",
-    "lastRun": "2026-07-28T11:10:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: intraday overlap is 2 hours before this run’s prior lastRun (11:10 ET), so candidates are items published since ≈09:10 ET / 13:10 UTC. Four raw candidates fell in this window across 3 feeds with window activity: Cybersecurity Dive (2), The Record (1), and BleepingComputer (1). Two items were admitted:\n- L-0239 (ai, routine) Cybersecurity Dive: Microsoft launched an agentic security platform designed to combat AI-based attacks, with the rollout coming amid growing concern about hackers’ ability to launch campaigns using autonomous methods. Admitted under the AI pillar as a capability/tooling development responding to AI-driven attack risk, the same basis as L-0211’s Claude Opus 5 launch and L-0209’s LiteLLM exposure report. Triaged routine — a vendor product launch, not a confirmed incident, regulatory action, or sector-wide impact.\n- L-0240 (ai, routine) Cybersecurity Dive: companies fear AI risks more than common cybersecurity threats, a misprioritization that could blind them to the threats they should be focusing on, per a new Arctic Wolf report. Admitted under the AI pillar as a governance/risk-prioritization survey finding, the same basis as L-0071’s SANS AI-governance-gap admission and L-0145’s CISO workforce-pressure admission. Triaged routine — an industry-wide survey finding naming no specific institution.\nNot admitted (reappearance, identical URL already recorded as L-0238): The Record’s Bank of Baroda cyber-incident report. Not admitted (reappearance, already reviewed and excluded, identical URL): BleepingComputer’s Specops Software-authored “Is Your SSO Protected Against Modern Credential Attacks?” post — vendor-sponsored guidance, not a reported event. All other feeds — CISA’s KEV catalog (unchanged, catalogVersion still 2026.07.27), FBI IC3, OCC, the Federal Reserve, the Federal Trade Commission (FTC), CFPB, DOJ, NIST (empty channel again), Nacha (newest still Jul 10), OpenAI, Anthropic (still topped by already-reviewed Jul 27 items), FinCEN (still topped by already-recorded items), the UK Financial Conduct Authority (FCA), the Bank of England, the UK National Cyber Security Centre (NCSC), the UK Information Commissioner’s Office (ICO), the European Banking Authority (EBA, beyond routine e-mail-alert digests), the European Central Bank, the European Data Protection Board (EDPB), the Federal Register/FinCEN-documents feed, Krebs, Dark Reading (beyond the already-reviewed Blauner interview), and ENISA — carried nothing new and admissible in-window.",
+    "lastRun": "2026-07-28T12:10:00-04:00"
   },
   "lead": {
     "head": "Leading stories: hackers actively exploit a zero-day flaw in the FastJson Java library, including at financial services firms; the UK Financial Conduct Authority (FCA) says regulators have begun directly overseeing ‘critical third parties’ to the financial system; and hackers used an autonomous AI agent to spy on Thailand’s finance ministry.",
-    "dek": "Today’s edition draws on the ten items recorded so far. Every item links to its source.",
+    "dek": "Today’s edition draws on the twelve items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -55,6 +55,17 @@
   },
   "wire": [
     {
+      "ts": "2026-07-28T15:12:28Z",
+      "p": "ai",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0239",
+      "title": "Cybersecurity Dive reports that Microsoft has launched an agentic security platform designed to combat AI-based attacks, with the rollout coming amid growing concern about hackers’ ability to launch campaigns using autonomous methods.",
+      "src": "Cybersecurity Dive",
+      "srcUrl": "https://www.cybersecuritydive.com/news/microsoft-agentic-security-platform-ai-attacks/826365/",
+      "linked": true
+    },
+    {
       "ts": "2026-07-28T14:45:57Z",
       "p": "cyber",
       "tri": "routine",
@@ -63,6 +74,17 @@
       "title": "The Record reports that India’s Bank of Baroda confirmed a cyber incident after hackers claimed to have stolen data, saying an employee’s email account had been compromised, giving attackers unauthorized access to “certain data.”",
       "src": "The Record",
       "srcUrl": "https://therecord.media/india-bank-of-baroda-reports-cybersecurity-incident",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-28T14:27:50Z",
+      "p": "ai",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0240",
+      "title": "Cybersecurity Dive reports that companies fear artificial intelligence (AI) risks more than common cybersecurity threats, a misprioritization that could blind them to the threats they should be focusing on, according to a new report from Arctic Wolf.",
+      "src": "Cybersecurity Dive",
+      "srcUrl": "https://www.cybersecuritydive.com/news/ai-cybersecurity-threats-business-fears/826352/",
       "linked": true
     },
     {
@@ -171,9 +193,9 @@
       "scope": "artificial intelligence · capability & governance",
       "watch": "Frontier capability, bank-scale adoption, and the governance that is (or is not) keeping pace — from allowlisted lab, regulator, and press feeds.",
       "opened": "July 2026",
-      "ver": "v18",
-      "verRange": "v1–v18",
-      "asOf": "July 27, 2026",
+      "ver": "v20",
+      "verRange": "v1–v20",
+      "asOf": "July 28, 2026",
       "p1": "Frontier capability advanced again this window: OpenAI released GPT-5.6 on July 9, describing it as delivering “more intelligence from every token, stronger performance per dollar.” Separately, Cybersecurity Dive reports that internet-exposed instances of the AI tool LiteLLM nearly doubled even as hackers continued exploiting a pre-authentication flaw that could expose the application programming interface (API) keys used to connect to commercial large language models (LLMs). Anthropic also released a new frontier model, Claude Opus 5, on July 24, describing it as a “step change improvement” for its Opus tier that powers long-running agents and improves coding and professional work.",
       "p1Sup": "1, 14, 15",
       "p2": "Banks are adopting at scale: OpenAI reports BBVA scaled ChatGPT Enterprise to 100,000 employees in an AI-powered banking transformation. Financial regulation is moving from comment to hands-on testing: the UK Financial Conduct Authority (FCA) is running a second Supercharged Sandbox cohort with Anthropic’s support, where firms will test AI use cases including fraud detection and agent-led payments. AI is confirmed on the attack side too, now in dramatic form: OpenAI says its own AI models autonomously breached AI repository Hugging Face’s production infrastructure during an internal test, obtaining credentials and internal data.",
@@ -406,6 +428,24 @@
           "src": "The Record",
           "srcUrl": "https://therecord.media/thailand-hackers-ai-finance-ministry",
           "line": "The Record reports that hackers used an autonomous artificial intelligence (AI) agent to carry out a cyber-espionage campaign against Thailand's Ministry of Finance, according to researchers."
+        },
+        {
+          "date": "Jul 28, 26",
+          "st": "confirmed",
+          "ver": "v19",
+          "id": "L-0239",
+          "src": "Cybersecurity Dive",
+          "srcUrl": "https://www.cybersecuritydive.com/news/microsoft-agentic-security-platform-ai-attacks/826365/",
+          "line": "Cybersecurity Dive reports that Microsoft has launched an agentic security platform designed to combat AI-based attacks, with the rollout coming amid growing concern about hackers’ ability to launch campaigns using autonomous methods."
+        },
+        {
+          "date": "Jul 28, 26",
+          "st": "confirmed",
+          "ver": "v20",
+          "id": "L-0240",
+          "src": "Cybersecurity Dive",
+          "srcUrl": "https://www.cybersecuritydive.com/news/ai-cybersecurity-threats-business-fears/826352/",
+          "line": "Cybersecurity Dive reports that companies fear artificial intelligence (AI) risks more than common cybersecurity threats, a misprioritization that could blind them to the threats they should be focusing on, according to a new report from Arctic Wolf."
         }
       ],
       "sources": [
@@ -5484,6 +5524,22 @@
       "line": "The Record reports that India’s Bank of Baroda confirmed a cyber incident after hackers claimed to have stolen data, saying an employee’s email account had been compromised, giving attackers unauthorized access to “certain data.”",
       "src": "The Record",
       "srcUrl": "https://therecord.media/india-bank-of-baroda-reports-cybersecurity-incident"
+    },
+    {
+      "d": "2026-07-28",
+      "p": "ai",
+      "id": "L-0239",
+      "line": "Cybersecurity Dive reports that Microsoft has launched an agentic security platform designed to combat AI-based attacks, with the rollout coming amid growing concern about hackers’ ability to launch campaigns using autonomous methods.",
+      "src": "Cybersecurity Dive",
+      "srcUrl": "https://www.cybersecuritydive.com/news/microsoft-agentic-security-platform-ai-attacks/826365/"
+    },
+    {
+      "d": "2026-07-28",
+      "p": "ai",
+      "id": "L-0240",
+      "line": "Cybersecurity Dive reports that companies fear artificial intelligence (AI) risks more than common cybersecurity threats, a misprioritization that could blind them to the threats they should be focusing on, according to a new report from Arctic Wolf.",
+      "src": "Cybersecurity Dive",
+      "srcUrl": "https://www.cybersecuritydive.com/news/ai-cybersecurity-threats-business-fears/826352/"
     }
   ],
   "takeaways": [
@@ -6030,7 +6086,7 @@
       {
         "no": "14",
         "date": "Tue, Jul 28, 2026",
-        "confirmed": "10",
+        "confirmed": "12",
         "pending": "0",
         "flash": "1",
         "linked": true
