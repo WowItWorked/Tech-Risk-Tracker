@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-28T15:12:00-04:00",
+    "generatedAt": "2026-07-28T16:10:00-04:00",
     "issueNo": 14,
-    "recordHash": "c400798",
+    "recordHash": "5cf752c",
     "windowLabel": "June 9 – July 28, 2026",
     "nextWeekly": "Fri, Jul 31",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: intraday overlap is 2 hours before this run’s prior lastRun (12:10 ET), so candidates are items published since ≈10:10 ET / 14:10 UTC. Seven raw candidates fell in this window across 5 feeds with window activity: BleepingComputer (3), Cybersecurity Dive (2), The Record (1), Dark Reading (1), and OpenAI (1). Two items were admitted:\n- L-0241 (cyber, routine) Dark Reading: Microsoft patched a high-severity ‘Certighost’ flaw affecting Microsoft Active Directory (AD) certificates earlier this month, which could let criminals escalate privileges and compromise an AD environment. Admitted as a distinct item from L-0227 (BleepingComputer’s Jul 27 report on the released Certighost proof-of-concept exploit for the same underlying flaw) because it carries a materially new fact — confirmation that Microsoft has already patched the flaw — matching the precedent set by L-0073/L-0089/L-0234 for admitting follow-on reporting with new facts as its own item. Triaged routine — a patch-availability disclosure, not confirmed active exploitation.\n- L-0242 (cyber, routine) BleepingComputer: vBulletin fixed a critical, unauthenticated remote-code-execution flaw (CVE-2026-61511) in its forum software, affecting versions up to 5.7.5 and 6.2.1, with a public proof-of-concept exploit now available; the fix shipped in version 6.2.2 on July 1. The RSS teaser was truncated, so the allowlisted article page was fetched for a fuller verbatim excerpt (50 words, within the EDITORIAL §2/runbook cap). Admitted under the cyber pillar on the same ‘widely deployed enterprise/community software with a public exploit’ basis as L-0135 (7-Zip) and L-0136 (WordPress Core wp2shell). Triaged routine, matching L-0136’s precedent — a publicly released exploit with no confirmed active exploitation in the wild.\nNot admitted (relevance gate — no financial-sector nexus stated): BleepingComputer’s ‘CISA shares advice on isolating vital systems during cyberattacks’ — the fetched article covers a joint CISA/ACSC/FBI advisory on isolating operational technology (OT) systems (water treatment, electrical, manufacturing, transportation, telecommunications infrastructure); no financial-sector target or nexus stated, matching the disposition given to prior CISA/FBI OT-critical-infrastructure advisories. Not admitted (relevance gate — no tech-risk-pillar nexus): OpenAI’s ‘Scientific computing in the age of agentic AI’ field report on AI coding agents accelerating genomics research, naming no financial-sector angle or risk content. Not admitted (reappearances, identical URLs already recorded): The Record’s Bank of Baroda cyber-incident report (already L-0238); Cybersecurity Dive’s Microsoft agentic-security-platform launch (already L-0239) and companies-fear-AI-risks survey (already L-0240). All other feeds — CISA’s KEV catalog (unchanged, catalogVersion still 2026.07.27), FBI IC3, OCC, the Federal Reserve, the FTC (beyond the UA fallback), CFPB, DOJ, NIST (empty channel again), Nacha (newest still Jul 10), Anthropic (still topped by already-reviewed Jul 27 items), FinCEN (still topped by already-recorded items), the UK Financial Conduct Authority (FCA), the Bank of England, the UK National Cyber Security Centre (NCSC), the UK Information Commissioner’s Office (ICO), the European Banking Authority (EBA, beyond routine e-mail-alert digests), the European Central Bank, the European Data Protection Board (EDPB), the Federal Register/FinCEN-documents feed, Krebs, and ENISA — carried nothing new and admissible in-window. NOAA NHC’s Atlantic Tropical Weather Outlook remained a routine no-cyclone non-event.",
-    "lastRun": "2026-07-28T15:12:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: intraday overlap is 2 hours before this run’s prior lastRun (15:12 ET), so candidates are items published since ≈13:12 ET / 17:12 UTC. Two raw candidates fell in this window (BleepingComputer’s “CISA shares advice on isolating vital systems during cyberattacks” and “vBulletin fixes critical pre-auth RCE flaw with public exploit,” both reappearances of already-recorded/already-excluded stories from the 15:12 ET run) and NOAA NHC’s routine no-cyclone Atlantic Tropical Weather Outlook — none admissible in-window. DOJ’s press-release feed rolled over to a new same-day batch (25 entries, all carrying the feed’s placeholder noon-UTC timestamp rather than a true per-article time, the same convention documented for L-0082/L-0131/L-0229–L-0231) and was reviewed in full outside the timestamp window per that convention. Two items were admitted:\n- L-0243 (fraud, routine) DOJ: a dual Ukraine-Israel citizen is sentenced to four years in prison and ordered to pay a $250,000 fine and $1.43 million in restitution for participating in a conspiracy that used a phony brokerage business to scam U.S. citizens out of millions of dollars. Admitted on the same investment/brokerage-fraud basis as prior DOJ financial-fraud sentencing items.\n- L-0244 (fraud, routine) DOJ: a California woman is sentenced to 18 months in prison and ordered to pay $170,666 in restitution for defrauding a local bank of more than $170,000. The article page sat behind a bot-verification interstitial on the descriptive User-Agent, so only the RSS title/description ground this item, matching the precedent set by L-0241. Admitted on the same explicit bank-fraud-victim basis as L-0066/L-0110/L-0121/L-0229.\nNot admitted (23 of 25 DOJ entries, no financial-sector or technology-risk nexus stated): firearms, drug-trafficking, immigration, child-exploitation, and other general-crime sentencings/indictments, including a former bank executive's sentencing for offenses (sexual assault, child pornography, obstruction of justice) unrelated to his former employer or any financial-institution/technology-risk nexus, and a defense contractor's False Claims Act settlement (no financial-institution victim or technology-risk content stated).\nNot admitted (reappearances, identical URLs already recorded or reviewed): BleepingComputer's vBulletin RCE report (already L-0242) and CISA OT-isolation-advisory report (already reviewed and excluded for no financial-sector nexus in the 15:12 ET run).\nAll other feeds — CISA’s KEV catalog (unchanged, catalogVersion still 2026.07.27), FBI IC3, OCC, the Federal Reserve, the FTC (beyond the UA fallback), CFPB, NIST (empty channel again), Nacha (newest still Jul 10), OpenAI (newest still Jul 28 17:00 UTC, before window), Anthropic (still topped by already-reviewed Jul 27 items), FinCEN (still topped by already-recorded items), the UK Financial Conduct Authority (FCA), the Bank of England, the UK National Cyber Security Centre (NCSC), the UK Information Commissioner’s Office (ICO), the European Banking Authority (EBA, beyond routine e-mail-alert digests), the European Central Bank, the European Data Protection Board (EDPB), the Federal Register/FinCEN-documents feed, Krebs, The Record, Dark Reading, and ENISA — carried nothing new and admissible in-window. NOAA NHC’s Atlantic Tropical Weather Outlook remained a routine no-cyclone non-event.",
+    "lastRun": "2026-07-28T16:10:00-04:00"
   },
   "lead": {
     "head": "Leading stories: hackers actively exploit a zero-day flaw in the FastJson Java library, including at financial services firms; the UK Financial Conduct Authority (FCA) says regulators have begun directly overseeing ‘critical third parties’ to the financial system; and hackers used an autonomous AI agent to spy on Thailand’s finance ministry.",
-    "dek": "Today’s edition draws on the fourteen items recorded so far. Every item links to its source.",
+    "dek": "Today’s edition draws on the sixteen items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -118,6 +118,28 @@
       "title": "BleepingComputer reports that more than 24,000 internet-exposed servers are leaking authentication password hashes due to a 20-year-old flaw in their Baseboard Management Controller (BMC) interface.",
       "src": "BleepingComputer",
       "srcUrl": "https://www.bleepingcomputer.com/news/security/over-24-000-exposed-server-bmcs-leak-password-hash-via-decades-old-flaw/",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-28T12:00:00Z",
+      "p": "fraud",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0243",
+      "title": "Yaroslav Shilkloper, 50, a dual citizen of Ukraine and Israel, is sentenced to four years in prison and ordered to pay a $250,000 fine and $1.43 million in restitution for participating in a conspiracy that used a phony brokerage business to scam U.S. citizens out of millions of dollars, the Department of Justice reports.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/opa/pr/ukrainian-israeli-citizen-sentenced-multi-million-dollar-fake-brokerage-scheme",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-28T12:00:01Z",
+      "p": "fraud",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0244",
+      "title": "A California woman is sentenced to 18 months in prison and five years of supervised release, and ordered to pay $170,666 in restitution, after defrauding a local bank of more than $170,000, the Department of Justice reports.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-mt/pr/california-woman-sentenced-18-months-bank-fraud",
       "linked": true
     },
     {
@@ -1912,9 +1934,9 @@
       "scope": "fraud · AML rulemaking & scam patterns",
       "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
       "opened": "July 2026",
-      "ver": "v35",
-      "verRange": "v1–v35",
-      "asOf": "July 27, 2026",
+      "ver": "v37",
+      "verRange": "v1–v37",
+      "asOf": "July 28, 2026",
       "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22). Separately, the Financial Crimes Enforcement Network (FinCEN) is extending the comment period on its proposal to expand the money-laundering-concern designation of Huione Group to include H-Pay Service PLC, after a technical issue with its comment portal blocked electronic submissions.",
       "p1Sup": "1, 3, 27",
       "p2": "Operationally, the OCC is highlighting FinCEN’s updated Section 314(b) fact sheet clarifying how institutions can share suspected-fraud information with each other. The FBI’s recent consumer-facing warnings describe criminals redirecting users to fraudulent websites through malicious traffic-distribution systems. On the criminal side, a Bulgarian national already imprisoned for helping launder millions in fraud proceeds is charged with stealing $290,000 in government-seized cryptocurrency while incarcerated.",
@@ -2300,6 +2322,24 @@
           "src": "DOJ press release",
           "srcUrl": "https://www.justice.gov/usao-ndga/pr/german-subsidiary-peachtree-city-settles-ppp-fraud-claim-26-million",
           "line": "The Department of Justice (DOJ) announces that a Peachtree City, Georgia-based subsidiary of a German conglomerate will pay $2.6 million to resolve allegations that it violated the False Claims Act in obtaining loan forgiveness under the COVID-era Paycheck Protection Program (PPP)."
+        },
+        {
+          "date": "Jul 28, 26",
+          "st": "confirmed",
+          "ver": "v36",
+          "id": "L-0243",
+          "src": "DOJ press release",
+          "srcUrl": "https://www.justice.gov/opa/pr/ukrainian-israeli-citizen-sentenced-multi-million-dollar-fake-brokerage-scheme",
+          "line": "Yaroslav Shilkloper, 50, a dual citizen of Ukraine and Israel, is sentenced to four years in prison and ordered to pay a $250,000 fine and $1.43 million in restitution for participating in a conspiracy that used a phony brokerage business to scam U.S. citizens out of millions of dollars, the Department of Justice reports."
+        },
+        {
+          "date": "Jul 28, 26",
+          "st": "confirmed",
+          "ver": "v37",
+          "id": "L-0244",
+          "src": "DOJ press release",
+          "srcUrl": "https://www.justice.gov/usao-mt/pr/california-woman-sentenced-18-months-bank-fraud",
+          "line": "A California woman is sentenced to 18 months in prison and five years of supervised release, and ordered to pay $170,666 in restitution, after defrauding a local bank of more than $170,000, the Department of Justice reports."
         }
       ],
       "sources": [
@@ -5596,6 +5636,22 @@
       "line": "BleepingComputer reports that vBulletin has fixed a critical flaw (CVE-2026-61511) in its forum software that let attackers without a login execute arbitrary PHP code through template rendering, with a public exploit now available; the flaw affects vBulletin versions up to 5.7.5 (5.x branch) and 6.2.1 (6.x branch), fixed in version 6.2.2, released July 1.",
       "src": "BleepingComputer",
       "srcUrl": "https://www.bleepingcomputer.com/news/security/vbulletin-fixes-critical-pre-auth-rce-flaw-with-public-exploit/"
+    },
+    {
+      "d": "2026-07-28",
+      "p": "fraud",
+      "id": "L-0243",
+      "line": "Yaroslav Shilkloper, 50, a dual citizen of Ukraine and Israel, is sentenced to four years in prison and ordered to pay a $250,000 fine and $1.43 million in restitution for participating in a conspiracy that used a phony brokerage business to scam U.S. citizens out of millions of dollars, the Department of Justice reports.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/opa/pr/ukrainian-israeli-citizen-sentenced-multi-million-dollar-fake-brokerage-scheme"
+    },
+    {
+      "d": "2026-07-28",
+      "p": "fraud",
+      "id": "L-0244",
+      "line": "A California woman is sentenced to 18 months in prison and five years of supervised release, and ordered to pay $170,666 in restitution, after defrauding a local bank of more than $170,000, the Department of Justice reports.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-mt/pr/california-woman-sentenced-18-months-bank-fraud"
     }
   ],
   "takeaways": [
@@ -6160,7 +6216,7 @@
       {
         "no": "14",
         "date": "Tue, Jul 28, 2026",
-        "confirmed": "14",
+        "confirmed": "16",
         "pending": "0",
         "flash": "1",
         "linked": true
