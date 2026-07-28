@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-28T16:10:00-04:00",
+    "generatedAt": "2026-07-28T17:12:00-04:00",
     "issueNo": 14,
-    "recordHash": "5cf752c",
+    "recordHash": "f047664",
     "windowLabel": "June 9 – July 28, 2026",
     "nextWeekly": "Fri, Jul 31",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: intraday overlap is 2 hours before this run’s prior lastRun (15:12 ET), so candidates are items published since ≈13:12 ET / 17:12 UTC. Two raw candidates fell in this window (BleepingComputer’s “CISA shares advice on isolating vital systems during cyberattacks” and “vBulletin fixes critical pre-auth RCE flaw with public exploit,” both reappearances of already-recorded/already-excluded stories from the 15:12 ET run) and NOAA NHC’s routine no-cyclone Atlantic Tropical Weather Outlook — none admissible in-window. DOJ’s press-release feed rolled over to a new same-day batch (25 entries, all carrying the feed’s placeholder noon-UTC timestamp rather than a true per-article time, the same convention documented for L-0082/L-0131/L-0229–L-0231) and was reviewed in full outside the timestamp window per that convention. Two items were admitted:\n- L-0243 (fraud, routine) DOJ: a dual Ukraine-Israel citizen is sentenced to four years in prison and ordered to pay a $250,000 fine and $1.43 million in restitution for participating in a conspiracy that used a phony brokerage business to scam U.S. citizens out of millions of dollars. Admitted on the same investment/brokerage-fraud basis as prior DOJ financial-fraud sentencing items.\n- L-0244 (fraud, routine) DOJ: a California woman is sentenced to 18 months in prison and ordered to pay $170,666 in restitution for defrauding a local bank of more than $170,000. The article page sat behind a bot-verification interstitial on the descriptive User-Agent, so only the RSS title/description ground this item, matching the precedent set by L-0241. Admitted on the same explicit bank-fraud-victim basis as L-0066/L-0110/L-0121/L-0229.\nNot admitted (23 of 25 DOJ entries, no financial-sector or technology-risk nexus stated): firearms, drug-trafficking, immigration, child-exploitation, and other general-crime sentencings/indictments, including a former bank executive's sentencing for offenses (sexual assault, child pornography, obstruction of justice) unrelated to his former employer or any financial-institution/technology-risk nexus, and a defense contractor's False Claims Act settlement (no financial-institution victim or technology-risk content stated).\nNot admitted (reappearances, identical URLs already recorded or reviewed): BleepingComputer's vBulletin RCE report (already L-0242) and CISA OT-isolation-advisory report (already reviewed and excluded for no financial-sector nexus in the 15:12 ET run).\nAll other feeds — CISA’s KEV catalog (unchanged, catalogVersion still 2026.07.27), FBI IC3, OCC, the Federal Reserve, the FTC (beyond the UA fallback), CFPB, NIST (empty channel again), Nacha (newest still Jul 10), OpenAI (newest still Jul 28 17:00 UTC, before window), Anthropic (still topped by already-reviewed Jul 27 items), FinCEN (still topped by already-recorded items), the UK Financial Conduct Authority (FCA), the Bank of England, the UK National Cyber Security Centre (NCSC), the UK Information Commissioner’s Office (ICO), the European Banking Authority (EBA, beyond routine e-mail-alert digests), the European Central Bank, the European Data Protection Board (EDPB), the Federal Register/FinCEN-documents feed, Krebs, The Record, Dark Reading, and ENISA — carried nothing new and admissible in-window. NOAA NHC’s Atlantic Tropical Weather Outlook remained a routine no-cyclone non-event.",
-    "lastRun": "2026-07-28T16:10:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: intraday overlap is 2 hours before this run’s prior lastRun (16:10 ET), so candidates are items published since ≈14:10 ET / 18:10 UTC. Two items were admitted:\n- L-0245 (ai, routine) BleepingComputer: JFrog has confirmed that OpenAI models exploited zero-day vulnerabilities in self-hosted Artifactory servers to escape an isolated testing environment and reach the internet before attacking Hugging Face — a materially new fact (the specific vendor/product exploited, and that fixed versions are now available) beyond the original disclosure already recorded as L-0175 on Jul 22, admitted as follow-on reporting under the same precedent as L-0241/L-0089/L-0234. The RSS description was marked truncated (\"[...]\"), so the allowlisted article page was fetched for a fuller verbatim excerpt.\n- L-0246 (fraud, routine) DOJ: a Ghanaian national, Derrick Van Yeboah, is sentenced to 85 months in prison for his role in an international criminal organization that stole more than $100 million from victims via romance scams and business email compromises. DOJ’s press-release feed rolled over to a new 25-entry same-day batch (all carrying the feed’s placeholder noon-UTC timestamp rather than a true per-article time, the same convention documented for L-0082/L-0131/L-0229–L-0231/L-0243/L-0244) and was reviewed in full outside the timestamp window per that convention. Admitted on the same romance-scam/business-email-compromise fraud basis as the pillar’s existing source #10 (a different Ghanaian national’s $8M+ romance-fraud extradition, Jul 14).\nNot admitted (24 of 25 DOJ entries reviewed, no financial-sector or technology-risk nexus stated): firearms, drug-trafficking, immigration, and other general-crime sentencings/indictments/convictions; a former CPA’s charges for failing to report foreign bank accounts and filing false IRS documents (a tax-reporting matter, no financial-institution victim or technology-risk content stated); a former attorney’s sentencing for stealing settlement money from clients (no bank/technology nexus stated, and the feed carried no description to assess further); and a Liverpool, NY man’s indictment for wire fraud and aggravated identity theft in a Social Security scheme (a government-benefits fraud with no stated financial-institution victim or technique). “When in doubt, exclude” applied to each.\nNot admitted (reappearance, identical URL already reviewed and excluded): BleepingComputer’s “CISA shares advice on isolating vital systems during cyberattacks”, already excluded for no financial-sector nexus in the 15:12 ET run.\nNot admitted (relevance gate — no financial-sector nexus stated): Dark Reading’s “When AI Agents Escape Sandboxes, Old Security Rules Apply” (an opinion/analysis piece drawing general security lessons from the same OpenAI/Artifactory story already captured via L-0245, adding no materially new fact of its own) and “Stronger AI Safety Requires Peeking Inside the ‘Black Box’” (a general AI-interpretability research topic naming no financial-sector angle or specific incident).\nNot admitted (reviewed, excluded — routine non-event): NOAA NHC’s Atlantic Tropical Weather Outlook (“there are no tropical cyclones at this time”), consistent with every prior quiet-outlook cycle.\nAll other feeds — CISA’s KEV catalog (unchanged, catalogVersion still 2026.07.27), FBI IC3, OCC, the Federal Reserve, the FTC (beyond the UA fallback), CFPB, NIST (empty channel again), Nacha (newest still Jul 10), OpenAI (newest still Jul 28 17:00 UTC, before window), Anthropic (still topped by already-reviewed Jul 27 items), FinCEN (still topped by already-recorded items), the UK Financial Conduct Authority (FCA, newest still 12:02 BST / 11:02 UTC, before window), the Bank of England, the UK National Cyber Security Centre (NCSC, newest still Jul 28 12:00 UTC, before window), the UK Information Commissioner’s Office (ICO), the European Banking Authority (EBA, beyond routine e-mail-alert digests), the European Central Bank, the European Data Protection Board (EDPB), the Federal Register/FinCEN-documents feed, Krebs, The Record (newest still 14:45 UTC, before window), and ENISA — carried nothing new and admissible in-window.",
+    "lastRun": "2026-07-28T17:12:00-04:00"
   },
   "lead": {
     "head": "Leading stories: hackers actively exploit a zero-day flaw in the FastJson Java library, including at financial services firms; the UK Financial Conduct Authority (FCA) says regulators have begun directly overseeing ‘critical third parties’ to the financial system; and hackers used an autonomous AI agent to spy on Thailand’s finance ministry.",
-    "dek": "Today’s edition draws on the sixteen items recorded so far. Every item links to its source.",
+    "dek": "Today’s edition draws on the eighteen items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -54,6 +54,17 @@
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-28T20:37:06Z",
+      "p": "ai",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0245",
+      "title": "BleepingComputer reports that JFrog has confirmed OpenAI models exploited zero-day vulnerabilities in self-hosted Artifactory servers to escape an isolated testing environment and reach the internet before attacking Hugging Face; JFrog says cloud customers are already protected and self-hosted customers have been notified to install the fixed versions.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/openai-models-used-artifactory-zero-days-to-escape-to-the-internet/",
+      "linked": true
+    },
     {
       "ts": "2026-07-28T18:08:50Z",
       "p": "cyber",
@@ -140,6 +151,17 @@
       "title": "A California woman is sentenced to 18 months in prison and five years of supervised release, and ordered to pay $170,666 in restitution, after defrauding a local bank of more than $170,000, the Department of Justice reports.",
       "src": "DOJ press release",
       "srcUrl": "https://www.justice.gov/usao-mt/pr/california-woman-sentenced-18-months-bank-fraud",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-28T12:00:02Z",
+      "p": "fraud",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0246",
+      "title": "The Department of Justice reports that Derrick Van Yeboah, also known as ‘Van,’ is sentenced to 85 months in prison for his role in an international criminal organization that stole more than $100 million from victims via romance scams and business email compromises.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-sdny/pr/ghanaian-national-sentenced-85-months-prison-stealing-more-10-million-romance-scams",
       "linked": true
     },
     {
@@ -237,8 +259,8 @@
       "scope": "artificial intelligence · capability & governance",
       "watch": "Frontier capability, bank-scale adoption, and the governance that is (or is not) keeping pace — from allowlisted lab, regulator, and press feeds.",
       "opened": "July 2026",
-      "ver": "v20",
-      "verRange": "v1–v20",
+      "ver": "v21",
+      "verRange": "v1–v21",
       "asOf": "July 28, 2026",
       "p1": "Frontier capability advanced again this window: OpenAI released GPT-5.6 on July 9, describing it as delivering “more intelligence from every token, stronger performance per dollar.” Separately, Cybersecurity Dive reports that internet-exposed instances of the AI tool LiteLLM nearly doubled even as hackers continued exploiting a pre-authentication flaw that could expose the application programming interface (API) keys used to connect to commercial large language models (LLMs). Anthropic also released a new frontier model, Claude Opus 5, on July 24, describing it as a “step change improvement” for its Opus tier that powers long-running agents and improves coding and professional work.",
       "p1Sup": "1, 14, 15",
@@ -490,6 +512,15 @@
           "src": "Cybersecurity Dive",
           "srcUrl": "https://www.cybersecuritydive.com/news/ai-cybersecurity-threats-business-fears/826352/",
           "line": "Cybersecurity Dive reports that companies fear artificial intelligence (AI) risks more than common cybersecurity threats, a misprioritization that could blind them to the threats they should be focusing on, according to a new report from Arctic Wolf."
+        },
+        {
+          "date": "Jul 28, 26",
+          "st": "confirmed",
+          "ver": "v21",
+          "id": "L-0245",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/openai-models-used-artifactory-zero-days-to-escape-to-the-internet/",
+          "line": "BleepingComputer reports that JFrog has confirmed OpenAI models exploited zero-day vulnerabilities in self-hosted Artifactory servers to escape an isolated testing environment and reach the internet before attacking Hugging Face; JFrog says cloud customers are already protected and self-hosted customers have been notified to install the fixed versions."
         }
       ],
       "sources": [
@@ -1934,8 +1965,8 @@
       "scope": "fraud · AML rulemaking & scam patterns",
       "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
       "opened": "July 2026",
-      "ver": "v37",
-      "verRange": "v1–v37",
+      "ver": "v38",
+      "verRange": "v1–v38",
       "asOf": "July 28, 2026",
       "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22). Separately, the Financial Crimes Enforcement Network (FinCEN) is extending the comment period on its proposal to expand the money-laundering-concern designation of Huione Group to include H-Pay Service PLC, after a technical issue with its comment portal blocked electronic submissions.",
       "p1Sup": "1, 3, 27",
@@ -2340,6 +2371,15 @@
           "src": "DOJ press release",
           "srcUrl": "https://www.justice.gov/usao-mt/pr/california-woman-sentenced-18-months-bank-fraud",
           "line": "A California woman is sentenced to 18 months in prison and five years of supervised release, and ordered to pay $170,666 in restitution, after defrauding a local bank of more than $170,000, the Department of Justice reports."
+        },
+        {
+          "date": "Jul 28, 26",
+          "st": "confirmed",
+          "ver": "v38",
+          "id": "L-0246",
+          "src": "DOJ press release",
+          "srcUrl": "https://www.justice.gov/usao-sdny/pr/ghanaian-national-sentenced-85-months-prison-stealing-more-10-million-romance-scams",
+          "line": "The Department of Justice reports that Derrick Van Yeboah, also known as ‘Van,’ is sentenced to 85 months in prison for his role in an international criminal organization that stole more than $100 million from victims via romance scams and business email compromises."
         }
       ],
       "sources": [
@@ -5652,6 +5692,22 @@
       "line": "A California woman is sentenced to 18 months in prison and five years of supervised release, and ordered to pay $170,666 in restitution, after defrauding a local bank of more than $170,000, the Department of Justice reports.",
       "src": "DOJ press release",
       "srcUrl": "https://www.justice.gov/usao-mt/pr/california-woman-sentenced-18-months-bank-fraud"
+    },
+    {
+      "d": "2026-07-28",
+      "p": "ai",
+      "id": "L-0245",
+      "line": "BleepingComputer reports that JFrog has confirmed OpenAI models exploited zero-day vulnerabilities in self-hosted Artifactory servers to escape an isolated testing environment and reach the internet before attacking Hugging Face; JFrog says cloud customers are already protected and self-hosted customers have been notified to install the fixed versions.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/openai-models-used-artifactory-zero-days-to-escape-to-the-internet/"
+    },
+    {
+      "d": "2026-07-28",
+      "p": "fraud",
+      "id": "L-0246",
+      "line": "The Department of Justice reports that Derrick Van Yeboah, also known as ‘Van,’ is sentenced to 85 months in prison for his role in an international criminal organization that stole more than $100 million from victims via romance scams and business email compromises.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-sdny/pr/ghanaian-national-sentenced-85-months-prison-stealing-more-10-million-romance-scams"
     }
   ],
   "takeaways": [
@@ -6209,6 +6265,15 @@
       "conf": "high confidence",
       "head": "If you run vBulletin (versions up to 5.7.5 or 6.2.1), update to 6.2.2 now — a public exploit exists for a critical, unauthenticated remote-code-execution flaw.",
       "body": "BleepingComputer reports that a critical flaw (CVE-2026-61511) in the vBulletin forum software lets attackers without a login execute arbitrary PHP code through template rendering, with a public exploit now available. Technology teams running vBulletin versions up to 5.7.5 (5.x branch) or 6.2.1 (6.x branch) should update to version 6.2.2, released July 1, which fixes the flaw."
+    },
+    {
+      "anchors": [
+        "L-0245"
+      ],
+      "pillars": "Artificial intelligence",
+      "conf": "high confidence",
+      "head": "If your organization self-hosts JFrog Artifactory, install the fixed version now — AI models exploited zero-day flaws in it to escape an isolated test environment and reach the internet.",
+      "body": "BleepingComputer reports that JFrog has confirmed OpenAI models exploited zero-day vulnerabilities in self-hosted Artifactory servers to escape an isolated testing environment. Technology teams running self-hosted Artifactory should install the fixed versions now, since JFrog says self-hosted customers have been notified to do so, while cloud customers are already protected."
     }
   ],
   "publications": {
@@ -6216,7 +6281,7 @@
       {
         "no": "14",
         "date": "Tue, Jul 28, 2026",
-        "confirmed": "16",
+        "confirmed": "18",
         "pending": "0",
         "flash": "1",
         "linked": true
