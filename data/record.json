@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-28T06:19:00-04:00",
+    "generatedAt": "2026-07-28T10:10:00-04:00",
     "issueNo": 14,
-    "recordHash": "4f86104",
+    "recordHash": "8cbfa80",
     "windowLabel": "June 9 – July 28, 2026",
     "nextWeekly": "Fri, Jul 31",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: 12 hours before this run’s prior lastRun (2026-07-27T18:12 ET), so candidates are items published since ≈2026-07-27T06:12 ET / 10:12 UTC. Eight items were admitted. BleepingComputer reports active exploitation of a zero-day flaw in the FastJson open-source Java library, targeting organizations across financial services, healthcare, computing, retail, and other industries (L-0235, flash). The Record reports hackers used an autonomous AI agent to carry out a cyber-espionage campaign against Thailand’s Ministry of Finance (L-0233, priority). The UK Financial Conduct Authority (FCA) describes the government’s designation of the first ‘critical third parties’ under a new oversight regime jointly run with the Bank of England and the Prudential Regulation Authority (PRA) (L-0236, priority). Cybersecurity Dive reports Coca-Cola has restored most production capacity at its Fairlife dairy unit and does not expect a material financial impact, a follow-up to the already-recorded ransomware/data-theft incident (L-0234, routine). Four DOJ press releases were admitted on their explicit financial-institution or bank-cash nexus: a Westville security-company COO and deputy director charged with embezzlement and bank fraud over $9 million held in trust for a bank (L-0229); a steel manufacturer’s CEO’s guilty plea to a $66 million scheme that defrauded a bank, an investment firm, and investors (L-0230); a German conglomerate’s Peachtree City subsidiary’s $2.6 million Paycheck Protection Program (PPP) False Claims Act settlement (L-0231); and a gunman’s guilty plea to the armed robbery of a Brinks armored truck carrying Bank of America funds (L-0232) — the record’s first confirmed physical-security event. Not admitted (reappearances of already-recorded stories, same source URLs): BleepingComputer’s Arista VeloCloud Orchestrator patch confirmation (L-0225), Dysphoria botnet (L-0228), Certighost PoC (L-0227), Apple/Sparrow Wallet suit (L-0224), Coca-Cola data-theft confirmation (L-0221), and Ernst & Young/ShinyHunters breach (L-0219); the FCA’s John Burford confiscation-order release (L-0218); and Dark Reading’s Confused Deputy and LockBit-takedown retrospective (both already excluded/recorded). Not admitted (reviewed, excluded — no financial-sector or technology-risk-to-the-sector nexus stated): BleepingComputer’s medical-billing-firm (MCBS) breach and vendor-contributed ‘Shadow AI agents’ guidance post; The Record’s outdated-federal-VPNs, Bahrain-spyware-immunity, South Carolina/Georgia health-system malware, and Belarusian-activist-phishing stories; Cybersecurity Dive’s AI-openness industry-advocacy piece and sponsored runtime-security post; the FCA’s Transaction and Post-trade Reporting Harmonisation Taskforce appointment story; the FTC’s Elite Events ticket-bot enforcement; the NCSC’s generic incident-recovery guidance blog; Dark Reading’s zero-day-rulebook opinion piece; and 21 of 25 DOJ press releases (drug, firearms, immigration, tax-evasion, and other matters with no financial-institution or technology-risk nexus stated, including a DoorDash-driver-impersonation fraud with a computer-fraud charge but no financial-sector victim, a marijuana-proceeds money-laundering sentencing naming no institution or technique, and a Dominican passport-fraud/identity-theft sentencing with no financial-sector detail). NOAA NHC’s Atlantic outlook remained a routine no-cyclone non-event. CISA’s KEV catalog carried no entries beyond the two already recorded (L-0222/L-0225, catalogVersion unchanged at 2026.07.27). Anthropic’s news page surfaced two new same-day items (an open-weights-models position statement and a Cognizant partnership announcement), both excluded as promotional/policy content with no financial-sector risk nexus stated. FinCEN’s newsroom remained topped by the already-recorded L-0223 Venezuela statement; ICO’s and ENISA’s pages again carried no readable dated news content beyond a newsletter link and a promotional graphic, respectively. All other feeds — FBI IC3, OCC, the Federal Reserve, CFPB, NIST (empty channel again), Nacha (newest still Jul 10, after stripping the feed’s non-XML theme-debug preamble), OpenAI, Krebs, the Bank of England, the NCSC (beyond the excluded guidance post), the EBA, the European Central Bank, the EDPB, and the Federal Register/FinCEN-documents feed — carried nothing new and admissible in-window.",
-    "lastRun": "2026-07-28T06:19:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed; the EBA feed timed out on first attempt and returned 200 on an immediate retry, counted OK). Selection window: intraday overlap is 2 hours before this run’s prior lastRun (06:19 ET), so candidates are items published since ≈04:19 ET / 08:19 UTC. One item was admitted: BleepingComputer’s report that more than 24,000 internet-exposed servers are leaking authentication password hashes via a 20-year-old flaw in their Baseboard Management Controller (BMC) interface (cyber, routine — exposure/crackable-credential finding, no confirmed in-the-wild exploitation or named financial-sector victim stated). Not admitted (reappearance, same URL already recorded as L-0236): the FCA’s “Strengthening resilience across an increasingly interconnected financial system” blog. Not admitted (reappearance, already reviewed and excluded in the day-opening run): the UK NCSC’s “When cyber attacks happen: helping organisations recover” blog (identical URL) and BleepingComputer’s medical-billing-firm (MCBS) breach report (identical URL, healthcare sector, no financial nexus). Not admitted (reviewed, excluded — vendor-contributed guidance, not a reported event): BleepingComputer’s Specops Software-authored “Is Your SSO Protected Against Modern Credential Attacks?” post. Not admitted (reviewed, excluded — profile/opinion piece, no new confirmed fact pattern): Dark Reading’s interview feature with former Citigroup CISO Alexander Blauner. Not admitted (reviewed, excluded — routine non-event): NOAA NHC’s Atlantic Tropical Weather Outlook (no cyclone formation expected). All other feeds — FBI IC3, OCC, the Federal Reserve, CFPB, DOJ, NIST (empty channel again), Nacha (newest still Jul 10), OpenAI, Anthropic, FinCEN, the Bank of England, the EBA, the European Central Bank, the EDPB, the Federal Register/FinCEN-documents feed, Krebs, The Record, ICO, and ENISA — carried nothing new and admissible in-window.",
+    "lastRun": "2026-07-28T10:10:00-04:00"
   },
   "lead": {
     "head": "Leading stories: hackers actively exploit a zero-day flaw in the FastJson Java library, including at financial services firms; the UK Financial Conduct Authority (FCA) says regulators have begun directly overseeing ‘critical third parties’ to the financial system; and hackers used an autonomous AI agent to spy on Thailand’s finance ministry.",
-    "dek": "Today’s edition draws on the eight items recorded so far. Every item links to its source.",
+    "dek": "Today’s edition draws on the nine items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -54,6 +54,17 @@
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-28T12:10:23Z",
+      "p": "cyber",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0237",
+      "title": "BleepingComputer reports that more than 24,000 internet-exposed servers are leaking authentication password hashes due to a 20-year-old flaw in their Baseboard Management Controller (BMC) interface.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/over-24-000-exposed-server-bmcs-leak-password-hash-via-decades-old-flaw/",
+      "linked": true
+    },
     {
       "ts": "2026-07-28T11:02:00Z",
       "p": "tp",
@@ -506,9 +517,9 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v93",
-      "verRange": "v1–v93",
-      "asOf": "July 27, 2026",
+      "ver": "v94",
+      "verRange": "v1–v94",
+      "asOf": "July 28, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
       "p2": "The UK’s National Cyber Security Centre (NCSC) and cybersecurity agencies from the United States and eight other countries warn that hackers linked to Russia’s Federal Security Service (FSB) are exploiting routers with default or weak passwords to infiltrate critical infrastructure, naming financial services among the sectors most at risk. Researchers report “JadePuffer,” described as a ransomware attack run end-to-end by an AI agent that broke in through the exploited Langflow flaw. Separately, federal cybersecurity agencies in the United States, the United Kingdom, Europe, Australia, and New Zealand warn that Russian state-backed hackers known as Laundry Bear are exploiting a Zimbra Collaboration Suite webmail flaw in zero-click phishing attacks, with research from Palo Alto Networks’ Unit 42 finding financial organizations among the sectors targeted.",
@@ -1425,6 +1436,15 @@
           "src": "BleepingComputer",
           "srcUrl": "https://www.bleepingcomputer.com/news/security/hackers-target-us-firms-in-fastjson-rce-zero-day-attacks/",
           "line": "BleepingComputer reports that hackers are actively exploiting a zero-day flaw in the FastJson open-source Java library, letting them remotely run code without needing a user to take any action or having elevated access, in attacks targeting organizations across financial services, healthcare, computing, retail, and other industries."
+        },
+        {
+          "date": "Jul 28, 26",
+          "st": "confirmed",
+          "ver": "v94",
+          "id": "L-0237",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/over-24-000-exposed-server-bmcs-leak-password-hash-via-decades-old-flaw/",
+          "line": "BleepingComputer reports that more than 24,000 internet-exposed servers are leaking authentication password hashes due to a 20-year-old flaw in their Baseboard Management Controller (BMC) interface."
         }
       ],
       "sources": [
@@ -5428,6 +5448,14 @@
       "line": "The UK Financial Conduct Authority (FCA) says the UK government has designated the first ‘critical third parties’ under a new oversight regime, with the Bank of England, the Prudential Regulation Authority (PRA), and the FCA now directly overseeing these providers to ensure the services they provide to UK financial firms and financial market infrastructures (FMIs) are resilient.",
       "src": "UK Financial Conduct Authority (FCA)",
       "srcUrl": "https://www.fca.org.uk/news/blogs/strengthening-resilience-across-increasingly-interconnected-financial-system"
+    },
+    {
+      "d": "2026-07-28",
+      "p": "cyber",
+      "id": "L-0237",
+      "line": "BleepingComputer reports that more than 24,000 internet-exposed servers are leaking authentication password hashes due to a 20-year-old flaw in their Baseboard Management Controller (BMC) interface.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/over-24-000-exposed-server-bmcs-leak-password-hash-via-decades-old-flaw/"
     }
   ],
   "takeaways": [
@@ -5974,7 +6002,7 @@
       {
         "no": "14",
         "date": "Tue, Jul 28, 2026",
-        "confirmed": "8",
+        "confirmed": "9",
         "pending": "0",
         "flash": "1",
         "linked": true
