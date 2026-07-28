@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-28T10:10:00-04:00",
+    "generatedAt": "2026-07-28T11:10:00-04:00",
     "issueNo": 14,
-    "recordHash": "8cbfa80",
+    "recordHash": "5a3ef25",
     "windowLabel": "June 9 – July 28, 2026",
     "nextWeekly": "Fri, Jul 31",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed; the EBA feed timed out on first attempt and returned 200 on an immediate retry, counted OK). Selection window: intraday overlap is 2 hours before this run’s prior lastRun (06:19 ET), so candidates are items published since ≈04:19 ET / 08:19 UTC. One item was admitted: BleepingComputer’s report that more than 24,000 internet-exposed servers are leaking authentication password hashes via a 20-year-old flaw in their Baseboard Management Controller (BMC) interface (cyber, routine — exposure/crackable-credential finding, no confirmed in-the-wild exploitation or named financial-sector victim stated). Not admitted (reappearance, same URL already recorded as L-0236): the FCA’s “Strengthening resilience across an increasingly interconnected financial system” blog. Not admitted (reappearance, already reviewed and excluded in the day-opening run): the UK NCSC’s “When cyber attacks happen: helping organisations recover” blog (identical URL) and BleepingComputer’s medical-billing-firm (MCBS) breach report (identical URL, healthcare sector, no financial nexus). Not admitted (reviewed, excluded — vendor-contributed guidance, not a reported event): BleepingComputer’s Specops Software-authored “Is Your SSO Protected Against Modern Credential Attacks?” post. Not admitted (reviewed, excluded — profile/opinion piece, no new confirmed fact pattern): Dark Reading’s interview feature with former Citigroup CISO Alexander Blauner. Not admitted (reviewed, excluded — routine non-event): NOAA NHC’s Atlantic Tropical Weather Outlook (no cyclone formation expected). All other feeds — FBI IC3, OCC, the Federal Reserve, CFPB, DOJ, NIST (empty channel again), Nacha (newest still Jul 10), OpenAI, Anthropic, FinCEN, the Bank of England, the EBA, the European Central Bank, the EDPB, the Federal Register/FinCEN-documents feed, Krebs, The Record, ICO, and ENISA — carried nothing new and admissible in-window.",
-    "lastRun": "2026-07-28T10:10:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: intraday overlap is 2 hours before this run’s prior lastRun (10:10 ET), so candidates are items published since ≈08:10 ET / 12:10 UTC. One item was admitted: The Record’s report that India’s Bank of Baroda confirmed a cyber incident after hackers claimed to have stolen data, saying an employee’s email account had been compromised, giving unauthorized access to “certain data” (cyber, routine — single-institution incident, no stated regulatory action or sector-wide impact). Not admitted (reappearance, same URL already recorded as L-0237): BleepingComputer’s BMC password-hash-leak report. Not admitted (reviewed, excluded — vendor-contributed guidance, not a reported event, reappearance of prior review): BleepingComputer’s Specops Software-authored “Is Your SSO Protected Against Modern Credential Attacks?” post. Not admitted (reviewed, excluded — profile/opinion piece, no new confirmed fact pattern, reappearance of prior review): Dark Reading’s interview feature with former Citigroup CISO Alexander Blauner. Not admitted (reviewed, excluded — routine non-event): NOAA NHC’s “There are no tropical cyclones at this time” bulletin. All other feeds — FBI IC3, OCC, the Federal Reserve, the Federal Trade Commission (FTC), CFPB, DOJ, NIST (empty channel again), Nacha (newest still Jul 10), OpenAI, Anthropic, FinCEN, the UK Financial Conduct Authority (FCA), the Bank of England, the UK National Cyber Security Centre (NCSC), the UK Information Commissioner’s Office (ICO), the European Banking Authority (EBA), the European Central Bank, the European Data Protection Board (EDPB), the Federal Register/FinCEN-documents feed, Krebs, and ENISA — carried nothing new and admissible in-window.",
+    "lastRun": "2026-07-28T11:10:00-04:00"
   },
   "lead": {
     "head": "Leading stories: hackers actively exploit a zero-day flaw in the FastJson Java library, including at financial services firms; the UK Financial Conduct Authority (FCA) says regulators have begun directly overseeing ‘critical third parties’ to the financial system; and hackers used an autonomous AI agent to spy on Thailand’s finance ministry.",
-    "dek": "Today’s edition draws on the nine items recorded so far. Every item links to its source.",
+    "dek": "Today’s edition draws on the ten items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -54,6 +54,17 @@
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-28T14:45:57Z",
+      "p": "cyber",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0238",
+      "title": "The Record reports that India’s Bank of Baroda confirmed a cyber incident after hackers claimed to have stolen data, saying an employee’s email account had been compromised, giving attackers unauthorized access to “certain data.”",
+      "src": "The Record",
+      "srcUrl": "https://therecord.media/india-bank-of-baroda-reports-cybersecurity-incident",
+      "linked": true
+    },
     {
       "ts": "2026-07-28T12:10:23Z",
       "p": "cyber",
@@ -517,8 +528,8 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v94",
-      "verRange": "v1–v94",
+      "ver": "v95",
+      "verRange": "v1–v95",
       "asOf": "July 28, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
@@ -1445,6 +1456,15 @@
           "src": "BleepingComputer",
           "srcUrl": "https://www.bleepingcomputer.com/news/security/over-24-000-exposed-server-bmcs-leak-password-hash-via-decades-old-flaw/",
           "line": "BleepingComputer reports that more than 24,000 internet-exposed servers are leaking authentication password hashes due to a 20-year-old flaw in their Baseboard Management Controller (BMC) interface."
+        },
+        {
+          "date": "Jul 28, 26",
+          "st": "confirmed",
+          "ver": "v95",
+          "id": "L-0238",
+          "src": "The Record",
+          "srcUrl": "https://therecord.media/india-bank-of-baroda-reports-cybersecurity-incident",
+          "line": "The Record reports that India’s Bank of Baroda confirmed a cyber incident after hackers claimed to have stolen data, saying an employee’s email account had been compromised, giving attackers unauthorized access to “certain data.”"
         }
       ],
       "sources": [
@@ -5456,6 +5476,14 @@
       "line": "BleepingComputer reports that more than 24,000 internet-exposed servers are leaking authentication password hashes due to a 20-year-old flaw in their Baseboard Management Controller (BMC) interface.",
       "src": "BleepingComputer",
       "srcUrl": "https://www.bleepingcomputer.com/news/security/over-24-000-exposed-server-bmcs-leak-password-hash-via-decades-old-flaw/"
+    },
+    {
+      "d": "2026-07-28",
+      "p": "cyber",
+      "id": "L-0238",
+      "line": "The Record reports that India’s Bank of Baroda confirmed a cyber incident after hackers claimed to have stolen data, saying an employee’s email account had been compromised, giving attackers unauthorized access to “certain data.”",
+      "src": "The Record",
+      "srcUrl": "https://therecord.media/india-bank-of-baroda-reports-cybersecurity-incident"
     }
   ],
   "takeaways": [
@@ -6002,7 +6030,7 @@
       {
         "no": "14",
         "date": "Tue, Jul 28, 2026",
-        "confirmed": "9",
+        "confirmed": "10",
         "pending": "0",
         "flash": "1",
         "linked": true
