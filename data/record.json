@@ -2,21 +2,33 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-29T09:13:00-04:00",
+    "generatedAt": "2026-07-29T11:13:00-04:00",
     "issueNo": 15,
-    "recordHash": "dc92152",
+    "recordHash": "92a13d5",
     "windowLabel": "June 9 – July 29, 2026",
     "nextWeekly": "Fri, Jul 31",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: intraday overlap is 2 hours before this run’s prior lastRun (06:14:57 ET), so candidates are items published since ≈ 04:14:57 ET / 08:14:57 UTC. One item was admitted:\n- L-0247 (tp, priority) The Record: a cyberattack on Unitel, Angola’s largest telecommunications operator, left millions of people without voice, mobile data, and internet access and also disrupted point-of-sale payment terminals running on Unitel’s network, striking less than 24 hours before the company’s landmark debut on the country’s stock exchange. The RSS description covered only the general outage, so the allowlisted article page was fetched for a fuller verbatim excerpt covering the payment-terminal fact and the stock-exchange timing (the article’s opening two sentences plus the payment-terminal sentence, 60 words total, within the cap). Admitted under the third-party risk pillar: a critical telecom vendor’s outage disrupting merchant payment terminals is a vendor-dependency risk to payment processing, distinct from the CubePilot-drone and Minnesota-water-utility precedents excluded for lacking any financial-sector or payment nexus.\nNot admitted (reappearance, identical URL already reviewed and excluded in the 06:14 ET day-opening run): the UK National Cyber Security Centre (NCSC)’s “Making forensic observability the norm for network devices”.\nNot admitted (relevance gate — no financial-sector or technology-risk-to-the-sector nexus stated): The Record’s “Russia accuses Telegram founder of aiding terrorism, seeks international arrest” (a geopolitical/legal action against a messaging-app founder, no financial-sector angle stated).\nNot admitted (not a reported event): BleepingComputer’s “These near-mint ASUS Chromebook refurbs are only $145”, a sponsored deals post.\nNot admitted (reviewed, excluded — routine non-event): NOAA NHC’s Atlantic Tropical Weather Outlook (“tropical cyclone formation is not expected during the next 7 days”) and its “there are no tropical cyclones at this time” notice, consistent with every prior quiet-outlook cycle.\nAll other feeds — CISA’s KEV catalog (unchanged, catalogVersion still 2026.07.27), FBI IC3, OCC, the Federal Reserve, the FTC (beyond the UA fallback), CFPB, DOJ (newest batch still the same noon-placeholder 25-entry set already reviewed in the 06:14 ET run), NIST (empty channel again), Nacha, OpenAI, Anthropic (still topped by already-reviewed Jul 27 items), FinCEN (still topped by the already-recorded Venezuela statement), the UK Financial Conduct Authority (FCA), the Bank of England, the UK Information Commissioner’s Office (ICO, still no readable dated content), the European Banking Authority (EBA), the European Central Bank, the European Data Protection Board (EDPB), Krebs, Dark Reading, Cybersecurity Dive, and ENISA (still topped by the already-reviewed podcast-launch item) — carried nothing new and admissible in-window.",
-    "lastRun": "2026-07-29T09:13:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: intraday overlap is 2 hours before this run’s prior lastRun (09:13 ET), so candidates are items published since ≈ 07:13 ET / 11:13 UTC. One item was admitted:\n- L-0248 (cyber, priority) The Record: researchers (Proofpoint, per the fetched article's byline attribution — not itself part of the stored 60-word origExcerpt, so not named in the published record text) say the Russian state-linked hacking group Laundry Bear — already on record in the cyber dossier for exploiting a Zimbra Collaboration Suite webmail flaw against, among others, financial organizations — has also been exploiting a Microsoft Outlook Web Access bug (CVE-2026-42897, patched in May) to steal emails and account credentials, with financial organizations again named among the sectors targeted. The RSS description supplied the first verbatim sentence; the article page was fetched for the sector-target quote, the CVE/patch-date fact, and the credential-theft goal (four non-adjacent verbatim sentences, elisions marked, 60 words total, at the EDITORIAL §2 cap). Admitted under the cyber pillar; triaged priority (a named threat actor's continuing/expanded webmail-intrusion capability, no fresh sector-wide-impact or regulatory-action claim beyond the same generic sectors-targeted list already on record, short of the flash bar), matching the precedent set for L-0146 (JadePuffer's EncForge capability update, also triaged priority on the same reasoning).\nNot admitted (reappearance, identical URL already reviewed and excluded twice: in the 06:14 ET day-opening run and again in the 09:13 ET run): the UK NCSC's “Making forensic observability the norm for network devices.”\nNot admitted (reappearance, identical URL already admitted as L-0247): The Record's “Cyberattack hits Angola’s largest telco hours before landmark stock debut.”\nNot admitted (reappearance, identical URL already reviewed and excluded in the 09:13 ET run): The Record's “Russia accuses Telegram founder of aiding terrorism, seeks international arrest.”\nNot admitted (relevance gate — no financial-sector nexus stated, same disposition as Cybersecurity Dive's coverage of the same event excluded in the Jul 28 06:19 ET run): BleepingComputer's “Hackers target over 30 Minnesota water utilities in coordinated OT attack” — the fetched article covers a Minnesota state IT agency's response to a coordinated OT attack on community water systems, naming no financial-sector victim or nexus.\nNot admitted (not a reported event — vendor-sponsored advisory content, the same genre as the already-excluded Specops/SSO post): BleepingComputer's “Your AI Agents Are Guessing at Scale: Permissions Decide the Damage,” a Token Security-sponsored piece on AI-agent permissioning with no reported incident.\nNot admitted (routine non-event, no tech-risk-pillar nexus): BleepingComputer's “Windows 11 KB5101684 update released with 42 changes and fixes,” a routine cumulative-update roundup naming no vulnerability or security content.\nNot admitted (relevance gate — no financial-sector nexus stated): Cybersecurity Dive's “As data breaches grow costlier, ungoverned AI creates new risks,” covering IBM's 2026 Cost of a Data Breach report; the fetched article states the report spans 17 industries and calls out healthcare as the costliest-breach sector, naming no financial-sector figure or nexus.\nNot admitted (reviewed, excluded — routine non-event): NOAA NHC's Atlantic Tropical Weather Outlook (“tropical cyclone formation is not expected during the next 7 days”) and its “there are no tropical cyclones at this time” notice, consistent with every prior quiet-outlook cycle.\nAll other feeds — CISA's KEV catalog (unchanged, catalogVersion still 2026.07.27), FBI IC3, OCC, the Federal Reserve, the FTC (beyond the UA fallback), CFPB, DOJ (newest batch still the same noon-placeholder 25-entry set already reviewed in full), NIST (empty channel again), Nacha, OpenAI (newest still Jul 28 17:00 UTC, before window), Anthropic (still topped by already-reviewed Jul 27 items), FinCEN (still topped by the already-recorded Venezuela statement), the UK Financial Conduct Authority (FCA), the Bank of England, the UK Information Commissioner's Office (ICO, still no readable dated content), the European Banking Authority (EBA), the European Central Bank (topped by a wage-tracker release, no tech-risk nexus), the European Data Protection Board (EDPB), the Federal Register/FinCEN-documents feed, Krebs, Dark Reading, and ENISA (still topped by the already-reviewed podcast-launch item) — carried nothing new and admissible in-window.",
+    "lastRun": "2026-07-29T11:13:00-04:00"
   },
   "lead": {
-    "head": "A cyberattack on Unitel, Angola’s largest telecommunications operator, disrupts point-of-sale payment terminals and voice, mobile data, and internet access, striking hours before the company’s landmark debut on the country’s stock exchange.",
-    "dek": "Today’s edition draws on the one item recorded so far. Every item links to its source.",
+    "head": "Leading stories: a Russian state-linked hacking group exploits a Microsoft Outlook Web Access flaw to steal emails and account credentials, with financial organizations among the sectors targeted; and a cyberattack on Angola’s largest telecommunications operator, Unitel, disrupts point-of-sale payment terminals and voice, mobile data, and internet access hours before its landmark stock exchange debut.",
+    "dek": "Today’s edition draws on the two items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
+        "p": "cyber",
+        "tri": "priority",
+        "st": "confirmed",
+        "id": "L-0248",
+        "conf": "",
+        "text": "The Record reports that researchers say the Russian state-linked hacking group Laundry Bear recently began exploiting a bug in Microsoft Outlook Web Access (OWA), tracked as CVE-2026-42897 and patched in May, with its targets including “the telecommunications, financial, hospitality, and aerospace sectors” and the goal of stealing emails and account credentials.",
+        "why": "Technology and security teams should confirm the May patch for this Outlook Web Access flaw (CVE-2026-42897) is applied, since a Russian state-linked hacking group has been exploiting it to steal emails and account credentials, with financial organizations among the sectors it has targeted.",
+        "srcText": "The Record, Jul 29",
+        "srcUrl": "https://therecord.media/russia-hackers-outlook-webmail-malware"
+      },
+      {
+        "n": "2",
         "p": "tp",
         "tri": "priority",
         "st": "confirmed",
@@ -30,6 +42,17 @@
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-29T14:45:00Z",
+      "p": "cyber",
+      "tri": "priority",
+      "st": "confirmed",
+      "id": "L-0248",
+      "title": "The Record reports that researchers say the Russian state-linked hacking group Laundry Bear recently began exploiting a bug in Microsoft Outlook Web Access (OWA), tracked as CVE-2026-42897 and patched in May, with its targets including “the telecommunications, financial, hospitality, and aerospace sectors” and the goal of stealing emails and account credentials.",
+      "src": "The Record",
+      "srcUrl": "https://therecord.media/russia-hackers-outlook-webmail-malware",
+      "linked": true
+    },
     {
       "ts": "2026-07-29T12:15:00Z",
       "p": "tp",
@@ -432,9 +455,9 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v97",
-      "verRange": "v1–v97",
-      "asOf": "July 28, 2026",
+      "ver": "v98",
+      "verRange": "v1–v98",
+      "asOf": "July 29, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
       "p2": "The UK’s National Cyber Security Centre (NCSC) and cybersecurity agencies from the United States and eight other countries warn that hackers linked to Russia’s Federal Security Service (FSB) are exploiting routers with default or weak passwords to infiltrate critical infrastructure, naming financial services among the sectors most at risk. Researchers report “JadePuffer,” described as a ransomware attack run end-to-end by an AI agent that broke in through the exploited Langflow flaw. Separately, federal cybersecurity agencies in the United States, the United Kingdom, Europe, Australia, and New Zealand warn that Russian state-backed hackers known as Laundry Bear are exploiting a Zimbra Collaboration Suite webmail flaw in zero-click phishing attacks, with research from Palo Alto Networks’ Unit 42 finding financial organizations among the sectors targeted.",
@@ -1387,6 +1410,15 @@
           "src": "BleepingComputer",
           "srcUrl": "https://www.bleepingcomputer.com/news/security/vbulletin-fixes-critical-pre-auth-rce-flaw-with-public-exploit/",
           "line": "BleepingComputer reports that vBulletin has fixed a critical flaw (CVE-2026-61511) in its forum software that let attackers without a login execute arbitrary PHP code through template rendering, with a public exploit now available; the flaw affects vBulletin versions up to 5.7.5 (5.x branch) and 6.2.1 (6.x branch), fixed in version 6.2.2, released July 1."
+        },
+        {
+          "date": "Jul 29, 26",
+          "st": "confirmed",
+          "ver": "v98",
+          "id": "L-0248",
+          "src": "The Record",
+          "srcUrl": "https://therecord.media/russia-hackers-outlook-webmail-malware",
+          "line": "The Record reports that researchers say the Russian state-linked hacking group Laundry Bear recently began exploiting a bug in Microsoft Outlook Web Access (OWA), tracked as CVE-2026-42897 and patched in May, with its targets including “the telecommunications, financial, hospitality, and aerospace sectors” and the goal of stealing emails and account credentials."
         }
       ],
       "sources": [
@@ -5514,9 +5546,26 @@
       "line": "The Record reports that a cyberattack on Unitel, Angola’s largest telecommunications operator, struck less than 24 hours before the company’s landmark debut on the country’s stock exchange, leaving millions of people without voice, mobile data, and internet access and also disrupting point-of-sale payment terminals running on Unitel’s network.",
       "src": "The Record",
       "srcUrl": "https://therecord.media/angola-unitel-cyberattack-outage"
+    },
+    {
+      "d": "2026-07-29",
+      "p": "cyber",
+      "id": "L-0248",
+      "line": "The Record reports that researchers say the Russian state-linked hacking group Laundry Bear recently began exploiting a bug in Microsoft Outlook Web Access (OWA), tracked as CVE-2026-42897 and patched in May, with its targets including “the telecommunications, financial, hospitality, and aerospace sectors” and the goal of stealing emails and account credentials.",
+      "src": "The Record",
+      "srcUrl": "https://therecord.media/russia-hackers-outlook-webmail-malware"
     }
   ],
   "takeaways": [
+    {
+      "anchors": [
+        "L-0248"
+      ],
+      "pillars": "Cybersecurity",
+      "conf": "high confidence",
+      "head": "If your organization runs Microsoft Outlook Web Access, confirm the May patch for CVE-2026-42897 is applied — a Russian state-linked hacking group has been exploiting it to steal emails and account credentials, with financial organizations among the sectors targeted.",
+      "body": "The Record reports that researchers say the Russian state-linked hacking group Laundry Bear has been exploiting a Microsoft Outlook Web Access flaw, tracked as CVE-2026-42897 and patched in May, to steal emails and account credentials, with targets including government entities and the telecommunications, financial, hospitality, and aerospace sectors. Technology and security teams should confirm the patch is applied and treat unexplained webmail account activity as a possible compromise."
+    },
     {
       "anchors": [
         "L-0247"
@@ -6096,7 +6145,7 @@
       {
         "no": "15",
         "date": "Wed, Jul 29, 2026",
-        "confirmed": "1",
+        "confirmed": "2",
         "pending": "0",
         "flash": "—",
         "linked": true
