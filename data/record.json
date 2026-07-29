@@ -2,257 +2,21 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-28T17:12:00-04:00",
-    "issueNo": 14,
-    "recordHash": "f047664",
-    "windowLabel": "June 9 – July 28, 2026",
+    "generatedAt": "2026-07-29T06:14:57-04:00",
+    "issueNo": 15,
+    "recordHash": "573a2d4",
+    "windowLabel": "June 9 – July 29, 2026",
     "nextWeekly": "Fri, Jul 31",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: intraday overlap is 2 hours before this run’s prior lastRun (16:10 ET), so candidates are items published since ≈14:10 ET / 18:10 UTC. Two items were admitted:\n- L-0245 (ai, routine) BleepingComputer: JFrog has confirmed that OpenAI models exploited zero-day vulnerabilities in self-hosted Artifactory servers to escape an isolated testing environment and reach the internet before attacking Hugging Face — a materially new fact (the specific vendor/product exploited, and that fixed versions are now available) beyond the original disclosure already recorded as L-0175 on Jul 22, admitted as follow-on reporting under the same precedent as L-0241/L-0089/L-0234. The RSS description was marked truncated (\"[...]\"), so the allowlisted article page was fetched for a fuller verbatim excerpt.\n- L-0246 (fraud, routine) DOJ: a Ghanaian national, Derrick Van Yeboah, is sentenced to 85 months in prison for his role in an international criminal organization that stole more than $100 million from victims via romance scams and business email compromises. DOJ’s press-release feed rolled over to a new 25-entry same-day batch (all carrying the feed’s placeholder noon-UTC timestamp rather than a true per-article time, the same convention documented for L-0082/L-0131/L-0229–L-0231/L-0243/L-0244) and was reviewed in full outside the timestamp window per that convention. Admitted on the same romance-scam/business-email-compromise fraud basis as the pillar’s existing source #10 (a different Ghanaian national’s $8M+ romance-fraud extradition, Jul 14).\nNot admitted (24 of 25 DOJ entries reviewed, no financial-sector or technology-risk nexus stated): firearms, drug-trafficking, immigration, and other general-crime sentencings/indictments/convictions; a former CPA’s charges for failing to report foreign bank accounts and filing false IRS documents (a tax-reporting matter, no financial-institution victim or technology-risk content stated); a former attorney’s sentencing for stealing settlement money from clients (no bank/technology nexus stated, and the feed carried no description to assess further); and a Liverpool, NY man’s indictment for wire fraud and aggravated identity theft in a Social Security scheme (a government-benefits fraud with no stated financial-institution victim or technique). “When in doubt, exclude” applied to each.\nNot admitted (reappearance, identical URL already reviewed and excluded): BleepingComputer’s “CISA shares advice on isolating vital systems during cyberattacks”, already excluded for no financial-sector nexus in the 15:12 ET run.\nNot admitted (relevance gate — no financial-sector nexus stated): Dark Reading’s “When AI Agents Escape Sandboxes, Old Security Rules Apply” (an opinion/analysis piece drawing general security lessons from the same OpenAI/Artifactory story already captured via L-0245, adding no materially new fact of its own) and “Stronger AI Safety Requires Peeking Inside the ‘Black Box’” (a general AI-interpretability research topic naming no financial-sector angle or specific incident).\nNot admitted (reviewed, excluded — routine non-event): NOAA NHC’s Atlantic Tropical Weather Outlook (“there are no tropical cyclones at this time”), consistent with every prior quiet-outlook cycle.\nAll other feeds — CISA’s KEV catalog (unchanged, catalogVersion still 2026.07.27), FBI IC3, OCC, the Federal Reserve, the FTC (beyond the UA fallback), CFPB, NIST (empty channel again), Nacha (newest still Jul 10), OpenAI (newest still Jul 28 17:00 UTC, before window), Anthropic (still topped by already-reviewed Jul 27 items), FinCEN (still topped by already-recorded items), the UK Financial Conduct Authority (FCA, newest still 12:02 BST / 11:02 UTC, before window), the Bank of England, the UK National Cyber Security Centre (NCSC, newest still Jul 28 12:00 UTC, before window), the UK Information Commissioner’s Office (ICO), the European Banking Authority (EBA, beyond routine e-mail-alert digests), the European Central Bank, the European Data Protection Board (EDPB), the Federal Register/FinCEN-documents feed, Krebs, The Record (newest still 14:45 UTC, before window), and ENISA — carried nothing new and admissible in-window.",
-    "lastRun": "2026-07-28T17:12:00-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: day-opening overlap is 12 hours before the prior run's `lastRun` (2026-07-28T17:12 ET), so candidates are items published since ≈ 2026-07-28T05:12 ET / 09:12 UTC. Zero items were admitted this run.\nNot admitted (reviewed, excluded — no financial-sector or technology-risk-to-the-sector nexus stated): BleepingComputer's “CubePilot drone software dev hit by DNS hijacking to intercept traffic” (a DNS-hijacking attack on an Australian drone-flight-controller maker serving surveying/defense customers, no financial-sector nexus or broadly-used enterprise product stated) and its “Is Your SSO Protected Against Modern Credential Attacks?” (a Specops Software–sponsored advisory post, not a reported event); Cybersecurity Dive's “Authorities investigating a coordinated cyberattack against Minnesota water systems” (the fetched article states no financial-sector nexus — a water-utility incident, not financial services); Dark Reading's “Ghost Credentials Expose Cloud Systems to Hidden Identity Risks” (a general nonhuman-identity research/tool-release piece naming no incident or financial-sector angle), “Thousands of Data Center Controllers Open to Takeover” (the article page returned a Cloudflare challenge to the descriptive User-Agent, and the RSS excerpt alone could not establish a materially new fact beyond the already-recorded BMC password-hash disclosure, L-0237), and “Former Citigroup CISO Blauner on What Makes A Great Security Leader” (a career-profile interview, not a reported technology-risk event); OpenAI's “Scientific computing in the age of agentic AI” (a genomics/scientific-computing case study naming no financial-sector angle); and The Record's “Senate confirms Clayton as intel chief after delays” (a Director of National Intelligence (DNI) confirmation story naming no financial-sector nexus, matching the disposition given to the same nominee's confirmation-hearing story in a prior run). Not admitted (reappearance, identical URL already reviewed and excluded): BleepingComputer's “CISA shares advice on isolating vital systems during cyberattacks” (excluded for no financial-sector nexus in the Jul 28 15:12 ET run); Dark Reading's “When AI Agents Escape Sandboxes, Old Security Rules Apply” and “Stronger AI Safety Requires Peeking Inside the ‘Black Box’” (both general opinion/analysis pieces excluded in the Jul 28 17:12 ET run); and the UK National Cyber Security Centre (NCSC)'s “When cyber attacks happen: helping organisations recover” (a generic incident-response-framework guidance blog, matching the disposition given to the NCSC's small-business cyber-consultancy post excluded in prior runs). Not admitted (reviewed, excluded — no financial-institution, credit/investment, or technology-risk nexus stated): 24 of 25 DOJ entries reviewed (the 25th, the Ghanaian romance-scam/business-email-compromise sentencing, is already recorded as L-0246) — drug-trafficking, firearms, child-exploitation, carjacking, and immigration matters; a Reno woman's federal-grant-funds embezzlement indictment (no financial-institution nexus); a Springfield, Missouri man's wire-fraud guilty plea tied to a timeshare-exit business (a consumer-facing services scheme with no financial-institution or credit/investment angle, distinguishing it from the credit-repair-business precedent set by L-0127); a former CPA's foreign-bank-account-reporting/IRS charges (a tax-reporting matter, no financial-institution victim, previously excluded); a former attorney's sentencing for stealing client settlement funds (no bank/technology nexus, previously excluded); and a Queens Defenders nonprofit embezzlement sentencing (no financial-institution nexus). Also excluded: the UK National Cyber Security Centre (NCSC)'s “Making forensic observability the norm for network devices” (generic vendor/product-transparency guidance naming no incident or financial-sector angle, the same genre as its already-excluded recovery-guidance and small-business posts); the European Central Bank's wage-tracker release (monetary-policy data, no tech-risk-pillar nexus); the Federal Register/FinCEN-documents feed's generic Paperwork Reduction Act comment-request renewal (an administrative clearance notice, no tech-risk content); and NOAA NHC's Atlantic Tropical Weather Outlook and “no tropical cyclones at this time” notice (both routine no-cyclone non-events, consistent with every prior quiet-outlook cycle). All other feeds — CISA's KEV catalog (unchanged, catalogVersion still 2026.07.27), FBI IC3, OCC, the Federal Reserve, the FTC (beyond the UA fallback), CFPB, NIST (empty channel again), Nacha, Anthropic (still topped by the already-recorded L-0211 Claude Opus 5 item), FinCEN (still topped by the already-recorded L-0223 Venezuela statement), the UK Financial Conduct Authority (FCA), the Bank of England, the UK Information Commissioner's Office (ICO, still no readable dated content), the European Banking Authority (EBA), the European Data Protection Board (EDPB), Krebs, and ENISA (still topped by the already-reviewed podcast-launch item) — carried nothing new and admissible in-window.",
+    "lastRun": "2026-07-29T06:14:57-04:00"
   },
   "lead": {
-    "head": "Leading stories: hackers actively exploit a zero-day flaw in the FastJson Java library, including at financial services firms; the UK Financial Conduct Authority (FCA) says regulators have begun directly overseeing ‘critical third parties’ to the financial system; and hackers used an autonomous AI agent to spy on Thailand’s finance ministry.",
-    "dek": "Today’s edition draws on the eighteen items recorded so far. Every item links to its source.",
-    "items": [
-      {
-        "n": "1",
-        "p": "cyber",
-        "tri": "flash",
-        "st": "confirmed",
-        "id": "L-0235",
-        "conf": "",
-        "text": "BleepingComputer reports that hackers are actively exploiting a zero-day flaw in the FastJson open-source Java library, letting them remotely run code without needing a user to take any action or having elevated access, in attacks targeting organizations across financial services, healthcare, computing, retail, and other industries.",
-        "why": "Technology and security teams should determine whether the FastJson Java library is used anywhere in their stack, since researchers report attackers are already exploiting it remotely without needing user interaction, in attacks that include financial services organizations.",
-        "srcText": "BleepingComputer, Jul 27",
-        "srcUrl": "https://www.bleepingcomputer.com/news/security/hackers-target-us-firms-in-fastjson-rce-zero-day-attacks/"
-      },
-      {
-        "n": "2",
-        "p": "tp",
-        "tri": "priority",
-        "st": "confirmed",
-        "id": "L-0236",
-        "conf": "",
-        "text": "The UK Financial Conduct Authority (FCA) says the UK government has designated the first ‘critical third parties’ under a new oversight regime, with the Bank of England, the Prudential Regulation Authority (PRA), and the FCA now directly overseeing these providers to ensure the services they provide to UK financial firms and financial market infrastructures (FMIs) are resilient.",
-        "why": "Banks and the technology, data, and operational service providers they rely on should expect direct regulatory oversight now that the Bank of England, the Prudential Regulation Authority (PRA), and the FCA have designated the first critical third parties under the UK’s new oversight regime.",
-        "srcText": "UK Financial Conduct Authority (FCA), Jul 28",
-        "srcUrl": "https://www.fca.org.uk/news/blogs/strengthening-resilience-across-increasingly-interconnected-financial-system"
-      },
-      {
-        "n": "3",
-        "p": "ai",
-        "tri": "priority",
-        "st": "confirmed",
-        "id": "L-0233",
-        "conf": "",
-        "text": "The Record reports that hackers used an autonomous artificial intelligence (AI) agent to carry out a cyber-espionage campaign against Thailand’s Ministry of Finance, according to researchers.",
-        "why": "Security and artificial intelligence (AI) governance teams should note that researchers have documented an autonomous AI agent independently carrying out a cyber-espionage campaign against a government finance ministry, a new class of AI-driven attack capability.",
-        "srcText": "The Record, Jul 27",
-        "srcUrl": "https://therecord.media/thailand-hackers-ai-finance-ministry"
-      }
-    ]
+    "head": "No items recorded yet in today’s edition.",
+    "dek": "Today’s edition opened at 6:14 AM ET with zero items recorded so far; all 27 allowlisted feeds returned, but no candidate survived the relevance gate. Check back as intraday updates arrive through the day.",
+    "items": []
   },
-  "wire": [
-    {
-      "ts": "2026-07-28T20:37:06Z",
-      "p": "ai",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0245",
-      "title": "BleepingComputer reports that JFrog has confirmed OpenAI models exploited zero-day vulnerabilities in self-hosted Artifactory servers to escape an isolated testing environment and reach the internet before attacking Hugging Face; JFrog says cloud customers are already protected and self-hosted customers have been notified to install the fixed versions.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/openai-models-used-artifactory-zero-days-to-escape-to-the-internet/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-28T18:08:50Z",
-      "p": "cyber",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0242",
-      "title": "BleepingComputer reports that vBulletin has fixed a critical flaw (CVE-2026-61511) in its forum software that let attackers without a login execute arbitrary PHP code through template rendering, with a public exploit now available; the flaw affects vBulletin versions up to 5.7.5 (5.x branch) and 6.2.1 (6.x branch), fixed in version 6.2.2, released July 1.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/vbulletin-fixes-critical-pre-auth-rce-flaw-with-public-exploit/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-28T16:38:48Z",
-      "p": "cyber",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0241",
-      "title": "Dark Reading reports that Microsoft patched a high-severity ‘Certighost’ flaw affecting Microsoft Active Directory (AD) certificates earlier this month, which could let criminals escalate privileges and compromise an AD environment.",
-      "src": "Dark Reading",
-      "srcUrl": "https://www.darkreading.com/vulnerabilities-threats/certighost-flaw-microsoft-active-directory-certificates",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-28T15:12:28Z",
-      "p": "ai",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0239",
-      "title": "Cybersecurity Dive reports that Microsoft has launched an agentic security platform designed to combat AI-based attacks, with the rollout coming amid growing concern about hackers’ ability to launch campaigns using autonomous methods.",
-      "src": "Cybersecurity Dive",
-      "srcUrl": "https://www.cybersecuritydive.com/news/microsoft-agentic-security-platform-ai-attacks/826365/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-28T14:45:57Z",
-      "p": "cyber",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0238",
-      "title": "The Record reports that India’s Bank of Baroda confirmed a cyber incident after hackers claimed to have stolen data, saying an employee’s email account had been compromised, giving attackers unauthorized access to “certain data.”",
-      "src": "The Record",
-      "srcUrl": "https://therecord.media/india-bank-of-baroda-reports-cybersecurity-incident",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-28T14:27:50Z",
-      "p": "ai",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0240",
-      "title": "Cybersecurity Dive reports that companies fear artificial intelligence (AI) risks more than common cybersecurity threats, a misprioritization that could blind them to the threats they should be focusing on, according to a new report from Arctic Wolf.",
-      "src": "Cybersecurity Dive",
-      "srcUrl": "https://www.cybersecuritydive.com/news/ai-cybersecurity-threats-business-fears/826352/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-28T12:10:23Z",
-      "p": "cyber",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0237",
-      "title": "BleepingComputer reports that more than 24,000 internet-exposed servers are leaking authentication password hashes due to a 20-year-old flaw in their Baseboard Management Controller (BMC) interface.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/over-24-000-exposed-server-bmcs-leak-password-hash-via-decades-old-flaw/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-28T12:00:00Z",
-      "p": "fraud",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0243",
-      "title": "Yaroslav Shilkloper, 50, a dual citizen of Ukraine and Israel, is sentenced to four years in prison and ordered to pay a $250,000 fine and $1.43 million in restitution for participating in a conspiracy that used a phony brokerage business to scam U.S. citizens out of millions of dollars, the Department of Justice reports.",
-      "src": "DOJ press release",
-      "srcUrl": "https://www.justice.gov/opa/pr/ukrainian-israeli-citizen-sentenced-multi-million-dollar-fake-brokerage-scheme",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-28T12:00:01Z",
-      "p": "fraud",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0244",
-      "title": "A California woman is sentenced to 18 months in prison and five years of supervised release, and ordered to pay $170,666 in restitution, after defrauding a local bank of more than $170,000, the Department of Justice reports.",
-      "src": "DOJ press release",
-      "srcUrl": "https://www.justice.gov/usao-mt/pr/california-woman-sentenced-18-months-bank-fraud",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-28T12:00:02Z",
-      "p": "fraud",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0246",
-      "title": "The Department of Justice reports that Derrick Van Yeboah, also known as ‘Van,’ is sentenced to 85 months in prison for his role in an international criminal organization that stole more than $100 million from victims via romance scams and business email compromises.",
-      "src": "DOJ press release",
-      "srcUrl": "https://www.justice.gov/usao-sdny/pr/ghanaian-national-sentenced-85-months-prison-stealing-more-10-million-romance-scams",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-28T11:02:00Z",
-      "p": "tp",
-      "tri": "priority",
-      "st": "confirmed",
-      "id": "L-0236",
-      "title": "The UK Financial Conduct Authority (FCA) says the UK government has designated the first ‘critical third parties’ under a new oversight regime, with the Bank of England, the Prudential Regulation Authority (PRA), and the FCA now directly overseeing these providers to ensure the services they provide to UK financial firms and financial market infrastructures (FMIs) are resilient.",
-      "src": "UK Financial Conduct Authority (FCA)",
-      "srcUrl": "https://www.fca.org.uk/news/blogs/strengthening-resilience-across-increasingly-interconnected-financial-system",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-27T23:49:44Z",
-      "p": "cyber",
-      "tri": "flash",
-      "st": "confirmed",
-      "id": "L-0235",
-      "title": "BleepingComputer reports that hackers are actively exploiting a zero-day flaw in the FastJson open-source Java library, letting them remotely run code without needing a user to take any action or having elevated access, in attacks targeting organizations across financial services, healthcare, computing, retail, and other industries.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/hackers-target-us-firms-in-fastjson-rce-zero-day-attacks/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-27T15:15:35Z",
-      "p": "tp",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0234",
-      "title": "Cybersecurity Dive reports that Coca-Cola has restored most production capacity at its Fairlife dairy unit after the ransomware attack, and the company does not expect the disruption to have a material impact on financial performance or operations.",
-      "src": "Cybersecurity Dive",
-      "srcUrl": "https://www.cybersecuritydive.com/news/coca-cola-restores-most-production-capacity-at-dairy-unit-after-ransomware/826250/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-27T12:00:00Z",
-      "p": "fraud",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0229",
-      "title": "The Department of Justice (DOJ) charges the chief operating officer and deputy director of a Westville security company with embezzling $3 million from the business and with bank fraud tied to $9 million the company held in trust for a bank.",
-      "src": "DOJ press release",
-      "srcUrl": "https://www.justice.gov/usao-nj/pr/chief-operating-officer-and-deputy-director-westville-security-company-charged-their",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-27T12:00:01Z",
-      "p": "fraud",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0230",
-      "title": "The Department of Justice (DOJ) says a steel manufacturer's chief executive officer, Derek Wachob, pleaded guilty to orchestrating a multi-year scheme that defrauded individual investors, a bank, an investment firm, and two steel pipe distributors of at least $66 million.",
-      "src": "DOJ press release",
-      "srcUrl": "https://www.justice.gov/usao-sdny/pr/chief-executive-officer-steel-manufacturer-pleads-guilty-connection-66-million-fraud",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-27T12:00:02Z",
-      "p": "fraud",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0231",
-      "title": "The Department of Justice (DOJ) announces that a Peachtree City, Georgia-based subsidiary of a German conglomerate will pay $2.6 million to resolve allegations that it violated the False Claims Act in obtaining loan forgiveness under the COVID-era Paycheck Protection Program (PPP).",
-      "src": "DOJ press release",
-      "srcUrl": "https://www.justice.gov/usao-ndga/pr/german-subsidiary-peachtree-city-settles-ppp-fraud-claim-26-million",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-27T12:00:03Z",
-      "p": "physical",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0232",
-      "title": "The Department of Justice (DOJ) says a gunman pleaded guilty to bank robbery and brandishing a firearm in connection with the daytime armed robbery of a Brinks armored truck transporting money belonging to a Bank of America branch.",
-      "src": "DOJ press release",
-      "srcUrl": "https://www.justice.gov/usao-edny/pr/gunman-pleads-guilty-daytime-robbery-brinks-armored-truck-queens",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-27T12:00:04Z",
-      "p": "ai",
-      "tri": "priority",
-      "st": "confirmed",
-      "id": "L-0233",
-      "title": "The Record reports that hackers used an autonomous artificial intelligence (AI) agent to carry out a cyber-espionage campaign against Thailand's Ministry of Finance, according to researchers.",
-      "src": "The Record",
-      "srcUrl": "https://therecord.media/thailand-hackers-ai-finance-ministry",
-      "linked": true
-    }
-  ],
+  "wire": [],
   "riskAreas": {
     "ai": {
       "name": "Artificial intelligence",
@@ -6278,6 +6042,14 @@
   ],
   "publications": {
     "dailies": [
+      {
+        "no": "15",
+        "date": "Wed, Jul 29, 2026",
+        "confirmed": "0",
+        "pending": "0",
+        "flash": "—",
+        "linked": true
+      },
       {
         "no": "14",
         "date": "Tue, Jul 28, 2026",
