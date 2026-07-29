@@ -2,21 +2,46 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-29T06:14:57-04:00",
+    "generatedAt": "2026-07-29T09:13:00-04:00",
     "issueNo": 15,
-    "recordHash": "573a2d4",
+    "recordHash": "dc92152",
     "windowLabel": "June 9 – July 29, 2026",
     "nextWeekly": "Fri, Jul 31",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: day-opening overlap is 12 hours before the prior run's `lastRun` (2026-07-28T17:12 ET), so candidates are items published since ≈ 2026-07-28T05:12 ET / 09:12 UTC. Zero items were admitted this run.\nNot admitted (reviewed, excluded — no financial-sector or technology-risk-to-the-sector nexus stated): BleepingComputer's “CubePilot drone software dev hit by DNS hijacking to intercept traffic” (a DNS-hijacking attack on an Australian drone-flight-controller maker serving surveying/defense customers, no financial-sector nexus or broadly-used enterprise product stated) and its “Is Your SSO Protected Against Modern Credential Attacks?” (a Specops Software–sponsored advisory post, not a reported event); Cybersecurity Dive's “Authorities investigating a coordinated cyberattack against Minnesota water systems” (the fetched article states no financial-sector nexus — a water-utility incident, not financial services); Dark Reading's “Ghost Credentials Expose Cloud Systems to Hidden Identity Risks” (a general nonhuman-identity research/tool-release piece naming no incident or financial-sector angle), “Thousands of Data Center Controllers Open to Takeover” (the article page returned a Cloudflare challenge to the descriptive User-Agent, and the RSS excerpt alone could not establish a materially new fact beyond the already-recorded BMC password-hash disclosure, L-0237), and “Former Citigroup CISO Blauner on What Makes A Great Security Leader” (a career-profile interview, not a reported technology-risk event); OpenAI's “Scientific computing in the age of agentic AI” (a genomics/scientific-computing case study naming no financial-sector angle); and The Record's “Senate confirms Clayton as intel chief after delays” (a Director of National Intelligence (DNI) confirmation story naming no financial-sector nexus, matching the disposition given to the same nominee's confirmation-hearing story in a prior run). Not admitted (reappearance, identical URL already reviewed and excluded): BleepingComputer's “CISA shares advice on isolating vital systems during cyberattacks” (excluded for no financial-sector nexus in the Jul 28 15:12 ET run); Dark Reading's “When AI Agents Escape Sandboxes, Old Security Rules Apply” and “Stronger AI Safety Requires Peeking Inside the ‘Black Box’” (both general opinion/analysis pieces excluded in the Jul 28 17:12 ET run); and the UK National Cyber Security Centre (NCSC)'s “When cyber attacks happen: helping organisations recover” (a generic incident-response-framework guidance blog, matching the disposition given to the NCSC's small-business cyber-consultancy post excluded in prior runs). Not admitted (reviewed, excluded — no financial-institution, credit/investment, or technology-risk nexus stated): 24 of 25 DOJ entries reviewed (the 25th, the Ghanaian romance-scam/business-email-compromise sentencing, is already recorded as L-0246) — drug-trafficking, firearms, child-exploitation, carjacking, and immigration matters; a Reno woman's federal-grant-funds embezzlement indictment (no financial-institution nexus); a Springfield, Missouri man's wire-fraud guilty plea tied to a timeshare-exit business (a consumer-facing services scheme with no financial-institution or credit/investment angle, distinguishing it from the credit-repair-business precedent set by L-0127); a former CPA's foreign-bank-account-reporting/IRS charges (a tax-reporting matter, no financial-institution victim, previously excluded); a former attorney's sentencing for stealing client settlement funds (no bank/technology nexus, previously excluded); and a Queens Defenders nonprofit embezzlement sentencing (no financial-institution nexus). Also excluded: the UK National Cyber Security Centre (NCSC)'s “Making forensic observability the norm for network devices” (generic vendor/product-transparency guidance naming no incident or financial-sector angle, the same genre as its already-excluded recovery-guidance and small-business posts); the European Central Bank's wage-tracker release (monetary-policy data, no tech-risk-pillar nexus); the Federal Register/FinCEN-documents feed's generic Paperwork Reduction Act comment-request renewal (an administrative clearance notice, no tech-risk content); and NOAA NHC's Atlantic Tropical Weather Outlook and “no tropical cyclones at this time” notice (both routine no-cyclone non-events, consistent with every prior quiet-outlook cycle). All other feeds — CISA's KEV catalog (unchanged, catalogVersion still 2026.07.27), FBI IC3, OCC, the Federal Reserve, the FTC (beyond the UA fallback), CFPB, NIST (empty channel again), Nacha, Anthropic (still topped by the already-recorded L-0211 Claude Opus 5 item), FinCEN (still topped by the already-recorded L-0223 Venezuela statement), the UK Financial Conduct Authority (FCA), the Bank of England, the UK Information Commissioner's Office (ICO, still no readable dated content), the European Banking Authority (EBA), the European Data Protection Board (EDPB), Krebs, and ENISA (still topped by the already-reviewed podcast-launch item) — carried nothing new and admissible in-window.",
-    "lastRun": "2026-07-29T06:14:57-04:00"
+    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403’d for the descriptive User-Agent and was retried with a standard browser User-Agent per the runbook’s fallback, returning 200 — counted OK, not failed). Selection window: intraday overlap is 2 hours before this run’s prior lastRun (06:14:57 ET), so candidates are items published since ≈ 04:14:57 ET / 08:14:57 UTC. One item was admitted:\n- L-0247 (tp, priority) The Record: a cyberattack on Unitel, Angola’s largest telecommunications operator, left millions of people without voice, mobile data, and internet access and also disrupted point-of-sale payment terminals running on Unitel’s network, striking less than 24 hours before the company’s landmark debut on the country’s stock exchange. The RSS description covered only the general outage, so the allowlisted article page was fetched for a fuller verbatim excerpt covering the payment-terminal fact and the stock-exchange timing (the article’s opening two sentences plus the payment-terminal sentence, 60 words total, within the cap). Admitted under the third-party risk pillar: a critical telecom vendor’s outage disrupting merchant payment terminals is a vendor-dependency risk to payment processing, distinct from the CubePilot-drone and Minnesota-water-utility precedents excluded for lacking any financial-sector or payment nexus.\nNot admitted (reappearance, identical URL already reviewed and excluded in the 06:14 ET day-opening run): the UK National Cyber Security Centre (NCSC)’s “Making forensic observability the norm for network devices”.\nNot admitted (relevance gate — no financial-sector or technology-risk-to-the-sector nexus stated): The Record’s “Russia accuses Telegram founder of aiding terrorism, seeks international arrest” (a geopolitical/legal action against a messaging-app founder, no financial-sector angle stated).\nNot admitted (not a reported event): BleepingComputer’s “These near-mint ASUS Chromebook refurbs are only $145”, a sponsored deals post.\nNot admitted (reviewed, excluded — routine non-event): NOAA NHC’s Atlantic Tropical Weather Outlook (“tropical cyclone formation is not expected during the next 7 days”) and its “there are no tropical cyclones at this time” notice, consistent with every prior quiet-outlook cycle.\nAll other feeds — CISA’s KEV catalog (unchanged, catalogVersion still 2026.07.27), FBI IC3, OCC, the Federal Reserve, the FTC (beyond the UA fallback), CFPB, DOJ (newest batch still the same noon-placeholder 25-entry set already reviewed in the 06:14 ET run), NIST (empty channel again), Nacha, OpenAI, Anthropic (still topped by already-reviewed Jul 27 items), FinCEN (still topped by the already-recorded Venezuela statement), the UK Financial Conduct Authority (FCA), the Bank of England, the UK Information Commissioner’s Office (ICO, still no readable dated content), the European Banking Authority (EBA), the European Central Bank, the European Data Protection Board (EDPB), Krebs, Dark Reading, Cybersecurity Dive, and ENISA (still topped by the already-reviewed podcast-launch item) — carried nothing new and admissible in-window.",
+    "lastRun": "2026-07-29T09:13:00-04:00"
   },
   "lead": {
-    "head": "No items recorded yet in today’s edition.",
-    "dek": "Today’s edition opened at 6:14 AM ET with zero items recorded so far; all 27 allowlisted feeds returned, but no candidate survived the relevance gate. Check back as intraday updates arrive through the day.",
-    "items": []
+    "head": "A cyberattack on Unitel, Angola’s largest telecommunications operator, disrupts point-of-sale payment terminals and voice, mobile data, and internet access, striking hours before the company’s landmark debut on the country’s stock exchange.",
+    "dek": "Today’s edition draws on the one item recorded so far. Every item links to its source.",
+    "items": [
+      {
+        "n": "1",
+        "p": "tp",
+        "tri": "priority",
+        "st": "confirmed",
+        "id": "L-0247",
+        "conf": "",
+        "text": "The Record reports that a cyberattack on Unitel, Angola’s largest telecommunications operator, struck less than 24 hours before the company’s landmark debut on the country’s stock exchange, leaving millions of people without voice, mobile data, and internet access and also disrupting point-of-sale payment terminals running on Unitel’s network.",
+        "why": "Payment-processing and business-continuity teams should confirm they have backup connectivity for point-of-sale payment terminals that depend on a single telecom provider, since a cyberattack on one carrier disrupted phone, data, and payment-terminal service all at once.",
+        "srcText": "The Record, Jul 29",
+        "srcUrl": "https://therecord.media/angola-unitel-cyberattack-outage"
+      }
+    ]
   },
-  "wire": [],
+  "wire": [
+    {
+      "ts": "2026-07-29T12:15:00Z",
+      "p": "tp",
+      "tri": "priority",
+      "st": "confirmed",
+      "id": "L-0247",
+      "title": "The Record reports that a cyberattack on Unitel, Angola’s largest telecommunications operator, struck less than 24 hours before the company’s landmark debut on the country’s stock exchange, leaving millions of people without voice, mobile data, and internet access and also disrupting point-of-sale payment terminals running on Unitel’s network.",
+      "src": "The Record",
+      "srcUrl": "https://therecord.media/angola-unitel-cyberattack-outage",
+      "linked": true
+    }
+  ],
   "riskAreas": {
     "ai": {
       "name": "Artificial intelligence",
@@ -2331,9 +2356,9 @@
       "scope": "third-party risk · vendor software & supply chain",
       "watch": "Vendor tools under active attack, software-supply-chain compromises aimed at financial applications, and vendor incident disclosures.",
       "opened": "July 2026",
-      "ver": "v20",
-      "verRange": "v1–v20",
-      "asOf": "July 28, 2026",
+      "ver": "v21",
+      "verRange": "v1–v21",
+      "asOf": "July 29, 2026",
       "p1": "One vendor-channel exploit is confirmed this window: SimpleHelp, a remote-support tool, carries an authentication-bypass flaw on CISA’s known-exploited list — in a vulnerable configuration, a remote, unauthenticated attacker can log in with a forged token. Separately, the UK Financial Conduct Authority (FCA) says the UK government has designated the first ‘critical third parties’ (CTPs) under a new oversight regime, with the Bank of England, the Prudential Regulation Authority (PRA), and the FCA now directly overseeing the resilience of services these providers offer to UK financial firms and financial market infrastructures (FMIs).",
       "p1Sup": "1, 14, 15",
       "p2": "The rest of the vendor picture clusters around the software supply chain: a claimed breach at consulting firm Accenture said to involve source code and encryption keys, and malicious look-alike software kits for the Paysafe, Skrill, and Neteller payment applications on public code registries. Separately, Ernst & Young — one of the world’s four largest auditing and professional-services firms — is notifying customers of a data breach after its own support-ticket system was compromised, with documents containing client tax information among what the tickets may have held.",
@@ -2566,6 +2591,15 @@
           "src": "UK Financial Conduct Authority (FCA)",
           "srcUrl": "https://www.fca.org.uk/news/blogs/strengthening-resilience-across-increasingly-interconnected-financial-system",
           "line": "The UK Financial Conduct Authority (FCA) says the UK government has designated the first ‘critical third parties’ under a new oversight regime, with the Bank of England, the Prudential Regulation Authority (PRA), and the FCA now directly overseeing these providers to ensure the services they provide to UK financial firms and financial market infrastructures (FMIs) are resilient."
+        },
+        {
+          "date": "Jul 29, 26",
+          "st": "confirmed",
+          "ver": "v21",
+          "id": "L-0247",
+          "src": "The Record",
+          "srcUrl": "https://therecord.media/angola-unitel-cyberattack-outage",
+          "line": "The Record reports that a cyberattack on Unitel, Angola’s largest telecommunications operator, struck less than 24 hours before the company’s landmark debut on the country’s stock exchange, leaving millions of people without voice, mobile data, and internet access and also disrupting point-of-sale payment terminals running on Unitel’s network."
         }
       ],
       "sources": [
@@ -5472,9 +5506,26 @@
       "line": "The Department of Justice reports that Derrick Van Yeboah, also known as ‘Van,’ is sentenced to 85 months in prison for his role in an international criminal organization that stole more than $100 million from victims via romance scams and business email compromises.",
       "src": "DOJ press release",
       "srcUrl": "https://www.justice.gov/usao-sdny/pr/ghanaian-national-sentenced-85-months-prison-stealing-more-10-million-romance-scams"
+    },
+    {
+      "d": "2026-07-29",
+      "p": "tp",
+      "id": "L-0247",
+      "line": "The Record reports that a cyberattack on Unitel, Angola’s largest telecommunications operator, struck less than 24 hours before the company’s landmark debut on the country’s stock exchange, leaving millions of people without voice, mobile data, and internet access and also disrupting point-of-sale payment terminals running on Unitel’s network.",
+      "src": "The Record",
+      "srcUrl": "https://therecord.media/angola-unitel-cyberattack-outage"
     }
   ],
   "takeaways": [
+    {
+      "anchors": [
+        "L-0247"
+      ],
+      "pillars": "Third-party risk",
+      "conf": "high confidence",
+      "head": "If payment terminals route through a single telecom provider, confirm a backup connection is in place — a cyberattack on one carrier can take point-of-sale systems down along with phone and data service.",
+      "body": "The Record reports that a cyberattack on Unitel, Angola’s largest telecommunications operator, disrupted point-of-sale payment terminals running on its network along with voice, mobile data, and internet access. Payment-processing and business-continuity teams should confirm they have backup connectivity for payment channels that depend on a single telecom vendor."
+    },
     {
       "anchors": [
         "L-0212"
@@ -6045,7 +6096,7 @@
       {
         "no": "15",
         "date": "Wed, Jul 29, 2026",
-        "confirmed": "0",
+        "confirmed": "1",
         "pending": "0",
         "flash": "—",
         "linked": true
