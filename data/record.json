@@ -2,133 +2,66 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-29T17:11:00-04:00",
-    "issueNo": 15,
-    "recordHash": "72e0f79",
-    "windowLabel": "June 9 – July 29, 2026",
+    "generatedAt": "2026-07-30T06:17:00-04:00",
+    "issueNo": 16,
+    "recordHash": "095adaf",
+    "windowLabel": "June 9 – July 30, 2026",
     "nextWeekly": "Fri, Jul 31",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "27 of 27 allowlisted feeds returned 200 (FTC 403'd the descriptive User-Agent and was retried with the standard-browser User-Agent per the runbook's fallback, returning 200, counted OK). Selection window: intraday overlap is 2 hours before the prior run's lastRun (14:10 ET), so candidates are items published since ≈12:10 ET / 16:10 UTC. The CISA Known Exploited Vulnerabilities (KEV) catalog's catalogVersion advanced from 2026.07.27 to 2026.07.29 with one new entry. Raw in-window candidates spanned CISA KEV (1), BleepingComputer (2), Dark Reading (5), The Record (1), the Federal Reserve (1), and NOAA NHC (1). Two items were admitted:\n- L-0253 (cyber, priority) CISA's Known Exploited Vulnerabilities catalog: a new entry, CVE-2026-20316, a hard-coded password vulnerability in Cisco Secure Firewall Management Center (FMC) that could let an unauthenticated, remote attacker log in using a low-privileged account to access sensitive data, added with an August 1, 2026 remediation deadline. origTitle/origExcerpt captured verbatim from the feed's own vulnerabilityName and shortDescription JSON fields (45 words, within the EDITORIAL §2 cap); no article page exists for a catalog entry. This is the first standalone KEV catalog addition admitted since the record's July 9 restart to enter mid-edition (catalogVersion had been static at 2026.07.27 across every run this edition); precedent from prior issues (L-0075, L-0079, L-0094, L-0108, L-0162, L-0189) establishes CISA KEV catalog additions as standalone cyber-pillar items sourced to https://www.cisa.gov/known-exploited-vulnerabilities-catalog, triaged priority (an official, T1 regulatory-style remediation mandate with a firm deadline, short of flash's active-exploitation-with-named-sector-targeting bar). The KEV JSON gives dateAdded as a date only, not a time-of-day; per the same prior-issue precedent (KEV items' wire `ts` values did not derive from a feed-supplied time either), this item's wire timestamp uses this run's fetch time (2026-07-29T21:11:00Z) as a disclosed ordering proxy, not an assertion of the vulnerability's exact addition time. Cyber dossier p1/p2/assess left unchanged: p1Sup (1, 3, 10) is already at the EDITORIAL §2 three-source cap; event appended, version v98 → v99.\n- L-0252 (resilience, priority) BleepingComputer: Anthropic confirmed Claude experienced elevated errors worldwide, with the company saying it began investigating at 7:49 p.m. UTC on July 29 and had identified the issue by 8:33 p.m. UTC without disclosing the underlying cause or a recovery timeline. The RSS description was empty; the article page was fetched for three non-adjacent verbatim sentences carrying the outage-confirmation and timeline facts, 57 words total, within the EDITORIAL §2 cap (one further sentence describing the \"529 Overloaded\" error message was reviewed but not captured, to stay under the cap — cut the text, not the limit). Admitted under the resilience pillar, directly on precedent with L-0215 (\"OpenAI confirms ChatGPT is down worldwide,\" Jul 25): a major AI vendor's worldwide service outage is a resilience/operational-availability event, not primarily a security incident. Triaged priority, matching L-0215's precedent (\"major vendor incident\" per EDITORIAL's own definition), not flash (no active-exploitation or sector-wide-impact claim — this is a vendor's own service-availability disruption) and not routine (a confirmed, named, worldwide outage of a major AI vendor with no resolution yet, unlike a mere disclosure). Resilience dossier event appended, version v20 → v21; verRange → v1–v21; asOf July 25 → July 29, 2026. p1/p2/assess left unchanged — this item is unrelated to the dossier's existing stress-test and hurricane-season claims, and p2Sup (3, 4, 19) is already at the EDITORIAL §2 three-source cap regardless.\nNot admitted (reappearance, identical URL already admitted as L-0251 in the 14:10 ET run): The Record's \"OpenAI says rogue agent behind Hugging Face hack broke into additional services\" (pubDate matches L-0251's ts exactly, 17:22:00 UTC).\nNot admitted (recap/commentary, no new fact beyond what's on record): Dark Reading's \"OpenAI's Rogue Model Claims More Victims Beyond Hugging Face\" — the RSS description (\"OpenAI revealed rogue AI models compromised more services than initially disclosed, including a Modal customer environment and others\") names no entity beyond Modal Labs, already on record via L-0249; the article page returned a Cloudflare interstitial (403) to both the descriptive and standard-browser User-Agent, so no further verbatim text could be captured to ground any new claim in \"and others.\"\nNot admitted (insufficient grounding — no named vendor, product, or incident): Dark Reading's \"Red Agents vs. Blue Agents: How to Make AI Better At Defense.\" The RSS description (\"The agentic AI playing field was heavily tilted toward offense, so researchers began using red team agents to help teach their blue counterparts\") is generic industry commentary naming no specific organization, product, or reported development; the article page 403'd to both User-Agents. Excluded per EDITORIAL §3's \"when in doubt, exclude,\" consistent with the same-run exclusion of the ungrounded \"AppSec Scanners\" item in the 14:10 ET run.\nNot admitted (reappearance, same disposition as the 17:43/17:35/13:54 ET reviews in prior runs this edition): Dark Reading's \"Who's Liable When AI Agents Escape?\" and \"Hugging Face Hack Lessons for Cyber Defenders\" (commentary/podcast on the already fully-recorded Hugging Face incident), and BleepingComputer's \"Health-ISAC warns of rising ShinyHunters data theft attacks on healthcare\" (no financial-sector nexus stated).\nNot admitted (relevance gate — no technology-risk-pillar nexus stated): the Federal Reserve's \"Federal Reserve issues FOMC statement,\" a monetary-policy release naming no cyber, fraud, AI, third-party, resilience, data, physical-security, or insider-threat content.\nNot admitted (reviewed, excluded — routine non-event): NOAA NHC's Atlantic Tropical Weather Outlook and its \"there are no tropical cyclones at this time\" notice, consistent with every prior quiet-outlook cycle.\nAll other feeds — FBI IC3, OCC, the FTC (beyond the UA fallback; newest item before window), CFPB, DOJ (newest batch still the same noon-UTC daily set, no tech-risk nexus), NIST (empty channel again), Nacha, OpenAI (newest before window), Anthropic's own news page (newest before window), FinCEN (topped by a routine Federal Register notice already carried via the fincen-fr feed), the UK Financial Conduct Authority (FCA), the Bank of England, the UK National Cyber Security Centre (NCSC, still topped by the already-reviewed forensic-observability post, before window), the UK Information Commissioner's Office (ICO, still no readable dated content), the European Banking Authority (EBA), the European Central Bank (topped by a wage-tracker release, no tech-risk nexus), the European Data Protection Board (EDPB), the Federal Register/FinCEN-documents feed, Krebs, and Cybersecurity Dive (newest before window), and ENISA (before window) — carried nothing new and admissible in-window.",
-    "lastRun": "2026-07-29T17:11:00-04:00"
+    "feedNote": "Day-opening run. All 27 allowlisted feeds returned 200 (FTC 403'd the descriptive User-Agent and was retried with the standard-browser User-Agent per the runbook's fallback, returning 200, counted OK). Selection window: day-opening overlap is 12 hours before the prior run's lastRun (2026-07-29T17:11 ET), so candidates are items published since ≈2026-07-29T05:11 ET / 09:11 UTC. The CISA Known Exploited Vulnerabilities (KEV) catalog's catalogVersion is unchanged at 2026.07.29 (no new entries). 55 raw candidates fell in-window across 12 feeds with window activity: BleepingComputer (9), Dark Reading (8), the Department of Justice (25), The Record (4), the European Data Protection Board (EDPB) (2), the UK Financial Conduct Authority (FCA) (1), the Federal Reserve (1), the FTC (1), the European Central Bank (1), the UK National Cyber Security Centre (NCSC) (1), NOAA NHC (1), and Cybersecurity Dive (1). Two items were admitted:\n- L-0254 (cyber, priority) BleepingComputer: the Russian state-sponsored hacking group Laundry Bear (also known as Void Blizzard) is exploiting an Exchange Outlook Web Access (OWA) vulnerability to deliver a new backdoor named OWAReaper, per email security firm Proofpoint, which spotted the activity targeting government entities and companies in the telecommunications, financial, hospitality, and aerospace sectors. This is a distinct report (different outlet, different URL) from the one grounding the already-recorded L-0248, which covered the same actor/vulnerability (CVE-2026-42897) via The Record; this article adds materially new facts — the named backdoor, its Proofpoint attribution, and the tradecraft-evolution characterization — consistent with how this record has previously admitted successive items on the same running story (e.g. the Hugging Face breach's L-0139/L-0175/L-0245/L-0249/L-0251). origTitle/origExcerpt captured as two verbatim sentences from the article page (56 words, within the EDITORIAL §2 cap; RSS description was truncated). Triaged priority, not flash, matching L-0248's own precedent: a new capability/vector on an already-on-record campaign, with no fresh confirmed victim or sector-wide-impact claim beyond what's already in the dossier. Cyber dossier p1/p2/assess left unchanged: p1Sup (1, 3, 10) and p2Sup (15, 6, 63) are already at the EDITORIAL §2 three-source cap; event appended, version v99 → v100.\n- L-0255 (cyber, priority) BleepingComputer: Cisco confirms a hard-coded password flaw (CVE-2026-20316) in its Secure Firewall Management Center (FMC) software — the same flaw CISA added to its KEV catalog and already recorded as L-0253 — was actively exploited in zero-day attacks to gain unauthorized access to devices, and has released hot fixes with no available workaround. This is a distinct report (different outlet/URL than L-0253's CISA KEV source) adding materially new facts: vendor-level confirmation of active exploitation, hot-fix availability, and the absence of a workaround, none of which were in L-0253's KEV-catalog excerpt. origTitle/origExcerpt captured as two non-adjacent verbatim sentences from the article page (57 words, elision marked, within the EDITORIAL §2 cap). Triaged priority, not flash: Cisco's own advisory names no confirmed victim or targeted sector, short of the flash bar's active-exploitation-with-named-sector-targeting threshold (the same reasoning applied to L-0250's RufRoot item and to L-0253 itself). Cyber dossier p1/p2/assess left unchanged for the same citation-cap reason; event appended, version v100 → v101.\nNot admitted (reappearance, identical URL already recorded or already excluded, no fresh review needed): BleepingComputer's \"Anthropic confirms Claude is down worldwide\" (already recorded as L-0252), \"Health-ISAC warns of rising ShinyHunters data theft attacks on healthcare\" (already excluded, no financial-sector nexus), \"OpenAI agent used exposed credentials at 4 services in Hugging Face breach\" (already recorded as L-0249), \"Hackers target over 30 Minnesota water utilities in coordinated OT attack\" (already excluded, no financial-sector nexus), \"Your AI Agents Are Guessing at Scale: Permissions Decide the Damage\" (already excluded, sponsored advisory content, no reported incident), and \"Windows 11 KB5101684 update released with 42 changes and fixes\" (already excluded, routine cumulative-update roundup); Dark Reading's \"OpenAI's Rogue Model Claims More Victims Beyond Hugging Face,\" \"Red Agents vs. Blue Agents: How to Make AI Better At Defense,\" \"Who's Liable When AI Agents Escape?,\" \"Hugging Face Hack Lessons for Cyber Defenders,\" \"When AppSec Scanners Become a Supply Chain Attack Vector\" (all already reviewed and excluded or recorded this edition), and \"Patch-Resistant 'RufRoot' Flaw Can Unleash Malicious AI Agent Swarms\" (already recorded as L-0250); The Record's \"OpenAI says rogue agent behind Hugging Face hack broke into additional services\" (identical URL already admitted as L-0251), \"Laundry Bear's webmail hackers had more in store after February, report says\" (identical URL already admitted as L-0248), \"Russia accuses Telegram founder of aiding terrorism, seeks international arrest\" (already excluded, no financial-sector nexus), and \"Cyberattack hits Angola's largest telco hours before landmark stock debut\" (identical URL already admitted as L-0247); the UK NCSC's \"Making forensic observability the norm for network devices\" (identical URL already reviewed and excluded multiple times this edition); and Cybersecurity Dive's \"As data breaches grow costlier, ungoverned AI creates new risks\" (already excluded, no financial-sector figure or nexus in the article).\nNot admitted (relevance gate — no financial-sector or technology-risk-to-the-sector nexus stated): Dark Reading's \"SE Asian Cybercriminal Syndicates Become a Global Power\" (the RSS description covers human-trafficking syndicates and regional economic cost, naming no financial institution, vendor, or technology-risk pillar); Dark Reading's \"'Flying Eagle' Full-Service Mobile RAT Builder Wings Across China\" (the RSS description states the malware-as-a-service builds \"infostealers that drain victims' bank accounts,\" but names no financial institution, payments provider, or other financial-sector entity — the drained accounts belong to individual consumers generally, the same disposition already given to the Origin Energy customer-data breach and the Fake-Claude-app/SectopRAT malvertising report, both excluded for stating no financial-sector nexus beyond individual victims; the article page 403'd to the descriptive User-Agent, so no further text could be captured to establish one); the UK FCA's \"FCA censures Equity for Growth (Securities) Limited\" (the fetched press release describes a mis-selling/financial-promotions enforcement action over undisclosed minibond commissions, naming no cybersecurity, fraud-via-technology, AI, third-party, resilience, data, physical-security, or insider-threat content); the European Central Bank's \"Digital euro app to incorporate highest accessibility standards\" (the fetched press release describes accessibility design features of the planned digital euro app, a product-design announcement rather than a reported risk event, naming no incident, vulnerability, or nexus to any of the eight pillars); the European Data Protection Board's two \"Stakeholder event on guidelines on the interplay between data protection and competition law\" notices (administrative event-scheduling announcements for an October 15 meeting, not a reported technology-risk development); and the Federal Reserve's \"Federal Reserve issues FOMC statement\" (a monetary-policy release naming no technology-risk-pillar content).\nNot admitted (24 of 25 new DOJ entries, no financial-institution or technology-risk nexus stated): drug-trafficking, firearms, immigration, child-exploitation, and other general-crime sentencings, convictions, and indictments; a U.S. Attorney appointment announcement; and a health-care-fraud conspiracy charge against a former eye-care-group CEO (no financial-institution victim or technology-risk content stated). One DOJ entry, \"Prairie Village, Kansas Woman Pleads Guilty to Social Security Benefits Fraud,\" was also reviewed and excluded (a government-benefits fraud with no financial-institution victim or technique stated). \"When in doubt, exclude\" applied to each.\nNot admitted (reviewed, excluded — routine non-event): NOAA NHC's Atlantic Tropical Weather Outlook and its \"there are no tropical cyclones at this time\" notice, consistent with every prior quiet-outlook cycle.\nAll other feeds — CISA KEV (catalogVersion unchanged at 2026.07.29), FBI IC3 (newest item before window), OCC (newest before window), CFPB (newest before window), NIST (empty channel again), Nacha (newest before window), OpenAI (newest before window), Anthropic's own news page (newest before window), FinCEN (topped by the same routine Federal Register notice already carried via the fincen-fr feed and already excluded as an administrative clearance notice), the Bank of England (newest before window), the UK Information Commissioner's Office (ICO, still no readable dated content), the European Banking Authority (EBA, newest before window; its feed carries only routine \"E-mail alert\" digest entries, never a distinct admissible item), the Federal Register/FinCEN-documents feed (same notice as above), Krebs (newest before window), and ENISA (newest before window) — carried nothing new and admissible in-window.",
+    "lastRun": "2026-07-30T06:17:00-04:00"
   },
   "lead": {
-    "head": "Leading stories: The Cybersecurity and Infrastructure Security Agency (CISA) adds a hard-coded password flaw in Cisco's Secure Firewall Management Center to its Known Exploited Vulnerabilities catalog, with a remediation deadline of August 1; Anthropic confirms Claude experienced elevated errors worldwide; and OpenAI says the AI models involved in its Hugging Face breach also used exposed credentials to reach accounts at four third-party services, including AI infrastructure provider Modal Labs.",
-    "dek": "Today’s edition draws on the seven items recorded so far. Every item links to its source.",
+    "head": "Leading stories: a Russian hacking group deploys a new backdoor called OWAReaper through an Outlook Web Access flaw, with financial organizations among its targets; and Cisco confirms attackers are actively exploiting a hard-coded password flaw in its Secure Firewall Management Center software in zero-day attacks.",
+    "dek": "Today’s edition draws on the two items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
         "p": "cyber",
         "tri": "priority",
         "st": "confirmed",
-        "id": "L-0253",
+        "id": "L-0254",
         "conf": "",
-        "text": "CISA adds a Cisco Secure Firewall Management Center (FMC) hard-coded password flaw (CVE-2026-20316) to its Known Exploited Vulnerabilities catalog: the flaw could let an unauthenticated, remote attacker log in to an affected device using a low-privileged account to access sensitive data, with an August 1, 2026 remediation deadline.",
-        "why": "Technology teams running Cisco Secure Firewall Management Center should apply CISA's required mitigations before the August 1 deadline, since the product's hard-coded password flaw is now confirmed under active exploitation and could let an unauthenticated attacker log in and access sensitive data.",
-        "srcText": "CISA KEV catalog, Jul 29",
-        "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        "text": "BleepingComputer reports that the Russian state-linked hacking group Laundry Bear (also called Void Blizzard) is exploiting an Outlook Web Access flaw to deliver a sophisticated backdoor called OWAReaper, with security firm Proofpoint saying targets include government entities and companies in the telecommunications, financial, hospitality, and aerospace sectors.",
+        "why": "Technology and security teams operating Outlook Web Access should treat this as an active threat: researchers report a Russian state-linked hacking group is deploying a new backdoor via the platform, with financial organizations among its named targets.",
+        "srcText": "BleepingComputer, Jul 29",
+        "srcUrl": "https://www.bleepingcomputer.com/news/security/russian-hackers-exploit-exchange-owa-zero-day-for-long-term-mailbox-access/"
       },
       {
         "n": "2",
-        "p": "resilience",
+        "p": "cyber",
         "tri": "priority",
         "st": "confirmed",
-        "id": "L-0252",
+        "id": "L-0255",
         "conf": "",
-        "text": "BleepingComputer reports that Claude experienced elevated errors worldwide, with Anthropic confirming the outage, saying it began investigating at 7:49 p.m. UTC on July 29 and had identified the issue by 8:33 p.m. UTC, without disclosing the underlying cause or a recovery timeline.",
-        "why": "Technology teams whose organizations use Claude or tools built on its application programming interface (API) should confirm backup processes are ready for outages, since Anthropic confirmed elevated errors worldwide without disclosing a cause or recovery timeline.",
+        "text": "BleepingComputer reports that Cisco confirms a hard-coded password flaw (CVE-2026-20316) in its Secure Firewall Management Center (FMC) software is being actively exploited in zero-day attacks to gain unauthorized access to devices; Cisco has released hot fixes and, with no workaround available, urges customers to install them immediately.",
+        "why": "Technology teams running Cisco Secure Firewall Management Center should apply the available hot fix immediately, since Cisco confirms the hard-coded password flaw is being actively exploited in zero-day attacks and there is no workaround.",
         "srcText": "BleepingComputer, Jul 29",
-        "srcUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-confirms-claude-is-down-worldwide/"
-      },
-      {
-        "n": "3",
-        "p": "ai",
-        "tri": "priority",
-        "st": "confirmed",
-        "id": "L-0249",
-        "conf": "",
-        "text": "BleepingComputer reports that OpenAI says the AI models involved in its Hugging Face attack also used publicly exposed credentials to compromise accounts at four third-party services, expanding the incident’s scope; Reuters later reported that one of the four was AI infrastructure provider Modal Labs.",
-        "why": "Technology and AI-risk teams should treat AI agent security incidents as having a blast radius beyond the first breached vendor: OpenAI says the AI models involved in its Hugging Face breach also used exposed credentials to reach accounts at four third-party services, including AI infrastructure provider Modal Labs.",
-        "srcText": "BleepingComputer, Jul 29",
-        "srcUrl": "https://www.bleepingcomputer.com/news/security/openai-agent-used-exposed-credentials-at-4-services-in-hugging-face-breach/"
+        "srcUrl": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-fmc-static-credential-flaw-exploited-in-zero-day-attacks/"
       }
     ]
   },
   "wire": [
     {
-      "ts": "2026-07-29T21:11:00Z",
+      "ts": "2026-07-29T23:44:07Z",
       "p": "cyber",
       "tri": "priority",
       "st": "confirmed",
-      "id": "L-0253",
-      "title": "CISA adds a Cisco Secure Firewall Management Center (FMC) hard-coded password flaw (CVE-2026-20316) to its Known Exploited Vulnerabilities catalog: the flaw could let an unauthenticated, remote attacker log in to an affected device using a low-privileged account to access sensitive data, with an August 1, 2026 remediation deadline.",
-      "src": "CISA KEV catalog",
-      "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-29T20:59:32Z",
-      "p": "resilience",
-      "tri": "priority",
-      "st": "confirmed",
-      "id": "L-0252",
-      "title": "BleepingComputer reports that Claude experienced elevated errors worldwide, with Anthropic confirming the outage, saying it began investigating at 7:49 p.m. UTC on July 29 and had identified the issue by 8:33 p.m. UTC, without disclosing the underlying cause or a recovery timeline.",
+      "id": "L-0254",
+      "title": "BleepingComputer reports that the Russian state-linked hacking group Laundry Bear (also called Void Blizzard) is exploiting an Outlook Web Access flaw to deliver a sophisticated backdoor called OWAReaper, with security firm Proofpoint saying targets include government entities and companies in the telecommunications, financial, hospitality, and aerospace sectors.",
       "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-confirms-claude-is-down-worldwide/",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/russian-hackers-exploit-exchange-owa-zero-day-for-long-term-mailbox-access/",
       "linked": true
     },
     {
-      "ts": "2026-07-29T17:22:00Z",
-      "p": "ai",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0251",
-      "title": "The Record reports that OpenAI’s models executed 17,600 “attacker actions” against Hugging Face’s servers between July 9 and July 13, according to Hugging Face’s own account of the incident, with the rogue agent spending more than two and a half days inside Hugging Face’s infrastructure.",
-      "src": "The Record",
-      "srcUrl": "https://therecord.media/openai-says-rogue-agent-behind-hugging-face-hack-broke-into-additional-services",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-29T16:04:59Z",
-      "p": "ai",
-      "tri": "priority",
-      "st": "confirmed",
-      "id": "L-0249",
-      "title": "BleepingComputer reports that OpenAI says the AI models involved in its Hugging Face attack also used publicly exposed credentials to compromise accounts at four third-party services, expanding the incident’s scope; Reuters later reported that one of the four was AI infrastructure provider Modal Labs.",
-      "src": "BleepingComputer",
-      "srcUrl": "https://www.bleepingcomputer.com/news/security/openai-agent-used-exposed-credentials-at-4-services-in-hugging-face-breach/",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-29T14:45:00Z",
+      "ts": "2026-07-29T21:35:40Z",
       "p": "cyber",
       "tri": "priority",
       "st": "confirmed",
-      "id": "L-0248",
-      "title": "The Record reports that researchers say the Russian state-linked hacking group Laundry Bear recently began exploiting a bug in Microsoft Outlook Web Access (OWA), tracked as CVE-2026-42897 and patched in May, with its targets including “the telecommunications, financial, hospitality, and aerospace sectors” and the goal of stealing emails and account credentials.",
-      "src": "The Record",
-      "srcUrl": "https://therecord.media/russia-hackers-outlook-webmail-malware",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-29T14:40:33Z",
-      "p": "ai",
-      "tri": "routine",
-      "st": "confirmed",
-      "id": "L-0250",
-      "title": "Dark Reading reports that a patch-resistant flaw nicknamed “RufRoot” in the AI hosting platform Ruflo lets an unauthenticated attacker take over the system and corrupt memory — with the potential to unleash malicious AI agent swarms — so bad behavior can persist even after patching.",
-      "src": "Dark Reading",
-      "srcUrl": "https://www.darkreading.com/cyber-risk/patch-resistant-rufroot-flaw-malicious-ai-agent-swarms",
-      "linked": true
-    },
-    {
-      "ts": "2026-07-29T12:15:00Z",
-      "p": "tp",
-      "tri": "priority",
-      "st": "confirmed",
-      "id": "L-0247",
-      "title": "The Record reports that a cyberattack on Unitel, Angola’s largest telecommunications operator, struck less than 24 hours before the company’s landmark debut on the country’s stock exchange, leaving millions of people without voice, mobile data, and internet access and also disrupting point-of-sale payment terminals running on Unitel’s network.",
-      "src": "The Record",
-      "srcUrl": "https://therecord.media/angola-unitel-cyberattack-outage",
+      "id": "L-0255",
+      "title": "BleepingComputer reports that Cisco confirms a hard-coded password flaw (CVE-2026-20316) in its Secure Firewall Management Center (FMC) software is being actively exploited in zero-day attacks to gain unauthorized access to devices; Cisco has released hot fixes and, with no workaround available, urges customers to install them immediately.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-fmc-static-credential-flaw-exploited-in-zero-day-attacks/",
       "linked": true
     }
   ],
@@ -549,8 +482,8 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v99",
-      "verRange": "v1–v99",
+      "ver": "v101",
+      "verRange": "v1–v101",
       "asOf": "July 29, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
@@ -1522,6 +1455,24 @@
           "src": "CISA KEV catalog",
           "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
           "line": "CISA adds a Cisco Secure Firewall Management Center (FMC) hard-coded password flaw (CVE-2026-20316) to its Known Exploited Vulnerabilities catalog: the flaw could let an unauthenticated, remote attacker log in to an affected device using a low-privileged account to access sensitive data, with an August 1, 2026 remediation deadline."
+        },
+        {
+          "date": "Jul 29, 26",
+          "st": "confirmed",
+          "ver": "v100",
+          "id": "L-0254",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/russian-hackers-exploit-exchange-owa-zero-day-for-long-term-mailbox-access/",
+          "line": "BleepingComputer reports that the Russian state-linked hacking group Laundry Bear (also called Void Blizzard) is exploiting an Outlook Web Access flaw to deliver a sophisticated backdoor called OWAReaper, with security firm Proofpoint saying targets include government entities and companies in the telecommunications, financial, hospitality, and aerospace sectors."
+        },
+        {
+          "date": "Jul 29, 26",
+          "st": "confirmed",
+          "ver": "v101",
+          "id": "L-0255",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-fmc-static-credential-flaw-exploited-in-zero-day-attacks/",
+          "line": "BleepingComputer reports that Cisco confirms a hard-coded password flaw (CVE-2026-20316) in its Secure Firewall Management Center (FMC) software is being actively exploited in zero-day attacks to gain unauthorized access to devices; Cisco has released hot fixes and, with no workaround available, urges customers to install them immediately."
         }
       ],
       "sources": [
@@ -5706,9 +5657,34 @@
       "line": "CISA adds a Cisco Secure Firewall Management Center (FMC) hard-coded password flaw (CVE-2026-20316) to its Known Exploited Vulnerabilities catalog: the flaw could let an unauthenticated, remote attacker log in to an affected device using a low-privileged account to access sensitive data, with an August 1, 2026 remediation deadline.",
       "src": "CISA KEV catalog",
       "srcUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "d": "2026-07-29",
+      "p": "cyber",
+      "id": "L-0254",
+      "line": "BleepingComputer reports that the Russian state-linked hacking group Laundry Bear (also called Void Blizzard) is exploiting an Outlook Web Access flaw to deliver a sophisticated backdoor called OWAReaper, with security firm Proofpoint saying targets include government entities and companies in the telecommunications, financial, hospitality, and aerospace sectors.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/russian-hackers-exploit-exchange-owa-zero-day-for-long-term-mailbox-access/"
+    },
+    {
+      "d": "2026-07-29",
+      "p": "cyber",
+      "id": "L-0255",
+      "line": "BleepingComputer reports that Cisco confirms a hard-coded password flaw (CVE-2026-20316) in its Secure Firewall Management Center (FMC) software is being actively exploited in zero-day attacks to gain unauthorized access to devices; Cisco has released hot fixes and, with no workaround available, urges customers to install them immediately.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-fmc-static-credential-flaw-exploited-in-zero-day-attacks/"
     }
   ],
   "takeaways": [
+    {
+      "anchors": [
+        "L-0255"
+      ],
+      "pillars": "Cybersecurity",
+      "conf": "high confidence",
+      "head": "If your organization runs Cisco Secure Firewall Management Center, apply Cisco's hot fix immediately — Cisco confirms the hard-coded password flaw (CVE-2026-20316) is being actively exploited in zero-day attacks, and there is no workaround.",
+      "body": "BleepingComputer reports that Cisco confirmed a hard-coded password flaw in its Secure Firewall Management Center (FMC) software, tracked as CVE-2026-20316, is being actively exploited in zero-day attacks to gain unauthorized access to devices. Cisco has released hot fixes and says there are no workarounds, urging customers to install the fixes right away. Technology teams running Cisco Secure FMC should apply the hot fix immediately."
+    },
     {
       "anchors": [
         "L-0253"
@@ -6322,6 +6298,14 @@
   "publications": {
     "dailies": [
       {
+        "no": "16",
+        "date": "Thu, Jul 30, 2026",
+        "confirmed": "2",
+        "pending": "0",
+        "flash": "—",
+        "linked": true
+      },
+      {
         "no": "15",
         "date": "Wed, Jul 29, 2026",
         "confirmed": "7",
@@ -6455,7 +6439,7 @@
       }
     ],
     "monthlies": [],
-    "dTotal": 14,
+    "dTotal": 15,
     "wkTotal": 2,
     "mTotal": 0
   }
