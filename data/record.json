@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-30T15:15:00-04:00",
+    "generatedAt": "2026-07-30T18:14:00-04:00",
     "issueNo": 16,
-    "recordHash": "cc09e92",
+    "recordHash": "b8c7646",
     "windowLabel": "June 9 – July 30, 2026",
     "nextWeekly": "Fri, Jul 31",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "Intraday run (15:15 ET, edition No. 16 stays open). Selection window: intraday overlap is 2 hours before the prior run's lastRun (12:12 ET), so candidates are items published since ≈10:12 ET / 14:12 UTC. 27 of 27 allowlisted feeds returned 200 (FTC 403'd the descriptive User-Agent and was retried with the standard-browser User-Agent per the runbook's fallback, returning 200, counted OK; the Bank of England, the CFPB, CISA KEV, DOJ, and FinCEN also 403'd the descriptive User-Agent and were retried with the standard-browser User-Agent, all returning 200, counted OK; ENISA, which 503'd in the prior run, returned 200 this run). The CISA Known Exploited Vulnerabilities (KEV) catalog's catalogVersion is unchanged at 2026.07.29 (no new entries). The page-checked sources were read directly: Anthropic's newest dated item remains Jul 27; FinCEN's newest dated item remains Jul 29; ICO's fetched page again returned no readable, dated news-list content; ENISA's newest dated item remains Jul 24 — none in window. 17 raw candidates fell in-window across 8 feeds with window activity: BleepingComputer (6), Cybersecurity Dive (2), Dark Reading (1), the Federal Reserve (2), the UK Financial Conduct Authority (FCA) (2), Krebs on Security (1), NOAA NHC (2), and the OCC (1). One item was admitted:\n- L-0259 (cyber, routine) BleepingComputer: Broadcom has released security updates for five vulnerabilities in VMware vCenter, ESX, Workstation, and Fusion — including three critical flaws letting an attacker bypass authentication, execute code, or escape a virtual machine to reach the host — and says organizations on unpatched versions should assume they are vulnerable and act immediately. origTitle/origExcerpt captured as two verbatim, non-adjacent sentences from the article page (the RSS description was marked truncated; 59 words, elision marked, within the EDITORIAL §2 cap). Admitted under the cyber pillar on the same “widely deployed enterprise/community software” basis as L-0208 (Azure Automation), L-0226 (Google Cloud/Azure confused deputy), and L-0242 (vBulletin), rather than requiring a stated financial-sector victim — VMware's virtualization platform is core third-party infrastructure for banks' data centers. Triaged routine, matching the L-0208/L-0242 precedent: a vendor patch disclosure with no active-exploitation language in the excerpt. Cyber dossier p1/p2/assess left unchanged — p1Sup (1, 3, 10) and p2Sup (15, 6, 63) are already at the EDITORIAL §2 three-source cap; event appended, version v102 → v103.\nNot admitted (reviewed, excluded at the relevance gate — no financial-sector or technology-risk-to-the-sector nexus stated): BleepingComputer's “Amazon links Debug, Chalk NPM supply-chain attacks to North Korean hackers” (a distinct URL from The Record's companion piece already reviewed and excluded in the 14:00 UTC run today; this article likewise names no financial institution or financial-sector victim, describing impact only in terms of an estimated share of “cloud environments” generally); BleepingComputer's “Google says AI helped Chrome fix 1,072 security bugs in two releases” (a Google self-reported account of its own AI-assisted vulnerability management improving Chrome's security, not a disclosed risk to the financial sector); BleepingComputer's “ShinyHunters claims Brinks Home breach, threatens to leak stolen data” (Brinks Home is a residential home-security and smart-home company, distinct from Brink's Incorporated's cash-in-transit business — the fetched article states only home-alarm-monitoring and consumer-customer-data impact, with no financial-institution or financial-sector nexus); and Krebs on Security's “Read This Before You Buy That TV Streaming Stick” (a consumer buying-guide post, no financial-sector nexus).\nNot admitted (duplicates already reviewed and excluded in the 12:12 ET run or earlier today, no fresh review needed): Cybersecurity Dive's and BleepingComputer's parallel Microsoft Teams vishing/Chaos ransomware coverage; BleepingComputer's “Analog Devices discloses data breach”; Cybersecurity Dive's “Shadow AI, leadership resistance make AI governance tough for worried CISOs”; Dark Reading's “Claude Mythos — Hype vs. Reality”; the Federal Reserve's Regions Bank enforcement release (already admitted as L-0256) and its companion Iuka Bancshares release (already reviewed and excluded); the FCA's “Trial date set for individual charged with illegal promotions” (identical URL to the already-recorded L-0258) and “Blue Motor Finance Limited enters administration”; and the OCC's “Community Bank Leverage Ratio” compliance-guide bulletin.\nNot admitted (reviewed, excluded — routine non-event): NOAA NHC's Atlantic Tropical Weather Outlook and its “there are no tropical cyclones at this time” notice, consistent with every prior quiet-outlook cycle.\nAll other feeds — CISA KEV (catalogVersion unchanged), FBI IC3, CFPB, NIST (empty channel again), Nacha (malformed-XML wrapper stripped and parsed; newest item Jul 10, before window), OpenAI, Anthropic (before window), FinCEN (before window), the Bank of England (items at or before 14:00 BST, before this run's 15:12 BST window start), the UK National Cyber Security Centre (NCSC), the UK Information Commissioner's Office (ICO), the European Banking Authority (EBA), the European Central Bank (ECB), ENISA (before window), the European Data Protection Board (EDPB), the Federal Register/FinCEN-documents feed, Krebs (beyond the TV-streaming-stick post above), and DOJ (25 entries, none stating a financial-institution or technology-risk nexus) — carried nothing new and admissible in-window.",
-    "lastRun": "2026-07-30T15:15:00-04:00"
+    "feedNote": "Intraday run (18:14 ET, edition No. 16 stays open). Selection window: intraday overlap is 2 hours before the prior run's lastRun (15:15 ET), so candidates are items published since ≈13:15 ET / 17:15 UTC. 27 of 27 allowlisted feeds returned 200 on the first attempt (no 403s this run, including FTC). The CISA Known Exploited Vulnerabilities (KEV) catalog's catalogVersion is unchanged at 2026.07.29 (no new entries). The page-checked sources were read directly: Anthropic's newest dated item remains Jul 27; FinCEN's newest dated item remains Jul 29; ICO's fetched page again returned no readable, dated news-list content; ENISA's newest visible item remains a future NIS360-survey deadline banner (Oct 30, 2026), not a new article — none in window. In-window items surfaced across BleepingComputer (3, 2 already-recorded/excluded duplicates), The Record (1, excluded), Dark Reading (2, excluded), NOAA NHC (2, routine non-events), and the DOJ feed's noon-UTC-placeholder list (1 new item not previously reviewed today). Two items were admitted: L-0260 (cyber, routine) and L-0261 (insider, routine).",
+    "lastRun": "2026-07-30T18:14:00-04:00"
   },
   "lead": {
     "head": "Leading stories: the Federal Reserve bars a former Regions Bank employee and a former First Interstate Bank employee from banking for misappropriating and embezzling customer and bank funds; North Korea's Lazarus Group appears to have shared cyberattack tools with ransomware criminals exploiting vulnerabilities in Korean financial security software mandatory for Korean banking services; and a Russian hacking group deploys a new backdoor called OWAReaper through an Outlook Web Access flaw, with financial organizations among its targets.",
-    "dek": "Today's edition draws on the six items recorded so far. Every item links to its source.",
+    "dek": "Today's edition draws on the eight items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -54,6 +54,17 @@
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-30T22:01:31Z",
+      "p": "cyber",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0260",
+      "title": "BleepingComputer reports that JetBrains is warning of a critical authentication bypass vulnerability, tracked as CVE-2026-63077, affecting TeamCity On-Premises that could be exploited to achieve remote code execution; JetBrains says all versions of TeamCity On-Premises are affected and that the issue was addressed in TeamCity versions 2025.11.7 and 2026.1.3.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/jetbrains-warns-of-critical-teamcity-remote-code-execution-flaw/",
+      "linked": true
+    },
     {
       "ts": "2026-07-30T18:00:51Z",
       "p": "cyber",
@@ -96,6 +107,17 @@
       "title": "The Record reports that cyberattack tools and infrastructure used by North Korea's Lazarus Group appear to have been shared with ransomware criminals targeting South Korean organizations, per a joint advisory from four South Korean security and intelligence agencies; both groups exploited the same vulnerabilities in Korean financial security software mandatory for Korean banking or government services.",
       "src": "The Record",
       "srcUrl": "https://therecord.media/north-korea-hackers-ransomware",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-30T12:00:00Z",
+      "p": "insider",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0261",
+      "title": "A Department of Justice press release reports that the U.S. Attorney for the Southern District of New York announced the arrests of Catora Noel, Darren Stephenson, and Imani-Kai Brown, charged with stealing the personal identifying and financial information of dozens of victims as part of a conspiracy to fraudulently take over those victims' bank accounts and initiate over a million dollars in unauthorized wire transfers and ATM withdrawals; the release's own headline describes the group as an identity theft ring that included a former bank employee, posed as bank customers, and stole over $1.6 million.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-sdny/pr/identity-theft-ring-including-former-bank-employee-charged-posing-bank-customers-and",
       "linked": true
     },
     {
@@ -538,8 +560,8 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v103",
-      "verRange": "v1–v103",
+      "ver": "v104",
+      "verRange": "v1–v104",
       "asOf": "July 30, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
@@ -549,6 +571,15 @@
       "assessSup": "1, 8, 55",
       "conf": "moderate confidence",
       "events": [
+        {
+          "date": "Jul 30, 26",
+          "st": "confirmed",
+          "ver": "v104",
+          "id": "L-0260",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/jetbrains-warns-of-critical-teamcity-remote-code-execution-flaw/",
+          "line": "BleepingComputer reports that JetBrains is warning of a critical authentication bypass vulnerability, tracked as CVE-2026-63077, affecting TeamCity On-Premises that could be exploited to achieve remote code execution; JetBrains says all versions of TeamCity On-Premises are affected and that the issue was addressed in TeamCity versions 2025.11.7 and 2026.1.3."
+        },
         {
           "date": "Jul 20, 26",
           "st": "confirmed",
@@ -3458,8 +3489,8 @@
       "scope": "insider threat · co-opted trust",
       "watch": "Prosecutions and advisories where trusted roles — employees, contractors, hired specialists — are the attack path.",
       "opened": "July 2026",
-      "ver": "v9",
-      "verRange": "v1–v9",
+      "ver": "v10",
+      "verRange": "v1–v10",
       "asOf": "July 30, 2026",
       "p1": "One confirmed event this window sits squarely on trusted-role co-option: a former ransomware negotiator was sentenced to 70 months for conspiring with BlackCat ransomware actors to extort the victims he was engaged to help — and with other former cybersecurity professionals to attack additional victims.",
       "p1Sup": "1",
@@ -3469,6 +3500,15 @@
       "assessSup": "4, 5",
       "conf": "moderate confidence",
       "events": [
+        {
+          "date": "Jul 30, 26",
+          "st": "confirmed",
+          "ver": "v10",
+          "id": "L-0261",
+          "src": "DOJ press release",
+          "srcUrl": "https://www.justice.gov/usao-sdny/pr/identity-theft-ring-including-former-bank-employee-charged-posing-bank-customers-and",
+          "line": "A Department of Justice press release reports that the U.S. Attorney for the Southern District of New York announced the arrests of Catora Noel, Darren Stephenson, and Imani-Kai Brown, charged with stealing the personal identifying and financial information of dozens of victims as part of a conspiracy to fraudulently take over those victims' bank accounts and initiate over a million dollars in unauthorized wire transfers and ATM withdrawals; the release's own headline describes the group as an identity theft ring that included a former bank employee, posed as bank customers, and stole over $1.6 million."
+        },
         {
           "date": "Jul 20, 26",
           "st": "confirmed",
@@ -5797,9 +5837,34 @@
       "line": "BleepingComputer reports that Broadcom has released security updates for five vulnerabilities in VMware's vCenter, ESX, Workstation, and Fusion products, including three critical flaws that let attackers bypass authentication, execute code, or escape a virtual machine to reach the host system, and says organizations on unpatched versions should assume they are vulnerable and act immediately.",
       "src": "BleepingComputer",
       "srcUrl": "https://www.bleepingcomputer.com/news/security/vmware-fixes-three-critical-flaws-allowing-auth-bypass-vm-escapes/"
+    },
+    {
+      "d": "2026-07-30",
+      "p": "cyber",
+      "id": "L-0260",
+      "line": "BleepingComputer reports that JetBrains is warning of a critical authentication bypass vulnerability, tracked as CVE-2026-63077, affecting TeamCity On-Premises that could be exploited to achieve remote code execution; JetBrains says all versions of TeamCity On-Premises are affected and that the issue was addressed in TeamCity versions 2025.11.7 and 2026.1.3.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/jetbrains-warns-of-critical-teamcity-remote-code-execution-flaw/"
+    },
+    {
+      "d": "2026-07-30",
+      "p": "insider",
+      "id": "L-0261",
+      "line": "A Department of Justice press release reports that the U.S. Attorney for the Southern District of New York announced the arrests of Catora Noel, Darren Stephenson, and Imani-Kai Brown, charged with stealing the personal identifying and financial information of dozens of victims as part of a conspiracy to fraudulently take over those victims' bank accounts and initiate over a million dollars in unauthorized wire transfers and ATM withdrawals; the release's own headline describes the group as an identity theft ring that included a former bank employee, posed as bank customers, and stole over $1.6 million.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-sdny/pr/identity-theft-ring-including-former-bank-employee-charged-posing-bank-customers-and"
     }
   ],
   "takeaways": [
+    {
+      "anchors": [
+        "L-0260"
+      ],
+      "pillars": "Cybersecurity",
+      "conf": "high confidence",
+      "head": "If your organization runs JetBrains TeamCity On-Premises, update to a fixed version — JetBrains warns of a critical authentication bypass vulnerability (CVE-2026-63077) that could be exploited to achieve remote code execution, and says all versions of TeamCity On-Premises are affected.",
+      "body": "BleepingComputer reports that JetBrains is warning of a critical authentication bypass vulnerability, tracked as CVE-2026-63077, affecting TeamCity On-Premises that could be exploited to achieve remote code execution. JetBrains says all versions of TeamCity On-Premises are affected, and that the issue was addressed in TeamCity versions 2025.11.7 and 2026.1.3. Technology teams running TeamCity On-Premises should update to a fixed version without delay."
+    },
     {
       "anchors": [
         "L-0255"
@@ -6433,7 +6498,7 @@
       {
         "no": "16",
         "date": "Thu, Jul 30, 2026",
-        "confirmed": "6",
+        "confirmed": "8",
         "pending": "0",
         "flash": "—",
         "linked": true
