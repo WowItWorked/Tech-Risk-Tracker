@@ -2,21 +2,45 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-30T06:17:00-04:00",
+    "generatedAt": "2026-07-30T11:17:00-04:00",
     "issueNo": 16,
-    "recordHash": "095adaf",
+    "recordHash": "d8ae648",
     "windowLabel": "June 9 – July 30, 2026",
     "nextWeekly": "Fri, Jul 31",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "Day-opening run. All 27 allowlisted feeds returned 200 (FTC 403'd the descriptive User-Agent and was retried with the standard-browser User-Agent per the runbook's fallback, returning 200, counted OK). Selection window: day-opening overlap is 12 hours before the prior run's lastRun (2026-07-29T17:11 ET), so candidates are items published since ≈2026-07-29T05:11 ET / 09:11 UTC. The CISA Known Exploited Vulnerabilities (KEV) catalog's catalogVersion is unchanged at 2026.07.29 (no new entries). 55 raw candidates fell in-window across 12 feeds with window activity: BleepingComputer (9), Dark Reading (8), the Department of Justice (25), The Record (4), the European Data Protection Board (EDPB) (2), the UK Financial Conduct Authority (FCA) (1), the Federal Reserve (1), the FTC (1), the European Central Bank (1), the UK National Cyber Security Centre (NCSC) (1), NOAA NHC (1), and Cybersecurity Dive (1). Two items were admitted:\n- L-0254 (cyber, priority) BleepingComputer: the Russian state-sponsored hacking group Laundry Bear (also known as Void Blizzard) is exploiting an Exchange Outlook Web Access (OWA) vulnerability to deliver a new backdoor named OWAReaper, per email security firm Proofpoint, which spotted the activity targeting government entities and companies in the telecommunications, financial, hospitality, and aerospace sectors. This is a distinct report (different outlet, different URL) from the one grounding the already-recorded L-0248, which covered the same actor/vulnerability (CVE-2026-42897) via The Record; this article adds materially new facts — the named backdoor, its Proofpoint attribution, and the tradecraft-evolution characterization — consistent with how this record has previously admitted successive items on the same running story (e.g. the Hugging Face breach's L-0139/L-0175/L-0245/L-0249/L-0251). origTitle/origExcerpt captured as two verbatim sentences from the article page (56 words, within the EDITORIAL §2 cap; RSS description was truncated). Triaged priority, not flash, matching L-0248's own precedent: a new capability/vector on an already-on-record campaign, with no fresh confirmed victim or sector-wide-impact claim beyond what's already in the dossier. Cyber dossier p1/p2/assess left unchanged: p1Sup (1, 3, 10) and p2Sup (15, 6, 63) are already at the EDITORIAL §2 three-source cap; event appended, version v99 → v100.\n- L-0255 (cyber, priority) BleepingComputer: Cisco confirms a hard-coded password flaw (CVE-2026-20316) in its Secure Firewall Management Center (FMC) software — the same flaw CISA added to its KEV catalog and already recorded as L-0253 — was actively exploited in zero-day attacks to gain unauthorized access to devices, and has released hot fixes with no available workaround. This is a distinct report (different outlet/URL than L-0253's CISA KEV source) adding materially new facts: vendor-level confirmation of active exploitation, hot-fix availability, and the absence of a workaround, none of which were in L-0253's KEV-catalog excerpt. origTitle/origExcerpt captured as two non-adjacent verbatim sentences from the article page (57 words, elision marked, within the EDITORIAL §2 cap). Triaged priority, not flash: Cisco's own advisory names no confirmed victim or targeted sector, short of the flash bar's active-exploitation-with-named-sector-targeting threshold (the same reasoning applied to L-0250's RufRoot item and to L-0253 itself). Cyber dossier p1/p2/assess left unchanged for the same citation-cap reason; event appended, version v100 → v101.\nNot admitted (reappearance, identical URL already recorded or already excluded, no fresh review needed): BleepingComputer's \"Anthropic confirms Claude is down worldwide\" (already recorded as L-0252), \"Health-ISAC warns of rising ShinyHunters data theft attacks on healthcare\" (already excluded, no financial-sector nexus), \"OpenAI agent used exposed credentials at 4 services in Hugging Face breach\" (already recorded as L-0249), \"Hackers target over 30 Minnesota water utilities in coordinated OT attack\" (already excluded, no financial-sector nexus), \"Your AI Agents Are Guessing at Scale: Permissions Decide the Damage\" (already excluded, sponsored advisory content, no reported incident), and \"Windows 11 KB5101684 update released with 42 changes and fixes\" (already excluded, routine cumulative-update roundup); Dark Reading's \"OpenAI's Rogue Model Claims More Victims Beyond Hugging Face,\" \"Red Agents vs. Blue Agents: How to Make AI Better At Defense,\" \"Who's Liable When AI Agents Escape?,\" \"Hugging Face Hack Lessons for Cyber Defenders,\" \"When AppSec Scanners Become a Supply Chain Attack Vector\" (all already reviewed and excluded or recorded this edition), and \"Patch-Resistant 'RufRoot' Flaw Can Unleash Malicious AI Agent Swarms\" (already recorded as L-0250); The Record's \"OpenAI says rogue agent behind Hugging Face hack broke into additional services\" (identical URL already admitted as L-0251), \"Laundry Bear's webmail hackers had more in store after February, report says\" (identical URL already admitted as L-0248), \"Russia accuses Telegram founder of aiding terrorism, seeks international arrest\" (already excluded, no financial-sector nexus), and \"Cyberattack hits Angola's largest telco hours before landmark stock debut\" (identical URL already admitted as L-0247); the UK NCSC's \"Making forensic observability the norm for network devices\" (identical URL already reviewed and excluded multiple times this edition); and Cybersecurity Dive's \"As data breaches grow costlier, ungoverned AI creates new risks\" (already excluded, no financial-sector figure or nexus in the article).\nNot admitted (relevance gate — no financial-sector or technology-risk-to-the-sector nexus stated): Dark Reading's \"SE Asian Cybercriminal Syndicates Become a Global Power\" (the RSS description covers human-trafficking syndicates and regional economic cost, naming no financial institution, vendor, or technology-risk pillar); Dark Reading's \"'Flying Eagle' Full-Service Mobile RAT Builder Wings Across China\" (the RSS description states the malware-as-a-service builds \"infostealers that drain victims' bank accounts,\" but names no financial institution, payments provider, or other financial-sector entity — the drained accounts belong to individual consumers generally, the same disposition already given to the Origin Energy customer-data breach and the Fake-Claude-app/SectopRAT malvertising report, both excluded for stating no financial-sector nexus beyond individual victims; the article page 403'd to the descriptive User-Agent, so no further text could be captured to establish one); the UK FCA's \"FCA censures Equity for Growth (Securities) Limited\" (the fetched press release describes a mis-selling/financial-promotions enforcement action over undisclosed minibond commissions, naming no cybersecurity, fraud-via-technology, AI, third-party, resilience, data, physical-security, or insider-threat content); the European Central Bank's \"Digital euro app to incorporate highest accessibility standards\" (the fetched press release describes accessibility design features of the planned digital euro app, a product-design announcement rather than a reported risk event, naming no incident, vulnerability, or nexus to any of the eight pillars); the European Data Protection Board's two \"Stakeholder event on guidelines on the interplay between data protection and competition law\" notices (administrative event-scheduling announcements for an October 15 meeting, not a reported technology-risk development); and the Federal Reserve's \"Federal Reserve issues FOMC statement\" (a monetary-policy release naming no technology-risk-pillar content).\nNot admitted (24 of 25 new DOJ entries, no financial-institution or technology-risk nexus stated): drug-trafficking, firearms, immigration, child-exploitation, and other general-crime sentencings, convictions, and indictments; a U.S. Attorney appointment announcement; and a health-care-fraud conspiracy charge against a former eye-care-group CEO (no financial-institution victim or technology-risk content stated). One DOJ entry, \"Prairie Village, Kansas Woman Pleads Guilty to Social Security Benefits Fraud,\" was also reviewed and excluded (a government-benefits fraud with no financial-institution victim or technique stated). \"When in doubt, exclude\" applied to each.\nNot admitted (reviewed, excluded — routine non-event): NOAA NHC's Atlantic Tropical Weather Outlook and its \"there are no tropical cyclones at this time\" notice, consistent with every prior quiet-outlook cycle.\nAll other feeds — CISA KEV (catalogVersion unchanged at 2026.07.29), FBI IC3 (newest item before window), OCC (newest before window), CFPB (newest before window), NIST (empty channel again), Nacha (newest before window), OpenAI (newest before window), Anthropic's own news page (newest before window), FinCEN (topped by the same routine Federal Register notice already carried via the fincen-fr feed and already excluded as an administrative clearance notice), the Bank of England (newest before window), the UK Information Commissioner's Office (ICO, still no readable dated content), the European Banking Authority (EBA, newest before window; its feed carries only routine \"E-mail alert\" digest entries, never a distinct admissible item), the Federal Register/FinCEN-documents feed (same notice as above), Krebs (newest before window), and ENISA (newest before window) — carried nothing new and admissible in-window.",
-    "lastRun": "2026-07-30T06:17:00-04:00"
+    "feedNote": "Intraday run (11:10 ET, edition No. 16 stays open). Selection window: intraday overlap is 2 hours before the prior run's lastRun (06:17 ET), so candidates are items published since ≈04:17 ET / 08:17 UTC. All 27 allowlisted feeds returned 200 (FTC 403'd the descriptive User-Agent and was retried with the standard-browser User-Agent per the runbook's fallback, returning 200, counted OK). The CISA Known Exploited Vulnerabilities (KEV) catalog's catalogVersion is unchanged at 2026.07.29 (no new entries). Raw candidates fell in-window across 7 feeds with window activity: the Federal Reserve (2), DOJ (8), NOAA NHC (2), the Bank of England (2), the European Data Protection Board (EDPB) (1), The Record (3), and BleepingComputer (1). Two items were admitted:\n- L-0256 (insider, priority) Federal Reserve press release: the Board issued consent prohibition orders against Simon Alberto Gonzalez, a former employee of Regions Bank, Birmingham, Alabama, for misappropriation of customer funds, and against Ralph A. Mojica, a former employee of First Interstate Bank, Billings, Montana, for misappropriation of customer funds and embezzlement of Bank funds. origTitle/origExcerpt captured verbatim from the press release page (42 words, within the EDITORIAL §2 cap; the two consent orders are bundled in a single press release/single report, so admitted as one item per the runbook's one-report-one-item admission rule). Admitted on direct precedent with L-0106 (Federal Reserve prohibition order against a former Heritage State Bank chief lending officer): a banking regulator's own enforcement action against former bank employees falls within the insider-threat pillar's co-opted-trust scope, extending the precedent already set for DOJ cases (L-0053, L-0100, L-0109) to this pillar's second Federal Reserve-sourced item. Triaged priority on the same \"regulatory action\" bar used for L-0106, distinct from the routine triage given to this pillar's DOJ prosecution/sentencing outcomes. The separate Federal Reserve press release announcing a Written Agreement with Iuka Bancshares, Inc. and The Iuka State Bank was reviewed and not admitted: the fetched page states only that a Written Agreement was executed, with no further detail on its subject in the page text (the underlying order is a PDF attachment, not fetched per the runbook's page-fetch scope), so no pillar-relevant content is stated; \"when in doubt, exclude\" applied. Insider dossier event appended, version v8 → v9; p1/p2/assess left unchanged — this item reinforces rather than changes the dossier's existing co-opted-trust narrative.\n- L-0257 (cyber, priority) The Record: a joint advisory from four South Korean security and intelligence agencies, alongside new research, reports that cyberattack tools and infrastructure used by North Korea's Lazarus Group appear to have been shared with ransomware criminals targeting South Korean organizations; both groups exploited the same vulnerabilities in Korean financial security software that is mandatory for Korean banking or government services. origTitle/origExcerpt captured as two verbatim sentences from the article page (58 words, within the EDITORIAL §2 cap; the RSS description supplied only the lede sentence, so the article page was fetched for the second, financial-sector-nexus sentence). The article also names the ransomware operation (Gunra) and the research firm (AhnLab), but those names fell outside the two sentences captured to stay under the word cap, so the drafted line omits them rather than cite facts not in the stored excerpt. Admitted on the explicit Korean-banking/financial-security-software nexus stated in the captured excerpt. Triaged priority, not flash: this is a third-party research advisory describing a technique-sharing pattern between a state actor and a ransomware group, not a confirmed, named financial-institution victim or sector-wide active-exploitation claim in the captured excerpt. A companion article from the same outlet, \"North Korean hackers behind major open-source supply chain attacks, Amazon says\" (npm/JavaScript package compromises), was reviewed and not admitted: the fetched page names no financial institution or financial-sector victim, describing impact only in terms of \"developers worldwide\" and \"enterprise services\" generally. Cyber dossier p1/p2/assess left unchanged: p1Sup (1, 3, 10) and p2Sup (15, 6, 63) are already at the EDITORIAL §2 three-source cap; event appended, version v101 → v102.\nNot admitted (relevance gate — no financial-sector or technology-risk-to-the-sector nexus stated): The Record's \"Cyber extortionists steal data from UK Department for Education\" (the fetched page names the UK Department for Education and the Police National Legal Database as the affected systems, no financial institution or financial-sector nexus); BleepingComputer's \"After the Break-In: What Attackers Do Once They're Already Inside\" (the fetched page discloses \"Sponsored by Huntress Labs\" — sponsored advisory content with no named victim organization, same disposition as this edition's earlier exclusion of similar sponsored content); the Bank of England's \"Minutes of the Meeting of the Court of Directors\" and \"Bank Rate maintained at 3.75%\" (governance minutes and a monetary-policy release, no technology-risk-pillar content stated); and the European Data Protection Board's \"Stakeholder event on guidelines on the interplay between data protection and competition law\" (an administrative event-scheduling notice, not a reported technology-risk development).\nNot admitted (7 of 8 DOJ entries, no financial-institution or technology-risk nexus stated): healthcare/Medicare fraud, laboratory-kickback settlement, firearms possession, alien smuggling/asylum fraud, an Alien Terrorist Removal Court filing, a CyberTip-derived child sexual abuse material sentencing, and a bomb-threat sentencing. One further DOJ entry, \"Tallahassee Woman Federally Indicted for Defrauding Tallahassee Housing Authority of $378,000,\" was reviewed and excluded: although charged with counts of \"bank fraud\" (the federal statute name), the release's own headline states the victim as the Tallahassee Housing Authority, not a financial institution, and the excerpt names no bank or technology-risk technique. \"When in doubt, exclude\" applied to each.\nNot admitted (reviewed, excluded — routine non-event): NOAA NHC's Atlantic Tropical Weather Outlook and its \"there are no tropical cyclones at this time\" notice, consistent with every prior quiet-outlook cycle.\nAll other feeds — CISA KEV (catalogVersion unchanged), FBI IC3, OCC, the FTC, CFPB, NIST (empty channel again), Nacha, OpenAI, Anthropic's own news page (newest before window, Jul 27), FinCEN (newest before window, Jul 29), the UK Financial Conduct Authority (FCA), the UK National Cyber Security Centre (NCSC), the UK Information Commissioner's Office (ICO, still no readable dated content), the European Banking Authority (EBA), the European Central Bank (ECB), ENISA (newest before window, Jul 24), the Federal Register/FinCEN-documents feed, Krebs on Security, Dark Reading, and Cybersecurity Dive — carried nothing new and admissible in-window.",
+    "lastRun": "2026-07-30T11:17:00-04:00"
   },
   "lead": {
-    "head": "Leading stories: a Russian hacking group deploys a new backdoor called OWAReaper through an Outlook Web Access flaw, with financial organizations among its targets; and Cisco confirms attackers are actively exploiting a hard-coded password flaw in its Secure Firewall Management Center software in zero-day attacks.",
-    "dek": "Today’s edition draws on the two items recorded so far. Every item links to its source.",
+    "head": "Leading stories: the Federal Reserve bars a former Regions Bank employee and a former First Interstate Bank employee from banking for misappropriating and embezzling customer and bank funds; North Korea's Lazarus Group appears to have shared cyberattack tools with ransomware criminals exploiting vulnerabilities in Korean financial security software mandatory for Korean banking services; and a Russian hacking group deploys a new backdoor called OWAReaper through an Outlook Web Access flaw, with financial organizations among its targets.",
+    "dek": "Today's edition draws on the four items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
+        "p": "insider",
+        "tri": "priority",
+        "st": "confirmed",
+        "id": "L-0256",
+        "conf": "",
+        "text": "A Federal Reserve press release reports the Board issued consent prohibition orders against Simon Alberto Gonzalez, a former employee of Regions Bank in Birmingham, Alabama, for misappropriation of customer funds, and against Ralph A. Mojica, a former employee of First Interstate Bank in Billings, Montana, for misappropriation of customer funds and embezzlement of bank funds.",
+        "why": "Fraud-control and human-resources security teams should treat this as a reminder that trusted-employee misconduct remains an active regulatory focus: the Federal Reserve issued consent prohibition orders against a former Regions Bank employee and a former First Interstate Bank employee for misappropriating customer funds, with the latter also embezzling bank funds.",
+        "srcText": "Federal Reserve press release, Jul 30",
+        "srcUrl": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260730a.htm"
+      },
+      {
+        "n": "2",
+        "p": "cyber",
+        "tri": "priority",
+        "st": "confirmed",
+        "id": "L-0257",
+        "conf": "",
+        "text": "The Record reports that cyberattack tools and infrastructure used by North Korea's Lazarus Group appear to have been shared with ransomware criminals targeting South Korean organizations, per a joint advisory from four South Korean security and intelligence agencies; both groups exploited the same vulnerabilities in Korean financial security software mandatory for Korean banking or government services.",
+        "why": "Fraud and cyber-defense teams with Asia-Pacific banking operations should note that state-linked and criminal hacking groups may now be sharing tooling: a joint advisory from South Korean security and intelligence agencies reports Lazarus Group cyberattack tools and infrastructure appear to have reached ransomware criminals exploiting vulnerabilities in Korean financial security software that's mandatory for Korean banking or government services.",
+        "srcText": "The Record, Jul 30",
+        "srcUrl": "https://therecord.media/north-korea-hackers-ransomware"
+      },
+      {
+        "n": "3",
         "p": "cyber",
         "tri": "priority",
         "st": "confirmed",
@@ -26,22 +50,32 @@
         "why": "Technology and security teams operating Outlook Web Access should treat this as an active threat: researchers report a Russian state-linked hacking group is deploying a new backdoor via the platform, with financial organizations among its named targets.",
         "srcText": "BleepingComputer, Jul 29",
         "srcUrl": "https://www.bleepingcomputer.com/news/security/russian-hackers-exploit-exchange-owa-zero-day-for-long-term-mailbox-access/"
-      },
-      {
-        "n": "2",
-        "p": "cyber",
-        "tri": "priority",
-        "st": "confirmed",
-        "id": "L-0255",
-        "conf": "",
-        "text": "BleepingComputer reports that Cisco confirms a hard-coded password flaw (CVE-2026-20316) in its Secure Firewall Management Center (FMC) software is being actively exploited in zero-day attacks to gain unauthorized access to devices; Cisco has released hot fixes and, with no workaround available, urges customers to install them immediately.",
-        "why": "Technology teams running Cisco Secure Firewall Management Center should apply the available hot fix immediately, since Cisco confirms the hard-coded password flaw is being actively exploited in zero-day attacks and there is no workaround.",
-        "srcText": "BleepingComputer, Jul 29",
-        "srcUrl": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-fmc-static-credential-flaw-exploited-in-zero-day-attacks/"
       }
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-30T15:00:00Z",
+      "p": "insider",
+      "tri": "priority",
+      "st": "confirmed",
+      "id": "L-0256",
+      "title": "A Federal Reserve press release reports the Board issued consent prohibition orders against Simon Alberto Gonzalez, a former employee of Regions Bank in Birmingham, Alabama, for misappropriation of customer funds, and against Ralph A. Mojica, a former employee of First Interstate Bank in Billings, Montana, for misappropriation of customer funds and embezzlement of bank funds.",
+      "src": "Federal Reserve press release",
+      "srcUrl": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260730a.htm",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-30T14:00:00Z",
+      "p": "cyber",
+      "tri": "priority",
+      "st": "confirmed",
+      "id": "L-0257",
+      "title": "The Record reports that cyberattack tools and infrastructure used by North Korea's Lazarus Group appear to have been shared with ransomware criminals targeting South Korean organizations, per a joint advisory from four South Korean security and intelligence agencies; both groups exploited the same vulnerabilities in Korean financial security software mandatory for Korean banking or government services.",
+      "src": "The Record",
+      "srcUrl": "https://therecord.media/north-korea-hackers-ransomware",
+      "linked": true
+    },
     {
       "ts": "2026-07-29T23:44:07Z",
       "p": "cyber",
@@ -482,9 +516,9 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v101",
-      "verRange": "v1–v101",
-      "asOf": "July 29, 2026",
+      "ver": "v102",
+      "verRange": "v1–v102",
+      "asOf": "July 30, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
       "p2": "The UK’s National Cyber Security Centre (NCSC) and cybersecurity agencies from the United States and eight other countries warn that hackers linked to Russia’s Federal Security Service (FSB) are exploiting routers with default or weak passwords to infiltrate critical infrastructure, naming financial services among the sectors most at risk. Researchers report “JadePuffer,” described as a ransomware attack run end-to-end by an AI agent that broke in through the exploited Langflow flaw. Separately, federal cybersecurity agencies in the United States, the United Kingdom, Europe, Australia, and New Zealand warn that Russian state-backed hackers known as Laundry Bear are exploiting a Zimbra Collaboration Suite webmail flaw in zero-click phishing attacks, with research from Palo Alto Networks’ Unit 42 finding financial organizations among the sectors targeted.",
@@ -1473,6 +1507,15 @@
           "src": "BleepingComputer",
           "srcUrl": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-fmc-static-credential-flaw-exploited-in-zero-day-attacks/",
           "line": "BleepingComputer reports that Cisco confirms a hard-coded password flaw (CVE-2026-20316) in its Secure Firewall Management Center (FMC) software is being actively exploited in zero-day attacks to gain unauthorized access to devices; Cisco has released hot fixes and, with no workaround available, urges customers to install them immediately."
+        },
+        {
+          "date": "Jul 30, 26",
+          "st": "confirmed",
+          "ver": "v102",
+          "id": "L-0257",
+          "src": "The Record",
+          "srcUrl": "https://therecord.media/north-korea-hackers-ransomware",
+          "line": "The Record reports that cyberattack tools and infrastructure used by North Korea's Lazarus Group appear to have been shared with ransomware criminals targeting South Korean organizations, per a joint advisory from four South Korean security and intelligence agencies; both groups exploited the same vulnerabilities in Korean financial security software mandatory for Korean banking or government services."
         }
       ],
       "sources": [
@@ -3375,9 +3418,9 @@
       "scope": "insider threat · co-opted trust",
       "watch": "Prosecutions and advisories where trusted roles — employees, contractors, hired specialists — are the attack path.",
       "opened": "July 2026",
-      "ver": "v8",
-      "verRange": "v1–v8",
-      "asOf": "July 20, 2026",
+      "ver": "v9",
+      "verRange": "v1–v9",
+      "asOf": "July 30, 2026",
       "p1": "One confirmed event this window sits squarely on trusted-role co-option: a former ransomware negotiator was sentenced to 70 months for conspiring with BlackCat ransomware actors to extort the victims he was engaged to help — and with other former cybersecurity professionals to attack additional victims.",
       "p1Sup": "1",
       "p2": "Adjacent signals point the same direction: the AssuranceAmerica breach began with attackers targeting a company employee, and a man accused of deploying Ryuk ransomware pleaded guilty to conspiracy and computer fraud in an Oregon federal court.",
@@ -3475,6 +3518,15 @@
           "src": "Tech Risk Tracker record",
           "srcUrl": "EDITORIAL.md",
           "line": "Watch opened; baseline compiled from allowlisted feeds, June 9 – July 9, 2026."
+        },
+        {
+          "date": "Jul 30, 26",
+          "st": "confirmed",
+          "ver": "v9",
+          "id": "L-0256",
+          "src": "Federal Reserve press release",
+          "srcUrl": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260730a.htm",
+          "line": "A Federal Reserve press release reports the Board issued consent prohibition orders against Simon Alberto Gonzalez, a former employee of Regions Bank in Birmingham, Alabama, for misappropriation of customer funds, and against Ralph A. Mojica, a former employee of First Interstate Bank in Billings, Montana, for misappropriation of customer funds and embezzlement of bank funds."
         }
       ],
       "sources": [
@@ -5673,6 +5725,22 @@
       "line": "BleepingComputer reports that Cisco confirms a hard-coded password flaw (CVE-2026-20316) in its Secure Firewall Management Center (FMC) software is being actively exploited in zero-day attacks to gain unauthorized access to devices; Cisco has released hot fixes and, with no workaround available, urges customers to install them immediately.",
       "src": "BleepingComputer",
       "srcUrl": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-fmc-static-credential-flaw-exploited-in-zero-day-attacks/"
+    },
+    {
+      "d": "2026-07-30",
+      "p": "insider",
+      "id": "L-0256",
+      "line": "A Federal Reserve press release reports the Board issued consent prohibition orders against Simon Alberto Gonzalez, a former employee of Regions Bank in Birmingham, Alabama, for misappropriation of customer funds, and against Ralph A. Mojica, a former employee of First Interstate Bank in Billings, Montana, for misappropriation of customer funds and embezzlement of bank funds.",
+      "src": "Federal Reserve press release",
+      "srcUrl": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260730a.htm"
+    },
+    {
+      "d": "2026-07-30",
+      "p": "cyber",
+      "id": "L-0257",
+      "line": "The Record reports that cyberattack tools and infrastructure used by North Korea's Lazarus Group appear to have been shared with ransomware criminals targeting South Korean organizations, per a joint advisory from four South Korean security and intelligence agencies; both groups exploited the same vulnerabilities in Korean financial security software mandatory for Korean banking or government services.",
+      "src": "The Record",
+      "srcUrl": "https://therecord.media/north-korea-hackers-ransomware"
     }
   ],
   "takeaways": [
@@ -6300,7 +6368,7 @@
       {
         "no": "16",
         "date": "Thu, Jul 30, 2026",
-        "confirmed": "2",
+        "confirmed": "4",
         "pending": "0",
         "flash": "—",
         "linked": true
