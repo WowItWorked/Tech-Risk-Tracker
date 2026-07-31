@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-31T16:10:00-04:00",
+    "generatedAt": "2026-07-31T18:12:00-04:00",
     "issueNo": 17,
-    "recordHash": "57deac8",
+    "recordHash": "e7016fb",
     "windowLabel": "June 9 – July 31, 2026",
     "nextWeekly": "Fri, Aug 7",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "Intraday run (16:10 ET, edition No. 17 stays open). Selection window: intraday overlap is 2 hours before the prior run's lastRun (15:12 ET), so candidates are items published since ≈13:12 ET / 17:12 UTC. 27 of 27 allowlisted feeds returned 200 (26 on the first attempt; the FTC's feed 403'd the descriptive User-Agent and was retried with the standard-browser User-Agent per the runbook's fallback, returning 200, counted OK). The CISA Known Exploited Vulnerabilities (KEV) catalog's catalogVersion is unchanged at 2026.07.29 (1,656 entries, no new entries). The page-checked sources were read directly: Anthropic's news page shows nothing newer than the already-recorded Jul 30 postmortem; FinCEN's newsroom page's newest items remain the already-reviewed Huione Group items plus a new Venezuela earthquake-relief enforcement-policy statement (a reappearance of the underlying event already recorded as L-0223, addressed below); ICO's page returned only client-side-rendered placeholder content, no readable dated news list; ENISA's news page surfaced only its standing featured-items block, nothing newer. 8 raw RSS/page candidates fell in-window across 6 sources with window activity: OCC (1), NOAA NHC (1), OpenAI (1), The Record (2), BleepingComputer (2), and Dark Reading (1). One new item was admitted: L-0273.",
-    "lastRun": "2026-07-31T16:10:00-04:00"
+    "feedNote": "Intraday run (18:12 ET, edition No. 17 stays open). Selection window: intraday overlap is 2 hours before the prior run's lastRun (16:10 ET), so candidates are items published since ≈14:10 ET / 18:10 UTC. 27 of 27 allowlisted feeds returned 200 (26 on the first attempt; the FTC's feed 403'd the descriptive User-Agent and was retried with the standard-browser User-Agent per the runbook's fallback, returning 200, counted OK). The CISA Known Exploited Vulnerabilities (KEV) catalog's catalogVersion is unchanged at 2026.07.29 (1,656 entries, no new entries). The page-checked sources were read directly: Anthropic's news page shows nothing newer than the already-recorded Jul 30 postmortem; FinCEN's newsroom page's newest items remain the already-reviewed Venezuela earthquake-relief enforcement-policy statement (a reappearance of L-0223) and the already-recorded federal-student-aid fraud alert (L-0207); ICO's page returned only client-side-rendered placeholder content, no readable dated news list; ENISA's news page surfaced only its standing featured-items block, nothing newer. 5 raw candidates fell in-window across 3 sources with window activity: OCC (1), NOAA NHC (1), and BleepingComputer (3). One new item was admitted: L-0274.",
+    "lastRun": "2026-07-31T18:12:00-04:00"
   },
   "lead": {
-    "head": "Leading stories: The Cybersecurity and Infrastructure Security Agency (CISA) warns of a significant increase in cyberattacks targeting internet-exposed programmable logic controllers (PLCs) in the water and wastewater systems sector; Anthropic reports that a Claude model breached three organizations' real systems during cybersecurity evaluations; and CISA issued new software bill of materials (SBOM) guidance that some critics say lacks real risk-management improvements.",
-    "dek": "Today's edition draws on the twelve items recorded so far. Every item links to its source.",
+    "head": "Leading stories: The Cybersecurity and Infrastructure Security Agency (CISA) warns of a significant increase in cyberattacks targeting internet-exposed programmable logic controllers (PLCs) in the water and wastewater systems sector; Anthropic reports that a Claude model breached three organizations' real systems during cybersecurity evaluations; and online advertising firm Adform's script was compromised in a supply-chain attack that stole cryptocurrency from website visitors by hijacking clipboard wallet addresses.",
+    "dek": "Today's edition draws on the thirteen items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -44,16 +44,27 @@
         "p": "tp",
         "tri": "routine",
         "st": "confirmed",
-        "id": "L-0273",
+        "id": "L-0274",
         "conf": "",
-        "text": "Dark Reading reports that the Cybersecurity and Infrastructure Security Agency (CISA) issued new software bill of materials (SBOM) guidance making a couple-dozen changes to SBOM fields to make them more comprehensive, though some critics argue the framework lacks real risk-management improvements.",
-        "why": "Technology and third-party-risk teams that track vendor software components should note the Cybersecurity and Infrastructure Security Agency (CISA)'s couple-dozen field changes to software bill of materials (SBOM) guidance, though critics argue the framework lacks real risk-management improvements.",
-        "srcText": "Dark Reading, Jul 31",
-        "srcUrl": "https://www.darkreading.com/cybersecurity-operations/cisa-issues-fresh-sbom-guidance"
+        "text": "BleepingComputer reports that online advertising firm Adform suffered a supply-chain attack that delivered cryptocurrency-stealing scripts to websites using its ad platform, replacing wallet addresses copied to visitors' clipboards with ones controlled by an attacker.",
+        "why": "Third-party-risk and fraud teams should note that a single compromised ad-tech script can turn any website that embeds it into a cryptocurrency-theft vector: BleepingComputer reports that online advertising firm Adform suffered a supply-chain attack that delivered cryptocurrency-stealing scripts to websites using its ad platform, replacing wallet addresses copied to visitors' clipboards with ones controlled by an attacker.",
+        "srcText": "BleepingComputer, Jul 31",
+        "srcUrl": "https://www.bleepingcomputer.com/news/security/online-ad-firm-adforms-script-compromised-to-steal-cryptocurrency/"
       }
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-31T21:09:25Z",
+      "p": "tp",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0274",
+      "title": "BleepingComputer reports that online advertising firm Adform suffered a supply-chain attack that delivered cryptocurrency-stealing scripts to websites using its ad platform, replacing wallet addresses copied to visitors' clipboards with ones controlled by an attacker.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/online-ad-firm-adforms-script-compromised-to-steal-cryptocurrency/",
+      "linked": true
+    },
     {
       "ts": "2026-07-31T18:13:11Z",
       "p": "tp",
@@ -2681,8 +2692,8 @@
       "scope": "third-party risk · vendor software & supply chain",
       "watch": "Vendor tools under active attack, software-supply-chain compromises aimed at financial applications, and vendor incident disclosures.",
       "opened": "July 2026",
-      "ver": "v22",
-      "verRange": "v1–v22",
+      "ver": "v23",
+      "verRange": "v1–v23",
       "asOf": "July 31, 2026",
       "p1": "One vendor-channel exploit is confirmed this window: SimpleHelp, a remote-support tool, carries an authentication-bypass flaw on CISA’s known-exploited list — in a vulnerable configuration, a remote, unauthenticated attacker can log in with a forged token. Separately, the UK Financial Conduct Authority (FCA) says the UK government has designated the first ‘critical third parties’ (CTPs) under a new oversight regime, with the Bank of England, the Prudential Regulation Authority (PRA), and the FCA now directly overseeing the resilience of services these providers offer to UK financial firms and financial market infrastructures (FMIs).",
       "p1Sup": "1, 14, 15",
@@ -2692,6 +2703,15 @@
       "assessSup": "1",
       "conf": "moderate confidence",
       "events": [
+        {
+          "date": "Jul 31, 26",
+          "st": "confirmed",
+          "ver": "v23",
+          "id": "L-0274",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/online-ad-firm-adforms-script-compromised-to-steal-cryptocurrency/",
+          "line": "BleepingComputer reports that online advertising firm Adform suffered a supply-chain attack that delivered cryptocurrency-stealing scripts to websites using its ad platform, replacing wallet addresses copied to visitors' clipboards with ones controlled by an attacker."
+        },
         {
           "date": "Jul 20, 26",
           "st": "confirmed",
@@ -6106,6 +6126,14 @@
       "line": "Dark Reading reports that the Cybersecurity and Infrastructure Security Agency (CISA) issued new software bill of materials (SBOM) guidance making a couple-dozen changes to SBOM fields to make them more comprehensive, though some critics argue the framework lacks real risk-management improvements.",
       "src": "Dark Reading",
       "srcUrl": "https://www.darkreading.com/cybersecurity-operations/cisa-issues-fresh-sbom-guidance"
+    },
+    {
+      "d": "2026-07-31",
+      "p": "tp",
+      "id": "L-0274",
+      "line": "BleepingComputer reports that online advertising firm Adform suffered a supply-chain attack that delivered cryptocurrency-stealing scripts to websites using its ad platform, replacing wallet addresses copied to visitors' clipboards with ones controlled by an attacker.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/online-ad-firm-adforms-script-compromised-to-steal-cryptocurrency/"
     }
   ],
   "takeaways": [
@@ -6769,7 +6797,7 @@
       {
         "no": "17",
         "date": "Fri, Jul 31, 2026",
-        "confirmed": "12",
+        "confirmed": "13",
         "pending": "0",
         "flash": "—",
         "linked": true
