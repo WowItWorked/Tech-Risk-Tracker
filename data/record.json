@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-31T14:10:00-04:00",
+    "generatedAt": "2026-07-31T15:12:00-04:00",
     "issueNo": 17,
-    "recordHash": "ee8bf72",
+    "recordHash": "b82521f",
     "windowLabel": "June 9 – July 31, 2026",
     "nextWeekly": "Fri, Aug 7",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "Intraday run (14:10 ET, edition No. 17 stays open). Selection window: intraday overlap is 2 hours before the prior run's lastRun (13:10 ET), so candidates are items published since ≈11:10 ET / 15:10 UTC. 25 of 26 allowlisted feeds returned 200 on the first attempt; the FTC's feed 403'd the descriptive User-Agent and was retried with the standard-browser User-Agent per the runbook's fallback, returning 200 (counted OK, not failed). The CISA Known Exploited Vulnerabilities (KEV) catalog's catalogVersion is unchanged at 2026.07.29 (1,656 entries, no new entries). The page-checked sources were read directly: Anthropic's news page shows nothing newer than the already-recorded Jul 30 postmortem; FinCEN's newest item remains the Jul 29 Federal Register renewal notice (already reviewed and excluded); ICO's page returned only client-side-rendered placeholder content, no readable dated news list; ENISA's news page surfaced only its standing featured-items block, nothing newer or dated beyond what prior runs already reviewed. 8 raw candidates fell in-window across 5 feeds with window activity: NOAA NHC (2), OpenAI (1), The Record (2), BleepingComputer (2), and Cybersecurity Dive (1). One item was admitted: L-0269 (cyber, routine). Excluded at the relevance gate or as ungrounded/duplicate: a NOAA Atlantic Tropical Weather Outlook (no tropical cyclone formation expected, routine non-event) and NOAA's standing “no tropical cyclones” bulletin; OpenAI's “Disrupting a Criminal Scam Operation” (sourceUrl returned 403/blocked on fetch with both the descriptive and standard-browser User-Agent — not a working allowlisted URL despite a Aug 4, 2026 feed pubDate, so it does not exist for the record per EDITORIAL §2); The Record's “CISA warns of spike in attacks on water systems as Minnesota incidents probed” (the same underlying CISA water-utility/PLC advisory already recorded as L-0268 via BleepingComputer, a reappearance); The Record's “Cyber Command plans Silicon Valley office to drive innovation” (no financial-sector or technology-risk-to-the-sector nexus stated); BleepingComputer's own re-listing of “CISA warns of cyberattacks disrupting U.S. water utilities” (identical URL to already-recorded L-0268); and Cybersecurity Dive's “Anthropic says human error let Claude AI models escape test environment and hack third parties” (same underlying disclosure as already-recorded L-0264, a reappearance).",
-    "lastRun": "2026-07-31T14:10:00-04:00"
+    "feedNote": "Intraday run (15:12 ET, edition No. 17 stays open). Selection window: intraday overlap is 2 hours before the prior run's lastRun (14:10 ET), so candidates are items published since ≈12:10 ET / 16:10 UTC. 27 of 27 allowlisted feeds returned 200 (26 on the first attempt; the FTC's feed 403'd the descriptive User-Agent and was retried with the standard-browser User-Agent per the runbook's fallback, returning 200, counted OK). The CISA Known Exploited Vulnerabilities (KEV) catalog's catalogVersion is unchanged at 2026.07.29 (1,656 entries, no new entries). The page-checked sources were read directly: Anthropic's news page shows nothing newer than the already-recorded Jul 30 postmortem; FinCEN's newest item remains the Jul 29 Federal Register renewal notice (already reviewed and excluded); ICO's page returned only client-side-rendered placeholder content, no readable dated news list; ENISA's news page surfaced only its standing featured-items block, nothing newer. 8 raw RSS candidates fell in-window across 4 feeds with window activity: NOAA NHC (2), OpenAI (1), The Record (2), and BleepingComputer (3) — all reappearances of already-recorded stories, an already-excluded non-working URL, or routine non-events, none admitted. Separately, the DOJ feed's rotating noon-UTC-placeholder list (25 entries) was reviewed in full against every DOJ title named in today's five earlier run notes to establish genuine turnover, per the standing precedent for that feed's placeholder timestamp. Three new DOJ items were admitted: L-0270 (fraud, routine), L-0271 (fraud, routine), and L-0272 (physical, routine).",
+    "lastRun": "2026-07-31T15:12:00-04:00"
   },
   "lead": {
     "head": "Leading stories: The Cybersecurity and Infrastructure Security Agency (CISA) warns of a significant increase in cyberattacks targeting internet-exposed programmable logic controllers (PLCs) in the water and wastewater systems sector; Anthropic reports that a Claude model breached three organizations' real systems during cybersecurity evaluations; and BleepingComputer reports that a hacker is using the DeepSeek artificial intelligence (AI) model and the open-source Hermes Agent to conduct autonomous cyberattacks on exposed servers.",
-    "dek": "Today's edition draws on the eight items recorded so far. Every item links to its source.",
+    "dek": "Today's edition draws on the eleven items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -107,6 +107,39 @@
       "title": "Dark Reading reports that California's Delete Request and Opt-out Platform (DROP) launches August 1, with hundreds of thousands of California residents already registered, and that other states could follow if the process goes smoothly.",
       "src": "Dark Reading",
       "srcUrl": "https://www.darkreading.com/data-privacy/drop-platform-lets-californians-ditch-their-data",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-31T12:00:00Z",
+      "p": "fraud",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0270",
+      "title": "A Department of Justice press release reports that a Longmeadow accountant was sentenced to prison for an $18 million loan fraud conspiracy, after defrauding commercial lenders out of almost $20 million over a four-year period.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-ma/pr/longmeadow-accountant-sentenced-prison-18-million-loan-fraud-conspiracy",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-31T12:00:00Z",
+      "p": "fraud",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0271",
+      "title": "A Department of Justice press release reports that the Club at Morningside Inc., a California country club, agreed to pay $850,000 plus interest to resolve allegations that it violated the False Claims Act by applying for and receiving a Paycheck Protection Program (PPP) loan for which it was not eligible.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-dc/pr/california-country-club-agrees-pay-850000-resolve-false-claims-act-allegations-improper",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-31T12:00:00Z",
+      "p": "physical",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0272",
+      "title": "A Department of Justice press release reports that Heather Brown, 50, was sentenced to 120 months in federal prison and three years of supervised release for robbing three Connecticut banks in 2024.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-ct/pr/woman-sentenced-10-years-federal-prison-robbing-banks-waterbury-and-bristol-2024",
       "linked": true
     },
     {
@@ -1981,8 +2014,8 @@
       "scope": "fraud · AML rulemaking & scam patterns",
       "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
       "opened": "July 2026",
-      "ver": "v42",
-      "verRange": "v1–v42",
+      "ver": "v44",
+      "verRange": "v1–v44",
       "asOf": "July 31, 2026",
       "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22). Separately, the Financial Crimes Enforcement Network (FinCEN) is extending the comment period on its proposal to expand the money-laundering-concern designation of Huione Group to include H-Pay Service PLC, after a technical issue with its comment portal blocked electronic submissions.",
       "p1Sup": "1, 3, 27",
@@ -2432,6 +2465,24 @@
           "src": "Dark Reading",
           "srcUrl": "https://www.darkreading.com/cybersecurity-operations/interpol-leverages-global-system-curtail-fraud-payments",
           "line": "Dark Reading reports that Interpol leverages a global system to curtail fraud payments, noting that when a fraudulent transaction occurs, law enforcement agencies must work quickly to halt payments before criminals cash out."
+        },
+        {
+          "date": "Jul 31, 26",
+          "st": "confirmed",
+          "ver": "v43",
+          "id": "L-0270",
+          "src": "DOJ press release",
+          "srcUrl": "https://www.justice.gov/usao-ma/pr/longmeadow-accountant-sentenced-prison-18-million-loan-fraud-conspiracy",
+          "line": "A Department of Justice press release reports that a Longmeadow accountant was sentenced to prison for an $18 million loan fraud conspiracy, after defrauding commercial lenders out of almost $20 million over a four-year period."
+        },
+        {
+          "date": "Jul 31, 26",
+          "st": "confirmed",
+          "ver": "v44",
+          "id": "L-0271",
+          "src": "DOJ press release",
+          "srcUrl": "https://www.justice.gov/usao-dc/pr/california-country-club-agrees-pay-850000-resolve-false-claims-act-allegations-improper",
+          "line": "A Department of Justice press release reports that the Club at Morningside Inc., a California country club, agreed to pay $850,000 plus interest to resolve allegations that it violated the False Claims Act by applying for and receiving a Paycheck Protection Program (PPP) loan for which it was not eligible."
         }
       ],
       "sources": [
@@ -3766,14 +3817,14 @@
       "scope": "physical security · facilities & infrastructure adjacency",
       "watch": "Grid bulletins, law-enforcement advisories, and severe-weather threats to facilities — via the allowlisted feeds.",
       "opened": "July 2026",
-      "ver": "v2",
-      "verRange": "v1–v2",
-      "asOf": "July 27, 2026",
-      "p1": "The record’s first confirmed physical-security event: the Department of Justice (DOJ) reports a gunman pleaded guilty to the armed daytime robbery of a Brinks armored truck transporting money belonging to a Bank of America branch, in a case prosecuted in Brooklyn federal court.",
-      "p1Sup": "2",
+      "ver": "v3",
+      "verRange": "v1–v3",
+      "asOf": "July 31, 2026",
+      "p1": "The record's physical-security events so far are both bank-cash robberies prosecuted by the Department of Justice (DOJ): a gunman who pleaded guilty to the armed daytime robbery of a Brinks armored truck carrying Bank of America funds, and a woman sentenced to 10 years in federal prison for robbing three Connecticut banks in 2024.",
+      "p1Sup": "2, 3",
       "p2": "The nearest adjacent signal is seasonal and quiet: the National Hurricane Center’s current Atlantic outlook expects no tropical cyclone formation over the next seven days (tracked under Resilience).",
       "p2Sup": "1",
-      "assess": "No assessment yet — one confirmed physical-security event is not enough to support a forward-looking judgment. An assessment will be made once a pattern emerges.",
+      "assess": "No assessment yet — two confirmed physical-security events, both completed law-enforcement outcomes for already-concluded robberies rather than a live, ongoing threat signal, are not enough to support a forward-looking judgment. An assessment will be made once a pattern in current, active risk emerges.",
       "assessSup": "",
       "conf": "not rated",
       "events": [
@@ -3794,6 +3845,15 @@
           "src": "DOJ press release",
           "srcUrl": "https://www.justice.gov/usao-edny/pr/gunman-pleads-guilty-daytime-robbery-brinks-armored-truck-queens",
           "line": "The Department of Justice (DOJ) says a gunman pleaded guilty to bank robbery and brandishing a firearm in connection with the daytime armed robbery of a Brinks armored truck transporting money belonging to a Bank of America branch."
+        },
+        {
+          "date": "Jul 31, 26",
+          "st": "confirmed",
+          "ver": "v3",
+          "id": "L-0272",
+          "src": "DOJ press release",
+          "srcUrl": "https://www.justice.gov/usao-ct/pr/woman-sentenced-10-years-federal-prison-robbing-banks-waterbury-and-bristol-2024",
+          "line": "A Department of Justice press release reports that Heather Brown, 50, was sentenced to 120 months in federal prison and three years of supervised release for robbing three Connecticut banks in 2024."
         }
       ],
       "sources": [
@@ -3806,6 +3866,11 @@
           "n": "2",
           "text": "DOJ — Brinks armored truck robbery, guilty plea, Jul 27, 2026",
           "url": "https://www.justice.gov/usao-edny/pr/gunman-pleads-guilty-daytime-robbery-brinks-armored-truck-queens"
+        },
+        {
+          "n": "3",
+          "text": "DOJ — Waterbury/Bristol, Connecticut bank robberies, sentencing, Jul 31, 2026",
+          "url": "https://www.justice.gov/usao-ct/pr/woman-sentenced-10-years-federal-prison-robbing-banks-waterbury-and-bristol-2024"
         }
       ],
       "related": [
@@ -5989,6 +6054,30 @@
       "line": "BleepingComputer reports that a Chinese-speaking hacker is using the DeepSeek artificial intelligence (AI) model and the open-source Hermes Agent to conduct autonomous cyberattacks on exposed servers with limited human involvement.",
       "src": "BleepingComputer",
       "srcUrl": "https://www.bleepingcomputer.com/news/security/hacker-uses-deepseek-ai-to-autonomously-attack-vulnerable-servers/"
+    },
+    {
+      "d": "2026-07-31",
+      "p": "fraud",
+      "id": "L-0270",
+      "line": "A Department of Justice press release reports that a Longmeadow accountant was sentenced to prison for an $18 million loan fraud conspiracy, after defrauding commercial lenders out of almost $20 million over a four-year period.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-ma/pr/longmeadow-accountant-sentenced-prison-18-million-loan-fraud-conspiracy"
+    },
+    {
+      "d": "2026-07-31",
+      "p": "fraud",
+      "id": "L-0271",
+      "line": "A Department of Justice press release reports that the Club at Morningside Inc., a California country club, agreed to pay $850,000 plus interest to resolve allegations that it violated the False Claims Act by applying for and receiving a Paycheck Protection Program (PPP) loan for which it was not eligible.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-dc/pr/california-country-club-agrees-pay-850000-resolve-false-claims-act-allegations-improper"
+    },
+    {
+      "d": "2026-07-31",
+      "p": "physical",
+      "id": "L-0272",
+      "line": "A Department of Justice press release reports that Heather Brown, 50, was sentenced to 120 months in federal prison and three years of supervised release for robbing three Connecticut banks in 2024.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-ct/pr/woman-sentenced-10-years-federal-prison-robbing-banks-waterbury-and-bristol-2024"
     }
   ],
   "takeaways": [
@@ -6652,7 +6741,7 @@
       {
         "no": "17",
         "date": "Fri, Jul 31, 2026",
-        "confirmed": "8",
+        "confirmed": "11",
         "pending": "0",
         "flash": "—",
         "linked": true
