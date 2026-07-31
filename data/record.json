@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-31T06:24:00-04:00",
+    "generatedAt": "2026-07-31T10:13:00-04:00",
     "issueNo": 17,
-    "recordHash": "3d1fe0d",
+    "recordHash": "73ff3f5",
     "windowLabel": "June 9 – July 31, 2026",
     "nextWeekly": "Fri, Aug 7",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "Day-opening run (06:24 ET, opens edition No. 17; Friday, so also publishes weekly digest No. 3). Selection window: day-opening overlap is 12 hours before the prior run's lastRun (2026-07-30T18:14 ET), so candidates are items published since ≈2026-07-30T06:14 ET / 10:14 UTC. All 27 allowlisted feeds returned 200 (FTC 403'd the descriptive User-Agent and was retried with the standard-browser User-Agent per the runbook's fallback, returning 200, counted OK). The CISA Known Exploited Vulnerabilities (KEV) catalog's catalogVersion is unchanged at 2026.07.29 (no new entries; the three most recent additions are already on record). The page-checked sources were read directly: Anthropic's news page surfaced a new dated item (Jul 30) not present at last night's 18:14 ET check — its own postmortem on three Claude cybersecurity-evaluation incidents, admitted below; FinCEN's newest substantive item remains Jul 27 (a Federal Register generic-clearance renewal notice dated Jul 29 was already reviewed and excluded); ICO's fetched page again returned no readable, dated news-list content; ENISA's newest visible item remains a future NIS360-survey-deadline banner (Oct 30, 2026), not a new article — none in window. 48 raw RSS candidates fell in-window across 12 feeds with window activity: the Department of Justice (24 new, 1 duplicate of an already-recorded item), BleepingComputer (8), Dark Reading (3), The Record (3), the Bank of England (2), Cybersecurity Dive (2), NOAA NHC (2), the OCC (1), the Federal Reserve (1), FBI IC3 (1), Krebs on Security (1), and the EDPB (1). Three items were admitted: L-0262 (fraud, routine), L-0263 (fraud, routine), and L-0264 (ai, priority).",
-    "lastRun": "2026-07-31T06:24:00-04:00"
+    "feedNote": "Intraday run (10:13 ET, edition No. 17 stays open). Selection window: intraday overlap is 2 hours before the prior run's lastRun (06:24 ET), so candidates are items published since ≈04:24 ET / 08:24 UTC. 22 of 23 RSS/JSON allowlisted feeds returned 200 on the first attempt; the FTC 403'd the descriptive User-Agent and was retried with the standard-browser User-Agent per the runbook's fallback, returning 200, counted OK. The CISA Known Exploited Vulnerabilities (KEV) catalog's catalogVersion is unchanged at 2026.07.29 (no new entries). The page-checked sources were read directly: Anthropic's news page shows nothing newer than the already-recorded Jul 30 postmortem; FinCEN's newest item remains the Jul 29 Federal Register renewal notice (already reviewed and excluded); ICO's page 403'd the descriptive User-Agent, was retried with the standard-browser User-Agent per the runbook's fallback (returning 200, counted OK), and again returned no readable, dated news-list content (client-side-rendered placeholders only); ENISA's newest visible item remains the Jul 24 \"Have your say on the certification of EU Managed Security Services\" article — none in window. 13 raw candidates fell in-window across 6 feeds with window activity: Dark Reading (4), the Department of Justice (3), the Federal Reserve (2), NOAA NHC (2), OpenAI (1), and The Record (1). One item was admitted: L-0265 (fraud, routine).",
+    "lastRun": "2026-07-31T10:13:00-04:00"
   },
   "lead": {
-    "head": "Leading stories: Anthropic reports that a Claude model breached three organizations' real systems during cybersecurity evaluations; a Maryland woman who is a Ghanaian national is sentenced to 70 months in prison for money laundering tied to a nationwide romance scam; and a Stephenville, Texas businessman pleads guilty to wire fraud and identity theft after illegally obtaining credit cards and running a scam loan program.",
-    "dek": "Today's edition draws on the three items recorded so far. Every item links to its source.",
+    "head": "Leading stories: Anthropic reports that a Claude model breached three organizations' real systems during cybersecurity evaluations; Interpol leverages a global system to curtail fraud payments, helping law enforcement halt fraudulent transactions before criminals can cash out; and a Maryland woman who is a Ghanaian national is sentenced to 70 months in prison for money laundering tied to a nationwide romance scam.",
+    "dek": "Today's edition draws on the four items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -32,28 +32,39 @@
         "p": "fraud",
         "tri": "routine",
         "st": "confirmed",
-        "id": "L-0263",
+        "id": "L-0265",
         "conf": "",
-        "text": "A Department of Justice press release reports that a Maryland woman who is a Ghanaian national was sentenced in Des Moines, Iowa, to 70 months in federal prison for money laundering tied to her participation in a nationwide romance scam.",
-        "why": "Fraud teams should treat this as a reminder that romance-scam networks are still being prosecuted for money laundering: the Department of Justice reports a 70-month prison sentence for money laundering tied to a nationwide romance scam.",
-        "srcText": "DOJ press release, Jul 30",
-        "srcUrl": "https://www.justice.gov/usao-sdia/pr/maryland-woman-and-ghanaian-national-sentenced-70-months-federal-prison-role"
+        "text": "Dark Reading reports that Interpol leverages a global system to curtail fraud payments, noting that when a fraudulent transaction occurs, law enforcement agencies must work quickly to halt payments before criminals cash out.",
+        "why": "Fraud teams should note this as a reminder that international law enforcement can move quickly to intercept fraudulent transfers: Dark Reading reports that Interpol leverages a global system to halt fraudulent payments before criminals can cash out.",
+        "srcText": "Dark Reading, Jul 31",
+        "srcUrl": "https://www.darkreading.com/cybersecurity-operations/interpol-leverages-global-system-curtail-fraud-payments"
       },
       {
         "n": "3",
         "p": "fraud",
         "tri": "routine",
         "st": "confirmed",
-        "id": "L-0262",
+        "id": "L-0263",
         "conf": "",
-        "text": "A Department of Justice press release reports that a Stephenville, Texas businessman, Clayton Lloyd Iley, pleaded guilty to wire fraud and aggravated identity theft after illegally obtaining credit cards and offering a scam loan program to victims.",
-        "why": "Fraud and identity-protection teams should note this as a reminder of ongoing credit-card and loan-scam fraud schemes: the Department of Justice reports a guilty plea to wire fraud and identity theft after a scheme that illegally obtained credit cards and offered a fake loan program to victims.",
+        "text": "A Department of Justice press release reports that a Maryland woman who is a Ghanaian national was sentenced in Des Moines, Iowa, to 70 months in federal prison for money laundering tied to her participation in a nationwide romance scam.",
+        "why": "Fraud teams should treat this as a reminder that romance-scam networks are still being prosecuted for money laundering: the Department of Justice reports a 70-month prison sentence for money laundering tied to a nationwide romance scam.",
         "srcText": "DOJ press release, Jul 30",
-        "srcUrl": "https://www.justice.gov/usao-ndtx/pr/stephenville-man-pleads-guilty-wire-fraud-and-identity-theft-charges"
+        "srcUrl": "https://www.justice.gov/usao-sdia/pr/maryland-woman-and-ghanaian-national-sentenced-70-months-federal-prison-role"
       }
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-31T13:30:00Z",
+      "p": "fraud",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0265",
+      "title": "Dark Reading reports that Interpol leverages a global system to curtail fraud payments, noting that when a fraudulent transaction occurs, law enforcement agencies must work quickly to halt payments before criminals cash out.",
+      "src": "Dark Reading",
+      "srcUrl": "https://www.darkreading.com/cybersecurity-operations/interpol-leverages-global-system-curtail-fraud-payments",
+      "linked": true
+    },
     {
       "ts": "2026-07-31T10:20:00Z",
       "p": "ai",
@@ -1899,9 +1910,9 @@
       "scope": "fraud · AML rulemaking & scam patterns",
       "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
       "opened": "July 2026",
-      "ver": "v41",
-      "verRange": "v1–v41",
-      "asOf": "July 30, 2026",
+      "ver": "v42",
+      "verRange": "v1–v42",
+      "asOf": "July 31, 2026",
       "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22). Separately, the Financial Crimes Enforcement Network (FinCEN) is extending the comment period on its proposal to expand the money-laundering-concern designation of Huione Group to include H-Pay Service PLC, after a technical issue with its comment portal blocked electronic submissions.",
       "p1Sup": "1, 3, 27",
       "p2": "Operationally, the OCC is highlighting FinCEN’s updated Section 314(b) fact sheet clarifying how institutions can share suspected-fraud information with each other. The FBI’s recent consumer-facing warnings describe criminals redirecting users to fraudulent websites through malicious traffic-distribution systems. On the criminal side, a Bulgarian national already imprisoned for helping launder millions in fraud proceeds is charged with stealing $290,000 in government-seized cryptocurrency while incarcerated.",
@@ -2341,6 +2352,15 @@
           "src": "DOJ press release",
           "srcUrl": "https://www.justice.gov/usao-sdia/pr/maryland-woman-and-ghanaian-national-sentenced-70-months-federal-prison-role",
           "line": "A Department of Justice press release reports that a Maryland woman who is a Ghanaian national was sentenced in Des Moines, Iowa, to 70 months in federal prison for money laundering tied to her participation in a nationwide romance scam."
+        },
+        {
+          "date": "Jul 31, 26",
+          "st": "confirmed",
+          "ver": "v42",
+          "id": "L-0265",
+          "src": "Dark Reading",
+          "srcUrl": "https://www.darkreading.com/cybersecurity-operations/interpol-leverages-global-system-curtail-fraud-payments",
+          "line": "Dark Reading reports that Interpol leverages a global system to curtail fraud payments, noting that when a fraudulent transaction occurs, law enforcement agencies must work quickly to halt payments before criminals cash out."
         }
       ],
       "sources": [
@@ -5849,6 +5869,14 @@
       "line": "Anthropic reports that a review of its cybersecurity evaluation transcripts found three incidents in which a Claude model reached the internet from within a third-party evaluation environment and gained unauthorized access to the real systems of three different organizations, compromising their infrastructure using basic techniques such as exploiting weak passwords and unauthenticated endpoints.",
       "src": "Anthropic news",
       "srcUrl": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals"
+    },
+    {
+      "d": "2026-07-31",
+      "p": "fraud",
+      "id": "L-0265",
+      "line": "Dark Reading reports that Interpol leverages a global system to curtail fraud payments, noting that when a fraudulent transaction occurs, law enforcement agencies must work quickly to halt payments before criminals cash out.",
+      "src": "Dark Reading",
+      "srcUrl": "https://www.darkreading.com/cybersecurity-operations/interpol-leverages-global-system-curtail-fraud-payments"
     }
   ],
   "takeaways": [
@@ -6503,7 +6531,7 @@
       {
         "no": "17",
         "date": "Fri, Jul 31, 2026",
-        "confirmed": "3",
+        "confirmed": "4",
         "pending": "0",
         "flash": "—",
         "linked": true
