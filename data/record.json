@@ -2,21 +2,33 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-31T11:12:00-04:00",
+    "generatedAt": "2026-07-31T13:10:00-04:00",
     "issueNo": 17,
-    "recordHash": "1fc9b49",
+    "recordHash": "df654c2",
     "windowLabel": "June 9 – July 31, 2026",
     "nextWeekly": "Fri, Aug 7",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "Intraday run (11:12 ET, edition No. 17 stays open). Selection window: intraday overlap is 2 hours before the prior run's lastRun (10:13 ET), so candidates are items published since ≈08:13 ET / 12:13 UTC. All 26 allowlisted feeds returned 200 (FTC needed the standard-browser-User-Agent fallback per the runbook, returning 200, counted OK; no other feed required it this run). The CISA Known Exploited Vulnerabilities (KEV) catalog's catalogVersion is unchanged at 2026.07.29 (no new entries). The page-checked sources were read directly: Anthropic's news page shows nothing newer than the already-recorded Jul 30 postmortem; FinCEN's newest item remains the Jul 29 Federal Register renewal notice (already reviewed and excluded); ICO's page returned only client-side-rendered placeholder content, no readable dated news list; ENISA's newest visible item remains the Jul 24 \"Have your say on the certification of EU Managed Security Services\" article — none in window. 13 raw candidates fell in-window across 6 feeds with window activity: Dark Reading (4), the Federal Reserve (2), NOAA NHC (1), the European Banking Authority (1), OpenAI (2), BleepingComputer (1), and The Record (1). One item was admitted: L-0266 (cyber, routine).",
-    "lastRun": "2026-07-31T11:12:00-04:00"
+    "feedNote": "Intraday run (13:10 ET, edition No. 17 stays open). Selection window: intraday overlap is 2 hours before the prior run's lastRun (11:12 ET), so candidates are items published since ≈09:12 ET / 13:12 UTC. All 26 allowlisted feeds returned 200 (no User-Agent fallback needed this run). The CISA Known Exploited Vulnerabilities (KEV) catalog's catalogVersion is unchanged at 2026.07.29 (no new entries). The page-checked sources were read directly: Anthropic's news page shows nothing newer than the already-recorded Jul 30 postmortem; FinCEN's newest item remains the Jul 29 Federal Register renewal notice (already reviewed and excluded); ICO's page returned only client-side-rendered placeholder content, no readable dated news list; ENISA's newest visible item remains the Jul 24 “Have your say on the certification of EU Managed Security Services” article — none in window. 10 raw candidates fell in-window across 7 feeds with window activity: the Federal Reserve (2), NOAA NHC (1), OpenAI (2), the European Banking Authority (1), BleepingComputer (1), Dark Reading (2), and Cybersecurity Dive (1). Two items were admitted: L-0267 (data, routine) and L-0268 (cyber, priority). Excluded at the relevance gate: two Federal Reserve rulemaking proposals (bank-insider lending, mutual banking organizations — not tech risk); a NOAA Atlantic Tropical Weather Outlook (no tropical cyclone formation expected, routine non-event); a Dark Reading opinion column on certificate/key inventory practices (“root of trust”) with no reportable event beyond generic advice; an EBA e-mail alert digest (no standalone substantive content); two OpenAI posts (“Advancing responsible AI across Europe,” “Building abundant intelligence”) that were generic policy/product messaging without a concrete, sector-relevant claim; and a Cybersecurity Dive report on the already-recorded Anthropic cybersecurity-evals incident (reappearance of L-0264).",
+    "lastRun": "2026-07-31T13:10:00-04:00"
   },
   "lead": {
-    "head": "Leading stories: Anthropic reports that a Claude model breached three organizations' real systems during cybersecurity evaluations; BleepingComputer reports that ESET's new threat report tracks a rise in criminals adapting established techniques to AI platforms, including malicious AI skills, AI-assisted malware, and ransomware tools built to disable security software; and Interpol leverages a global system to curtail fraud payments, helping law enforcement halt fraudulent transactions before criminals can cash out.",
-    "dek": "Today's edition draws on the five items recorded so far. Every item links to its source.",
+    "head": "Leading stories: The Cybersecurity and Infrastructure Security Agency (CISA) warns of a significant increase in cyberattacks targeting internet-exposed programmable logic controllers (PLCs) in the water and wastewater systems sector; Anthropic reports that a Claude model breached three organizations' real systems during cybersecurity evaluations; and BleepingComputer reports that ESET's new threat report tracks a rise in criminals adapting established techniques to AI platforms, including malicious AI skills, AI-assisted malware, and ransomware tools built to disable security software.",
+    "dek": "Today's edition draws on the seven items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
+        "p": "cyber",
+        "tri": "priority",
+        "st": "confirmed",
+        "id": "L-0268",
+        "conf": "",
+        "text": "BleepingComputer reports that the Cybersecurity and Infrastructure Security Agency (CISA) is warning of a significant increase in attacks targeting internet-exposed programmable logic controllers (PLCs) in the water and wastewater systems sector.",
+        "why": "Cybersecurity and resilience teams should treat this as a reminder that internet-exposed programmable logic controllers (PLCs) draw sustained attacker interest: the Cybersecurity and Infrastructure Security Agency (CISA), per BleepingComputer, is warning of a significant increase in attacks targeting internet-exposed programmable logic controllers (PLCs) in the water and wastewater systems sector.",
+        "srcText": "BleepingComputer, Jul 31",
+        "srcUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-cyberattacks-disrupting-us-water-utilities/"
+      },
+      {
+        "n": "2",
         "p": "ai",
         "tri": "priority",
         "st": "confirmed",
@@ -28,7 +40,7 @@
         "srcUrl": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals"
       },
       {
-        "n": "2",
+        "n": "3",
         "p": "cyber",
         "tri": "routine",
         "st": "confirmed",
@@ -38,22 +50,21 @@
         "why": "Cybersecurity teams should treat this as a reminder that criminals are adapting established techniques to artificial intelligence (AI) platforms: ESET's new threat report, per BleepingComputer, tracks a rise in malicious AI skills, AI-assisted malware, ClickFix attacks, record levels of quishing (QR-code phishing) activity, and ransomware tools built to disable security software.",
         "srcText": "BleepingComputer, Jul 31",
         "srcUrl": "https://www.bleepingcomputer.com/news/security/eset-tracks-rise-in-malicious-ai-skills-and-adaptable-malware/"
-      },
-      {
-        "n": "3",
-        "p": "fraud",
-        "tri": "routine",
-        "st": "confirmed",
-        "id": "L-0265",
-        "conf": "",
-        "text": "Dark Reading reports that Interpol leverages a global system to curtail fraud payments, noting that when a fraudulent transaction occurs, law enforcement agencies must work quickly to halt payments before criminals cash out.",
-        "why": "Fraud teams should note this as a reminder that international law enforcement can move quickly to intercept fraudulent transfers: Dark Reading reports that Interpol leverages a global system to halt fraudulent payments before criminals can cash out.",
-        "srcText": "Dark Reading, Jul 31",
-        "srcUrl": "https://www.darkreading.com/cybersecurity-operations/interpol-leverages-global-system-curtail-fraud-payments"
       }
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-31T16:49:49Z",
+      "p": "cyber",
+      "tri": "priority",
+      "st": "confirmed",
+      "id": "L-0268",
+      "title": "BleepingComputer reports that the Cybersecurity and Infrastructure Security Agency (CISA) is warning of a significant increase in attacks targeting internet-exposed programmable logic controllers (PLCs) in the water and wastewater systems sector.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-cyberattacks-disrupting-us-water-utilities/",
+      "linked": true
+    },
     {
       "ts": "2026-07-31T14:01:11Z",
       "p": "cyber",
@@ -74,6 +85,17 @@
       "title": "Dark Reading reports that Interpol leverages a global system to curtail fraud payments, noting that when a fraudulent transaction occurs, law enforcement agencies must work quickly to halt payments before criminals cash out.",
       "src": "Dark Reading",
       "srcUrl": "https://www.darkreading.com/cybersecurity-operations/interpol-leverages-global-system-curtail-fraud-payments",
+      "linked": true
+    },
+    {
+      "ts": "2026-07-31T13:19:36Z",
+      "p": "data",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0267",
+      "title": "Dark Reading reports that California's Delete Request and Opt-out Platform (DROP) launches August 1, with hundreds of thousands of California residents already registered, and that other states could follow if the process goes smoothly.",
+      "src": "Dark Reading",
+      "srcUrl": "https://www.darkreading.com/data-privacy/drop-platform-lets-californians-ditch-their-data",
       "linked": true
     },
     {
@@ -536,8 +558,8 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v105",
-      "verRange": "v1–v105",
+      "ver": "v106",
+      "verRange": "v1–v106",
       "asOf": "July 31, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
@@ -1563,6 +1585,15 @@
           "src": "BleepingComputer",
           "srcUrl": "https://www.bleepingcomputer.com/news/security/eset-tracks-rise-in-malicious-ai-skills-and-adaptable-malware/",
           "line": "BleepingComputer reports that ESET's new threat report tracks a rise in criminals adapting established techniques to artificial intelligence (AI) platforms, including malicious AI skills, AI-assisted malware, ClickFix attacks, record levels of quishing (QR-code phishing) activity, and ransomware tools built to disable security software."
+        },
+        {
+          "date": "Jul 31, 26",
+          "st": "confirmed",
+          "ver": "v106",
+          "id": "L-0268",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-cyberattacks-disrupting-us-water-utilities/",
+          "line": "BleepingComputer reports that the Cybersecurity and Infrastructure Security Agency (CISA) is warning of a significant increase in attacks targeting internet-exposed programmable logic controllers (PLCs) in the water and wastewater systems sector."
         }
       ],
       "sources": [
@@ -3291,9 +3322,9 @@
       "scope": "data risk · reporting standards & data accuracy",
       "watch": "Data-standards rulemaking, consumer-data enforcement, and breach disclosures at financial firms.",
       "opened": "July 2026",
-      "ver": "v6",
-      "verRange": "v1–v6",
-      "asOf": "July 22, 2026",
+      "ver": "v7",
+      "verRange": "v1–v7",
+      "asOf": "July 31, 2026",
       "p1": "Uniform data-reporting standards are now final: the OCC, Federal Reserve, FDIC, and five other agencies issued the joint Financial Data Transparency Act rule on June 11, establishing data standards for certain regulatory collections.",
       "p1Sup": "1",
       "p2": "Enforcement pressure sits on data accuracy on both sides of the Atlantic. The FTC required tenant-screening provider RentGrow to pay $2.25 million over duplicate records and undisclosed data sources (July 9). Separately, insurance company AssuranceAmerica disclosed a breach affecting records of 6.9 million drivers. In the UK, the Bank of England’s Prudential Regulation Authority (PRA) fined HDI Global SE £4,165,000 for submitting incorrect Financial Services Compensation Scheme (FSCS) data, caused by a failure to apply due skill, care and diligence.",
@@ -3409,6 +3440,15 @@
           "src": "Dark Reading",
           "srcUrl": "https://www.darkreading.com/data-privacy/eu-financial-institutions-cookie-trackers",
           "line": "European banks inadvertently transmit customer data to advertising platforms through website tracking pixels, raising compliance, security, and privacy concerns."
+        },
+        {
+          "date": "Jul 31, 26",
+          "st": "confirmed",
+          "ver": "v7",
+          "id": "L-0267",
+          "src": "Dark Reading",
+          "srcUrl": "https://www.darkreading.com/data-privacy/drop-platform-lets-californians-ditch-their-data",
+          "line": "Dark Reading reports that California's Delete Request and Opt-out Platform (DROP) launches August 1, with hundreds of thousands of California residents already registered, and that other states could follow if the process goes smoothly."
         }
       ],
       "sources": [
@@ -5905,9 +5945,34 @@
       "line": "BleepingComputer reports that ESET's new threat report tracks a rise in criminals adapting established techniques to artificial intelligence (AI) platforms, including malicious AI skills, AI-assisted malware, ClickFix attacks, record levels of quishing (QR-code phishing) activity, and ransomware tools built to disable security software.",
       "src": "BleepingComputer",
       "srcUrl": "https://www.bleepingcomputer.com/news/security/eset-tracks-rise-in-malicious-ai-skills-and-adaptable-malware/"
+    },
+    {
+      "d": "2026-07-31",
+      "p": "data",
+      "id": "L-0267",
+      "line": "Dark Reading reports that California's Delete Request and Opt-out Platform (DROP) launches August 1, with hundreds of thousands of California residents already registered, and that other states could follow if the process goes smoothly.",
+      "src": "Dark Reading",
+      "srcUrl": "https://www.darkreading.com/data-privacy/drop-platform-lets-californians-ditch-their-data"
+    },
+    {
+      "d": "2026-07-31",
+      "p": "cyber",
+      "id": "L-0268",
+      "line": "BleepingComputer reports that the Cybersecurity and Infrastructure Security Agency (CISA) is warning of a significant increase in attacks targeting internet-exposed programmable logic controllers (PLCs) in the water and wastewater systems sector.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-cyberattacks-disrupting-us-water-utilities/"
     }
   ],
   "takeaways": [
+    {
+      "anchors": [
+        "L-0267"
+      ],
+      "pillars": "Data risk",
+      "conf": "high confidence",
+      "head": "Prepare data and privacy teams to receive and process delete/opt-out requests from California residents starting August 1 — the state's new Delete Request and Opt-out Platform (DROP) already has hundreds of thousands of registrants, and other states could follow.",
+      "body": "Dark Reading reports that California's Delete Request and Opt-out Platform (DROP) launches August 1, with hundreds of thousands of California residents already registered, and that other states could follow if the process goes smoothly. Data risk and privacy teams should prepare to receive and process delete/opt-out requests originating from the platform."
+    },
     {
       "anchors": [
         "L-0264"
@@ -6559,7 +6624,7 @@
       {
         "no": "17",
         "date": "Fri, Jul 31, 2026",
-        "confirmed": "5",
+        "confirmed": "7",
         "pending": "0",
         "flash": "—",
         "linked": true
