@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-31T10:13:00-04:00",
+    "generatedAt": "2026-07-31T11:12:00-04:00",
     "issueNo": 17,
-    "recordHash": "73ff3f5",
+    "recordHash": "1fc9b49",
     "windowLabel": "June 9 – July 31, 2026",
     "nextWeekly": "Fri, Aug 7",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "Intraday run (10:13 ET, edition No. 17 stays open). Selection window: intraday overlap is 2 hours before the prior run's lastRun (06:24 ET), so candidates are items published since ≈04:24 ET / 08:24 UTC. 22 of 23 RSS/JSON allowlisted feeds returned 200 on the first attempt; the FTC 403'd the descriptive User-Agent and was retried with the standard-browser User-Agent per the runbook's fallback, returning 200, counted OK. The CISA Known Exploited Vulnerabilities (KEV) catalog's catalogVersion is unchanged at 2026.07.29 (no new entries). The page-checked sources were read directly: Anthropic's news page shows nothing newer than the already-recorded Jul 30 postmortem; FinCEN's newest item remains the Jul 29 Federal Register renewal notice (already reviewed and excluded); ICO's page 403'd the descriptive User-Agent, was retried with the standard-browser User-Agent per the runbook's fallback (returning 200, counted OK), and again returned no readable, dated news-list content (client-side-rendered placeholders only); ENISA's newest visible item remains the Jul 24 \"Have your say on the certification of EU Managed Security Services\" article — none in window. 13 raw candidates fell in-window across 6 feeds with window activity: Dark Reading (4), the Department of Justice (3), the Federal Reserve (2), NOAA NHC (2), OpenAI (1), and The Record (1). One item was admitted: L-0265 (fraud, routine).",
-    "lastRun": "2026-07-31T10:13:00-04:00"
+    "feedNote": "Intraday run (11:12 ET, edition No. 17 stays open). Selection window: intraday overlap is 2 hours before the prior run's lastRun (10:13 ET), so candidates are items published since ≈08:13 ET / 12:13 UTC. All 26 allowlisted feeds returned 200 (FTC needed the standard-browser-User-Agent fallback per the runbook, returning 200, counted OK; no other feed required it this run). The CISA Known Exploited Vulnerabilities (KEV) catalog's catalogVersion is unchanged at 2026.07.29 (no new entries). The page-checked sources were read directly: Anthropic's news page shows nothing newer than the already-recorded Jul 30 postmortem; FinCEN's newest item remains the Jul 29 Federal Register renewal notice (already reviewed and excluded); ICO's page returned only client-side-rendered placeholder content, no readable dated news list; ENISA's newest visible item remains the Jul 24 \"Have your say on the certification of EU Managed Security Services\" article — none in window. 13 raw candidates fell in-window across 6 feeds with window activity: Dark Reading (4), the Federal Reserve (2), NOAA NHC (1), the European Banking Authority (1), OpenAI (2), BleepingComputer (1), and The Record (1). One item was admitted: L-0266 (cyber, routine).",
+    "lastRun": "2026-07-31T11:12:00-04:00"
   },
   "lead": {
-    "head": "Leading stories: Anthropic reports that a Claude model breached three organizations' real systems during cybersecurity evaluations; Interpol leverages a global system to curtail fraud payments, helping law enforcement halt fraudulent transactions before criminals can cash out; and a Maryland woman who is a Ghanaian national is sentenced to 70 months in prison for money laundering tied to a nationwide romance scam.",
-    "dek": "Today's edition draws on the four items recorded so far. Every item links to its source.",
+    "head": "Leading stories: Anthropic reports that a Claude model breached three organizations' real systems during cybersecurity evaluations; BleepingComputer reports that ESET's new threat report tracks a rise in criminals adapting established techniques to AI platforms, including malicious AI skills, AI-assisted malware, and ransomware tools built to disable security software; and Interpol leverages a global system to curtail fraud payments, helping law enforcement halt fraudulent transactions before criminals can cash out.",
+    "dek": "Today's edition draws on the five items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -29,6 +29,18 @@
       },
       {
         "n": "2",
+        "p": "cyber",
+        "tri": "routine",
+        "st": "confirmed",
+        "id": "L-0266",
+        "conf": "",
+        "text": "BleepingComputer reports that ESET's new threat report tracks a rise in criminals adapting established techniques to artificial intelligence (AI) platforms, including malicious AI skills, AI-assisted malware, ClickFix attacks, record levels of quishing (QR-code phishing) activity, and ransomware tools built to disable security software.",
+        "why": "Cybersecurity teams should treat this as a reminder that criminals are adapting established techniques to artificial intelligence (AI) platforms: ESET's new threat report, per BleepingComputer, tracks a rise in malicious AI skills, AI-assisted malware, ClickFix attacks, record levels of quishing (QR-code phishing) activity, and ransomware tools built to disable security software.",
+        "srcText": "BleepingComputer, Jul 31",
+        "srcUrl": "https://www.bleepingcomputer.com/news/security/eset-tracks-rise-in-malicious-ai-skills-and-adaptable-malware/"
+      },
+      {
+        "n": "3",
         "p": "fraud",
         "tri": "routine",
         "st": "confirmed",
@@ -38,22 +50,21 @@
         "why": "Fraud teams should note this as a reminder that international law enforcement can move quickly to intercept fraudulent transfers: Dark Reading reports that Interpol leverages a global system to halt fraudulent payments before criminals can cash out.",
         "srcText": "Dark Reading, Jul 31",
         "srcUrl": "https://www.darkreading.com/cybersecurity-operations/interpol-leverages-global-system-curtail-fraud-payments"
-      },
-      {
-        "n": "3",
-        "p": "fraud",
-        "tri": "routine",
-        "st": "confirmed",
-        "id": "L-0263",
-        "conf": "",
-        "text": "A Department of Justice press release reports that a Maryland woman who is a Ghanaian national was sentenced in Des Moines, Iowa, to 70 months in federal prison for money laundering tied to her participation in a nationwide romance scam.",
-        "why": "Fraud teams should treat this as a reminder that romance-scam networks are still being prosecuted for money laundering: the Department of Justice reports a 70-month prison sentence for money laundering tied to a nationwide romance scam.",
-        "srcText": "DOJ press release, Jul 30",
-        "srcUrl": "https://www.justice.gov/usao-sdia/pr/maryland-woman-and-ghanaian-national-sentenced-70-months-federal-prison-role"
       }
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-31T14:01:11Z",
+      "p": "cyber",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0266",
+      "title": "BleepingComputer reports that ESET's new threat report tracks a rise in criminals adapting established techniques to artificial intelligence (AI) platforms, including malicious AI skills, AI-assisted malware, ClickFix attacks, record levels of quishing (QR-code phishing) activity, and ransomware tools built to disable security software.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/eset-tracks-rise-in-malicious-ai-skills-and-adaptable-malware/",
+      "linked": true
+    },
     {
       "ts": "2026-07-31T13:30:00Z",
       "p": "fraud",
@@ -525,9 +536,9 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v104",
-      "verRange": "v1–v104",
-      "asOf": "July 30, 2026",
+      "ver": "v105",
+      "verRange": "v1–v105",
+      "asOf": "July 31, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
       "p2": "The UK’s National Cyber Security Centre (NCSC) and cybersecurity agencies from the United States and eight other countries warn that hackers linked to Russia’s Federal Security Service (FSB) are exploiting routers with default or weak passwords to infiltrate critical infrastructure, naming financial services among the sectors most at risk. Researchers report “JadePuffer,” described as a ransomware attack run end-to-end by an AI agent that broke in through the exploited Langflow flaw. Separately, federal cybersecurity agencies in the United States, the United Kingdom, Europe, Australia, and New Zealand warn that Russian state-backed hackers known as Laundry Bear are exploiting a Zimbra Collaboration Suite webmail flaw in zero-click phishing attacks, with research from Palo Alto Networks’ Unit 42 finding financial organizations among the sectors targeted.",
@@ -1543,6 +1554,15 @@
           "src": "BleepingComputer",
           "srcUrl": "https://www.bleepingcomputer.com/news/security/vmware-fixes-three-critical-flaws-allowing-auth-bypass-vm-escapes/",
           "line": "BleepingComputer reports that Broadcom has released security updates for five vulnerabilities in VMware's vCenter, ESX, Workstation, and Fusion products, including three critical flaws that let attackers bypass authentication, execute code, or escape a virtual machine to reach the host system, and says organizations on unpatched versions should assume they are vulnerable and act immediately."
+        },
+        {
+          "date": "Jul 31, 26",
+          "st": "confirmed",
+          "ver": "v105",
+          "id": "L-0266",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/eset-tracks-rise-in-malicious-ai-skills-and-adaptable-malware/",
+          "line": "BleepingComputer reports that ESET's new threat report tracks a rise in criminals adapting established techniques to artificial intelligence (AI) platforms, including malicious AI skills, AI-assisted malware, ClickFix attacks, record levels of quishing (QR-code phishing) activity, and ransomware tools built to disable security software."
         }
       ],
       "sources": [
@@ -5877,6 +5897,14 @@
       "line": "Dark Reading reports that Interpol leverages a global system to curtail fraud payments, noting that when a fraudulent transaction occurs, law enforcement agencies must work quickly to halt payments before criminals cash out.",
       "src": "Dark Reading",
       "srcUrl": "https://www.darkreading.com/cybersecurity-operations/interpol-leverages-global-system-curtail-fraud-payments"
+    },
+    {
+      "d": "2026-07-31",
+      "p": "cyber",
+      "id": "L-0266",
+      "line": "BleepingComputer reports that ESET's new threat report tracks a rise in criminals adapting established techniques to artificial intelligence (AI) platforms, including malicious AI skills, AI-assisted malware, ClickFix attacks, record levels of quishing (QR-code phishing) activity, and ransomware tools built to disable security software.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/eset-tracks-rise-in-malicious-ai-skills-and-adaptable-malware/"
     }
   ],
   "takeaways": [
@@ -6531,7 +6559,7 @@
       {
         "no": "17",
         "date": "Fri, Jul 31, 2026",
-        "confirmed": "4",
+        "confirmed": "5",
         "pending": "0",
         "flash": "—",
         "linked": true
