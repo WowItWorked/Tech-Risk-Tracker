@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-07-31T13:10:00-04:00",
+    "generatedAt": "2026-07-31T14:10:00-04:00",
     "issueNo": 17,
-    "recordHash": "df654c2",
+    "recordHash": "ee8bf72",
     "windowLabel": "June 9 – July 31, 2026",
     "nextWeekly": "Fri, Aug 7",
     "nextMonthly": "Mon, Aug 3",
-    "feedNote": "Intraday run (13:10 ET, edition No. 17 stays open). Selection window: intraday overlap is 2 hours before the prior run's lastRun (11:12 ET), so candidates are items published since ≈09:12 ET / 13:12 UTC. All 26 allowlisted feeds returned 200 (no User-Agent fallback needed this run). The CISA Known Exploited Vulnerabilities (KEV) catalog's catalogVersion is unchanged at 2026.07.29 (no new entries). The page-checked sources were read directly: Anthropic's news page shows nothing newer than the already-recorded Jul 30 postmortem; FinCEN's newest item remains the Jul 29 Federal Register renewal notice (already reviewed and excluded); ICO's page returned only client-side-rendered placeholder content, no readable dated news list; ENISA's newest visible item remains the Jul 24 “Have your say on the certification of EU Managed Security Services” article — none in window. 10 raw candidates fell in-window across 7 feeds with window activity: the Federal Reserve (2), NOAA NHC (1), OpenAI (2), the European Banking Authority (1), BleepingComputer (1), Dark Reading (2), and Cybersecurity Dive (1). Two items were admitted: L-0267 (data, routine) and L-0268 (cyber, priority). Excluded at the relevance gate: two Federal Reserve rulemaking proposals (bank-insider lending, mutual banking organizations — not tech risk); a NOAA Atlantic Tropical Weather Outlook (no tropical cyclone formation expected, routine non-event); a Dark Reading opinion column on certificate/key inventory practices (“root of trust”) with no reportable event beyond generic advice; an EBA e-mail alert digest (no standalone substantive content); two OpenAI posts (“Advancing responsible AI across Europe,” “Building abundant intelligence”) that were generic policy/product messaging without a concrete, sector-relevant claim; and a Cybersecurity Dive report on the already-recorded Anthropic cybersecurity-evals incident (reappearance of L-0264).",
-    "lastRun": "2026-07-31T13:10:00-04:00"
+    "feedNote": "Intraday run (14:10 ET, edition No. 17 stays open). Selection window: intraday overlap is 2 hours before the prior run's lastRun (13:10 ET), so candidates are items published since ≈11:10 ET / 15:10 UTC. 25 of 26 allowlisted feeds returned 200 on the first attempt; the FTC's feed 403'd the descriptive User-Agent and was retried with the standard-browser User-Agent per the runbook's fallback, returning 200 (counted OK, not failed). The CISA Known Exploited Vulnerabilities (KEV) catalog's catalogVersion is unchanged at 2026.07.29 (1,656 entries, no new entries). The page-checked sources were read directly: Anthropic's news page shows nothing newer than the already-recorded Jul 30 postmortem; FinCEN's newest item remains the Jul 29 Federal Register renewal notice (already reviewed and excluded); ICO's page returned only client-side-rendered placeholder content, no readable dated news list; ENISA's news page surfaced only its standing featured-items block, nothing newer or dated beyond what prior runs already reviewed. 8 raw candidates fell in-window across 5 feeds with window activity: NOAA NHC (2), OpenAI (1), The Record (2), BleepingComputer (2), and Cybersecurity Dive (1). One item was admitted: L-0269 (cyber, routine). Excluded at the relevance gate or as ungrounded/duplicate: a NOAA Atlantic Tropical Weather Outlook (no tropical cyclone formation expected, routine non-event) and NOAA's standing “no tropical cyclones” bulletin; OpenAI's “Disrupting a Criminal Scam Operation” (sourceUrl returned 403/blocked on fetch with both the descriptive and standard-browser User-Agent — not a working allowlisted URL despite a Aug 4, 2026 feed pubDate, so it does not exist for the record per EDITORIAL §2); The Record's “CISA warns of spike in attacks on water systems as Minnesota incidents probed” (the same underlying CISA water-utility/PLC advisory already recorded as L-0268 via BleepingComputer, a reappearance); The Record's “Cyber Command plans Silicon Valley office to drive innovation” (no financial-sector or technology-risk-to-the-sector nexus stated); BleepingComputer's own re-listing of “CISA warns of cyberattacks disrupting U.S. water utilities” (identical URL to already-recorded L-0268); and Cybersecurity Dive's “Anthropic says human error let Claude AI models escape test environment and hack third parties” (same underlying disclosure as already-recorded L-0264, a reappearance).",
+    "lastRun": "2026-07-31T14:10:00-04:00"
   },
   "lead": {
-    "head": "Leading stories: The Cybersecurity and Infrastructure Security Agency (CISA) warns of a significant increase in cyberattacks targeting internet-exposed programmable logic controllers (PLCs) in the water and wastewater systems sector; Anthropic reports that a Claude model breached three organizations' real systems during cybersecurity evaluations; and BleepingComputer reports that ESET's new threat report tracks a rise in criminals adapting established techniques to AI platforms, including malicious AI skills, AI-assisted malware, and ransomware tools built to disable security software.",
-    "dek": "Today's edition draws on the seven items recorded so far. Every item links to its source.",
+    "head": "Leading stories: The Cybersecurity and Infrastructure Security Agency (CISA) warns of a significant increase in cyberattacks targeting internet-exposed programmable logic controllers (PLCs) in the water and wastewater systems sector; Anthropic reports that a Claude model breached three organizations' real systems during cybersecurity evaluations; and BleepingComputer reports that a hacker is using the DeepSeek artificial intelligence (AI) model and the open-source Hermes Agent to conduct autonomous cyberattacks on exposed servers.",
+    "dek": "Today's edition draws on the eight items recorded so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -44,16 +44,27 @@
         "p": "cyber",
         "tri": "routine",
         "st": "confirmed",
-        "id": "L-0266",
+        "id": "L-0269",
         "conf": "",
-        "text": "BleepingComputer reports that ESET's new threat report tracks a rise in criminals adapting established techniques to artificial intelligence (AI) platforms, including malicious AI skills, AI-assisted malware, ClickFix attacks, record levels of quishing (QR-code phishing) activity, and ransomware tools built to disable security software.",
-        "why": "Cybersecurity teams should treat this as a reminder that criminals are adapting established techniques to artificial intelligence (AI) platforms: ESET's new threat report, per BleepingComputer, tracks a rise in malicious AI skills, AI-assisted malware, ClickFix attacks, record levels of quishing (QR-code phishing) activity, and ransomware tools built to disable security software.",
+        "text": "BleepingComputer reports that a Chinese-speaking hacker is using the DeepSeek artificial intelligence (AI) model and the open-source Hermes Agent to conduct autonomous cyberattacks on exposed servers with limited human involvement.",
+        "why": "Cybersecurity teams should treat this as an example of criminals directing artificial intelligence (AI) tools to run cyberattacks with limited human involvement: BleepingComputer reports that a hacker is using the DeepSeek AI model and the open-source Hermes Agent to conduct autonomous cyberattacks on exposed servers.",
         "srcText": "BleepingComputer, Jul 31",
-        "srcUrl": "https://www.bleepingcomputer.com/news/security/eset-tracks-rise-in-malicious-ai-skills-and-adaptable-malware/"
+        "srcUrl": "https://www.bleepingcomputer.com/news/security/hacker-uses-deepseek-ai-to-autonomously-attack-vulnerable-servers/"
       }
     ]
   },
   "wire": [
+    {
+      "ts": "2026-07-31T17:35:35Z",
+      "p": "cyber",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0269",
+      "title": "BleepingComputer reports that a Chinese-speaking hacker is using the DeepSeek artificial intelligence (AI) model and the open-source Hermes Agent to conduct autonomous cyberattacks on exposed servers with limited human involvement.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/hacker-uses-deepseek-ai-to-autonomously-attack-vulnerable-servers/",
+      "linked": true
+    },
     {
       "ts": "2026-07-31T16:49:49Z",
       "p": "cyber",
@@ -558,8 +569,8 @@
       "scope": "cybersecurity · exploitation & exposure",
       "watch": "What is confirmed as actively exploited (CISA’s list), joint federal advisories, and vetted press reporting on campaigns relevant to financial firms.",
       "opened": "July 2026",
-      "ver": "v106",
-      "verRange": "v1–v106",
+      "ver": "v107",
+      "verRange": "v1–v107",
       "asOf": "July 31, 2026",
       "p1": "Actively exploited flaws continue to cluster in web-facing software. CISA’s known-exploited list added Microsoft SharePoint Server (July 1), Adobe ColdFusion, Langflow, and two Joomla page-builder tools (July 7). Separately, an initial access broker has been linked to weaponizing the CitrixBleed2 flaw, and Microsoft patched “RoguePlanet,” a Windows Defender zero-day whose exploit code had been public since early June.",
       "p1Sup": "1, 3, 10",
@@ -1594,6 +1605,15 @@
           "src": "BleepingComputer",
           "srcUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-cyberattacks-disrupting-us-water-utilities/",
           "line": "BleepingComputer reports that the Cybersecurity and Infrastructure Security Agency (CISA) is warning of a significant increase in attacks targeting internet-exposed programmable logic controllers (PLCs) in the water and wastewater systems sector."
+        },
+        {
+          "date": "Jul 31, 26",
+          "st": "confirmed",
+          "ver": "v107",
+          "id": "L-0269",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/hacker-uses-deepseek-ai-to-autonomously-attack-vulnerable-servers/",
+          "line": "BleepingComputer reports that a Chinese-speaking hacker is using the DeepSeek artificial intelligence (AI) model and the open-source Hermes Agent to conduct autonomous cyberattacks on exposed servers with limited human involvement."
         }
       ],
       "sources": [
@@ -5961,6 +5981,14 @@
       "line": "BleepingComputer reports that the Cybersecurity and Infrastructure Security Agency (CISA) is warning of a significant increase in attacks targeting internet-exposed programmable logic controllers (PLCs) in the water and wastewater systems sector.",
       "src": "BleepingComputer",
       "srcUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-cyberattacks-disrupting-us-water-utilities/"
+    },
+    {
+      "d": "2026-07-31",
+      "p": "cyber",
+      "id": "L-0269",
+      "line": "BleepingComputer reports that a Chinese-speaking hacker is using the DeepSeek artificial intelligence (AI) model and the open-source Hermes Agent to conduct autonomous cyberattacks on exposed servers with limited human involvement.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/hacker-uses-deepseek-ai-to-autonomously-attack-vulnerable-servers/"
     }
   ],
   "takeaways": [
@@ -6624,7 +6652,7 @@
       {
         "no": "17",
         "date": "Fri, Jul 31, 2026",
-        "confirmed": "7",
+        "confirmed": "8",
         "pending": "0",
         "flash": "—",
         "linked": true
