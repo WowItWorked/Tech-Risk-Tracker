@@ -2,21 +2,33 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-08-03T12:10:00-04:00",
+    "generatedAt": "2026-08-03T13:15:00-04:00",
     "issueNo": 18,
-    "recordHash": "2d314a8",
+    "recordHash": "3e734d2",
     "windowLabel": "July 9 – August 3, 2026",
     "nextWeekly": "Fri, Aug 7",
     "nextMonthly": "Tue, Sep 1",
-    "feedNote": "Intraday update (12:10 ET, edition No. 18 stays open). Selection window: 2 hours before the prior run's lastRun (09:15 ET), so candidates are items published since ≈07:15 ET / 11:15 UTC. 27 of 27 allowlisted feeds returned 200 (26 on the first attempt; the FTC's feed 403'd the descriptive User-Agent and was retried with the standard-browser User-Agent per the runbook's fallback, returning 200, counted OK). The CISA Known Exploited Vulnerabilities (KEV) catalog's catalogVersion is unchanged at 2026.07.29 (1,656 entries, no new entries). NIST's feed again returned an empty channel (known behavior). The page-checked sources were read directly: Anthropic's news page shows nothing newer than the already-recorded Jul 30 postmortem; FinCEN's newsroom page shows nothing newer than the UBS penalty already admitted this morning; ICO's page returned only client-side-rendered placeholder content; ENISA's news page surfaced only its standing featured-items block. A Department of Justice press release reporting the sentencing of a man for violently robbing six banks in the Chicago suburbs was admitted (physical, routine).",
-    "lastRun": "2026-08-03T12:10:00-04:00"
+    "feedNote": "Intraday update (13:15 ET, edition No. 18 stays open). Selection window: 2 hours before the prior run's lastRun (12:10 ET), so candidates are items published since ≈10:10 ET / 14:10 UTC. 27 of 27 allowlisted feeds returned 200 (25 on the first attempt with the descriptive User-Agent; the FTC's feed 403'd and was retried with the standard-browser User-Agent per the runbook's fallback, returning 200, counted OK; the Federal Register FinCEN-documents feed returned a connection error on the first attempt and returned 200 on an immediate retry with the same descriptive User-Agent, counted OK). The CISA Known Exploited Vulnerabilities (KEV) catalog's catalogVersion is unchanged at 2026.07.29 (1,656 entries, no new entries). NIST's feed again returned an empty channel (known behavior, not a failure). The page-checked sources were read directly: Anthropic's news page shows nothing newer than the already-recorded Jul 30 postmortem; FinCEN's newsroom page shows nothing newer than the UBS penalty already admitted this morning; ICO's page returned only client-side-rendered placeholder content; ENISA's news page surfaced only its standing featured-items block. DOJ's 25-entry list (reviewed in full per the standing placeholder-noon-UTC-pubDate convention) surfaced two new items: a civil forfeiture action to recover insider-trading proceeds (fraud, routine) and a federal indictment on 17 counts of bank fraud and 19 counts of money laundering (fraud, routine). BleepingComputer's report of active exploitation of an authentication bypass flaw in N-able's N-central remote monitoring and management (RMM) platform was also admitted (third-party risk, flash).",
+    "lastRun": "2026-08-03T13:15:00-04:00"
   },
   "lead": {
-    "head": "Leading stories: the Financial Crimes Enforcement Network (FinCEN) assessed a historic $125 million penalty against UBS Financial Services Inc. for willful, repeat violations of the Bank Secrecy Act; a flaw in COLDCARD hardware wallet firmware is likely linked to an estimated $88.6 million in stolen Bitcoin; and a federal judge sentenced a man to 14 years in prison for violently robbing six banks in the Chicago suburbs.",
-    "dek": "Today's edition has recorded five items so far. Every item links to its source.",
+    "head": "Leading stories: N-able warns that hackers are actively exploiting an authentication bypass flaw in its N-central remote monitoring and management (RMM) platform used by managed service providers (MSPs); the Financial Crimes Enforcement Network (FinCEN) assessed a historic $125 million penalty against UBS Financial Services Inc. for willful, repeat violations of the Bank Secrecy Act; and a flaw in COLDCARD hardware wallet firmware is likely linked to an estimated $88.6 million in stolen Bitcoin.",
+    "dek": "Today's edition has recorded eight items so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
+        "p": "tp",
+        "tri": "flash",
+        "st": "confirmed",
+        "id": "L-0281",
+        "conf": "",
+        "text": "BleepingComputer reports that N-able is warning customers that hackers are exploiting an authentication bypass vulnerability, tracked as CVE-2026-18577, in its N-central remote monitoring and management (RMM) platform, used by managed service providers (MSPs) and corporate IT departments, and has released a hotfix to address it.",
+        "why": "Third-party-risk and technology teams should note that criminals are actively exploiting an authentication-bypass flaw in a remote monitoring and management (RMM) platform used by managed service providers (MSPs) and corporate IT departments: BleepingComputer reports that N-able is warning customers that hackers are exploiting an authentication bypass vulnerability, tracked as CVE-2026-18577, in its N-central platform, and has released a hotfix to address it.",
+        "srcText": "BleepingComputer, Aug 3",
+        "srcUrl": "https://www.bleepingcomputer.com/news/security/n-able-warns-of-n-central-auth-bypass-flaw-exploited-in-attacks/"
+      },
+      {
+        "n": "2",
         "p": "fraud",
         "tri": "priority",
         "st": "confirmed",
@@ -28,7 +40,7 @@
         "srcUrl": "https://www.fincen.gov/news/news-releases/fincen-assesses-historic-125-million-penalty-against-ubs-financial-services-inc"
       },
       {
-        "n": "2",
+        "n": "3",
         "p": "fraud",
         "tri": "priority",
         "st": "confirmed",
@@ -38,22 +50,43 @@
         "why": "Fraud and third-party-risk teams should treat this as a reminder that hardware-wallet random-number-generator flaws can be catastrophic at scale: BleepingComputer reports that a vulnerability in COLDCARD hardware wallet firmware is likely linked to the theft of an estimated $88.6 million in Bitcoin from thousands of wallets whose seeds were generated using a flawed random number generator.",
         "srcText": "BleepingComputer, Aug 2",
         "srcUrl": "https://www.bleepingcomputer.com/news/security/coldcard-wallet-rng-flaw-likely-linked-to-88-million-bitcoin-theft/"
-      },
-      {
-        "n": "3",
-        "p": "physical",
-        "tri": "routine",
-        "st": "confirmed",
-        "id": "L-0279",
-        "conf": "",
-        "text": "A Department of Justice press release reports that German Campos Jr. was sentenced to 14 years in federal prison for violently robbing six banks in the Chicago suburbs in 2023 and 2024.",
-        "why": "Physical-security and branch-operations teams should note that violent robbery of bank branches continues to draw lengthy federal sentences: a Department of Justice press release reports that German Campos Jr. was sentenced to 14 years in federal prison for violently robbing six banks in the Chicago suburbs in 2023 and 2024.",
-        "srcText": "DOJ press release, Aug 3",
-        "srcUrl": "https://www.justice.gov/usao-ndil/pr/federal-judge-sentences-man-14-years-prison-violently-robbing-six-banks-chicago"
       }
     ]
   },
   "wire": [
+    {
+      "ts": "2026-08-03T17:00:56Z",
+      "p": "tp",
+      "tri": "flash",
+      "st": "confirmed",
+      "id": "L-0281",
+      "title": "BleepingComputer reports that N-able is warning customers that hackers are exploiting an authentication bypass vulnerability, tracked as CVE-2026-18577, affecting both hosted and on-premises N-central servers — a remote monitoring and management (RMM) platform used by managed service providers (MSPs) and corporate IT departments — and has released hotfix 2026.3.1.7 to address the issue, which affects all versions of N-central before 2026.3.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/n-able-warns-of-n-central-auth-bypass-flaw-exploited-in-attacks/",
+      "linked": true
+    },
+    {
+      "ts": "2026-08-03T12:00:00Z",
+      "p": "fraud",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0280",
+      "title": "A Department of Justice press release reports that federal prosecutors in Boston filed a civil forfeiture action to recover approximately $1.4 million ($1,413,037) in alleged proceeds of an insider trading scheme, seized from a U.S.-based brokerage account held in the name of Zhi Ge, of Singapore.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-ma/pr/united-states-attorneys-office-files-civil-forfeiture-action-recover-approximately-14",
+      "linked": true
+    },
+    {
+      "ts": "2026-08-03T12:00:00Z",
+      "p": "fraud",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0282",
+      "title": "A Department of Justice press release reports that Rosemay G. Manzano, of Crestview, Florida, was indicted by a federal grand jury on 17 counts of bank fraud, 19 counts of money laundering, one count of aggravated identity theft, and five counts of filing a false tax return.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-ndfl/pr/crestview-woman-federally-indicted-fraud-offenses-totaling-over-four-million-dollars",
+      "linked": true
+    },
     {
       "ts": "2026-08-03T12:00:00Z",
       "p": "physical",
@@ -1957,8 +1990,8 @@
       "scope": "fraud · AML rulemaking & scam patterns",
       "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
       "opened": "July 2026",
-      "ver": "v47",
-      "verRange": "v1–v44",
+      "ver": "v49",
+      "verRange": "v1–v48",
       "asOf": "August 3, 2026",
       "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22). Separately, the Financial Crimes Enforcement Network (FinCEN) is extending the comment period on its proposal to expand the money-laundering-concern designation of Huione Group to include H-Pay Service PLC, after a technical issue with its comment portal blocked electronic submissions.",
       "p1Sup": "1, 3, 27",
@@ -2453,6 +2486,24 @@
           "src": "FinCEN newsroom",
           "srcUrl": "https://www.fincen.gov/news/news-releases/fincen-assesses-historic-125-million-penalty-against-ubs-financial-services-inc",
           "line": "The Financial Crimes Enforcement Network (FinCEN) assesses a historic $125 million civil penalty against UBS Financial Services Inc. for willful, repeat violations of the Bank Secrecy Act (BSA) — the largest such penalty ever imposed on a broker-dealer."
+        },
+        {
+          "date": "Aug 3, 26",
+          "st": "confirmed",
+          "ver": "v48",
+          "id": "L-0280",
+          "src": "DOJ press release",
+          "srcUrl": "https://www.justice.gov/usao-ma/pr/united-states-attorneys-office-files-civil-forfeiture-action-recover-approximately-14",
+          "line": "A Department of Justice press release reports that federal prosecutors in Boston filed a civil forfeiture action to recover approximately $1.4 million ($1,413,037) in alleged proceeds of an insider trading scheme, seized from a U.S.-based brokerage account held in the name of Zhi Ge, of Singapore."
+        },
+        {
+          "date": "Aug 3, 26",
+          "st": "confirmed",
+          "ver": "v49",
+          "id": "L-0282",
+          "src": "DOJ press release",
+          "srcUrl": "https://www.justice.gov/usao-ndfl/pr/crestview-woman-federally-indicted-fraud-offenses-totaling-over-four-million-dollars",
+          "line": "A Department of Justice press release reports that Rosemay G. Manzano, of Crestview, Florida, was indicted by a federal grand jury on 17 counts of bank fraud, 19 counts of money laundering, one count of aggravated identity theft, and five counts of filing a false tax return."
         }
       ],
       "sources": [
@@ -2595,6 +2646,16 @@
           "n": "28",
           "text": "FinCEN — $125M penalty against UBS Financial Services for recidivist BSA violations, Aug 3, 2026",
           "url": "https://www.fincen.gov/news/news-releases/fincen-assesses-historic-125-million-penalty-against-ubs-financial-services-inc"
+        },
+        {
+          "n": "29",
+          "text": "DOJ — civil forfeiture of ~$1.4M insider-trading proceeds, USAO-MA, Aug 3, 2026",
+          "url": "https://www.justice.gov/usao-ma/pr/united-states-attorneys-office-files-civil-forfeiture-action-recover-approximately-14"
+        },
+        {
+          "n": "30",
+          "text": "DOJ — Crestview, FL woman indicted on 17 counts of bank fraud, USAO-NDFL, Aug 3, 2026",
+          "url": "https://www.justice.gov/usao-ndfl/pr/crestview-woman-federally-indicted-fraud-offenses-totaling-over-four-million-dollars"
         }
       ],
       "related": [
@@ -2645,9 +2706,9 @@
       "scope": "third-party risk · vendor software & supply chain",
       "watch": "Vendor tools under active attack, software-supply-chain compromises aimed at financial applications, and vendor incident disclosures.",
       "opened": "July 2026",
-      "ver": "v23",
+      "ver": "v24",
       "verRange": "v1–v23",
-      "asOf": "July 31, 2026",
+      "asOf": "August 3, 2026",
       "p1": "One vendor-channel exploit is confirmed this window: SimpleHelp, a remote-support tool, carries an authentication-bypass flaw on CISA’s known-exploited list — in a vulnerable configuration, a remote, unauthenticated attacker can log in with a forged token. Separately, the UK Financial Conduct Authority (FCA) says the UK government has designated the first ‘critical third parties’ (CTPs) under a new oversight regime, with the Bank of England, the Prudential Regulation Authority (PRA), and the FCA now directly overseeing the resilience of services these providers offer to UK financial firms and financial market infrastructures (FMIs).",
       "p1Sup": "1, 14, 15",
       "p2": "The rest of the vendor picture clusters around the software supply chain: a claimed breach at consulting firm Accenture said to involve source code and encryption keys, and malicious look-alike software kits for the Paysafe, Skrill, and Neteller payment applications on public code registries. Separately, Ernst & Young — one of the world’s four largest auditing and professional-services firms — is notifying customers of a data breach after its own support-ticket system was compromised, with documents containing client tax information among what the tickets may have held.",
@@ -2907,6 +2968,15 @@
           "src": "Dark Reading",
           "srcUrl": "https://www.darkreading.com/cybersecurity-operations/cisa-issues-fresh-sbom-guidance",
           "line": "Dark Reading reports that the Cybersecurity and Infrastructure Security Agency (CISA) issued new software bill of materials (SBOM) guidance making a couple-dozen changes to SBOM fields to make them more comprehensive, though some critics argue the framework lacks real risk-management improvements."
+        },
+        {
+          "date": "Aug 3, 26",
+          "st": "confirmed",
+          "ver": "v24",
+          "id": "L-0281",
+          "src": "BleepingComputer",
+          "srcUrl": "https://www.bleepingcomputer.com/news/security/n-able-warns-of-n-central-auth-bypass-flaw-exploited-in-attacks/",
+          "line": "BleepingComputer reports that N-able is warning customers that hackers are exploiting an authentication bypass vulnerability, tracked as CVE-2026-18577, affecting both hosted and on-premises N-central servers — a remote monitoring and management (RMM) platform used by managed service providers (MSPs) and corporate IT departments — and has released hotfix 2026.3.1.7 to address the issue, which affects all versions of N-central before 2026.3."
         }
       ],
       "sources": [
@@ -2984,6 +3054,11 @@
           "n": "15",
           "text": "UK Financial Conduct Authority (FCA) — Critical Third Parties oversight regime blog, Jul 28, 2026",
           "url": "https://www.fca.org.uk/news/blogs/strengthening-resilience-across-increasingly-interconnected-financial-system"
+        },
+        {
+          "n": "16",
+          "text": "BleepingComputer — N-able N-central auth-bypass flaw (CVE-2026-18577) actively exploited, Aug 3, 2026",
+          "url": "https://www.bleepingcomputer.com/news/security/n-able-warns-of-n-central-auth-bypass-flaw-exploited-in-attacks/"
         }
       ],
       "related": [
@@ -6141,9 +6216,42 @@
       "line": "A Department of Justice press release reports that German Campos Jr. was sentenced to 14 years in federal prison for violently robbing six banks in the Chicago suburbs in 2023 and 2024.",
       "src": "DOJ press release",
       "srcUrl": "https://www.justice.gov/usao-ndil/pr/federal-judge-sentences-man-14-years-prison-violently-robbing-six-banks-chicago"
+    },
+    {
+      "d": "2026-08-03",
+      "p": "fraud",
+      "id": "L-0280",
+      "line": "A Department of Justice press release reports that federal prosecutors in Boston filed a civil forfeiture action to recover approximately $1.4 million ($1,413,037) in alleged proceeds of an insider trading scheme, seized from a U.S.-based brokerage account held in the name of Zhi Ge, of Singapore.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-ma/pr/united-states-attorneys-office-files-civil-forfeiture-action-recover-approximately-14"
+    },
+    {
+      "d": "2026-08-03",
+      "p": "tp",
+      "id": "L-0281",
+      "line": "BleepingComputer reports that N-able is warning customers that hackers are exploiting an authentication bypass vulnerability, tracked as CVE-2026-18577, affecting both hosted and on-premises N-central servers — a remote monitoring and management (RMM) platform used by managed service providers (MSPs) and corporate IT departments — and has released hotfix 2026.3.1.7 to address the issue, which affects all versions of N-central before 2026.3.",
+      "src": "BleepingComputer",
+      "srcUrl": "https://www.bleepingcomputer.com/news/security/n-able-warns-of-n-central-auth-bypass-flaw-exploited-in-attacks/"
+    },
+    {
+      "d": "2026-08-03",
+      "p": "fraud",
+      "id": "L-0282",
+      "line": "A Department of Justice press release reports that Rosemay G. Manzano, of Crestview, Florida, was indicted by a federal grand jury on 17 counts of bank fraud, 19 counts of money laundering, one count of aggravated identity theft, and five counts of filing a false tax return.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-ndfl/pr/crestview-woman-federally-indicted-fraud-offenses-totaling-over-four-million-dollars"
     }
   ],
   "takeaways": [
+    {
+      "anchors": [
+        "L-0281"
+      ],
+      "pillars": "Third-party risk",
+      "conf": "high confidence",
+      "head": "If your organization or its managed service provider (MSP) runs N-able's N-central platform, apply hotfix 2026.3.1.7 immediately — N-able is warning that hackers are actively exploiting an authentication bypass flaw (CVE-2026-18577) affecting all N-central versions before 2026.3.",
+      "body": "BleepingComputer reports that N-able is warning customers that hackers are exploiting an authentication bypass vulnerability, tracked as CVE-2026-18577, affecting both hosted and on-premises N-central servers, a remote monitoring and management (RMM) platform used by managed service providers (MSPs) and corporate IT departments. The company released hotfix 2026.3.1.7, which addresses all versions of N-central before 2026.3. Third-party-risk and technology teams whose organization or vendors run N-central should apply the hotfix without delay."
+    },
     {
       "anchors": [
         "L-0276"
@@ -6813,7 +6921,7 @@
       {
         "no": "18",
         "date": "Mon, Aug 3, 2026",
-        "confirmed": "5",
+        "confirmed": "8",
         "pending": "0",
         "flash": "—",
         "linked": true
