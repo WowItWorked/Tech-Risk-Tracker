@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-08-03T14:16:00-04:00",
+    "generatedAt": "2026-08-03T17:18:50-04:00",
     "issueNo": 18,
-    "recordHash": "25ce1a8",
+    "recordHash": "7f473ac",
     "windowLabel": "July 9 – August 3, 2026",
     "nextWeekly": "Fri, Aug 7",
     "nextMonthly": "Tue, Sep 1",
-    "feedNote": "Intraday update (14:16 ET, edition No. 18 stays open). Selection window: 2 hours before the prior run's lastRun (13:15 ET), so candidates are items published since ≈11:15 ET / 15:15 UTC. 27 of 27 allowlisted feeds returned 200 (25 on the first attempt with the descriptive User-Agent; the FBI IC3 feed returned a connection error on the first attempt and returned 200 on an immediate retry with the same descriptive User-Agent, counted OK; the FTC's feed 403'd and was retried with the standard-browser User-Agent per the runbook's fallback, returning 200, counted OK). The CISA Known Exploited Vulnerabilities (KEV) catalog's catalogVersion is unchanged at 2026.07.29 (1,656 entries, no new entries). NIST's feed again returned an empty channel (known behavior, not a failure). The page-checked sources were read directly: Anthropic's news page shows nothing newer than the already-recorded Jul 30 postmortem; FinCEN's newsroom page shows nothing newer than the UBS penalty already admitted this morning; ICO's page returned only client-side-rendered placeholder content; ENISA's news page surfaced only its standing featured-items block. DOJ's 25-entry list (reviewed in full per the standing placeholder-noon-UTC-pubDate convention) surfaced one new item: a Bronx, New York man sentenced to 58 months in prison for a multi-state identity theft and bank fraud ring, after pleading guilty to conspiracy to commit bank fraud (fraud, routine); the Chicago-suburbs bank-robbery sentencing (L-0279) reappeared unchanged. The Record reported that hackers gained access to Liechtenstein's Register of Beneficial Owners and stole 31,000 records identifying people behind companies, foundations, and trusts in the country — a registry created under European Union anti-money-laundering and financial-transparency rules — also admitted (data risk, priority). Excluded at the relevance gate or as reappearances: OCC's proposed rulemaking on the disclosure of its own records (reappearance, already excluded at 13:15 ET); NOAA NHC's Atlantic Tropical Weather Outlook (tropical cyclone formation not expected in the next 7 days, routine non-event); BleepingComputer's N-able N-central report (identical URL already recorded as L-0281 at 13:15 ET); Dark Reading's “Chinese Actor Weaponizes Deepseek AI Agent to Attack Security Firm” and Cybersecurity Dive's “China-based hacker employs DeepSeek in autonomous threat campaign” (both reappearances of the DeepSeek/Hermes-Agent story already recorded as L-0269, re-excluded at both the 12:10 ET and 13:15 ET runs); and Cybersecurity Dive's “OT security coalition urges Congress, CISA to enact reforms amid water sector hacks” (reappearance of the water-sector story already excluded at 12:10 ET and 13:15 ET, no financial-sector nexus).",
-    "lastRun": "2026-08-03T14:16:00-04:00"
+    "feedNote": "Intraday update (17:18 ET, edition No. 18 stays open). Selection window: 2 hours before the prior run's lastRun (14:16 ET), so candidates are items published since ≈12:16 ET / 16:16 UTC. 27 of 27 allowlisted feeds returned 200 (all 27 on the first attempt with the descriptive User-Agent, except the FTC's feed, which 403'd and was retried with the standard-browser User-Agent per the runbook's fallback, returning 200, counted OK). The CISA Known Exploited Vulnerabilities (KEV) catalog advanced to catalogVersion 2026.08.03 (1,657 entries, +1), adding CVE-2026-18577 (N-able N-central authentication bypass) — the same flaw already recorded as L-0281; this is corroboration of an already-admitted item, not a new one. NIST's feed again returned an empty channel (known behavior, not a failure). The page-checked sources were read directly: Anthropic's news page shows nothing newer than the already-recorded Jul 30 postmortem; FinCEN's newsroom page shows nothing newer than the UBS penalty already admitted this morning; ICO's page returned only client-side-rendered placeholder content; ENISA's news page surfaced only its standing featured-items block. DOJ's list (reviewed in full per the standing placeholder-noon-UTC-pubDate convention) surfaced four new items, all admitted (fraud, routine): a Fayetteville resident charged in a pandemic relief scam involving nearly $1 million; three Romanian nationals sentenced to more than 11 years for an ATM skimming scheme; a Los Angeles man who pleaded guilty to money laundering for a role in a “phantom hacker” scheme targeting elderly victims; and a Silver Spring, Maryland woman sentenced to 40 months for wire fraud and aggravated identity theft in an unemployment insurance fraud scheme. Excluded at the relevance gate or as reappearances: OCC Bulletin 2026-37, a proposed rulemaking on the disclosure of OCC's own records (same non-risk administrative subject already excluded earlier today); The Record's follow-up on the Liechtenstein Register of Beneficial Owners breach (identical URL already recorded as L-0284) and its follow-up on the COLDCARD hardware-wallet theft (already recorded as L-0275); BleepingComputer's N-able N-central report (identical URL already recorded as L-0281); BleepingComputer's DOUBLECUP ClickFix loader-as-a-service report and its fake-Roblox-launcher malware report (no financial-sector nexus stated in the excerpt); Dark Reading's AI-video-provenance tool report (no financial-sector nexus stated); Dark Reading's follow-up commentary on Anthropic's Claude cybersecurity-evals postmortem (reappearance of the event already recorded as L-0264); and NOAA NHC's Atlantic Tropical Weather Outlook (tropical cyclone formation not expected, routine non-event).",
+    "lastRun": "2026-08-03T17:18:50-04:00"
   },
   "lead": {
     "head": "Leading stories: N-able warns that hackers are actively exploiting an authentication bypass flaw in its N-central remote monitoring and management (RMM) platform used by managed service providers (MSPs); hackers stole 31,000 records from Liechtenstein's Register of Beneficial Owners, a registry built under European Union anti-money-laundering rules; and the Financial Crimes Enforcement Network (FinCEN) assessed a historic $125 million penalty against UBS Financial Services Inc. for willful, repeat violations of the Bank Secrecy Act.",
-    "dek": "Today's edition has recorded ten items so far. Every item links to its source.",
+    "dek": "Today's edition has recorded 14 items so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -74,6 +74,50 @@
       "title": "BleepingComputer reports that N-able is warning customers that hackers are exploiting an authentication bypass vulnerability, tracked as CVE-2026-18577, affecting both hosted and on-premises N-central servers — a remote monitoring and management (RMM) platform used by managed service providers (MSPs) and corporate IT departments — and has released hotfix 2026.3.1.7 to address the issue, which affects all versions of N-central before 2026.3.",
       "src": "BleepingComputer",
       "srcUrl": "https://www.bleepingcomputer.com/news/security/n-able-warns-of-n-central-auth-bypass-flaw-exploited-in-attacks/",
+      "linked": true
+    },
+    {
+      "ts": "2026-08-03T12:00:00Z",
+      "p": "fraud",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0285",
+      "title": "A Department of Justice press release reports that a Fayetteville resident has been charged in connection with a pandemic relief scam involving nearly $1 million.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-ednc/pr/fayetteville-resident-charged-nearly-1-million-pandemic-relief-scam",
+      "linked": true
+    },
+    {
+      "ts": "2026-08-03T12:00:00Z",
+      "p": "fraud",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0286",
+      "title": "A Department of Justice press release reports that three Romanian nationals were collectively sentenced to more than 11 years in federal prison for their roles in an ATM “skimming” scheme.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-wdok/pr/romanian-alien-trio-collectively-sentenced-more-11-years-federal-prison-atm-skimming",
+      "linked": true
+    },
+    {
+      "ts": "2026-08-03T12:00:00Z",
+      "p": "fraud",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0287",
+      "title": "A Department of Justice press release reports that Ajay Kumar, 24, of Los Angeles, California, pleaded guilty to conspiracy to commit money laundering for his role in a “phantom hacker” scheme targeting elderly victims, with sentencing scheduled for October 8, 2026.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-az/pr/california-man-pleads-guilty-role-phantom-hacker-scheme-targeting-elderly-victims",
+      "linked": true
+    },
+    {
+      "ts": "2026-08-03T12:00:00Z",
+      "p": "fraud",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0288",
+      "title": "A Department of Justice press release reports that Elizabeth Maria Ceballos, 50, of Silver Spring, Maryland, was sentenced to 40 months in federal prison, followed by two years of supervised release, for conspiracy to commit wire fraud and aggravated identity theft in connection with an unemployment insurance fraud scheme.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-md/pr/silver-spring-woman-sentenced-more-three-years-federal-prison-role-covid-fraud-scheme",
       "linked": true
     },
     {
@@ -2012,7 +2056,7 @@
       "scope": "fraud · AML rulemaking & scam patterns",
       "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
       "opened": "July 2026",
-      "ver": "v50",
+      "ver": "v54",
       "verRange": "v1–v49",
       "asOf": "August 3, 2026",
       "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22). Separately, the Financial Crimes Enforcement Network (FinCEN) is extending the comment period on its proposal to expand the money-laundering-concern designation of Huione Group to include H-Pay Service PLC, after a technical issue with its comment portal blocked electronic submissions.",
@@ -2535,6 +2579,42 @@
           "src": "DOJ press release",
           "srcUrl": "https://www.justice.gov/usao-az/pr/bronx-man-sentenced-58-months-prison-multi-state-identify-theft-and-bank-fraud-ring",
           "line": "A Department of Justice press release reports that Richard Modou Bah, of the Bronx, New York, was sentenced to 58 months in prison after pleading guilty to conspiracy to commit bank fraud as part of a multi-state identity theft and bank fraud ring."
+        },
+        {
+          "date": "Aug 3, 26",
+          "st": "confirmed",
+          "ver": "v51",
+          "id": "L-0285",
+          "src": "DOJ press release",
+          "srcUrl": "https://www.justice.gov/usao-ednc/pr/fayetteville-resident-charged-nearly-1-million-pandemic-relief-scam",
+          "line": "A Department of Justice press release reports that a Fayetteville resident has been charged in connection with a pandemic relief scam involving nearly $1 million."
+        },
+        {
+          "date": "Aug 3, 26",
+          "st": "confirmed",
+          "ver": "v52",
+          "id": "L-0286",
+          "src": "DOJ press release",
+          "srcUrl": "https://www.justice.gov/usao-wdok/pr/romanian-alien-trio-collectively-sentenced-more-11-years-federal-prison-atm-skimming",
+          "line": "A Department of Justice press release reports that three Romanian nationals were collectively sentenced to more than 11 years in federal prison for their roles in an ATM “skimming” scheme."
+        },
+        {
+          "date": "Aug 3, 26",
+          "st": "confirmed",
+          "ver": "v53",
+          "id": "L-0287",
+          "src": "DOJ press release",
+          "srcUrl": "https://www.justice.gov/usao-az/pr/california-man-pleads-guilty-role-phantom-hacker-scheme-targeting-elderly-victims",
+          "line": "A Department of Justice press release reports that Ajay Kumar, 24, of Los Angeles, California, pleaded guilty to conspiracy to commit money laundering for his role in a “phantom hacker” scheme targeting elderly victims, with sentencing scheduled for October 8, 2026."
+        },
+        {
+          "date": "Aug 3, 26",
+          "st": "confirmed",
+          "ver": "v54",
+          "id": "L-0288",
+          "src": "DOJ press release",
+          "srcUrl": "https://www.justice.gov/usao-md/pr/silver-spring-woman-sentenced-more-three-years-federal-prison-role-covid-fraud-scheme",
+          "line": "A Department of Justice press release reports that Elizabeth Maria Ceballos, 50, of Silver Spring, Maryland, was sentenced to 40 months in federal prison, followed by two years of supervised release, for conspiracy to commit wire fraud and aggravated identity theft in connection with an unemployment insurance fraud scheme."
         }
       ],
       "sources": [
@@ -6306,6 +6386,38 @@
       "line": "The Record reports that hackers gained access to Liechtenstein's Register of Beneficial Owners and stole 31,000 records identifying people behind companies, foundations, and trusts in the country — a registry created in 2021 under European Union rules on money laundering and financial transparency — prompting the government to form a crisis unit to address the breach.",
       "src": "The Record",
       "srcUrl": "https://therecord.media/hackers-steal-records-liechtenstein-companies-foundations"
+    },
+    {
+      "d": "2026-08-03",
+      "p": "fraud",
+      "id": "L-0285",
+      "line": "A Department of Justice press release reports that a Fayetteville resident has been charged in connection with a pandemic relief scam involving nearly $1 million.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-ednc/pr/fayetteville-resident-charged-nearly-1-million-pandemic-relief-scam"
+    },
+    {
+      "d": "2026-08-03",
+      "p": "fraud",
+      "id": "L-0286",
+      "line": "A Department of Justice press release reports that three Romanian nationals were collectively sentenced to more than 11 years in federal prison for their roles in an ATM “skimming” scheme.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-wdok/pr/romanian-alien-trio-collectively-sentenced-more-11-years-federal-prison-atm-skimming"
+    },
+    {
+      "d": "2026-08-03",
+      "p": "fraud",
+      "id": "L-0287",
+      "line": "A Department of Justice press release reports that Ajay Kumar, 24, of Los Angeles, California, pleaded guilty to conspiracy to commit money laundering for his role in a “phantom hacker” scheme targeting elderly victims, with sentencing scheduled for October 8, 2026.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-az/pr/california-man-pleads-guilty-role-phantom-hacker-scheme-targeting-elderly-victims"
+    },
+    {
+      "d": "2026-08-03",
+      "p": "fraud",
+      "id": "L-0288",
+      "line": "A Department of Justice press release reports that Elizabeth Maria Ceballos, 50, of Silver Spring, Maryland, was sentenced to 40 months in federal prison, followed by two years of supervised release, for conspiracy to commit wire fraud and aggravated identity theft in connection with an unemployment insurance fraud scheme.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-md/pr/silver-spring-woman-sentenced-more-three-years-federal-prison-role-covid-fraud-scheme"
     }
   ],
   "takeaways": [
@@ -6987,7 +7099,7 @@
       {
         "no": "18",
         "date": "Mon, Aug 3, 2026",
-        "confirmed": "10",
+        "confirmed": "14",
         "pending": "0",
         "flash": "—",
         "linked": true
