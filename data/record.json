@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-08-03T13:15:00-04:00",
+    "generatedAt": "2026-08-03T14:16:00-04:00",
     "issueNo": 18,
-    "recordHash": "3e734d2",
+    "recordHash": "25ce1a8",
     "windowLabel": "July 9 – August 3, 2026",
     "nextWeekly": "Fri, Aug 7",
     "nextMonthly": "Tue, Sep 1",
-    "feedNote": "Intraday update (13:15 ET, edition No. 18 stays open). Selection window: 2 hours before the prior run's lastRun (12:10 ET), so candidates are items published since ≈10:10 ET / 14:10 UTC. 27 of 27 allowlisted feeds returned 200 (25 on the first attempt with the descriptive User-Agent; the FTC's feed 403'd and was retried with the standard-browser User-Agent per the runbook's fallback, returning 200, counted OK; the Federal Register FinCEN-documents feed returned a connection error on the first attempt and returned 200 on an immediate retry with the same descriptive User-Agent, counted OK). The CISA Known Exploited Vulnerabilities (KEV) catalog's catalogVersion is unchanged at 2026.07.29 (1,656 entries, no new entries). NIST's feed again returned an empty channel (known behavior, not a failure). The page-checked sources were read directly: Anthropic's news page shows nothing newer than the already-recorded Jul 30 postmortem; FinCEN's newsroom page shows nothing newer than the UBS penalty already admitted this morning; ICO's page returned only client-side-rendered placeholder content; ENISA's news page surfaced only its standing featured-items block. DOJ's 25-entry list (reviewed in full per the standing placeholder-noon-UTC-pubDate convention) surfaced two new items: a civil forfeiture action to recover insider-trading proceeds (fraud, routine) and a federal indictment on 17 counts of bank fraud and 19 counts of money laundering (fraud, routine). BleepingComputer's report of active exploitation of an authentication bypass flaw in N-able's N-central remote monitoring and management (RMM) platform was also admitted (third-party risk, flash).",
-    "lastRun": "2026-08-03T13:15:00-04:00"
+    "feedNote": "Intraday update (14:16 ET, edition No. 18 stays open). Selection window: 2 hours before the prior run's lastRun (13:15 ET), so candidates are items published since ≈11:15 ET / 15:15 UTC. 27 of 27 allowlisted feeds returned 200 (25 on the first attempt with the descriptive User-Agent; the FBI IC3 feed returned a connection error on the first attempt and returned 200 on an immediate retry with the same descriptive User-Agent, counted OK; the FTC's feed 403'd and was retried with the standard-browser User-Agent per the runbook's fallback, returning 200, counted OK). The CISA Known Exploited Vulnerabilities (KEV) catalog's catalogVersion is unchanged at 2026.07.29 (1,656 entries, no new entries). NIST's feed again returned an empty channel (known behavior, not a failure). The page-checked sources were read directly: Anthropic's news page shows nothing newer than the already-recorded Jul 30 postmortem; FinCEN's newsroom page shows nothing newer than the UBS penalty already admitted this morning; ICO's page returned only client-side-rendered placeholder content; ENISA's news page surfaced only its standing featured-items block. DOJ's 25-entry list (reviewed in full per the standing placeholder-noon-UTC-pubDate convention) surfaced one new item: a Bronx, New York man sentenced to 58 months in prison for a multi-state identity theft and bank fraud ring, after pleading guilty to conspiracy to commit bank fraud (fraud, routine); the Chicago-suburbs bank-robbery sentencing (L-0279) reappeared unchanged. The Record reported that hackers gained access to Liechtenstein's Register of Beneficial Owners and stole 31,000 records identifying people behind companies, foundations, and trusts in the country — a registry created under European Union anti-money-laundering and financial-transparency rules — also admitted (data risk, priority). Excluded at the relevance gate or as reappearances: OCC's proposed rulemaking on the disclosure of its own records (reappearance, already excluded at 13:15 ET); NOAA NHC's Atlantic Tropical Weather Outlook (tropical cyclone formation not expected in the next 7 days, routine non-event); BleepingComputer's N-able N-central report (identical URL already recorded as L-0281 at 13:15 ET); Dark Reading's “Chinese Actor Weaponizes Deepseek AI Agent to Attack Security Firm” and Cybersecurity Dive's “China-based hacker employs DeepSeek in autonomous threat campaign” (both reappearances of the DeepSeek/Hermes-Agent story already recorded as L-0269, re-excluded at both the 12:10 ET and 13:15 ET runs); and Cybersecurity Dive's “OT security coalition urges Congress, CISA to enact reforms amid water sector hacks” (reappearance of the water-sector story already excluded at 12:10 ET and 13:15 ET, no financial-sector nexus).",
+    "lastRun": "2026-08-03T14:16:00-04:00"
   },
   "lead": {
-    "head": "Leading stories: N-able warns that hackers are actively exploiting an authentication bypass flaw in its N-central remote monitoring and management (RMM) platform used by managed service providers (MSPs); the Financial Crimes Enforcement Network (FinCEN) assessed a historic $125 million penalty against UBS Financial Services Inc. for willful, repeat violations of the Bank Secrecy Act; and a flaw in COLDCARD hardware wallet firmware is likely linked to an estimated $88.6 million in stolen Bitcoin.",
-    "dek": "Today's edition has recorded eight items so far. Every item links to its source.",
+    "head": "Leading stories: N-able warns that hackers are actively exploiting an authentication bypass flaw in its N-central remote monitoring and management (RMM) platform used by managed service providers (MSPs); hackers stole 31,000 records from Liechtenstein's Register of Beneficial Owners, a registry built under European Union anti-money-laundering rules; and the Financial Crimes Enforcement Network (FinCEN) assessed a historic $125 million penalty against UBS Financial Services Inc. for willful, repeat violations of the Bank Secrecy Act.",
+    "dek": "Today's edition has recorded ten items so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -29,6 +29,18 @@
       },
       {
         "n": "2",
+        "p": "data",
+        "tri": "priority",
+        "st": "confirmed",
+        "id": "L-0284",
+        "conf": "",
+        "text": "The Record reports that hackers gained access to Liechtenstein's Register of Beneficial Owners and stole 31,000 records identifying people behind companies, foundations, and trusts in the country, a registry created under European Union rules on money laundering and financial transparency.",
+        "why": "Data-risk and financial-crime compliance teams should note that a beneficial-ownership registry built under European Union anti-money-laundering and financial-transparency rules is itself now a breach target: The Record reports that hackers gained access to Liechtenstein's Register of Beneficial Owners and stole 31,000 records identifying people behind companies, foundations, and trusts in the country, prompting the government to form a crisis unit.",
+        "srcText": "The Record, Aug 3",
+        "srcUrl": "https://therecord.media/hackers-steal-records-liechtenstein-companies-foundations"
+      },
+      {
+        "n": "3",
         "p": "fraud",
         "tri": "priority",
         "st": "confirmed",
@@ -38,22 +50,21 @@
         "why": "Fraud and compliance teams should treat this as a reminder that recidivist Bank Secrecy Act (BSA) gaps draw escalating penalties: the Financial Crimes Enforcement Network (FinCEN) assessed a historic $125 million civil penalty against UBS Financial Services Inc. for willful, repeat violations of the BSA — the largest such penalty ever imposed on a broker-dealer.",
         "srcText": "FinCEN, Aug 3",
         "srcUrl": "https://www.fincen.gov/news/news-releases/fincen-assesses-historic-125-million-penalty-against-ubs-financial-services-inc"
-      },
-      {
-        "n": "3",
-        "p": "fraud",
-        "tri": "priority",
-        "st": "confirmed",
-        "id": "L-0275",
-        "conf": "",
-        "text": "BleepingComputer reports that a vulnerability in COLDCARD hardware wallet firmware is likely linked to the theft of an estimated $88.6 million in Bitcoin from thousands of wallets whose seeds were generated using a flawed random number generator.",
-        "why": "Fraud and third-party-risk teams should treat this as a reminder that hardware-wallet random-number-generator flaws can be catastrophic at scale: BleepingComputer reports that a vulnerability in COLDCARD hardware wallet firmware is likely linked to the theft of an estimated $88.6 million in Bitcoin from thousands of wallets whose seeds were generated using a flawed random number generator.",
-        "srcText": "BleepingComputer, Aug 2",
-        "srcUrl": "https://www.bleepingcomputer.com/news/security/coldcard-wallet-rng-flaw-likely-linked-to-88-million-bitcoin-theft/"
       }
     ]
   },
   "wire": [
+    {
+      "ts": "2026-08-03T17:36:00Z",
+      "p": "data",
+      "tri": "priority",
+      "st": "confirmed",
+      "id": "L-0284",
+      "title": "The Record reports that hackers gained access to Liechtenstein's Register of Beneficial Owners and stole 31,000 records identifying people behind companies, foundations, and trusts in the country — a registry created in 2021 under European Union rules on money laundering and financial transparency — prompting the government to form a crisis unit to address the breach.",
+      "src": "The Record",
+      "srcUrl": "https://therecord.media/hackers-steal-records-liechtenstein-companies-foundations",
+      "linked": true
+    },
     {
       "ts": "2026-08-03T17:00:56Z",
       "p": "tp",
@@ -63,6 +74,17 @@
       "title": "BleepingComputer reports that N-able is warning customers that hackers are exploiting an authentication bypass vulnerability, tracked as CVE-2026-18577, affecting both hosted and on-premises N-central servers — a remote monitoring and management (RMM) platform used by managed service providers (MSPs) and corporate IT departments — and has released hotfix 2026.3.1.7 to address the issue, which affects all versions of N-central before 2026.3.",
       "src": "BleepingComputer",
       "srcUrl": "https://www.bleepingcomputer.com/news/security/n-able-warns-of-n-central-auth-bypass-flaw-exploited-in-attacks/",
+      "linked": true
+    },
+    {
+      "ts": "2026-08-03T12:00:00Z",
+      "p": "fraud",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0283",
+      "title": "A Department of Justice press release reports that Richard Modou Bah, of the Bronx, New York, was sentenced to 58 months in prison after pleading guilty to conspiracy to commit bank fraud as part of a multi-state identity theft and bank fraud ring.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-az/pr/bronx-man-sentenced-58-months-prison-multi-state-identify-theft-and-bank-fraud-ring",
       "linked": true
     },
     {
@@ -1990,8 +2012,8 @@
       "scope": "fraud · AML rulemaking & scam patterns",
       "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
       "opened": "July 2026",
-      "ver": "v49",
-      "verRange": "v1–v48",
+      "ver": "v50",
+      "verRange": "v1–v49",
       "asOf": "August 3, 2026",
       "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22). Separately, the Financial Crimes Enforcement Network (FinCEN) is extending the comment period on its proposal to expand the money-laundering-concern designation of Huione Group to include H-Pay Service PLC, after a technical issue with its comment portal blocked electronic submissions.",
       "p1Sup": "1, 3, 27",
@@ -2504,6 +2526,15 @@
           "src": "DOJ press release",
           "srcUrl": "https://www.justice.gov/usao-ndfl/pr/crestview-woman-federally-indicted-fraud-offenses-totaling-over-four-million-dollars",
           "line": "A Department of Justice press release reports that Rosemay G. Manzano, of Crestview, Florida, was indicted by a federal grand jury on 17 counts of bank fraud, 19 counts of money laundering, one count of aggravated identity theft, and five counts of filing a false tax return."
+        },
+        {
+          "date": "Aug 3, 26",
+          "st": "confirmed",
+          "ver": "v50",
+          "id": "L-0283",
+          "src": "DOJ press release",
+          "srcUrl": "https://www.justice.gov/usao-az/pr/bronx-man-sentenced-58-months-prison-multi-state-identify-theft-and-bank-fraud-ring",
+          "line": "A Department of Justice press release reports that Richard Modou Bah, of the Bronx, New York, was sentenced to 58 months in prison after pleading guilty to conspiracy to commit bank fraud as part of a multi-state identity theft and bank fraud ring."
         }
       ],
       "sources": [
@@ -2656,6 +2687,11 @@
           "n": "30",
           "text": "DOJ — Crestview, FL woman indicted on 17 counts of bank fraud, USAO-NDFL, Aug 3, 2026",
           "url": "https://www.justice.gov/usao-ndfl/pr/crestview-woman-federally-indicted-fraud-offenses-totaling-over-four-million-dollars"
+        },
+        {
+          "n": "31",
+          "text": "DOJ — Bronx, NY man sentenced 58 months, multi-state identity theft/bank fraud ring, USAO-AZ, Aug 3, 2026",
+          "url": "https://www.justice.gov/usao-az/pr/bronx-man-sentenced-58-months-prison-multi-state-identify-theft-and-bank-fraud-ring"
         }
       ],
       "related": [
@@ -3461,9 +3497,9 @@
       "scope": "data risk · reporting standards & data accuracy",
       "watch": "Data-standards rulemaking, consumer-data enforcement, and breach disclosures at financial firms.",
       "opened": "July 2026",
-      "ver": "v7",
-      "verRange": "v1–v7",
-      "asOf": "July 31, 2026",
+      "ver": "v8",
+      "verRange": "v1–v8",
+      "asOf": "August 3, 2026",
       "p1": "Uniform data-reporting standards are now final: the OCC, Federal Reserve, FDIC, and five other agencies issued the joint Financial Data Transparency Act rule on June 11, establishing data standards for certain regulatory collections.",
       "p1Sup": "1",
       "p2": "Enforcement pressure sits on data accuracy on both sides of the Atlantic. The FTC required tenant-screening provider RentGrow to pay $2.25 million over duplicate records and undisclosed data sources (July 9). Separately, insurance company AssuranceAmerica disclosed a breach affecting records of 6.9 million drivers. In the UK, the Bank of England’s Prudential Regulation Authority (PRA) fined HDI Global SE £4,165,000 for submitting incorrect Financial Services Compensation Scheme (FSCS) data, caused by a failure to apply due skill, care and diligence.",
@@ -3588,6 +3624,15 @@
           "src": "Dark Reading",
           "srcUrl": "https://www.darkreading.com/data-privacy/drop-platform-lets-californians-ditch-their-data",
           "line": "Dark Reading reports that California's Delete Request and Opt-out Platform (DROP) launches August 1, with hundreds of thousands of California residents already registered, and that other states could follow if the process goes smoothly."
+        },
+        {
+          "date": "Aug 3, 26",
+          "st": "confirmed",
+          "ver": "v8",
+          "id": "L-0284",
+          "src": "The Record",
+          "srcUrl": "https://therecord.media/hackers-steal-records-liechtenstein-companies-foundations",
+          "line": "The Record reports that hackers gained access to Liechtenstein's Register of Beneficial Owners and stole 31,000 records identifying people behind companies, foundations, and trusts in the country — a registry created in 2021 under European Union rules on money laundering and financial transparency — prompting the government to form a crisis unit to address the breach."
         }
       ],
       "sources": [
@@ -3640,6 +3685,11 @@
           "n": "10",
           "text": "Dark Reading — EU banks leak data via cookie trackers, Jul 22, 2026",
           "url": "https://www.darkreading.com/data-privacy/eu-financial-institutions-cookie-trackers"
+        },
+        {
+          "n": "11",
+          "text": "The Record — Liechtenstein Register of Beneficial Owners breach, 31,000 records, Aug 3, 2026",
+          "url": "https://therecord.media/hackers-steal-records-liechtenstein-companies-foundations"
         }
       ],
       "related": [
@@ -6240,6 +6290,22 @@
       "line": "A Department of Justice press release reports that Rosemay G. Manzano, of Crestview, Florida, was indicted by a federal grand jury on 17 counts of bank fraud, 19 counts of money laundering, one count of aggravated identity theft, and five counts of filing a false tax return.",
       "src": "DOJ press release",
       "srcUrl": "https://www.justice.gov/usao-ndfl/pr/crestview-woman-federally-indicted-fraud-offenses-totaling-over-four-million-dollars"
+    },
+    {
+      "d": "2026-08-03",
+      "p": "fraud",
+      "id": "L-0283",
+      "line": "A Department of Justice press release reports that Richard Modou Bah, of the Bronx, New York, was sentenced to 58 months in prison after pleading guilty to conspiracy to commit bank fraud as part of a multi-state identity theft and bank fraud ring.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-az/pr/bronx-man-sentenced-58-months-prison-multi-state-identify-theft-and-bank-fraud-ring"
+    },
+    {
+      "d": "2026-08-03",
+      "p": "data",
+      "id": "L-0284",
+      "line": "The Record reports that hackers gained access to Liechtenstein's Register of Beneficial Owners and stole 31,000 records identifying people behind companies, foundations, and trusts in the country — a registry created in 2021 under European Union rules on money laundering and financial transparency — prompting the government to form a crisis unit to address the breach.",
+      "src": "The Record",
+      "srcUrl": "https://therecord.media/hackers-steal-records-liechtenstein-companies-foundations"
     }
   ],
   "takeaways": [
@@ -6921,7 +6987,7 @@
       {
         "no": "18",
         "date": "Mon, Aug 3, 2026",
-        "confirmed": "8",
+        "confirmed": "10",
         "pending": "0",
         "flash": "—",
         "linked": true
