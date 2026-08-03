@@ -2,18 +2,18 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-08-03T09:15:00-04:00",
+    "generatedAt": "2026-08-03T12:10:00-04:00",
     "issueNo": 18,
-    "recordHash": "b503f85",
+    "recordHash": "2d314a8",
     "windowLabel": "July 9 – August 3, 2026",
     "nextWeekly": "Fri, Aug 7",
     "nextMonthly": "Tue, Sep 1",
-    "feedNote": "Intraday update (09:15 ET, edition No. 18 stays open). Selection window: 2 hours before the prior run's lastRun (06:20 ET), so candidates are items published since ≈04:20 ET / 08:20 UTC. 27 of 27 allowlisted feeds returned 200 (26 on the first attempt; the FTC's feed 403'd the descriptive User-Agent and was retried with the standard-browser User-Agent per the runbook's fallback, returning 200, counted OK). The CISA Known Exploited Vulnerabilities (KEV) catalog's catalogVersion is unchanged at 2026.07.29 (1,656 entries, no new entries). NIST's feed again returned an empty channel (known behavior). The page-checked sources were read directly: Anthropic's news page shows nothing newer than the already-recorded Jul 30 postmortem; ICO's page returned only client-side-rendered placeholder content; ENISA's news page surfaced only its standing featured-items block. FinCEN's newsroom page, however, surfaced a new item posted today: a historic $125 million Bank Secrecy Act penalty against UBS Financial Services Inc. One item was admitted (fraud, priority).",
-    "lastRun": "2026-08-03T09:15:00-04:00"
+    "feedNote": "Intraday update (12:10 ET, edition No. 18 stays open). Selection window: 2 hours before the prior run's lastRun (09:15 ET), so candidates are items published since ≈07:15 ET / 11:15 UTC. 27 of 27 allowlisted feeds returned 200 (26 on the first attempt; the FTC's feed 403'd the descriptive User-Agent and was retried with the standard-browser User-Agent per the runbook's fallback, returning 200, counted OK). The CISA Known Exploited Vulnerabilities (KEV) catalog's catalogVersion is unchanged at 2026.07.29 (1,656 entries, no new entries). NIST's feed again returned an empty channel (known behavior). The page-checked sources were read directly: Anthropic's news page shows nothing newer than the already-recorded Jul 30 postmortem; FinCEN's newsroom page shows nothing newer than the UBS penalty already admitted this morning; ICO's page returned only client-side-rendered placeholder content; ENISA's news page surfaced only its standing featured-items block. A Department of Justice press release reporting the sentencing of a man for violently robbing six banks in the Chicago suburbs was admitted (physical, routine).",
+    "lastRun": "2026-08-03T12:10:00-04:00"
   },
   "lead": {
-    "head": "Leading stories: the Financial Crimes Enforcement Network (FinCEN) assessed a historic $125 million penalty against UBS Financial Services Inc. for willful, repeat violations of the Bank Secrecy Act; a flaw in COLDCARD hardware wallet firmware is likely linked to an estimated $88.6 million in stolen Bitcoin; and a Department of Justice press release reports a civil forfeiture action to recover cryptocurrency tied to an online fraud scheme that directed victims to cryptocurrency ATMs.",
-    "dek": "Today's edition has recorded four items so far. Every item links to its source.",
+    "head": "Leading stories: the Financial Crimes Enforcement Network (FinCEN) assessed a historic $125 million penalty against UBS Financial Services Inc. for willful, repeat violations of the Bank Secrecy Act; a flaw in COLDCARD hardware wallet firmware is likely linked to an estimated $88.6 million in stolen Bitcoin; and a federal judge sentenced a man to 14 years in prison for violently robbing six banks in the Chicago suburbs.",
+    "dek": "Today's edition has recorded five items so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
@@ -41,19 +41,30 @@
       },
       {
         "n": "3",
-        "p": "fraud",
+        "p": "physical",
         "tri": "routine",
         "st": "confirmed",
-        "id": "L-0277",
+        "id": "L-0279",
         "conf": "",
-        "text": "A Department of Justice press release reports that federal prosecutors filed a civil forfeiture action to recover about $47,000 in cryptocurrency (USDT), alleged to be proceeds of an online fraud scheme in which criminals directed victims to deposit funds into cryptocurrency ATMs and then took the funds.",
-        "why": "Fraud teams should note that cryptocurrency ATMs continue to be a channel criminals direct victims to in online fraud schemes: a Department of Justice press release reports federal prosecutors filed a civil forfeiture action to recover about $47,000 in cryptocurrency alleged to be proceeds of such a scheme.",
+        "text": "A Department of Justice press release reports that German Campos Jr. was sentenced to 14 years in federal prison for violently robbing six banks in the Chicago suburbs in 2023 and 2024.",
+        "why": "Physical-security and branch-operations teams should note that violent robbery of bank branches continues to draw lengthy federal sentences: a Department of Justice press release reports that German Campos Jr. was sentenced to 14 years in federal prison for violently robbing six banks in the Chicago suburbs in 2023 and 2024.",
         "srcText": "DOJ press release, Aug 3",
-        "srcUrl": "https://www.justice.gov/usao-ma/pr/united-states-attorneys-office-files-civil-forfeiture-action-recover-crypto-involved"
+        "srcUrl": "https://www.justice.gov/usao-ndil/pr/federal-judge-sentences-man-14-years-prison-violently-robbing-six-banks-chicago"
       }
     ]
   },
   "wire": [
+    {
+      "ts": "2026-08-03T12:00:00Z",
+      "p": "physical",
+      "tri": "routine",
+      "st": "confirmed",
+      "id": "L-0279",
+      "title": "A Department of Justice press release reports that German Campos Jr. was sentenced to 14 years in federal prison for violently robbing six banks in the Chicago suburbs in 2023 and 2024.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-ndil/pr/federal-judge-sentences-man-14-years-prison-violently-robbing-six-banks-chicago",
+      "linked": true
+    },
     {
       "ts": "2026-08-03T12:00:00Z",
       "p": "fraud",
@@ -3799,14 +3810,14 @@
       "scope": "physical security · facilities & infrastructure adjacency",
       "watch": "Grid bulletins, law-enforcement advisories, and severe-weather threats to facilities — via the allowlisted feeds.",
       "opened": "July 2026",
-      "ver": "v3",
-      "verRange": "v1–v3",
-      "asOf": "July 31, 2026",
-      "p1": "The record's physical-security events so far are both bank-cash robberies prosecuted by the Department of Justice (DOJ): a gunman who pleaded guilty to the armed daytime robbery of a Brinks armored truck carrying Bank of America funds, and a woman sentenced to 10 years in federal prison for robbing three Connecticut banks in 2024.",
-      "p1Sup": "2, 3",
+      "ver": "v4",
+      "verRange": "v1–v4",
+      "asOf": "August 3, 2026",
+      "p1": "The record's physical-security events so far are three bank-related robbery prosecutions by the Department of Justice (DOJ): a gunman who pleaded guilty to the armed daytime robbery of a Brinks armored truck carrying Bank of America funds, a woman sentenced to 10 years in federal prison for robbing three Connecticut banks in 2024, and a man sentenced to 14 years in federal prison for violently robbing six banks in the Chicago suburbs in 2023 and 2024.",
+      "p1Sup": "2, 3, 4",
       "p2": "The nearest adjacent signal is seasonal and quiet: the National Hurricane Center’s current Atlantic outlook expects no tropical cyclone formation over the next seven days (tracked under Resilience).",
       "p2Sup": "1",
-      "assess": "No assessment yet — two confirmed physical-security events, both completed law-enforcement outcomes for already-concluded robberies rather than a live, ongoing threat signal, are not enough to support a forward-looking judgment. An assessment will be made once a pattern in current, active risk emerges.",
+      "assess": "No assessment yet — three confirmed physical-security events, all completed law-enforcement outcomes for already-concluded robberies rather than a live, ongoing threat signal, are not enough to support a forward-looking judgment. An assessment will be made once a pattern in current, active risk emerges.",
       "assessSup": "",
       "conf": "not rated",
       "events": [
@@ -3836,6 +3847,15 @@
           "src": "DOJ press release",
           "srcUrl": "https://www.justice.gov/usao-ct/pr/woman-sentenced-10-years-federal-prison-robbing-banks-waterbury-and-bristol-2024",
           "line": "A Department of Justice press release reports that Heather Brown, 50, was sentenced to 120 months in federal prison and three years of supervised release for robbing three Connecticut banks in 2024."
+        },
+        {
+          "date": "Aug 3, 26",
+          "st": "confirmed",
+          "ver": "v4",
+          "id": "L-0279",
+          "src": "DOJ press release",
+          "srcUrl": "https://www.justice.gov/usao-ndil/pr/federal-judge-sentences-man-14-years-prison-violently-robbing-six-banks-chicago",
+          "line": "A Department of Justice press release reports that German Campos Jr. was sentenced to 14 years in federal prison for violently robbing six banks in the Chicago suburbs in 2023 and 2024."
         }
       ],
       "sources": [
@@ -3853,6 +3873,11 @@
           "n": "3",
           "text": "DOJ — Waterbury/Bristol, Connecticut bank robberies, sentencing, Jul 31, 2026",
           "url": "https://www.justice.gov/usao-ct/pr/woman-sentenced-10-years-federal-prison-robbing-banks-waterbury-and-bristol-2024"
+        },
+        {
+          "n": "4",
+          "text": "DOJ — six Chicago-suburb bank robberies, sentencing, Aug 3, 2026",
+          "url": "https://www.justice.gov/usao-ndil/pr/federal-judge-sentences-man-14-years-prison-violently-robbing-six-banks-chicago"
         }
       ],
       "related": [
@@ -6108,6 +6133,14 @@
       "line": "The Financial Crimes Enforcement Network (FinCEN) assesses a historic $125 million civil penalty against UBS Financial Services Inc. for willful, repeat violations of the Bank Secrecy Act (BSA) — the largest such penalty ever imposed on a broker-dealer.",
       "src": "FinCEN newsroom",
       "srcUrl": "https://www.fincen.gov/news/news-releases/fincen-assesses-historic-125-million-penalty-against-ubs-financial-services-inc"
+    },
+    {
+      "d": "2026-08-03",
+      "p": "physical",
+      "id": "L-0279",
+      "line": "A Department of Justice press release reports that German Campos Jr. was sentenced to 14 years in federal prison for violently robbing six banks in the Chicago suburbs in 2023 and 2024.",
+      "src": "DOJ press release",
+      "srcUrl": "https://www.justice.gov/usao-ndil/pr/federal-judge-sentences-man-14-years-prison-violently-robbing-six-banks-chicago"
     }
   ],
   "takeaways": [
@@ -6780,7 +6813,7 @@
       {
         "no": "18",
         "date": "Mon, Aug 3, 2026",
-        "confirmed": "4",
+        "confirmed": "5",
         "pending": "0",
         "flash": "—",
         "linked": true
