@@ -2,30 +2,30 @@
   "meta": {
     "edition": "Live edition — record opened July 9, 2026",
     "startedOn": "2026-07-09",
-    "generatedAt": "2026-08-03T17:18:50-04:00",
+    "generatedAt": "2026-08-03T18:17:15-04:00",
     "issueNo": 18,
-    "recordHash": "7f473ac",
+    "recordHash": "4b8fa79",
     "windowLabel": "July 9 – August 3, 2026",
     "nextWeekly": "Fri, Aug 7",
     "nextMonthly": "Tue, Sep 1",
-    "feedNote": "Intraday update (17:18 ET, edition No. 18 stays open). Selection window: 2 hours before the prior run's lastRun (14:16 ET), so candidates are items published since ≈12:16 ET / 16:16 UTC. 27 of 27 allowlisted feeds returned 200 (all 27 on the first attempt with the descriptive User-Agent, except the FTC's feed, which 403'd and was retried with the standard-browser User-Agent per the runbook's fallback, returning 200, counted OK). The CISA Known Exploited Vulnerabilities (KEV) catalog advanced to catalogVersion 2026.08.03 (1,657 entries, +1), adding CVE-2026-18577 (N-able N-central authentication bypass) — the same flaw already recorded as L-0281; this is corroboration of an already-admitted item, not a new one. NIST's feed again returned an empty channel (known behavior, not a failure). The page-checked sources were read directly: Anthropic's news page shows nothing newer than the already-recorded Jul 30 postmortem; FinCEN's newsroom page shows nothing newer than the UBS penalty already admitted this morning; ICO's page returned only client-side-rendered placeholder content; ENISA's news page surfaced only its standing featured-items block. DOJ's list (reviewed in full per the standing placeholder-noon-UTC-pubDate convention) surfaced four new items, all admitted (fraud, routine): a Fayetteville resident charged in a pandemic relief scam involving nearly $1 million; three Romanian nationals sentenced to more than 11 years for an ATM skimming scheme; a Los Angeles man who pleaded guilty to money laundering for a role in a “phantom hacker” scheme targeting elderly victims; and a Silver Spring, Maryland woman sentenced to 40 months for wire fraud and aggravated identity theft in an unemployment insurance fraud scheme. Excluded at the relevance gate or as reappearances: OCC Bulletin 2026-37, a proposed rulemaking on the disclosure of OCC's own records (same non-risk administrative subject already excluded earlier today); The Record's follow-up on the Liechtenstein Register of Beneficial Owners breach (identical URL already recorded as L-0284) and its follow-up on the COLDCARD hardware-wallet theft (already recorded as L-0275); BleepingComputer's N-able N-central report (identical URL already recorded as L-0281); BleepingComputer's DOUBLECUP ClickFix loader-as-a-service report and its fake-Roblox-launcher malware report (no financial-sector nexus stated in the excerpt); Dark Reading's AI-video-provenance tool report (no financial-sector nexus stated); Dark Reading's follow-up commentary on Anthropic's Claude cybersecurity-evals postmortem (reappearance of the event already recorded as L-0264); and NOAA NHC's Atlantic Tropical Weather Outlook (tropical cyclone formation not expected, routine non-event).",
-    "lastRun": "2026-08-03T17:18:50-04:00"
+    "feedNote": "Intraday update (18:17 ET, edition No. 18 stays open). Selection window: 2 hours before the prior run's lastRun (17:18 ET), so candidates are items published since ≈15:18 ET / 19:18 UTC. 27 of 27 allowlisted feeds returned 200 (26 on the first attempt with the descriptive User-Agent; the FTC's feed 403'd and was retried with the standard-browser User-Agent per the runbook's fallback, returning 200, counted OK). Nacha's feed prepended non-XML theme-debug HTML comments before the XML declaration this run (a new quirk); stripped to parse, 200 counted OK, no new items in window. The CISA Known Exploited Vulnerabilities (KEV) catalog is unchanged at catalogVersion 2026.08.03 (1,657 entries, no new entries this run). NIST's feed again returned an empty channel (known behavior, not a failure). The page-checked sources were read directly: Anthropic's news page shows nothing newer than the already-recorded Jul 30 postmortem; FinCEN's newsroom page shows nothing newer than the UBS penalty already admitted this morning; ICO's page returned only client-side-rendered placeholder content; ENISA's news page surfaced only its standing featured-items block. Two new items qualified: The Record's follow-up on the COLDCARD hardware-wallet theft (Coinkite destroyed its remaining vulnerable-firmware inventory) and Dark Reading's report that N-able discovered a second, patch-bypassing attack vector for CVE-2026-18577. Excluded at the relevance gate or as reappearances: BleepingComputer's \"N-able warns of N-central auth bypass flaw exploited in attacks\" (identical URL already recorded as L-0281); BleepingComputer's DOUBLECUP ClickFix loader-as-a-service report and its fake-Roblox-launcher malware report (no financial-sector nexus stated in the excerpt); Dark Reading's AI-video-provenance tool report (no financial-sector nexus stated) and its follow-up commentary on Anthropic's Claude cybersecurity-evals postmortem (reappearance of the event already recorded as L-0264); DOJ's list (reviewed in full per the standing placeholder-noon-UTC-pubDate convention), which surfaced no items published after the noon-UTC placeholder batch already admitted earlier today; and NOAA NHC's Atlantic Tropical Weather Outlook (tropical cyclone formation not expected, routine non-event) plus its \"no tropical cyclones\" placeholder item, which this run carried an internally inconsistent future pubDate (Aug 5) — excluded regardless as a routine non-event.",
+    "lastRun": "2026-08-03T18:17:15-04:00"
   },
   "lead": {
-    "head": "Leading stories: N-able warns that hackers are actively exploiting an authentication bypass flaw in its N-central remote monitoring and management (RMM) platform used by managed service providers (MSPs); hackers stole 31,000 records from Liechtenstein's Register of Beneficial Owners, a registry built under European Union anti-money-laundering rules; and the Financial Crimes Enforcement Network (FinCEN) assessed a historic $125 million penalty against UBS Financial Services Inc. for willful, repeat violations of the Bank Secrecy Act.",
-    "dek": "Today's edition has recorded 14 items so far. Every item links to its source.",
+    "head": "Leading stories: N-able says attackers found a second way to bypass authentication on its N-central platform, still gaining administrator access after the vendor's original patch; hackers stole 31,000 records from Liechtenstein's Register of Beneficial Owners, a registry built under European Union anti-money-laundering rules; and the Financial Crimes Enforcement Network (FinCEN) assessed a historic $125 million penalty against UBS Financial Services Inc. for willful, repeat violations of the Bank Secrecy Act.",
+    "dek": "Today's edition has recorded 16 items so far. Every item links to its source.",
     "items": [
       {
         "n": "1",
         "p": "tp",
         "tri": "flash",
         "st": "confirmed",
-        "id": "L-0281",
+        "id": "L-0290",
         "conf": "",
-        "text": "BleepingComputer reports that N-able is warning customers that hackers are exploiting an authentication bypass vulnerability, tracked as CVE-2026-18577, in its N-central remote monitoring and management (RMM) platform, used by managed service providers (MSPs) and corporate IT departments, and has released a hotfix to address it.",
-        "why": "Third-party-risk and technology teams should note that criminals are actively exploiting an authentication-bypass flaw in a remote monitoring and management (RMM) platform used by managed service providers (MSPs) and corporate IT departments: BleepingComputer reports that N-able is warning customers that hackers are exploiting an authentication bypass vulnerability, tracked as CVE-2026-18577, in its N-central platform, and has released a hotfix to address it.",
-        "srcText": "BleepingComputer, Aug 3",
-        "srcUrl": "https://www.bleepingcomputer.com/news/security/n-able-warns-of-n-central-auth-bypass-flaw-exploited-in-attacks/"
+        "text": "Dark Reading reports that attackers are exploiting a new authentication-bypass vector for CVE-2026-18577, discovered by N-able over the weekend, that bypasses the vendor's existing patch and still gives attackers administrator access on its N-central platform.",
+        "why": "Third-party-risk and technology teams should not treat N-able's original patch as sufficient: Dark Reading reports that hackers can still gain administrator access to N-central servers through a newly discovered second vector of the CVE-2026-18577 authentication-bypass flaw.",
+        "srcText": "Dark Reading, Aug 3",
+        "srcUrl": "https://www.darkreading.com/vulnerabilities-threats/attackers-exploit-n-able-patch-bypass-flaw"
       },
       {
         "n": "2",
@@ -54,6 +54,28 @@
     ]
   },
   "wire": [
+    {
+      "ts": "2026-08-03T21:21:11Z",
+      "p": "tp",
+      "tri": "flash",
+      "st": "confirmed",
+      "id": "L-0290",
+      "title": "Dark Reading reports that N-able discovered a new authentication-bypass attack vector for CVE-2026-18577 over the weekend — one that bypasses the vendor's existing patch and still gives attackers administrator access — on its N-central remote monitoring and management (RMM) platform.",
+      "src": "Dark Reading",
+      "srcUrl": "https://www.darkreading.com/vulnerabilities-threats/attackers-exploit-n-able-patch-bypass-flaw",
+      "linked": true
+    },
+    {
+      "ts": "2026-08-03T20:15:00Z",
+      "p": "fraud",
+      "tri": "priority",
+      "st": "confirmed",
+      "id": "L-0289",
+      "title": "The Record reports that Coinkite, maker of the COLDCARD hardware wallet, destroyed its remaining inventory of COLDCARD devices built with the vulnerable firmware after thieves stole more than $88 million in Bitcoin from customer wallets, saying the devices could not be safely updated until initialization and posed an unacceptable security risk.",
+      "src": "The Record",
+      "srcUrl": "https://therecord.media/bitcoin-theft-coldcard-cyberattack",
+      "linked": true
+    },
     {
       "ts": "2026-08-03T17:36:00Z",
       "p": "data",
@@ -2056,7 +2078,7 @@
       "scope": "fraud · AML rulemaking & scam patterns",
       "watch": "AML and fraud-control rulemaking, FinCEN and FBI advisories, and enforcement that changes what examiners ask for.",
       "opened": "July 2026",
-      "ver": "v54",
+      "ver": "v55",
       "verRange": "v1–v49",
       "asOf": "August 3, 2026",
       "p1": "The anti-money-laundering rulebook is being rewritten in public. The Federal Reserve proposed amendments to its AML program requirements for banks on July 7, alongside Bank Secrecy Act and sanctions compliance standards for OCC-supervised stablecoin issuers under the GENIUS Act (OCC, June 22). Separately, the Financial Crimes Enforcement Network (FinCEN) is extending the comment period on its proposal to expand the money-laundering-concern designation of Huione Group to include H-Pay Service PLC, after a technical issue with its comment portal blocked electronic submissions.",
@@ -2615,6 +2637,15 @@
           "src": "DOJ press release",
           "srcUrl": "https://www.justice.gov/usao-md/pr/silver-spring-woman-sentenced-more-three-years-federal-prison-role-covid-fraud-scheme",
           "line": "A Department of Justice press release reports that Elizabeth Maria Ceballos, 50, of Silver Spring, Maryland, was sentenced to 40 months in federal prison, followed by two years of supervised release, for conspiracy to commit wire fraud and aggravated identity theft in connection with an unemployment insurance fraud scheme."
+        },
+        {
+          "date": "Aug 3, 26",
+          "st": "confirmed",
+          "ver": "v55",
+          "id": "L-0289",
+          "src": "The Record",
+          "srcUrl": "https://therecord.media/bitcoin-theft-coldcard-cyberattack",
+          "line": "The Record reports that Coinkite, maker of the COLDCARD hardware wallet, destroyed its remaining inventory of COLDCARD devices built with the vulnerable firmware after thieves stole more than $88 million in Bitcoin from customer wallets, saying the devices could not be safely updated until initialization and posed an unacceptable security risk."
         }
       ],
       "sources": [
@@ -2772,6 +2803,11 @@
           "n": "31",
           "text": "DOJ — Bronx, NY man sentenced 58 months, multi-state identity theft/bank fraud ring, USAO-AZ, Aug 3, 2026",
           "url": "https://www.justice.gov/usao-az/pr/bronx-man-sentenced-58-months-prison-multi-state-identify-theft-and-bank-fraud-ring"
+        },
+        {
+          "n": "32",
+          "text": "The Record — Coinkite destroys vulnerable COLDCARD inventory after $88M Bitcoin theft, Aug 3, 2026",
+          "url": "https://therecord.media/bitcoin-theft-coldcard-cyberattack"
         }
       ],
       "related": [
@@ -2822,11 +2858,11 @@
       "scope": "third-party risk · vendor software & supply chain",
       "watch": "Vendor tools under active attack, software-supply-chain compromises aimed at financial applications, and vendor incident disclosures.",
       "opened": "July 2026",
-      "ver": "v24",
-      "verRange": "v1–v23",
+      "ver": "v25",
+      "verRange": "v1–v25",
       "asOf": "August 3, 2026",
-      "p1": "One vendor-channel exploit is confirmed this window: SimpleHelp, a remote-support tool, carries an authentication-bypass flaw on CISA’s known-exploited list — in a vulnerable configuration, a remote, unauthenticated attacker can log in with a forged token. Separately, the UK Financial Conduct Authority (FCA) says the UK government has designated the first ‘critical third parties’ (CTPs) under a new oversight regime, with the Bank of England, the Prudential Regulation Authority (PRA), and the FCA now directly overseeing the resilience of services these providers offer to UK financial firms and financial market infrastructures (FMIs).",
-      "p1Sup": "1, 14, 15",
+      "p1": "The leading vendor-channel exploit this window is N-able's N-central remote monitoring and management (RMM) platform: hackers are exploiting an authentication bypass vulnerability tracked as CVE-2026-18577, and N-able discovered a second attack vector for the same flaw over the weekend that still gives attackers administrator access, bypassing the vendor's existing patch. Separately, SimpleHelp, a remote-support tool, carries its own authentication-bypass flaw on CISA’s known-exploited list — in a vulnerable configuration, a remote, unauthenticated attacker can log in with a forged token.",
+      "p1Sup": "1, 16, 17",
       "p2": "The rest of the vendor picture clusters around the software supply chain: a claimed breach at consulting firm Accenture said to involve source code and encryption keys, and malicious look-alike software kits for the Paysafe, Skrill, and Neteller payment applications on public code registries. Separately, Ernst & Young — one of the world’s four largest auditing and professional-services firms — is notifying customers of a data breach after its own support-ticket system was compromised, with documents containing client tax information among what the tickets may have held.",
       "p2Sup": "2, 3, 10",
       "assess": "We assess with moderate confidence that malicious software packages aimed at payment applications on public code registries are the growth edge in third-party exposure — four separate reports this window point the same way.",
@@ -3093,6 +3129,15 @@
           "src": "BleepingComputer",
           "srcUrl": "https://www.bleepingcomputer.com/news/security/n-able-warns-of-n-central-auth-bypass-flaw-exploited-in-attacks/",
           "line": "BleepingComputer reports that N-able is warning customers that hackers are exploiting an authentication bypass vulnerability, tracked as CVE-2026-18577, affecting both hosted and on-premises N-central servers — a remote monitoring and management (RMM) platform used by managed service providers (MSPs) and corporate IT departments — and has released hotfix 2026.3.1.7 to address the issue, which affects all versions of N-central before 2026.3."
+        },
+        {
+          "date": "Aug 3, 26",
+          "st": "confirmed",
+          "ver": "v25",
+          "id": "L-0290",
+          "src": "Dark Reading",
+          "srcUrl": "https://www.darkreading.com/vulnerabilities-threats/attackers-exploit-n-able-patch-bypass-flaw",
+          "line": "Dark Reading reports that N-able discovered a new authentication-bypass attack vector for CVE-2026-18577 over the weekend — one that bypasses the vendor's existing patch and still gives attackers administrator access — on its N-central remote monitoring and management (RMM) platform."
         }
       ],
       "sources": [
@@ -3175,6 +3220,11 @@
           "n": "16",
           "text": "BleepingComputer — N-able N-central auth-bypass flaw (CVE-2026-18577) actively exploited, Aug 3, 2026",
           "url": "https://www.bleepingcomputer.com/news/security/n-able-warns-of-n-central-auth-bypass-flaw-exploited-in-attacks/"
+        },
+        {
+          "n": "17",
+          "text": "Dark Reading — N-able N-central patch-bypass flaw (CVE-2026-18577) still exploited after hotfix, Aug 3, 2026",
+          "url": "https://www.darkreading.com/vulnerabilities-threats/attackers-exploit-n-able-patch-bypass-flaw"
         }
       ],
       "related": [
@@ -6418,6 +6468,22 @@
       "line": "A Department of Justice press release reports that Elizabeth Maria Ceballos, 50, of Silver Spring, Maryland, was sentenced to 40 months in federal prison, followed by two years of supervised release, for conspiracy to commit wire fraud and aggravated identity theft in connection with an unemployment insurance fraud scheme.",
       "src": "DOJ press release",
       "srcUrl": "https://www.justice.gov/usao-md/pr/silver-spring-woman-sentenced-more-three-years-federal-prison-role-covid-fraud-scheme"
+    },
+    {
+      "d": "2026-08-03",
+      "p": "fraud",
+      "id": "L-0289",
+      "line": "The Record reports that Coinkite, maker of the COLDCARD hardware wallet, destroyed its remaining inventory of COLDCARD devices built with the vulnerable firmware after thieves stole more than $88 million in Bitcoin from customer wallets, saying the devices could not be safely updated until initialization and posed an unacceptable security risk.",
+      "src": "The Record",
+      "srcUrl": "https://therecord.media/bitcoin-theft-coldcard-cyberattack"
+    },
+    {
+      "d": "2026-08-03",
+      "p": "tp",
+      "id": "L-0290",
+      "line": "Dark Reading reports that N-able discovered a new authentication-bypass attack vector for CVE-2026-18577 over the weekend — one that bypasses the vendor's existing patch and still gives attackers administrator access — on its N-central remote monitoring and management (RMM) platform.",
+      "src": "Dark Reading",
+      "srcUrl": "https://www.darkreading.com/vulnerabilities-threats/attackers-exploit-n-able-patch-bypass-flaw"
     }
   ],
   "takeaways": [
@@ -7092,6 +7158,16 @@
       "conf": "high confidence",
       "head": "If your organization runs VMware vCenter, ESX, Workstation, or Fusion, apply Broadcom's latest security updates now — three of the five newly fixed flaws let an attacker bypass authentication, run code, or escape a virtual machine to reach the host.",
       "body": "BleepingComputer reports that Broadcom has released security updates for five vulnerabilities in VMware vCenter, ESX, Workstation, and Fusion, including three critical flaws enabling authentication bypass, code execution, and virtual-machine-to-host escape, and says organizations running versions released before the fixed ones should assume they are vulnerable and act immediately. Technology teams should apply the updates without delay."
+    },
+    {
+      "anchors": [
+        "L-0281",
+        "L-0290"
+      ],
+      "pillars": "Third-party risk",
+      "conf": "high confidence",
+      "head": "N-able's hotfix alone does not close the exposure — the vendor found a second attack vector for the same authentication-bypass flaw (CVE-2026-18577) that still grants administrator access on N-central, so organizations and managed service providers (MSPs) running N-central should watch for further vendor guidance and treat the platform as still exposed.",
+      "body": "Dark Reading reports that N-able discovered another vector of the authentication bypass vulnerability, tracked as CVE-2026-18577, that gives attackers administrator access, even after N-able's earlier hotfix intended to close the original flaw. Third-party-risk and technology teams whose organization or vendors run N-central should not consider the issue resolved and should watch for additional guidance from N-able."
     }
   ],
   "publications": {
@@ -7099,9 +7175,9 @@
       {
         "no": "18",
         "date": "Mon, Aug 3, 2026",
-        "confirmed": "14",
+        "confirmed": "16",
         "pending": "0",
-        "flash": "—",
+        "flash": "2",
         "linked": true
       },
       {
